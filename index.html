@@ -863,11 +863,16 @@
       document.getElementById('fcBackSynonyms').innerText = v.synonyms && v.synonyms.length > 0 ? `= ${v.synonyms.join(' = ')}` : '';
       
       const ex = v.examples && v.examples.length > 0 ? v.examples[0] : null;
-      if (ex) {
-        document.getElementById('fcBackExample').style.display = 'block';
-        document.getElementById('fcBackExample').innerText = `"${ex.en}"\n(${ex.vi || ''})`;
+      const exEl = document.getElementById('fcBackExample');
+      if (ex && ex.en) {
+        exEl.style.display = 'block';
+        exEl.innerHTML = `
+          <div class="text-slate-200 font-medium leading-relaxed">"${ex.en}"</div>
+          ${ex.vi ? `<div class="text-slate-300/80 italic text-[11px] mt-1">(${ex.vi})</div>` : ''}
+        `;
       } else {
-        document.getElementById('fcBackExample').style.display = 'none';
+        exEl.style.display = 'none';
+        exEl.innerHTML = '';
       }
 
       if (isFlipped) {
