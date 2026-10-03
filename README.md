@@ -4,17 +4,22 @@ Dự án này đã trích xuất toàn bộ dữ liệu từ tệp `data.html` c
 
 ---
 
-## 🚀 Cách Mở & Trải Nghiệm 2 Website
+## 🚀 Trải Nghiệm Trực Tiếp (Live Deployment)
 
-Hệ thống đang chạy máy chủ tại cổng `3000`:
+- 📚 **Website 1 (Học từ vựng 35 Ngày):**  
+  👉 **[https://17130239-coder.github.io/toeic-35-days/](https://17130239-coder.github.io/toeic-35-days/)**
 
-1. **Website 1: Nền tảng học từ vựng 35 Ngày**  
-   👉 Truy cập: **[http://localhost:3000/](http://localhost:3000/)**  
-   *(Hoặc mở trực tiếp file `index.html` bằng trình duyệt)*
+- 🎮 **Website 2 (Đấu trường ôn tập Wayground):**  
+  👉 **[https://17130239-coder.github.io/toeic-35-days/wayground.html](https://17130239-coder.github.io/toeic-35-days/wayground.html)**
 
-2. **Website 2: Đấu trường ôn tập Wayground (Quizizz Clone)**  
-   👉 Truy cập: **[http://localhost:3000/wayground.html](http://localhost:3000/wayground.html)**  
-   *(Hoặc mở trực tiếp file `wayground.html` bằng trình duyệt)*
+---
+
+## 💻 Chạy Tại Máy Cục Bộ (Localhost)
+Nếu muốn chạy trực tiếp trên máy:
+```bash
+python3 server.py 3000
+```
+Truy cập: `http://localhost:3000/` hoặc `http://localhost:3000/wayground.html`
 
 ---
 
