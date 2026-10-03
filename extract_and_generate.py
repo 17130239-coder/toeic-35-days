@@ -78,6 +78,37 @@ def extract_examples(body):
             examples.append({'en': en, 'vi': vi})
     return examples
 
+VOCAB_SPECIFIC_OVERRIDES = {
+    (1, 4): {"term": "Be severely damaged", "pos": "(phrase)", "phonetic": "/biː sɪˈvɪrli ˈdæmɪdʒd/", "meaning": "Bị thiệt hại một cách nghiêm trọng"},
+    (3, 4): {"term": "Be exchanged for S.TH", "pos": "(phrase)", "phonetic": "/biː ɪksˈtʃeɪndʒd fɔːr/", "meaning": "Được trao đổi lấy cái gì"},
+    (4, 1): {"term": "Have/ Has/ Be yet to do S.TH", "pos": "(grammar pattern)", "phonetic": "/hæv jɛt tuː duː/", "meaning": "Chưa làm gì (vẫn chưa diễn ra)"},
+    (5, 4): {"term": "Price quote", "pos": "(n.phrase)", "phonetic": "/praɪs kwəʊt/", "meaning": "Bảng báo giá"},
+    (6, 3): {"term": "Linking Verbs (Become / Remain)", "pos": "(grammar)", "phonetic": "/bɪˈkʌm/, /rɪˈmeɪn/", "meaning": "Động từ nối + Tính từ (Trở nên, trở thành / Duy trì)"},
+    (7, 2): {"term": "Salary increase", "pos": "(n.phrase)", "phonetic": "/ˈsæləri ɪnˈkriːs/", "meaning": "Sự tăng lương"},
+    (8, 2): {"term": "Mergers and Acquisitions (M&A)", "pos": "(n.phrase)", "phonetic": "/ˈmɜːrdʒərz ənd ˌækwɪˈzɪʃnz/", "meaning": "Sáp nhập và thâu tóm doanh nghiệp"},
+    (9, 6): {"term": "Conveniently located", "pos": "(adj.phrase)", "phonetic": "/kənˈviːniəntli ˈləʊkeɪtɪd/", "meaning": "Tọa lạc ở vị trí thuận tiện"},
+    (10, 4): {"term": "Exceed (shareholder expectations)", "pos": "(v)", "phonetic": "/ɪkˈsiːd/", "meaning": "Vượt quá kỳ vọng của cổ đông"},
+    (10, 6): {"term": "Highly / Widely regarded", "pos": "(adj.phrase)", "phonetic": "/ˈhaɪli rɪˈɡɑːrdɪd/", "meaning": "Được đánh giá cao, được kính trọng"},
+    (12, 2): {"term": "S.O be likely to do S.TH", "pos": "(phrase)", "phonetic": "/bi ˈlaɪkli tuː duː/", "meaning": "Ai đó rất có thể / có khả năng làm gì"},
+    (12, 5): {"term": "In honor of S.O/S.TH", "pos": "(prep.phrase)", "phonetic": "/ɪn ˈɑːnər əv/", "meaning": "Nhằm tôn vinh, tưởng niệm ai/cái gì"},
+    (13, 2): {"meaning": "Dịch vụ nổi bật, xuất sắc"},
+    (13, 5): {"term": "Prepositions & Adverbs + Numbers", "pos": "(grammar)", "phonetic": "/fɔːr/, /wɪˈðɪn/, /ˈoʊvər/", "meaning": "Giới từ / trạng từ đi kèm số lượng/thời gian (Trong suốt, Trong vòng, Hơn, Lên đến...)"},
+    (14, 1): {"term": "Lower", "pos": "(adj / v)", "phonetic": "/ˈləʊər/", "meaning": "Thấp hơn (adj) / Hạ thấp, giảm bớt (v)"},
+    (14, 2): {"term": "Reach peak / At peak", "pos": "(collocation)", "phonetic": "/riːtʃ piːk/", "meaning": "Đạt tới đỉnh điểm / Ở mức đỉnh cao"},
+    (15, 4): {"term": "Take advantage of S.TH", "pos": "(idiom)", "phonetic": "/teɪk ədˈvæntɪdʒ əv/", "meaning": "Tận dụng, khai thác lợi thế của cái gì"},
+    (15, 5): {"term": "Come/Go/Take/Put into effect", "pos": "(phrase)", "phonetic": "/ɪntuː ɪˈfekt/", "meaning": "Có hiệu lực thi hành, đi vào áp dụng"},
+    (16, 1): {"term": "Lack of S.TH", "pos": "(collocation)", "phonetic": "/læk əv/", "examples": [{"en": "The proposal was delayed due to a lack of funding.", "vi": "Bản đề xuất đã bị trì hoãn do thiếu kinh phí."}]},
+    (16, 3): {"term": "Satisfactory", "pos": "(adj)", "examples": [{"en": "Tommy failed to provide satisfactory answers to the reporters' questions.", "vi": "Tommy không thể đưa ra được câu trả lời thỏa đáng cho các câu hỏi của phóng viên."}]},
+    (18, 5): {"term": "Keep S.O informed / posted", "pos": "(collocation)", "phonetic": "/kiːp ɪnˈfɔːrmd/", "meaning": "Cập nhật thông tin mới nhất cho ai"},
+    (19, 1): {"term": "Retail sales", "pos": "(n.phrase)", "phonetic": "/ˈriːteɪl seɪlz/", "meaning": "Doanh số bán lẻ"},
+    (22, 2): {"term": "Worker / Employee productivity", "pos": "(n.phrase)", "phonetic": "/ˌprɑːdʌkˈtɪvəti/", "meaning": "Năng suất làm việc của nhân viên"},
+    (22, 5): {"term": "Participate in", "pos": "(v.phrase)", "phonetic": "/pɑːrˈtɪsɪpeɪt ɪn/", "meaning": "Tham gia vào cái gì"},
+    (23, 1): {"term": "On behalf of S.O", "pos": "(prep.phrase)", "phonetic": "/ɑːn bɪˈhæf əv/", "meaning": "Thay mặt, đại diện cho ai", "examples": [{"en": "On behalf of the company, I would like to thank you for your dedication.", "vi": "Thay mặt công ty, tôi xin chân thành cảm ơn sự cống hiến của quý vị."}]},
+    (24, 2): {"term": "Be/come equipped with S.TH", "pos": "(phrase)", "phonetic": "/bi ɪˈkwɪpt wɪð/", "meaning": "Được trang bị với cái gì"},
+    (30, 3): {"term": "Play/Assume a crucial role in", "pos": "(collocation)", "phonetic": "/pleɪ ə roʊl ɪn/", "meaning": "Đóng / đảm nhiệm vai trò then chốt trong việc gì"},
+    (30, 5): {"term": "Interfere with", "pos": "(v.phrase)", "phonetic": "/ˌɪntərˈfɪr wɪð/", "meaning": "Can thiệp, gây cản trở chuyện gì"}
+}
+
 def extract_all():
     html_path = '/Users/andynguyen/workspace/35-days/data.html'
     with open(html_path, 'r', encoding='utf-8') as f:
@@ -318,14 +349,14 @@ def extract_all():
 
                 # Clean meaning
                 meaning = re.sub(r'(?:E\.g|Ex|Ví dụ|Eg)\s*:.*', '', meaning, flags=re.I).strip()
-                meaning = re.sub(r'[\-\>\=\~\:\•]+$', '', meaning).strip()
+                meaning = re.sub(r'[\-\>\=\~\:\•\(\[\{\s]+$', '', meaning).strip()
                 if term == 'Bias' and 'thiên vị ai/cái gì' in body:
                     meaning = 'Khuynh hướng, thiên hướng, tính thiên vị (n); Có khuynh hướng, thiên vị (v)'
 
                 # Examples
                 examples = extract_examples(body)
 
-                vocab_entries.append({
+                entry = {
                     "id": f"d{day_num}_w{p_num}",
                     "index": p_num,
                     "term": term if term else first_line,
@@ -335,7 +366,15 @@ def extract_all():
                     "synonyms": synonyms,
                     "examples": examples,
                     "raw_text": part
-                })
+                }
+
+                # Apply specific overrides for edge cases
+                if (day_num, p_num) in VOCAB_SPECIFIC_OVERRIDES:
+                    ov = VOCAB_SPECIFIC_OVERRIDES[(day_num, p_num)]
+                    for k, v in ov.items():
+                        entry[k] = v
+
+                vocab_entries.append(entry)
 
         # Parse Exercise A cleanly
         exercise_a = {
@@ -654,9 +693,8 @@ def extract_all():
 
             # 6. Fill in the Blank: Sentence Context (Type-in)
             has_blank_sentence = False
-            if examples and len(examples) > 0:
-                eg = examples[0]
-                en_sentence = eg["en"]
+            for eg in (examples or []):
+                en_sentence = eg.get("en", "")
                 vi_trans = eg.get("vi", "")
                 
                 matched_word = None
@@ -699,6 +737,7 @@ def extract_all():
                     })
                     q_id += 1
                     has_blank_sentence = True
+                    break
 
             if not has_blank_sentence:
                 valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower()]))
@@ -817,6 +856,8 @@ def extract_all():
                 "correct_memes": QUIZIZZ_CORRECT_MEMES,
                 "wrong_memes": QUIZIZZ_WRONG_MEMES
             },
+            "correct_memes": QUIZIZZ_CORRECT_MEMES,
+            "wrong_memes": QUIZIZZ_WRONG_MEMES,
             "games": list(wg_games.values())
         }, f, ensure_ascii=False, indent=2)
 

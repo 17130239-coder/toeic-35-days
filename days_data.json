@@ -322,9 +322,9 @@
           "id": "d1_w4",
           "index": 4,
           "term": "Be severely damaged",
-          "phonetic": "/sɪˈvɪrli ˈdæmɪdʒ/",
-          "pos": "",
-          "meaning": "Bị thiệt hại 1 cách nghiêm trọng.",
+          "phonetic": "/biː sɪˈvɪrli ˈdæmɪdʒd/",
+          "pos": "(phrase)",
+          "meaning": "Bị thiệt hại một cách nghiêm trọng",
           "synonyms": [],
           "examples": [],
           "raw_text": "4. Be severely damaged\n /sɪˈvɪrli ˈdæmɪdʒ/: Bị thiệt hại 1 cách nghiêm trọng."
@@ -702,10 +702,10 @@
         {
           "id": "d3_w4",
           "index": 4,
-          "term": "Be exchanged",
-          "phonetic": "/ɪksˈtʃeɪndʒ/, /səˈpɔːrt/",
-          "pos": "",
-          "meaning": "Trao đổi lấy cái gì",
+          "term": "Be exchanged for S.TH",
+          "phonetic": "/biː ɪksˈtʃeɪndʒd fɔːr/",
+          "pos": "(phrase)",
+          "meaning": "Được trao đổi lấy cái gì",
           "synonyms": [
             "support"
           ],
@@ -853,9 +853,9 @@
           "id": "d4_w1",
           "index": 1,
           "term": "Have/ Has/ Be yet to do S.TH",
-          "phonetic": "",
-          "pos": "",
-          "meaning": "Chưa làm gì.",
+          "phonetic": "/hæv jɛt tuː duː/",
+          "pos": "(grammar pattern)",
+          "meaning": "Chưa làm gì (vẫn chưa diễn ra)",
           "synonyms": [],
           "examples": [
             {
@@ -1070,8 +1070,8 @@
           "id": "d5_w4",
           "index": 4,
           "term": "Price quote",
-          "phonetic": "/praɪs  kwəʊt/, /praɪs  kwəʊˈteɪʃn/, /ˈestɪmət/",
-          "pos": "",
+          "phonetic": "/praɪs kwəʊt/",
+          "pos": "(n.phrase)",
           "meaning": "Bảng báo giá",
           "synonyms": [
             "Estimate"
@@ -1273,10 +1273,10 @@
         {
           "id": "d6_w3",
           "index": 3,
-          "term": "Linking Verb",
-          "phonetic": "/bɪˈkʌm/, /rɪˈmeɪn/, /siːm/, /diːm/, /pruːv/, /kənˈsɪdər/",
-          "pos": "",
-          "meaning": "Trở nên, trở thành",
+          "term": "Linking Verbs (Become / Remain)",
+          "phonetic": "/bɪˈkʌm/, /rɪˈmeɪn/",
+          "pos": "(grammar)",
+          "meaning": "Động từ nối + Tính từ (Trở nên, trở thành / Duy trì)",
           "synonyms": [
             "Get",
             "Grow",
@@ -1504,9 +1504,9 @@
           "id": "d7_w2",
           "index": 2,
           "term": "Salary increase",
-          "phonetic": "/ˈsæləri ˈɪŋkriːs/, /weɪdʒ ˈɪŋkriːs/",
-          "pos": "",
-          "meaning": "Sự tăng lương.",
+          "phonetic": "/ˈsæləri ɪnˈkriːs/",
+          "pos": "(n.phrase)",
+          "meaning": "Sự tăng lương",
           "synonyms": [
             "Pay increase"
           ],
@@ -1687,10 +1687,10 @@
         {
           "id": "d8_w2",
           "index": 2,
-          "term": "Mergers and Acquisitions",
-          "phonetic": "/ˈmɜːrdʒər/, /ˌækwɪˈzɪʃn/",
-          "pos": "",
-          "meaning": "Sáp nhập & thâu tóm.",
+          "term": "Mergers and Acquisitions (M&A)",
+          "phonetic": "/ˈmɜːrdʒərz ənd ˌækwɪˈzɪʃnz/",
+          "pos": "(n.phrase)",
+          "meaning": "Sáp nhập và thâu tóm doanh nghiệp",
           "synonyms": [],
           "examples": [],
           "raw_text": "2. Mergers and Acquisitions \n/ˈmɜːrdʒər/ /ˌækwɪˈzɪʃn/: Sáp nhập & thâu tóm."
@@ -1921,10 +1921,10 @@
         {
           "id": "d9_w6",
           "index": 6,
-          "term": "Conveniently",
-          "phonetic": "/kənˈviːniəntli  ˈləʊkeɪtɪd/, /ˈsentrəli  ˈləʊkeɪtɪd/",
-          "pos": "",
-          "meaning": "Tọa lạc vị trí thuận tiện.",
+          "term": "Conveniently located",
+          "phonetic": "/kənˈviːniəntli ˈləʊkeɪtɪd/",
+          "pos": "(adj.phrase)",
+          "meaning": "Tọa lạc ở vị trí thuận tiện",
           "synonyms": [],
           "examples": [],
           "raw_text": "6. Conveniently\n \nlocated\n /kənˈviːniəntli  ˈləʊkeɪtɪd/: Tọa lạc vị trí thuận tiện.\n    \nCentrally located \n/ˈsentrəli  ˈləʊkeɪtɪd/: Tọa lạc ở vị trí trung tâm."
@@ -2106,10 +2106,10 @@
         {
           "id": "d10_w4",
           "index": 4,
-          "term": "Exceed",
-          "phonetic": "/ɪkˈsiːd/, /sərˈpæs/, /ˈʃerhəʊldər ˌekspekˈteɪʃn/",
-          "pos": "",
-          "meaning": "Vượt quá sự kì vọng của cổ đông.",
+          "term": "Exceed (shareholder expectations)",
+          "phonetic": "/ɪkˈsiːd/",
+          "pos": "(v)",
+          "meaning": "Vượt quá kỳ vọng của cổ đông",
           "synonyms": [
             "Surpass"
           ],
@@ -2130,10 +2130,10 @@
         {
           "id": "d10_w6",
           "index": 6,
-          "term": "Highly/Widely regarded",
-          "phonetic": "/rɪˈɡɑːrd/",
-          "pos": "",
-          "meaning": "Được khen ngợi, đề cao/ được nhiều người nể trọng.",
+          "term": "Highly / Widely regarded",
+          "phonetic": "/ˈhaɪli rɪˈɡɑːrdɪd/",
+          "pos": "(adj.phrase)",
+          "meaning": "Được đánh giá cao, được kính trọng",
           "synonyms": [],
           "examples": [],
           "raw_text": "6. Highly/Widely regarded\n /rɪˈɡɑːrd/: Được khen ngợi, đề cao/ được nhiều người nể trọng."
@@ -2463,10 +2463,10 @@
         {
           "id": "d12_w2",
           "index": 2,
-          "term": "S.O be likely",
-          "phonetic": "/ˈlaɪkli/",
-          "pos": "",
-          "meaning": "Ai đó rất có thể/có khả năng làm gì",
+          "term": "S.O be likely to do S.TH",
+          "phonetic": "/bi ˈlaɪkli tuː duː/",
+          "pos": "(phrase)",
+          "meaning": "Ai đó rất có thể / có khả năng làm gì",
           "synonyms": [],
           "examples": [
             {
@@ -2512,10 +2512,10 @@
         {
           "id": "d12_w5",
           "index": 5,
-          "term": "In honor",
-          "phonetic": "/ˈɑːnər  ʌv/, /peɪ ˈhɑːmɪdʒ/, /ɪn ˌselɪˈbreɪʃn  ʌv/",
-          "pos": "",
-          "meaning": "Tôn vinh, tưởng niệm",
+          "term": "In honor of S.O/S.TH",
+          "phonetic": "/ɪn ˈɑːnər əv/",
+          "pos": "(prep.phrase)",
+          "meaning": "Nhằm tôn vinh, tưởng niệm ai/cái gì",
           "synonyms": [],
           "examples": [
             {
@@ -2668,7 +2668,7 @@
           "term": "Outstanding",
           "phonetic": "/aʊtˈstændɪŋ/, /ˈeksələnt/, /ɪkˈsepʃənl/, /suːˈpɜːrb/, /ˌʌnˈpeɪd/",
           "pos": "(adj)",
-          "meaning": "Dịch vụ nổi bật, xuất sắc (",
+          "meaning": "Dịch vụ nổi bật, xuất sắc",
           "synonyms": [
             "Excellent",
             "Exceptional",
@@ -2706,10 +2706,10 @@
         {
           "id": "d13_w5",
           "index": 5,
-          "term": "Các giới từ và trạng từ",
-          "phonetic": "/wɪˈðɪn/, /liːst/, /əˈprɑːksɪmətli/, /ˈrʌfli/",
-          "pos": "",
-          "meaning": "Trong suốt",
+          "term": "Prepositions & Adverbs + Numbers",
+          "phonetic": "/fɔːr/, /wɪˈðɪn/, /ˈoʊvər/",
+          "pos": "(grammar)",
+          "meaning": "Giới từ / trạng từ đi kèm số lượng/thời gian (Trong suốt, Trong vòng, Hơn, Lên đến...)",
           "synonyms": [
             "Over",
             "Almost",
@@ -2854,9 +2854,9 @@
           "id": "d14_w1",
           "index": 1,
           "term": "Lower",
-          "phonetic": "/ˈləʊ.ər/, /rɪˈduːs/, /fɔːl/, /dɪˈkriːs/, /drɑːp/, /dɪˈklaɪn/",
-          "pos": "",
-          "meaning": "Thấp hơn",
+          "phonetic": "/ˈləʊər/",
+          "pos": "(adj / v)",
+          "meaning": "Thấp hơn (adj) / Hạ thấp, giảm bớt (v)",
           "synonyms": [
             "Reduce",
             "Fall",
@@ -2876,9 +2876,9 @@
           "id": "d14_w2",
           "index": 2,
           "term": "Reach peak / At peak",
-          "phonetic": "/riːtʃ  piːk/, /æt  piːk/",
-          "pos": "",
-          "meaning": "Đạt tới đỉnh điểm",
+          "phonetic": "/riːtʃ piːk/",
+          "pos": "(collocation)",
+          "meaning": "Đạt tới đỉnh điểm / Ở mức đỉnh cao",
           "synonyms": [],
           "examples": [
             {
@@ -3091,10 +3091,10 @@
         {
           "id": "d15_w4",
           "index": 4,
-          "term": "Take advantage",
-          "phonetic": "/ədˈvɑːn.tɪdʒ/",
-          "pos": "",
-          "meaning": "Tận dụng, lợi dụng cái gì.",
+          "term": "Take advantage of S.TH",
+          "phonetic": "/teɪk ədˈvæntɪdʒ əv/",
+          "pos": "(idiom)",
+          "meaning": "Tận dụng, khai thác lợi thế của cái gì",
           "synonyms": [],
           "examples": [
             {
@@ -3108,9 +3108,9 @@
           "id": "d15_w5",
           "index": 5,
           "term": "Come/Go/Take/Put into effect",
-          "phonetic": "/ɪˈfekt/",
-          "pos": "",
-          "meaning": "Có hiệu lực thi hành.",
+          "phonetic": "/ɪntuː ɪˈfekt/",
+          "pos": "(phrase)",
+          "meaning": "Có hiệu lực thi hành, đi vào áp dụng",
           "synonyms": [],
           "examples": [
             {
@@ -3243,9 +3243,9 @@
         {
           "id": "d16_w1",
           "index": 1,
-          "term": "Lack",
-          "phonetic": "/læk/, /ˈʃɔːrtɪdʒ/, /ˈʃɔːrtfɔːl/, /ˈskersəti/, /dɜːrθ/, /ˈdefɪsɪt/, /ˈsɜːrplʌs/, /ˌʌndərˈstændɪŋ/, /ˈnɑːlɪdʒ/, /ˌɪnfərˈmeɪʃn/, /ˈkɑːnfɪdəns/, /ɪkˈspɪriəns/, /fuːd/, /ˈwɔːtər/, /ˈhaʊzɪŋ/, /ˈʃɔːrtɪdʒ/, /ˈplenti/",
-          "pos": "(n)",
+          "term": "Lack of S.TH",
+          "phonetic": "/læk əv/",
+          "pos": "(collocation)",
           "meaning": "Sự thiếu hụt, thâm hụt cái gì.><",
           "synonyms": [
             "Shortage",
@@ -3257,8 +3257,8 @@
           ],
           "examples": [
             {
-              "en": "There is no shortage of job opportunities in the town.",
-              "vi": "Vẫn còn nhiều cơ hội việc làm trong thị trấn"
+              "en": "The proposal was delayed due to a lack of funding.",
+              "vi": "Bản đề xuất đã bị trì hoãn do thiếu kinh phí."
             }
           ],
           "raw_text": "1. Lack\n /læk/ (n)\n of S.TH \n= \nShortage\n \nof \n/ˈʃɔːrtɪdʒ/ ~ \nShortfall\n \nin/of\n /ˈʃɔːrtfɔːl/\n \n= \nScarcity\n /ˈskersəti/ = \nDearth of \n/dɜːrθ/\n \n= \nDeficit\n /ˈdefɪsɪt/: Sự thiếu hụt, thâm hụt cái gì.>< \nSurplus\n /ˈsɜːrplʌs/ (n): Sự dư thừa, thặng dư\n.\nA lack of\n+ \nunderstanding \n/ˌʌndərˈstændɪŋ/: Thiếu sự hiểu biết\n+ \nknowledge\n /ˈnɑːlɪdʒ/: Thiếu kiến thức\n+ \ninformation \n/ˌɪnfərˈmeɪʃn/: Thiếu thông tin\n+ \nconfidence \n/ˈkɑːnfɪdəns/: Thiếu sự tự tin\n+ \nexperience\n /ɪkˈspɪriəns/: Thiếu kinh nghiệm\nFood/Housing/Water shortage \n/fuːd/ - /ˈwɔːtər/ - /ˈhaʊzɪŋ/ (n.phrase): Thiếu đồ ăn/ nhà ở/ nước uống\n=> \nThere is no shortage of \n/ˈʃɔːrtɪdʒ/ = \nThere are plenty\n \nof\n /ˈplenti/: Vẫn còn nhiều cái gì.\nEg: \nThere is no shortage of\n job opportunities in the town. \n(\nVẫn còn nhiều\n cơ hội việc làm trong thị trấn)"
@@ -3292,11 +3292,7 @@
           "examples": [
             {
               "en": "Tommy failed to provide satisfactory answers to the reporters' questions.",
-              "vi": "Tommy không thể đưa ra được câu trả lời thỏa đáng cho các câu hỏi của phóng viên"
-            },
-            {
-              "en": "She is never satisfied with what she's got.",
-              "vi": "Cô ta chưa bao giờ hài lòng với cái mà cô ấy có"
+              "vi": "Tommy không thể đưa ra được câu trả lời thỏa đáng cho các câu hỏi của phóng viên."
             }
           ],
           "raw_text": "3. Satisfactory\n /ˌsætɪsˈfæktəri/ (adj) = \nAcceptable\n /əkˈseptəbl/: Thỏa đáng.\n\n>< Unsatisfactory\n /ˌʌnˌsætɪsˈfæktəri/: Không thỏa đáng.\n\n# Be satisfied\n /ˈsætɪsfaɪd/ (adj) \nwith S.TH:\n Hài lòng, thỏa mãn với.\n\nA satisfactory\n+ \nanswer\n /ˈænsər/: Câu trả lời thỏa đáng\n+ \nexplanation \n/ˌekspləˈneɪʃn/: Lời giải thích thỏa đáng\n+ \nsolution \n/səˈluːʃn/: Cách giải quyết thỏa đáng\n+ \nconclusion \n/kənˈkluːʒn/: Kết luận thỏa đáng\nEg: \nTommy failed to provide \nsatisfactory answers\n to the reporters' questions.\n\n(Tommy không thể đưa ra được \ncâu trả lời thỏa đáng\n \ncho các câu hỏi của phóng viên)\nEg: \nShe \nis\n never \nsatisfied with\n what she's got.\n\n(Cô ta chưa bao giờ \nhài lòng với\n cái mà cô ấy có)"
@@ -3749,10 +3745,10 @@
         {
           "id": "d18_w5",
           "index": 5,
-          "term": "Keep S.O informed/posted",
-          "phonetic": "/ɪnˈfɔːrmd/, /ˈpəʊst/",
-          "pos": "",
-          "meaning": "Cập nhật cho ai những tin mới nhất (về cái gì)",
+          "term": "Keep S.O informed / posted",
+          "phonetic": "/kiːp ɪnˈfɔːrmd/",
+          "pos": "(collocation)",
+          "meaning": "Cập nhật thông tin mới nhất cho ai",
           "synonyms": [],
           "examples": [
             {
@@ -3856,9 +3852,9 @@
           "id": "d19_w1",
           "index": 1,
           "term": "Retail sales",
-          "phonetic": "/ˈriːteɪl seɪlz/, /həʊl seɪlz/",
-          "pos": "",
-          "meaning": "Bán lẻ",
+          "phonetic": "/ˈriːteɪl seɪlz/",
+          "pos": "(n.phrase)",
+          "meaning": "Doanh số bán lẻ",
           "synonyms": [],
           "examples": [],
           "raw_text": "1. Retail sales \n/ˈriːteɪl seɪlz/: Bán lẻ\n>< Whole sales \n/həʊl seɪlz/: Bán sỉ\nRetail price/outlet/trade:\n Giá/Đại lý/Nghề bán lẻ"
@@ -4453,10 +4449,10 @@
         {
           "id": "d22_w2",
           "index": 2,
-          "term": "Worker/Employee/Staff/Labor productivity",
-          "phonetic": "/ˌprəʊdʌkˈtɪvəti/",
-          "pos": "",
-          "meaning": "Năng suất làm việc của nhân viên.",
+          "term": "Worker / Employee productivity",
+          "phonetic": "/ˌprɑːdʌkˈtɪvəti/",
+          "pos": "(n.phrase)",
+          "meaning": "Năng suất làm việc của nhân viên",
           "synonyms": [],
           "examples": [
             {
@@ -4503,10 +4499,10 @@
         {
           "id": "d22_w5",
           "index": 5,
-          "term": "Participate",
-          "phonetic": "/pɑːrˈtɪsɪpeɪt  ɪn/, /teɪk  pɑːrt  ɪn/, /dʒɔɪn/, /pɑːrˈteɪk  ɪn/, /bi  ɪnˈvɑːlvd  ɪn/, /ɪnˈɡeɪdʒ  ɪn/, /ˌkɑːmpəˈtɪʃn/, /ˈkɑːntest/, /dɪˈskʌʃn/, /ˌdemənˈstreɪʃn/, /faɪt/, /reɪs/, /kæmˈpeɪn/, /ækˈtɪvətiz/",
-          "pos": "",
-          "meaning": "Tham gia vào cái gì.",
+          "term": "Participate in",
+          "phonetic": "/pɑːrˈtɪsɪpeɪt ɪn/",
+          "pos": "(v.phrase)",
+          "meaning": "Tham gia vào cái gì",
           "synonyms": [
             "Take part in",
             "Join",
@@ -4629,17 +4625,17 @@
         {
           "id": "d23_w1",
           "index": 1,
-          "term": "On behalf",
-          "phonetic": "/bi:hɑ:f/, /ˌreprɪˈzent/",
-          "pos": "",
-          "meaning": "Thay mặt, đại diện cho",
+          "term": "On behalf of S.O",
+          "phonetic": "/ɑːn bɪˈhæf əv/",
+          "pos": "(prep.phrase)",
+          "meaning": "Thay mặt, đại diện cho ai",
           "synonyms": [
             "Represent"
           ],
           "examples": [
             {
-              "en": "The President was represented at the ceremony by the Vice-President.",
-              "vi": "Phó Chủ Tịch đã thay mặt Chủ Tịch để phát biểu tại nghi thức vừa qua"
+              "en": "On behalf of the company, I would like to thank you for your dedication.",
+              "vi": "Thay mặt công ty, tôi xin chân thành cảm ơn sự cống hiến của quý vị."
             }
           ],
           "raw_text": "1. On behalf\n /bi:hɑ:f/ \nof S.O \n= \nRepresent\n /ˌreprɪˈzent/\n S.O: \nThay mặt, đại diện choEg: The President was\n \nrepresented\n \nat the ceremony by the Vice-President.\n(Phó Chủ Tịch đã \nthay mặt\n Chủ Tịch để phát biểu tại nghi thức vừa qua)."
@@ -4882,10 +4878,10 @@
         {
           "id": "d24_w2",
           "index": 2,
-          "term": "Be/come equipped",
-          "phonetic": "/ɪˈkwɪpt/, /ˈaʊtfɪtd/",
-          "pos": "",
-          "meaning": "Được trang bị với cái gì.",
+          "term": "Be/come equipped with S.TH",
+          "phonetic": "/bi ɪˈkwɪpt wɪð/",
+          "pos": "(phrase)",
+          "meaning": "Được trang bị với cái gì",
           "synonyms": [
             "Be outfitted"
           ],
@@ -6031,10 +6027,10 @@
         {
           "id": "d30_w3",
           "index": 3,
-          "term": "Play/Assume a (key/leading/central/crucial/vital) role of/in",
-          "phonetic": "",
-          "pos": "",
-          "meaning": "Đóng/đảm nhiệm vai trò (then chốt/hàng đầu/trọng tâm/quan trọng/thiết yếu)",
+          "term": "Play/Assume a crucial role in",
+          "phonetic": "/pleɪ ə roʊl ɪn/",
+          "pos": "(collocation)",
+          "meaning": "Đóng / đảm nhiệm vai trò then chốt trong việc gì",
           "synonyms": [],
           "examples": [
             {
@@ -6065,10 +6061,10 @@
         {
           "id": "d30_w5",
           "index": 5,
-          "term": "Interfere",
-          "phonetic": "/ˌɪntərˈfɪr/, /ˌɪntəˈrʌpt/, /ˌɪntərˈækt/",
-          "pos": "",
-          "meaning": "can thiệp, gây cản trở chuyện gì",
+          "term": "Interfere with",
+          "phonetic": "/ˌɪntərˈfɪr wɪð/",
+          "pos": "(v.phrase)",
+          "meaning": "Can thiệp, gây cản trở chuyện gì",
           "synonyms": [],
           "examples": [
             {
