@@ -292,7 +292,7 @@
           "term": "Issue",
           "phonetic": "/ˈɪʃuː/, /rɪˈliːs/, /lɔːntʃ/, /rəʊl aʊt/, /ˈpʌblɪʃ/, /ɪˈdɪʃn/",
           "pos": "(v/n)",
-          "meaning": "(v): Phát hành",
+          "meaning": "Phát hành",
           "synonyms": [
             "Release",
             "Launch",
@@ -335,7 +335,7 @@
           "term": "Process",
           "phonetic": "/ˈprɑːses/, /ˈprɑːɡrəs/, /sɑːlv/, /rɪˈzɑːlv/, /ˈhændl/, /diːl wɪθ/, /ˈsetl/",
           "pos": "(v/n)",
-          "meaning": "/ˈprɑːɡrəs/: Qui trình, quá trình",
+          "meaning": "Qui trình, quá trình",
           "synonyms": [
             "Progress",
             "Solve",
@@ -517,7 +517,7 @@
           "term": "Fill out",
           "phonetic": "/kəmˈpliːt/",
           "pos": "(v)",
-          "meaning": "Điền vào, hoàn thành (mẫu đơn) ~",
+          "meaning": "Điền vào, hoàn thành (mẫu đơn)",
           "synonyms": [
             "Complete"
           ],
@@ -859,8 +859,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The train",
-              "vi": ""
+              "en": "The train is yet to come.",
+              "vi": "Tàu chưa về đến ga"
             }
           ],
           "raw_text": "1. Have/ Has/ Be yet to do S.TH:\n Chưa làm gì.\n    Eg: The train \nis yet to\n come.\n \n(Tàu chưa về đến ga)"
@@ -1044,8 +1044,8 @@
           ],
           "examples": [
             {
-              "en": "Comparable experience",
-              "vi": ""
+              "en": "Comparable experience in a related field.",
+              "vi": "Kinh nghiệm tương tự trong lĩnh vực có liên quan"
             }
           ],
           "raw_text": "2. Comparable\n /ˈkɑːmpərəbl/ (adj) = \nSimilar\n /ˈsɪmələr/: Tương tự\n    Eg: \nComparable experience\n in a related field.\n (Kinh nghiệm tương tự trong lĩnh vực có liên quan)"
@@ -1072,7 +1072,7 @@
           "term": "Price quote",
           "phonetic": "/praɪs  kwəʊt/, /praɪs  kwəʊˈteɪʃn/, /ˈestɪmət/",
           "pos": "",
-          "meaning": "/praɪs kwəʊt/ (hoặc:",
+          "meaning": "Bảng báo giá",
           "synonyms": [
             "Estimate"
           ],
@@ -2069,7 +2069,7 @@
           "examples": [
             {
               "en": "Across America",
-              "vi": ""
+              "vi": "Khắp nước Mỹ."
             }
           ],
           "raw_text": "1. Across\n /əˈkrɔːs/ (Prep.) = \nThroughout\n /θruːˈaʊt/\n + nơi chốn\n: Khắp..\nEg:\n Across America\n: Khắp nước Mỹ."
@@ -2084,8 +2084,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Among",
-              "vi": ""
+              "en": "Among the leading companies.",
+              "vi": "Trong số những công ty hàng đầu"
             }
           ],
           "raw_text": "2. Among\n /əˈmʌŋ/ (Prep.) \n+ Danh từ số nhiều (Plural Noun)\n: Trong số, giữa ...\nEg: \nAmong\n the leading \ncompanies\n.\n(Trong số những công ty hàng đầu)"
@@ -2279,8 +2279,8 @@
           ],
           "examples": [
             {
-              "en": "Deal with the correspondence",
-              "vi": ""
+              "en": "Deal with the correspondence promptly and efficiently.",
+              "vi": "Xử lý thư từ liên hệ 1 cách nhanh chóng và hiệu quả"
             }
           ],
           "raw_text": "1. Promptly\n /ˈprɑːmptli/ (adv)\n(1) \n= \nQuickly\n /ˈkwɪkli/ = \nSwiftly\n = \nFast\n = \nRapidly\n /ˈræpɪdli/: 1 cách nhanh chóng.\n(2)\n = \nPunctually \n/ˈpʌŋktʃuəli/ = \nOn time\n: Đúng giờ.\n(3)\n = \nImmediately \n/ɪˈmiːdiətli/: Ngay lập tức.\nE.g\n: \nDeal with the correspondence \npromptly\n and \nefficiently\n.\n(Xử lý thư từ liên hệ 1 cách nhanh chóng và hiệu quả)."
@@ -2297,8 +2297,8 @@
           ],
           "examples": [
             {
-              "en": "Resources must be used",
-              "vi": ""
+              "en": "Resources must be used efficiently to avoid waste.",
+              "vi": "Các nguồn tài nguyên phải được sử dụng hiệu quả để tránh lãng phí"
             }
           ],
           "raw_text": "2. Efficiently\n /ɪˈfɪʃntli/ (adv) = \nEffectively\n /ɪˈfektɪvli/: 1 cách hiệu quả.\nWork/ Communicate/ Deal with + effectively\n: Làm việc/ Giao tiếp/ Xử lý 1 CÁCH HIỆU QUẢ.\nE.g\n: \nResources must be used \nefficiently\n to avoid waste.\n(Các nguồn tài nguyên phải được sử dụng hiệu quả để tránh lãng phí)."
@@ -2326,8 +2326,8 @@
           ],
           "examples": [
             {
-              "en": "The bank stepped in to save the company from",
-              "vi": ""
+              "en": "The bank stepped in to save the company from financial ruin.",
+              "vi": "Ngân hàng đã nhúng tay vào để cứu công ty từ việc phá sản"
             }
           ],
           "raw_text": "4. Financial ruin \n(n ) /faɪˈnænʃl ˈruːɪn/ ~ \nBankruptcy\n /ˈbæŋkrʌptsi/: Sự phá sản, hủy hoại về tài chính.\nFall into ruin:\n Bị đổ nát, hủy hoại nghiêm trọng.\nOn the edge/ brink/ verge of ruin\n: Trên bờ vực của sự phá sản, trên đà phá sản.\nE.g\n: \nThe bank stepped in to save the company from \nfinancial ruin\n.\n(Ngân hàng đã nhúng tay vào để cứu công ty từ việc phá sản)."
@@ -2454,8 +2454,8 @@
           ],
           "examples": [
             {
-              "en": "Thanks to",
-              "vi": ""
+              "en": "Thanks to your donation, we could help a lot of people in need.",
+              "vi": "Nhờ vào khoản tài trợ của bạn, chúng tôi đã có thể giúp đỡ cho rất nhiều người gặp khó khăn"
             }
           ],
           "raw_text": "1. Thanks to \n/θæŋks tu/\n \n(prep.) \n+ V_ing/N\n(1):\n Nhờ vào việc gì\n(2)\n = \nBecause of\n =\n Due to \n= \nOwing to \n=\n On account of \n= \nIn light of + Ving/N\n: Do bởi\n\nE.g\n: \nThanks to\n your donation, we could help a lot of people in need.\n\n(\nNhờ vào\n khoản tài trợ của bạn, chúng tôi đã có thể giúp đỡ cho rất nhiều người gặp khó khăn\n)"
@@ -2470,8 +2470,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "She will",
-              "vi": ""
+              "en": "She will be likely to apply for the assistant position at Manson company.",
+              "vi": "Cô ấy rất có thể sẽ nộp đơn vào vị trí trợ lý tại công ty Manson"
             }
           ],
           "raw_text": "2. S.O be likely\n /ˈlaɪkli/ \nto do S.TH\n: Ai đó rất có thể/có khả năng làm gì\n\nE.g\n: \nShe will \nbe likely to\n apply for the assistant position at Manson company.\n\n(Cô ấy \nrất có thể\n sẽ nộp đơn vào vị trí trợ lý tại công ty Manson)"
@@ -2503,8 +2503,8 @@
           ],
           "examples": [
             {
-              "en": "You are",
-              "vi": ""
+              "en": "You are cordially invited to attend a retirement party in honor of Mr. Kim for his significant contribution over the past 30 years.",
+              "vi": "Bạn được chân thành mời đến dự bữa tiệc ăn mừng về hưu để vinh danh ông Kim cho những đóng góp đáng kể của ông ấy trong suốt hơn 30 năm qua"
             }
           ],
           "raw_text": "4. Cordially\n /ˈkɔːrdʒəli/ (Adv) = \nSincerely\n /sɪnˈsɪrli/: 1 cách chân thành\n+ Invite\n /ɪnˈvaɪt/ (v): Chân thành mời\n\n+ Thanks \n/θæŋks/ \nfor\n: Chân thành cảm ơn\n\n+ Apologize\n /əˈpɑːlədʒaɪz/ \nfor\n: Chân thành xin lỗi\n\nE.g\n: \nYou are \ncordially invited\n to attend a retirement party in honor of Mr. Kim for his significant contribution over the past 30 years.\n\n(Bạn được \nchân thành mời\n đến dự bữa tiệc ăn mừng về hưu để vinh danh ông Kim cho những đóng góp đáng kể của ông ấy trong suốt hơn 30 năm qua)"
@@ -2519,8 +2519,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "A ceremony",
-              "vi": ""
+              "en": "A ceremony in honor of those killed in the explosion.",
+              "vi": "Nghi thức tưởng niệm những người đã bị giết trong vụ nổ bom"
             }
           ],
           "raw_text": "5. In honor\n \nof\n \nS.O\n /ˈɑːnər  ʌv/ =\n To pay homage to S.O \n/peɪ ˈhɑːmɪdʒ/\n:\n Tôn vinh, tưởng niệm\n\nIn celebration\n \nof \n/ɪn ˌselɪˈbreɪʃn  ʌv/\n: \nĂn mừng, kỉ niệm\n\nE.g\n: \nA ceremony \nin honor of\n those killed in the explosion.\n\n(Nghi thức \ntưởng niệm\n những người đã bị giết trong vụ nổ bom)"
@@ -2709,7 +2709,7 @@
           "term": "Các giới từ và trạng từ",
           "phonetic": "/wɪˈðɪn/, /liːst/, /əˈprɑːksɪmətli/, /ˈrʌfli/",
           "pos": "",
-          "meaning": "Các giới từ và trạng từ",
+          "meaning": "Trong suốt",
           "synonyms": [
             "Over",
             "Almost",
@@ -2866,8 +2866,8 @@
           ],
           "examples": [
             {
-              "en": "They",
-              "vi": ""
+              "en": "They lowered the asking price of their house.",
+              "vi": "Họ đã giảm giá treo bán của ngôi nhà"
             }
           ],
           "raw_text": "1. Lower \n/ˈləʊ.ər/:\n\n - Adj\n: Thấp hơn\n\n- Verb\n: Giảm ( = \nReduce\n /rɪˈduːs/ = \nFall \n/fɔːl/ = \nDecrease\n /dɪˈkriːs/ = \nDrop\n /drɑːp/ = \nDecline \n/dɪˈklaɪn/)\nEg: \nThey \nlower\ned the asking price of their house. \n(Họ đã giảm giá treo bán của ngôi nhà)"
@@ -2882,8 +2882,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The Beatles were",
-              "vi": ""
+              "en": "The Beatles were at their peak during the 1960s.",
+              "vi": "Đỉnh điểm thành công của ban nhạc The Beatles là vào những năm 60"
             }
           ],
           "raw_text": "2. Reach\n \npeak / At peak\n /riːtʃ  piːk/,  /æt  piːk/: Đạt tới đỉnh điểm\nEg: \nThe Beatles were \nat\n their \npeak\n during the 1960s.\n\n(Đỉnh điểm thành công của ban nhạc The Beatles là vào những năm 60)"
@@ -2898,8 +2898,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "I'm",
-              "vi": ""
+              "en": "I'm eager to see the results.",
+              "vi": "Tôi háo hức muốn xem kết quả ra sao"
             }
           ],
           "raw_text": "3. S.O be eager\n /ˈiː.ɡər/ (Adj) \nto do S.TH \n= \nS.O be keen\n /kiːn/ \nto do S.TH\n = \nBe keen on doing S.TH: \nAi đó háo hức làm gì\n\n📍Eagerly await/wait for\n: háo hức mong chờ\nEg: \nI'm \neager to\n see the results. \n(Tôi háo hức muốn xem kết quả ra sao)"
@@ -2917,8 +2917,8 @@
           ],
           "examples": [
             {
-              "en": "The company is reducing its workforce by",
-              "vi": ""
+              "en": "The company is reducing its workforce by firing 500 employees.",
+              "vi": "Công ty đang cắt giảm nhân lực bằng cách sa thải 500 nhân viên"
             }
           ],
           "raw_text": "4. Fire\n /faɪər/ (v) = \nSack\n /sæk/ = \nDismiss\n /dɪˈsmɪs/ = \nLay S.O off\n /ˈleɪ ɒf/: Sa thải ai\nEg: \nThe company is reducing its workforce by \nfiring\n 500 employees.\n\n(Công ty đang cắt giảm nhân lực bằng cách sa thải 500 nhân viên)"
@@ -2935,8 +2935,8 @@
           ],
           "examples": [
             {
-              "en": "Are",
-              "vi": ""
+              "en": "Are you satisfied with the new arrangement?",
+              "vi": "Bạn có cảm thấy hài lòng với sự bổ nhiệm mới không?"
             }
           ],
           "raw_text": "5. S.O be satisfied\n /ˈsæt.ɪs.faɪd/ (adj)\n with S.TH:\n Hài lòng, thỏa mãn với\n\n   # Satisfactory \n/ˌsætɪsˈfæktəri/ (adj) =\n Acceptable \n/əkˈseptəbl/\n: \nThỏa đáng\n\n+ answer \n/ˈænsər/: câu trả lời (thỏa đáng)\n+ \nexplanation \n/ˌekspləˈneɪʃn/: lời giải thích (thỏa đáng)\n\n+ solution \n/səˈluːʃn/: giải pháp (thỏa đáng)\n+ \nconclusion \n/kənˈkluːʒn/: lời kết luận (thỏa đáng)\nEg: \nAre\n you \nsatisfied with\n the new arrangement?\n\n(Bạn có cảm thấy hài lòng với sự bổ nhiệm mới không?)"
@@ -3098,8 +3098,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "She",
-              "vi": ""
+              "en": "She takes advantage of the children's absence to tidy their rooms.",
+              "vi": "Cô ấy tận dụng việc những đứa trẻ vắng mặt để lau dọn phòng của chúng"
             }
           ],
           "raw_text": "4. Take advantage \n/ədˈvɑːn.tɪdʒ/ \nof S.TH:\n Tận dụng, lợi dụng cái gì.\n• \nTake advantage of the promotion\n: Tận dụng chương trình ưu đãi\n• \nTake advantage of available resources\n: Tận dụng những tài nguyên có sẵn\nEg: \nShe \ntakes advantage of\n the children's absence to tidy their rooms.\n(Cô ấy \ntận dụng\n việc những đứa trẻ vắng mặt để lau dọn phòng của chúng)"
@@ -3114,8 +3114,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The new policy will",
-              "vi": ""
+              "en": "The new policy will come into effect next month.",
+              "vi": "Chính sách mới sẽ có hiệu lực thi hành vào tháng tới"
             }
           ],
           "raw_text": "5. Come/Go/Take/Put into effect\n /ɪˈfekt/: Có hiệu lực thi hành.\nEg: \nThe new policy will \ncome into effect\n next month.\n(Chính sách mới sẽ \ncó hiệu lực thi hành\n vào tháng tới)"
@@ -3257,8 +3257,8 @@
           ],
           "examples": [
             {
-              "en": "There is no shortage of",
-              "vi": ""
+              "en": "There is no shortage of job opportunities in the town.",
+              "vi": "Vẫn còn nhiều cơ hội việc làm trong thị trấn"
             }
           ],
           "raw_text": "1. Lack\n /læk/ (n)\n of S.TH \n= \nShortage\n \nof \n/ˈʃɔːrtɪdʒ/ ~ \nShortfall\n \nin/of\n /ˈʃɔːrtfɔːl/\n \n= \nScarcity\n /ˈskersəti/ = \nDearth of \n/dɜːrθ/\n \n= \nDeficit\n /ˈdefɪsɪt/: Sự thiếu hụt, thâm hụt cái gì.>< \nSurplus\n /ˈsɜːrplʌs/ (n): Sự dư thừa, thặng dư\n.\nA lack of\n+ \nunderstanding \n/ˌʌndərˈstændɪŋ/: Thiếu sự hiểu biết\n+ \nknowledge\n /ˈnɑːlɪdʒ/: Thiếu kiến thức\n+ \ninformation \n/ˌɪnfərˈmeɪʃn/: Thiếu thông tin\n+ \nconfidence \n/ˈkɑːnfɪdəns/: Thiếu sự tự tin\n+ \nexperience\n /ɪkˈspɪriəns/: Thiếu kinh nghiệm\nFood/Housing/Water shortage \n/fuːd/ - /ˈwɔːtər/ - /ˈhaʊzɪŋ/ (n.phrase): Thiếu đồ ăn/ nhà ở/ nước uống\n=> \nThere is no shortage of \n/ˈʃɔːrtɪdʒ/ = \nThere are plenty\n \nof\n /ˈplenti/: Vẫn còn nhiều cái gì.\nEg: \nThere is no shortage of\n job opportunities in the town. \n(\nVẫn còn nhiều\n cơ hội việc làm trong thị trấn)"
@@ -3273,8 +3273,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Inquiries should be",
-              "vi": ""
+              "en": "Inquiries should be directed to Mark.",
+              "vi": "Các câu hỏi thắc mắc nên được chuyển trực tiếp đến Mark"
             }
           ],
           "raw_text": "2. Direct\n /daɪˈrekt/ (v)\n S.TH to S.O\n: Chuyển trực tiếp cái gì đến cho ai.\nEg: \nInquiries should be \ndirected to\n Mark.\n\n(Các câu hỏi thắc mắc nên được \nchuyển trực tiếp đến\n Mark)"
@@ -3291,12 +3291,12 @@
           ],
           "examples": [
             {
-              "en": "Tommy failed to provide",
-              "vi": ""
+              "en": "Tommy failed to provide satisfactory answers to the reporters' questions.",
+              "vi": "Tommy không thể đưa ra được câu trả lời thỏa đáng cho các câu hỏi của phóng viên"
             },
             {
-              "en": "She",
-              "vi": ""
+              "en": "She is never satisfied with what she's got.",
+              "vi": "Cô ta chưa bao giờ hài lòng với cái mà cô ấy có"
             }
           ],
           "raw_text": "3. Satisfactory\n /ˌsætɪsˈfæktəri/ (adj) = \nAcceptable\n /əkˈseptəbl/: Thỏa đáng.\n\n>< Unsatisfactory\n /ˌʌnˌsætɪsˈfæktəri/: Không thỏa đáng.\n\n# Be satisfied\n /ˈsætɪsfaɪd/ (adj) \nwith S.TH:\n Hài lòng, thỏa mãn với.\n\nA satisfactory\n+ \nanswer\n /ˈænsər/: Câu trả lời thỏa đáng\n+ \nexplanation \n/ˌekspləˈneɪʃn/: Lời giải thích thỏa đáng\n+ \nsolution \n/səˈluːʃn/: Cách giải quyết thỏa đáng\n+ \nconclusion \n/kənˈkluːʒn/: Kết luận thỏa đáng\nEg: \nTommy failed to provide \nsatisfactory answers\n to the reporters' questions.\n\n(Tommy không thể đưa ra được \ncâu trả lời thỏa đáng\n \ncho các câu hỏi của phóng viên)\nEg: \nShe \nis\n never \nsatisfied with\n what she's got.\n\n(Cô ta chưa bao giờ \nhài lòng với\n cái mà cô ấy có)"
@@ -3315,8 +3315,8 @@
           ],
           "examples": [
             {
-              "en": "Our father always treats us very",
-              "vi": ""
+              "en": "Our father always treats us very fairly.",
+              "vi": "Bố của chúng tôi luôn luôn đối xử với chúng tôi rất công bằng"
             }
           ],
           "raw_text": "4. Fairly\n /ˈferli/ (adv) = \nEqually\n /ˈiːkwəli/ = \nEvenly\n /'i:vənli/: Công bằng, như nhau, đều nhau\n+ divide into/ split into/ split up\n: chia (đều)\n\n+ treat S.O\n: đối xử ai (1 cách công bằng)\nEg: \nOur father always treats us very \nfairly\n. \n(Bố của chúng tôi luôn luôn đối xử với chúng tôi rất \ncông bằng\n)\n-> Fair \n/fer/ (adj): Công bằng, thích hợp, thỏa đáng\n\n-> Fair\n (n): Hội chợ\n\nJob fair\n /dʒɑːb fer/ (n.phrase) = \nCareer fair \n/kə'riə fer/: Hội chợ việc làm\n\nTrade fair\n /treɪd fer/: Hội chợ triển lãm thương mại\n\nBook fair\n /bʊk fer/: Hội chợ sách\n\nCraft fair\n /kræft fer/: Hội chợ đồ thủ công mỹ nghệ\n\nAntique fair \n/ænˈtiːk fer/: Hội chợ đồ cổ"
@@ -3336,8 +3336,8 @@
           ],
           "examples": [
             {
-              "en": "She pronounced the word very slowly and",
-              "vi": ""
+              "en": "She pronounced the word very slowly and precisely.",
+              "vi": "Cô ấy phát âm từng từ rất chậm và chính xác"
             }
           ],
           "raw_text": "5. Precisely \n/prɪˈsaɪsli/ (adv)= \nAccurately\n /ˈækjərətli/ = \nExactly \n/ɪɡˈzæktli/: Chính xác\nEg: \nShe pronounced the word very slowly and \nprecisely\n. \n(Cô ấy phát âm từng từ rất chậm và \nchính xác\n)\n\n->\n \nPrecision \n/prɪˈsɪʒn/ (n) = \nAccuracy\n /ˈækjərəsi/ = \nExactness\n /ɪɡˈzæktnəs/: Tính chính xác, độ chính xác"
@@ -3437,12 +3437,12 @@
           "term": "Constant",
           "phonetic": "/ˈkɑːnstənt/, /ˈkɑːnstənt  səˈplaɪ/, /ri'mein ˈkɑːnstənt/",
           "pos": "(adj)",
-          "meaning": "Liên tục, không đổiEg:",
+          "meaning": "Liên tục, không đổi",
           "synonyms": [],
           "examples": [
             {
-              "en": "Crime levels",
-              "vi": ""
+              "en": "Crime levels remain constant.",
+              "vi": "Tỉ lệ tội phạm duy trì không đổi"
             }
           ],
           "raw_text": "1. Constant \n/ˈkɑːnstənt/ (adj): Liên tục, không đổiEg: \nCrime levels \nremain constant\n.\n\n(Tỉ lệ tội phạm \nduy trì không đổi\n)\nConstant supply \n/ˈkɑːnstənt  səˈplaɪ/ (n.phrase): Việc cung ứng liên tục\nRemain\n \nconstant\n /ri'mein ˈkɑːnstənt/: Duy trì không đổi"
@@ -3457,8 +3457,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The equipment is lightweight,",
-              "vi": ""
+              "en": "The equipment is lightweight, portable and easy to store.",
+              "vi": "Thiết bị này thì nhẹ, có thể xách tay và dễ dàng bảo quản"
             }
           ],
           "raw_text": "2. Portable \n/ˈpɔːrtəbl/ (adj) = \nEasy to carry/move\n: Di động, xách tay\nEg: \nThe equipment is lightweight, \nportable\n and easy to store.\n\n(Thiết bị này thì nhẹ, \ncó thể xách tay\n và dễ dàng bảo quản)\nA portable laptop/ camera/ mobile phone/ TV:\n Máy tính/ máy ảnh/ điện thoại di động/ TV xách tay."
@@ -3473,8 +3473,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "She",
-              "vi": ""
+              "en": "She was reluctant to admit she was wrong.",
+              "vi": "Cô ấy thì miễn cưỡng thừa nhận là cô ấy sai"
             }
           ],
           "raw_text": "3. Be reluctant\n /rɪˈlʌktənt/ (adj)\n to do S.TH\n: Miễn cưỡng làm gì\nEg: \nShe \nwas reluctant to\n admit she was wrong.\n\n(Cô ấy thì \nmiễn cưỡng\n thừa nhận là cô ấy sai)\n>< \nBe willing/eager to do S.TH:\n Sẵn lòng/ háo hức làm gì"
@@ -3491,8 +3491,8 @@
           ],
           "examples": [
             {
-              "en": "He",
-              "vi": ""
+              "en": "He resigned as company's vice president after eight years.",
+              "vi": "Anh ta từ chức với tư cách là phó chủ tịch công ty sau 8 năm"
             }
           ],
           "raw_text": "4. Resign\n /rɪˈzaɪn/ (v) \nas S.TH\n: Từ chức với tư cách là ...\nEg: \nHe \nresigned as\n company's vice president after eight years.\n\n(Anh ta \ntừ chức với tư cách là\n phó chủ tịch công ty sau 8 năm)\nResignation \n/rezig'neiʃn/ (n): Sự từ chức\nA resignation letter = A letter of resignation\n: Đơn xin từ chức"
@@ -3516,28 +3516,28 @@
           ],
           "examples": [
             {
-              "en": "The show barely",
-              "vi": ""
+              "en": "The show barely covered its costs.",
+              "vi": "Buổi biểu diễn chi trả vừa đủ các chi phí của nó -> Huề vốn"
             },
             {
-              "en": "The articles",
-              "vi": ""
+              "en": "The articles cover a wide range of subjects.",
+              "vi": "Bài báo bao gồm nhiều chủ đề khác nhau"
             },
             {
-              "en": "The BBC will",
-              "vi": ""
+              "en": "The BBC will cover all the major games of the tournament.",
+              "vi": "Đài BBC sẽ đưa tin về tất cả các trận chính của giải đấu"
             },
             {
-              "en": "Are you fully",
-              "vi": ""
+              "en": "Are you fully covered for fire and theft?",
+              "vi": "Bạn đã được bảo hiểm đầy đủ về hỏa hoạn và trộm cắp chưa?"
             },
             {
-              "en": "The sofa is",
-              "vi": ""
+              "en": "The sofa is covered in plastic.",
+              "vi": "Ghế sofa được che phủ bởi 1 tấm vải nhựa"
             },
             {
-              "en": "I'm busy today. Could you please",
-              "vi": ""
+              "en": "I'm busy today. Could you please cover for me?",
+              "vi": "Hôm nay tôi bận. Bạn có thể làm thay ca cho tôi không?"
             }
           ],
           "raw_text": "5. Cover\n /ˈkʌvər/ (v): Chi trả, trang trải/ Bao gồm/ Đưa tin/ Bảo hiểm/ Che phủ/ Làm thay ca cho ai.\n(1) Chi trả, trang trải (chi phí) = Pay for\n\n\n+ the cost/ expenses/ tuition fees\n: (Trang trải, chi trả) chi phí/học phí.\nEg: The show barely \ncovered\n its costs.\n(Buổi biểu diễn \nchi trả\n vừa đủ các chi phí của nó -> Huề vốn)\n(2) Bao gồm \n= \nInclude \n/ɪnˈkluːd/ = \nConsist\n /kənˈsɪst/ \nof\n = \nBe comprised \n/kəmˈpraɪz/ \nof S.TH\n\nEg: The articles \ncover\n a wide range of subjects.\n(Bài báo \nbao gồm \n nhiều chủ đề khác nhau)\n(3)\n \nĐưa tin \n= \nReport \n/ri'pɔ:t/ \n(on) S.TH \nEg: The BBC will \ncover\n all the major games of the tournament.(Đài BBC sẽ \nđưa tin\n về tất cả các trận chính của giải đấu)\n(4)\n \nBảo hiểm, đảm bảo\n = \nEnsure\n /in'ʃuə/ ~ \nGuarantee\n /,gærən'ti:/\nEg: Are you fully \ncovered\n for fire and theft?\n(Bạn đã được \nbảo hiểm\n đầy đủ về hỏa hoạn và trộm cắp chưa?)\n(5)\n \nChe phủ\n =\n Spread over \n/spred 'ouvə/\n the surface \nEg: The sofa is \ncovered\n in plastic.\n(Ghế sofa được \nche phủ\n bởi 1 tấm vải nhựa)\n(6) Làm thay ca cho ai: Cover for S.O \n= \nCover S.O's shift\n\nE.g: I'm busy today. Could you please \ncover for\n me?\n(Hôm nay tôi bận. Bạn có thể \nlàm thay ca cho\n tôi không?)"
@@ -3756,8 +3756,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Julia requested that the doctor",
-              "vi": ""
+              "en": "Julia requested that the doctor keep her informed of her mother's situation.",
+              "vi": "Julia yêu cầu bác sĩ thông báo cho cô biết tình trạng mới nhất của mẹ cô ấy"
             }
           ],
           "raw_text": "5. Keep S.O informed/posted \n(\nof S.TH\n) /ɪnˈfɔːrmd/ - /ˈpəʊst/: Cập nhật cho ai những tin mới nhất (về cái gì)\nEg: \nJulia requested that the doctor \nkeep her informed of\n her mother's situation.\n\n(Julia yêu cầu bác sĩ \nthông báo cho cô biết\n tình trạng mới nhất của mẹ cô ấy)"
@@ -3892,8 +3892,8 @@
           ],
           "examples": [
             {
-              "en": "Please",
-              "vi": ""
+              "en": "Please pay close attention",
+              "vi": "= listen carefully"
             }
           ],
           "raw_text": "3. S.O pay attention \n/əˈtenʃn/\n to S.TH\n: Ai đó chú ý đến điều gì\nTo pay careful attention to every detail \n= \nMeticulously \n/məˈtɪkjələsli/ (adv): Tỉ mỉ, cẩn trọng\nTo draw/attract attention of S.O\n: Thu hút sự chú ý của ai đó\nEg: \nPlease \npay close attention\n ( = listen carefully) \nto\n what I am saying.\n\n(Vui lòng hãy thật \nchú ý đến\n những cái mà tôi đang nói)"
@@ -4044,12 +4044,12 @@
           ],
           "examples": [
             {
-              "en": "A local farmer",
-              "vi": ""
+              "en": "A local farmer leased them the land.",
+              "vi": "1 nông dân ở địa phương cho họ thuê đất"
             },
             {
-              "en": "Take out a lease on",
-              "vi": ""
+              "en": "Take out a lease on a house.",
+              "vi": "Cho thuê nhà dài hạn"
             }
           ],
           "raw_text": "2. Lease \n/liːs/ (v/n) \n= Rent\n: Thuê/Sự cho thuê, hợp đồng cho thuê\nLease agreement \n/liːs   əˈɡriːmənt/ (N.Phrase) =\n Rental agreement\n: Hợp đồng cho thuê\nLease\n (v)\n S.O S.TH\n: Cho ai thuê cái gì\nEg:\n \nA local farmer \nleased\n them the land. \n(1 nông dân ở địa phương \ncho họ thuê đất\n)\nPhân biệt:\n\n\nLease\n \n(v): Thuê dài hạn (ít nhất 1 năm)\n\nRent\n (v): Thuê ngắn hạn (vài ngày/ở trọ)\n \n🔰 \nCÁC ĐỘNG TỪ HAY ĐI CHUNG:\nTo take out a lease\n (n)\n on S.TH\n: Cho thuê dài hạn cái gì.\nEg: \nTake out a lease on\n a house.\n \n(Cho thuê nhà dài hạn).\nTo sign/enter into a lease\n: Kí hợp đồng cho thuê.\nTo conclude \n/kənˈkluːd/ \na lease\n = \nTo end a lease\n: Chấm dứt hợp đồng cho thuê.\nThe lease expires \n/ɪkˈspaɪər/ \n/\n \nThe lease runs out\n: Hợp đồng cho thuê hết hạn."
@@ -4085,16 +4085,16 @@
           ],
           "examples": [
             {
-              "en": "Food is",
-              "vi": ""
+              "en": "Food is necessary for survival.",
+              "vi": "Thức ăn thì cần thiết cho sự sống còn"
             },
             {
-              "en": "This is a",
-              "vi": ""
+              "en": "This is a necessary consequence of progress.",
+              "vi": "Đây là 1 kết quả không thể tránh khỏi của quá trình này"
             },
             {
-              "en": "It doesn't seem",
-              "vi": ""
+              "en": "It doesn't seem necessary for us to meet.",
+              "vi": "Dường như không thật sự cần thiết là chúng tôi phải gặp nhau"
             }
           ],
           "raw_text": "4. Necessary\n /ˈnesəseri/ (adj): Cần thiết/Chắc chắn xảy ra\n(1) \n= \nEssential\n /ɪˈsenʃl/ = \nCrucial\n /ˈkruːʃl/ = \nCritical\n /ˈkrɪtɪkl/ = \nVital\n /ˈvaɪtl/ = \nIntegral\n /ˈɪntɪɡrəl/ = \nIndispensable \n/ˌɪndɪˈspensəbl/ = \nVery important \n/im'pɔ:tənt/: Cần thiết, thiết yếu, quan trọng\nEg: \nFood is \nnecessary\n for survival.\n\n\n(Thức ăn thì \ncần thiết\n cho sự sống còn)\n(2) \n= \nInevitable\n /ɪnˈevɪtəbl/: Chắc chắn xảy ra, nhất thiết\n= \nUnavoidable\n /ˌʌnəˈvɔɪdəbl/: Không thể tránh khỏi\nEg: \nThis is a \nnecessary\n consequence of progress.\n\n\n(Đây là 1 kết quả \nkhông thể tránh khỏi\n của quá trình này).\nNecessary\n (\nfor S.O\n) \nto do S.TH\n: Cần thiết (cho ai) để làm gì\nEg: \nIt doesn't seem \nnecessary\n for us to meet.\n\n\n(Dường như không thật sự \ncần thiết\n là chúng tôi phải gặp nhau)."
@@ -4440,12 +4440,12 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The money is used for small",
-              "vi": ""
+              "en": "The money is used for small grants to deserving organizations.",
+              "vi": "Tiền thì được sử dụng cho những khoản trợ cấp nhỏ đối với những tổ chức xứng đáng nhận nó"
             },
             {
-              "en": "His wife was always there and he just",
-              "vi": ""
+              "en": "His wife was always there and he just took her for granted.",
+              "vi": "Vợ của anh ta luôn luôn ở đó chờ chồng về, và anh ta coi đó là 1 điều hiển nhiên"
             }
           ],
           "raw_text": "1. Grant \n/ɡrænt/ (v/n): Cấp, nhượng / Trợ cấp\nEg: The money is used for small \ngrants\n \nto deserving organizations.\n\n(Tiền thì được sử dụng cho \nnhững khoản trợ cấp \nnhỏ đối với những tổ chức xứng đáng nhận nó)\n\n\n(1) Federal/Government/Research grant: \nTrợ cấp từ liên bang/ chính phủ/ cho việc nghiên cứu.\n     /'fedərəl/ - /'gʌvnmənt/ - /ri'sə:tʃ/\n(2) Grant \n(v) \nS.O S.TH\n: Cấp cho ai cái gì.\n\n_ Grant permission to do S.TH\n: Cấp phép làm gì.\n\n_ Grant the right\n: Cấp quyền.\n\n_ Grant S.O a loan\n: Cấp cho ai khoản vay.\n\n_ Take S.O/ S.TH for granted\n: Coi ai đó/ cái gì đó là điều hiểu nhiên (không biết trân trọng)\n\n   Eg: His wife was always there and he just \ntook her for granted\n.\n  (Vợ của anh ta luôn luôn ở đó chờ chồng về, và anh ta \ncoi đó là 1 điều hiển nhiên\n)"
@@ -4460,8 +4460,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Our target for next year will be",
-              "vi": ""
+              "en": "Our target for next year will be to promote worker productivity and machinery modernization to keep up with the current trend.",
+              "vi": "Mục tiêu của chúng tôi trong năm tới là thúc đẩy năng suất làm việc của nhân viên và hiện đại hóa các loại máy móc để bắt kịp với xu hướng hiện nay"
             }
           ],
           "raw_text": "2. Worker/Employee/Staff/Labor productivity \n/ˌprəʊdʌkˈtɪvəti/: Năng suất làm việc của nhân viên.\nEg: Our target for next year will be \nto promote worker productivity\n \nand\n \nmachinery modernization\n \nto keep up with the current trend.\n\n(Mục tiêu của chúng tôi trong năm tới là \nthúc đẩy năng suất làm việc của nhân viên\n và \nhiện đại hóa các loại máy móc\n để bắt kịp với xu hướng hiện nay).\n\n\nto promote/ boost/ improve/ increase/ raise productivity\n: Thúc đẩy/ cải thiện/ tăng/ nâng cao năng suất."
@@ -4476,8 +4476,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The tournament is open to both",
-              "vi": ""
+              "en": "The tournament is open to both amateurs and professionals.",
+              "vi": "Giải đấu mở ra cho cả những vận động viên không chuyên lẫn dân chuyên nghiệp"
             }
           ],
           "raw_text": "3. Amateur \n/ˈæmətʃər/ (adj/n): Không chuyên, nghiệp dư/ Vận động viên không chuyên.\n\n>< Professiona\nl /prəˈfeʃənl/ (adj/n): Chuyên nghiệp/ Chuyên gia.\nEg: The tournament is open to both\n \namateurs\n \nand\n \nprofessionals\n.\n\n(Giải đấu mở ra cho cả \nnhững vận động viên không chuyên \nlẫn \ndân chuyên nghiệp\n)."
@@ -4494,8 +4494,8 @@
           ],
           "examples": [
             {
-              "en": "An amateur photography",
-              "vi": ""
+              "en": "An amateur photography contest",
+              "vi": "Cuộc thi nhiếp ảnh cho dân nghiệp dư"
             }
           ],
           "raw_text": "4. Contest \n/ˈkɑːntest/ (n ) = \nCompetition \n/ˌkɑːmpəˈtɪʃn/: Cuộc thi.\nEg: An amateur photography \ncontest\n \n(\nCuộc thi\n nhiếp ảnh cho dân nghiệp dư)\n\n\nto enter/win a contest\n: Tham gia/ Chiến thắng 1 cuộc thi."
@@ -4632,14 +4632,14 @@
           "term": "On behalf",
           "phonetic": "/bi:hɑ:f/, /ˌreprɪˈzent/",
           "pos": "",
-          "meaning": "Thay mặt, đại diện choEg: The President was",
+          "meaning": "Thay mặt, đại diện cho",
           "synonyms": [
             "Represent"
           ],
           "examples": [
             {
-              "en": "The President was",
-              "vi": ""
+              "en": "The President was represented at the ceremony by the Vice-President.",
+              "vi": "Phó Chủ Tịch đã thay mặt Chủ Tịch để phát biểu tại nghi thức vừa qua"
             }
           ],
           "raw_text": "1. On behalf\n /bi:hɑ:f/ \nof S.O \n= \nRepresent\n /ˌreprɪˈzent/\n S.O: \nThay mặt, đại diện choEg: The President was\n \nrepresented\n \nat the ceremony by the Vice-President.\n(Phó Chủ Tịch đã \nthay mặt\n Chủ Tịch để phát biểu tại nghi thức vừa qua)."
@@ -4654,8 +4654,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Patrons",
-              "vi": ""
+              "en": "Patrons are requested not to smoke in the store.",
+              "vi": "Các khách hàng được yêu cầu không hút thuốc bên trong cửa hàng"
             }
           ],
           "raw_text": "2. Patron\n /ˈpeɪtrən/ (n) = \nRegular/Frequent customer\n /ˈkʌstəmər/ = \nRegular/Frequent client\n /ˈklaɪənt/: Khách hàng (quen) / Các nhà mạnh thường quân\nEg: \nPatrons\n \nare requested not to smoke in the store.\n\n(\nCác khách hàng\n được yêu cầu không hút thuốc bên trong cửa hàng)."
@@ -4677,12 +4677,12 @@
           ],
           "examples": [
             {
-              "en": "His wife",
-              "vi": ""
+              "en": "His wife accompanied him on the trip.",
+              "vi": "Vợ của anh ta đã đi cùng với anh ấy trong chuyến đi"
             },
             {
-              "en": "Your application form must",
-              "vi": ""
+              "en": "Your application form must be accompanied by the résumé and relevant documents.",
+              "vi": "Đơn ứng tuyển của bạn phải đi kèm với sơ yếu lý lịch và các loại giấy tờ có liên quan"
             }
           ],
           "raw_text": "3. Accompany / Be accompanied\n \nby\n /əˈkʌmpəni/ (v)\n: \nĐi cùng ai/Đi kèm với cái gì\n= \nCome with\n /kʌm wɪð/ = \nTogether with\n /tə'geðə wɪð/ =\n Along with \n/ə'lɔɳ wɪð/ \n= \nBe included \n/in'klu:did/ \nwith \n= \nBe enclosed\n /ɪnˈkləʊzd/ \nwith \n= \nBe attached\n /əˈtætʃt/ \nto\n\nEg: His wife\n \naccompanied\n \nhim on the trip.\n\n(Vợ của anh ta \nđã đi cùng với\n anh ấy trong chuyến đi).\n\nEg: Your application form must \nbe accompanied by\n \nthe résumé and relevant documents.\n\n(Đơn ứng tuyển của bạn phải \nđi kèm với\n sơ yếu lý lịch và các loại giấy tờ có liên quan)."
@@ -4708,12 +4708,12 @@
           ],
           "examples": [
             {
-              "en": "The committee was",
-              "vi": ""
+              "en": "The committee was established in 1912.",
+              "vi": "Ủy ban được thành lập vào năm 1912"
             },
             {
-              "en": "Police are still trying to",
-              "vi": ""
+              "en": "Police are still trying to establish the cause of the accident.",
+              "vi": "Cảnh sát vẫn đang cố để tìm cho ra nguyên nhân của vụ tai nạn"
             }
           ],
           "raw_text": "4. Establish\n /ɪˈstæblɪʃ/ (v): Thành lập, thiết lập/ Khám phá ra chuyện gì.\n\n(1)\n = \nFound \n/faund/ (v) = \nSet up \n/set ʌp/ ~ \nInstitute\n /'institju:t/ ~ \nForm \n/fɔ:m/: Thành lập, thiết lập, hình thành.\n\nEg:\n \nThe committee was\n \nestablished\n \nin 1912.\n \n(Ủy ban \nđược thành lập\n vào năm 1912)\nCÁC DANH TỪ ĐI CHUNG (n):\n+\n \nstandards\n /'stændədz/: Thiết lập tiêu chuẩn\n\n+ principles\n /'prinsəplz/: Thiết lập nguyên tắc\n\n+ a system\n /'sistim/: Thành lập hệ thống\n\n+ relations\n /ri'leiʃnz/ ~ \nlinks \n/liɳks/ ~ \ncontacts\n /kɔntækts/~ \nconnections\n /kə'nekʃnz/: Thiết lập những mối liên kết\n\n+ a relationship\n /ri'leiʃnʃip/: Thiết lập mối quan hệ\n\n+ a reputation\n \nfor S.O\n /,repju:'teiʃn/: Tạo uy tín, thiết lập danh tiếng cho ai\n(2) \n= \nAscertain\n /ˌæsərˈteɪn/ (v) = \nProve\n /pruːv/ ~ \nDiscover \n/dis'kʌvə/: Xác minh/ Khám phá ra chuyện gì.\n\n=> In an attempt/effort \n/ə'tempt/, /'efət/ (n) \nto establish S.TH\n: Trong nỗ lực để khám phá ra chuyện gì.\nEg: Police are still trying to\n \nestablish\n \nthe cause of the accident.\n\n(Cảnh sát vẫn đang cố để \ntìm cho ra\n nguyên nhân của vụ tai nạn)."
@@ -4732,12 +4732,12 @@
           ],
           "examples": [
             {
-              "en": "The awards ceremony was",
-              "vi": ""
+              "en": "The awards ceremony was transmitted live by satellite to over fifty countries.",
+              "vi": "Nghi thức trao giải thì được phát sóng trực tiếp qua vệ tinh đến hơn 50 quốc gia"
             },
             {
-              "en": "Parents can unwittingly",
-              "vi": ""
+              "en": "Parents can unwittingly transmit their own fears to their children.",
+              "vi": "Ba mẹ thì vô tình gieo rắc nỗi sợ hãi của riêng họ sang cho con của họ"
             }
           ],
           "raw_text": "5. Transmit \n/trænzˈmɪt/ (v) \nto \n: Truyền, phát (tín hiệu, tin tức)\n\n(1)\n = \nBroadcast \n/ˈbrɔːdkæst/ = \nAir \n/er/: Phát sóng\n\n_ To transmit the signals\n /'signlz/: Phát tín hiệu\n\n_ To transmit a program/ a\n \nshow/ an event \n/ˈproʊˌgræm/, /ʃoʊ/,  /ɪˈvɛnt/: Phát sóng chương trình/ buổi diễn/ sự kiện\nEg: The awards ceremony was\n \ntransmitted\n live by satellite\n \nto\n \nover fifty countries.\n\n(Nghi thức trao giải thì được \nphát sóng\n trực tiếp qua vệ tinh \nđến\n hơn 50 quốc gia)\n(2) \n= \nTransfer \n/ˈtrænsfɜːr/ \nS.TH to S.O\n: Truyền lại cái gì cho ai\nEg: Parents can unwittingly\n \ntransmit\n \ntheir own fears\n \nto\n \ntheir children.\n\n(Ba mẹ thì vô tình \ngieo rắc\n nỗi sợ hãi của riêng họ \nsang cho\n con của họ)."
@@ -4856,7 +4856,7 @@
           "term": "Feature",
           "phonetic": "/ˈfiːtʃər/, /in'klu:d/, /kən'sist ɔv/, /bi kəm'praizd ɔv/, /'kʌvə/, /dɪˈstɪŋktɪv/, /rɪˈdiːmɪŋ/",
           "pos": "(v/n)",
-          "meaning": "(n): Đặc trưng, đặc điểm, tính năng",
+          "meaning": "Đặc trưng, đặc điểm, tính năng",
           "synonyms": [
             "Include",
             "Consist of",
@@ -4865,16 +4865,16 @@
           ],
           "examples": [
             {
-              "en": "The new Star Wars movie",
-              "vi": ""
+              "en": "The new Star Wars movie features the original actors.",
+              "vi": "Bộ phim \"Chiến tranh các vì sao\" mới bao gồm các diễn viên cội nguồn"
             },
             {
-              "en": "The most",
-              "vi": ""
+              "en": "The most distinctive feature of this product is its dimension.",
+              "vi": "Điểm khác biệt lớn nhất của sản phẩm này chính là kích cỡ của nó"
             },
             {
-              "en": "The house isn't very attractive, but the garden is the",
-              "vi": ""
+              "en": "The house isn't very attractive, but the garden is the redeeming feature.",
+              "vi": "Ngôi nhà không bắt mắt lắm, nhưng khu vườn chính là điểm bù đắp lại - ý nói: khu vườn khá đẹp"
             }
           ],
           "raw_text": "1. Feature \n/ˈfiːtʃər/ (v/n):\n(n): Đặc trưng, đặc điểm, tính năng\n(v) = \nInclude \n/in'klu:d/ = \nConsist of\n /kən'sist ɔv/ = \nBe comprised of \n/bi kəm'praizd ɔv/\n \n= \nCover \n/'kʌvə/ \nS.TH\n: Bao gồm\nEg: The new Star Wars movie\n \nfeatures\n \nthe original actors.\n\n(Bộ phim \"Chiến tranh các vì sao\" mới \nbao gồm\n các diễn viên cội nguồn)\nCÁC TÍNH TỪ ĐI CHUNG:\n- \nKey/ Main feature\n: Đặc điểm chính\n-\n New features\n: Những đặc tính mới\n- \nNew safety/ security features\n: Các đặc điểm an toàn, an ninh mới\n- \nDistinctive \n/dɪˈstɪŋktɪv/ \nfeature\n: Điểm khác biệt\n- \nRedeeming\n /rɪˈdiːmɪŋ/ \nfeature\n: Điểm tốt/ điểm bù đắp lại\n  Eg:\n \nThe most \ndistinctive feature\n \nof this product is its dimension.\n\n  (\nĐiểm khác biệt\n lớn nhất của sản phẩm này chính là kích cỡ của nó)\n\n  Eg: The house isn't very attractive, but the garden is the \nredeeming feature\n.\n\n  (Ngôi nhà không bắt mắt lắm, nhưng khu vườn chính là \nđiểm bù đắp lại\n - ý nói: khu vườn khá đẹp)"
@@ -4891,8 +4891,8 @@
           ],
           "examples": [
             {
-              "en": "Everyone should",
-              "vi": ""
+              "en": "Everyone should be equipped with the necessary skills for your job.",
+              "vi": "Mỗi người nên được trang bị với những kĩ năng cần thiết cho công việc"
             }
           ],
           "raw_text": "2. Be/come equipped\n /ɪˈkwɪpt/ \nwith S.TH\n ~ \nBe outfitted\n /ˈaʊtfɪtd/ \nwith\n: Được trang bị với cái gì.\n=> \nTo be fully/poorly equipped:\n Được trang bị đầy đủ/thiếu thốn cái gì\nEg: Everyone should \nbe equipped with\n \nthe necessary skills for your job.\n\n(Mỗi người nên được \ntrang bị với\n \nnhững kĩ năng cần thiết cho công việc)"
@@ -4907,8 +4907,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Her scarf was",
-              "vi": ""
+              "en": "Her scarf was strategically placed to hide a tear in her shirt.",
+              "vi": "Khăn choàng cổ của cô ấy thì được đeo vào nhằm mục đích che đi vết rách trên áo sơ mi"
             }
           ],
           "raw_text": "3. Strategically \n/strəˈtiːdʒɪkli/ (adv) \n+ place/ put/ set/ position\n (v) \nS.TH\n: Đặt cái gì đó có chủ ý, có chiến lược, có mục đích.\n=> \nStrategically place + trash/recycle/litter/rubbish/garbage bins: \nĐặt các thùng rác có mục đích.\nEg: Her scarf was \nstrategically placed\n \nto hide a tear in her shirt.\n\n(Khăn choàng cổ của cô ấy thì được \nđeo vào nhằm mục đích\n che đi vết rách trên áo sơ mi)"
@@ -5073,12 +5073,12 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Two factories were closed",
-              "vi": ""
+              "en": "Two factories were closed in an attempt to cut costs.",
+              "vi": "Hai nhà máy đã bị đóng cửa trong nỗ lực để cắt giảm chi phí"
             },
             {
-              "en": "I passed my driving test",
-              "vi": ""
+              "en": "I passed my driving test at the first attempt.",
+              "vi": "Tôi đã đậu kì thi sát hạch lái xe trong lần cố gắng đầu tiên"
             }
           ],
           "raw_text": "1. In an attempt/ effort/ endeavor\n /əˈtempt/ - /'efət/ - /in'devər/ (n) \nto do S.TH\n: Trong nỗ lực làm gì\nAttempt/ Try/ Strive/ Endeavor\n /əˈtempt/ - /trai/ - /straiv/ - /ɪnˈdevər/ (v) \nto do S.TH\n: Nỗ lực, cố gắng làm gì\nAt the first attempt/try\n: Trong lần cố gắng đầu tiên\nAttempt at S.TH/doing S.TH \n=\n Attempt on S.TH: \nNỗ lực trong việc gì\nEg: Two factories were closed \nin an attempt to\n cut costs.\n\n(Hai nhà máy đã bị đóng cửa \ntrong nỗ lực để\n cắt giảm chi phí)\n\nEg: I passed my driving test\n \nat the first attempt\n.\n\n(Tôi đã đậu kì thi sát hạch lái xe \ntrong lần cố gắng đầu tiên\n)"
@@ -5093,8 +5093,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Another win would be good for the team’s",
-              "vi": ""
+              "en": "Another win would be good for the team’s morale.",
+              "vi": "Thêm 1 chiến thắng nữa sẽ tốt cho tinh thần chung của nhóm"
             }
           ],
           "raw_text": "2. Staff morale\n /stɑ:f məˈræl/ (N.Phrase): Tinh thần/Chí khí, nhuệ khí của nhân viên\nTo boost/raise/improve morale \n/bu:st/ - /reiz/ - /im'pru:v/: Thúc đẩy/Nâng cao/Cải thiện tinh thần (chí khí)\nLow morale \n(n.phrase): Tinh thần thấp kém ( = không tự tin)\nSagging morale\n (n.phrase): Tinh thần suy sụp, tinh thần sút kém\nEg: Another win would be good for the team’s\n \nmorale\n.\n\n(Thêm 1 chiến thắng nữa sẽ tốt cho \ntinh thần\n chung của nhóm)"
@@ -5111,8 +5111,8 @@
           ],
           "examples": [
             {
-              "en": "You will receive",
-              "vi": ""
+              "en": "You will receive reimbursement for your travel expenses.",
+              "vi": "Bạn sẽ nhận được sự hoàn tiền cho các chi phí đi lại"
             }
           ],
           "raw_text": "3. Reimbursement \n/ˌriːɪmˈbɜːrsmənt/ (n )\n for/of S.TH \n=\n \nPay money back to S.O\n: Sự hoàn lại, bồi hoàn tiền\nReimbursement of travel expenses: \nHoàn các chi phí đi lại\nReimbursement for travel, meals and lodging\n /ˈlɑːdʒɪŋ/: Hoàn tiền cho việc đi lại, ăn uống và chỗ ở (trọ)\nReimbursement of hospital bills\n: Hoàn tiền cho các hóa đơn bệnh viện\n🔰 \nPHÂN BIỆT\n: \nReimbursement - Compensation\n (2 từ chắc chắn ra thi)\n\n📌 \nReimbursement\n /ˌriːɪmˈbɜːrsmənt/ (n ) \nfor/of S.TH: \nHoàn lại số tiền do chính người đó đã tiêu xài (thường là bạn tự bỏ tiền ra trước (vd: đi công tác) -> về công ty trả lại tiền cho bạn)\nEg: You will receive \nreimbursement\n \nfor your travel expenses.\n\n(Bạn sẽ nhận được \nsự hoàn tiền\n cho các chi phí đi lại)\n📌 \nCompensation \n/ˌkɑːmpenˈseɪʃn/ (n ) \nfor S.TH: \nSự đền bù, bồi thường/Chế độ đãi ngộ, tiền thù lao\n\n(1)\n: Sự đền bù, bồi thường (thiệt hại, tổn thất)\n\n_ To claim/seek/award/receive compensation: Khiếu nại đòi bồi thường/nhận tiền bồi thường\n_ Compensation for injury /ˈɪndʒəri/: Tiền bồi thường tai nạn (lao động)\n_ Compensation for damage: Sự bồi thường thiệt hại\n_ Employment termination compensation \n/ɪmˈplɔɪmənt ˌtɜːrmɪˈneɪʃn ˌkɑːmpenˈseɪʃn/: Tiền bồi thường thôi việc\n\n(2) \n= \nRemuneration\n /rɪˌmjuːnəˈreɪʃn/ (n): Tiền thù lao/chế độ đãi ngộ\n\n_ Annual\n \ncompensation \n(n.phrase): Chế độ đãi ngộ hàng năm"
@@ -5130,8 +5130,8 @@
           ],
           "examples": [
             {
-              "en": "A protective substance was applied to the parking lot's surface to",
-              "vi": ""
+              "en": "A protective substance was applied to the parking lot's surface to keep it from deteriorating over time.",
+              "vi": "1 loại hóa chất bảo vệ được quét lên bề mặt của bãi đậu xe để giữ cho nó không bị xuống cấp theo thời gian"
             }
           ],
           "raw_text": "4. Deteriorate\n /dɪˈtɪriəreɪt/ (v) = \nDegenerate\n /dɪˈdʒen.ə.reɪt/ =\n \nTo become worse\n: Xuống cấp, trở nên tồi tệ hơn\nDeteriorate into S.TH\n: Chuyển biến (xấu) thành cái gì\nKeep/Prevent S.TH from deteriorating\n \n(over time): \nGiữ cho cái gì đó không bị xuống cấp (theo thời gian)\nEg: A protective substance was applied to the parking lot's surface to\n \nkeep it from deteriorating over time\n.\n\n(1 loại hóa chất bảo vệ được quét lên bề mặt của bãi đậu xe để \ngiữ cho nó không bị xuống cấp theo thời gian\n)"
@@ -5242,8 +5242,8 @@
           ],
           "examples": [
             {
-              "en": "The two logos are",
-              "vi": ""
+              "en": "The two logos are remarkably similar.",
+              "vi": "2 lôgô thì giống nhau 1 cách đáng kinh ngạc"
             }
           ],
           "raw_text": "1. Remarkably \n/rɪˈmɑːrkəbli/ (adv): 1 cách đáng kinh ngạc, đáng chú ý.\n= \nAstonishingly\n /əˈstɑːnɪʃɪŋli/ = \nAstoundingly\n /əˈstaʊndɪŋli/ = \nAmazingly\n /əˈmeɪzɪŋli/ = \nSurprisingly\n /sərˈpraɪzɪŋli/\n\nRemarkable \n/rɪˈmɑːrkəbl/ (adj): Đáng chú ý, nổi bật\nA remarkable achievement/career/talent\n \n/ə'tʃi:vmənt/ -\n \n/kə'riə/ - /'tælənt/ (n.phrase): Thành tựu/Sự nghiệp/Tài năng nổi bật  \nEg: The two logos are \nremarkably\n similar.\n(2 lôgô thì giống nhau \n1 cách đáng kinh ngạc\n)."
@@ -5273,8 +5273,8 @@
           ],
           "examples": [
             {
-              "en": "Many workers",
-              "vi": ""
+              "en": "Many workers opted to leave their current jobs rather than take a pay cut.",
+              "vi": "Nhiều công nhân đã lựa chọn từ bỏ công việc hiện tại của họ thay vì bị cắt giảm lương"
             }
           ],
           "raw_text": "3. Opt \n/ɑːpt/ (v)\n to do S.TH\n = \nChoose\n /tʃuːz/\n to do S.TH: \nLựa chọn làm gì.\n\nEg: Many workers \nopted to\n leave their current jobs rather than take a pay cut.\n(Nhiều công nhân \nđã lựa chọn\n từ bỏ công việc hiện tại của họ thay vì bị cắt giảm lương)."
@@ -5289,8 +5289,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Raise public awareness of",
-              "vi": ""
+              "en": "Raise public awareness of the importance of protecting the environment.",
+              "vi": "Nâng cao nhận thức của công chúng về tầm quan trọng của việc bảo vệ môi trường"
             }
           ],
           "raw_text": "4. Raise/Increase/Heighten S.O's awareness\n /reɪz əˈwernəs/ \nof S.TH\n: Nâng cao nhận thức của ai về cái gì.\n=> \nA greater/a growing/an increasing awareness of S.TH\n: Nhận thức ngày càng tốt hơn/ tăng lên.\nFundraising\n /ˈfʌndreɪzɪŋ/ (n): Gây quỹ\nEg: \nRaise public awareness of\n the importance of protecting the environment.\n(\nNâng cao nhận thức của công chúng\n về tầm quan trọng của việc bảo vệ môi trường)."
@@ -5434,8 +5434,8 @@
           ],
           "examples": [
             {
-              "en": "Inquiries about the interview must be sent directly to the",
-              "vi": ""
+              "en": "Inquiries about the interview must be sent directly to the proprietor.",
+              "vi": "Các câu hỏi thắc mắc về buổi phỏng vấn nên được gửi trực tiếp đến cho người chủ sở hữu"
             }
           ],
           "raw_text": "1. Proprietor \n/prəˈpraɪətər/ (n) = \nOwner \n/ˈəʊnər/ = \nPossessor\n /pəˈzesər/: Chủ, người sở hữu\nEg: Inquiries about the interview must be sent directly to the \nproprietor\n.\n\n\n(Các câu hỏi thắc mắc về buổi phỏng vấn nên được gửi trực tiếp đến cho \nngười chủ sở hữu\n)"
@@ -5617,8 +5617,8 @@
           ],
           "examples": [
             {
-              "en": "The catalogue is full of",
-              "vi": ""
+              "en": "The catalogue is full of testimonials from customers.",
+              "vi": "Danh mục có đầy đủ những lời chứng thực từ các khách hàng"
             }
           ],
           "raw_text": "1. Testimonial \n/ˌtestɪˈməʊniəl/ (n) ~ \nFeedback \n/ˈfiːdbæk/ ~ \nReview \n/rɪˈvjuː/ ~ \nComment \n/ˈkɑːment/ ~ \nQuestionnaire\n /ˌkwestʃəˈner/ ~ \nSurvey \n/'sə:vei/: Lời chứng thực, đánh giá, nhận xét, khảo sát\nEg:\n The catalogue is full of \ntestimonials\n from customers.\n\n\n(Danh mục có đầy đủ \nnhững lời chứng thực\n từ các khách hàng)"
@@ -5638,8 +5638,8 @@
           ],
           "examples": [
             {
-              "en": "The average sale price of real estate in Tokyo has",
-              "vi": ""
+              "en": "The average sale price of real estate in Tokyo has soared more than 30 percent over the last 3 years.",
+              "vi": "Giá bán bất động sản bình quân ở Tokyo đã tăng vọt hơn 30% trong suốt hơn 3 năm qua"
             }
           ],
           "raw_text": "2. Soar\n /sɔːr/ (v) (\nabove/to) \n= \nSkyrocket\n /ˈskaɪrɑːkɪt/ = \nRocket\n /ˈrɑːkɪt/ = \nShoot up\n /ʃu:t ʌp/ = \nRise very quickly\n: Tăng vọt\nEg:\n The average sale price of real estate in Tokyo has \nsoared\n more than 30 percent over the last 3 years.\n\n\n(Giá bán bất động sản bình quân ở Tokyo đã \ntăng vọt\n hơn 30% trong suốt hơn 3 năm qua)\n\n\nSoaring \n(adj) + \ncosts/ prices/ temperatures/ sales/ unemployment/ crime rate: \nChi phí/ giá cả/ nhiệt độ/ doanh thu/ tỷ lệ thất nghiệp/ tỷ lệ tội phạm tăng vọt"
@@ -5656,8 +5656,8 @@
           ],
           "examples": [
             {
-              "en": "Flexibility of approaching a new knowledge is the",
-              "vi": ""
+              "en": "Flexibility of approaching a new knowledge is the prerequisite to become successful.",
+              "vi": "Sự linh hoạt trong việc tiếp cận 1 kiến thức mới là điều kiện tiên quyết để trở nên thành công"
             }
           ],
           "raw_text": "3. Prerequisite\n /ˌpriːˈrekwəzɪt/ (n) = \nPrecondition\n /ˌpriːkənˈdɪʃn/: Điều kiện tiên quyết\n=>\n Prerequisite for/of/to something: \nĐiều kiện tiên quyết cho cái gì\nEg: \nFlexibility of approaching a new knowledge is the \nprerequisite\n to become successful.\n\n\n(Sự linh hoạt trong việc tiếp cận 1 kiến thức mới là \nđiều kiện tiên quyết\n để trở nên thành công)"
@@ -5676,8 +5676,8 @@
           ],
           "examples": [
             {
-              "en": "We made a",
-              "vi": ""
+              "en": "We made a tentative arrangement to meet on Friday.",
+              "vi": "Chúng tôi đã có 1 sự sắp xếp dự kiến gặp mặt vào ngày thứ 6"
             }
           ],
           "raw_text": "4. Tentative \n/ˈtentətɪv/ (adj) = \nProvisional\n /prəˈvɪʒənl/ = \nTemporary\n /ˈtempəreri/ = \nInterim\n /ˈɪntərɪm/: Dự kiến, tạm thời, lâm thời\nEg: \nWe made a \ntentative\n arrangement to meet on Friday.\n\n\n(Chúng tôi đã có 1 sự sắp xếp \ndự kiến\n gặp mặt vào ngày thứ 6)\nTentative + plan/ report/ contract/ arrangements: \nKế hoạch/báo cáo/hợp đồng/những sự sắp xếp dự kiến\nTentative government:\n Chính phủ lâm thời."
@@ -5694,8 +5694,8 @@
           ],
           "examples": [
             {
-              "en": "If your return is not due to an error by us, we will",
-              "vi": ""
+              "en": "If your return is not due to an error by us, we will deduct the shipping cost from your refund.",
+              "vi": "Nếu việc hoàn lại không phải do lỗi của chúng tôi, chúng tôi sẽ lấy lại khoản phí giao hàng từ số tiền hoàn lại cho bạn"
             }
           ],
           "raw_text": "5. Deduct\n /dɪˈdʌkt/ (v) = \nSubtract\n /səb'trækt/ = \nTo take away an amount/a part from a total:\n Khấu trừ, lấy đi cái gì\n=>\n Tax-deductible\n /ˌtæks dɪˈdʌktəbl/ (adj): Khấu trừ, miễn giảm thuế\nEg:\n If your return is not due to an error by us, we will \ndeduct\n the shipping cost from your refund.\n\n\n(Nếu việc hoàn lại không phải do lỗi của chúng tôi, chúng tôi sẽ \nlấy lại\n khoản phí giao hàng từ số tiền hoàn lại cho bạn)"
@@ -5713,8 +5713,8 @@
           ],
           "examples": [
             {
-              "en": "I won this bottle of wine in a",
-              "vi": ""
+              "en": "I won this bottle of wine in a drawing.",
+              "vi": "Tôi trúng được chai rượu này trong 1 buổi rút thăm trúng thưởng"
             }
           ],
           "raw_text": "6. Drawing \n/'drɔ:iɳ/ (hoặc Draw /drɔ:/ ) (n) = \nRaffle\n /'ræfl/ = \nLottery\n /'lɔtəri/: Rút thăm trúng thưởng\nEg: \nI won this bottle of wine in a \ndrawing\n.\n\n\n(Tôi trúng được chai rượu này trong 1 buổi \nrút thăm trúng thưởng\n)\n\n\n📍"
@@ -5805,8 +5805,8 @@
           ],
           "examples": [
             {
-              "en": "The police have managed to",
-              "vi": ""
+              "en": "The police have managed to retrieve some of the stolen money.",
+              "vi": "Viên cảnh sát đã có thể lấy lại được một vài số tiền đã bị đánh cắp"
             }
           ],
           "raw_text": "1. Retrieve\n /rɪˈtriːv/ (v) \nS.TH\n = \nRecover\n /rɪˈkʌvər/ \nS.TH \n= \nGet S.TH back\n: Lấy lại cái gì\n # Relieve \n/rɪˈliːv/ (v) ~ \nAlleviate\n /əˈliːvieɪt/ ~ \nEase\n /iːz/: giảm nhẹ, làm dịu nhẹ (cơn đau)\nEg:\n \nThe police have managed to \nretrieve\n some of the stolen money.\n\n(Viên cảnh sát đã có thể \nlấy lại\n được một vài số tiền đã bị đánh cắp)"
@@ -5821,8 +5821,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "That site is",
-              "vi": ""
+              "en": "That site is in close proximity to an airport.",
+              "vi": "Địa điểm đó thì nằm gần 1 sân bay"
             }
           ],
           "raw_text": "2. Proximity\n /prɑːkˈsɪməti/ (n ) \nto S.TH:\n trạng thái gần về không gian với cái gì (ở gần cái gì)\n-> \nBe \nin close proximity\n \n(n)\n to S.TH\n: nằm gần cái gì.\nEg: That site is\n \nin close proximity to\n \nan airport.\n\n(Địa điểm đó thì \nnằm gần\n 1 sân bay)\n\n\nHai từ có nghĩa tương tự:\n\n\n- Be adjacent\n /əˈdʒeɪsnt/ (adj) \nto S.TH\n: tiếp giáp cái gì\n\n- Vicinity\n /vəˈsɪnəti/ (n) \nof S.TH\n: khu vực lân cận của cái gì"
@@ -5839,12 +5839,12 @@
           ],
           "examples": [
             {
-              "en": "The",
-              "vi": ""
+              "en": "The preliminary rounds of the contest",
+              "vi": "những vòng sơ khảo của cuộc thi"
             },
             {
-              "en": "After a few",
-              "vi": ""
+              "en": "After a few preliminary remarks, he announced the winners.",
+              "vi": "Sau một vài lời nhận xét mở đầu, anh ấy đã tuyên bố những người thắng cuộc"
             }
           ],
           "raw_text": "3. Preliminary \n/prɪˈlɪmɪneri/ (adj) = \nInitial\n /ɪˈnɪʃl/: sơ bộ, mở đầu.\n\n     + testing/ results/ findings/ remarks \n(các cuộc thử nghiệm/ các kết quả/ nhận xét sơ bộ)\nEg:\n \nThe \npreliminary\n \nrounds of the contest \n(những vòng sơ khảo của cuộc thi)\n\nEg: After a few\n \npreliminary\n \nremarks, he announced the winners. \n\n(Sau một vài lời nhận xét \nmở đầu\n, anh ấy đã tuyên bố những người thắng cuộc)"
@@ -5855,7 +5855,7 @@
           "term": "Fundamentally",
           "phonetic": "/ˌfʌndəˈmentəli/, /ɪˈsenʃəli/, /kəmˈpliːtli/, /ˈtəʊtəli/, /ˌɔːltəˈɡeðər/, /ɪnˈtaɪərli/, /'difrənt/",
           "pos": "(adv)",
-          "meaning": "/ɪˈsenʃəli/: về cơ bản, về bản chất",
+          "meaning": "về cơ bản, về bản chất",
           "synonyms": [
             "Basically",
             "Essentially",
@@ -5866,8 +5866,8 @@
           ],
           "examples": [
             {
-              "en": "She is",
-              "vi": ""
+              "en": "She is fundamentally a nice person, but she finds it difficult to communicate.",
+              "vi": "Cô ấy về cơ bản là một người tốt tính, nhưng cô ấy cảm thấy khó khăn để giao tiếp với mọi người"
             }
           ],
           "raw_text": "4. Fundamentally\n /ˌfʌndəˈmentəli/ (adv):\n(1) \n= \nBasically\n /ˈbeɪsɪkli/ = \nEssentially\n /ɪˈsenʃəli/: về cơ bản, về bản chất\n(2)\n = \nCompletely \n/kəmˈpliːtli/ = \nTotally\n /ˈtəʊtəli/ = \nAltogether\n /ˌɔːltəˈɡeðər/ = \nEntirely\n /ɪnˈtaɪərli/: hoàn toàn\n+ \ndifferent\n /'difrənt/ (adj): hoàn toàn khác biệt\nEg:\n \nShe is\n \nfundamentally\n \na nice person, but she finds it difficult to communicate.\n\n(Cô ấy \nvề cơ bản\n là một người tốt tính, nhưng cô ấy cảm thấy khó khăn để giao tiếp với mọi người)"
@@ -5887,8 +5887,8 @@
           ],
           "examples": [
             {
-              "en": "The hotel is closed for",
-              "vi": ""
+              "en": "The hotel is closed for refurbishment.",
+              "vi": "Khách sạn bị đóng cửa cho việc tu sửa"
             }
           ],
           "raw_text": "5. Refurbishment \n/ˌriːˈfɜːrbɪʃmənt/ (n ) ~ \nUpgrade\n /ˌʌpˈɡreɪd/ ~ \nRemodeling \n/ˌriːˈmɑːdlɪŋ/ ~ \nRenovation\n /ˌrenəˈveɪʃn/: việc tu sửa, nâng cấp, tân trang, đổi mới\n# \nReplenishment \n/rɪˈplenɪʃmənt/ (n ) = \nthe act of filling S.TH up again: \nviệc bổ sung, cấp thêm cái gì\n# \nFurnishings \n/ˈfɜːrnɪʃɪŋz/ (n ) = \nFurniture\n /ˈfɜːrnɪtʃər/: đồ nội thất\nEg:\n \nThe hotel is closed for \nrefurbishment\n.\n\n(Khách sạn bị đóng cửa cho \nviệc tu sửa\n)"
@@ -5906,8 +5906,8 @@
           ],
           "examples": [
             {
-              "en": "We have",
-              "vi": ""
+              "en": "We have accumulated a great amount of evidence.",
+              "vi": "Chúng tôi đã thu thập 1 số lượng lớn bằng chứng"
             }
           ],
           "raw_text": "6. Accumulate\n /əˈkjuːmjəleɪt/ (v) = \nCollect \n/kəˈlekt/ = \nBuild up: \ntích lũy, thu thập\n# \nAccelerate \n/æk'seləreit/ (v): Tăng cường, thúc đẩy.\n# \nAlleviate \n/ə'li:vieit/ (v): Giảm nhẹ, làm dịu nhẹ.\n# \nAppreciate \n/ə'pri:ʃieit/ (v): Biết ơn, cảm kích, đánh giá cao.\n# \nAccommodate \n/ə'kɔmədeit/ (v): Đáp ứng/chứa.\n# \nAppropriate \n/ə'proupriit/ (adj): Thích hợp.\nEg:\n \nWe have\n \naccumulated\n \na great amount of evidence.\n\n(Chúng tôi đã \nthu thập\n 1 số lượng lớn bằng chứng)"
@@ -5997,8 +5997,8 @@
           ],
           "examples": [
             {
-              "en": "He was",
-              "vi": ""
+              "en": "He was initially reluctant to join the project.",
+              "vi": "Anh ấy ban đầu thì miễn cưỡng tham gia dự án"
             }
           ],
           "raw_text": "1. Initially \n/ɪˈnɪʃəli/ (adv) ~ \nOriginally \n/əˈrɪdʒənəli/ =\n at the beginning\n: Ban đầu, sơ khai, về khởi đầu\nInitiate\n /ɪˈnɪʃieɪt/ (v) =\n Set/put in motion\n = \nto make S.TH begin\n: Khởi xướng chuyện gì\nEg: He was \ninitially\n reluctant to join the project.\n\n\n(Anh ấy \nban đầu\n thì miễn cưỡng tham gia dự án)"
@@ -6018,12 +6018,12 @@
           ],
           "examples": [
             {
-              "en": "A large volume order",
-              "vi": ""
+              "en": "A large volume order = A bulk order",
+              "vi": "Đơn hàng số lượng lớn."
             },
             {
-              "en": "New roads are being built to cope with the increased",
-              "vi": ""
+              "en": "New roads are being built to cope with the increased volume of traffic.",
+              "vi": "Những đoạn đường mới đã được xây dựng để bắt kịp với lượng xe tham gia giao thông tăng lên"
             }
           ],
           "raw_text": "2. Volume \n/ˈvɑːljəm/ (n)\n of S.TH \n= \nQuantity \n/ˈkwɑːntəti/\n of \n= \nAmount\n /ə'maunt/ \nof: \nSố lượng\nLarge volume\n ~ \nBulk \n/bʌlk/ (n): Số lượng lớn.\nEg:\n A large volume order\n =\n A bulk order: \nĐơn hàng số lượng lớn.\nEg: New roads are being built to cope with the increased \nvolume of\n traffic.\n\n\n(Những đoạn đường mới đã được xây dựng để bắt kịp với \nlượng\n xe tham gia giao thông tăng lên)"
@@ -6038,8 +6038,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Farming",
-              "vi": ""
+              "en": "Farming plays a crucial role in maintaining the landscape.",
+              "vi": "Công việc đồng áng đóng 1 vai trò quan trọng trong việc gìn giữ cảnh quan"
             }
           ],
           "raw_text": "3. Play/Assume a (key/leading/central/crucial/vital) role of/in: \nĐóng/đảm nhiệm vai trò (then chốt/hàng đầu/trọng tâm/quan trọng/thiết yếu)\n\nEg: Farming \nplays a crucial role in\n maintaining the landscape.\n\n\n(Công việc đồng áng \nđóng 1 vai trò quan trọng trong việc\n gìn giữ cảnh quan)"
@@ -6056,8 +6056,8 @@
           ],
           "examples": [
             {
-              "en": "The",
-              "vi": ""
+              "en": "The proceeds of the concert will go to charity.",
+              "vi": "Lợi nhuận thu được của buổi hòa nhạc sẽ dùng làm từ thiện"
             }
           ],
           "raw_text": "4. Proceeds \n(n ) /ˈprəʊsiːdz/ \nof/from S.TH\n = \nProfits\n /ˈprɑːfɪts/: Tổng số tiền thu được, lợi nhuận\nAnnual/pre-tax/corporate proceeds: \nLợi nhuận hàng năm/trước thuế/đoàn thể, công ty\nA(An) rise/increase/jump in profits: \nmột sự gia tăng trong lợi nhuận\n\n>< A drop/fall in profits: một \nsự sụt giảm trong lợi nhuận\nTo maximize/increase profits\n: Tối đa hóa/tăng lợi nhuận\n# \nProcedure \n/prəˈsiːdʒər/ (n ): Qui trình, thủ tục\n# \nProcure \n/prəˈkjʊr/ (v): Kiếm, thu được, mua được\n# \nProduce \n/ˈprəʊduːs/ (n ): Sản lượng, nông sản\nEg: The \nproceeds\n of the concert will go to charity.\n\n\n(\nLợi nhuận thu được\n của buổi hòa nhạc sẽ dùng làm từ thiện)"
@@ -6072,8 +6072,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Emotional problems can seriously",
-              "vi": ""
+              "en": "Emotional problems can seriously interfere with a student's work.",
+              "vi": "Những vấn đề về mặt cảm xúc có thể gây cản trở nghiêm trọng đến việc học của học sinh"
             }
           ],
           "raw_text": "5. Interfere \n/ˌɪntərˈfɪr/ \nwith\n: can thiệp, gây cản trở chuyện gì\n# \nInterrupt\n /ˌɪntəˈrʌpt/ \nwith\n: làm gián đoạn chuyện gì\n# \nInteract\n /ˌɪntərˈækt/ \nwith S.O\n: tương tác với ai\n\nEg: Emotional problems can seriously \ninterfere with\n a student's work.\n\n\n(Những vấn đề về mặt cảm xúc có thể \ngây cản trở\n nghiêm trọng đến việc học của học sinh)"
@@ -6088,8 +6088,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Companies are fighting for",
-              "vi": ""
+              "en": "Companies are fighting for domination of the software market.",
+              "vi": "Các công ty tranh giành quyền thống trị thị trường phần mềm"
             }
           ],
           "raw_text": "6. Domination\n /ˌdɑːmɪˈneɪʃn/ (n )\n of/over S.TH / S.O: \nSự thống trị, sự thống lĩnh, nắm quyền kiểm soát\nMarket domination\n: sự thống trị thị trường\nDominate \n/ˈdɑːmɪneɪt/ (v) \nS.O/S.TH: \nNắm quyền kiểm soát ai/cái gì\n# \nDonation \n(n ): Sự quyên góp, \nDonate\n /dou'neit/, /ˈdəʊneɪt/ (v): quyên góp\nEg: Companies are fighting for \ndomination\n of the software market.\n\n\n(Các công ty tranh giành \nquyền thống trị\n thị trường phần mềm)\n\n\n📍"
@@ -6179,8 +6179,8 @@
           ],
           "examples": [
             {
-              "en": "It's just not",
-              "vi": ""
+              "en": "It's just not feasible to manage the business on a part-time basis.",
+              "vi": "Không khả thi khi quản lý doanh nghiệp theo chế độ bán thời gian"
             }
           ],
           "raw_text": "1. Feasible \n/ˈfiːzəbl/ (adj) = \nPracticable\n /ˈpræktɪkəbl/ = \nPossible\n /ˈpɑːsəbl/: có khả năng, khả thi\n # \nFlexible\n (adj): linh hoạt, linh động \n+ working hours/schedule: \ngiờ làm việc, lịch trình\n\nEg: It's just not \nfeasible\n to manage the business on a part-time basis.\n\n\n(Không \nkhả thi \nkhi\n \nquản lý doanh nghiệp theo chế độ bán thời gian)"
@@ -6197,8 +6197,8 @@
           ],
           "examples": [
             {
-              "en": "We should always prepare",
-              "vi": ""
+              "en": "We should always prepare contingency plans for the worst situations.",
+              "vi": "Chúng ta nên luôn chuẩn bị các kế hoạch dự phòng cho những tình huống xấu nhất"
             }
           ],
           "raw_text": "2. Contingency \n/kənˈtɪndʒənsi/ (n ) = \nPossibility\n /ˌpɑːsəˈbɪləti/: sự dự phòng, dự trù, khả năng xảy ra\ncontingency plan: \nkế hoạch dự phòng\ncontingency + fund/fee \n(n): quỹ/phí (dự phòng)\nEg: We should always prepare \ncontingency plans\n for the worst situations.\n\n\n(Chúng ta nên luôn chuẩn bị \ncác kế hoạch dự phòng\n cho những tình huống xấu nhất)"
@@ -6217,8 +6217,8 @@
           ],
           "examples": [
             {
-              "en": "Had the plan worked, it would have",
-              "vi": ""
+              "en": "Had the plan worked, it would have proved highly lucrative.",
+              "vi": "Nếu như kế hoạch này mà đã thành công, thì nó đáng lẽ đã chứng minh là nó sinh lời cao"
             }
           ],
           "raw_text": "3. Lucrative \n/ˈluːkrətɪv/ (adj) = \nProfitable\n /ˈprɑːfɪtəbl/ ~ \nBeneficial\n /ˌbenɪˈfɪʃl/ ~ \nSuccessful\n: có lời, sinh lời, thắng lợi\n# \nBeneficiary\n /ˌbenɪˈfɪʃieri/ (n): Người hưởng lợi.\nlucrative + business/ contract/ market \n(n.phrase): Việc kinh doanh/ bản hợp đồng/ thị trường (có lời)\nprove lucrative\n: chứng minh là có lời\nEg: Had the plan worked, it would have \nproved\n highly \nlucrative\n.\n\n\n(Nếu như kế hoạch này mà đã thành công, thì nó đáng lẽ đã \nchứng minh\n là nó \nsinh lời\n cao)"
@@ -6235,8 +6235,8 @@
           ],
           "examples": [
             {
-              "en": "It is sensible to",
-              "vi": ""
+              "en": "It is sensible to have contingency plans in place.",
+              "vi": "Thật sáng suốt khi có các kế hoạch dự phòng tại chỗ"
             }
           ],
           "raw_text": "4. Sensible \n/ˈsensəbl/ (adj) \nabout S.TH \n= \nPractical\n /ˈpræktɪkl/\n about S.TH: \nhợp lí, sáng suốt\n # \nSensitive\n /ˈsensətɪv/ (adj): nhạy cảm\nIt is sensible to do something\n: thật sáng suốt khi làm gì\nEg: \nIt is sensible to\n have \ncontingency plans\n in place.\n\n\n(Thật \nsáng suốt \nkhi có \ncác kế hoạch dự phòng\n tại chỗ)"
@@ -6254,8 +6254,8 @@
           ],
           "examples": [
             {
-              "en": "They will be",
-              "vi": ""
+              "en": "They will be unveiling their new models at the Motor Show.",
+              "vi": "Họ sẽ tiết lộ những mẫu xe mới tại buổi triển lãm xe mô tô"
             }
           ],
           "raw_text": "5. Unveil \n/ˌʌnˈveɪl/ (v) = \nReveal\n /rɪˈviːl/ = \nDisclose\n /dɪsˈkləʊz/: hé lộ, tiết lộ, vạch trần\n+ plans/ products/ models/ secrets/ details/ identities: \n(tiết lộ)\n \ncác kế hoạch/sản phẩm/mẫu mã/bí mật/chi tiết/danh tính\nEg: They will be \nunveil\ning their new models at the Motor Show.\n\n\n(Họ sẽ\n tiết lộ\n những mẫu xe mới tại buổi triển lãm xe mô tô)"
@@ -6272,8 +6272,8 @@
           ],
           "examples": [
             {
-              "en": "A series of movies will be shown to",
-              "vi": ""
+              "en": "A series of movies will be shown to commemorate the thirtieth anniversary of his death.",
+              "vi": "Một chuỗi các bộ phim sẽ được trình chiếu để tưởng niệm ngày giỗ tổ lần thứ 30 của ông ấy"
             }
           ],
           "raw_text": "6. Commemorate\n /kəˈmeməreɪt/ (v) = \nCelebrate\n /ˈselɪbreɪt/: ăn mừng, kỉ niệm, tưởng niệm\n+ anniversary/ceremony/victory/success/achievement \n(n): lễ kỉ niệm/nghi thức/chiến thắng/thành công/thành tựu\nEg: A series of movies will be shown to \ncommemorate\n the thirtieth anniversary of his death.\n\n\n(Một chuỗi các bộ phim sẽ được trình chiếu để \ntưởng niệm\n ngày giỗ tổ lần thứ 30 của ông ấy)"
@@ -6356,12 +6356,12 @@
           "term": "Bias",
           "phonetic": "/ˈbaɪəs/, /ˈbaɪəs/",
           "pos": "(n)",
-          "meaning": "Khuynh hướng, thiên hướng, tính thiên vị ->",
+          "meaning": "Khuynh hướng, thiên hướng, tính thiên vị (n); Có khuynh hướng, thiên vị (v)",
           "synonyms": [],
           "examples": [
             {
-              "en": "Some institutions still have a strong",
-              "vi": ""
+              "en": "Some institutions still have a strong bias against women.",
+              "vi": "Một số tổ chức vẫn có thành kiến mạnh mẽ đối với phụ nữ"
             }
           ],
           "raw_text": "1. Bias \n/ˈbaɪəs/ (n): Khuynh hướng, thiên hướng, tính thiên vị -> \nBias\n /ˈbaɪəs/ (v):\n \nCó khuynh hướng làm gì, thiên vị ai/cái gì\nTo have a bias\n (n)\n in favour of/against/toward S.O/S.TH: \nThiên vị/có thành kiến/thiên về ai, cái gì\nEg: Some institutions still have a strong \nbias against\n women.\n\n\n(Một số tổ chức vẫn có \nthành kiến\n mạnh mẽ \nđối với \nphụ nữ)"
@@ -6379,8 +6379,8 @@
           ],
           "examples": [
             {
-              "en": "No one from these",
-              "vi": ""
+              "en": "No one from these educationally underprivileged groups has a chance of getting to the university.",
+              "vi": "Không ai trong số những người thiếu học thức này có được cơ hội bước chân vào trường đại học"
             }
           ],
           "raw_text": "2. Underprivileged \n/ˌʌndərˈprɪvəlɪdʒd/ (adj) = \nDisadvantaged\n /ˌdɪsədˈvæntɪdʒd/ = \nPoor\n /pʊr/: Bị tước đoạt, bị thiệt thòi, nghèo nàn, thiếu thốn\nThe underprivileged \n(The + adj = Ns): Những người nghèo/bị tước đoạt quyền lợi/sống dưới đáy xã hội\nEducationally/socially underprivileged groups: \nNhững người thiếu học thức/bị thiệt thòi về mặt xã hội\nEg: No one from these \neducationally underprivileged\n groups has a chance of getting to the university.\n\n\n(Không ai trong số những người \nthiếu học thức \nnày có được cơ hội bước chân vào trường đại học)"
@@ -6395,8 +6395,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "We had to",
-              "vi": ""
+              "en": "We had to make a detour around the flooded fields.",
+              "vi": "Chúng tôi đã phải đi đường vòng qua những cánh đồng ngập lũ"
             }
           ],
           "raw_text": "3. Detour \n/ˈdiːtʊr/ (n): Đường vòng\nMake/Take a detour\n: Đi đường vòng\nEg: We had to \nmake a detour\n around the flooded fields.\n\n\n(Chúng tôi đã phải đi đường vòng qua những cánh đồng ngập lũ)"
@@ -6411,8 +6411,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The strike was timed to",
-              "vi": ""
+              "en": "The strike was timed to coincide with the conference.",
+              "vi": "Cuộc tấn công được sắp xếp thời gian trùng khớp với thời điểm diễn ra hội nghị"
             }
           ],
           "raw_text": "4. Coincide\n /ˌkəʊɪnˈsaɪd/ (v)\n with S.TH: \nTrùng hợp, trùng khớp, xảy ra cùng lúc với cái gì\nCoincidence\n /kəʊˈɪnsɪdəns/ (n): Sự trùng hợp ngẫu nhiên\nEg: The strike was timed to \ncoincide with\n the conference.\n\n\n(Cuộc tấn công được sắp xếp thời gian \ntrùng khớp với\n thời điểm diễn ra hội nghị)"
@@ -6431,8 +6431,8 @@
           ],
           "examples": [
             {
-              "en": "We identify your needs, and",
-              "vi": ""
+              "en": "We identify your needs, and tailor your training accordingly.",
+              "vi": "Chúng tôi xác định các nhu cầu của bạn, và điều chỉnh việc đào tạo bạn 1 cách phù hợp"
             }
           ],
           "raw_text": "5. Tailor\n /ˈteɪlər/ (v) \nto/for \n= \nAdjust\n /əˈdʒʌst/ ~ \nCustomize\n /ˈkʌstəmaɪz/ ~ \nPersonalize\n /ˈpɜːrsənəlaɪz/: Điều chỉnh, tùy biến, tùy chỉnh\n\nEg: We identify your needs, and \ntailor\n your training accordingly.\n\n\n(Chúng tôi xác định các nhu cầu của bạn, và \nđiều chỉnh\n việc đào tạo bạn 1 cách phù hợp)"
@@ -6450,8 +6450,8 @@
           ],
           "examples": [
             {
-              "en": "There is no",
-              "vi": ""
+              "en": "There is no incentive for people to save fuel.",
+              "vi": "Không có động lực nào để cho mọi người tiết kiệm nhiên liệu cả"
             }
           ],
           "raw_text": "6. Incentive \n/ɪnˈsentɪv/ (n )\n for/to S.O/S.TH \n= \nMotivation\n /ˌməʊtɪˈveɪʃn/ = \nEncouragement\n /ɪnˈkɜːrɪdʒmənt/: Sự khích lệ, sự khuyến khích, sự động viên, động lực\n\nEg: There is no \nincentive for\n people to save fuel.\n\n\n(Không có \nđộng lực\n nào để cho mọi người tiết kiệm nhiên liệu cả)\n\n\n\n📍"
@@ -6540,8 +6540,8 @@
           ],
           "examples": [
             {
-              "en": "Be careful not to drop it, it’s very",
-              "vi": ""
+              "en": "Be careful not to drop it, it’s very fragile.",
+              "vi": "Cẩn thận đừng làm rớt, nó rất dễ vỡ"
             }
           ],
           "raw_text": "1. Fragile \n/ˈfrædʒl/ (adj) = \nDelicate\n /ˈdelɪkət/: Mong manh, dễ vỡ\n# Dedicate\n /ˈdedɪkeɪt/ (v): Cống hiến, hiến dâng\nEg: Be careful not to drop it, it’s very \nfragile\n.\n\n\n(Cẩn thận đừng làm rớt, nó rất \ndễ vỡ\n)"
@@ -6560,8 +6560,8 @@
           ],
           "examples": [
             {
-              "en": "They had only a",
-              "vi": ""
+              "en": "They had only a vague idea where the place was.",
+              "vi": "Họ không nhớ rõ nơi đó ở đâu"
             }
           ],
           "raw_text": "2. Vague \n/veɪɡ/ (adj) = \nUnclear\n /ˌʌnˈklɪr/: Mơ hồ, không rõ ràng\n>< \nClear\n /klɪr/ (adj) = \nObvious\n /ˈɑːbviəs/ ~ \nApparent\n /əˈpærənt/: Rõ ràng, hiển nhiên\nVague idea/impression\n: Ý tưởng/Ấn tượng mơ hồ\nTo have a vague idea (of): \nNhớ mang máng, mập mờ, không nhớ rõ\nEg: They had only a \nvague idea\n where the place was.\n(Họ \nkhông nhớ rõ\n nơi đó ở đâu)"
@@ -6579,8 +6579,8 @@
           ],
           "examples": [
             {
-              "en": "She",
-              "vi": ""
+              "en": "She hastily changed the subject.",
+              "vi": "Cô ấy vội vàng thay chủ đề"
             }
           ],
           "raw_text": "3.\n \nHastily \n/ˈheɪstɪli/ (adv) = \nHurriedly\n /ˈhɜːrɪdli/ = \nVery quickly\n: Vội vàng, hấp tấp.\n\nEg: She \nhastily\n changed the subject.\n\n\n(Cô ấy \nvội vàng\n thay chủ đề)"
@@ -6595,8 +6595,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Lack of exercise is also a risk factor for heart disease, but it's",
-              "vi": ""
+              "en": "Lack of exercise is also a risk factor for heart disease, but it's relatively small when compared with the others.",
+              "vi": "Thiếu tập luyện cũng là 1 yếu tố rủi ro dẫn đến bệnh tim, nhưng nó thì tương đối nhỏ khi so sánh với những yếu tố khác"
             }
           ],
           "raw_text": "4. Relatively\n /ˈrelətɪvli/ (adv): Tương đối\n+ high/low/cheap/expensive/big/small: \nTương đối cao/thấp/rẻ/đắt/to/nhỏ\nEg: Lack of exercise is also a risk factor for heart disease, but it's \nrelatively small\n when compared with the others.\n\n\n(Thiếu tập luyện cũng là 1 yếu tố rủi ro dẫn đến bệnh tim, nhưng nó thì \ntương đối\n nhỏ khi so sánh với những yếu tố khác)"
@@ -6614,8 +6614,8 @@
           ],
           "examples": [
             {
-              "en": "She was surrounded by energetic,",
-              "vi": ""
+              "en": "She was surrounded by energetic, industrious people.",
+              "vi": "Cô ấy được vây quanh bởi những người chăm chỉ, năng nổ"
             }
           ],
           "raw_text": "5. Industrious\n /ɪnˈdʌstriəs/ (adj) = \nDiligent \n/ˈdɪlɪdʒənt/ = \nHard-working\n: Siêng năng, chăm chỉ, cần cù.\n>< \nNegligent \n/'neglidʤənt/\n \n(adj): Cẩu thả, hời hợt.\n# \nIndustrial\n /in'dʌstriəl/ (adj): Thuộc về công nghiệp.\nIndustrious people/students/workers: \nNhững người/học sinh/công nhân chăm chỉ\nEg: She was surrounded by energetic, \nindustrious\n people.\n\n\n(Cô ấy được vây quanh bởi những người \nchăm chỉ\n, năng nổ)"
@@ -6632,8 +6632,8 @@
           ],
           "examples": [
             {
-              "en": "An",
-              "vi": ""
+              "en": "An enduringly popular style.",
+              "vi": "Một phong cách nổi tiếng trong suốt 1 thời gian dài"
             }
           ],
           "raw_text": "6. Enduringly\n /ɪnˈdʊrɪŋli/ (adv):\n(1)\n: Nhẫn nại, kiên trì.\n(2) \n=\n \nLast for a long time\n: Kéo dài suốt 1 khoảng thời gian.\nEg: An \nenduringly\n popular style.\n\n\n(Một phong cách nổi tiếng \ntrong suốt 1 thời gian dài\n)"
@@ -6722,8 +6722,8 @@
           ],
           "examples": [
             {
-              "en": "Please",
-              "vi": ""
+              "en": "Please refrain yourself from smoking.",
+              "vi": "Làm ơn hãy ngừng hút thuốc"
             }
           ],
           "raw_text": "1. Refrain \n/ri'frein/ (v)\n oneself from S.TH/doing S.TH\n = \nDesist\n /dɪˈzɪst/: Kiềm chế từ việc làm gì, cố không làm gì đó.\n# Prevent\n /pri'vent/ (v) \nS.O from S.TH/doing S.TH\n: Ngăn chặn ai đó từ việc làm gì.\nE.g:\n Please \nrefrain\n yourself \nfrom\n smoking.\n\n\n(Làm ơn hãy \nngừng\n hút thuốc)"
@@ -6738,8 +6738,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The work",
-              "vi": ""
+              "en": "The work was acclaimed as a masterpiece.",
+              "vi": "Tác phẩm được tung hô như là 1 kiệt tác"
             }
           ],
           "raw_text": "2. Acclaim\n /əˈkleɪm/ (v):\n \nHoan nghênh, tung hô.\nE.g: \nThe work \nwas acclaimed as\n a masterpiece.\n\n\n(Tác phẩm \nđược tung hô như là\n 1 kiệt tác)\nBe acclaimed (as S.TH): \nĐược hoan nghênh (như là 1 cái gì đó).\nA highly/widely acclaimed performance: \n1 buổi trình diễn được đánh giá cao/hoan nghênh rộng rãi."
@@ -6758,8 +6758,8 @@
           ],
           "examples": [
             {
-              "en": "Only",
-              "vi": ""
+              "en": "Only accredited journalists were allowed entry.",
+              "vi": "Chỉ có những phóng viên được công nhận mới được phép ra vào"
             }
           ],
           "raw_text": "3. Accredited \n/əˈkredɪtɪd/ (adj) = \nAcknowledged\n /əkˈnɑːlɪdʒɪd/ = \nRecognized\n /ˈrekəɡnaɪzɪd/ = \nAdmitted\n /ədˈmɪtɪd/: Được công nhận, thừa nhận.\nE.g:\n Only \naccredited\n journalists were allowed entry.\n\n\n(Chỉ có những phóng viên \nđược công nhận\n mới được phép ra vào)\nAn accredited representative/journalist/university/course: \n1 người đại diện/phóng viên/trường đại học/khóa học được công nhận."
@@ -6774,8 +6774,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "The evidence against him was",
-              "vi": ""
+              "en": "The evidence against him was overwhelming.",
+              "vi": "Bằng chứng chống lại ông ấy thì áp đảo hơn"
             }
           ],
           "raw_text": "4. Overwhelming\n /ˌəʊvərˈwelmɪŋ/ (adj): Áp đảo, dày đặc, quá tải, trội hơn.\nE.g: \nThe evidence against him was \noverwhelming\n.\n\n\n(Bằng chứng chống lại ông ấy thì \náp đảo\n hơn)\n(1) + votes\n (n.s): Số phiếu bầu ÁP ĐẢO.\n\n(2) + schedule\n (n): Lịch trình DÀY ĐẶC.\n\n(3) + workload\n (n): Khối lượng cộng việc QUÁ TẢI."
@@ -6790,8 +6790,8 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Can we",
-              "vi": ""
+              "en": "Can we afford to buy a new car?",
+              "vi": "Liệu chúng ta có đủ tiền để mua xe mới không?"
             }
           ],
           "raw_text": "5. Afford\n /ə'fɔ:d/ (v) \n+ S.TH / to do S.TH \n=\n \nto have enough money to do S.TH\n: \nĐủ khả năng (về tài chính) để làm gì.\n\nEg: Can we \nafford to\n buy a new car?\n\n\n(Liệu chúng ta có \nđủ tiền để\n mua xe mới không?)"
@@ -6810,8 +6810,8 @@
           ],
           "examples": [
             {
-              "en": "She",
-              "vi": ""
+              "en": "She closely resembles her mother.",
+              "vi": "Cô ấy trông giống hệt mẹ"
             }
           ],
           "raw_text": "6. Resemble\n /rɪˈzembl/ (v) \nS.O/S.TH \n~ \nBe similar\n /'similər/ (adj) \nto = Be identical \n/aɪˈdentɪkl/\n \n= \nLook like: \nTương tự, giống với\n# \nAssemble\n /ə'sembl/ (v): Tập hợp\nE.g:\n She \nclosely resembles\n her mother.\n\n\n(Cô ấy \ntrông giống hệt\n mẹ)"
@@ -6900,8 +6900,8 @@
           ],
           "examples": [
             {
-              "en": "She is skilled at achieving",
-              "vi": ""
+              "en": "She is skilled at achieving consensus on sensitive issues.",
+              "vi": "Cô ấy giỏi trong việc đạt được sự đồng tình trong các vấn đề nhạy cảm"
             }
           ],
           "raw_text": "1. Consensus\n /kən'sensəs/ (n )\n about/ on S.TH \n=\n \nTotal agreement\n: Sự đồng lòng, nhất trí về cái gì.\nTo reach a consensus\n (n): đi đến sự nhất trí, đồng lòng.\nE.g: She is skilled at achieving \nconsensus on\n sensitive issues.\n\n\n(Cô ấy giỏi trong việc đạt được \nsự đồng tình trong \ncác vấn đề nhạy cảm)"
@@ -6916,12 +6916,12 @@
           "synonyms": [],
           "examples": [
             {
-              "en": "Adult behaviours are often",
-              "vi": ""
+              "en": "Adult behaviours are often patterned by childhood experiences.",
+              "vi": "Những hành vi của người trưởng thành thường là làm theo khuôn mẫu từ những trải nghiệm thời thơ ấu"
             },
             {
-              "en": "Changing",
-              "vi": ""
+              "en": "Changing patterns of urban life.",
+              "vi": "Thay đổi lối sống thành thị"
             }
           ],
           "raw_text": "2. Pattern \n/'pætən/ (v): Bắt chước, làm theo khuôn mẫu.\n\n=> Pattern\n /'pætən/ (n): Kiểu, mẫu, cách/ hoa văn.\nBehaviour/sleep/growth/stress/speech \n(n) \npatterns: \nCác kiểu hành vi/kiểu ngủ/cách tăng trưởng/cách nhấn mạnh/cách nói.\nE.g: Adult behaviours are often \npatterned\n by childhood experiences.\n\n\n(Những hành vi của người trưởng thành thường là \nlàm theo khuôn mẫu \ntừ những trải nghiệm thời thơ ấu)\n\n\nE.g: Changing \npatterns\n of urban life.\n\n\n(Thay đổi \nlối sống\n thành thị)"
@@ -6939,8 +6939,8 @@
           ],
           "examples": [
             {
-              "en": "She has a very good reputation among her",
-              "vi": ""
+              "en": "She has a very good reputation among her fellows.",
+              "vi": "Cô ấy có danh tiếng rất tốt giữa những đồng nghiệp của cô ấy"
             }
           ],
           "raw_text": "3. Fellow \n/ˈfeləʊ/ (n): Những người đồng hành, đồng chí.\n~ \nColleague\n /ˈkɑːliːɡ/ ~ \nCo-worker \n/ˈkəʊ wɜːrkər/: Đồng nghiệp, thành viên chung chỗ làm.\nFellow citizens/students \n(n.phrase): Những người đồng hương/đồng môn.\nE.g: She has a very good reputation among her \nfellows\n.\n\n\n(Cô ấy có danh tiếng rất tốt giữa \nnhững đồng nghiệp\n của cô ấy)"
@@ -6958,8 +6958,8 @@
           ],
           "examples": [
             {
-              "en": "The interview ended",
-              "vi": ""
+              "en": "The interview ended abruptly.",
+              "vi": "Buổi phỏng vấn đã kết thúc bất ngờ"
             }
           ],
           "raw_text": "4. Abruptly\n /əˈbrʌptli/ (adv)\n \n= \nSuddenly\n /ˈsʌdnli/ = \nUnexpectedly\n /ˌʌnɪksˈpɛktɪdli/: 1 cách bất ngờ, đột ngột.\n\nE.g: The interview ended \nabruptly\n.\n\n\n(Buổi phỏng vấn đã kết thúc \nbất ngờ\n)"
@@ -6978,8 +6978,8 @@
           ],
           "examples": [
             {
-              "en": "This area has been",
-              "vi": ""
+              "en": "This area has been designated as a National Park.",
+              "vi": "Khu vực này đã được chỉ định làm Công Viên Quốc Gia"
             }
           ],
           "raw_text": "5. Designate\n /ˈdezɪɡneɪt/ (v) \nS.O (as S.TH) \n= \nAppoint \n/əˈpɔɪnt/ = \nName \n/neɪm/ = \nNominate\n /ˈnɑːmɪneɪt/: Chỉ định, bổ nhiệm ai.\n\nE.g: This area has been \ndesignated as\n a National Park.\n\n\n(Khu vực này đã \nđược chỉ định làm \nCông Viên Quốc Gia)"
@@ -7001,8 +7001,8 @@
           ],
           "examples": [
             {
-              "en": "That's it! Mission",
-              "vi": ""
+              "en": "That's it! Mission accomplished.",
+              "vi": "Được rồi! Nhiệm vụ hoàn thành"
             }
           ],
           "raw_text": "6. Accomplish \n/əˈkɑːmplɪʃ/ (v) = \nAchieve\n /əˈtʃiːv/ = \nObtain\n /əb'tein/ = \nSucceed\n /səkˈsiːd/ = \nFulfil\n /ful'fil/ = \nComplete\n /kəmˈpliːt/ ~ \nFinish\n /ˈfɪnɪʃ/: Hoàn thành, hoàn tất, đạt được\nAccomplishment\n /ə'kɔmpliʃmənt/ (n): Sự hoàn thành, sự đạt được.\nE.g: That's it! Mission \naccomplished\n.\n\n\n(Được rồi! Nhiệm vụ \nhoàn thành)"
@@ -7019,12 +7019,12 @@
           ],
           "examples": [
             {
-              "en": "A lamp",
-              "vi": ""
+              "en": "A lamp was suspended from the ceiling.",
+              "vi": "Cái đèn ngủ đã được treo lơ lửng từ trần nhà"
             },
             {
-              "en": "Nine cases are still",
-              "vi": ""
+              "en": "Nine cases are still pending / suspending.",
+              "vi": "9 vụ án vẫn chưa được giải quyết"
             }
           ],
           "raw_text": "7. Suspend \n/səˈspend/ (v) \nS.TH:\n\n\n(1)\n: Treo lơ lửng.\n\n(2)\n: Đình chỉ (nhà máy, xí nghiệp, công ty), tạm hoãn (trận đấu, chuyến bay)\nBe suspended\n /səˈspendɪd/ (adj) \nfrom/by/on S.TH: \nĐược treo lơ lửng từ/bằng/trên cái gì.\nSuspended \n/səsˈpɛndɪd/ ~ \nPending\n /ˈpendɪŋ/ (adj): Chưa quyết định, còn để treo chưa giải quyết (phiên luật xét xử).\nE.g: A lamp \nwas suspended from\n the ceiling.\n\n\n(Cái đèn ngủ đã \nđược treo lơ lửng từ\n trần nhà)\n\n\nE.g: Nine cases are still \npending\n/\nsuspending\n.\n\n\n(9 vụ án vẫn \nchưa được giải quyết\n)"

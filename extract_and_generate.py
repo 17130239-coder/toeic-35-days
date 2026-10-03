@@ -35,6 +35,48 @@ def is_true_ipa(s):
         return True
     return False
 
+def extract_examples(body):
+    examples = []
+    matches = list(re.finditer(r'(?:E\.g|Ex|Ví dụ|Eg)\s*:\s*', body, re.IGNORECASE))
+    for i, m in enumerate(matches):
+        start = m.end()
+        end = matches[i+1].start() if i + 1 < len(matches) else len(body)
+        chunk = body[start:end].strip()
+        
+        # In chunk, find parentheses translation
+        m_paren = re.search(r'\(([^)]+)\)', chunk, re.DOTALL)
+        if m_paren:
+            en_raw = chunk[:m_paren.start()]
+            vi_raw = m_paren.group(1)
+        elif ':' in chunk:
+            c_idx = chunk.find(':')
+            after = chunk[c_idx+1:].strip()
+            if has_vietnamese(after):
+                en_raw = chunk[:c_idx]
+                vi_raw = after
+            else:
+                first_nl = chunk.find('\n\n')
+                en_raw = chunk[:first_nl] if first_nl != -1 else chunk
+                vi_raw = ''
+        else:
+            first_nl = chunk.find('\n\n')
+            en_raw = chunk[:first_nl] if first_nl != -1 else chunk
+            vi_raw = ''
+            
+        en = clean_text(' '.join([l.strip() for l in en_raw.split('\n') if l.strip()])).strip(' -:')
+        vi = clean_text(' '.join([l.strip() for l in vi_raw.split('\n') if l.strip()])).strip(' -:')
+        
+        # Clean punctuation spacing: "abruptly ." -> "abruptly."
+        en = re.sub(r'\s+([,\.\?!;:])', r'\1', en)
+        vi = re.sub(r'\s+([,\.\?!;:])', r'\1', vi)
+        
+        # Clean split suffixes caused by HTML formatting tags: "lower ed" -> "lowered"
+        en = re.sub(r'\b(\w+)\s+(ed|ing|s|ly|d|es)\b', r'\1\2', en)
+        
+        if en:
+            examples.append({'en': en, 'vi': vi})
+    return examples
+
 def extract_all():
     html_path = '/Users/andynguyen/workspace/35-days/data.html'
     with open(html_path, 'r', encoding='utf-8') as f:
@@ -248,10 +290,22 @@ def extract_all():
 
                 # Meaning
                 meaning = ""
-                m_col = re.search(r'\:\s*([^\n\=]+)', body)
-                if m_col and has_vietnamese(m_col.group(1)):
-                    meaning = clean_text(m_col.group(1))
-                else:
+                colons = [m.start() for m in re.finditer(r':', body)]
+                for c_pos in colons:
+                    after_c = body[c_pos+1:].strip()
+                    lines_after = [l.strip() for l in after_c.split('\n') if l.strip()]
+                    if not lines_after:
+                        continue
+                    first_line = lines_after[0].split('=')[0].split('~')[0].strip()
+                    first_line = re.sub(r'^\([a-z\./\s]+\)\s*:\s*', '', first_line, flags=re.I).strip()
+                    before_c = body[max(0, c_pos-10):c_pos]
+                    if 'hoặc' in before_c:
+                        continue
+                    if has_vietnamese(first_line):
+                        meaning = clean_text(first_line)
+                        break
+
+                if not meaning:
                     for l in lines:
                         if has_vietnamese(l):
                             # clean punctuation
@@ -261,13 +315,14 @@ def extract_all():
                                 meaning = clean_text(cleaned_l)
                                 break
 
+                # Clean meaning
+                meaning = re.sub(r'(?:E\.g|Ex|Ví dụ|Eg)\s*:.*', '', meaning, flags=re.I).strip()
+                meaning = re.sub(r'[\-\>\=\~\:\•]+$', '', meaning).strip()
+                if term == 'Bias' and 'thiên vị ai/cái gì' in body:
+                    meaning = 'Khuynh hướng, thiên hướng, tính thiên vị (n); Có khuynh hướng, thiên vị (v)'
+
                 # Examples
-                examples = []
-                for m_eg in re.finditer(r'(?:E\.g|Ex|Ví dụ|Eg)\s*:\s*([^\n]+)(?:\n\(([^\)]+)\))?', body, re.I):
-                    en_eg = clean_text(m_eg.group(1))
-                    vi_eg = clean_text(m_eg.group(2)) if m_eg.group(2) else ""
-                    if en_eg:
-                        examples.append({"en": en_eg, "vi": vi_eg})
+                examples = extract_examples(body)
 
                 vocab_entries.append({
                     "id": f"d{day_num}_w{p_num}",
@@ -530,15 +585,27 @@ def extract_all():
                     q_id += 1
 
             # 4. Fill in the Blank: Sentence Context (Type-in)
+            has_blank_sentence = False
             if examples and len(examples) > 0:
                 eg = examples[0]
                 en_sentence = eg["en"]
                 vi_trans = eg.get("vi", "")
                 
+                matched_word = None
                 if len(root_word) >= 3 and root_word.lower() in en_sentence.lower():
-                    pattern = re.compile(re.escape(root_word), re.IGNORECASE)
-                    blanked = pattern.sub("________", en_sentence, count=1)
-                    valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower()]))
+                    m_w = re.search(r'\b' + re.escape(root_word) + r'\w*\b', en_sentence, re.IGNORECASE)
+                    if m_w:
+                        matched_word = m_w.group(0)
+                elif len(root_word) >= 4:
+                    stem = root_word.rstrip('esd')
+                    if len(stem) >= 3 and stem.lower() in en_sentence.lower():
+                        m_w = re.search(r'\b' + re.escape(stem) + r'\w*\b', en_sentence, re.IGNORECASE)
+                        if m_w:
+                            matched_word = m_w.group(0)
+
+                if matched_word:
+                    blanked = re.sub(r'\b' + re.escape(matched_word) + r'\b', "________", en_sentence, count=1, flags=re.IGNORECASE)
+                    valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower(), matched_word, matched_word.lower()]))
                     questions.append({
                         "id": f"q_{gc}_{q_id}",
                         "question_format": "fill_blank",
@@ -551,18 +618,20 @@ def extract_all():
                         "correct_answers": valid_answers,
                         "correct_answer": term,
                         "hint": {
-                            "short": f"Bắt đầu bằng chữ '{term[0].upper()}...', gồm {len(root_word)} ký tự.",
+                            "short": f"Bắt đầu bằng chữ '{term[0].upper()}...', gồm {len(matched_word)} ký tự.",
                             "phonetic": phonetic,
                             "vietnamese": meaning,
                             "first_letter": term[0].upper(),
-                            "length": len(root_word)
+                            "length": len(matched_word)
                         },
-                        "explanation": f"Câu hoàn chỉnh: \"{en_sentence}\"\n({vi_trans})",
+                        "explanation": f"Câu hoàn chỉnh: \"{en_sentence}\"" + (f"\n({vi_trans})" if vi_trans else ""),
                         "points": 1500,
                         "time_limit": 30
                     })
                     q_id += 1
-            else:
+                    has_blank_sentence = True
+
+            if not has_blank_sentence:
                 valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower()]))
                 questions.append({
                     "id": f"q_{gc}_{q_id}",
