@@ -57,6 +57,10 @@
     ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
     .dark ::-webkit-scrollbar-thumb { background: #3f3f46; }
 
+    /* Hide scrollbars for clean horizontal tab rows & carousels */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
     /* Interactive blank drop slot */
     .interactive-blank {
       display: inline-flex;
@@ -233,7 +237,7 @@
     <!-- FILTER & ROADMAP CONTROLS (Segmented Control Pattern) -->
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
       <!-- Week Tabs -->
-      <div class="inline-flex p-1 rounded-lg bg-slate-200/70 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium overflow-x-auto">
+      <div class="inline-flex p-1 rounded-lg bg-slate-200/70 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium overflow-x-auto no-scrollbar">
         <button onclick="filterDays('all', this)" class="week-tab active px-3 py-1.5 rounded-md bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-semibold shadow-xs transition whitespace-nowrap">
           Tất cả (36 Days)
         </button>
@@ -303,22 +307,24 @@
       </div>
 
       <!-- Modal Tabs (Hairline Tab bar, Evondev Rule M13) -->
-      <div class="px-5 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 flex items-center gap-1 overflow-x-auto text-xs font-medium">
-        <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-2.5 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-book-open"></i> Từ vựng chi tiết
-        </button>
-        <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-layer-group text-slate-400"></i> Flashcards 3D
-        </button>
-        <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-pen-to-square text-slate-400"></i> Bài tập điền câu
-        </button>
-        <button onclick="switchModalTab('raw')" id="tabBtn-raw" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-file-lines text-slate-400"></i> Bài đăng gốc
-        </button>
-        <button onclick="switchModalTab('files')" id="tabBtn-files" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
-          <i class="fa-solid fa-paperclip text-slate-400"></i> Tệp đính kèm
-        </button>
+      <div class="px-5 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
+        <div class="flex items-center gap-1 sm:gap-2 overflow-x-auto overflow-y-hidden no-scrollbar -mb-px text-xs font-medium">
+          <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-3 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors">
+            <i class="fa-solid fa-book-open text-xs"></i> Từ vựng chi tiết
+          </button>
+          <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+            <i class="fa-solid fa-layer-group text-slate-400 text-xs"></i> Flashcards 3D
+          </button>
+          <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+            <i class="fa-solid fa-pen-to-square text-slate-400 text-xs"></i> Bài tập điền câu
+          </button>
+          <button onclick="switchModalTab('raw')" id="tabBtn-raw" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+            <i class="fa-solid fa-file-lines text-slate-400 text-xs"></i> Bài đăng gốc
+          </button>
+          <button onclick="switchModalTab('files')" id="tabBtn-files" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+            <i class="fa-solid fa-paperclip text-slate-400 text-xs"></i> Tệp đính kèm
+          </button>
+        </div>
       </div>
 
       <!-- Modal Body Content -->
@@ -701,7 +707,13 @@
 
       document.getElementById('modalDayBadge').innerText = 'D' + d.day;
       document.getElementById('modalDayTitle').innerText = d.title;
-      document.getElementById('modalDayDue').innerHTML = `<i class="fa-regular fa-clock text-slate-400"></i> ${d.due_date || 'Tiến độ ôn tập'}`;
+      if (d.due_date && d.due_date.trim()) {
+        document.getElementById('modalDayDue').innerHTML = `<i class="fa-regular fa-clock text-slate-400"></i> ${d.due_date}`;
+      } else {
+        const vCount = (d.vocabulary || []).length;
+        const qCount = (d.exercises || []).length;
+        document.getElementById('modalDayDue').innerHTML = `<i class="fa-solid fa-graduation-cap text-slate-400"></i> ${vCount} từ vựng trọng tâm ${qCount > 0 ? '• ' + qCount + ' câu bài tập' : ''}`;
+      }
 
       // Wayground btn
       const wgBtn = document.getElementById('modalWaygroundBtn');
@@ -839,10 +851,10 @@
         const btn = document.getElementById(`tabBtn-${t}`);
         const content = document.getElementById(`tabContent-${t}`);
         if (t === tabKey) {
-          btn.className = 'modal-tab-btn active py-2.5 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap';
+          btn.className = 'modal-tab-btn active py-3 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors';
           content.classList.remove('hidden');
         } else {
-          btn.className = 'modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap';
+          btn.className = 'modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors';
           content.classList.add('hidden');
         }
       });

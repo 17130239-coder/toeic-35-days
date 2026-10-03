@@ -74,6 +74,10 @@
       40%, 80% { transform: translateX(6px); }
     }
     .animate-shake { animation: shake 0.35s ease-in-out; }
+
+    /* Hide scrollbars for clean horizontal rows */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-orange-600 selection:text-white">
@@ -130,7 +134,7 @@
           </div>
           <div>
             <label class="text-[11px] font-medium text-zinc-400 block mb-1">Chọn Avatar:</label>
-            <div class="flex items-center gap-1.5 overflow-x-auto py-0.5" id="avatarPicker"></div>
+            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5" id="avatarPicker"></div>
           </div>
         </div>
 
