@@ -1,0 +1,3389 @@
+[
+  {
+    "id": "d0_w1",
+    "index": 1,
+    "term": "Appraisal",
+    "phonetic": "/əˈpreɪzl/",
+    "pos": "(n)",
+    "meaning": "sự đánh giá",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Appraisal /əˈpreɪzl/ (n): sự đánh giá",
+    "day": 0
+  },
+  {
+    "id": "d0_w2",
+    "index": 2,
+    "term": "Approval",
+    "phonetic": "/əˈpruːvl/",
+    "pos": "(n)",
+    "meaning": "sự chấp thuận",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Approval /əˈpruːvl/ (n): sự chấp thuận",
+    "day": 0
+  },
+  {
+    "id": "d0_w3",
+    "index": 3,
+    "term": "Disposal",
+    "phonetic": "/dɪˈspəʊzl/",
+    "pos": "(n)",
+    "meaning": "sự loại bỏ",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Disposal /dɪˈspəʊzl/ (n): sự loại bỏ",
+    "day": 0
+  },
+  {
+    "id": "d0_w4",
+    "index": 4,
+    "term": "Periodical",
+    "phonetic": "/ˌpɪriˈɑːdɪkl/",
+    "pos": "(n)",
+    "meaning": "tạp chí xuất bản định kỳ",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Periodical /ˌpɪriˈɑːdɪkl/ (n): tạp chí xuất bản định kỳ",
+    "day": 0
+  },
+  {
+    "id": "d0_w5",
+    "index": 5,
+    "term": "Proposal",
+    "phonetic": "/prəˈpəʊzl/",
+    "pos": "(n)",
+    "meaning": "sự đề xuất",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Proposal /prəˈpəʊzl/ (n): sự đề xuất",
+    "day": 0
+  },
+  {
+    "id": "d0_w6",
+    "index": 6,
+    "term": "Removal",
+    "phonetic": "/rɪˈmuːvl/",
+    "pos": "(n)",
+    "meaning": "sự loại bỏ, việc dọn dẹp",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Removal /rɪˈmuːvl/ (n): sự loại bỏ, việc dọn dẹp",
+    "day": 0
+  },
+  {
+    "id": "d0_w7",
+    "index": 7,
+    "term": "Renewal",
+    "phonetic": "/rɪˈnjuːəl/, /rɪˈnuːəl/",
+    "pos": "(n)",
+    "meaning": "sự gia hạn, đổi mới",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Renewal /rɪˈnjuːəl/, /rɪˈnuːəl/ (n): sự gia hạn, đổi mới",
+    "day": 0
+  },
+  {
+    "id": "d0_w8",
+    "index": 8,
+    "term": "Alternative",
+    "phonetic": "/ɔːlˈtɜːrnətɪv/",
+    "pos": "(n)",
+    "meaning": "sự thay thế, sự lựa chọn",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Alternative /ɔːlˈtɜːrnətɪv/ (n): sự thay thế, sự lựa chọn",
+    "day": 0
+  },
+  {
+    "id": "d0_w9",
+    "index": 9,
+    "term": "Initiative",
+    "phonetic": "/ɪˈnɪʃətɪv/",
+    "pos": "(n)",
+    "meaning": "sáng kiến",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Initiative /ɪˈnɪʃətɪv/ (n): sáng kiến",
+    "day": 0
+  },
+  {
+    "id": "d0_w10",
+    "index": 10,
+    "term": "Objective",
+    "phonetic": "/əbˈdʒektɪv/",
+    "pos": "(n)",
+    "meaning": "mục tiêu",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Objective /əbˈdʒektɪv/ (n): mục tiêu",
+    "day": 0
+  },
+  {
+    "id": "d0_w11",
+    "index": 11,
+    "term": "Representative",
+    "phonetic": "/ˌreprɪˈzentətɪv/",
+    "pos": "(n)",
+    "meaning": "người đại diện",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "Representative /ˌreprɪˈzentətɪv/ (n): người đại diện",
+    "day": 0
+  },
+  {
+    "id": "d1_w1",
+    "index": 1,
+    "term": "Warranty policy",
+    "phonetic": "/ˈwɔːrənti ˈpɑːləsi/",
+    "pos": "(n.phrase)",
+    "meaning": "Chính sách bảo hành.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "1. Warranty policy\n /ˈwɔːrənti ˈpɑːləsi/ (n.phrase): Chính sách bảo hành.",
+    "day": 1
+  },
+  {
+    "id": "d1_w2",
+    "index": 2,
+    "term": "Issue",
+    "phonetic": "/ˈɪʃuː/, /rɪˈliːs/, /lɔːntʃ/, /rəʊl aʊt/, /ˈpʌblɪʃ/, /ɪˈdɪʃn/",
+    "pos": "(v/n)",
+    "meaning": "(v): Phát hành",
+    "synonyms": [
+      "Release",
+      "Launch",
+      "Roll out",
+      "Publish",
+      "Problem",
+      "Edition"
+    ],
+    "examples": [],
+    "raw_text": "2. Issue \n/ˈɪʃuː/ (v/n):\n(v): Phát hành = \nRelease \n/rɪˈliːs/ = \nLaunch \n/lɔːntʃ/ =\n Roll out \n/rəʊl aʊt/ =\n Publish \n/ˈpʌblɪʃ/\n(n): Vấn Đề ( = \nProblem\n, \nMatter\n) / Ấn Phẩm ( = \nEdition \n/ɪˈdɪʃn/)",
+    "day": 1
+  },
+  {
+    "id": "d1_w3",
+    "index": 3,
+    "term": "Directly",
+    "phonetic": "/daɪˈrektli/, /ɪn ˈpɜːrsn/, /ˈpɜːrsənəli/",
+    "pos": "(Adv)",
+    "meaning": "Trực tiếp/ Riêng/ Đích thân.",
+    "synonyms": [
+      "In person",
+      "Personally"
+    ],
+    "examples": [],
+    "raw_text": "3. Directly \n/daɪˈrektli/ (Adv) =\n In person \n/ɪn ˈpɜːrsn/ = \nPersonally\n /ˈpɜːrsənəli/: Trực tiếp/ Riêng/ Đích thân.",
+    "day": 1
+  },
+  {
+    "id": "d1_w4",
+    "index": 4,
+    "term": "Be severely damaged",
+    "phonetic": "/sɪˈvɪrli ˈdæmɪdʒ/",
+    "pos": "",
+    "meaning": "Bị thiệt hại 1 cách nghiêm trọng.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "4. Be severely damaged\n /sɪˈvɪrli ˈdæmɪdʒ/: Bị thiệt hại 1 cách nghiêm trọng.",
+    "day": 1
+  },
+  {
+    "id": "d1_w5",
+    "index": 5,
+    "term": "Process",
+    "phonetic": "/ˈprɑːses/, /ˈprɑːɡrəs/, /sɑːlv/, /rɪˈzɑːlv/, /ˈhændl/, /diːl wɪθ/, /ˈsetl/",
+    "pos": "(v/n)",
+    "meaning": "/ˈprɑːɡrəs/: Qui trình, quá trình",
+    "synonyms": [
+      "Progress",
+      "Solve",
+      "Resolve",
+      "Handle",
+      "Deal with",
+      "Settle"
+    ],
+    "examples": [],
+    "raw_text": "5. Process \n/ˈprɑːses/ (v/n):\n\n(n ) = \nProgress\n /ˈprɑːɡrəs/: Qui trình, quá trình\n->\n In the progress\n: Đang trong tiến trình, tiến độ.\n(v) = \nSolve\n /sɑːlv/ = \nResolve \n/rɪˈzɑːlv/ = \nHandle\n /ˈhændl/ = \nDeal with \n/diːl wɪθ/ = \nSettle \n/ˈsetl/: Xử lý, giải quyết.",
+    "day": 1
+  },
+  {
+    "id": "d2_w1",
+    "index": 1,
+    "term": "Ultimately",
+    "phonetic": "/ˈʌltɪmətli/, /ˈfaɪnəli/, /ɪˈventʃuəli/",
+    "pos": "(adv)",
+    "meaning": "Cuối cùng, sau cùng.",
+    "synonyms": [
+      "Finally",
+      "Eventually"
+    ],
+    "examples": [],
+    "raw_text": "1. Ultimately \n/ˈʌltɪmətli/ (adv) = \nFinally\n /ˈfaɪnəli/ = \nEventually\n /ɪˈventʃuəli/: Cuối cùng, sau cùng.\n\n**\nRa thi\n: \nAfter ......, ultimately/finally/eventually .....: \nSau...., cuối cùng cũng...",
+    "day": 2
+  },
+  {
+    "id": "d2_w2",
+    "index": 2,
+    "term": "Expert",
+    "phonetic": "/ˈekspɜːrt/, /prəˈfeʃənl/, /ˈspeʃəlɪst/",
+    "pos": "(n)",
+    "meaning": "Chuyên gia.",
+    "synonyms": [
+      "Professional",
+      "Specialist"
+    ],
+    "examples": [],
+    "raw_text": "2. Expert\n /ˈekspɜːrt/ (n): Chuyên gia.\n= \nProfessional \n/prəˈfeʃənl/ = \nSpecialist \n/ˈspeʃəlɪst/",
+    "day": 2
+  },
+  {
+    "id": "d2_w3",
+    "index": 3,
+    "term": "Boost",
+    "phonetic": "/buːst/, /ɪnˈhæns/, /ˈstreŋkθn/, /əkˈseləreɪt/",
+    "pos": "(v)",
+    "meaning": "Tăng cường, thúc đẩy.",
+    "synonyms": [
+      "Enhance",
+      "Strengthen",
+      "Accelerate"
+    ],
+    "examples": [],
+    "raw_text": "3. Boost \n/buːst/ (v): Tăng cường, thúc đẩy.\n= \nEnhance \n/ɪnˈhæns/ = \nStrengthen\n /ˈstreŋkθn/ = \nAccelerate\n /əkˈseləreɪt/",
+    "day": 2
+  },
+  {
+    "id": "d2_w4",
+    "index": 4,
+    "term": "Concise",
+    "phonetic": "/kənˈsaɪs/, /briːf/, /kənˈdenst/",
+    "pos": "(adj)",
+    "meaning": "Ngắn gọn, súc tích, vắn tắt.",
+    "synonyms": [
+      "Brief",
+      "Condensed"
+    ],
+    "examples": [],
+    "raw_text": "4. Concise\n /kənˈsaɪs/ (adj): Ngắn gọn, súc tích, vắn tắt.\n= \nBrief \n/briːf/ = \nCondensed\n /kənˈdenst/",
+    "day": 2
+  },
+  {
+    "id": "d2_w5",
+    "index": 5,
+    "term": "Fill out",
+    "phonetic": "/kəmˈpliːt/",
+    "pos": "(v)",
+    "meaning": "Điền vào, hoàn thành (mẫu đơn) ~",
+    "synonyms": [
+      "Complete"
+    ],
+    "examples": [],
+    "raw_text": "5. Fill out\n (v) +\n the form\n: Điền vào, hoàn thành (mẫu đơn) ~ \nComplete\n /kəmˈpliːt/",
+    "day": 2
+  },
+  {
+    "id": "d3_w1",
+    "index": 1,
+    "term": "Potential",
+    "phonetic": "/pəˈtenʃl/, /ˈprɑːmɪsɪŋ/, /prəˈspektɪv/",
+    "pos": "(adj)",
+    "meaning": "Đầy tiềm năng, đầy triển vọng, đầy hứa hẹn",
+    "synonyms": [
+      "Promising",
+      "Prospective"
+    ],
+    "examples": [],
+    "raw_text": "1. Potential \n/pəˈtenʃl/ (adj) = \nPromising\n /ˈprɑːmɪsɪŋ/ = \nProspective\n /prəˈspektɪv/: \nĐầy tiềm năng, đầy triển vọng, đầy hứa hẹn\nPotential customers/ clients/ buyers/ investors:\n Khách hàng/ Người mua/ Các nhà đầu tư tiềm năng\nPotential risks/ threat/ danger\n: Rủi ro/Mối đe dọa/Mối nguy hiểm tiềm ẩn",
+    "day": 3
+  },
+  {
+    "id": "d3_w2",
+    "index": 2,
+    "term": "Defective",
+    "phonetic": "/dɪˈfektɪv/, /ˈfɔːlti/, /ˌmælˈfʌŋkʃn/",
+    "pos": "(adj)",
+    "meaning": "Bị hư hỏng, bị lỗi",
+    "synonyms": [
+      "Faulty",
+      "Malfunctioning"
+    ],
+    "examples": [],
+    "raw_text": "2. Defective\n /dɪˈfektɪv/ (adj) = \nFaulty\n /ˈfɔːlti/ = \nMalfunctioning\n /ˌmælˈfʌŋkʃn/: \nBị hư hỏng, bị lỗi",
+    "day": 3
+  },
+  {
+    "id": "d3_w3",
+    "index": 3,
+    "term": "Merchandise",
+    "phonetic": "/ˈmɜːrtʃəndaɪz/, /ɡʊdz/, /ˈaɪtəm/, /kəˈmɑːdəti/, /ˈprɑːdʌkt/",
+    "pos": "(n)",
+    "meaning": "Hàng hóa, mặt hàng, sản phẩm",
+    "synonyms": [
+      "Goods",
+      "Item",
+      "Commodity",
+      "Product"
+    ],
+    "examples": [],
+    "raw_text": "3.\n \nMerchandise\n /ˈmɜːrtʃəndaɪz/ (n) = \nGoods\n /ɡʊdz/ = \nItem \n/ˈaɪtəm/ = \nCommodity\n /kəˈmɑːdəti/ = \nProduct\n /ˈprɑːdʌkt/:\n \nHàng hóa, mặt hàng, sản phẩm\nTo produce/buy/sell goods:\n Sản xuất/mua/bán hàng hóa",
+    "day": 3
+  },
+  {
+    "id": "d3_w4",
+    "index": 4,
+    "term": "Be exchanged",
+    "phonetic": "/ɪksˈtʃeɪndʒ/, /səˈpɔːrt/",
+    "pos": "",
+    "meaning": "Trao đổi lấy cái gì",
+    "synonyms": [
+      "support"
+    ],
+    "examples": [],
+    "raw_text": "4. Be exchanged\n /ɪksˈtʃeɪndʒ/ (Ved) \nfor S.TH \n=\n in favor of S.TH\n: \nTrao đổi lấy cái gì\nNgoài ra, \nin favor of\n còn có nghĩa \n(2) = support /səˈpɔːrt/\n: Tán thành, ủng hộ",
+    "day": 3
+  },
+  {
+    "id": "d3_w5",
+    "index": 5,
+    "term": "Comply",
+    "phonetic": "/kəmˈplaɪ  wɪθ/, /əˈbaɪd  baɪ/, /ˈfɑːləʊ/, /əbˈzɜːrv/, /kənˈfɔːrm  tu/, /ədˈhɪr  tu/, /stɪk  tu/, /lɔː/, /ruːl/, /ˈpɑːləsi/, /ˌreɡjuˈleɪʃn/, /ˈɡaɪdlaɪn/, /ˈstændərd/, /kraɪˈtɪriə/, /ˌspesɪfɪˈkeɪʃn/, /kəmˈplaɪəns/",
+    "pos": "(n)",
+    "meaning": "Tuân theo, tuân thủ cái gì",
+    "synonyms": [
+      "Abide",
+      "Follow",
+      "Observe",
+      "Conform to",
+      "Adhere to",
+      "Stick",
+      "Obey",
+      "Criteria"
+    ],
+    "examples": [],
+    "raw_text": "5. Comply\n \nwith\n /kəmˈplaɪ  wɪθ/\n \n(phrasal v) = \nAbide\n \nby \n/əˈbaɪd  baɪ/\n \n= \nFollow\n /ˈfɑːləʊ/ = \nObserve\n /əbˈzɜːrv/ = \nConform to\n /kənˈfɔːrm  tu/\n \n= \nAdhere to\n /ədˈhɪr  tu/ = \nStick\n \nto\n /stɪk  tu/\n \n= \nObey\n /əˈbeɪ/:\n \nTuân theo, tuân thủ cái gì\nCÁC DANH TỪ ĐI CHUNG:\n+ \nLaw\n /lɔː/: Luật\n+ \nRule\n /ruːl/: Luật lệ\n+ \nPolicy \n/ˈpɑːləsi/: Chính sách\n+ \nRegulation \n/ˌreɡjuˈleɪʃn/: Qui định\n+ \nGuideline \n/ˈɡaɪdlaɪn/: Hướng dẫn\n+ \nStandard \n/ˈstændərd/ = \nCriteria\n /kraɪˈtɪriə/: Tiêu chuẩn\n+ \nSpecification \n/ˌspesɪfɪˈkeɪʃn/: Thông số kĩ thuật\nIn compliance\n /kəmˈplaɪəns/ (n) \nwith S.TH: \nSự tuân thủ cái gì",
+    "day": 3
+  },
+  {
+    "id": "d4_w1",
+    "index": 1,
+    "term": "Have/ Has/ Be yet to do S.TH",
+    "phonetic": "",
+    "pos": "",
+    "meaning": "Chưa làm gì.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The train",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Have/ Has/ Be yet to do S.TH:\n Chưa làm gì.\n    Eg: The train \nis yet to\n come.\n \n(Tàu chưa về đến ga)",
+    "day": 4
+  },
+  {
+    "id": "d4_w2",
+    "index": 2,
+    "term": "Promote",
+    "phonetic": "/prəˈməʊt/",
+    "pos": "(v)",
+    "meaning": "Thăng tiến, khuyến mãi, quảng bá, thúc đẩy (đẩy mạnh).",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "2. Promote\n /prəˈməʊt/ (v): Thăng tiến, khuyến mãi, quảng bá, thúc đẩy (đẩy mạnh).",
+    "day": 4
+  },
+  {
+    "id": "d4_w3",
+    "index": 3,
+    "term": "Considerable",
+    "phonetic": "/kənˈsɪdərəbl/, /sɪɡˈnɪfɪkənt/, /səbˈstænʃl/, /,kɔntri'bju:ʃn/",
+    "pos": "(Adj)",
+    "meaning": "Đáng kể.",
+    "synonyms": [
+      "Significant",
+      "Substantial"
+    ],
+    "examples": [],
+    "raw_text": "3. Considerable\n /kənˈsɪdərəbl/ (Adj) = \nSignificant\n /sɪɡˈnɪfɪkənt/ = \nSubstantial\n /səbˈstænʃl/: Đáng kể.\n+ contribution\n /,kɔntri'bju:ʃn/ (n): sự đóng góp ĐÁNG KỂ.\n\n+ amount / sums of money (time)\n: lượng tiền / thời gian ĐÁNG KỂ.",
+    "day": 4
+  },
+  {
+    "id": "d4_w4",
+    "index": 4,
+    "term": "Contribution",
+    "phonetic": "/ˌkɑːntrɪˈbjuːʃn/, /dɪˈstrɪbjuːt/, /prəˈvaɪd/, /ˈɔːfər/",
+    "pos": "(n)",
+    "meaning": "sự đóng góp, cống hiến cho.",
+    "synonyms": [
+      "Offer"
+    ],
+    "examples": [],
+    "raw_text": "4. Contribution \n/ˌkɑːntrɪˈbjuːʃn/ (n)\n to S.TH\n: sự đóng góp, cống hiến cho.\n# \nDistribution \n/dɪˈstrɪbjuːt/\n \n(n) \nof S.TH/to S.O:\n sự phân phối, phân phát.\n\n5. \n2 Công Thức đi với \nprovide\n /prəˈvaɪd/:\nProvide\n/\nOffer\n (v) \nS.TH to S.O\n: Cung cấp cái gì đến cho ai.\nProvide \n(v) \nS.O with S.TH\n: Cung cấp ai đó với cái gì.\n= \nOffer \n/ˈɔːfər/\n S.O S.TH",
+    "day": 4
+  },
+  {
+    "id": "d5_w1",
+    "index": 1,
+    "term": "Information desk",
+    "phonetic": "/ˌɪnfərˈmeɪʃn desk/, /rɪˈsepʃn  desk/, /frʌnt  desk/",
+    "pos": "(N.Phrase)",
+    "meaning": "Quầy lễ tân",
+    "synonyms": [
+      "Reception",
+      "Front"
+    ],
+    "examples": [],
+    "raw_text": "1. Information desk\n /ˌɪnfərˈmeɪʃn desk/ (N.Phrase) = \nReception\n \ndesk\n /rɪˈsepʃn  desk/ = \nFront\n \ndesk \n/frʌnt  desk/: Quầy lễ tân",
+    "day": 5
+  },
+  {
+    "id": "d5_w2",
+    "index": 2,
+    "term": "Comparable",
+    "phonetic": "/ˈkɑːmpərəbl/, /ˈsɪmələr/",
+    "pos": "(adj)",
+    "meaning": "Tương tự",
+    "synonyms": [
+      "Similar"
+    ],
+    "examples": [
+      {
+        "en": "Comparable experience",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Comparable\n /ˈkɑːmpərəbl/ (adj) = \nSimilar\n /ˈsɪmələr/: Tương tự\n    Eg: \nComparable experience\n in a related field.\n (Kinh nghiệm tương tự trong lĩnh vực có liên quan)",
+    "day": 5
+  },
+  {
+    "id": "d5_w3",
+    "index": 3,
+    "term": "Ongoing",
+    "phonetic": "/ˈɑːnɡəʊɪŋ/, /kənˈtɪnjuəs/, /kənˈtɪnjuəl/, /kənˈsekjətɪv/, /səkˈsesɪv/",
+    "pos": "(adj)",
+    "meaning": "Liên tục, liên tiếp, đang diễn ra",
+    "synonyms": [
+      "Continuous",
+      "Continual",
+      "Consecutive",
+      "Successive"
+    ],
+    "examples": [],
+    "raw_text": "3. Ongoing\n /ˈɑːnɡəʊɪŋ/ (adj): Liên tục, liên tiếp, đang diễn ra\n= \nContinuous\n /kənˈtɪnjuəs/ = \nContinual \n/kənˈtɪnjuəl/ = \nConsecutive\n /kənˈsekjətɪv/ = \nSuccessive\n /səkˈsesɪv/",
+    "day": 5
+  },
+  {
+    "id": "d5_w4",
+    "index": 4,
+    "term": "Price quote",
+    "phonetic": "/praɪs  kwəʊt/, /praɪs  kwəʊˈteɪʃn/, /ˈestɪmət/",
+    "pos": "",
+    "meaning": "/praɪs kwəʊt/ (hoặc:",
+    "synonyms": [
+      "Estimate"
+    ],
+    "examples": [],
+    "raw_text": "4. Price quote\n /praɪs  kwəʊt/ (hoặc: \nprice quotation\n /praɪs  kwəʊˈteɪʃn/): Bảng báo giá\n= \nEstimate\n /ˈestɪmət/: Bản ước tính (chi phí)",
+    "day": 5
+  },
+  {
+    "id": "d5_w5",
+    "index": 5,
+    "term": "Be responsible",
+    "phonetic": "/rɪˈspɑːnsəbl/, /əˈkaʊntəbl/",
+    "pos": "(Adj)",
+    "meaning": "Chịu trách nhiệm cho",
+    "synonyms": [
+      "Hold accountable"
+    ],
+    "examples": [],
+    "raw_text": "5. Be responsible \n/rɪˈspɑːnsəbl/ (Adj) \nfor + N/ V_ing\n: Chịu trách nhiệm cho\n= \nIn charge of + Ving/ N \n=\n Be supposed to + V1 \n=\n Hold accountable \n/əˈkaʊntəbl/ \nfor S.TH",
+    "day": 5
+  },
+  {
+    "id": "d5_w6",
+    "index": 6,
+    "term": "Fulfil",
+    "phonetic": "/fʊlˈfɪl/, /miːt/, /əˈkɑːmədeɪt/, /rɪˈkwaɪərmənt/, /niːd/, /dɪˈmænd/, /ˌekspekˈteɪʃn/, /ˈdedlaɪn/, /ɡəʊl/, /əbˈdʒektɪv/, /ˈtɑːrɡɪt/, /eɪm/, /ˈstændərd/, /kraɪˈtɪriə/, /ˌspesɪfɪˈkeɪʃn/",
+    "pos": "(v)",
+    "meaning": "Đáp ứng/Hoàn tất",
+    "synonyms": [
+      "Meet",
+      "Accommodate",
+      "Demand",
+      "Objective",
+      "Target",
+      "Aim",
+      "Criteria"
+    ],
+    "examples": [],
+    "raw_text": "6. Fulfil \n/fʊlˈfɪl/ (v) = \nMeet\n /miːt/ = \nAccommodate\n /əˈkɑːmədeɪt/: Đáp ứng/Hoàn tất\n\nCÁC DANH TỪ HAY ĐI CHUNG:\n+ \nRequirement\n /rɪˈkwaɪərmənt/: Yêu cầu\n+ \nNeed\n /niːd/ = \nDemand\n /dɪˈmænd/: Nhu cầu\n+ \nExpectation \n/ˌekspekˈteɪʃn/: Kì vọng, sự mong đợi\n+ \nDeadline\n /ˈdedlaɪn/: Hạn chót\n+ \nGoal\n /ɡəʊl/ = \nObjective\n /əbˈdʒektɪv/ = \nTarget\n /ˈtɑːrɡɪt/ = \nAim\n /eɪm/: Mục tiêu\n+ \nStandard \n/ˈstændərd/ = \nCriteria\n /kraɪˈtɪriə/: Tiêu chuẩn\n+ \nSpecification \n/ˌspesɪfɪˈkeɪʃn/: Tiêu chuẩn kĩ thuật",
+    "day": 5
+  },
+  {
+    "id": "d6_w1",
+    "index": 1,
+    "term": "Forward",
+    "phonetic": "/ˈfɔːrwərd/",
+    "pos": "(v)",
+    "meaning": "Chuyển tiếp cái gì cho ai đó",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "1. Forward\n /ˈfɔːrwərd/ (v) \nS.TH to S.O: \nChuyển tiếp cái gì cho ai đó",
+    "day": 6
+  },
+  {
+    "id": "d6_w2",
+    "index": 2,
+    "term": "Create",
+    "phonetic": "/kriˈeɪt/, /ˈdʒenəreɪt/",
+    "pos": "(v)",
+    "meaning": "Tạo ra cái gì",
+    "synonyms": [
+      "Generate"
+    ],
+    "examples": [],
+    "raw_text": "2. Create\n /kriˈeɪt/ (v) = \nGenerate\n /ˈdʒenəreɪt/: Tạo ra cái gì",
+    "day": 6
+  },
+  {
+    "id": "d6_w3",
+    "index": 3,
+    "term": "Linking Verb",
+    "phonetic": "/bɪˈkʌm/, /rɪˈmeɪn/, /siːm/, /diːm/, /pruːv/, /kənˈsɪdər/",
+    "pos": "",
+    "meaning": "Trở nên, trở thành",
+    "synonyms": [
+      "Get",
+      "Grow",
+      "Stay",
+      "Look",
+      "Sound",
+      "FEEL"
+    ],
+    "examples": [],
+    "raw_text": "3. Linking Verb\n (y như \"\nto\n \nbe\n\") + \nadj\nBECOME \n/bɪˈkʌm/ = \nGet\n = \nTurn\n = \nGrow\n = \nRun\n: Trở nên, trở thành\nREMAIN \n/rɪˈmeɪn/ = \nStay\n: Duy trì\nSEEM \n/siːm/ = \nLook\n = \nAppear\n = \nSound\n: Có vẻ như, dường như\nDEEM \n/diːm/: Thấy rằng, tưởng rằng\nPROVE \n/pruːv/: Chứng Tỏ, chứng minh\nCONSIDER \n/kənˈsɪdər/: Cân nhắc, xem xét + \nAdj /V_ing\n1 số động từ \"chỉ tri giác\": \nFIND \n= \nFEEL\n: Cảm thấy/ \nTASTE\n: Nếm/ \nSMELL\n: Ngửi,..",
+    "day": 6
+  },
+  {
+    "id": "d6_w4",
+    "index": 4,
+    "term": "Be familiar",
+    "phonetic": "/fəˈmɪliər/, /əˈkʌstəmd/, /əˈkweɪntɪd/",
+    "pos": "(adj)",
+    "meaning": "Làm quen với...",
+    "synonyms": [
+      "Be used to",
+      "Be acquainted"
+    ],
+    "examples": [],
+    "raw_text": "4. Be familiar\n /fəˈmɪliər/ (adj) \n+ with\n: Làm quen với...\n= \nBe used to \n=\n Be accustomed\n /əˈkʌstəmd/ \nto \n=\n Be acquainted \n/əˈkweɪntɪd/ \nwith + N/ V_ing",
+    "day": 6
+  },
+  {
+    "id": "d6_w5",
+    "index": 5,
+    "term": "Register (for)",
+    "phonetic": "/ˈredʒɪstər fɔːr/, /saɪn ʌp/, /ɪnˈrəʊl ɪn/, /ˌredʒɪˈstreɪʃn/, /ɪnˈrəʊlmənt/",
+    "pos": "(n)",
+    "meaning": "Đăng ký, ghi danh, kết nạp",
+    "synonyms": [
+      "Sign up",
+      "Enroll in",
+      "Enrollment",
+      "Enrollment fee"
+    ],
+    "examples": [],
+    "raw_text": "5. Register (for) \n/ˈredʒɪstər fɔːr/ \n= Sign up \n/saɪn ʌp/ \n= Enroll in \n/ɪnˈrəʊl ɪn/\n: \nĐăng ký, ghi danh, kết nạp\nRegistration\n /ˌredʒɪˈstreɪʃn/ (n) = \nEnrollment\n /ɪnˈrəʊlmənt/ (n): Sự đăng ký, sự ghi danh\nRegistration fee \n(N.phrase) = \nEnrollment fee\n: Phí đăng ký",
+    "day": 6
+  },
+  {
+    "id": "d7_w1",
+    "index": 1,
+    "term": "Be eligible",
+    "phonetic": "/ˈelɪdʒəbl/, /ˈkwɑːlɪfaɪd/, /ˈelɪdʒəbl/",
+    "pos": "(adj)",
+    "meaning": "Có đủ năng lực, đủ điều kiện cho điều gì.",
+    "synonyms": [
+      "Be qualified"
+    ],
+    "examples": [],
+    "raw_text": "1. Be eligible \n/ˈelɪdʒəbl/ (adj) \nfor S.TH\n = \nBe qualified\n /ˈkwɑːlɪfaɪd/ \nfor\n: Có đủ năng lực, đủ điều kiện cho điều gì.\nBe eligible /ˈelɪdʒəbl/ (adj) to do S.TH\n: Đủ điều kiện để làm gì.",
+    "day": 7
+  },
+  {
+    "id": "d7_w2",
+    "index": 2,
+    "term": "Salary increase",
+    "phonetic": "/ˈsæləri ˈɪŋkriːs/, /weɪdʒ ˈɪŋkriːs/",
+    "pos": "",
+    "meaning": "Sự tăng lương.",
+    "synonyms": [
+      "Pay increase"
+    ],
+    "examples": [],
+    "raw_text": "2. Salary increase\n /ˈsæləri ˈɪŋkriːs/ (N. Phrase) = \nPay increase \n=\n Wage\n \nincrease \n/weɪdʒ ˈɪŋkriːs/: Sự tăng lương.",
+    "day": 7
+  },
+  {
+    "id": "d7_w3",
+    "index": 3,
+    "term": "Verify",
+    "phonetic": "/ˈverɪfaɪ/, /kənˈfɜːrm/, /əˈfɜːrm/",
+    "pos": "(v)",
+    "meaning": "Xác nhận, xác thực",
+    "synonyms": [
+      "Confirm",
+      "Affirm"
+    ],
+    "examples": [],
+    "raw_text": "3. Verify\n /ˈverɪfaɪ/ (v) = \nConfirm\n /kənˈfɜːrm/ = \nAffirm \n/əˈfɜːrm/: Xác nhận, xác thực",
+    "day": 7
+  },
+  {
+    "id": "d7_w4",
+    "index": 4,
+    "term": "Evaluate",
+    "phonetic": "/ɪˈvæljueɪt/, /reɪt/, /əˈses/, /dʒʌdʒ/",
+    "pos": "(v)",
+    "meaning": "Đánh giá",
+    "synonyms": [
+      "Rate",
+      "Assess",
+      "Judge"
+    ],
+    "examples": [],
+    "raw_text": "4. Evaluate\n /ɪˈvæljueɪt/ (v) = \nRate\n /reɪt/ = \nAssess\n /əˈses/ = \nJudge\n /dʒʌdʒ/: Đánh giá",
+    "day": 7
+  },
+  {
+    "id": "d7_w5",
+    "index": 5,
+    "term": "Outcome",
+    "phonetic": "/ˈaʊtkʌm/, /rɪˈzʌlt/, /ˈfaɪndɪŋ/",
+    "pos": "(n )",
+    "meaning": "Kết quả.",
+    "synonyms": [
+      "Result",
+      "Finding"
+    ],
+    "examples": [],
+    "raw_text": "5. Outcome\n /ˈaʊtkʌm/ (n ) = \nResult\n /rɪˈzʌlt/ = \nFinding(s) \n/ˈfaɪndɪŋ/: Kết quả.",
+    "day": 7
+  },
+  {
+    "id": "d8_w1",
+    "index": 1,
+    "term": "Economic recession",
+    "phonetic": "/ˌiːkəˈnɑːmɪk  rɪˈseʃn/, /ˌiːkəˈnɑːmɪk  ˈkraɪsɪs/, /faɪˈnænʃl  ˈkraɪsɪs/, /pəˈlɪtɪkl  ˈkraɪsɪs/",
+    "pos": "(N.phrase)",
+    "meaning": "Suy thoái kinh tế.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "1. Economic recession \n/ˌiːkəˈnɑːmɪk  rɪˈseʃn/(N.phrase): Suy thoái kinh tế.\nEconomic crisis \n/ˌiːkəˈnɑːmɪk  ˈkraɪsɪs/ (N.phrase):\n \nKhủng hoảng kinh tế.\nFinancial\n \ncrisis\n /faɪˈnænʃl  ˈkraɪsɪs/ (N.phrase): Khủng hoảng tài chính.\nPolitical crisis\n /pəˈlɪtɪkl  ˈkraɪsɪs/ (N.phrase): Khủng hoảng chính trị.",
+    "day": 8
+  },
+  {
+    "id": "d8_w2",
+    "index": 2,
+    "term": "Mergers and Acquisitions",
+    "phonetic": "/ˈmɜːrdʒər/, /ˌækwɪˈzɪʃn/",
+    "pos": "",
+    "meaning": "Sáp nhập & thâu tóm.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "2. Mergers and Acquisitions \n/ˈmɜːrdʒər/ /ˌækwɪˈzɪʃn/: Sáp nhập & thâu tóm.",
+    "day": 8
+  },
+  {
+    "id": "d8_w3",
+    "index": 3,
+    "term": "Implement",
+    "phonetic": "/ˈɪmplɪment/, /kənˈdʌkt/, /prəʊˈsiːd/, /pərˈfɔːrm/, /ˈeksɪkjuːt/, /ɪnˈfɔːrs/, /ˌʌndərˈweɪ/",
+    "pos": "(v/n)",
+    "meaning": "Tiến hành, thực hiện, triển khai.",
+    "synonyms": [
+      "Carry out",
+      "Proceed",
+      "Perform",
+      "Execute",
+      "Enforce",
+      "Be underway"
+    ],
+    "examples": [],
+    "raw_text": "3. Implement\n /ˈɪmplɪment/ (v/n): Tiến hành, thực hiện, triển khai.\n= \nCarry out \n= \nConduct\n /kənˈdʌkt/ = \nProceed\n /prəʊˈsiːd/ = \nPerform \n/pərˈfɔːrm/ = \nExecute \n/ˈeksɪkjuːt/ ~ \nEnforce\n /ɪnˈfɔːrs/ ~\n Be underway \n/ˌʌndərˈweɪ/",
+    "day": 8
+  },
+  {
+    "id": "d8_w4",
+    "index": 4,
+    "term": "Adequate",
+    "phonetic": "/ˈædɪkwət/, /ɪˈnʌf/, /səˈfɪʃnt/, /əˈprəʊpriət/, /ˈprɑːpər/, /ˈsuːtəbl/",
+    "pos": "(adj)",
+    "meaning": "Đủ",
+    "synonyms": [
+      "Enough",
+      "Sufficient",
+      "Appropriate",
+      "Proper",
+      "Suitable"
+    ],
+    "examples": [],
+    "raw_text": "4. Adequate\n /ˈædɪkwət/ (adj)\n(1) \n= \nEnough \n/ɪˈnʌf/ = \nSufficient\n /səˈfɪʃnt/: Đủ\n(2)\n \n+ for\n = \nAppropriate\n /əˈprəʊpriət/ = \nProper\n /ˈprɑːpər/ = \nSuitable\n /ˈsuːtəbl/ \n+ for\n: Thích hợp, phù hợp cho ...",
+    "day": 8
+  },
+  {
+    "id": "d8_w5",
+    "index": 5,
+    "term": "S.O be pleased",
+    "phonetic": "/pliːzd/, /ˈwɪlɪŋ/",
+    "pos": "(adj)",
+    "meaning": "Ai đó cảm thấy vui vẻ, sẵn lòng khi làm gì.",
+    "synonyms": [
+      "Be willing"
+    ],
+    "examples": [],
+    "raw_text": "5. S.O be pleased\n /pliːzd/ (adj)\n to do S.TH\n: Ai đó cảm thấy vui vẻ, sẵn lòng khi làm gì.\n= \nBe willing \n/ˈwɪlɪŋ/ \nto do S.TH\n: Sẵn lòng làm gì.\n📍\nCÁCH GHI NHỚ TỪ VỰNG CỰC LÂU: \nVIẾT MỖI TỪ CẦN HỌC RA GIẤY ÍT NHẤT 10 LẦN + ĐỌC TO PHÁT ÂM CÙNG NGHĨA CỦA TỪ + HOÀN THÀNH 2 BÀI TẬP BÊN DƯỚI\n.",
+    "day": 8
+  },
+  {
+    "id": "d9_w2",
+    "index": 2,
+    "term": "Workshop",
+    "phonetic": "/ˈwɜːrkʃɑːp/, /ˈsemɪnɑːr/, /ˈtreɪnɪŋ ˈseʃn/",
+    "pos": "(n )",
+    "meaning": "Buổi hội thảo.",
+    "synonyms": [
+      "Seminar",
+      "Training Session"
+    ],
+    "examples": [],
+    "raw_text": "2. Workshop\n /ˈwɜːrkʃɑːp/ (n ) = \nSeminar\n /ˈsemɪnɑːr/: Buổi hội thảo.\n~\n \nTraining Session \n/ˈtreɪnɪŋ ˈseʃn/: Khóa Huấn Luyện.",
+    "day": 9
+  },
+  {
+    "id": "d9_w3",
+    "index": 3,
+    "term": "Comprehensive",
+    "phonetic": "/ˌkɑːmprɪˈhensɪv/, /ˌkɑːmprɪˈhensɪv ˈnɑːlɪdʒ/, /ˌkɑːmprɪˈhensɪv səˈluːʃnz/",
+    "pos": "(Adj)",
+    "meaning": "Bao quát, toàn diện.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. Comprehensive \n/ˌkɑːmprɪˈhensɪv/ (Adj): Bao quát, toàn diện.\nComprehensive knowledge \n/ˌkɑːmprɪˈhensɪv ˈnɑːlɪdʒ/ (n.phrase): Kiến thức bao quát.\nComprehensive solutions \n/ˌkɑːmprɪˈhensɪv səˈluːʃnz/ (n.phrase): Các giải pháp toàn diện.",
+    "day": 9
+  },
+  {
+    "id": "d9_w4",
+    "index": 4,
+    "term": "Alter",
+    "phonetic": "/ˈɔːltər/, /tʃeɪndʒ/, /ˈmɑːdɪfaɪ/, /əˈdʒʌst/, /əˈdæpt/, /ˌmɑːdɪfɪˈkeɪʃn/",
+    "pos": "(v)",
+    "meaning": "Thay đổi, điều chỉnh.",
+    "synonyms": [
+      "Change",
+      "Modify",
+      "Adjust",
+      "Adapt"
+    ],
+    "examples": [],
+    "raw_text": "4. Alter\n /ˈɔːltər/ (v) = \nChange\n /tʃeɪndʒ/ = \nModify\n /ˈmɑːdɪfaɪ/ = \nAdjust \n/əˈdʒʌst/ ~ \nAdapt\n /əˈdæpt/: Thay đổi, điều chỉnh.\n=>\n Alteration/ Change/ Modification \n/ˌmɑːdɪfɪˈkeɪʃn/ (n): Sự thay đổi, điều chỉnh.",
+    "day": 9
+  },
+  {
+    "id": "d9_w5",
+    "index": 5,
+    "term": "Submit",
+    "phonetic": "/səbˈmɪt/, /faɪl/",
+    "pos": "(v)",
+    "meaning": "Nộp, đệ trình.",
+    "synonyms": [
+      "File",
+      "Hand in"
+    ],
+    "examples": [],
+    "raw_text": "5. Submit \n/səbˈmɪt/ (v) = \nFile \n/faɪl/ = \nHand in\n = \nTurn in\n: Nộp, đệ trình.",
+    "day": 9
+  },
+  {
+    "id": "d9_w6",
+    "index": 6,
+    "term": "Conveniently",
+    "phonetic": "/kənˈviːniəntli  ˈləʊkeɪtɪd/, /ˈsentrəli  ˈləʊkeɪtɪd/",
+    "pos": "",
+    "meaning": "Tọa lạc vị trí thuận tiện.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "6. Conveniently\n \nlocated\n /kənˈviːniəntli  ˈləʊkeɪtɪd/: Tọa lạc vị trí thuận tiện.\n    \nCentrally located \n/ˈsentrəli  ˈləʊkeɪtɪd/: Tọa lạc ở vị trí trung tâm.",
+    "day": 9
+  },
+  {
+    "id": "d10_w1",
+    "index": 1,
+    "term": "Across",
+    "phonetic": "/əˈkrɔːs/, /θruːˈaʊt/",
+    "pos": "(Prep.)",
+    "meaning": "Khắp..",
+    "synonyms": [
+      "Throughout"
+    ],
+    "examples": [
+      {
+        "en": "Across America",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Across\n /əˈkrɔːs/ (Prep.) = \nThroughout\n /θruːˈaʊt/\n + nơi chốn\n: Khắp..\nEg:\n Across America\n: Khắp nước Mỹ.",
+    "day": 10
+  },
+  {
+    "id": "d10_w2",
+    "index": 2,
+    "term": "Among",
+    "phonetic": "/əˈmʌŋ/",
+    "pos": "(Prep.)",
+    "meaning": "Trong số, giữa ...",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Among",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Among\n /əˈmʌŋ/ (Prep.) \n+ Danh từ số nhiều (Plural Noun)\n: Trong số, giữa ...\nEg: \nAmong\n the leading \ncompanies\n.\n(Trong số những công ty hàng đầu)",
+    "day": 10
+  },
+  {
+    "id": "d10_w3",
+    "index": 3,
+    "term": "Reasonable",
+    "phonetic": "/ˈriːznəbl/, /əˈfɔːrdəbl/",
+    "pos": "(adj)",
+    "meaning": "Hợp lý, phải chăng.",
+    "synonyms": [
+      "Affordable"
+    ],
+    "examples": [],
+    "raw_text": "3. Reasonable \n/ˈriːznəbl/ (adj) = \nAffordable\n /əˈfɔːrdəbl/: Hợp lý, phải chăng.\n+ price/ rate/ fee/ charge/ cost: \nGiá cả/ tỉ giá/ phí/ chi phí HỢP LÝ, PHẢI CHĂNG.",
+    "day": 10
+  },
+  {
+    "id": "d10_w4",
+    "index": 4,
+    "term": "Exceed",
+    "phonetic": "/ɪkˈsiːd/, /sərˈpæs/, /ˈʃerhəʊldər ˌekspekˈteɪʃn/",
+    "pos": "",
+    "meaning": "Vượt quá sự kì vọng của cổ đông.",
+    "synonyms": [
+      "Surpass"
+    ],
+    "examples": [],
+    "raw_text": "4. Exceed\n /ɪkˈsiːd/ ( = \nSurpass \n/sərˈpæs/) \nshareholder expectation\n /ˈʃerhəʊldər ˌekspekˈteɪʃn/: Vượt quá sự kì vọng của cổ đông.",
+    "day": 10
+  },
+  {
+    "id": "d10_w5",
+    "index": 5,
+    "term": "Address",
+    "phonetic": "/əˈdres/, /ˈɔːdiəns/",
+    "pos": "(v)",
+    "meaning": "Hướng tới, đề cập/ Giải quyết/ Diễn thuyết.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "5. Address\n /əˈdres/ (v)\n S.TH / S.O\n: Hướng tới, đề cập/ Giải quyết/ Diễn thuyết.\nAddress a problem/ concern/ question/ complaint\n: giải quyết 1 vấn đề/ mối quan tâm/ câu hỏi/ lời phàn nàn.\nAddress the audience \n/ˈɔːdiəns/: Diễn thuyết trước khán giả.",
+    "day": 10
+  },
+  {
+    "id": "d10_w6",
+    "index": 6,
+    "term": "Highly/Widely regarded",
+    "phonetic": "/rɪˈɡɑːrd/",
+    "pos": "",
+    "meaning": "Được khen ngợi, đề cao/ được nhiều người nể trọng.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "6. Highly/Widely regarded\n /rɪˈɡɑːrd/: Được khen ngợi, đề cao/ được nhiều người nể trọng.",
+    "day": 10
+  },
+  {
+    "id": "d11_w1",
+    "index": 1,
+    "term": "Promptly",
+    "phonetic": "/ˈprɑːmptli/, /ˈkwɪkli/, /ˈræpɪdli/, /ˈpʌŋktʃuəli/, /ɪˈmiːdiətli/",
+    "pos": "(adv)",
+    "meaning": "1 cách nhanh chóng.",
+    "synonyms": [
+      "Quickly",
+      "Swiftly",
+      "Rapidly",
+      "Punctually",
+      "On time",
+      "Immediately"
+    ],
+    "examples": [
+      {
+        "en": "Deal with the correspondence",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Promptly\n /ˈprɑːmptli/ (adv)\n(1) \n= \nQuickly\n /ˈkwɪkli/ = \nSwiftly\n = \nFast\n = \nRapidly\n /ˈræpɪdli/: 1 cách nhanh chóng.\n(2)\n = \nPunctually \n/ˈpʌŋktʃuəli/ = \nOn time\n: Đúng giờ.\n(3)\n = \nImmediately \n/ɪˈmiːdiətli/: Ngay lập tức.\nE.g\n: \nDeal with the correspondence \npromptly\n and \nefficiently\n.\n(Xử lý thư từ liên hệ 1 cách nhanh chóng và hiệu quả).",
+    "day": 11
+  },
+  {
+    "id": "d11_w2",
+    "index": 2,
+    "term": "Efficiently",
+    "phonetic": "/ɪˈfɪʃntli/, /ɪˈfektɪvli/",
+    "pos": "(adv)",
+    "meaning": "1 cách hiệu quả.",
+    "synonyms": [
+      "Effectively"
+    ],
+    "examples": [
+      {
+        "en": "Resources must be used",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Efficiently\n /ɪˈfɪʃntli/ (adv) = \nEffectively\n /ɪˈfektɪvli/: 1 cách hiệu quả.\nWork/ Communicate/ Deal with + effectively\n: Làm việc/ Giao tiếp/ Xử lý 1 CÁCH HIỆU QUẢ.\nE.g\n: \nResources must be used \nefficiently\n to avoid waste.\n(Các nguồn tài nguyên phải được sử dụng hiệu quả để tránh lãng phí).",
+    "day": 11
+  },
+  {
+    "id": "d11_w3",
+    "index": 3,
+    "term": "Extensive",
+    "phonetic": "/ɪkˈstensɪv/, /ɪnˈtensɪv/",
+    "pos": "(adj)",
+    "meaning": "Trên diện rộng, sâu rộng.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. Extensive \n/ɪkˈstensɪv/ (adj): Trên diện rộng, sâu rộng.\nExtensive knowledge\n: Kiến thức rộng.\n    # \nIntensive\n /ɪnˈtensɪv/ (adj): Cấp tốc, chuyên sâu.\nAn intensive language course: \nKhóa ngôn ngữ cấp tốc.\nIntensive care:\n Sự săn sóc đặc biệt (đối với ai).",
+    "day": 11
+  },
+  {
+    "id": "d11_w4",
+    "index": 4,
+    "term": "Financial ruin",
+    "phonetic": "/faɪˈnænʃl ˈruːɪn/, /ˈbæŋkrʌptsi/",
+    "pos": "(n )",
+    "meaning": "Sự phá sản, hủy hoại về tài chính.",
+    "synonyms": [
+      "Bankruptcy"
+    ],
+    "examples": [
+      {
+        "en": "The bank stepped in to save the company from",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Financial ruin \n(n ) /faɪˈnænʃl ˈruːɪn/ ~ \nBankruptcy\n /ˈbæŋkrʌptsi/: Sự phá sản, hủy hoại về tài chính.\nFall into ruin:\n Bị đổ nát, hủy hoại nghiêm trọng.\nOn the edge/ brink/ verge of ruin\n: Trên bờ vực của sự phá sản, trên đà phá sản.\nE.g\n: \nThe bank stepped in to save the company from \nfinancial ruin\n.\n(Ngân hàng đã nhúng tay vào để cứu công ty từ việc phá sản).",
+    "day": 11
+  },
+  {
+    "id": "d11_w5",
+    "index": 5,
+    "term": "Convincingly",
+    "phonetic": "/kənˈvɪnsɪŋli/, /kənˈvɪns/, /pərˈsweɪd/",
+    "pos": "(adv)",
+    "meaning": "1 cách đầy thuyết phục.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "5. Convincingly \n/kənˈvɪnsɪŋli/ (adv): 1 cách đầy thuyết phục.\nTo present/ argue convincingly:\n Trình bày/ Tranh luận đầy thuyết phục.\nTo win convincingly: \nChiến thắng 1 cách đầy thuyết phục (1 cách dễ dàng)\n=> 2 CÔNG THỨC mang nghĩa \"\nthuyết phục\n\":\nConvince\n /kənˈvɪns/ (v) \nS.O of S.TH:\n Thuyết phục ai tin vào điều gì.\nConvince/Persuade \n/pərˈsweɪd/ (v)\n S.O to do S.TH: \nThuyết phục ai làm gì.",
+    "day": 11
+  },
+  {
+    "id": "d12_w1",
+    "index": 1,
+    "term": "Thanks to",
+    "phonetic": "/θæŋks tu/",
+    "pos": "(prep.)",
+    "meaning": "Nhờ vào việc gì",
+    "synonyms": [
+      "Because of",
+      "Owing to"
+    ],
+    "examples": [
+      {
+        "en": "Thanks to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Thanks to \n/θæŋks tu/\n \n(prep.) \n+ V_ing/N\n(1):\n Nhờ vào việc gì\n(2)\n = \nBecause of\n =\n Due to \n= \nOwing to \n=\n On account of \n= \nIn light of + Ving/N\n: Do bởi\n\nE.g\n: \nThanks to\n your donation, we could help a lot of people in need.\n\n(\nNhờ vào\n khoản tài trợ của bạn, chúng tôi đã có thể giúp đỡ cho rất nhiều người gặp khó khăn\n)",
+    "day": 12
+  },
+  {
+    "id": "d12_w2",
+    "index": 2,
+    "term": "S.O be likely",
+    "phonetic": "/ˈlaɪkli/",
+    "pos": "",
+    "meaning": "Ai đó rất có thể/có khả năng làm gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "She will",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. S.O be likely\n /ˈlaɪkli/ \nto do S.TH\n: Ai đó rất có thể/có khả năng làm gì\n\nE.g\n: \nShe will \nbe likely to\n apply for the assistant position at Manson company.\n\n(Cô ấy \nrất có thể\n sẽ nộp đơn vào vị trí trợ lý tại công ty Manson)",
+    "day": 12
+  },
+  {
+    "id": "d12_w3",
+    "index": 3,
+    "term": "Stiff",
+    "phonetic": "/stɪf/, /sɪˈvɪr/, /ɪnˈtens/, /ˈdɪfɪkəlt/, /ˌkɑːmpəˈtɪʃn/, /ˌɑːpəˈzɪʃn/, /rɪˈzɪstəns/",
+    "pos": "(adj)",
+    "meaning": "Khắc nghiệt, gay gắt",
+    "synonyms": [
+      "Severe",
+      "Intense",
+      "Very difficult"
+    ],
+    "examples": [],
+    "raw_text": "3. Stiff\n /stɪf/ (adj) = \nSevere \n/sɪˈvɪr/ = \nIntense\n /ɪnˈtens/ = \nVery difficult \n/ˈdɪfɪkəlt/: Khắc nghiệt, gay gắt\nStiff competition\n /ˌkɑːmpəˈtɪʃn/: Cạnh tranh gay gắt\nStiff opposition \n/ˌɑːpəˈzɪʃn/ \n/ resistance\n /rɪˈzɪstəns/: Sự phản đối/ chống cự gay gắt",
+    "day": 12
+  },
+  {
+    "id": "d12_w4",
+    "index": 4,
+    "term": "Cordially",
+    "phonetic": "/ˈkɔːrdʒəli/, /sɪnˈsɪrli/, /ɪnˈvaɪt/, /θæŋks/, /əˈpɑːlədʒaɪz/",
+    "pos": "(Adv)",
+    "meaning": "1 cách chân thành",
+    "synonyms": [
+      "Sincerely"
+    ],
+    "examples": [
+      {
+        "en": "You are",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Cordially\n /ˈkɔːrdʒəli/ (Adv) = \nSincerely\n /sɪnˈsɪrli/: 1 cách chân thành\n+ Invite\n /ɪnˈvaɪt/ (v): Chân thành mời\n\n+ Thanks \n/θæŋks/ \nfor\n: Chân thành cảm ơn\n\n+ Apologize\n /əˈpɑːlədʒaɪz/ \nfor\n: Chân thành xin lỗi\n\nE.g\n: \nYou are \ncordially invited\n to attend a retirement party in honor of Mr. Kim for his significant contribution over the past 30 years.\n\n(Bạn được \nchân thành mời\n đến dự bữa tiệc ăn mừng về hưu để vinh danh ông Kim cho những đóng góp đáng kể của ông ấy trong suốt hơn 30 năm qua)",
+    "day": 12
+  },
+  {
+    "id": "d12_w5",
+    "index": 5,
+    "term": "In honor",
+    "phonetic": "/ˈɑːnər  ʌv/, /peɪ ˈhɑːmɪdʒ/, /ɪn ˌselɪˈbreɪʃn  ʌv/",
+    "pos": "",
+    "meaning": "Tôn vinh, tưởng niệm",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "A ceremony",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. In honor\n \nof\n \nS.O\n /ˈɑːnər  ʌv/ =\n To pay homage to S.O \n/peɪ ˈhɑːmɪdʒ/\n:\n Tôn vinh, tưởng niệm\n\nIn celebration\n \nof \n/ɪn ˌselɪˈbreɪʃn  ʌv/\n: \nĂn mừng, kỉ niệm\n\nE.g\n: \nA ceremony \nin honor of\n those killed in the explosion.\n\n(Nghi thức \ntưởng niệm\n những người đã bị giết trong vụ nổ bom)",
+    "day": 12
+  },
+  {
+    "id": "d13_w1",
+    "index": 1,
+    "term": "Emphasis",
+    "phonetic": "/ˈemfəsɪs/",
+    "pos": "(n)",
+    "meaning": "Trọng tâm/ Sự nhấn mạnh",
+    "synonyms": [
+      "Stress"
+    ],
+    "examples": [],
+    "raw_text": "1. Emphasis\n /ˈemfəsɪs/ (n) = \nStress\n /stres/ \n+ on/upon S.TH\n: Trọng tâm/ Sự nhấn mạnh\nTo put/ lay/ place emphasis on S.TH:\n Đặt trọng tâm vào cái gì",
+    "day": 13
+  },
+  {
+    "id": "d13_w2",
+    "index": 2,
+    "term": "Outstanding",
+    "phonetic": "/aʊtˈstændɪŋ/, /ˈeksələnt/, /ɪkˈsepʃənl/, /suːˈpɜːrb/, /ˌʌnˈpeɪd/",
+    "pos": "(adj)",
+    "meaning": "Dịch vụ nổi bật, xuất sắc (",
+    "synonyms": [
+      "Excellent",
+      "Exceptional",
+      "Superb",
+      "Unpaid"
+    ],
+    "examples": [],
+    "raw_text": "2. Outstanding\n /aʊtˈstændɪŋ/ (adj)\n+ Service: \nDịch vụ nổi bật, xuất sắc ( = \nExcellent\n /ˈeksələnt/ = \nExceptional \n/ɪkˈsepʃənl/ = \nSuperb\n /suːˈpɜːrb/)\n+ \nBalance/ Account\n: Số dư tài khoản chưa thanh toán ( = \nUnpaid\n /ˌʌnˈpeɪd/)",
+    "day": 13
+  },
+  {
+    "id": "d13_w3",
+    "index": 3,
+    "term": "Be subject",
+    "phonetic": "/ˈsʌbdʒekt/",
+    "pos": "(adj)",
+    "meaning": "Phải gánh chịu/ khó tránh khỏi điều gì",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. Be subject\n /ˈsʌbdʒekt/ (adj) \nto + N:\n Phải gánh chịu/ khó tránh khỏi điều gì",
+    "day": 13
+  },
+  {
+    "id": "d13_w4",
+    "index": 4,
+    "term": "Attract",
+    "phonetic": "/əˈtrækt/, /əˈpiːl/, /drɔː/",
+    "pos": "(v)",
+    "meaning": "Thu hút",
+    "synonyms": [
+      "Appeal to",
+      "Draw"
+    ],
+    "examples": [],
+    "raw_text": "4. Attract\n /əˈtrækt/ (v) =\n Appeal to\n /əˈpiːl/ = \nDraw\n /drɔː/: Thu hút",
+    "day": 13
+  },
+  {
+    "id": "d13_w5",
+    "index": 5,
+    "term": "Các giới từ và trạng từ",
+    "phonetic": "/wɪˈðɪn/, /liːst/, /əˈprɑːksɪmətli/, /ˈrʌfli/",
+    "pos": "",
+    "meaning": "Các giới từ và trạng từ",
+    "synonyms": [
+      "Over",
+      "Almost",
+      "Approximately",
+      "Roughly"
+    ],
+    "examples": [],
+    "raw_text": "5. \nCác giới từ và trạng từ\n + 1 \ncon số\n phía sau:\n\nFor\n: Trong suốt\nWithin \n/wɪˈðɪn/: Trong vòng\nMore than\n = \nOver\n: Hơn\nUp to:\n Lên đến\nNo later than\n: Không trễ hơn\nAt least \n/liːst/: Ít nhất\nNearly \n~ \nAlmost\n: Gần như, hầu như\nAbout\n ~ \nApproximately\n /əˈprɑːksɪmətli/ ~ \nRoughly\n /ˈrʌfli/: Khoảng Chừng, Sấp Xỉ.",
+    "day": 13
+  },
+  {
+    "id": "d14_w1",
+    "index": 1,
+    "term": "Lower",
+    "phonetic": "/ˈləʊ.ər/, /rɪˈduːs/, /fɔːl/, /dɪˈkriːs/, /drɑːp/, /dɪˈklaɪn/",
+    "pos": "",
+    "meaning": "Thấp hơn",
+    "synonyms": [
+      "Reduce",
+      "Fall",
+      "Decrease",
+      "Drop",
+      "Decline"
+    ],
+    "examples": [
+      {
+        "en": "They",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Lower \n/ˈləʊ.ər/:\n\n - Adj\n: Thấp hơn\n\n- Verb\n: Giảm ( = \nReduce\n /rɪˈduːs/ = \nFall \n/fɔːl/ = \nDecrease\n /dɪˈkriːs/ = \nDrop\n /drɑːp/ = \nDecline \n/dɪˈklaɪn/)\nEg: \nThey \nlower\ned the asking price of their house. \n(Họ đã giảm giá treo bán của ngôi nhà)",
+    "day": 14
+  },
+  {
+    "id": "d14_w2",
+    "index": 2,
+    "term": "Reach peak / At peak",
+    "phonetic": "/riːtʃ  piːk/, /æt  piːk/",
+    "pos": "",
+    "meaning": "Đạt tới đỉnh điểm",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The Beatles were",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Reach\n \npeak / At peak\n /riːtʃ  piːk/,  /æt  piːk/: Đạt tới đỉnh điểm\nEg: \nThe Beatles were \nat\n their \npeak\n during the 1960s.\n\n(Đỉnh điểm thành công của ban nhạc The Beatles là vào những năm 60)",
+    "day": 14
+  },
+  {
+    "id": "d14_w3",
+    "index": 3,
+    "term": "S.O be eager",
+    "phonetic": "/ˈiː.ɡər/, /kiːn/",
+    "pos": "(Adj)",
+    "meaning": "Ai đó háo hức làm gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "I'm",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. S.O be eager\n /ˈiː.ɡər/ (Adj) \nto do S.TH \n= \nS.O be keen\n /kiːn/ \nto do S.TH\n = \nBe keen on doing S.TH: \nAi đó háo hức làm gì\n\n📍Eagerly await/wait for\n: háo hức mong chờ\nEg: \nI'm \neager to\n see the results. \n(Tôi háo hức muốn xem kết quả ra sao)",
+    "day": 14
+  },
+  {
+    "id": "d14_w4",
+    "index": 4,
+    "term": "Fire",
+    "phonetic": "/faɪər/, /sæk/, /dɪˈsmɪs/, /ˈleɪ ɒf/",
+    "pos": "(v)",
+    "meaning": "Sa thải ai",
+    "synonyms": [
+      "Sack",
+      "Dismiss"
+    ],
+    "examples": [
+      {
+        "en": "The company is reducing its workforce by",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Fire\n /faɪər/ (v) = \nSack\n /sæk/ = \nDismiss\n /dɪˈsmɪs/ = \nLay S.O off\n /ˈleɪ ɒf/: Sa thải ai\nEg: \nThe company is reducing its workforce by \nfiring\n 500 employees.\n\n(Công ty đang cắt giảm nhân lực bằng cách sa thải 500 nhân viên)",
+    "day": 14
+  },
+  {
+    "id": "d14_w5",
+    "index": 5,
+    "term": "S.O be satisfied",
+    "phonetic": "/ˈsæt.ɪs.faɪd/, /ˌsætɪsˈfæktəri/, /əkˈseptəbl/, /ˈænsər/, /ˌekspləˈneɪʃn/, /səˈluːʃn/, /kənˈkluːʒn/",
+    "pos": "(adj)",
+    "meaning": "Hài lòng, thỏa mãn với",
+    "synonyms": [
+      "Acceptable"
+    ],
+    "examples": [
+      {
+        "en": "Are",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. S.O be satisfied\n /ˈsæt.ɪs.faɪd/ (adj)\n with S.TH:\n Hài lòng, thỏa mãn với\n\n   # Satisfactory \n/ˌsætɪsˈfæktəri/ (adj) =\n Acceptable \n/əkˈseptəbl/\n: \nThỏa đáng\n\n+ answer \n/ˈænsər/: câu trả lời (thỏa đáng)\n+ \nexplanation \n/ˌekspləˈneɪʃn/: lời giải thích (thỏa đáng)\n\n+ solution \n/səˈluːʃn/: giải pháp (thỏa đáng)\n+ \nconclusion \n/kənˈkluːʒn/: lời kết luận (thỏa đáng)\nEg: \nAre\n you \nsatisfied with\n the new arrangement?\n\n(Bạn có cảm thấy hài lòng với sự bổ nhiệm mới không?)",
+    "day": 14
+  },
+  {
+    "id": "d15_w1",
+    "index": 1,
+    "term": "Rival",
+    "phonetic": "/ˈraɪ.vəl/, /kəmˈpetɪtər/",
+    "pos": "(n)",
+    "meaning": "Đối thủ cạnh tranh.",
+    "synonyms": [
+      "Competitor"
+    ],
+    "examples": [],
+    "raw_text": "1. Rival \n/ˈraɪ.vəl/ (n) ~ \nCompetitor\n /kəmˈpetɪtər/: Đối thủ cạnh tranh.",
+    "day": 15
+  },
+  {
+    "id": "d15_w2",
+    "index": 2,
+    "term": "Attribute",
+    "phonetic": "/əˈtrɪbjuːt/, /ˈkrɛdətəd/",
+    "pos": "(v)",
+    "meaning": "Cho rằng ... là do ...",
+    "synonyms": [
+      "Be credited"
+    ],
+    "examples": [],
+    "raw_text": "2. Attribute \n/əˈtrɪbjuːt/ (v) \nS.TH to S.O/S.TH:\n Cho rằng ... là do ...= \nBe credited\n /ˈkrɛdətəd/ \nwith/for/to S.TH",
+    "day": 15
+  },
+  {
+    "id": "d15_w3",
+    "index": 3,
+    "term": "UNDER",
+    "phonetic": "/ˈʌn.dər/, /kənˌsɪd.əˈreɪ.ʃən/, /ˈpreʃ.ər/, /ˌsuː.pəˈvɪʒ.ən/, /kənˈstrʌk.ʃən/, /ˈsɜː.kəm.stɑːns/, /kənˈtrəʊl/, /ˌɒb.lɪˈɡeɪ.ʃən/, /ɪnˈʃɔːrəns/, /ˈwɔrənti/, /ˈpɒləsi/, /daɪˈrek.ʃən/, /daɪˈrek.tɪv/",
+    "pos": "(Prep.)",
+    "meaning": "Chịu việc gì đó.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. UNDER \n/ˈʌn.dər/ (Prep.)\n + Noun\n: Chịu việc gì đó.\nUnder consideration\n /kənˌsɪd.əˈreɪ.ʃən/: Chịu sự CÂN NHẮC, XEM XÉT.\nUnder pressure\n /ˈpreʃ.ər/: Chịu ÁP LỰC.\nUnder supervision\n /ˌsuː.pəˈvɪʒ.ən/: Chịu SỰ GIÁM SÁT.\nUnder construction\n /kənˈstrʌk.ʃən/: Đang Được THI CÔNG.\nUnder any circumstances\n /ˈsɜː.kəm.stɑːns/: Đặt Dưới Bất Kì TÌNH HUỐNG/HOÀN CẢNH nào.\nUnder S.O's control \n/kənˈtrəʊl/: Chịu SỰ KIỂM SOÁT của ai.\nUnder no obligation\n /ˌɒb.lɪˈɡeɪ.ʃən/: Không chịu sự BẮT BUỘC.\nUnder insurance/warranty policy\n /ɪnˈʃɔːrəns/ /ˈwɔrənti/ /ˈpɒləsi/ : Theo như CHÍNH SÁCH BẢO HIỂM/ BẢO HÀNH.\nUnder direction \n/daɪˈrek.ʃən/ \n/ directive\n /daɪˈrek.tɪv/: Dưới sự CHỈ DẪN, CẦM QUYỀN, ĐIỀU KHIỂN / Dưới CHỈ THỊ của ai.",
+    "day": 15
+  },
+  {
+    "id": "d15_w4",
+    "index": 4,
+    "term": "Take advantage",
+    "phonetic": "/ədˈvɑːn.tɪdʒ/",
+    "pos": "",
+    "meaning": "Tận dụng, lợi dụng cái gì.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "She",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Take advantage \n/ədˈvɑːn.tɪdʒ/ \nof S.TH:\n Tận dụng, lợi dụng cái gì.\n• \nTake advantage of the promotion\n: Tận dụng chương trình ưu đãi\n• \nTake advantage of available resources\n: Tận dụng những tài nguyên có sẵn\nEg: \nShe \ntakes advantage of\n the children's absence to tidy their rooms.\n(Cô ấy \ntận dụng\n việc những đứa trẻ vắng mặt để lau dọn phòng của chúng)",
+    "day": 15
+  },
+  {
+    "id": "d15_w5",
+    "index": 5,
+    "term": "Come/Go/Take/Put into effect",
+    "phonetic": "/ɪˈfekt/",
+    "pos": "",
+    "meaning": "Có hiệu lực thi hành.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The new policy will",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Come/Go/Take/Put into effect\n /ɪˈfekt/: Có hiệu lực thi hành.\nEg: \nThe new policy will \ncome into effect\n next month.\n(Chính sách mới sẽ \ncó hiệu lực thi hành\n vào tháng tới)",
+    "day": 15
+  },
+  {
+    "id": "d16_w1",
+    "index": 1,
+    "term": "Lack",
+    "phonetic": "/læk/, /ˈʃɔːrtɪdʒ/, /ˈʃɔːrtfɔːl/, /ˈskersəti/, /dɜːrθ/, /ˈdefɪsɪt/, /ˈsɜːrplʌs/, /ˌʌndərˈstændɪŋ/, /ˈnɑːlɪdʒ/, /ˌɪnfərˈmeɪʃn/, /ˈkɑːnfɪdəns/, /ɪkˈspɪriəns/, /fuːd/, /ˈwɔːtər/, /ˈhaʊzɪŋ/, /ˈʃɔːrtɪdʒ/, /ˈplenti/",
+    "pos": "(n)",
+    "meaning": "Sự thiếu hụt, thâm hụt cái gì.><",
+    "synonyms": [
+      "Shortage",
+      "Shortfall",
+      "Scarcity",
+      "Dearth of",
+      "Deficit",
+      "There are plenty"
+    ],
+    "examples": [
+      {
+        "en": "There is no shortage of",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Lack\n /læk/ (n)\n of S.TH \n= \nShortage\n \nof \n/ˈʃɔːrtɪdʒ/ ~ \nShortfall\n \nin/of\n /ˈʃɔːrtfɔːl/\n \n= \nScarcity\n /ˈskersəti/ = \nDearth of \n/dɜːrθ/\n \n= \nDeficit\n /ˈdefɪsɪt/: Sự thiếu hụt, thâm hụt cái gì.>< \nSurplus\n /ˈsɜːrplʌs/ (n): Sự dư thừa, thặng dư\n.\nA lack of\n+ \nunderstanding \n/ˌʌndərˈstændɪŋ/: Thiếu sự hiểu biết\n+ \nknowledge\n /ˈnɑːlɪdʒ/: Thiếu kiến thức\n+ \ninformation \n/ˌɪnfərˈmeɪʃn/: Thiếu thông tin\n+ \nconfidence \n/ˈkɑːnfɪdəns/: Thiếu sự tự tin\n+ \nexperience\n /ɪkˈspɪriəns/: Thiếu kinh nghiệm\nFood/Housing/Water shortage \n/fuːd/ - /ˈwɔːtər/ - /ˈhaʊzɪŋ/ (n.phrase): Thiếu đồ ăn/ nhà ở/ nước uống\n=> \nThere is no shortage of \n/ˈʃɔːrtɪdʒ/ = \nThere are plenty\n \nof\n /ˈplenti/: Vẫn còn nhiều cái gì.\nEg: \nThere is no shortage of\n job opportunities in the town. \n(\nVẫn còn nhiều\n cơ hội việc làm trong thị trấn)",
+    "day": 16
+  },
+  {
+    "id": "d16_w2",
+    "index": 2,
+    "term": "Direct",
+    "phonetic": "/daɪˈrekt/",
+    "pos": "(v)",
+    "meaning": "Chuyển trực tiếp cái gì đến cho ai.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Inquiries should be",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Direct\n /daɪˈrekt/ (v)\n S.TH to S.O\n: Chuyển trực tiếp cái gì đến cho ai.\nEg: \nInquiries should be \ndirected to\n Mark.\n\n(Các câu hỏi thắc mắc nên được \nchuyển trực tiếp đến\n Mark)",
+    "day": 16
+  },
+  {
+    "id": "d16_w3",
+    "index": 3,
+    "term": "Satisfactory",
+    "phonetic": "/ˌsætɪsˈfæktəri/, /əkˈseptəbl/, /ˌʌnˌsætɪsˈfæktəri/, /ˈsætɪsfaɪd/, /ˈænsər/, /ˌekspləˈneɪʃn/, /səˈluːʃn/, /kənˈkluːʒn/",
+    "pos": "(adj)",
+    "meaning": "Thỏa đáng.",
+    "synonyms": [
+      "Acceptable"
+    ],
+    "examples": [
+      {
+        "en": "Tommy failed to provide",
+        "vi": ""
+      },
+      {
+        "en": "She",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Satisfactory\n /ˌsætɪsˈfæktəri/ (adj) = \nAcceptable\n /əkˈseptəbl/: Thỏa đáng.\n\n>< Unsatisfactory\n /ˌʌnˌsætɪsˈfæktəri/: Không thỏa đáng.\n\n# Be satisfied\n /ˈsætɪsfaɪd/ (adj) \nwith S.TH:\n Hài lòng, thỏa mãn với.\n\nA satisfactory\n+ \nanswer\n /ˈænsər/: Câu trả lời thỏa đáng\n+ \nexplanation \n/ˌekspləˈneɪʃn/: Lời giải thích thỏa đáng\n+ \nsolution \n/səˈluːʃn/: Cách giải quyết thỏa đáng\n+ \nconclusion \n/kənˈkluːʒn/: Kết luận thỏa đáng\nEg: \nTommy failed to provide \nsatisfactory answers\n to the reporters' questions.\n\n(Tommy không thể đưa ra được \ncâu trả lời thỏa đáng\n \ncho các câu hỏi của phóng viên)\nEg: \nShe \nis\n never \nsatisfied with\n what she's got.\n\n(Cô ta chưa bao giờ \nhài lòng với\n cái mà cô ấy có)",
+    "day": 16
+  },
+  {
+    "id": "d16_w4",
+    "index": 4,
+    "term": "Fairly",
+    "phonetic": "/ˈferli/, /ˈiːkwəli/, /'i:vənli/, /dʒɑːb fer/, /kə'riə fer/, /treɪd fer/, /bʊk fer/, /kræft fer/, /ænˈtiːk fer/",
+    "pos": "(adv)",
+    "meaning": "vənli/: Công bằng, như nhau, đều nhau",
+    "synonyms": [
+      "Equally",
+      "Evenly",
+      "Career fair"
+    ],
+    "examples": [
+      {
+        "en": "Our father always treats us very",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Fairly\n /ˈferli/ (adv) = \nEqually\n /ˈiːkwəli/ = \nEvenly\n /'i:vənli/: Công bằng, như nhau, đều nhau\n+ divide into/ split into/ split up\n: chia (đều)\n\n+ treat S.O\n: đối xử ai (1 cách công bằng)\nEg: \nOur father always treats us very \nfairly\n. \n(Bố của chúng tôi luôn luôn đối xử với chúng tôi rất \ncông bằng\n)\n-> Fair \n/fer/ (adj): Công bằng, thích hợp, thỏa đáng\n\n-> Fair\n (n): Hội chợ\n\nJob fair\n /dʒɑːb fer/ (n.phrase) = \nCareer fair \n/kə'riə fer/: Hội chợ việc làm\n\nTrade fair\n /treɪd fer/: Hội chợ triển lãm thương mại\n\nBook fair\n /bʊk fer/: Hội chợ sách\n\nCraft fair\n /kræft fer/: Hội chợ đồ thủ công mỹ nghệ\n\nAntique fair \n/ænˈtiːk fer/: Hội chợ đồ cổ",
+    "day": 16
+  },
+  {
+    "id": "d16_w5",
+    "index": 5,
+    "term": "Precisely",
+    "phonetic": "/prɪˈsaɪsli/, /ˈækjərətli/, /ɪɡˈzæktli/, /prɪˈsɪʒn/, /ˈækjərəsi/, /ɪɡˈzæktnəs/",
+    "pos": "(adv)",
+    "meaning": "Chính xác",
+    "synonyms": [
+      "Accurately",
+      "Exactly",
+      "Accuracy",
+      "Exactness"
+    ],
+    "examples": [
+      {
+        "en": "She pronounced the word very slowly and",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Precisely \n/prɪˈsaɪsli/ (adv)= \nAccurately\n /ˈækjərətli/ = \nExactly \n/ɪɡˈzæktli/: Chính xác\nEg: \nShe pronounced the word very slowly and \nprecisely\n. \n(Cô ấy phát âm từng từ rất chậm và \nchính xác\n)\n\n->\n \nPrecision \n/prɪˈsɪʒn/ (n) = \nAccuracy\n /ˈækjərəsi/ = \nExactness\n /ɪɡˈzæktnəs/: Tính chính xác, độ chính xác",
+    "day": 16
+  },
+  {
+    "id": "d17_w1",
+    "index": 1,
+    "term": "Constant",
+    "phonetic": "/ˈkɑːnstənt/, /ˈkɑːnstənt  səˈplaɪ/, /ri'mein ˈkɑːnstənt/",
+    "pos": "(adj)",
+    "meaning": "Liên tục, không đổiEg:",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Crime levels",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Constant \n/ˈkɑːnstənt/ (adj): Liên tục, không đổiEg: \nCrime levels \nremain constant\n.\n\n(Tỉ lệ tội phạm \nduy trì không đổi\n)\nConstant supply \n/ˈkɑːnstənt  səˈplaɪ/ (n.phrase): Việc cung ứng liên tục\nRemain\n \nconstant\n /ri'mein ˈkɑːnstənt/: Duy trì không đổi",
+    "day": 17
+  },
+  {
+    "id": "d17_w2",
+    "index": 2,
+    "term": "Portable",
+    "phonetic": "/ˈpɔːrtəbl/",
+    "pos": "(adj)",
+    "meaning": "Di động, xách tay",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The equipment is lightweight,",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Portable \n/ˈpɔːrtəbl/ (adj) = \nEasy to carry/move\n: Di động, xách tay\nEg: \nThe equipment is lightweight, \nportable\n and easy to store.\n\n(Thiết bị này thì nhẹ, \ncó thể xách tay\n và dễ dàng bảo quản)\nA portable laptop/ camera/ mobile phone/ TV:\n Máy tính/ máy ảnh/ điện thoại di động/ TV xách tay.",
+    "day": 17
+  },
+  {
+    "id": "d17_w3",
+    "index": 3,
+    "term": "Be reluctant",
+    "phonetic": "/rɪˈlʌktənt/",
+    "pos": "(adj)",
+    "meaning": "Miễn cưỡng làm gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "She",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Be reluctant\n /rɪˈlʌktənt/ (adj)\n to do S.TH\n: Miễn cưỡng làm gì\nEg: \nShe \nwas reluctant to\n admit she was wrong.\n\n(Cô ấy thì \nmiễn cưỡng\n thừa nhận là cô ấy sai)\n>< \nBe willing/eager to do S.TH:\n Sẵn lòng/ háo hức làm gì",
+    "day": 17
+  },
+  {
+    "id": "d17_w4",
+    "index": 4,
+    "term": "Resign",
+    "phonetic": "/rɪˈzaɪn/, /rezig'neiʃn/",
+    "pos": "(v)",
+    "meaning": "Từ chức với tư cách là ...",
+    "synonyms": [
+      "A letter of resignation"
+    ],
+    "examples": [
+      {
+        "en": "He",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Resign\n /rɪˈzaɪn/ (v) \nas S.TH\n: Từ chức với tư cách là ...\nEg: \nHe \nresigned as\n company's vice president after eight years.\n\n(Anh ta \ntừ chức với tư cách là\n phó chủ tịch công ty sau 8 năm)\nResignation \n/rezig'neiʃn/ (n): Sự từ chức\nA resignation letter = A letter of resignation\n: Đơn xin từ chức",
+    "day": 17
+  },
+  {
+    "id": "d17_w5",
+    "index": 5,
+    "term": "Cover",
+    "phonetic": "/ˈkʌvər/, /ɪnˈkluːd/, /kənˈsɪst/, /kəmˈpraɪz/, /ri'pɔ:t/, /in'ʃuə/, /,gærən'ti:/, /spred 'ouvə/",
+    "pos": "(v)",
+    "meaning": "Chi trả, trang trải/ Bao gồm/ Đưa tin/ Bảo hiểm/ Che phủ/ Làm thay ca cho ai.",
+    "synonyms": [
+      "Pay for",
+      "Include",
+      "Consist",
+      "Be comprised",
+      "Report",
+      "Ensure",
+      "Guarantee",
+      "Spread over"
+    ],
+    "examples": [
+      {
+        "en": "The show barely",
+        "vi": ""
+      },
+      {
+        "en": "The articles",
+        "vi": ""
+      },
+      {
+        "en": "The BBC will",
+        "vi": ""
+      },
+      {
+        "en": "Are you fully",
+        "vi": ""
+      },
+      {
+        "en": "The sofa is",
+        "vi": ""
+      },
+      {
+        "en": "I'm busy today. Could you please",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Cover\n /ˈkʌvər/ (v): Chi trả, trang trải/ Bao gồm/ Đưa tin/ Bảo hiểm/ Che phủ/ Làm thay ca cho ai.\n(1) Chi trả, trang trải (chi phí) = Pay for\n\n\n+ the cost/ expenses/ tuition fees\n: (Trang trải, chi trả) chi phí/học phí.\nEg: The show barely \ncovered\n its costs.\n(Buổi biểu diễn \nchi trả\n vừa đủ các chi phí của nó -> Huề vốn)\n(2) Bao gồm \n= \nInclude \n/ɪnˈkluːd/ = \nConsist\n /kənˈsɪst/ \nof\n = \nBe comprised \n/kəmˈpraɪz/ \nof S.TH\n\nEg: The articles \ncover\n a wide range of subjects.\n(Bài báo \nbao gồm \n nhiều chủ đề khác nhau)\n(3)\n \nĐưa tin \n= \nReport \n/ri'pɔ:t/ \n(on) S.TH \nEg: The BBC will \ncover\n all the major games of the tournament.(Đài BBC sẽ \nđưa tin\n về tất cả các trận chính của giải đấu)\n(4)\n \nBảo hiểm, đảm bảo\n = \nEnsure\n /in'ʃuə/ ~ \nGuarantee\n /,gærən'ti:/\nEg: Are you fully \ncovered\n for fire and theft?\n(Bạn đã được \nbảo hiểm\n đầy đủ về hỏa hoạn và trộm cắp chưa?)\n(5)\n \nChe phủ\n =\n Spread over \n/spred 'ouvə/\n the surface \nEg: The sofa is \ncovered\n in plastic.\n(Ghế sofa được \nche phủ\n bởi 1 tấm vải nhựa)\n(6) Làm thay ca cho ai: Cover for S.O \n= \nCover S.O's shift\n\nE.g: I'm busy today. Could you please \ncover for\n me?\n(Hôm nay tôi bận. Bạn có thể \nlàm thay ca cho\n tôi không?)",
+    "day": 17
+  },
+  {
+    "id": "d18_w1",
+    "index": 1,
+    "term": "Favorably",
+    "phonetic": "/ˈfeɪvərəbli/, /ˈpɑːzətɪvli/, /ˈfeɪvərəbl/, /ˌædvənˈteɪdʒəs/, /ˌbenɪˈfɪʃl/, /ˈædvɜːrs/, /ˈædvɜːrsli əˈfekt/",
+    "pos": "(adv)",
+    "meaning": "Tích cực",
+    "synonyms": [
+      "Positively",
+      "Advantageous",
+      "Beneficial"
+    ],
+    "examples": [],
+    "raw_text": "1. Favorably\n /ˈfeɪvərəbli/ (adv) = \nPositively \n/ˈpɑːzətɪvli/: Tích cực\nFavorable\n /ˈfeɪvərəbl/ (adj) = \nAdvantageous\n /ˌædvənˈteɪdʒəs/ = \nBeneficial\n /ˌbenɪˈfɪʃl/: Thuận lợi\n\n*Ra thi: \nFavorable + weather/climate/market/economic conditions\n: Điều kiện thời tiết/ khí hậu/ thị trường/ kinh tế thuận lợi\n>< Adverse \n/ˈædvɜːrs/ (adj): Bất lợi\n\n*Ra thi:\n Adversely affect\n /ˈædvɜːrsli əˈfekt/: Ảnh hưởng 1 cách bất lợi",
+    "day": 18
+  },
+  {
+    "id": "d18_w2",
+    "index": 2,
+    "term": "Comment",
+    "phonetic": "/ˈkɑːment/, /kəˈmend/",
+    "pos": "(v)",
+    "meaning": "Bình phẩm, bình luận về cái gì",
+    "synonyms": [
+      "Highly regarded"
+    ],
+    "examples": [],
+    "raw_text": "2. Comment \n/ˈkɑːment/ (v) \non S.TH:\n Bình phẩm, bình luận về cái gì\n>< \nCommend\n /kəˈmend/ (v) \nS.O/S.TH on S.TH:\n Khen ngợi\nHighly commended\n = \nHighly regarded\n: Được khen ngợi, được đề cao",
+    "day": 18
+  },
+  {
+    "id": "d18_w3",
+    "index": 3,
+    "term": "Duty",
+    "phonetic": "/ˈduːti/, /tæsk/, /əˈsaɪnmənt/, /rɪˌspɑːnsəˈbɪləti/, /pərˈfɔːrm/, /fʊlˈfɪl/, /dɪsˈtʃɑːrdʒ/, /ˌʌndərˈteɪk/, /teik ɔn/, /əˈsuːm/",
+    "pos": "(n )",
+    "meaning": "Trách nhiệm, nhiệm vụ",
+    "synonyms": [
+      "Task",
+      "Assignment",
+      "Responsibility",
+      "Discharge",
+      "Take on",
+      "Assume"
+    ],
+    "examples": [],
+    "raw_text": "3. Duty\n /ˈduːti/ (n ) = \nTask \n/tæsk/ = \nAssignment\n /əˈsaɪnmənt/ = \nResponsibility \n/rɪˌspɑːnsəˈbɪləti/: Trách nhiệm, nhiệm vụ\n\n-> Duty to do S.TH \n= \nDuty of S.TH/doing S.TH\n: Trách nhiệm làm gì.\nPerform \n/pərˈfɔːrm/ (v) \n+ duty\n: Thực hiện nhiệm vụ\nFulfil\n /fʊlˈfɪl/ (v) ~ \nDischarge\n /dɪsˈtʃɑːrdʒ/ \n+ duty:\n Hoàn tất nhiệm vụ\nUndertake\n /ˌʌndərˈteɪk/ (v) = \nTake on \n/teik ɔn/ = \nAssume \n/əˈsuːm/\n + duty\n: Đảm nhận trọng trách",
+    "day": 18
+  },
+  {
+    "id": "d18_w4",
+    "index": 4,
+    "term": "Handmade",
+    "phonetic": "/ˌhændˈmeɪd/, /ˌhændˈkræftɪd/, /wɛl meɪd/, /kræft/",
+    "pos": "(adj)",
+    "meaning": "Được làm thủ công",
+    "synonyms": [
+      "Handcrafted",
+      "Well-made"
+    ],
+    "examples": [],
+    "raw_text": "4. Handmade\n /ˌhændˈmeɪd/ (adj) = \nHandcrafted\n /ˌhændˈkræftɪd/ = \nWell-made\n /wɛl meɪd/: Được làm thủ công\nCraft\n /kræft/ (n): Đồ thủ công",
+    "day": 18
+  },
+  {
+    "id": "d18_w5",
+    "index": 5,
+    "term": "Keep S.O informed/posted",
+    "phonetic": "/ɪnˈfɔːrmd/, /ˈpəʊst/",
+    "pos": "",
+    "meaning": "Cập nhật cho ai những tin mới nhất (về cái gì)",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Julia requested that the doctor",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Keep S.O informed/posted \n(\nof S.TH\n) /ɪnˈfɔːrmd/ - /ˈpəʊst/: Cập nhật cho ai những tin mới nhất (về cái gì)\nEg: \nJulia requested that the doctor \nkeep her informed of\n her mother's situation.\n\n(Julia yêu cầu bác sĩ \nthông báo cho cô biết\n tình trạng mới nhất của mẹ cô ấy)",
+    "day": 18
+  },
+  {
+    "id": "d19_w1",
+    "index": 1,
+    "term": "Retail sales",
+    "phonetic": "/ˈriːteɪl seɪlz/, /həʊl seɪlz/",
+    "pos": "",
+    "meaning": "Bán lẻ",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "1. Retail sales \n/ˈriːteɪl seɪlz/: Bán lẻ\n>< Whole sales \n/həʊl seɪlz/: Bán sỉ\nRetail price/outlet/trade:\n Giá/Đại lý/Nghề bán lẻ",
+    "day": 19
+  },
+  {
+    "id": "d19_w2",
+    "index": 2,
+    "term": "Eliminate",
+    "phonetic": "/ɪˈlɪmɪneɪt/, /dɪˈspəʊz ʌv/, /gɛt rɪd ʌv/, /dɪˈskɑːrd/, /rɪˈmuːv/, /weɪv/",
+    "pos": "(v)",
+    "meaning": "phí /",
+    "synonyms": [
+      "Dispose of",
+      "Get rid of",
+      "Discard",
+      "Remove",
+      "Waive"
+    ],
+    "examples": [],
+    "raw_text": "2. Eliminate \n/ɪˈlɪmɪneɪt/ (v) = \nDispose of \n/dɪˈspəʊz ʌv/ = \nGet rid of\n /gɛt rɪd ʌv/ = \nDiscard \n/dɪˈskɑːrd/ = \nRemove\n /rɪˈmuːv/ ~ \nWaive \n/weɪv/ ( \n+ fee\n: phí / \nright\n: quyền lợi): Xóa bỏ, loại bỏ, mất cái gì\n\nEliminate unnecessary spending/expenses: \nBỏ đi việc tiêu dùng/ chi phí không cần thiết",
+    "day": 19
+  },
+  {
+    "id": "d19_w3",
+    "index": 3,
+    "term": "S.O pay attention",
+    "phonetic": "/əˈtenʃn/, /məˈtɪkjələsli/",
+    "pos": "(adv)",
+    "meaning": "Ai đó chú ý đến điều gì",
+    "synonyms": [
+      "Meticulously"
+    ],
+    "examples": [
+      {
+        "en": "Please",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. S.O pay attention \n/əˈtenʃn/\n to S.TH\n: Ai đó chú ý đến điều gì\nTo pay careful attention to every detail \n= \nMeticulously \n/məˈtɪkjələsli/ (adv): Tỉ mỉ, cẩn trọng\nTo draw/attract attention of S.O\n: Thu hút sự chú ý của ai đó\nEg: \nPlease \npay close attention\n ( = listen carefully) \nto\n what I am saying.\n\n(Vui lòng hãy thật \nchú ý đến\n những cái mà tôi đang nói)",
+    "day": 19
+  },
+  {
+    "id": "d19_w4",
+    "index": 4,
+    "term": "Circulate",
+    "phonetic": "/ˈsɜːrkjəleɪt/",
+    "pos": "(v)",
+    "meaning": "Phát hành, lưu thông, luân chuyển cái gì",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "4. Circulate\n /ˈsɜːrkjəleɪt/ (v)\n S.TH:\n Phát hành, lưu thông, luân chuyển cái gì\nCirculation \n(n ) \nof + money:\n Sự lưu hành tiền\nCirculation\n (n )\n of + information/ news/ ideas: \nLan truyền thông tin, tin tức, ý kiến",
+    "day": 19
+  },
+  {
+    "id": "d19_w5",
+    "index": 5,
+    "term": "Hazardous",
+    "phonetic": "/ˈhæzərdəs/, /ˈdeɪndʒərəs/, /weɪst/, /məˈtɪriəl/, /ˈsʌbstəns/, /ˈkemɪkl/",
+    "pos": "(adj)",
+    "meaning": "Nguy hiểm",
+    "synonyms": [
+      "Dangerous"
+    ],
+    "examples": [],
+    "raw_text": "5. Hazardous \n/ˈhæzərdəs/ (adj) = \nDangerous \n/ˈdeɪndʒərəs/: Nguy hiểm\n+ waste/ materials/ substances/ chemicals\n (n.s)\n/weɪst/ - /məˈtɪriəl/ - /ˈsʌbstəns/ - /ˈkemɪkl/\nChất thải/ nguyên vật liệu/ các loại hóa chất gây nguy hiểm",
+    "day": 19
+  },
+  {
+    "id": "d20_w1",
+    "index": 1,
+    "term": "Fascinating",
+    "phonetic": "/ˈfæsɪneɪtɪŋ/, /əˈpiːlɪŋ/, /əˈlʊrɪŋ/, /ˈtʃɑːrmɪŋ/, /ɪnˈtriːɡɪŋ/, /ɪkˈstriːmli ˈɪntrestɪŋ/",
+    "pos": "(adj)",
+    "meaning": "Lôi cuốn, thu hút, thú vị",
+    "synonyms": [
+      "Appealing",
+      "Alluring",
+      "Charming",
+      "Intriguing",
+      "Extremely interesting"
+    ],
+    "examples": [],
+    "raw_text": "1. Fascinating\n /ˈfæsɪneɪtɪŋ/ (adj): Lôi cuốn, thu hút, thú vị\n= \nAppealing \n/əˈpiːlɪŋ/ ~ \nAlluring\n /əˈlʊrɪŋ/ ~ \nCharming\n /ˈtʃɑːrmɪŋ/ = \nIntriguing\n /ɪnˈtriːɡɪŋ/ =\n Extremely interesting \n/ɪkˈstriːmli ˈɪntrestɪŋ/\nIt is fascinating to do S.TH:\n Thật thú vị khi làm gì.",
+    "day": 20
+  },
+  {
+    "id": "d20_w2",
+    "index": 2,
+    "term": "Lease",
+    "phonetic": "/liːs/, /liːs   əˈɡriːmənt/, /kənˈkluːd/, /ɪkˈspaɪər/",
+    "pos": "(v/n)",
+    "meaning": "Thuê/Sự cho thuê, hợp đồng cho thuê",
+    "synonyms": [
+      "Rent",
+      "Rental agreement",
+      "To end a lease"
+    ],
+    "examples": [
+      {
+        "en": "A local farmer",
+        "vi": ""
+      },
+      {
+        "en": "Take out a lease on",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Lease \n/liːs/ (v/n) \n= Rent\n: Thuê/Sự cho thuê, hợp đồng cho thuê\nLease agreement \n/liːs   əˈɡriːmənt/ (N.Phrase) =\n Rental agreement\n: Hợp đồng cho thuê\nLease\n (v)\n S.O S.TH\n: Cho ai thuê cái gì\nEg:\n \nA local farmer \nleased\n them the land. \n(1 nông dân ở địa phương \ncho họ thuê đất\n)\nPhân biệt:\n\n\nLease\n \n(v): Thuê dài hạn (ít nhất 1 năm)\n\nRent\n (v): Thuê ngắn hạn (vài ngày/ở trọ)\n \n🔰 \nCÁC ĐỘNG TỪ HAY ĐI CHUNG:\nTo take out a lease\n (n)\n on S.TH\n: Cho thuê dài hạn cái gì.\nEg: \nTake out a lease on\n a house.\n \n(Cho thuê nhà dài hạn).\nTo sign/enter into a lease\n: Kí hợp đồng cho thuê.\nTo conclude \n/kənˈkluːd/ \na lease\n = \nTo end a lease\n: Chấm dứt hợp đồng cho thuê.\nThe lease expires \n/ɪkˈspaɪər/ \n/\n \nThe lease runs out\n: Hợp đồng cho thuê hết hạn.",
+    "day": 20
+  },
+  {
+    "id": "d20_w3",
+    "index": 3,
+    "term": "Steadily",
+    "phonetic": "/ˈstedəli/",
+    "pos": "(adv)",
+    "meaning": "Đều đặn, ổn định (Thường dùng trong Thì HTHT/ QKĐ)",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. Steadily\n /ˈstedəli/ (adv): Đều đặn, ổn định (Thường dùng trong Thì HTHT/ QKĐ)\n+\n increased/ rose \n(V2 của \nrise\n): Tăng đều\n+ \ndecreased/ fell \n(V2 của \nfall\n)/ \ndeclined/ dropped/ lowered\n: Giảm đều",
+    "day": 20
+  },
+  {
+    "id": "d20_w4",
+    "index": 4,
+    "term": "Necessary",
+    "phonetic": "/ˈnesəseri/, /ɪˈsenʃl/, /ˈkruːʃl/, /ˈkrɪtɪkl/, /ˈvaɪtl/, /ˈɪntɪɡrəl/, /ˌɪndɪˈspensəbl/, /im'pɔ:tənt/, /ɪnˈevɪtəbl/, /ˌʌnəˈvɔɪdəbl/",
+    "pos": "(adj)",
+    "meaning": "Cần thiết/Chắc chắn xảy ra",
+    "synonyms": [
+      "Essential",
+      "Crucial",
+      "Critical",
+      "Vital",
+      "Integral",
+      "Indispensable",
+      "Very important",
+      "Inevitable",
+      "Unavoidable"
+    ],
+    "examples": [
+      {
+        "en": "Food is",
+        "vi": ""
+      },
+      {
+        "en": "This is a",
+        "vi": ""
+      },
+      {
+        "en": "It doesn't seem",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Necessary\n /ˈnesəseri/ (adj): Cần thiết/Chắc chắn xảy ra\n(1) \n= \nEssential\n /ɪˈsenʃl/ = \nCrucial\n /ˈkruːʃl/ = \nCritical\n /ˈkrɪtɪkl/ = \nVital\n /ˈvaɪtl/ = \nIntegral\n /ˈɪntɪɡrəl/ = \nIndispensable \n/ˌɪndɪˈspensəbl/ = \nVery important \n/im'pɔ:tənt/: Cần thiết, thiết yếu, quan trọng\nEg: \nFood is \nnecessary\n for survival.\n\n\n(Thức ăn thì \ncần thiết\n cho sự sống còn)\n(2) \n= \nInevitable\n /ɪnˈevɪtəbl/: Chắc chắn xảy ra, nhất thiết\n= \nUnavoidable\n /ˌʌnəˈvɔɪdəbl/: Không thể tránh khỏi\nEg: \nThis is a \nnecessary\n consequence of progress.\n\n\n(Đây là 1 kết quả \nkhông thể tránh khỏi\n của quá trình này).\nNecessary\n (\nfor S.O\n) \nto do S.TH\n: Cần thiết (cho ai) để làm gì\nEg: \nIt doesn't seem \nnecessary\n for us to meet.\n\n\n(Dường như không thật sự \ncần thiết\n là chúng tôi phải gặp nhau).",
+    "day": 20
+  },
+  {
+    "id": "d20_w5",
+    "index": 5,
+    "term": "Courier",
+    "phonetic": "/ˈkʊriər/, /n): Chuyển phát nhanh/, /ɪkˈspres/, /ˈekspədaɪt/",
+    "pos": "(v/n)",
+    "meaning": "Chuyển phát nhanh / Bưu tá, bưu cục.",
+    "synonyms": [
+      "Express",
+      "Expedited delivery"
+    ],
+    "examples": [],
+    "raw_text": "5.\n \nCourier\n /ˈkʊriər/ (v/n): Chuyển phát nhanh / Bưu tá, bưu cục.\n= \nExpress \n/ɪkˈspres/ \ndelivery\n = \nExpedited delivery\n /ˈekspədaɪt/",
+    "day": 20
+  },
+  {
+    "id": "d21_w1",
+    "index": 1,
+    "term": "Allow",
+    "phonetic": "/əˈlaʊ/, /ɪnˈtaɪtl/, /ɪˈneɪbl/, /pərˈmɪt/, /kən'sidəriɳ/, /ə'kaunt/, /kən,sidə'reiʃn/",
+    "pos": "(v)",
+    "meaning": "Cho phép ai đó làm gì",
+    "synonyms": [
+      "Entitle",
+      "Considering",
+      "Given"
+    ],
+    "examples": [],
+    "raw_text": "1. Allow \n/əˈlaʊ/ (v)\n S.O to do S.TH\n: Cho phép ai đó làm gì = \nEntitle/ Enable/ Permit S.O to do S.TH\n./ɪnˈtaɪtl/ - /ɪˈneɪbl/ - /pərˈmɪt/\nAllow for S.O/S.TH\n: Cân nhắc, xem xét đến cái gì\n= \nConsidering\n /kən'sidəriɳ/ = \nGiven\n /'givn/\n= \nTake S.TH into account\n /ə'kaunt/\n=\n Take S.TH into consideration\n /kən,sidə'reiʃn/",
+    "day": 21
+  },
+  {
+    "id": "d21_w2",
+    "index": 2,
+    "term": "Permanent",
+    "phonetic": "/'pə:mənənt/, /'tempərəri/, /dʤɔb/, /'kɔntrækt/, /im'plɔimənt/, /stɑ:f/, /'dæmidʤ/, /'rezidəns/, /ə'dres/, /ʃʌt daun/",
+    "pos": "(adj)",
+    "meaning": "mənənt/ (adj): Lâu dài, thường trực, vĩnh viễn",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "2. Permanent\n /'pə:mənənt/ (adj): Lâu dài, thường trực, vĩnh viễn\n\n><\n \nTemporary\n /'tempərəri/ (adj): Tạm thời\nA permanent job/contract/employment \n(n.phrase)/dʤɔb/ - /'kɔntrækt/ - /im'plɔimənt/:\n1 công việc/hợp đồng/công ăn việc làm lâu dài.\nPermanent staff\n /stɑ:f/ (n.phrase): Nhân viên làm theo biên chế.\nPermanent damage \n/'dæmidʤ/ (n.phrase): Thiệt hại vĩnh viễn.\nPermanent residence/ address\n /'rezidəns/ - /ə'dres/ (n.phrase): Địa chỉ thường trú.\nPermanently \n(adv)\n shut down\n /ʃʌt daun/: Đóng cửa vĩnh viễn",
+    "day": 21
+  },
+  {
+    "id": "d21_w3",
+    "index": 3,
+    "term": "Inspiration source",
+    "phonetic": "/,inspə'reiʃn sɔ:s/, /ɪnˈspaɪər/",
+    "pos": "(n.phrase)",
+    "meaning": "Nguồn cảm hứng",
+    "synonyms": [
+      "Source of inspiration"
+    ],
+    "examples": [],
+    "raw_text": "3. Inspiration source\n /,inspə'reiʃn sɔ:s/ (n.phrase) = \nSource of inspiration\n: Nguồn cảm hứng\n=>\n Inspiration to/for S.O\n: Cảm hứng cho ai\n=> \nInspire\n /ɪnˈspaɪər/ (v) \nS.O\n: truyền cảm hứng cho ai",
+    "day": 21
+  },
+  {
+    "id": "d21_w4",
+    "index": 4,
+    "term": "Income",
+    "phonetic": "/'inkəm/, /'autkʌm/, /ri'zʌlt/, /'ænjuəl/, /sɔ:s/, /'neiʃənl  'inkəm/, /ə:n/, /'dʤenəreit/, /'sʌplimənt/",
+    "pos": "(n)",
+    "meaning": "Thu nhập từ việc gì",
+    "synonyms": [
+      "Result",
+      "Finding"
+    ],
+    "examples": [],
+    "raw_text": "4. Income \n/'inkəm/ (n) \nfrom S.TH\n: Thu nhập từ việc gì\n\n# Outcome\n /'autkʌm/ (n) = \nResult\n /ri'zʌlt/ = \nFinding(s) \n/'faindiɳz/: Kết quả\nAnnual\n /'ænjuəl/ (adj) \nincome\n: Thu nhập hàng năm.\nSource \n/sɔ:s/ (n) \nof income\n: Nguồn thu nhập.\nNational\n \nincome \n/'neiʃənl  'inkəm/ (n.phrase): Thu nhập quốc dân.\nTo earn\n /ə:n/ (v) \nan income\n: Kiếm thêm thu nhập\nTo generate \n/'dʤenəreit/ (v) \nincome\n: Tạo ra thu nhập\nTo supplement\n /'sʌplimənt/ (v)\n S.O's income\n: Bổ sung thêm thu nhập (= việc làm thêm)",
+    "day": 21
+  },
+  {
+    "id": "d21_w5",
+    "index": 5,
+    "term": "Equipment/Machinery modernization",
+    "phonetic": "/i'kwipmənt/, /mə'ʃi:nəri ,mɔdə:nai'zeiʃn/",
+    "pos": "(n.phrase)",
+    "meaning": "Việc hiện đại hóa trang thiết bị/máy móc",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "5. Equipment/Machinery modernization\n (n.phrase): Việc hiện đại hóa trang thiết bị/máy móc\n/i'kwipmənt/ - /mə'ʃi:nəri ,mɔdə:nai'zeiʃn/",
+    "day": 21
+  },
+  {
+    "id": "d22_w1",
+    "index": 1,
+    "term": "Grant",
+    "phonetic": "/ɡrænt/, /n): Cấp, nhượng/, /'fedərəl/, /'gʌvnmənt/, /ri'sə:tʃ/",
+    "pos": "(v/n)",
+    "meaning": "Cấp, nhượng / Trợ cấp",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The money is used for small",
+        "vi": ""
+      },
+      {
+        "en": "His wife was always there and he just",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Grant \n/ɡrænt/ (v/n): Cấp, nhượng / Trợ cấp\nEg: The money is used for small \ngrants\n \nto deserving organizations.\n\n(Tiền thì được sử dụng cho \nnhững khoản trợ cấp \nnhỏ đối với những tổ chức xứng đáng nhận nó)\n\n\n(1) Federal/Government/Research grant: \nTrợ cấp từ liên bang/ chính phủ/ cho việc nghiên cứu.\n     /'fedərəl/ - /'gʌvnmənt/ - /ri'sə:tʃ/\n(2) Grant \n(v) \nS.O S.TH\n: Cấp cho ai cái gì.\n\n_ Grant permission to do S.TH\n: Cấp phép làm gì.\n\n_ Grant the right\n: Cấp quyền.\n\n_ Grant S.O a loan\n: Cấp cho ai khoản vay.\n\n_ Take S.O/ S.TH for granted\n: Coi ai đó/ cái gì đó là điều hiểu nhiên (không biết trân trọng)\n\n   Eg: His wife was always there and he just \ntook her for granted\n.\n  (Vợ của anh ta luôn luôn ở đó chờ chồng về, và anh ta \ncoi đó là 1 điều hiển nhiên\n)",
+    "day": 22
+  },
+  {
+    "id": "d22_w2",
+    "index": 2,
+    "term": "Worker/Employee/Staff/Labor productivity",
+    "phonetic": "/ˌprəʊdʌkˈtɪvəti/",
+    "pos": "",
+    "meaning": "Năng suất làm việc của nhân viên.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Our target for next year will be",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Worker/Employee/Staff/Labor productivity \n/ˌprəʊdʌkˈtɪvəti/: Năng suất làm việc của nhân viên.\nEg: Our target for next year will be \nto promote worker productivity\n \nand\n \nmachinery modernization\n \nto keep up with the current trend.\n\n(Mục tiêu của chúng tôi trong năm tới là \nthúc đẩy năng suất làm việc của nhân viên\n và \nhiện đại hóa các loại máy móc\n để bắt kịp với xu hướng hiện nay).\n\n\nto promote/ boost/ improve/ increase/ raise productivity\n: Thúc đẩy/ cải thiện/ tăng/ nâng cao năng suất.",
+    "day": 22
+  },
+  {
+    "id": "d22_w3",
+    "index": 3,
+    "term": "Amateur",
+    "phonetic": "/ˈæmətʃər/, /n): Không chuyên, nghiệp dư/, /prəˈfeʃənl/, /n): Chuyên nghiệp/",
+    "pos": "(adj/n)",
+    "meaning": "Không chuyên, nghiệp dư/ Vận động viên không chuyên.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The tournament is open to both",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Amateur \n/ˈæmətʃər/ (adj/n): Không chuyên, nghiệp dư/ Vận động viên không chuyên.\n\n>< Professiona\nl /prəˈfeʃənl/ (adj/n): Chuyên nghiệp/ Chuyên gia.\nEg: The tournament is open to both\n \namateurs\n \nand\n \nprofessionals\n.\n\n(Giải đấu mở ra cho cả \nnhững vận động viên không chuyên \nlẫn \ndân chuyên nghiệp\n).",
+    "day": 22
+  },
+  {
+    "id": "d22_w4",
+    "index": 4,
+    "term": "Contest",
+    "phonetic": "/ˈkɑːntest/, /ˌkɑːmpəˈtɪʃn/",
+    "pos": "(n )",
+    "meaning": "Cuộc thi.",
+    "synonyms": [
+      "Competition"
+    ],
+    "examples": [
+      {
+        "en": "An amateur photography",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Contest \n/ˈkɑːntest/ (n ) = \nCompetition \n/ˌkɑːmpəˈtɪʃn/: Cuộc thi.\nEg: An amateur photography \ncontest\n \n(\nCuộc thi\n nhiếp ảnh cho dân nghiệp dư)\n\n\nto enter/win a contest\n: Tham gia/ Chiến thắng 1 cuộc thi.",
+    "day": 22
+  },
+  {
+    "id": "d22_w5",
+    "index": 5,
+    "term": "Participate",
+    "phonetic": "/pɑːrˈtɪsɪpeɪt  ɪn/, /teɪk  pɑːrt  ɪn/, /dʒɔɪn/, /pɑːrˈteɪk  ɪn/, /bi  ɪnˈvɑːlvd  ɪn/, /ɪnˈɡeɪdʒ  ɪn/, /ˌkɑːmpəˈtɪʃn/, /ˈkɑːntest/, /dɪˈskʌʃn/, /ˌdemənˈstreɪʃn/, /faɪt/, /reɪs/, /kæmˈpeɪn/, /ækˈtɪvətiz/",
+    "pos": "",
+    "meaning": "Tham gia vào cái gì.",
+    "synonyms": [
+      "Take part in",
+      "Join",
+      "Partake in",
+      "Be involved in",
+      "Engage in",
+      "Contest"
+    ],
+    "examples": [],
+    "raw_text": "5. Participate\n /pɑːrˈtɪsɪpeɪt  ɪn/ (Phrasal V) = \nTake part in\n /teɪk  pɑːrt  ɪn/ = \nJoin\n /dʒɔɪn/ = \nPartake in\n /pɑːrˈteɪk  ɪn/ = \nBe involved in\n /bi  ɪnˈvɑːlvd  ɪn/ = \nEngage in\n /ɪnˈɡeɪdʒ  ɪn/: Tham gia vào cái gì.\nCÁC DANH TỪ ĐI CHUNG: \n+ \nCompetition \n/ˌkɑːmpəˈtɪʃn/ = \nContest\n /ˈkɑːntest/: Cuộc thi\n+ \nDiscussion\n /dɪˈskʌʃn/: Thảo luận\n+ \nDemonstration\n /ˌdemənˈstreɪʃn/ \nof the new product/service\n: Buổi thuyết minh về sản phẩm mới\n+ \nFight\n /faɪt/: Trận đấu, trận chiến\n+ \nCelebration\n/\nAnniversary\n: Lễ kỉ niệm\n+ \nRace\n /reɪs/: Cuộc đua\n+ \nCampaign\n /kæmˈpeɪn/: Chiến dịch, cuộc vận động\n+ \nActivities\n /ækˈtɪvətiz/: Các hoạt động",
+    "day": 22
+  },
+  {
+    "id": "d23_w1",
+    "index": 1,
+    "term": "On behalf",
+    "phonetic": "/bi:hɑ:f/, /ˌreprɪˈzent/",
+    "pos": "",
+    "meaning": "Thay mặt, đại diện choEg: The President was",
+    "synonyms": [
+      "Represent"
+    ],
+    "examples": [
+      {
+        "en": "The President was",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. On behalf\n /bi:hɑ:f/ \nof S.O \n= \nRepresent\n /ˌreprɪˈzent/\n S.O: \nThay mặt, đại diện choEg: The President was\n \nrepresented\n \nat the ceremony by the Vice-President.\n(Phó Chủ Tịch đã \nthay mặt\n Chủ Tịch để phát biểu tại nghi thức vừa qua).",
+    "day": 23
+  },
+  {
+    "id": "d23_w2",
+    "index": 2,
+    "term": "Patron",
+    "phonetic": "/ˈpeɪtrən/, /ˈkʌstəmər/, /ˈklaɪənt/",
+    "pos": "(n)",
+    "meaning": "Khách hàng (quen) / Các nhà mạnh thường quân",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Patrons",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Patron\n /ˈpeɪtrən/ (n) = \nRegular/Frequent customer\n /ˈkʌstəmər/ = \nRegular/Frequent client\n /ˈklaɪənt/: Khách hàng (quen) / Các nhà mạnh thường quân\nEg: \nPatrons\n \nare requested not to smoke in the store.\n\n(\nCác khách hàng\n được yêu cầu không hút thuốc bên trong cửa hàng).",
+    "day": 23
+  },
+  {
+    "id": "d23_w3",
+    "index": 3,
+    "term": "Accompany / Be accompanied",
+    "phonetic": "/əˈkʌmpəni/, /kʌm wɪð/, /tə'geðə wɪð/, /ə'lɔɳ wɪð/, /in'klu:did/, /ɪnˈkləʊzd/, /əˈtætʃt/",
+    "pos": "(v)",
+    "meaning": "Đi cùng ai/Đi kèm với cái gì",
+    "synonyms": [
+      "Come with",
+      "Together with",
+      "Along with",
+      "Be included",
+      "Be enclosed",
+      "Be attached"
+    ],
+    "examples": [
+      {
+        "en": "His wife",
+        "vi": ""
+      },
+      {
+        "en": "Your application form must",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Accompany / Be accompanied\n \nby\n /əˈkʌmpəni/ (v)\n: \nĐi cùng ai/Đi kèm với cái gì\n= \nCome with\n /kʌm wɪð/ = \nTogether with\n /tə'geðə wɪð/ =\n Along with \n/ə'lɔɳ wɪð/ \n= \nBe included \n/in'klu:did/ \nwith \n= \nBe enclosed\n /ɪnˈkləʊzd/ \nwith \n= \nBe attached\n /əˈtætʃt/ \nto\n\nEg: His wife\n \naccompanied\n \nhim on the trip.\n\n(Vợ của anh ta \nđã đi cùng với\n anh ấy trong chuyến đi).\n\nEg: Your application form must \nbe accompanied by\n \nthe résumé and relevant documents.\n\n(Đơn ứng tuyển của bạn phải \nđi kèm với\n sơ yếu lý lịch và các loại giấy tờ có liên quan).",
+    "day": 23
+  },
+  {
+    "id": "d23_w4",
+    "index": 4,
+    "term": "Establish",
+    "phonetic": "/ɪˈstæblɪʃ/, /set ʌp/, /'institju:t/, /fɔ:m/, /'stændədz/, /'prinsəplz/, /ri'leiʃnz/, /kɔntækts/, /kə'nekʃnz/, /ri'leiʃnʃip/, /,repju:'teiʃn/, /ˌæsərˈteɪn/, /pruːv/, /dis'kʌvə/, /ə'tempt/, /'efət/",
+    "pos": "(v)",
+    "meaning": "Thành lập, thiết lập/ Khám phá ra chuyện gì.",
+    "synonyms": [
+      "Found",
+      "Set up",
+      "Institute",
+      "Form",
+      "links",
+      "contacts",
+      "connections",
+      "Ascertain",
+      "Prove",
+      "Discover"
+    ],
+    "examples": [
+      {
+        "en": "The committee was",
+        "vi": ""
+      },
+      {
+        "en": "Police are still trying to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Establish\n /ɪˈstæblɪʃ/ (v): Thành lập, thiết lập/ Khám phá ra chuyện gì.\n\n(1)\n = \nFound \n/faund/ (v) = \nSet up \n/set ʌp/ ~ \nInstitute\n /'institju:t/ ~ \nForm \n/fɔ:m/: Thành lập, thiết lập, hình thành.\n\nEg:\n \nThe committee was\n \nestablished\n \nin 1912.\n \n(Ủy ban \nđược thành lập\n vào năm 1912)\nCÁC DANH TỪ ĐI CHUNG (n):\n+\n \nstandards\n /'stændədz/: Thiết lập tiêu chuẩn\n\n+ principles\n /'prinsəplz/: Thiết lập nguyên tắc\n\n+ a system\n /'sistim/: Thành lập hệ thống\n\n+ relations\n /ri'leiʃnz/ ~ \nlinks \n/liɳks/ ~ \ncontacts\n /kɔntækts/~ \nconnections\n /kə'nekʃnz/: Thiết lập những mối liên kết\n\n+ a relationship\n /ri'leiʃnʃip/: Thiết lập mối quan hệ\n\n+ a reputation\n \nfor S.O\n /,repju:'teiʃn/: Tạo uy tín, thiết lập danh tiếng cho ai\n(2) \n= \nAscertain\n /ˌæsərˈteɪn/ (v) = \nProve\n /pruːv/ ~ \nDiscover \n/dis'kʌvə/: Xác minh/ Khám phá ra chuyện gì.\n\n=> In an attempt/effort \n/ə'tempt/, /'efət/ (n) \nto establish S.TH\n: Trong nỗ lực để khám phá ra chuyện gì.\nEg: Police are still trying to\n \nestablish\n \nthe cause of the accident.\n\n(Cảnh sát vẫn đang cố để \ntìm cho ra\n nguyên nhân của vụ tai nạn).",
+    "day": 23
+  },
+  {
+    "id": "d23_w5",
+    "index": 5,
+    "term": "Transmit",
+    "phonetic": "/trænzˈmɪt/, /ˈbrɔːdkæst/, /ˈproʊˌgræm/, /ʃoʊ/, /ɪˈvɛnt/, /ˈtrænsfɜːr/",
+    "pos": "(v)",
+    "meaning": "Truyền, phát (tín hiệu, tin tức)",
+    "synonyms": [
+      "Broadcast",
+      "Air",
+      "Transfer"
+    ],
+    "examples": [
+      {
+        "en": "The awards ceremony was",
+        "vi": ""
+      },
+      {
+        "en": "Parents can unwittingly",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Transmit \n/trænzˈmɪt/ (v) \nto \n: Truyền, phát (tín hiệu, tin tức)\n\n(1)\n = \nBroadcast \n/ˈbrɔːdkæst/ = \nAir \n/er/: Phát sóng\n\n_ To transmit the signals\n /'signlz/: Phát tín hiệu\n\n_ To transmit a program/ a\n \nshow/ an event \n/ˈproʊˌgræm/, /ʃoʊ/,  /ɪˈvɛnt/: Phát sóng chương trình/ buổi diễn/ sự kiện\nEg: The awards ceremony was\n \ntransmitted\n live by satellite\n \nto\n \nover fifty countries.\n\n(Nghi thức trao giải thì được \nphát sóng\n trực tiếp qua vệ tinh \nđến\n hơn 50 quốc gia)\n(2) \n= \nTransfer \n/ˈtrænsfɜːr/ \nS.TH to S.O\n: Truyền lại cái gì cho ai\nEg: Parents can unwittingly\n \ntransmit\n \ntheir own fears\n \nto\n \ntheir children.\n\n(Ba mẹ thì vô tình \ngieo rắc\n nỗi sợ hãi của riêng họ \nsang cho\n con của họ).",
+    "day": 23
+  },
+  {
+    "id": "d24_w1",
+    "index": 1,
+    "term": "Feature",
+    "phonetic": "/ˈfiːtʃər/, /in'klu:d/, /kən'sist ɔv/, /bi kəm'praizd ɔv/, /'kʌvə/, /dɪˈstɪŋktɪv/, /rɪˈdiːmɪŋ/",
+    "pos": "(v/n)",
+    "meaning": "(n): Đặc trưng, đặc điểm, tính năng",
+    "synonyms": [
+      "Include",
+      "Consist of",
+      "Be comprised of",
+      "Cover"
+    ],
+    "examples": [
+      {
+        "en": "The new Star Wars movie",
+        "vi": ""
+      },
+      {
+        "en": "The most",
+        "vi": ""
+      },
+      {
+        "en": "The house isn't very attractive, but the garden is the",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Feature \n/ˈfiːtʃər/ (v/n):\n(n): Đặc trưng, đặc điểm, tính năng\n(v) = \nInclude \n/in'klu:d/ = \nConsist of\n /kən'sist ɔv/ = \nBe comprised of \n/bi kəm'praizd ɔv/\n \n= \nCover \n/'kʌvə/ \nS.TH\n: Bao gồm\nEg: The new Star Wars movie\n \nfeatures\n \nthe original actors.\n\n(Bộ phim \"Chiến tranh các vì sao\" mới \nbao gồm\n các diễn viên cội nguồn)\nCÁC TÍNH TỪ ĐI CHUNG:\n- \nKey/ Main feature\n: Đặc điểm chính\n-\n New features\n: Những đặc tính mới\n- \nNew safety/ security features\n: Các đặc điểm an toàn, an ninh mới\n- \nDistinctive \n/dɪˈstɪŋktɪv/ \nfeature\n: Điểm khác biệt\n- \nRedeeming\n /rɪˈdiːmɪŋ/ \nfeature\n: Điểm tốt/ điểm bù đắp lại\n  Eg:\n \nThe most \ndistinctive feature\n \nof this product is its dimension.\n\n  (\nĐiểm khác biệt\n lớn nhất của sản phẩm này chính là kích cỡ của nó)\n\n  Eg: The house isn't very attractive, but the garden is the \nredeeming feature\n.\n\n  (Ngôi nhà không bắt mắt lắm, nhưng khu vườn chính là \nđiểm bù đắp lại\n - ý nói: khu vườn khá đẹp)",
+    "day": 24
+  },
+  {
+    "id": "d24_w2",
+    "index": 2,
+    "term": "Be/come equipped",
+    "phonetic": "/ɪˈkwɪpt/, /ˈaʊtfɪtd/",
+    "pos": "",
+    "meaning": "Được trang bị với cái gì.",
+    "synonyms": [
+      "Be outfitted"
+    ],
+    "examples": [
+      {
+        "en": "Everyone should",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Be/come equipped\n /ɪˈkwɪpt/ \nwith S.TH\n ~ \nBe outfitted\n /ˈaʊtfɪtd/ \nwith\n: Được trang bị với cái gì.\n=> \nTo be fully/poorly equipped:\n Được trang bị đầy đủ/thiếu thốn cái gì\nEg: Everyone should \nbe equipped with\n \nthe necessary skills for your job.\n\n(Mỗi người nên được \ntrang bị với\n \nnhững kĩ năng cần thiết cho công việc)",
+    "day": 24
+  },
+  {
+    "id": "d24_w3",
+    "index": 3,
+    "term": "Strategically",
+    "phonetic": "/strəˈtiːdʒɪkli/",
+    "pos": "(adv)",
+    "meaning": "Đặt cái gì đó có chủ ý, có chiến lược, có mục đích.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Her scarf was",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Strategically \n/strəˈtiːdʒɪkli/ (adv) \n+ place/ put/ set/ position\n (v) \nS.TH\n: Đặt cái gì đó có chủ ý, có chiến lược, có mục đích.\n=> \nStrategically place + trash/recycle/litter/rubbish/garbage bins: \nĐặt các thùng rác có mục đích.\nEg: Her scarf was \nstrategically placed\n \nto hide a tear in her shirt.\n\n(Khăn choàng cổ của cô ấy thì được \nđeo vào nhằm mục đích\n che đi vết rách trên áo sơ mi)",
+    "day": 24
+  },
+  {
+    "id": "d24_w4",
+    "index": 4,
+    "term": "Dress code (compliance)",
+    "phonetic": "/ˈdres kəʊd kəmˈplaɪəns/",
+    "pos": "(N.Phrase)",
+    "meaning": "(Sự tuân thủ) qui tắc trang phục/ăn mặc.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "4. Dress code (compliance)\n /ˈdres kəʊd kəmˈplaɪəns/ (N.Phrase): (Sự tuân thủ) qui tắc trang phục/ăn mặc.",
+    "day": 24
+  },
+  {
+    "id": "d25_w1",
+    "index": 1,
+    "term": "In an attempt/ effort/ endeavor",
+    "phonetic": "/əˈtempt/, /'efət/, /in'devər/, /əˈtempt/, /ɪnˈdevər/",
+    "pos": "(n)",
+    "meaning": "Trong nỗ lực làm gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Two factories were closed",
+        "vi": ""
+      },
+      {
+        "en": "I passed my driving test",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. In an attempt/ effort/ endeavor\n /əˈtempt/ - /'efət/ - /in'devər/ (n) \nto do S.TH\n: Trong nỗ lực làm gì\nAttempt/ Try/ Strive/ Endeavor\n /əˈtempt/ - /trai/ - /straiv/ - /ɪnˈdevər/ (v) \nto do S.TH\n: Nỗ lực, cố gắng làm gì\nAt the first attempt/try\n: Trong lần cố gắng đầu tiên\nAttempt at S.TH/doing S.TH \n=\n Attempt on S.TH: \nNỗ lực trong việc gì\nEg: Two factories were closed \nin an attempt to\n cut costs.\n\n(Hai nhà máy đã bị đóng cửa \ntrong nỗ lực để\n cắt giảm chi phí)\n\nEg: I passed my driving test\n \nat the first attempt\n.\n\n(Tôi đã đậu kì thi sát hạch lái xe \ntrong lần cố gắng đầu tiên\n)",
+    "day": 25
+  },
+  {
+    "id": "d25_w2",
+    "index": 2,
+    "term": "Staff morale",
+    "phonetic": "/stɑ:f məˈræl/, /bu:st/, /im'pru:v/",
+    "pos": "(N.Phrase)",
+    "meaning": "f məˈræl/ (N.Phrase): Tinh thần/Chí khí, nhuệ khí của nhân viên",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Another win would be good for the team’s",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Staff morale\n /stɑ:f məˈræl/ (N.Phrase): Tinh thần/Chí khí, nhuệ khí của nhân viên\nTo boost/raise/improve morale \n/bu:st/ - /reiz/ - /im'pru:v/: Thúc đẩy/Nâng cao/Cải thiện tinh thần (chí khí)\nLow morale \n(n.phrase): Tinh thần thấp kém ( = không tự tin)\nSagging morale\n (n.phrase): Tinh thần suy sụp, tinh thần sút kém\nEg: Another win would be good for the team’s\n \nmorale\n.\n\n(Thêm 1 chiến thắng nữa sẽ tốt cho \ntinh thần\n chung của nhóm)",
+    "day": 25
+  },
+  {
+    "id": "d25_w3",
+    "index": 3,
+    "term": "Reimbursement",
+    "phonetic": "/ˌriːɪmˈbɜːrsmənt/, /ˈlɑːdʒɪŋ/, /ˌriːɪmˈbɜːrsmənt/, /ˌkɑːmpenˈseɪʃn/, /receive compensation: Khiếu nại đòi bồi thường/, /ˈɪndʒəri/, /ɪmˈplɔɪmənt ˌtɜːrmɪˈneɪʃn ˌkɑːmpenˈseɪʃn/, /rɪˌmjuːnəˈreɪʃn/",
+    "pos": "(n )",
+    "meaning": "Sự hoàn lại, bồi hoàn tiền",
+    "synonyms": [
+      "Remuneration"
+    ],
+    "examples": [
+      {
+        "en": "You will receive",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Reimbursement \n/ˌriːɪmˈbɜːrsmənt/ (n )\n for/of S.TH \n=\n \nPay money back to S.O\n: Sự hoàn lại, bồi hoàn tiền\nReimbursement of travel expenses: \nHoàn các chi phí đi lại\nReimbursement for travel, meals and lodging\n /ˈlɑːdʒɪŋ/: Hoàn tiền cho việc đi lại, ăn uống và chỗ ở (trọ)\nReimbursement of hospital bills\n: Hoàn tiền cho các hóa đơn bệnh viện\n🔰 \nPHÂN BIỆT\n: \nReimbursement - Compensation\n (2 từ chắc chắn ra thi)\n\n📌 \nReimbursement\n /ˌriːɪmˈbɜːrsmənt/ (n ) \nfor/of S.TH: \nHoàn lại số tiền do chính người đó đã tiêu xài (thường là bạn tự bỏ tiền ra trước (vd: đi công tác) -> về công ty trả lại tiền cho bạn)\nEg: You will receive \nreimbursement\n \nfor your travel expenses.\n\n(Bạn sẽ nhận được \nsự hoàn tiền\n cho các chi phí đi lại)\n📌 \nCompensation \n/ˌkɑːmpenˈseɪʃn/ (n ) \nfor S.TH: \nSự đền bù, bồi thường/Chế độ đãi ngộ, tiền thù lao\n\n(1)\n: Sự đền bù, bồi thường (thiệt hại, tổn thất)\n\n_ To claim/seek/award/receive compensation: Khiếu nại đòi bồi thường/nhận tiền bồi thường\n_ Compensation for injury /ˈɪndʒəri/: Tiền bồi thường tai nạn (lao động)\n_ Compensation for damage: Sự bồi thường thiệt hại\n_ Employment termination compensation \n/ɪmˈplɔɪmənt ˌtɜːrmɪˈneɪʃn ˌkɑːmpenˈseɪʃn/: Tiền bồi thường thôi việc\n\n(2) \n= \nRemuneration\n /rɪˌmjuːnəˈreɪʃn/ (n): Tiền thù lao/chế độ đãi ngộ\n\n_ Annual\n \ncompensation \n(n.phrase): Chế độ đãi ngộ hàng năm",
+    "day": 25
+  },
+  {
+    "id": "d25_w4",
+    "index": 4,
+    "term": "Deteriorate",
+    "phonetic": "/dɪˈtɪriəreɪt/, /dɪˈdʒen.ə.reɪt/",
+    "pos": "(v)",
+    "meaning": "Xuống cấp, trở nên tồi tệ hơn",
+    "synonyms": [
+      "Degenerate",
+      "To become worse"
+    ],
+    "examples": [
+      {
+        "en": "A protective substance was applied to the parking lot's surface to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Deteriorate\n /dɪˈtɪriəreɪt/ (v) = \nDegenerate\n /dɪˈdʒen.ə.reɪt/ =\n \nTo become worse\n: Xuống cấp, trở nên tồi tệ hơn\nDeteriorate into S.TH\n: Chuyển biến (xấu) thành cái gì\nKeep/Prevent S.TH from deteriorating\n \n(over time): \nGiữ cho cái gì đó không bị xuống cấp (theo thời gian)\nEg: A protective substance was applied to the parking lot's surface to\n \nkeep it from deteriorating over time\n.\n\n(1 loại hóa chất bảo vệ được quét lên bề mặt của bãi đậu xe để \ngiữ cho nó không bị xuống cấp theo thời gian\n)",
+    "day": 25
+  },
+  {
+    "id": "d26_w1",
+    "index": 1,
+    "term": "Remarkably",
+    "phonetic": "/rɪˈmɑːrkəbli/, /əˈstɑːnɪʃɪŋli/, /əˈstaʊndɪŋli/, /əˈmeɪzɪŋli/, /sərˈpraɪzɪŋli/, /rɪˈmɑːrkəbl/, /ə'tʃi:vmənt/, /kə'riə/, /'tælənt/",
+    "pos": "(adv)",
+    "meaning": "1 cách đáng kinh ngạc, đáng chú ý.",
+    "synonyms": [
+      "Astonishingly",
+      "Astoundingly",
+      "Amazingly",
+      "Surprisingly"
+    ],
+    "examples": [
+      {
+        "en": "The two logos are",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Remarkably \n/rɪˈmɑːrkəbli/ (adv): 1 cách đáng kinh ngạc, đáng chú ý.\n= \nAstonishingly\n /əˈstɑːnɪʃɪŋli/ = \nAstoundingly\n /əˈstaʊndɪŋli/ = \nAmazingly\n /əˈmeɪzɪŋli/ = \nSurprisingly\n /sərˈpraɪzɪŋli/\n\nRemarkable \n/rɪˈmɑːrkəbl/ (adj): Đáng chú ý, nổi bật\nA remarkable achievement/career/talent\n \n/ə'tʃi:vmənt/ -\n \n/kə'riə/ - /'tælənt/ (n.phrase): Thành tựu/Sự nghiệp/Tài năng nổi bật  \nEg: The two logos are \nremarkably\n similar.\n(2 lôgô thì giống nhau \n1 cách đáng kinh ngạc\n).",
+    "day": 26
+  },
+  {
+    "id": "d26_w2",
+    "index": 2,
+    "term": "Unanimously",
+    "phonetic": "/juˈnænɪməsli/, /əˈnɑːnɪməsli/, /sə'pɔ:t/, /ɪn ˈfeɪvər ʌv/, /ə'gri:/, /ə'pru:v/, /rɪˈdʒekt/",
+    "pos": "(adv)",
+    "meaning": "Đồng lòng, nhất trí.",
+    "synonyms": [
+      "in favor of"
+    ],
+    "examples": [],
+    "raw_text": "2. Unanimously\n /juˈnænɪməsli/ (adv): Đồng lòng, nhất trí.\n# \nAnonymously\n /əˈnɑːnɪməsli/ (adv): Ẩn danh.\n+ support \n/sə'pɔ:t/ (v) = \nin favor of \n/ɪn ˈfeɪvər ʌv/: Nhất trí ủng hộ, tán thành.\n+ \nagree \n/ə'gri:/ (v) \n/\n \napprove \n/ə'pru:v/ (v): Nhất trí đồng ý\n/ \nchấp thuận.\n+ \nreject \n/rɪˈdʒekt/ (v): Nhất trí từ chối.",
+    "day": 26
+  },
+  {
+    "id": "d26_w3",
+    "index": 3,
+    "term": "Opt",
+    "phonetic": "/ɑːpt/, /tʃuːz/",
+    "pos": "(v)",
+    "meaning": "Lựa chọn làm gì.",
+    "synonyms": [
+      "Choose"
+    ],
+    "examples": [
+      {
+        "en": "Many workers",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Opt \n/ɑːpt/ (v)\n to do S.TH\n = \nChoose\n /tʃuːz/\n to do S.TH: \nLựa chọn làm gì.\n\nEg: Many workers \nopted to\n leave their current jobs rather than take a pay cut.\n(Nhiều công nhân \nđã lựa chọn\n từ bỏ công việc hiện tại của họ thay vì bị cắt giảm lương).",
+    "day": 26
+  },
+  {
+    "id": "d26_w4",
+    "index": 4,
+    "term": "Raise/Increase/Heighten S.O's awareness",
+    "phonetic": "/reɪz əˈwernəs/, /ˈfʌndreɪzɪŋ/",
+    "pos": "(n)",
+    "meaning": "Nâng cao nhận thức của ai về cái gì.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Raise public awareness of",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Raise/Increase/Heighten S.O's awareness\n /reɪz əˈwernəs/ \nof S.TH\n: Nâng cao nhận thức của ai về cái gì.\n=> \nA greater/a growing/an increasing awareness of S.TH\n: Nhận thức ngày càng tốt hơn/ tăng lên.\nFundraising\n /ˈfʌndreɪzɪŋ/ (n): Gây quỹ\nEg: \nRaise public awareness of\n the importance of protecting the environment.\n(\nNâng cao nhận thức của công chúng\n về tầm quan trọng của việc bảo vệ môi trường).",
+    "day": 26
+  },
+  {
+    "id": "d26_w5",
+    "index": 5,
+    "term": "Perishable",
+    "phonetic": "/ˈperɪʃəbl/",
+    "pos": "(adj)",
+    "meaning": "Hàng hóa, thực phẩm dễ bị ôi thiu.",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "5. Perishable \n/ˈperɪʃəbl/ (adj) \n+ goods/foods\n: Hàng hóa, thực phẩm dễ bị ôi thiu.",
+    "day": 26
+  },
+  {
+    "id": "d27_w1",
+    "index": 1,
+    "term": "Proprietor",
+    "phonetic": "/prəˈpraɪətər/, /ˈəʊnər/, /pəˈzesər/",
+    "pos": "(n)",
+    "meaning": "Chủ, người sở hữu",
+    "synonyms": [
+      "Owner",
+      "Possessor"
+    ],
+    "examples": [
+      {
+        "en": "Inquiries about the interview must be sent directly to the",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Proprietor \n/prəˈpraɪətər/ (n) = \nOwner \n/ˈəʊnər/ = \nPossessor\n /pəˈzesər/: Chủ, người sở hữu\nEg: Inquiries about the interview must be sent directly to the \nproprietor\n.\n\n\n(Các câu hỏi thắc mắc về buổi phỏng vấn nên được gửi trực tiếp đến cho \nngười chủ sở hữu\n)",
+    "day": 27
+  },
+  {
+    "id": "d27_w2",
+    "index": 2,
+    "term": "Apparel",
+    "phonetic": "/əˈpærəl/, /əˈtaɪər/, /ˈkləʊðɪŋ/, /ˈɡɑːrmənt/, /ˈaʊtfɪt/, /ˈkɑːstuːm/",
+    "pos": "(n)",
+    "meaning": "Quần áo, trang phục",
+    "synonyms": [
+      "Attire",
+      "Clothing",
+      "Garment",
+      "Dress",
+      "Outfit",
+      "Costume"
+    ],
+    "examples": [],
+    "raw_text": "2. Apparel\n /əˈpærəl/ (n) = \nAttire\n /əˈtaɪər/ = \nClothing\n /ˈkləʊðɪŋ/ = \nGarment\n /ˈɡɑːrmənt/ = \nDress\n /dres/ = \nOutfit\n /ˈaʊtfɪt/ ~ \nCostume \n/ˈkɑːstuːm/: Quần áo, trang phục",
+    "day": 27
+  },
+  {
+    "id": "d27_w3",
+    "index": 3,
+    "term": "Evacuate",
+    "phonetic": "/ɪˈvækjueɪt/, /vəˈkeɪt/, /veɪˈkeɪt/, /ˈveɪkeɪt/",
+    "pos": "(v)",
+    "meaning": "Sơ tán khỏi nơi nào",
+    "synonyms": [],
+    "examples": [],
+    "raw_text": "3. Evacuate\n /ɪˈvækjueɪt/ (v) \nS.TH\n: Sơ tán khỏi nơi nào\n~\n Vacate S.TH \n/vəˈkeɪt/, /veɪˈkeɪt/, /ˈveɪkeɪt/: Bỏ trống, rời khỏi\nTo evacuate a building/an office/an apartment\n: Sơ tản khỏi tòa nhà/văn phòng/căn hộ\nTo vacate a building/seat:\n Rời khỏi tòa nhà/chỗ ngồi\nTo vacate a job/position\n: Rời bỏ 1 công việc/vị trí",
+    "day": 27
+  },
+  {
+    "id": "d27_w4",
+    "index": 4,
+    "term": "Relieve",
+    "phonetic": "/rɪˈliːv/, /iːz/, /əˈliːvieɪt/, /ˈpɑːvərti/, /ˈfæmɪn/, /ˈtræfɪk  kənˈdʒestʃən/, /ˈsɪmptəm/, /æŋˈzaɪəti/, /ɡɪlt/",
+    "pos": "(v)",
+    "meaning": "Xoa dịu, làm giảm bớt",
+    "synonyms": [
+      "Ease",
+      "Alleviate"
+    ],
+    "examples": [],
+    "raw_text": "4. Relieve\n /rɪˈliːv/ (v) \nS.TH\n = \nEase\n /iːz/ = \nAlleviate\n /əˈliːvieɪt/: Xoa dịu, làm giảm bớt\n+ \npoverty/famine \n/ˈpɑːvərti/ - /ˈfæmɪn/ (n): Giảm sự nghèo nàn, thốn thiếu/nạn đói, sự khan hiếm\n+\n traffic congestion\n /ˈtræfɪk  kənˈdʒestʃən/ (n.phrase): Giảm ùn tắc giao thông\n+\n the symptom \n/ˈsɪmptəm/ (n): Giảm triệu chứng\n+ \nanxiety/guilt/stress\n /æŋˈzaɪəti/ - /ɡɪlt/ - /stres/ (n): Giảm sự lo lắng/tội lỗi/căng thẳng",
+    "day": 27
+  },
+  {
+    "id": "d27_w5",
+    "index": 5,
+    "term": "Genre",
+    "phonetic": "/ˈʒɑːnrə/",
+    "pos": "(n)",
+    "meaning": "Loại, thể loại",
+    "synonyms": [
+      "Type"
+    ],
+    "examples": [],
+    "raw_text": "5. Genre \n/ˈʒɑːnrə/ (n) = \nType\n/ \nStyle/ Sort/ Category/ Kind\n: Loại, thể loại\nLiterary/art/musical genres \n(n.s): Các thể loại văn học/nghệ thuật/âm nhạc",
+    "day": 27
+  },
+  {
+    "id": "d28_w1",
+    "index": 1,
+    "term": "Testimonial",
+    "phonetic": "/ˌtestɪˈməʊniəl/, /ˈfiːdbæk/, /rɪˈvjuː/, /ˈkɑːment/, /ˌkwestʃəˈner/, /'sə:vei/",
+    "pos": "(n)",
+    "meaning": "vei/: Lời chứng thực, đánh giá, nhận xét, khảo sát",
+    "synonyms": [
+      "Feedback",
+      "Review",
+      "Comment",
+      "Questionnaire",
+      "Survey"
+    ],
+    "examples": [
+      {
+        "en": "The catalogue is full of",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Testimonial \n/ˌtestɪˈməʊniəl/ (n) ~ \nFeedback \n/ˈfiːdbæk/ ~ \nReview \n/rɪˈvjuː/ ~ \nComment \n/ˈkɑːment/ ~ \nQuestionnaire\n /ˌkwestʃəˈner/ ~ \nSurvey \n/'sə:vei/: Lời chứng thực, đánh giá, nhận xét, khảo sát\nEg:\n The catalogue is full of \ntestimonials\n from customers.\n\n\n(Danh mục có đầy đủ \nnhững lời chứng thực\n từ các khách hàng)",
+    "day": 28
+  },
+  {
+    "id": "d28_w2",
+    "index": 2,
+    "term": "Soar",
+    "phonetic": "/sɔːr/, /ˈskaɪrɑːkɪt/, /ˈrɑːkɪt/, /ʃu:t ʌp/",
+    "pos": "(v)",
+    "meaning": "Tăng vọt",
+    "synonyms": [
+      "Skyrocket",
+      "Rocket",
+      "Shoot up",
+      "Rise very quickly"
+    ],
+    "examples": [
+      {
+        "en": "The average sale price of real estate in Tokyo has",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Soar\n /sɔːr/ (v) (\nabove/to) \n= \nSkyrocket\n /ˈskaɪrɑːkɪt/ = \nRocket\n /ˈrɑːkɪt/ = \nShoot up\n /ʃu:t ʌp/ = \nRise very quickly\n: Tăng vọt\nEg:\n The average sale price of real estate in Tokyo has \nsoared\n more than 30 percent over the last 3 years.\n\n\n(Giá bán bất động sản bình quân ở Tokyo đã \ntăng vọt\n hơn 30% trong suốt hơn 3 năm qua)\n\n\nSoaring \n(adj) + \ncosts/ prices/ temperatures/ sales/ unemployment/ crime rate: \nChi phí/ giá cả/ nhiệt độ/ doanh thu/ tỷ lệ thất nghiệp/ tỷ lệ tội phạm tăng vọt",
+    "day": 28
+  },
+  {
+    "id": "d28_w3",
+    "index": 3,
+    "term": "Prerequisite",
+    "phonetic": "/ˌpriːˈrekwəzɪt/, /ˌpriːkənˈdɪʃn/",
+    "pos": "(n)",
+    "meaning": "Điều kiện tiên quyết",
+    "synonyms": [
+      "Precondition"
+    ],
+    "examples": [
+      {
+        "en": "Flexibility of approaching a new knowledge is the",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Prerequisite\n /ˌpriːˈrekwəzɪt/ (n) = \nPrecondition\n /ˌpriːkənˈdɪʃn/: Điều kiện tiên quyết\n=>\n Prerequisite for/of/to something: \nĐiều kiện tiên quyết cho cái gì\nEg: \nFlexibility of approaching a new knowledge is the \nprerequisite\n to become successful.\n\n\n(Sự linh hoạt trong việc tiếp cận 1 kiến thức mới là \nđiều kiện tiên quyết\n để trở nên thành công)",
+    "day": 28
+  },
+  {
+    "id": "d28_w4",
+    "index": 4,
+    "term": "Tentative",
+    "phonetic": "/ˈtentətɪv/, /prəˈvɪʒənl/, /ˈtempəreri/, /ˈɪntərɪm/",
+    "pos": "(adj)",
+    "meaning": "Dự kiến, tạm thời, lâm thời",
+    "synonyms": [
+      "Provisional",
+      "Temporary",
+      "Interim"
+    ],
+    "examples": [
+      {
+        "en": "We made a",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Tentative \n/ˈtentətɪv/ (adj) = \nProvisional\n /prəˈvɪʒənl/ = \nTemporary\n /ˈtempəreri/ = \nInterim\n /ˈɪntərɪm/: Dự kiến, tạm thời, lâm thời\nEg: \nWe made a \ntentative\n arrangement to meet on Friday.\n\n\n(Chúng tôi đã có 1 sự sắp xếp \ndự kiến\n gặp mặt vào ngày thứ 6)\nTentative + plan/ report/ contract/ arrangements: \nKế hoạch/báo cáo/hợp đồng/những sự sắp xếp dự kiến\nTentative government:\n Chính phủ lâm thời.",
+    "day": 28
+  },
+  {
+    "id": "d28_w5",
+    "index": 5,
+    "term": "Deduct",
+    "phonetic": "/dɪˈdʌkt/, /səb'trækt/, /ˌtæks dɪˈdʌktəbl/",
+    "pos": "(v)",
+    "meaning": "Khấu trừ, lấy đi cái gì",
+    "synonyms": [
+      "Subtract"
+    ],
+    "examples": [
+      {
+        "en": "If your return is not due to an error by us, we will",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Deduct\n /dɪˈdʌkt/ (v) = \nSubtract\n /səb'trækt/ = \nTo take away an amount/a part from a total:\n Khấu trừ, lấy đi cái gì\n=>\n Tax-deductible\n /ˌtæks dɪˈdʌktəbl/ (adj): Khấu trừ, miễn giảm thuế\nEg:\n If your return is not due to an error by us, we will \ndeduct\n the shipping cost from your refund.\n\n\n(Nếu việc hoàn lại không phải do lỗi của chúng tôi, chúng tôi sẽ \nlấy lại\n khoản phí giao hàng từ số tiền hoàn lại cho bạn)",
+    "day": 28
+  },
+  {
+    "id": "d28_w6",
+    "index": 6,
+    "term": "Drawing",
+    "phonetic": "/'drɔ:iɳ/, /drɔ:/, /'ræfl/, /'lɔtəri/",
+    "pos": "(n)",
+    "meaning": "iɳ/ (hoặc Draw /drɔ:/ ) (n)",
+    "synonyms": [
+      "Raffle",
+      "Lottery"
+    ],
+    "examples": [
+      {
+        "en": "I won this bottle of wine in a",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Drawing \n/'drɔ:iɳ/ (hoặc Draw /drɔ:/ ) (n) = \nRaffle\n /'ræfl/ = \nLottery\n /'lɔtəri/: Rút thăm trúng thưởng\nEg: \nI won this bottle of wine in a \ndrawing\n.\n\n\n(Tôi trúng được chai rượu này trong 1 buổi \nrút thăm trúng thưởng\n)\n\n\n📍",
+    "day": 28
+  },
+  {
+    "id": "d29_w1",
+    "index": 1,
+    "term": "Retrieve",
+    "phonetic": "/rɪˈtriːv/, /rɪˈkʌvər/, /rɪˈliːv/, /əˈliːvieɪt/, /iːz/",
+    "pos": "(v)",
+    "meaning": "Lấy lại cái gì",
+    "synonyms": [
+      "Recover",
+      "Alleviate",
+      "Ease"
+    ],
+    "examples": [
+      {
+        "en": "The police have managed to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Retrieve\n /rɪˈtriːv/ (v) \nS.TH\n = \nRecover\n /rɪˈkʌvər/ \nS.TH \n= \nGet S.TH back\n: Lấy lại cái gì\n # Relieve \n/rɪˈliːv/ (v) ~ \nAlleviate\n /əˈliːvieɪt/ ~ \nEase\n /iːz/: giảm nhẹ, làm dịu nhẹ (cơn đau)\nEg:\n \nThe police have managed to \nretrieve\n some of the stolen money.\n\n(Viên cảnh sát đã có thể \nlấy lại\n được một vài số tiền đã bị đánh cắp)",
+    "day": 29
+  },
+  {
+    "id": "d29_w2",
+    "index": 2,
+    "term": "Proximity",
+    "phonetic": "/prɑːkˈsɪməti/, /əˈdʒeɪsnt/, /vəˈsɪnəti/",
+    "pos": "(n )",
+    "meaning": "trạng thái gần về không gian với cái gì (ở gần cái gì)",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "That site is",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Proximity\n /prɑːkˈsɪməti/ (n ) \nto S.TH:\n trạng thái gần về không gian với cái gì (ở gần cái gì)\n-> \nBe \nin close proximity\n \n(n)\n to S.TH\n: nằm gần cái gì.\nEg: That site is\n \nin close proximity to\n \nan airport.\n\n(Địa điểm đó thì \nnằm gần\n 1 sân bay)\n\n\nHai từ có nghĩa tương tự:\n\n\n- Be adjacent\n /əˈdʒeɪsnt/ (adj) \nto S.TH\n: tiếp giáp cái gì\n\n- Vicinity\n /vəˈsɪnəti/ (n) \nof S.TH\n: khu vực lân cận của cái gì",
+    "day": 29
+  },
+  {
+    "id": "d29_w3",
+    "index": 3,
+    "term": "Preliminary",
+    "phonetic": "/prɪˈlɪmɪneri/, /ɪˈnɪʃl/",
+    "pos": "(adj)",
+    "meaning": "sơ bộ, mở đầu.",
+    "synonyms": [
+      "Initial"
+    ],
+    "examples": [
+      {
+        "en": "The",
+        "vi": ""
+      },
+      {
+        "en": "After a few",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Preliminary \n/prɪˈlɪmɪneri/ (adj) = \nInitial\n /ɪˈnɪʃl/: sơ bộ, mở đầu.\n\n     + testing/ results/ findings/ remarks \n(các cuộc thử nghiệm/ các kết quả/ nhận xét sơ bộ)\nEg:\n \nThe \npreliminary\n \nrounds of the contest \n(những vòng sơ khảo của cuộc thi)\n\nEg: After a few\n \npreliminary\n \nremarks, he announced the winners. \n\n(Sau một vài lời nhận xét \nmở đầu\n, anh ấy đã tuyên bố những người thắng cuộc)",
+    "day": 29
+  },
+  {
+    "id": "d29_w4",
+    "index": 4,
+    "term": "Fundamentally",
+    "phonetic": "/ˌfʌndəˈmentəli/, /ɪˈsenʃəli/, /kəmˈpliːtli/, /ˈtəʊtəli/, /ˌɔːltəˈɡeðər/, /ɪnˈtaɪərli/, /'difrənt/",
+    "pos": "(adv)",
+    "meaning": "/ɪˈsenʃəli/: về cơ bản, về bản chất",
+    "synonyms": [
+      "Basically",
+      "Essentially",
+      "Completely",
+      "Totally",
+      "Altogether",
+      "Entirely"
+    ],
+    "examples": [
+      {
+        "en": "She is",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Fundamentally\n /ˌfʌndəˈmentəli/ (adv):\n(1) \n= \nBasically\n /ˈbeɪsɪkli/ = \nEssentially\n /ɪˈsenʃəli/: về cơ bản, về bản chất\n(2)\n = \nCompletely \n/kəmˈpliːtli/ = \nTotally\n /ˈtəʊtəli/ = \nAltogether\n /ˌɔːltəˈɡeðər/ = \nEntirely\n /ɪnˈtaɪərli/: hoàn toàn\n+ \ndifferent\n /'difrənt/ (adj): hoàn toàn khác biệt\nEg:\n \nShe is\n \nfundamentally\n \na nice person, but she finds it difficult to communicate.\n\n(Cô ấy \nvề cơ bản\n là một người tốt tính, nhưng cô ấy cảm thấy khó khăn để giao tiếp với mọi người)",
+    "day": 29
+  },
+  {
+    "id": "d29_w5",
+    "index": 5,
+    "term": "Refurbishment",
+    "phonetic": "/ˌriːˈfɜːrbɪʃmənt/, /ˌʌpˈɡreɪd/, /ˌriːˈmɑːdlɪŋ/, /ˌrenəˈveɪʃn/, /rɪˈplenɪʃmənt/, /ˈfɜːrnɪʃɪŋz/, /ˈfɜːrnɪtʃər/",
+    "pos": "(n )",
+    "meaning": "việc tu sửa, nâng cấp, tân trang, đổi mới",
+    "synonyms": [
+      "Upgrade",
+      "Remodeling",
+      "Renovation",
+      "Furniture"
+    ],
+    "examples": [
+      {
+        "en": "The hotel is closed for",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Refurbishment \n/ˌriːˈfɜːrbɪʃmənt/ (n ) ~ \nUpgrade\n /ˌʌpˈɡreɪd/ ~ \nRemodeling \n/ˌriːˈmɑːdlɪŋ/ ~ \nRenovation\n /ˌrenəˈveɪʃn/: việc tu sửa, nâng cấp, tân trang, đổi mới\n# \nReplenishment \n/rɪˈplenɪʃmənt/ (n ) = \nthe act of filling S.TH up again: \nviệc bổ sung, cấp thêm cái gì\n# \nFurnishings \n/ˈfɜːrnɪʃɪŋz/ (n ) = \nFurniture\n /ˈfɜːrnɪtʃər/: đồ nội thất\nEg:\n \nThe hotel is closed for \nrefurbishment\n.\n\n(Khách sạn bị đóng cửa cho \nviệc tu sửa\n)",
+    "day": 29
+  },
+  {
+    "id": "d29_w6",
+    "index": 6,
+    "term": "Accumulate",
+    "phonetic": "/əˈkjuːmjəleɪt/, /kəˈlekt/, /æk'seləreit/, /ə'li:vieit/, /ə'pri:ʃieit/, /ə'kɔmədeit/, /ə'proupriit/",
+    "pos": "(v)",
+    "meaning": "tích lũy, thu thập",
+    "synonyms": [
+      "Collect",
+      "Build up"
+    ],
+    "examples": [
+      {
+        "en": "We have",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Accumulate\n /əˈkjuːmjəleɪt/ (v) = \nCollect \n/kəˈlekt/ = \nBuild up: \ntích lũy, thu thập\n# \nAccelerate \n/æk'seləreit/ (v): Tăng cường, thúc đẩy.\n# \nAlleviate \n/ə'li:vieit/ (v): Giảm nhẹ, làm dịu nhẹ.\n# \nAppreciate \n/ə'pri:ʃieit/ (v): Biết ơn, cảm kích, đánh giá cao.\n# \nAccommodate \n/ə'kɔmədeit/ (v): Đáp ứng/chứa.\n# \nAppropriate \n/ə'proupriit/ (adj): Thích hợp.\nEg:\n \nWe have\n \naccumulated\n \na great amount of evidence.\n\n(Chúng tôi đã \nthu thập\n 1 số lượng lớn bằng chứng)",
+    "day": 29
+  },
+  {
+    "id": "d30_w1",
+    "index": 1,
+    "term": "Initially",
+    "phonetic": "/ɪˈnɪʃəli/, /əˈrɪdʒənəli/, /ɪˈnɪʃieɪt/",
+    "pos": "(adv)",
+    "meaning": "Ban đầu, sơ khai, về khởi đầu",
+    "synonyms": [
+      "Originally",
+      "at the beginning"
+    ],
+    "examples": [
+      {
+        "en": "He was",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Initially \n/ɪˈnɪʃəli/ (adv) ~ \nOriginally \n/əˈrɪdʒənəli/ =\n at the beginning\n: Ban đầu, sơ khai, về khởi đầu\nInitiate\n /ɪˈnɪʃieɪt/ (v) =\n Set/put in motion\n = \nto make S.TH begin\n: Khởi xướng chuyện gì\nEg: He was \ninitially\n reluctant to join the project.\n\n\n(Anh ấy \nban đầu\n thì miễn cưỡng tham gia dự án)",
+    "day": 30
+  },
+  {
+    "id": "d30_w2",
+    "index": 2,
+    "term": "Volume",
+    "phonetic": "/ˈvɑːljəm/, /ˈkwɑːntəti/, /ə'maunt/, /bʌlk/",
+    "pos": "(n)",
+    "meaning": "Số lượng",
+    "synonyms": [
+      "Quantity",
+      "Amount",
+      "Bulk",
+      "A bulk order"
+    ],
+    "examples": [
+      {
+        "en": "A large volume order",
+        "vi": ""
+      },
+      {
+        "en": "New roads are being built to cope with the increased",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Volume \n/ˈvɑːljəm/ (n)\n of S.TH \n= \nQuantity \n/ˈkwɑːntəti/\n of \n= \nAmount\n /ə'maunt/ \nof: \nSố lượng\nLarge volume\n ~ \nBulk \n/bʌlk/ (n): Số lượng lớn.\nEg:\n A large volume order\n =\n A bulk order: \nĐơn hàng số lượng lớn.\nEg: New roads are being built to cope with the increased \nvolume of\n traffic.\n\n\n(Những đoạn đường mới đã được xây dựng để bắt kịp với \nlượng\n xe tham gia giao thông tăng lên)",
+    "day": 30
+  },
+  {
+    "id": "d30_w3",
+    "index": 3,
+    "term": "Play/Assume a (key/leading/central/crucial/vital) role of/in",
+    "phonetic": "",
+    "pos": "",
+    "meaning": "Đóng/đảm nhiệm vai trò (then chốt/hàng đầu/trọng tâm/quan trọng/thiết yếu)",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Farming",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Play/Assume a (key/leading/central/crucial/vital) role of/in: \nĐóng/đảm nhiệm vai trò (then chốt/hàng đầu/trọng tâm/quan trọng/thiết yếu)\n\nEg: Farming \nplays a crucial role in\n maintaining the landscape.\n\n\n(Công việc đồng áng \nđóng 1 vai trò quan trọng trong việc\n gìn giữ cảnh quan)",
+    "day": 30
+  },
+  {
+    "id": "d30_w4",
+    "index": 4,
+    "term": "Proceeds",
+    "phonetic": "/ˈprəʊsiːdz/, /ˈprɑːfɪts/, /prəˈsiːdʒər/, /prəˈkjʊr/, /ˈprəʊduːs/",
+    "pos": "(n )",
+    "meaning": "Tổng số tiền thu được, lợi nhuận",
+    "synonyms": [
+      "Profits"
+    ],
+    "examples": [
+      {
+        "en": "The",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Proceeds \n(n ) /ˈprəʊsiːdz/ \nof/from S.TH\n = \nProfits\n /ˈprɑːfɪts/: Tổng số tiền thu được, lợi nhuận\nAnnual/pre-tax/corporate proceeds: \nLợi nhuận hàng năm/trước thuế/đoàn thể, công ty\nA(An) rise/increase/jump in profits: \nmột sự gia tăng trong lợi nhuận\n\n>< A drop/fall in profits: một \nsự sụt giảm trong lợi nhuận\nTo maximize/increase profits\n: Tối đa hóa/tăng lợi nhuận\n# \nProcedure \n/prəˈsiːdʒər/ (n ): Qui trình, thủ tục\n# \nProcure \n/prəˈkjʊr/ (v): Kiếm, thu được, mua được\n# \nProduce \n/ˈprəʊduːs/ (n ): Sản lượng, nông sản\nEg: The \nproceeds\n of the concert will go to charity.\n\n\n(\nLợi nhuận thu được\n của buổi hòa nhạc sẽ dùng làm từ thiện)",
+    "day": 30
+  },
+  {
+    "id": "d30_w5",
+    "index": 5,
+    "term": "Interfere",
+    "phonetic": "/ˌɪntərˈfɪr/, /ˌɪntəˈrʌpt/, /ˌɪntərˈækt/",
+    "pos": "",
+    "meaning": "can thiệp, gây cản trở chuyện gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Emotional problems can seriously",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Interfere \n/ˌɪntərˈfɪr/ \nwith\n: can thiệp, gây cản trở chuyện gì\n# \nInterrupt\n /ˌɪntəˈrʌpt/ \nwith\n: làm gián đoạn chuyện gì\n# \nInteract\n /ˌɪntərˈækt/ \nwith S.O\n: tương tác với ai\n\nEg: Emotional problems can seriously \ninterfere with\n a student's work.\n\n\n(Những vấn đề về mặt cảm xúc có thể \ngây cản trở\n nghiêm trọng đến việc học của học sinh)",
+    "day": 30
+  },
+  {
+    "id": "d30_w6",
+    "index": 6,
+    "term": "Domination",
+    "phonetic": "/ˌdɑːmɪˈneɪʃn/, /ˈdɑːmɪneɪt/, /ˈdəʊneɪt/",
+    "pos": "(n )",
+    "meaning": "Sự thống trị, sự thống lĩnh, nắm quyền kiểm soát",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Companies are fighting for",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Domination\n /ˌdɑːmɪˈneɪʃn/ (n )\n of/over S.TH / S.O: \nSự thống trị, sự thống lĩnh, nắm quyền kiểm soát\nMarket domination\n: sự thống trị thị trường\nDominate \n/ˈdɑːmɪneɪt/ (v) \nS.O/S.TH: \nNắm quyền kiểm soát ai/cái gì\n# \nDonation \n(n ): Sự quyên góp, \nDonate\n /dou'neit/, /ˈdəʊneɪt/ (v): quyên góp\nEg: Companies are fighting for \ndomination\n of the software market.\n\n\n(Các công ty tranh giành \nquyền thống trị\n thị trường phần mềm)\n\n\n📍",
+    "day": 30
+  },
+  {
+    "id": "d31_w1",
+    "index": 1,
+    "term": "Feasible",
+    "phonetic": "/ˈfiːzəbl/, /ˈpræktɪkəbl/, /ˈpɑːsəbl/",
+    "pos": "(adj)",
+    "meaning": "có khả năng, khả thi",
+    "synonyms": [
+      "Practicable",
+      "Possible"
+    ],
+    "examples": [
+      {
+        "en": "It's just not",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Feasible \n/ˈfiːzəbl/ (adj) = \nPracticable\n /ˈpræktɪkəbl/ = \nPossible\n /ˈpɑːsəbl/: có khả năng, khả thi\n # \nFlexible\n (adj): linh hoạt, linh động \n+ working hours/schedule: \ngiờ làm việc, lịch trình\n\nEg: It's just not \nfeasible\n to manage the business on a part-time basis.\n\n\n(Không \nkhả thi \nkhi\n \nquản lý doanh nghiệp theo chế độ bán thời gian)",
+    "day": 31
+  },
+  {
+    "id": "d31_w2",
+    "index": 2,
+    "term": "Contingency",
+    "phonetic": "/kənˈtɪndʒənsi/, /ˌpɑːsəˈbɪləti/",
+    "pos": "(n )",
+    "meaning": "sự dự phòng, dự trù, khả năng xảy ra",
+    "synonyms": [
+      "Possibility"
+    ],
+    "examples": [
+      {
+        "en": "We should always prepare",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Contingency \n/kənˈtɪndʒənsi/ (n ) = \nPossibility\n /ˌpɑːsəˈbɪləti/: sự dự phòng, dự trù, khả năng xảy ra\ncontingency plan: \nkế hoạch dự phòng\ncontingency + fund/fee \n(n): quỹ/phí (dự phòng)\nEg: We should always prepare \ncontingency plans\n for the worst situations.\n\n\n(Chúng ta nên luôn chuẩn bị \ncác kế hoạch dự phòng\n cho những tình huống xấu nhất)",
+    "day": 31
+  },
+  {
+    "id": "d31_w3",
+    "index": 3,
+    "term": "Lucrative",
+    "phonetic": "/ˈluːkrətɪv/, /ˈprɑːfɪtəbl/, /ˌbenɪˈfɪʃl/, /ˌbenɪˈfɪʃieri/",
+    "pos": "(adj)",
+    "meaning": "có lời, sinh lời, thắng lợi",
+    "synonyms": [
+      "Profitable",
+      "Beneficial",
+      "Successful"
+    ],
+    "examples": [
+      {
+        "en": "Had the plan worked, it would have",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Lucrative \n/ˈluːkrətɪv/ (adj) = \nProfitable\n /ˈprɑːfɪtəbl/ ~ \nBeneficial\n /ˌbenɪˈfɪʃl/ ~ \nSuccessful\n: có lời, sinh lời, thắng lợi\n# \nBeneficiary\n /ˌbenɪˈfɪʃieri/ (n): Người hưởng lợi.\nlucrative + business/ contract/ market \n(n.phrase): Việc kinh doanh/ bản hợp đồng/ thị trường (có lời)\nprove lucrative\n: chứng minh là có lời\nEg: Had the plan worked, it would have \nproved\n highly \nlucrative\n.\n\n\n(Nếu như kế hoạch này mà đã thành công, thì nó đáng lẽ đã \nchứng minh\n là nó \nsinh lời\n cao)",
+    "day": 31
+  },
+  {
+    "id": "d31_w4",
+    "index": 4,
+    "term": "Sensible",
+    "phonetic": "/ˈsensəbl/, /ˈpræktɪkl/, /ˈsensətɪv/",
+    "pos": "(adj)",
+    "meaning": "hợp lí, sáng suốt",
+    "synonyms": [
+      "Practical"
+    ],
+    "examples": [
+      {
+        "en": "It is sensible to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Sensible \n/ˈsensəbl/ (adj) \nabout S.TH \n= \nPractical\n /ˈpræktɪkl/\n about S.TH: \nhợp lí, sáng suốt\n # \nSensitive\n /ˈsensətɪv/ (adj): nhạy cảm\nIt is sensible to do something\n: thật sáng suốt khi làm gì\nEg: \nIt is sensible to\n have \ncontingency plans\n in place.\n\n\n(Thật \nsáng suốt \nkhi có \ncác kế hoạch dự phòng\n tại chỗ)",
+    "day": 31
+  },
+  {
+    "id": "d31_w5",
+    "index": 5,
+    "term": "Unveil",
+    "phonetic": "/ˌʌnˈveɪl/, /rɪˈviːl/, /dɪsˈkləʊz/",
+    "pos": "(v)",
+    "meaning": "hé lộ, tiết lộ, vạch trần",
+    "synonyms": [
+      "Reveal",
+      "Disclose"
+    ],
+    "examples": [
+      {
+        "en": "They will be",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Unveil \n/ˌʌnˈveɪl/ (v) = \nReveal\n /rɪˈviːl/ = \nDisclose\n /dɪsˈkləʊz/: hé lộ, tiết lộ, vạch trần\n+ plans/ products/ models/ secrets/ details/ identities: \n(tiết lộ)\n \ncác kế hoạch/sản phẩm/mẫu mã/bí mật/chi tiết/danh tính\nEg: They will be \nunveil\ning their new models at the Motor Show.\n\n\n(Họ sẽ\n tiết lộ\n những mẫu xe mới tại buổi triển lãm xe mô tô)",
+    "day": 31
+  },
+  {
+    "id": "d31_w6",
+    "index": 6,
+    "term": "Commemorate",
+    "phonetic": "/kəˈmeməreɪt/, /ˈselɪbreɪt/",
+    "pos": "(v)",
+    "meaning": "ăn mừng, kỉ niệm, tưởng niệm",
+    "synonyms": [
+      "Celebrate"
+    ],
+    "examples": [
+      {
+        "en": "A series of movies will be shown to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Commemorate\n /kəˈmeməreɪt/ (v) = \nCelebrate\n /ˈselɪbreɪt/: ăn mừng, kỉ niệm, tưởng niệm\n+ anniversary/ceremony/victory/success/achievement \n(n): lễ kỉ niệm/nghi thức/chiến thắng/thành công/thành tựu\nEg: A series of movies will be shown to \ncommemorate\n the thirtieth anniversary of his death.\n\n\n(Một chuỗi các bộ phim sẽ được trình chiếu để \ntưởng niệm\n ngày giỗ tổ lần thứ 30 của ông ấy)",
+    "day": 31
+  },
+  {
+    "id": "d32_w1",
+    "index": 1,
+    "term": "Bias",
+    "phonetic": "/ˈbaɪəs/, /ˈbaɪəs/",
+    "pos": "(n)",
+    "meaning": "Khuynh hướng, thiên hướng, tính thiên vị ->",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Some institutions still have a strong",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Bias \n/ˈbaɪəs/ (n): Khuynh hướng, thiên hướng, tính thiên vị -> \nBias\n /ˈbaɪəs/ (v):\n \nCó khuynh hướng làm gì, thiên vị ai/cái gì\nTo have a bias\n (n)\n in favour of/against/toward S.O/S.TH: \nThiên vị/có thành kiến/thiên về ai, cái gì\nEg: Some institutions still have a strong \nbias against\n women.\n\n\n(Một số tổ chức vẫn có \nthành kiến\n mạnh mẽ \nđối với \nphụ nữ)",
+    "day": 32
+  },
+  {
+    "id": "d32_w2",
+    "index": 2,
+    "term": "Underprivileged",
+    "phonetic": "/ˌʌndərˈprɪvəlɪdʒd/, /ˌdɪsədˈvæntɪdʒd/, /pʊr/",
+    "pos": "(adj)",
+    "meaning": "Bị tước đoạt, bị thiệt thòi, nghèo nàn, thiếu thốn",
+    "synonyms": [
+      "Disadvantaged",
+      "Poor"
+    ],
+    "examples": [
+      {
+        "en": "No one from these",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Underprivileged \n/ˌʌndərˈprɪvəlɪdʒd/ (adj) = \nDisadvantaged\n /ˌdɪsədˈvæntɪdʒd/ = \nPoor\n /pʊr/: Bị tước đoạt, bị thiệt thòi, nghèo nàn, thiếu thốn\nThe underprivileged \n(The + adj = Ns): Những người nghèo/bị tước đoạt quyền lợi/sống dưới đáy xã hội\nEducationally/socially underprivileged groups: \nNhững người thiếu học thức/bị thiệt thòi về mặt xã hội\nEg: No one from these \neducationally underprivileged\n groups has a chance of getting to the university.\n\n\n(Không ai trong số những người \nthiếu học thức \nnày có được cơ hội bước chân vào trường đại học)",
+    "day": 32
+  },
+  {
+    "id": "d32_w3",
+    "index": 3,
+    "term": "Detour",
+    "phonetic": "/ˈdiːtʊr/",
+    "pos": "(n)",
+    "meaning": "Đường vòng",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "We had to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Detour \n/ˈdiːtʊr/ (n): Đường vòng\nMake/Take a detour\n: Đi đường vòng\nEg: We had to \nmake a detour\n around the flooded fields.\n\n\n(Chúng tôi đã phải đi đường vòng qua những cánh đồng ngập lũ)",
+    "day": 32
+  },
+  {
+    "id": "d32_w4",
+    "index": 4,
+    "term": "Coincide",
+    "phonetic": "/ˌkəʊɪnˈsaɪd/, /kəʊˈɪnsɪdəns/",
+    "pos": "(v)",
+    "meaning": "Trùng hợp, trùng khớp, xảy ra cùng lúc với cái gì",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The strike was timed to",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Coincide\n /ˌkəʊɪnˈsaɪd/ (v)\n with S.TH: \nTrùng hợp, trùng khớp, xảy ra cùng lúc với cái gì\nCoincidence\n /kəʊˈɪnsɪdəns/ (n): Sự trùng hợp ngẫu nhiên\nEg: The strike was timed to \ncoincide with\n the conference.\n\n\n(Cuộc tấn công được sắp xếp thời gian \ntrùng khớp với\n thời điểm diễn ra hội nghị)",
+    "day": 32
+  },
+  {
+    "id": "d32_w5",
+    "index": 5,
+    "term": "Tailor",
+    "phonetic": "/ˈteɪlər/, /əˈdʒʌst/, /ˈkʌstəmaɪz/, /ˈpɜːrsənəlaɪz/",
+    "pos": "(v)",
+    "meaning": "Điều chỉnh, tùy biến, tùy chỉnh",
+    "synonyms": [
+      "Adjust",
+      "Customize",
+      "Personalize"
+    ],
+    "examples": [
+      {
+        "en": "We identify your needs, and",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Tailor\n /ˈteɪlər/ (v) \nto/for \n= \nAdjust\n /əˈdʒʌst/ ~ \nCustomize\n /ˈkʌstəmaɪz/ ~ \nPersonalize\n /ˈpɜːrsənəlaɪz/: Điều chỉnh, tùy biến, tùy chỉnh\n\nEg: We identify your needs, and \ntailor\n your training accordingly.\n\n\n(Chúng tôi xác định các nhu cầu của bạn, và \nđiều chỉnh\n việc đào tạo bạn 1 cách phù hợp)",
+    "day": 32
+  },
+  {
+    "id": "d32_w6",
+    "index": 6,
+    "term": "Incentive",
+    "phonetic": "/ɪnˈsentɪv/, /ˌməʊtɪˈveɪʃn/, /ɪnˈkɜːrɪdʒmənt/",
+    "pos": "(n )",
+    "meaning": "Sự khích lệ, sự khuyến khích, sự động viên, động lực",
+    "synonyms": [
+      "Motivation",
+      "Encouragement"
+    ],
+    "examples": [
+      {
+        "en": "There is no",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Incentive \n/ɪnˈsentɪv/ (n )\n for/to S.O/S.TH \n= \nMotivation\n /ˌməʊtɪˈveɪʃn/ = \nEncouragement\n /ɪnˈkɜːrɪdʒmənt/: Sự khích lệ, sự khuyến khích, sự động viên, động lực\n\nEg: There is no \nincentive for\n people to save fuel.\n\n\n(Không có \nđộng lực\n nào để cho mọi người tiết kiệm nhiên liệu cả)\n\n\n\n📍",
+    "day": 32
+  },
+  {
+    "id": "d33_w1",
+    "index": 1,
+    "term": "Fragile",
+    "phonetic": "/ˈfrædʒl/, /ˈdelɪkət/, /ˈdedɪkeɪt/",
+    "pos": "(adj)",
+    "meaning": "Mong manh, dễ vỡ",
+    "synonyms": [
+      "Delicate"
+    ],
+    "examples": [
+      {
+        "en": "Be careful not to drop it, it’s very",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Fragile \n/ˈfrædʒl/ (adj) = \nDelicate\n /ˈdelɪkət/: Mong manh, dễ vỡ\n# Dedicate\n /ˈdedɪkeɪt/ (v): Cống hiến, hiến dâng\nEg: Be careful not to drop it, it’s very \nfragile\n.\n\n\n(Cẩn thận đừng làm rớt, nó rất \ndễ vỡ\n)",
+    "day": 33
+  },
+  {
+    "id": "d33_w2",
+    "index": 2,
+    "term": "Vague",
+    "phonetic": "/veɪɡ/, /ˌʌnˈklɪr/, /klɪr/, /ˈɑːbviəs/, /əˈpærənt/",
+    "pos": "(adj)",
+    "meaning": "Mơ hồ, không rõ ràng",
+    "synonyms": [
+      "Unclear",
+      "Obvious",
+      "Apparent"
+    ],
+    "examples": [
+      {
+        "en": "They had only a",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Vague \n/veɪɡ/ (adj) = \nUnclear\n /ˌʌnˈklɪr/: Mơ hồ, không rõ ràng\n>< \nClear\n /klɪr/ (adj) = \nObvious\n /ˈɑːbviəs/ ~ \nApparent\n /əˈpærənt/: Rõ ràng, hiển nhiên\nVague idea/impression\n: Ý tưởng/Ấn tượng mơ hồ\nTo have a vague idea (of): \nNhớ mang máng, mập mờ, không nhớ rõ\nEg: They had only a \nvague idea\n where the place was.\n(Họ \nkhông nhớ rõ\n nơi đó ở đâu)",
+    "day": 33
+  },
+  {
+    "id": "d33_w3",
+    "index": 3,
+    "term": "Hastily",
+    "phonetic": "/ˈheɪstɪli/, /ˈhɜːrɪdli/",
+    "pos": "(adv)",
+    "meaning": "Vội vàng, hấp tấp.",
+    "synonyms": [
+      "Hurriedly",
+      "Very quickly"
+    ],
+    "examples": [
+      {
+        "en": "She",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3.\n \nHastily \n/ˈheɪstɪli/ (adv) = \nHurriedly\n /ˈhɜːrɪdli/ = \nVery quickly\n: Vội vàng, hấp tấp.\n\nEg: She \nhastily\n changed the subject.\n\n\n(Cô ấy \nvội vàng\n thay chủ đề)",
+    "day": 33
+  },
+  {
+    "id": "d33_w4",
+    "index": 4,
+    "term": "Relatively",
+    "phonetic": "/ˈrelətɪvli/",
+    "pos": "(adv)",
+    "meaning": "Tương đối",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Lack of exercise is also a risk factor for heart disease, but it's",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Relatively\n /ˈrelətɪvli/ (adv): Tương đối\n+ high/low/cheap/expensive/big/small: \nTương đối cao/thấp/rẻ/đắt/to/nhỏ\nEg: Lack of exercise is also a risk factor for heart disease, but it's \nrelatively small\n when compared with the others.\n\n\n(Thiếu tập luyện cũng là 1 yếu tố rủi ro dẫn đến bệnh tim, nhưng nó thì \ntương đối\n nhỏ khi so sánh với những yếu tố khác)",
+    "day": 33
+  },
+  {
+    "id": "d33_w5",
+    "index": 5,
+    "term": "Industrious",
+    "phonetic": "/ɪnˈdʌstriəs/, /ˈdɪlɪdʒənt/, /'neglidʤənt/, /in'dʌstriəl/",
+    "pos": "(adj)",
+    "meaning": "Siêng năng, chăm chỉ, cần cù.",
+    "synonyms": [
+      "Diligent",
+      "Hard-working"
+    ],
+    "examples": [
+      {
+        "en": "She was surrounded by energetic,",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Industrious\n /ɪnˈdʌstriəs/ (adj) = \nDiligent \n/ˈdɪlɪdʒənt/ = \nHard-working\n: Siêng năng, chăm chỉ, cần cù.\n>< \nNegligent \n/'neglidʤənt/\n \n(adj): Cẩu thả, hời hợt.\n# \nIndustrial\n /in'dʌstriəl/ (adj): Thuộc về công nghiệp.\nIndustrious people/students/workers: \nNhững người/học sinh/công nhân chăm chỉ\nEg: She was surrounded by energetic, \nindustrious\n people.\n\n\n(Cô ấy được vây quanh bởi những người \nchăm chỉ\n, năng nổ)",
+    "day": 33
+  },
+  {
+    "id": "d33_w6",
+    "index": 6,
+    "term": "Enduringly",
+    "phonetic": "/ɪnˈdʊrɪŋli/",
+    "pos": "(adv)",
+    "meaning": "Nhẫn nại, kiên trì.",
+    "synonyms": [
+      "Last for a long time"
+    ],
+    "examples": [
+      {
+        "en": "An",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Enduringly\n /ɪnˈdʊrɪŋli/ (adv):\n(1)\n: Nhẫn nại, kiên trì.\n(2) \n=\n \nLast for a long time\n: Kéo dài suốt 1 khoảng thời gian.\nEg: An \nenduringly\n popular style.\n\n\n(Một phong cách nổi tiếng \ntrong suốt 1 thời gian dài\n)",
+    "day": 33
+  },
+  {
+    "id": "d34_w1",
+    "index": 1,
+    "term": "Refrain",
+    "phonetic": "/dɪˈzɪst/",
+    "pos": "(v)",
+    "meaning": "Kiềm chế từ việc làm gì, cố không làm gì đó.",
+    "synonyms": [
+      "Desist"
+    ],
+    "examples": [
+      {
+        "en": "Please",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Refrain \n/ri'frein/ (v)\n oneself from S.TH/doing S.TH\n = \nDesist\n /dɪˈzɪst/: Kiềm chế từ việc làm gì, cố không làm gì đó.\n# Prevent\n /pri'vent/ (v) \nS.O from S.TH/doing S.TH\n: Ngăn chặn ai đó từ việc làm gì.\nE.g:\n Please \nrefrain\n yourself \nfrom\n smoking.\n\n\n(Làm ơn hãy \nngừng\n hút thuốc)",
+    "day": 34
+  },
+  {
+    "id": "d34_w2",
+    "index": 2,
+    "term": "Acclaim",
+    "phonetic": "/əˈkleɪm/",
+    "pos": "(v)",
+    "meaning": "Hoan nghênh, tung hô.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The work",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Acclaim\n /əˈkleɪm/ (v):\n \nHoan nghênh, tung hô.\nE.g: \nThe work \nwas acclaimed as\n a masterpiece.\n\n\n(Tác phẩm \nđược tung hô như là\n 1 kiệt tác)\nBe acclaimed (as S.TH): \nĐược hoan nghênh (như là 1 cái gì đó).\nA highly/widely acclaimed performance: \n1 buổi trình diễn được đánh giá cao/hoan nghênh rộng rãi.",
+    "day": 34
+  },
+  {
+    "id": "d34_w3",
+    "index": 3,
+    "term": "Accredited",
+    "phonetic": "/əˈkredɪtɪd/, /əkˈnɑːlɪdʒɪd/, /ˈrekəɡnaɪzɪd/, /ədˈmɪtɪd/",
+    "pos": "(adj)",
+    "meaning": "Được công nhận, thừa nhận.",
+    "synonyms": [
+      "Acknowledged",
+      "Recognized",
+      "Admitted"
+    ],
+    "examples": [
+      {
+        "en": "Only",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Accredited \n/əˈkredɪtɪd/ (adj) = \nAcknowledged\n /əkˈnɑːlɪdʒɪd/ = \nRecognized\n /ˈrekəɡnaɪzɪd/ = \nAdmitted\n /ədˈmɪtɪd/: Được công nhận, thừa nhận.\nE.g:\n Only \naccredited\n journalists were allowed entry.\n\n\n(Chỉ có những phóng viên \nđược công nhận\n mới được phép ra vào)\nAn accredited representative/journalist/university/course: \n1 người đại diện/phóng viên/trường đại học/khóa học được công nhận.",
+    "day": 34
+  },
+  {
+    "id": "d34_w4",
+    "index": 4,
+    "term": "Overwhelming",
+    "phonetic": "/ˌəʊvərˈwelmɪŋ/",
+    "pos": "(adj)",
+    "meaning": "Áp đảo, dày đặc, quá tải, trội hơn.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "The evidence against him was",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Overwhelming\n /ˌəʊvərˈwelmɪŋ/ (adj): Áp đảo, dày đặc, quá tải, trội hơn.\nE.g: \nThe evidence against him was \noverwhelming\n.\n\n\n(Bằng chứng chống lại ông ấy thì \náp đảo\n hơn)\n(1) + votes\n (n.s): Số phiếu bầu ÁP ĐẢO.\n\n(2) + schedule\n (n): Lịch trình DÀY ĐẶC.\n\n(3) + workload\n (n): Khối lượng cộng việc QUÁ TẢI.",
+    "day": 34
+  },
+  {
+    "id": "d34_w5",
+    "index": 5,
+    "term": "Afford",
+    "phonetic": "/ə'fɔ:d/",
+    "pos": "(v)",
+    "meaning": "Đủ khả năng (về tài chính) để làm gì.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Can we",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Afford\n /ə'fɔ:d/ (v) \n+ S.TH / to do S.TH \n=\n \nto have enough money to do S.TH\n: \nĐủ khả năng (về tài chính) để làm gì.\n\nEg: Can we \nafford to\n buy a new car?\n\n\n(Liệu chúng ta có \nđủ tiền để\n mua xe mới không?)",
+    "day": 34
+  },
+  {
+    "id": "d34_w6",
+    "index": 6,
+    "term": "Resemble",
+    "phonetic": "/rɪˈzembl/, /'similər/, /aɪˈdentɪkl/, /ə'sembl/",
+    "pos": "(v)",
+    "meaning": "Tương tự, giống với",
+    "synonyms": [
+      "Be similar",
+      "Be identical",
+      "Look like"
+    ],
+    "examples": [
+      {
+        "en": "She",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Resemble\n /rɪˈzembl/ (v) \nS.O/S.TH \n~ \nBe similar\n /'similər/ (adj) \nto = Be identical \n/aɪˈdentɪkl/\n \n= \nLook like: \nTương tự, giống với\n# \nAssemble\n /ə'sembl/ (v): Tập hợp\nE.g:\n She \nclosely resembles\n her mother.\n\n\n(Cô ấy \ntrông giống hệt\n mẹ)",
+    "day": 34
+  },
+  {
+    "id": "d35_w1",
+    "index": 1,
+    "term": "Consensus",
+    "phonetic": "/kən'sensəs/",
+    "pos": "(n )",
+    "meaning": "Sự đồng lòng, nhất trí về cái gì.",
+    "synonyms": [
+      "Total agreement"
+    ],
+    "examples": [
+      {
+        "en": "She is skilled at achieving",
+        "vi": ""
+      }
+    ],
+    "raw_text": "1. Consensus\n /kən'sensəs/ (n )\n about/ on S.TH \n=\n \nTotal agreement\n: Sự đồng lòng, nhất trí về cái gì.\nTo reach a consensus\n (n): đi đến sự nhất trí, đồng lòng.\nE.g: She is skilled at achieving \nconsensus on\n sensitive issues.\n\n\n(Cô ấy giỏi trong việc đạt được \nsự đồng tình trong \ncác vấn đề nhạy cảm)",
+    "day": 35
+  },
+  {
+    "id": "d35_w2",
+    "index": 2,
+    "term": "Pattern",
+    "phonetic": "/'pætən/, /'pætən/",
+    "pos": "(v)",
+    "meaning": "Bắt chước, làm theo khuôn mẫu.",
+    "synonyms": [],
+    "examples": [
+      {
+        "en": "Adult behaviours are often",
+        "vi": ""
+      },
+      {
+        "en": "Changing",
+        "vi": ""
+      }
+    ],
+    "raw_text": "2. Pattern \n/'pætən/ (v): Bắt chước, làm theo khuôn mẫu.\n\n=> Pattern\n /'pætən/ (n): Kiểu, mẫu, cách/ hoa văn.\nBehaviour/sleep/growth/stress/speech \n(n) \npatterns: \nCác kiểu hành vi/kiểu ngủ/cách tăng trưởng/cách nhấn mạnh/cách nói.\nE.g: Adult behaviours are often \npatterned\n by childhood experiences.\n\n\n(Những hành vi của người trưởng thành thường là \nlàm theo khuôn mẫu \ntừ những trải nghiệm thời thơ ấu)\n\n\nE.g: Changing \npatterns\n of urban life.\n\n\n(Thay đổi \nlối sống\n thành thị)",
+    "day": 35
+  },
+  {
+    "id": "d35_w3",
+    "index": 3,
+    "term": "Fellow",
+    "phonetic": "/ˈfeləʊ/, /ˈkɑːliːɡ/, /ˈkəʊ wɜːrkər/",
+    "pos": "(n)",
+    "meaning": "Những người đồng hành, đồng chí.",
+    "synonyms": [
+      "Colleague",
+      "Co-worker"
+    ],
+    "examples": [
+      {
+        "en": "She has a very good reputation among her",
+        "vi": ""
+      }
+    ],
+    "raw_text": "3. Fellow \n/ˈfeləʊ/ (n): Những người đồng hành, đồng chí.\n~ \nColleague\n /ˈkɑːliːɡ/ ~ \nCo-worker \n/ˈkəʊ wɜːrkər/: Đồng nghiệp, thành viên chung chỗ làm.\nFellow citizens/students \n(n.phrase): Những người đồng hương/đồng môn.\nE.g: She has a very good reputation among her \nfellows\n.\n\n\n(Cô ấy có danh tiếng rất tốt giữa \nnhững đồng nghiệp\n của cô ấy)",
+    "day": 35
+  },
+  {
+    "id": "d35_w4",
+    "index": 4,
+    "term": "Abruptly",
+    "phonetic": "/əˈbrʌptli/, /ˈsʌdnli/, /ˌʌnɪksˈpɛktɪdli/",
+    "pos": "(adv)",
+    "meaning": "1 cách bất ngờ, đột ngột.",
+    "synonyms": [
+      "Suddenly",
+      "Unexpectedly"
+    ],
+    "examples": [
+      {
+        "en": "The interview ended",
+        "vi": ""
+      }
+    ],
+    "raw_text": "4. Abruptly\n /əˈbrʌptli/ (adv)\n \n= \nSuddenly\n /ˈsʌdnli/ = \nUnexpectedly\n /ˌʌnɪksˈpɛktɪdli/: 1 cách bất ngờ, đột ngột.\n\nE.g: The interview ended \nabruptly\n.\n\n\n(Buổi phỏng vấn đã kết thúc \nbất ngờ\n)",
+    "day": 35
+  },
+  {
+    "id": "d35_w5",
+    "index": 5,
+    "term": "Designate",
+    "phonetic": "/ˈdezɪɡneɪt/, /əˈpɔɪnt/, /neɪm/, /ˈnɑːmɪneɪt/",
+    "pos": "(v)",
+    "meaning": "Chỉ định, bổ nhiệm ai.",
+    "synonyms": [
+      "Appoint",
+      "Name",
+      "Nominate"
+    ],
+    "examples": [
+      {
+        "en": "This area has been",
+        "vi": ""
+      }
+    ],
+    "raw_text": "5. Designate\n /ˈdezɪɡneɪt/ (v) \nS.O (as S.TH) \n= \nAppoint \n/əˈpɔɪnt/ = \nName \n/neɪm/ = \nNominate\n /ˈnɑːmɪneɪt/: Chỉ định, bổ nhiệm ai.\n\nE.g: This area has been \ndesignated as\n a National Park.\n\n\n(Khu vực này đã \nđược chỉ định làm \nCông Viên Quốc Gia)",
+    "day": 35
+  },
+  {
+    "id": "d35_w6",
+    "index": 6,
+    "term": "Accomplish",
+    "phonetic": "/əˈkɑːmplɪʃ/, /əˈtʃiːv/, /əb'tein/, /səkˈsiːd/, /kəmˈpliːt/, /ˈfɪnɪʃ/, /ə'kɔmpliʃmənt/",
+    "pos": "(v)",
+    "meaning": "Hoàn thành, hoàn tất, đạt được",
+    "synonyms": [
+      "Achieve",
+      "Obtain",
+      "Succeed",
+      "Fulfil",
+      "Complete",
+      "Finish"
+    ],
+    "examples": [
+      {
+        "en": "That's it! Mission",
+        "vi": ""
+      }
+    ],
+    "raw_text": "6. Accomplish \n/əˈkɑːmplɪʃ/ (v) = \nAchieve\n /əˈtʃiːv/ = \nObtain\n /əb'tein/ = \nSucceed\n /səkˈsiːd/ = \nFulfil\n /ful'fil/ = \nComplete\n /kəmˈpliːt/ ~ \nFinish\n /ˈfɪnɪʃ/: Hoàn thành, hoàn tất, đạt được\nAccomplishment\n /ə'kɔmpliʃmənt/ (n): Sự hoàn thành, sự đạt được.\nE.g: That's it! Mission \naccomplished\n.\n\n\n(Được rồi! Nhiệm vụ \nhoàn thành)",
+    "day": 35
+  },
+  {
+    "id": "d35_w7",
+    "index": 7,
+    "term": "Suspend",
+    "phonetic": "/səˈspend/, /səˈspendɪd/, /səsˈpɛndɪd/, /ˈpendɪŋ/",
+    "pos": "(v)",
+    "meaning": "Treo lơ lửng.",
+    "synonyms": [
+      "Pending"
+    ],
+    "examples": [
+      {
+        "en": "A lamp",
+        "vi": ""
+      },
+      {
+        "en": "Nine cases are still",
+        "vi": ""
+      }
+    ],
+    "raw_text": "7. Suspend \n/səˈspend/ (v) \nS.TH:\n\n\n(1)\n: Treo lơ lửng.\n\n(2)\n: Đình chỉ (nhà máy, xí nghiệp, công ty), tạm hoãn (trận đấu, chuyến bay)\nBe suspended\n /səˈspendɪd/ (adj) \nfrom/by/on S.TH: \nĐược treo lơ lửng từ/bằng/trên cái gì.\nSuspended \n/səsˈpɛndɪd/ ~ \nPending\n /ˈpendɪŋ/ (adj): Chưa quyết định, còn để treo chưa giải quyết (phiên luật xét xử).\nE.g: A lamp \nwas suspended from\n the ceiling.\n\n\n(Cái đèn ngủ đã \nđược treo lơ lửng từ\n trần nhà)\n\n\nE.g: Nine cases are still \npending\n/\nsuspending\n.\n\n\n(9 vụ án vẫn \nchưa được giải quyết\n)",
+    "day": 35
+  }
+]

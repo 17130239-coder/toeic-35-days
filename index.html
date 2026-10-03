@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>35 Days Vocab Master — Luyện Từ Vựng TOEIC 35 Ngày</title>
+  
+  <!-- Tailwind CSS & FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          },
+          colors: {
+            zinc: {
+              850: '#1e1e24',
+              900: '#18181b',
+              950: '#09090b',
+            },
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* 3D Flashcard transitions */
+    .perspective-1000 { perspective: 1000px; }
+    .transform-style-3d { transform-style: preserve-3d; }
+    .backface-hidden { backface-visibility: hidden; }
+    .rotate-y-180 { transform: rotateY(180deg); }
+    
+    /* Subtle scrollbar adhering to evondevKit Rule 13 */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    .dark ::-webkit-scrollbar-thumb { background: #3f3f46; }
+
+    /* Interactive blank drop slot */
+    .interactive-blank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 80px;
+      height: 30px;
+      padding: 0 10px;
+      margin: 2px 4px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+      cursor: pointer;
+      user-select: none;
+    }
+    .blank-empty {
+      background: #f1f5f9;
+      border: 1px dashed #94a3b8;
+      color: #64748b;
+    }
+    .dark .blank-empty {
+      background: #27272a;
+      border: 1px dashed #52525b;
+      color: #a1a1aa;
+    }
+    .blank-filled {
+      background: #4f46e5;
+      border: 1px solid #4338ca;
+      color: #ffffff;
+    }
+    .blank-correct {
+      background: #059669 !important;
+      border: 1px solid #047857 !important;
+      color: #ffffff !important;
+    }
+    .blank-incorrect {
+      background: #e11d48 !important;
+      border: 1px solid #be123c !important;
+      color: #ffffff !important;
+    }
+
+    /* Word bank chips */
+    .word-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.15s, border-color 0.15s;
+    }
+    .word-chip:hover {
+      border-color: #94a3b8;
+    }
+    .dark .word-chip:hover {
+      border-color: #71717a;
+    }
+    .word-chip-used {
+      opacity: 0.35;
+      pointer-events: none;
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-zinc-950 dark:text-zinc-100 min-h-screen font-sans antialiased transition-colors duration-150">
+
+  <!-- TOP NAVBAR (Hairline Flat, Evondev Rule M13 & Locked Rule 18) -->
+  <header class="sticky top-0 z-40 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm border-b border-slate-200 dark:border-zinc-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-2.5 cursor-pointer" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        <div class="w-8 h-8 rounded-lg bg-slate-900 dark:bg-zinc-100 text-white dark:text-zinc-900 flex items-center justify-center font-bold text-sm">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="font-bold text-sm sm:text-base tracking-tight text-slate-900 dark:text-zinc-100">
+            35 Days Vocab
+          </span>
+          <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 font-medium border border-slate-200 dark:border-zinc-700">
+            TOEIC CORE
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Nav & Actions -->
+      <div class="flex items-center gap-2 sm:gap-2.5">
+        <!-- Dictionary Modal Trigger -->
+        <button onclick="openDictionaryModal()" class="h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-600 dark:text-zinc-300 text-xs font-medium transition flex items-center gap-2">
+          <i class="fa-solid fa-magnifying-glass text-slate-400"></i>
+          <span class="hidden sm:inline">Tra cứu từ điển</span>
+          <kbd class="hidden md:inline-block px-1.5 py-0.2 text-[10px] font-mono bg-white dark:bg-zinc-900 border border-slate-300 dark:border-zinc-700 rounded text-slate-500">Ctrl+K</kbd>
+        </button>
+
+        <!-- Flashcards Quick Deck -->
+        <button onclick="openGlobalFlashcards()" class="h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 text-xs font-medium transition flex items-center gap-1.5">
+          <i class="fa-solid fa-layer-group text-slate-500 dark:text-zinc-400"></i>
+          <span class="hidden sm:inline">Flashcards</span>
+        </button>
+
+        <!-- WAYGROUND ARENA LINK -->
+        <a href="wayground.html" target="_blank" class="h-8 px-3.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-2 transition shadow-sm">
+          <i class="fa-solid fa-gamepad text-indigo-200"></i>
+          <span>Đấu Trường Wayground</span>
+        </a>
+
+        <!-- Dark Mode Toggle -->
+        <button onclick="toggleDarkMode()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-50 dark:hover:bg-zinc-700 transition flex items-center justify-center text-xs" title="Đổi giao diện Sáng/Tối">
+          <i id="themeIcon" class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
+    
+    <!-- HERO DASHBOARD CARD (Evondev Style: Clean Surface, Hairline Border, Zero Layout Shift, Tabular Numbers) -->
+    <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl p-5 sm:p-6 shadow-sm">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+        
+        <!-- Left: Curriculum Info & Progress -->
+        <div class="space-y-3 max-w-2xl">
+          <div class="flex items-center gap-2">
+            <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 tracking-wide uppercase">Lộ trình học tập</span>
+            <span class="text-slate-300 dark:text-zinc-700">•</span>
+            <span class="text-xs text-slate-500 dark:text-zinc-400 font-medium">35 Ngày Cốt Lõi TOEIC</span>
+          </div>
+
+          <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-zinc-100">
+            Học Từ Vựng & Luyện Đấu Trắc Nghiệm Wayground
+          </h1>
+          
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
+            Chương trình hoàn chỉnh 36 ngày (Day 0 – 35) với 194 từ vựng trọng tâm, Audio phát âm giọng bản xứ, Flashcard 3D, bài tập điền câu tương tác và 26 trận game Quizizz Wayground.
+          </p>
+
+          <!-- Overall Progress Bar -->
+          <div class="pt-1 space-y-1.5">
+            <div class="flex justify-between items-center text-xs font-medium text-slate-600 dark:text-zinc-400">
+              <span>Tiến độ toàn khóa</span>
+              <span id="overallProgressText" class="font-semibold text-slate-900 dark:text-zinc-100 tabular-nums">0% (0/36 Ngày)</span>
+            </div>
+            <div class="w-full bg-slate-100 dark:bg-zinc-800 rounded-full h-2 overflow-hidden">
+              <div id="overallProgressBar" class="bg-indigo-600 dark:bg-indigo-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Sleek Metric Boxes (Evondev Style: Tabular Nums, Hairline Box) -->
+        <div class="grid grid-cols-3 gap-3 shrink-0">
+          <div class="bg-slate-50 dark:bg-zinc-850/80 border border-slate-200/80 dark:border-zinc-800 rounded-lg p-3 sm:p-4 text-center min-w-[90px] sm:min-w-[105px]">
+            <div class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-zinc-100 tabular-nums" id="statTotalDays">36</div>
+            <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">Ngày học</div>
+          </div>
+          <div class="bg-slate-50 dark:bg-zinc-850/80 border border-slate-200/80 dark:border-zinc-800 rounded-lg p-3 sm:p-4 text-center min-w-[90px] sm:min-w-[105px]">
+            <div class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-zinc-100 tabular-nums" id="statTotalWords">194</div>
+            <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">Từ vựng</div>
+          </div>
+          <div class="bg-slate-50 dark:bg-zinc-850/80 border border-slate-200/80 dark:border-zinc-800 rounded-lg p-3 sm:p-4 text-center min-w-[90px] sm:min-w-[105px]">
+            <div class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-zinc-100 tabular-nums" id="statTotalGames">26</div>
+            <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">Trận game</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- FILTER & ROADMAP CONTROLS (Segmented Control Pattern) -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <!-- Week Tabs -->
+      <div class="inline-flex p-1 rounded-lg bg-slate-200/70 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium overflow-x-auto">
+        <button onclick="filterDays('all', this)" class="week-tab active px-3 py-1.5 rounded-md bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-semibold shadow-xs transition whitespace-nowrap">
+          Tất cả (36 Days)
+        </button>
+        <button onclick="filterDays('w1', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+          Tuần 1 (Day 0-7)
+        </button>
+        <button onclick="filterDays('w2', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+          Tuần 2 (Day 8-14)
+        </button>
+        <button onclick="filterDays('w3', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+          Tuần 3 (Day 15-21)
+        </button>
+        <button onclick="filterDays('w4', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+          Tuần 4 (Day 22-28)
+        </button>
+        <button onclick="filterDays('w5', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+          Tuần 5 (Day 29-35)
+        </button>
+      </div>
+
+      <!-- Search in cards input -->
+      <div class="relative w-full md:w-64">
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
+        <input type="text" id="daySearchInput" oninput="handleSearchDays(this.value)" placeholder="Lọc Day hoặc từ vựng..." class="w-full pl-8 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-slate-800 dark:text-zinc-100 placeholder:text-slate-400 dark:placeholder:text-zinc-500 shadow-xs" />
+      </div>
+    </div>
+
+    <!-- 35 DAYS GRID (Clean Cards, Hairline Borders, Evondev Rule M7 Status Pills) -->
+    <div id="daysGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+      <!-- Injected by JavaScript -->
+    </div>
+
+  </main>
+
+  <!-- DAY DETAIL MODAL (Evondev Overlay Pattern: Rule 10, Rule 11) -->
+  <div id="dayModal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-6 hidden">
+    <div class="bg-white dark:bg-zinc-900 w-full max-w-4xl max-h-[90vh] rounded-xl shadow-xl border border-slate-200 dark:border-zinc-800 flex flex-col overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="px-5 py-4 border-b border-slate-200 dark:border-zinc-800 flex items-center justify-between gap-4 bg-slate-50/50 dark:bg-zinc-900">
+        <div class="flex items-center gap-3">
+          <div id="modalDayBadge" class="w-10 h-10 rounded-lg bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-bold text-sm flex items-center justify-center border border-slate-200 dark:border-zinc-700">
+            D1
+          </div>
+          <div>
+            <h2 id="modalDayTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">
+              DAY 1
+            </h2>
+            <div id="modalDayDue" class="text-xs text-slate-500 dark:text-zinc-400 font-medium flex items-center gap-1.5 mt-0.5">
+              <i class="fa-regular fa-clock text-slate-400"></i> Due Jun 27
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <!-- Wayground direct play button from modal -->
+          <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
+            <i class="fa-solid fa-gamepad text-indigo-200"></i>
+            <span class="hidden sm:inline">Vào Wayground</span>
+          </a>
+
+          <!-- Close button -->
+          <button onclick="closeDayModal()" class="w-8 h-8 rounded-lg flex items-center justify-center border border-slate-200 dark:border-zinc-700 text-slate-500 hover:bg-slate-100 dark:hover:bg-zinc-800 transition" title="Đóng (Esc)">
+            <i class="fa-solid fa-xmark text-sm"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal Tabs (Hairline Tab bar, Evondev Rule M13) -->
+      <div class="px-5 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 flex items-center gap-1 overflow-x-auto text-xs font-medium">
+        <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-2.5 px-3 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-book-open"></i> Từ vựng chi tiết
+        </button>
+        <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-layer-group text-slate-400"></i> Flashcards 3D
+        </button>
+        <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-pen-to-square text-slate-400"></i> Bài tập điền câu
+        </button>
+        <button onclick="switchModalTab('raw')" id="tabBtn-raw" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-file-lines text-slate-400"></i> Bài đăng gốc
+        </button>
+        <button onclick="switchModalTab('files')" id="tabBtn-files" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
+          <i class="fa-solid fa-paperclip text-slate-400"></i> Tệp đính kèm
+        </button>
+      </div>
+
+      <!-- Modal Body Content -->
+      <div class="p-5 sm:p-6 overflow-y-auto flex-1 space-y-5">
+
+        <!-- Dặn dò Box (Evondev Rule M5: Neutral alert card with subtle warning pill) -->
+        <div id="modalDanDoBox" class="p-3.5 rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-900/40 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1">
+          <div class="font-semibold flex items-center gap-1.5 text-amber-800 dark:text-amber-300">
+            <i class="fa-solid fa-circle-exclamation text-amber-500"></i> Dặn dò giáo viên & Lịch trả bài:
+          </div>
+          <div id="modalDanDoText" class="text-xs sm:text-sm whitespace-pre-line leading-relaxed text-amber-900/90 dark:text-amber-200/90"></div>
+        </div>
+
+        <!-- TAB 1: VOCABULARY LIST -->
+        <div id="tabContent-vocab" class="space-y-3">
+          <div id="modalVocabList" class="space-y-3"></div>
+        </div>
+
+        <!-- TAB 2: FLASHCARD 3D (Clean, High Contrast, Evondev Rule P6) -->
+        <div id="tabContent-flashcard" class="hidden flex flex-col items-center justify-center space-y-5 py-2">
+          <div class="flex items-center justify-between w-full max-w-md text-xs font-medium text-slate-500 dark:text-zinc-400">
+            <span id="fcCounter" class="tabular-nums">Thẻ 1 / 5</span>
+            <label class="flex items-center gap-1.5 cursor-pointer">
+              <input type="checkbox" id="fcAutoAudioToggle" checked class="rounded text-indigo-600 focus:ring-0 border-slate-300 dark:border-zinc-700">
+              <span>Tự động phát âm</span>
+            </label>
+          </div>
+
+          <!-- Flashcard container -->
+          <div id="fcCard" onclick="flipFlashcard()" class="w-full max-w-md h-72 cursor-pointer perspective-1000 select-none">
+            <div id="fcInner" class="relative w-full h-full duration-300 transform-style-3d">
+              
+              <!-- Front Side: Clean White / Dark Zinc -->
+              <div class="absolute inset-0 w-full h-full bg-white dark:bg-zinc-850 border border-slate-200 dark:border-zinc-700 rounded-xl p-6 flex flex-col items-center justify-between backface-hidden shadow-sm text-center">
+                <div class="w-full flex justify-between items-center text-xs">
+                  <span id="fcFrontPos" class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-600 dark:text-zinc-300 font-medium">n.phrase</span>
+                  <button onclick="event.stopPropagation(); playCurrentFcAudio();" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700 bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition">
+                    <i class="fa-solid fa-volume-high text-xs"></i>
+                  </button>
+                </div>
+
+                <div class="space-y-1.5 my-auto">
+                  <h3 id="fcFrontTerm" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-zinc-100">Warranty policy</h3>
+                  <p id="fcFrontPhonetic" class="text-xs font-mono text-indigo-600 dark:text-indigo-400">/ˈwɔːrənti ˈpɑːləsi/</p>
+                </div>
+
+                <div class="text-[11px] text-slate-400 dark:text-zinc-500 flex items-center gap-1.5">
+                  <i class="fa-solid fa-arrow-rotate-right text-[10px]"></i> Bấm để xem nghĩa tiếng Việt & ví dụ
+                </div>
+              </div>
+
+              <!-- Back Side: Deep Slate / Contrast -->
+              <div class="absolute inset-0 w-full h-full bg-slate-900 text-white rounded-xl p-6 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-800 shadow-sm overflow-hidden">
+                <div class="flex justify-between items-center text-xs text-slate-400">
+                  <span id="fcBackTerm" class="font-semibold text-white">Warranty policy</span>
+                  <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                </div>
+
+                <div class="text-center space-y-2 my-auto overflow-y-auto max-h-44 py-1">
+                  <div id="fcBackMeaning" class="text-lg sm:text-xl font-bold text-amber-300">Chính sách bảo hành.</div>
+                  <div id="fcBackSynonyms" class="text-xs text-slate-300 italic"></div>
+                  <div id="fcBackExample" class="text-xs bg-white/10 rounded-lg p-2.5 mt-2 text-left leading-relaxed text-slate-200"></div>
+                </div>
+
+                <div class="text-center text-[11px] text-slate-400">
+                  <i class="fa-solid fa-arrow-rotate-right text-[10px]"></i> Bấm để lật lại từ tiếng Anh
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <div class="flex items-center gap-2">
+            <button onclick="prevFlashcard()" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition" title="Từ trước">
+              <i class="fa-solid fa-arrow-left text-xs"></i>
+            </button>
+            <button onclick="flipFlashcard()" class="h-10 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs shadow-xs flex items-center gap-1.5 transition">
+              <i class="fa-solid fa-rotate text-xs"></i> Lật Thẻ (Space)
+            </button>
+            <button onclick="nextFlashcard()" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition" title="Từ tiếp theo">
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB 3: INTERACTIVE EXERCISE A -->
+        <div id="tabContent-exercise" class="hidden space-y-5">
+          <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-850 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <strong class="text-slate-900 dark:text-zinc-200">Hướng dẫn:</strong> Bấm vào các từ trong <em>Ngân hàng từ</em> bên dưới để điền vào chỗ trống <span class="px-1.5 py-0.5 rounded bg-slate-200 dark:bg-zinc-700 text-slate-800 dark:text-zinc-200 font-mono text-[11px] font-semibold">[1]</span>. Bấm vào từ đã điền để gỡ ra.
+            </div>
+            <button onclick="checkAllExercises()" class="h-8 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs shrink-0 transition shadow-xs flex items-center gap-1.5">
+              <i class="fa-solid fa-check"></i> Chấm điểm toàn bộ
+            </button>
+          </div>
+
+          <div id="modalExerciseList" class="space-y-4"></div>
+        </div>
+
+        <!-- TAB 4: ORIGINAL CLASSROOM RAW HTML -->
+        <div id="tabContent-raw" class="hidden">
+          <div class="prose dark:prose-invert max-w-none text-xs sm:text-sm bg-slate-50 dark:bg-zinc-850 p-5 rounded-lg border border-slate-200 dark:border-zinc-800 leading-relaxed font-sans overflow-x-auto" id="modalRawContent">
+          </div>
+        </div>
+
+        <!-- TAB 5: DRIVE FILES & FORMS -->
+        <div id="tabContent-files" class="hidden space-y-4">
+          <div class="font-semibold text-xs text-slate-700 dark:text-zinc-300">Tệp âm thanh & hình ảnh trên Google Drive:</div>
+          <div id="modalFilesList" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5"></div>
+          <div id="modalFormLinkBox" class="pt-2"></div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-3.5 px-5 border-t border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900 flex items-center justify-between">
+        <button id="modalPrevDayBtn" onclick="navigateDayModal(-1)" class="h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 text-xs font-medium transition flex items-center gap-1.5">
+          <i class="fa-solid fa-arrow-left text-xs"></i> Day trước
+        </button>
+
+        <button id="modalStatusBtn" onclick="toggleCurrentDayStatus()" class="h-8 px-3.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-check"></i> Đánh dấu đã học
+        </button>
+
+        <button id="modalNextDayBtn" onclick="navigateDayModal(1)" class="h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 text-xs font-medium transition flex items-center gap-1.5">
+          Day sau <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GLOBAL DICTIONARY MODAL (Command Palette Style: Ctrl+K) -->
+  <div id="dictModal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-6 hidden">
+    <div class="bg-white dark:bg-zinc-900 w-full max-w-2xl max-h-[80vh] rounded-xl shadow-xl border border-slate-200 dark:border-zinc-800 flex flex-col overflow-hidden">
+      <div class="p-3.5 border-b border-slate-200 dark:border-zinc-800 flex items-center gap-2.5">
+        <i class="fa-solid fa-magnifying-glass text-slate-400 text-sm ml-1"></i>
+        <input type="text" id="dictSearchInput" oninput="searchDictionary(this.value)" placeholder="Tra cứu từ tiếng Anh, phát âm, nghĩa tiếng Việt..." class="w-full bg-transparent text-sm sm:text-base focus:outline-none dark:text-white font-medium placeholder:text-slate-400 dark:placeholder:text-zinc-500" autofocus />
+        <button onclick="closeDictionaryModal()" class="w-7 h-7 rounded-md flex items-center justify-center text-slate-400 hover:bg-slate-100 dark:hover:bg-zinc-800 text-xs">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      <div id="dictResultsList" class="p-3 overflow-y-auto flex-1 space-y-2"></div>
+      <div class="p-3 border-t border-slate-100 dark:border-zinc-800 text-[11px] text-slate-400 dark:text-zinc-500 flex justify-between">
+        <span>Tổng cộng: <strong id="dictTotalCount" class="tabular-nums font-semibold text-slate-700 dark:text-zinc-300">194</strong> từ vựng</span>
+        <span>Bấm loa để nghe phát âm • Esc để đóng</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOAD DATA FILES -->
+  <script src="vocab_data.js"></script>
+  <script src="wayground_data.js"></script>
+
+  <!-- APPLICATION SCRIPT -->
+  <script>
+    // State management
+    let daysData = window.DAYS_DATA ? window.DAYS_DATA.days : [];
+    let allVocab = window.ALL_VOCABULARY || [];
+    let currentDayIndex = 0;
+    let currentFcIndex = 0;
+    let isFlipped = false;
+    let userProgress = JSON.parse(localStorage.getItem('35days_progress') || '{}');
+    let interactiveExerciseState = {};
+
+    // Speech Synthesis
+    function speakText(text) {
+      if (!('speechSynthesis' in window)) return;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.95;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Dark Mode Toggle
+    function toggleDarkMode() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      localStorage.setItem('35days_theme', isDark ? 'dark' : 'light');
+      updateThemeIcon();
+    }
+
+    function updateThemeIcon() {
+      const isDark = document.documentElement.classList.contains('dark');
+      const icon = document.getElementById('themeIcon');
+      if (icon) icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
+    }
+
+    if (localStorage.getItem('35days_theme') === 'dark' || (!('35days_theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+    updateThemeIcon();
+
+    // Render Days Grid (Evondev Style: Flat hairline cards, calm contrast, Rule M7 status pills)
+    function renderDaysGrid(list = daysData) {
+      const grid = document.getElementById('daysGrid');
+      grid.innerHTML = '';
+
+      list.forEach(d => {
+        const status = userProgress[d.day] || 'unstarted';
+        const isMastered = status === 'mastered';
+        const isInProgress = status === 'learning';
+        const vocabCount = (d.vocabulary || []).length;
+        const wgCodes = d.wayground && d.wayground.game_codes ? d.wayground.game_codes : [];
+        const primaryCode = wgCodes.length > 0 ? wgCodes[0] : null;
+
+        const card = document.createElement('div');
+        card.className = 'bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl p-4 sm:p-5 shadow-xs hover:border-slate-300 dark:hover:border-zinc-700 transition flex flex-col justify-between';
+        
+        card.innerHTML = `
+          <div>
+            <!-- Header: Day Badge & Status Pill -->
+            <div class="flex items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-bold text-xs flex items-center justify-center shrink-0 border border-slate-200/60 dark:border-zinc-700">
+                  D${d.day}
+                </div>
+                <div>
+                  <h3 class="font-bold text-xs sm:text-sm text-slate-900 dark:text-zinc-100 leading-tight">
+                    ${d.title}
+                  </h3>
+                  <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">
+                    ${d.due_date || 'Lộ trình từ vựng'}
+                  </div>
+                </div>
+              </div>
+
+              <!-- Status Pill (Evondev Rule M7) -->
+              <button onclick="toggleDayStatusFromGrid(event, ${d.day})" class="text-[11px] px-2.5 py-1 rounded-full font-medium transition inline-flex items-center gap-1.5 shrink-0 ${
+                isMastered 
+                  ? 'bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60' 
+                  : isInProgress 
+                  ? 'bg-amber-50 dark:bg-amber-950/60 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-800/60' 
+                  : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-zinc-700'
+              }">
+                <span class="w-1.5 h-1.5 rounded-full ${isMastered ? 'bg-emerald-600 dark:bg-emerald-400' : isInProgress ? 'bg-amber-600 dark:bg-amber-400' : 'bg-slate-400'}"></span>
+                <span>${isMastered ? 'Đã thuộc' : isInProgress ? 'Đang học' : 'Chưa học'}</span>
+              </button>
+            </div>
+
+            <!-- Preview Words (Max 3) -->
+            <div class="space-y-1.5 my-3">
+              ${(d.vocabulary || []).slice(0, 3).map(v => `
+                <div class="text-xs flex items-center justify-between text-slate-600 dark:text-zinc-300 bg-slate-50 dark:bg-zinc-850/80 px-2.5 py-1.5 rounded-lg border border-slate-100 dark:border-zinc-800/80">
+                  <span class="font-semibold text-slate-900 dark:text-zinc-100 truncate max-w-[130px]">${v.term}</span>
+                  <span class="text-slate-500 dark:text-zinc-400 truncate max-w-[110px] text-right text-[11px]">${v.meaning || ''}</span>
+                </div>
+              `).join('')}
+              ${vocabCount > 3 ? `<div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium text-center pt-0.5">+ ${vocabCount - 3} từ vựng khác</div>` : ''}
+            </div>
+          </div>
+
+          <!-- Bottom Actions -->
+          <div class="pt-3 border-t border-slate-100 dark:border-zinc-800 flex items-center gap-2">
+            <button onclick="openDayModal(${d.day})" class="flex-1 h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 font-medium text-xs flex items-center justify-center gap-1.5 transition">
+              <i class="fa-solid fa-book-open text-xs"></i> Học chi tiết
+            </button>
+            
+            ${primaryCode ? `
+              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="h-8 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Vào Game Wayground PIN: ${primaryCode}">
+                <i class="fa-solid fa-gamepad text-indigo-200"></i>
+                <span>Game</span>
+              </a>
+            ` : ''}
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      updateOverallProgress();
+    }
+
+    // Toggle status
+    function toggleDayStatusFromGrid(e, dayNum) {
+      e.stopPropagation();
+      const current = userProgress[dayNum];
+      if (!current) userProgress[dayNum] = 'learning';
+      else if (current === 'learning') userProgress[dayNum] = 'mastered';
+      else delete userProgress[dayNum];
+
+      localStorage.setItem('35days_progress', JSON.stringify(userProgress));
+      renderDaysGrid();
+    }
+
+    function toggleCurrentDayStatus() {
+      const currentDay = daysData[currentDayIndex];
+      if (!currentDay) return;
+      const dayNum = currentDay.day;
+      const current = userProgress[dayNum];
+      if (!current) userProgress[dayNum] = 'learning';
+      else if (current === 'learning') userProgress[dayNum] = 'mastered';
+      else delete userProgress[dayNum];
+
+      localStorage.setItem('35days_progress', JSON.stringify(userProgress));
+      updateModalStatusBtn();
+      renderDaysGrid();
+    }
+
+    function updateModalStatusBtn() {
+      const currentDay = daysData[currentDayIndex];
+      const btn = document.getElementById('modalStatusBtn');
+      const status = userProgress[currentDay.day];
+      if (status === 'mastered') {
+        btn.className = 'h-8 px-3.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 bg-emerald-600 text-white shadow-xs';
+        btn.innerHTML = '<i class="fa-solid fa-circle-check"></i> Đã thuộc (Bấm để đổi)';
+      } else if (status === 'learning') {
+        btn.className = 'h-8 px-3.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 bg-amber-500 text-white shadow-xs';
+        btn.innerHTML = '<i class="fa-solid fa-hourglass-half"></i> Đang học (Bấm để đổi)';
+      } else {
+        btn.className = 'h-8 px-3.5 rounded-lg text-xs font-semibold transition flex items-center gap-1.5 border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200';
+        btn.innerHTML = '<i class="fa-regular fa-circle"></i> Đánh dấu hoàn thành';
+      }
+    }
+
+    function updateOverallProgress() {
+      const masteredCount = Object.values(userProgress).filter(s => s === 'mastered').length;
+      const pct = Math.round((masteredCount / daysData.length) * 100);
+      document.getElementById('overallProgressBar').style.width = pct + '%';
+      document.getElementById('overallProgressText').innerText = `${pct}% (${masteredCount}/${daysData.length} Ngày)`;
+    }
+
+    // Filter Days by Week
+    function filterDays(weekKey, clickedBtn) {
+      document.querySelectorAll('.week-tab').forEach(b => {
+        b.className = 'week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap';
+      });
+      if (clickedBtn) {
+        clickedBtn.className = 'week-tab active px-3 py-1.5 rounded-md bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-semibold shadow-xs transition whitespace-nowrap';
+      }
+
+      let filtered = daysData;
+      if (weekKey === 'w1') filtered = daysData.filter(d => d.day >= 0 && d.day <= 7);
+      else if (weekKey === 'w2') filtered = daysData.filter(d => d.day >= 8 && d.day <= 14);
+      else if (weekKey === 'w3') filtered = daysData.filter(d => d.day >= 15 && d.day <= 21);
+      else if (weekKey === 'w4') filtered = daysData.filter(d => d.day >= 22 && d.day <= 28);
+      else if (weekKey === 'w5') filtered = daysData.filter(d => d.day >= 29 && d.day <= 35);
+      renderDaysGrid(filtered);
+    }
+
+    function handleSearchDays(query) {
+      const q = query.toLowerCase().trim();
+      if (!q) {
+        renderDaysGrid();
+        return;
+      }
+      const filtered = daysData.filter(d => {
+        if (d.title.toLowerCase().includes(q)) return true;
+        if (d.vocabulary && d.vocabulary.some(v => v.term.toLowerCase().includes(q) || (v.meaning && v.meaning.toLowerCase().includes(q)))) return true;
+        return false;
+      });
+      renderDaysGrid(filtered);
+    }
+
+    // Day Modal Open
+    function openDayModal(dayNum) {
+      currentDayIndex = daysData.findIndex(d => d.day === dayNum);
+      if (currentDayIndex === -1) currentDayIndex = 0;
+      loadDayModalContent();
+      document.getElementById('dayModal').classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeDayModal() {
+      document.getElementById('dayModal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function navigateDayModal(dir) {
+      const nextIndex = currentDayIndex + dir;
+      if (nextIndex >= 0 && nextIndex < daysData.length) {
+        currentDayIndex = nextIndex;
+        loadDayModalContent();
+      }
+    }
+
+    function loadDayModalContent() {
+      const d = daysData[currentDayIndex];
+      if (!d) return;
+
+      document.getElementById('modalDayBadge').innerText = 'D' + d.day;
+      document.getElementById('modalDayTitle').innerText = d.title;
+      document.getElementById('modalDayDue').innerHTML = `<i class="fa-regular fa-clock text-slate-400"></i> ${d.due_date || 'Tiến độ ôn tập'}`;
+
+      // Wayground btn
+      const wgBtn = document.getElementById('modalWaygroundBtn');
+      const wgCodes = d.wayground && d.wayground.game_codes ? d.wayground.game_codes : [];
+      if (wgCodes.length > 0) {
+        wgBtn.href = `wayground.html?gc=${wgCodes[0]}`;
+        wgBtn.style.display = 'flex';
+      } else {
+        wgBtn.style.display = 'none';
+      }
+
+      // Prev / Next button states
+      document.getElementById('modalPrevDayBtn').disabled = currentDayIndex === 0;
+      document.getElementById('modalNextDayBtn').disabled = currentDayIndex === daysData.length - 1;
+      document.getElementById('modalPrevDayBtn').style.opacity = currentDayIndex === 0 ? '0.4' : '1';
+      document.getElementById('modalNextDayBtn').style.opacity = currentDayIndex === daysData.length - 1 ? '0.4' : '1';
+
+      updateModalStatusBtn();
+
+      // Dặn dò box
+      const danDoBox = document.getElementById('modalDanDoBox');
+      if (d.dan_do && d.dan_do.trim()) {
+        danDoBox.style.display = 'block';
+        document.getElementById('modalDanDoText').innerText = d.dan_do;
+      } else {
+        danDoBox.style.display = 'none';
+      }
+
+      // Populate Vocabulary List
+      const vList = document.getElementById('modalVocabList');
+      vList.innerHTML = '';
+      (d.vocabulary || []).forEach((v, idx) => {
+        const item = document.createElement('div');
+        item.className = 'p-4 rounded-xl bg-white dark:bg-zinc-850 border border-slate-200 dark:border-zinc-800 shadow-xs space-y-2.5';
+        item.innerHTML = `
+          <div class="flex items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-mono font-semibold">#${idx+1}</span>
+                <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">${v.term}</h4>
+                ${v.phonetic ? `<span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-medium">${v.phonetic}</span>` : ''}
+                ${v.pos ? `<span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-600 dark:text-zinc-300 font-medium">${v.pos}</span>` : ''}
+              </div>
+              <div class="text-xs sm:text-sm font-semibold text-amber-700 dark:text-amber-400">
+                ${v.meaning || ''}
+              </div>
+            </div>
+            <button onclick="speakText('${v.term.replace(/'/g, "\\'")}')" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700 bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition shrink-0" title="Nghe phát âm">
+              <i class="fa-solid fa-volume-high text-xs"></i>
+            </button>
+          </div>
+
+          ${v.synonyms && v.synonyms.length > 0 ? `
+            <div class="flex items-center gap-1.5 flex-wrap text-xs pt-1">
+              <span class="text-slate-400 font-medium">Từ đồng nghĩa:</span>
+              ${v.synonyms.map(s => `
+                <span onclick="speakText('${s}')" class="cursor-pointer px-2 py-0.5 rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700 font-medium transition inline-flex items-center gap-1">
+                  ${s} <i class="fa-solid fa-volume-low text-[10px] text-slate-400"></i>
+                </span>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          ${v.examples && v.examples.length > 0 ? `
+            <div class="space-y-1.5 pt-2 border-t border-slate-100 dark:border-zinc-800 text-xs">
+              <div class="text-slate-400 font-medium">Ví dụ ngữ cảnh:</div>
+              ${v.examples.map(ex => `
+                <div class="bg-slate-50 dark:bg-zinc-900 p-2.5 rounded-lg border border-slate-100 dark:border-zinc-800 space-y-0.5">
+                  <div class="text-slate-800 dark:text-zinc-200 font-medium flex items-center justify-between">
+                    <span>${ex.en}</span>
+                    <button onclick="speakText('${ex.en.replace(/'/g, "\\'")}')" class="text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 ml-2"><i class="fa-solid fa-volume-high text-xs"></i></button>
+                  </div>
+                  ${ex.vi ? `<div class="text-slate-500 dark:text-zinc-400 italic text-[11px]">${ex.vi}</div>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        `;
+        vList.appendChild(item);
+      });
+
+      // Prepare Flashcards
+      currentFcIndex = 0;
+      isFlipped = false;
+      renderCurrentFlashcard();
+
+      // Prepare INTERACTIVE Exercise A
+      interactiveExerciseState = {};
+      renderInteractiveExerciseA(d);
+
+      // Raw HTML
+      document.getElementById('modalRawContent').innerHTML = d.raw_html || '<p>Không có bài đăng gốc.</p>';
+
+      // Drive Files
+      const filesList = document.getElementById('modalFilesList');
+      filesList.innerHTML = '';
+      (d.drive_files || []).forEach(f => {
+        const item = document.createElement('a');
+        item.href = f.url;
+        item.target = '_blank';
+        item.className = 'p-2.5 rounded-lg bg-slate-50 hover:bg-slate-100 dark:bg-zinc-850 dark:hover:bg-zinc-800 border border-slate-200 dark:border-zinc-800 flex items-center gap-2.5 text-xs font-medium text-slate-700 dark:text-zinc-200 transition';
+        const icon = f.type === 'audio' ? 'fa-music text-indigo-500' : f.type === 'image' ? 'fa-image text-slate-400' : f.type === 'video' ? 'fa-video text-rose-500' : 'fa-file text-slate-400';
+        item.innerHTML = `
+          <div class="w-7 h-7 rounded-md bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700 flex items-center justify-center shrink-0">
+            <i class="fa-solid ${icon} text-xs"></i>
+          </div>
+          <span class="truncate flex-1">${f.name}</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-slate-400 text-xs"></i>
+        `;
+        filesList.appendChild(item);
+      });
+      if ((d.drive_files || []).length === 0) {
+        filesList.innerHTML = `<div class="text-xs text-slate-400 col-span-2">Không có tệp Google Drive đính kèm.</div>`;
+      }
+
+      // Form Link
+      const formBox = document.getElementById('modalFormLinkBox');
+      if (d.exercise_a && d.exercise_a.form_url) {
+        formBox.innerHTML = `
+          <a href="${d.exercise_a.form_url}" target="_blank" class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium text-xs transition shadow-xs">
+            <i class="fa-solid fa-file-waveform"></i> Mở Google Form nộp bài tập Viết Câu
+          </a>
+        `;
+      } else {
+        formBox.innerHTML = '';
+      }
+
+      switchModalTab('vocab');
+    }
+
+    // Modal Tabs Switching
+    function switchModalTab(tabKey) {
+      const tabs = ['vocab', 'flashcard', 'exercise', 'raw', 'files'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tabBtn-${t}`);
+        const content = document.getElementById(`tabContent-${t}`);
+        if (t === tabKey) {
+          btn.className = 'modal-tab-btn active py-2.5 px-3 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1.5 whitespace-nowrap';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap';
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    // Flashcard logic
+    function renderCurrentFlashcard() {
+      const d = daysData[currentDayIndex];
+      const vocabs = d.vocabulary || [];
+      if (vocabs.length === 0) {
+        document.getElementById('fcFrontTerm').innerText = 'Không có từ';
+        return;
+      }
+      const v = vocabs[currentFcIndex];
+      document.getElementById('fcCounter').innerText = `Thẻ ${currentFcIndex + 1} / ${vocabs.length}`;
+      document.getElementById('fcFrontPos').innerText = v.pos || 'Word';
+      document.getElementById('fcFrontTerm').innerText = v.term;
+      document.getElementById('fcFrontPhonetic').innerText = v.phonetic || '';
+
+      document.getElementById('fcBackTerm').innerText = v.term;
+      document.getElementById('fcBackMeaning').innerText = v.meaning || '';
+      document.getElementById('fcBackSynonyms').innerText = v.synonyms && v.synonyms.length > 0 ? `= ${v.synonyms.join(' = ')}` : '';
+      
+      const ex = v.examples && v.examples.length > 0 ? v.examples[0] : null;
+      if (ex) {
+        document.getElementById('fcBackExample').style.display = 'block';
+        document.getElementById('fcBackExample').innerText = `"${ex.en}"\n(${ex.vi || ''})`;
+      } else {
+        document.getElementById('fcBackExample').style.display = 'none';
+      }
+
+      if (isFlipped) {
+        document.getElementById('fcInner').classList.remove('rotate-y-180');
+        isFlipped = false;
+      }
+
+      if (document.getElementById('fcAutoAudioToggle').checked) {
+        setTimeout(() => speakText(v.term), 250);
+      }
+    }
+
+    function flipFlashcard() {
+      const inner = document.getElementById('fcInner');
+      isFlipped = !isFlipped;
+      if (isFlipped) inner.classList.add('rotate-y-180');
+      else inner.classList.remove('rotate-y-180');
+    }
+
+    function nextFlashcard() {
+      const d = daysData[currentDayIndex];
+      const vocabs = d.vocabulary || [];
+      if (currentFcIndex < vocabs.length - 1) {
+        currentFcIndex++;
+        renderCurrentFlashcard();
+      }
+    }
+
+    function prevFlashcard() {
+      if (currentFcIndex > 0) {
+        currentFcIndex--;
+        renderCurrentFlashcard();
+      }
+    }
+
+    function playCurrentFcAudio() {
+      const d = daysData[currentDayIndex];
+      const vocabs = d.vocabulary || [];
+      const v = vocabs[currentFcIndex];
+      if (v) speakText(v.term);
+    }
+
+    // INTERACTIVE EXERCISE A RENDERING & LOGIC
+    function renderInteractiveExerciseA(d) {
+      const exList = document.getElementById('modalExerciseList');
+      exList.innerHTML = '';
+      const exQuestions = d.exercise_a && d.exercise_a.questions ? d.exercise_a.questions : [];
+      
+      if (exQuestions.length === 0) {
+        exList.innerHTML = `<div class="text-center py-8 text-slate-400 text-xs">Phần bài tập viết câu đã kết thúc từ Day 28 hoặc không có ở Day này. Hãy tập trung luyện flashcards và thi đấu Wayground!</div>`;
+        return;
+      }
+
+      exQuestions.forEach((q, qIdx) => {
+        const qBox = document.createElement('div');
+        qBox.className = 'p-4 rounded-xl bg-white dark:bg-zinc-850 border border-slate-200 dark:border-zinc-800 shadow-xs space-y-3';
+        qBox.id = `exBox-${qIdx}`;
+
+        let blankCount = 0;
+        const interactiveSentence = q.sentence.replace(/___(?:\[(\d+)\])?/g, (match, bNum) => {
+          blankCount++;
+          const actualNum = bNum || blankCount;
+          const slotKey = `${qIdx}_${actualNum}`;
+          const currentVal = interactiveExerciseState[slotKey] || '';
+          return `<span id="blank-${slotKey}" onclick="handleBlankClick(${qIdx}, ${actualNum})" class="interactive-blank ${currentVal ? 'blank-filled' : 'blank-empty'}" data-blank="${actualNum}">${currentVal || `[${actualNum}]`}</span>`;
+        });
+
+        qBox.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-semibold font-mono">Câu ${q.number || qIdx + 1}</span>
+            <div class="flex items-center gap-2">
+              <button onclick="revealExerciseAnswer(${qIdx})" class="text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+                <i class="fa-solid fa-eye"></i> Hiện đáp án
+              </button>
+              <button onclick="resetExerciseQuestion(${qIdx})" class="text-xs font-medium text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200">
+                <i class="fa-solid fa-rotate-left"></i> Làm lại
+              </button>
+            </div>
+          </div>
+
+          <!-- English Sentence with Slots -->
+          <div class="text-sm sm:text-base font-semibold text-slate-900 dark:text-zinc-100 leading-loose">
+            ${interactiveSentence}
+          </div>
+
+          <!-- Vietnamese Translation Hint -->
+          <div class="text-xs text-slate-600 dark:text-zinc-400 bg-slate-50 dark:bg-zinc-900 p-2.5 rounded-lg border border-slate-100 dark:border-zinc-800 leading-relaxed">
+            <span class="font-semibold text-amber-700 dark:text-amber-400 mr-1">Dịch nghĩa:</span>${q.translation}
+          </div>
+
+          <!-- Clickable Word Bank -->
+          <div>
+            <div class="text-xs text-slate-400 font-medium mb-1.5 flex items-center justify-between">
+              <span>Ngân hàng từ (Bấm từ để điền):</span>
+            </div>
+            <div id="wordBankBox-${qIdx}" class="flex flex-wrap gap-1.5">
+              ${(q.word_bank || []).map((tk, tkIdx) => `
+                <button type="button" onclick="handleWordChipClick(${qIdx}, '${tk.replace(/'/g, "\\'")}', this)" class="word-chip bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-700" data-token="${tk}">
+                  <span>${tk}</span>
+                  <i class="fa-solid fa-plus text-[10px] opacity-40"></i>
+                </button>
+              `).join('')}
+            </div>
+          </div>
+        `;
+
+        exList.appendChild(qBox);
+      });
+    }
+
+    // Interactive blank clicked -> remove placed word
+    function handleBlankClick(qIdx, blankNum) {
+      const slotKey = `${qIdx}_${blankNum}`;
+      const filledWord = interactiveExerciseState[slotKey];
+      if (!filledWord) return;
+
+      delete interactiveExerciseState[slotKey];
+      
+      const blankEl = document.getElementById(`blank-${slotKey}`);
+      if (blankEl) {
+        blankEl.className = 'interactive-blank blank-empty';
+        blankEl.innerText = `[${blankNum}]`;
+      }
+
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        const chips = bankBox.querySelectorAll('.word-chip');
+        chips.forEach(c => {
+          if (c.getAttribute('data-token') === filledWord && c.classList.contains('word-chip-used')) {
+            c.classList.remove('word-chip-used');
+          }
+        });
+      }
+    }
+
+    // Word chip clicked -> place in first empty blank
+    function handleWordChipClick(qIdx, word, chipEl) {
+      if (chipEl.classList.contains('word-chip-used')) return;
+
+      const qBox = document.getElementById(`exBox-${qIdx}`);
+      if (!qBox) return;
+
+      const emptyBlanks = qBox.querySelectorAll('.interactive-blank.blank-empty');
+      if (emptyBlanks.length === 0) return;
+
+      const targetBlank = emptyBlanks[0];
+      const blankNum = targetBlank.getAttribute('data-blank');
+      const slotKey = `${qIdx}_${blankNum}`;
+
+      interactiveExerciseState[slotKey] = word;
+      targetBlank.className = 'interactive-blank blank-filled';
+      targetBlank.innerText = word;
+
+      chipEl.classList.add('word-chip-used');
+    }
+
+    // Check answers for all questions
+    function checkAllExercises() {
+      const d = daysData[currentDayIndex];
+      const exQuestions = d.exercise_a && d.exercise_a.questions ? d.exercise_a.questions : [];
+      let totalCorrect = 0;
+      let totalBlanks = 0;
+
+      exQuestions.forEach((q, qIdx) => {
+        const qBox = document.getElementById(`exBox-${qIdx}`);
+        if (!qBox) return;
+
+        const blanks = qBox.querySelectorAll('.interactive-blank');
+        blanks.forEach(b => {
+          totalBlanks++;
+          const bNum = b.getAttribute('data-blank');
+          const slotKey = `${qIdx}_${bNum}`;
+          const userVal = (interactiveExerciseState[slotKey] || '').toLowerCase().trim();
+
+          if (userVal) {
+            b.className = 'interactive-blank blank-correct';
+            totalCorrect++;
+          } else {
+            b.className = 'interactive-blank blank-incorrect';
+          }
+        });
+      });
+
+      alert(`Bạn đã điền hoàn chỉnh ${totalCorrect}/${totalBlanks} chỗ trống!`);
+    }
+
+    // Reveal correct answer key
+    function revealExerciseAnswer(qIdx) {
+      const d = daysData[currentDayIndex];
+      const q = d.exercise_a.questions[qIdx];
+      if (!q) return;
+
+      const bank = q.word_bank || [];
+      const qBox = document.getElementById(`exBox-${qIdx}`);
+      if (!qBox) return;
+
+      const blanks = qBox.querySelectorAll('.interactive-blank');
+      blanks.forEach((b, idx) => {
+        const bNum = b.getAttribute('data-blank');
+        const slotKey = `${qIdx}_${bNum}`;
+        const word = bank[idx] || bank[0] || 'correct';
+        interactiveExerciseState[slotKey] = word;
+        b.className = 'interactive-blank blank-correct';
+        b.innerText = word;
+      });
+
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        bankBox.querySelectorAll('.word-chip').forEach(c => c.classList.add('word-chip-used'));
+      }
+    }
+
+    function resetExerciseQuestion(qIdx) {
+      const qBox = document.getElementById(`exBox-${qIdx}`);
+      if (!qBox) return;
+
+      const blanks = qBox.querySelectorAll('.interactive-blank');
+      blanks.forEach(b => {
+        const bNum = b.getAttribute('data-blank');
+        const slotKey = `${qIdx}_${bNum}`;
+        delete interactiveExerciseState[slotKey];
+        b.className = 'interactive-blank blank-empty';
+        b.innerText = `[${bNum}]`;
+      });
+
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        bankBox.querySelectorAll('.word-chip').forEach(c => c.classList.remove('word-chip-used'));
+      }
+    }
+
+    // Global Flashcard shortcut
+    function openGlobalFlashcards() {
+      openDayModal(0);
+      switchModalTab('flashcard');
+    }
+
+    // Dictionary Modal
+    function openDictionaryModal() {
+      document.getElementById('dictModal').classList.remove('hidden');
+      document.getElementById('dictSearchInput').focus();
+      searchDictionary('');
+    }
+    function closeDictionaryModal() {
+      document.getElementById('dictModal').classList.add('hidden');
+    }
+
+    function searchDictionary(keyword) {
+      const q = keyword.toLowerCase().trim();
+      const list = document.getElementById('dictResultsList');
+      list.innerHTML = '';
+
+      let results = allVocab;
+      if (q) {
+        results = allVocab.filter(v => 
+          v.term.toLowerCase().includes(q) || 
+          (v.meaning && v.meaning.toLowerCase().includes(q)) ||
+          (v.phonetic && v.phonetic.toLowerCase().includes(q))
+        );
+      }
+
+      document.getElementById('dictTotalCount').innerText = results.length;
+
+      results.slice(0, 50).forEach(v => {
+        const item = document.createElement('div');
+        item.className = 'p-3 rounded-lg bg-slate-50 dark:bg-zinc-850 hover:bg-slate-100 dark:hover:bg-zinc-800 border border-slate-200 dark:border-zinc-800 flex items-center justify-between gap-3 transition';
+        item.innerHTML = `
+          <div class="space-y-0.5">
+            <div class="flex items-center gap-2">
+              <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-mono font-semibold">Day ${v.day}</span>
+              <strong class="text-sm sm:text-base text-slate-900 dark:text-zinc-100 font-bold">${v.term}</strong>
+              <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-medium">${v.phonetic || ''}</span>
+              <span class="text-xs text-slate-400">${v.pos || ''}</span>
+            </div>
+            <div class="text-xs font-semibold text-amber-700 dark:text-amber-400">${v.meaning || ''}</div>
+          </div>
+          <button onclick="speakText('${v.term.replace(/'/g, "\\'")}')" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 flex items-center justify-center transition shrink-0 hover:bg-slate-50 dark:hover:bg-zinc-700">
+            <i class="fa-solid fa-volume-high text-xs"></i>
+          </button>
+        `;
+        list.appendChild(item);
+      });
+    }
+
+    // Keyboard Shortcuts
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+        e.preventDefault();
+        openDictionaryModal();
+      }
+      if (e.key === 'Escape') {
+        closeDayModal();
+        closeDictionaryModal();
+      }
+      if (e.code === 'Space' && !document.getElementById('tabContent-flashcard').classList.contains('hidden') && !document.getElementById('dayModal').classList.contains('hidden')) {
+        e.preventDefault();
+        flipFlashcard();
+      }
+      if (e.code === 'ArrowRight' && !document.getElementById('tabContent-flashcard').classList.contains('hidden')) {
+        nextFlashcard();
+      }
+      if (e.code === 'ArrowLeft' && !document.getElementById('tabContent-flashcard').classList.contains('hidden')) {
+        prevFlashcard();
+      }
+    });
+
+    // Initial render
+    renderDaysGrid();
+  </script>
+</body>
+</html>
