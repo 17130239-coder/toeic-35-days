@@ -140,8 +140,9 @@
             <label class="font-medium text-zinc-400 block mb-1">Số lượng câu:</label>
             <select id="settingQCount" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-indigo-500">
               <option value="20" selected>20 câu (Chuẩn)</option>
-              <option value="15">15 câu</option>
               <option value="10">10 câu (Nhanh)</option>
+              <option value="35">35 câu (Mở rộng)</option>
+              <option value="all">Tất cả câu (Toàn bộ kho câu hỏi)</option>
             </select>
           </div>
           <div>
@@ -244,7 +245,7 @@
     </div>
 
     <!-- Question Box (Clean Hairline Surface) -->
-    <div class="wg-card rounded-xl p-5 sm:p-7 my-auto text-center space-y-3 shadow-xs">
+    <div class="wg-card rounded-xl p-4 sm:p-6 my-auto text-center space-y-3 shadow-xs">
       <div class="flex items-center justify-center gap-2 flex-wrap">
         <button onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-md border border-zinc-700 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-medium text-xs flex items-center gap-1.5 transition" title="Nghe phát âm">
           <i class="fa-solid fa-volume-high text-[11px]"></i>
@@ -253,7 +254,12 @@
         <span id="arenaPhonetic" class="text-xs font-mono text-zinc-400"></span>
       </div>
 
-      <h2 id="arenaPrompt" class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-relaxed whitespace-pre-line">
+      <!-- Question Illustration Media -->
+      <div id="arenaImageContainer" class="flex justify-center max-h-48 sm:max-h-60 overflow-hidden rounded-xl my-2 border border-zinc-700/60 bg-black/40 hidden">
+        <img id="arenaImage" src="" alt="Question Illustration" class="max-h-48 sm:max-h-60 object-contain w-auto rounded-lg shadow-sm transition hover:scale-[1.02] cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
+      </div>
+
+      <h2 id="arenaPrompt" class="text-base sm:text-xl md:text-2xl font-bold text-white leading-relaxed whitespace-pre-line">
         Câu hỏi đang tải...
       </h2>
 
@@ -271,32 +277,36 @@
     </div>
 
     <!-- INTERACTION AREA 1: 4 Quizizz Buttons (For Single Choice & Multiple Choice) -->
-    <div id="optionsContainer" class="space-y-3 pt-3">
+    <div id="optionsContainer" class="space-y-3 pt-2">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <!-- Option 0: Red -->
-        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">▲</span>
+        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span id="optIcon-0" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">▲</span>
+          <img id="optImg-0" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-0" class="flex-1 leading-snug">Lựa chọn A</span>
           <span id="optCheck-0" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
         <!-- Option 1: Blue -->
-        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-blue btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">◆</span>
+        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-blue btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span id="optIcon-1" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">◆</span>
+          <img id="optImg-1" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-1" class="flex-1 leading-snug">Lựa chọn B</span>
           <span id="optCheck-1" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
         <!-- Option 2: Yellow -->
-        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-yellow btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">●</span>
+        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-yellow btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span id="optIcon-2" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">●</span>
+          <img id="optImg-2" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-2" class="flex-1 leading-snug">Lựa chọn C</span>
           <span id="optCheck-2" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
         <!-- Option 3: Green -->
-        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-green btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">■</span>
+        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-green btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span id="optIcon-3" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">■</span>
+          <img id="optImg-3" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-3" class="flex-1 leading-snug">Lựa chọn D</span>
           <span id="optCheck-3" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
@@ -350,6 +360,11 @@
       <h3 id="feedbackTitle" class="text-lg font-bold">XUẤT SẮC!</h3>
       <div id="feedbackPoints" class="text-xl font-bold font-mono text-emerald-400 tabular-nums">+1,450 pts</div>
       
+      <!-- Authentic Quizizz Reaction Meme -->
+      <div id="feedbackMemeContainer" class="flex justify-center max-h-36 overflow-hidden rounded-lg border border-zinc-800 bg-black/30 hidden">
+        <img id="feedbackMemeImg" src="" alt="Quizizz Meme" class="max-h-36 w-auto object-contain rounded-lg" />
+      </div>
+
       <div id="feedbackChosenDetails" class="text-xs text-left p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 space-y-1">
         <div id="feedbackUserChoice" class="text-zinc-300"></div>
         <div id="feedbackCorrectChoice" class="text-emerald-400 font-medium"></div>
@@ -449,6 +464,15 @@
     </div>
 
   </main>
+
+  <!-- IMAGE LIGHTBOX MODAL -->
+  <div id="imageLightbox" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 hidden" onclick="closeLightbox()">
+    <div class="relative max-w-2xl max-h-[85vh] bg-zinc-900 border border-zinc-700 rounded-2xl p-2.5 shadow-2xl flex flex-col items-center" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-3 -right-3 w-8 h-8 rounded-full bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-600 flex items-center justify-center text-sm font-bold shadow-lg transition">✕</button>
+      <img id="lightboxImg" src="" alt="Enlarged" class="max-h-[75vh] w-auto object-contain rounded-xl" />
+      <div class="text-[11px] text-zinc-400 py-1.5 text-center">Bấm ra ngoài hoặc phím ESC để đóng</div>
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="w-full text-center py-4 text-[11px] text-zinc-500 border-t border-zinc-900">
@@ -601,7 +625,8 @@
 
     function startGame(game) {
       currentGame = game;
-      const qCountSetting = parseInt(document.getElementById('settingQCount').value) || 20;
+      const qCountVal = document.getElementById('settingQCount').value;
+      const qCountSetting = qCountVal === 'all' ? 999999 : (parseInt(qCountVal) || 20);
       const timeSetting = parseInt(document.getElementById('settingTime').value) || 25;
 
       let allQ = JSON.parse(JSON.stringify(game.questions || []));
@@ -671,11 +696,25 @@
       // Update badge label
       const badge = document.getElementById('arenaQTypeBadge');
       if (format === 'single_choice') {
-        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> ${q.type_label || 'Đơn tuyển (1 đáp án)'}`;
+        const isPhoto = q.type === 'photo_identification';
+        const isImgOpts = q.has_image_options;
+        const badgeColor = isPhoto ? 'bg-sky-400' : (isImgOpts ? 'bg-purple-400' : 'bg-indigo-400');
+        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full ${badgeColor}"></span> ${q.type_label || 'Đơn tuyển (1 đáp án)'}`;
       } else if (format === 'multiple_choice') {
         badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> ${q.type_label || 'Đa tuyển (Chọn nhiều)'}`;
       } else if (format === 'fill_blank') {
         badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> ${q.type_label || 'Điền từ khuyết (Gõ từ)'}`;
+      }
+
+      // Populate Question Illustration Media
+      const arenaImgBox = document.getElementById('arenaImageContainer');
+      const arenaImg = document.getElementById('arenaImage');
+      if (q.image) {
+        arenaImg.src = q.image;
+        arenaImgBox.classList.remove('hidden');
+      } else {
+        arenaImgBox.classList.add('hidden');
+        arenaImg.src = '';
       }
 
       // Populate Hint content
@@ -712,6 +751,8 @@
           const btn = document.getElementById(`optBtn-${i}`);
           const txt = document.getElementById(`optText-${i}`);
           const chk = document.getElementById(`optCheck-${i}`);
+          const img = document.getElementById(`optImg-${i}`);
+          const ico = document.getElementById(`optIcon-${i}`);
 
           if (q.options && q.options[i]) {
             btn.style.display = 'flex';
@@ -719,6 +760,16 @@
             btn.style.opacity = '1';
             btn.classList.remove('animate-shake', 'is-selected');
             txt.innerText = q.options[i];
+
+            // Image option support (Quizizz authentic image choices)
+            if (q.has_image_options && q.option_images && q.option_images[i]) {
+              img.src = q.option_images[i];
+              img.classList.remove('hidden');
+              ico.classList.add('hidden');
+            } else {
+              img.classList.add('hidden');
+              ico.classList.remove('hidden');
+            }
 
             if (format === 'multiple_choice') {
               chk.classList.remove('hidden');
@@ -916,7 +967,8 @@
         correct: correctDisplay,
         isCorrect: isCorrect,
         explanation: q.explanation,
-        timeSpent: timeSpent.toFixed(1)
+        timeSpent: timeSpent.toFixed(1),
+        image: q.image || ''
       });
 
       showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation);
@@ -934,6 +986,19 @@
 
       userChoiceEl.innerHTML = `<strong>Bạn chọn/gõ:</strong> ${chosenText}`;
       correctChoiceEl.innerHTML = `<strong>Đáp án đúng:</strong> ${correctDisplay}`;
+
+      // Authentic Quizizz Reaction Meme
+      const memeContainer = document.getElementById('feedbackMemeContainer');
+      const memeImg = document.getElementById('feedbackMemeImg');
+      const quizizzData = window.WAYGROUND_QUIZZES || {};
+      const memesList = isCorrect ? (quizizzData.correct_memes || []) : (quizizzData.wrong_memes || []);
+      if (memesList && memesList.length > 0) {
+        const randomMeme = memesList[Math.floor(Math.random() * memesList.length)];
+        memeImg.src = randomMeme;
+        memeContainer.classList.remove('hidden');
+      } else {
+        memeContainer.classList.add('hidden');
+      }
 
       if (isCorrect) {
         card.className = 'wg-card rounded-xl p-6 max-w-sm w-full text-center space-y-3.5 shadow-xl border border-emerald-500/60 bg-zinc-900';
@@ -1015,14 +1080,19 @@
       rList.innerHTML = '';
       answeredLog.forEach((log, idx) => {
         const item = document.createElement('div');
-        item.className = `p-3 rounded-lg border ${log.isCorrect ? 'bg-zinc-900 border-emerald-900/60' : 'bg-zinc-900 border-rose-900/60'} space-y-1`;
+        item.className = `p-3 rounded-lg border ${log.isCorrect ? 'bg-zinc-900 border-emerald-900/60' : 'bg-zinc-900 border-rose-900/60'} space-y-1.5`;
         item.innerHTML = `
           <div class="flex items-center justify-between text-xs font-semibold">
-            <span class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'}">
-              ${log.isCorrect ? '✓ Đúng' : '✗ Sai'} • Câu ${idx + 1}
+            <span class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'} flex items-center gap-1.5">
+              <span>${log.isCorrect ? '✓ Đúng' : '✗ Sai'}</span> • Câu ${idx + 1}
             </span>
             <span class="text-zinc-500 font-mono text-[11px] tabular-nums">${log.timeSpent}s</span>
           </div>
+          ${log.image ? `
+            <div class="pt-1">
+              <img src="${log.image}" alt="Question Image" class="h-16 w-auto max-w-[160px] object-cover rounded-md border border-zinc-700 cursor-pointer hover:opacity-90 transition" onclick="openLightbox('${log.image}')" title="Nhấn để phóng to ảnh" />
+            </div>
+          ` : ''}
           <div class="text-xs sm:text-sm font-medium text-white">${log.question}</div>
           <div class="text-xs space-y-0.5 pt-1">
             <div class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'} text-[11px]">
@@ -1034,6 +1104,17 @@
         `;
         rList.appendChild(item);
       });
+    }
+
+    function openLightbox(src) {
+      if (!src) return;
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('imageLightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+      document.getElementById('imageLightbox').classList.add('hidden');
+      document.getElementById('lightboxImg').src = '';
     }
 
     function restartCurrentGame() {
@@ -1058,6 +1139,11 @@
     });
 
     window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeLightbox();
+        return;
+      }
+
       // If typing in input, don't hijack keyboard
       if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT')) {
         if (e.key === 'Enter') {

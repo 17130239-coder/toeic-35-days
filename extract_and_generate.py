@@ -7,6 +7,7 @@ import re
 import json
 import random
 from bs4 import BeautifulSoup
+from image_catalog import get_word_image, QUIZIZZ_CORRECT_MEMES, QUIZIZZ_WRONG_MEMES
 
 VN_CHARS = set('àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡùúụủũưừứựửữỳýỵỷỹđÀÁẠẢÃÂẦẤẬẨẪĂẰẮẶẲẴÈÉẸẺẼÊỀẾỆỂỄÌÍỊỈĨÒÓỌỎÕÔỒỐỘỔỖƠỜỚỢỞỠÙÚỤỦŨƯỪỨỰỬỮỲÝỴỶỸĐ')
 IPA_CHARS = set('ˈˌəɪʊɒæɑːɔːɜːʌθðʃʒŋɡ:')
@@ -493,8 +494,9 @@ def extract_all():
 
             root_word = term.split()[0]
             clean_term_lower = term.strip().lower()
+            term_img = get_word_image(term, q_id)
 
-            # 1. Single Choice: Term -> Meaning
+            # 1. Single Choice: Term -> Meaning (with Question Illustration)
             other_meanings = [x["meaning"] for x in distractor_pool + target_pool if x["meaning"] and x["meaning"] != meaning]
             if len(other_meanings) >= 3:
                 distractors = random.sample(other_meanings, 3)
@@ -506,6 +508,7 @@ def extract_all():
                     "type": "word_to_meaning",
                     "type_label": "Đơn Tuyển (Nghĩa Từ)",
                     "question": f"Từ '{term}' {pos} có nghĩa là gì?",
+                    "image": term_img,
                     "audio_text": term,
                     "phonetic": phonetic,
                     "options": opts,
@@ -524,7 +527,7 @@ def extract_all():
                 })
                 q_id += 1
 
-            # 2. Single Choice: Meaning -> Term
+            # 2. Single Choice: Meaning -> Term (with Question Illustration)
             other_terms = [x["term"] for x in distractor_pool + target_pool if x["term"] and x["term"] != term]
             if len(other_terms) >= 3:
                 distractors = random.sample(other_terms, 3)
@@ -536,6 +539,7 @@ def extract_all():
                     "type": "meaning_to_word",
                     "type_label": "Đơn Tuyển (Chọn Từ)",
                     "question": f"Từ tiếng Anh nào mang nghĩa: '{meaning}'?",
+                    "image": term_img,
                     "audio_text": term,
                     "phonetic": phonetic,
                     "options": opts,
@@ -554,7 +558,70 @@ def extract_all():
                 })
                 q_id += 1
 
-            # 3. Multiple Choice: Multiple Synonyms (khi có 2+ synonyms)
+            # 3. Photo Identification: Look at picture -> Choose English term (TOEIC Part 1 / Visual Vocab)
+            if len(other_terms) >= 3:
+                distractors = random.sample(other_terms, 3)
+                opts = distractors + [term]
+                random.shuffle(opts)
+                questions.append({
+                    "id": f"q_{gc}_{q_id}",
+                    "question_format": "single_choice",
+                    "type": "photo_identification",
+                    "type_label": "📸 Nhìn Tranh Chọn Từ",
+                    "question": "Quan sát bức ảnh dưới đây và chọn từ tiếng Anh mô tả phù hợp nhất:",
+                    "image": term_img,
+                    "audio_text": term,
+                    "phonetic": phonetic,
+                    "options": opts,
+                    "correct_answers": [term],
+                    "correct_answer": term,
+                    "hint": {
+                        "short": f"Bức ảnh minh họa khái niệm: '{meaning[:35]}...'. Bắt đầu bằng '{term[0].upper()}'.",
+                        "phonetic": phonetic,
+                        "vietnamese": meaning,
+                        "first_letter": term[0].upper(),
+                        "length": len(term.replace(" ", ""))
+                    },
+                    "explanation": f"Bức ảnh mô tả từ '{term}' {phonetic} ({pos}): {meaning}.",
+                    "points": 1200,
+                    "time_limit": 25
+                })
+                q_id += 1
+
+            # 4. Image Answer Options: Which picture illustrates the word? (Phương án là hình ảnh!)
+            other_vocab_for_img = [x for x in distractor_pool if x["term"] != term and x.get("meaning")]
+            if len(other_vocab_for_img) >= 3:
+                distractors = random.sample(other_vocab_for_img, 3)
+                choices = [v] + distractors
+                random.shuffle(choices)
+                opts_text = [c["term"] for c in choices]
+                opts_imgs = [get_word_image(c["term"]) for c in choices]
+                questions.append({
+                    "id": f"q_{gc}_{q_id}",
+                    "question_format": "single_choice",
+                    "type": "image_options",
+                    "type_label": "🖼️ Chọn Tranh Minh Họa",
+                    "has_image_options": True,
+                    "question": f"Bức ảnh nào dưới đây minh họa đúng nhất cho từ '{term}' {pos}?\n(Nghĩa: {meaning})",
+                    "image": "",
+                    "audio_text": term,
+                    "phonetic": phonetic,
+                    "options": opts_text,
+                    "option_images": opts_imgs,
+                    "correct_answers": [term],
+                    "correct_answer": term,
+                    "hint": {
+                        "short": f"Chọn hình ảnh thể hiện đúng nghĩa: '{meaning}'.",
+                        "phonetic": phonetic,
+                        "vietnamese": meaning
+                    },
+                    "explanation": f"Hình ảnh tương ứng với '{term}' {phonetic}: {meaning}.",
+                    "points": 1200,
+                    "time_limit": 25
+                })
+                q_id += 1
+
+            # 5. Multiple Choice: Multiple Synonyms (khi có 2+ synonyms)
             if synonyms and len(synonyms) >= 2:
                 correct_syns = synonyms[:2]
                 other_words = [x["term"] for x in distractor_pool if x["term"] not in correct_syns and x["term"] != term]
@@ -568,6 +635,7 @@ def extract_all():
                         "type": "multiple_synonyms",
                         "type_label": "Đa Tuyển (Nhiều Đáp Án)",
                         "question": f"Chọn TẤT CẢ các từ/cụm từ đồng nghĩa (synonyms) của '{term}':\n(Chọn 2 đáp án đúng)",
+                        "image": term_img,
                         "audio_text": term,
                         "phonetic": phonetic,
                         "options": opts,
@@ -584,7 +652,7 @@ def extract_all():
                     })
                     q_id += 1
 
-            # 4. Fill in the Blank: Sentence Context (Type-in)
+            # 6. Fill in the Blank: Sentence Context (Type-in)
             has_blank_sentence = False
             if examples and len(examples) > 0:
                 eg = examples[0]
@@ -612,6 +680,7 @@ def extract_all():
                         "type": "fill_blank_sentence",
                         "type_label": "Điền Từ Khuyết (Tự Gõ)",
                         "question": f"Gõ từ tiếng Anh thích hợp vào chỗ trống:\n\n\"{blanked}\"" + (f"\n\n(Nghĩa gợi ý: {meaning})" if meaning else ""),
+                        "image": term_img,
                         "audio_text": en_sentence,
                         "phonetic": phonetic,
                         "options": [],
@@ -639,6 +708,7 @@ def extract_all():
                     "type": "fill_blank_vocab",
                     "type_label": "Điền Từ Khuyết (Tự Gõ)",
                     "question": f"Gõ từ tiếng Anh có nghĩa là: '{meaning}'\nPhiên âm: {phonetic}",
+                    "image": term_img,
                     "audio_text": term,
                     "phonetic": phonetic,
                     "options": [],
@@ -657,7 +727,7 @@ def extract_all():
                 })
                 q_id += 1
 
-        # 5. Multiple Choice: Category / POS questions
+        # 7. Multiple Choice: Category / POS questions
         target_nouns = [v["term"] for v in target_pool if "(n)" in v.get("pos", "").lower() or "n." in v.get("pos", "").lower()]
         other_non_nouns = [v["term"] for v in distractor_pool if "(v)" in v.get("pos", "").lower() or "(adj)" in v.get("pos", "").lower()]
         if len(target_nouns) >= 2 and len(other_non_nouns) >= 2:
@@ -671,6 +741,7 @@ def extract_all():
                 "type": "multiple_pos",
                 "type_label": "Đa Tuyển (Nhóm Danh Từ)",
                 "question": "Chọn TẤT CẢ các danh từ (Nouns) trong 4 từ sau:\n(Chọn 2 đáp án đúng)",
+                "image": get_word_image(c_nouns[0]),
                 "audio_text": "Choose all nouns",
                 "phonetic": "",
                 "options": opts,
@@ -686,7 +757,7 @@ def extract_all():
             })
             q_id += 1
 
-        # 6. Single Choice: Listening challenge
+        # 8. Single Choice: Listening challenge
         if target_pool:
             listen_sample = random.sample(target_pool, min(2, len(target_pool)))
             for lv in listen_sample:
@@ -703,6 +774,7 @@ def extract_all():
                         "type": "audio_listening",
                         "type_label": "🎧 Nghe & Chọn Từ",
                         "question": "Hãy lắng nghe phát âm và chọn từ chính xác:",
+                        "image": get_word_image(l_term),
                         "audio_text": l_term,
                         "phonetic": lv.get("phonetic", ""),
                         "options": opts,
@@ -720,7 +792,7 @@ def extract_all():
                     q_id += 1
 
         random.shuffle(questions)
-        game["questions"] = questions[:25]
+        game["questions"] = questions
 
     # Save outputs
     with open('/Users/andynguyen/workspace/35-days/days_data.json', 'w', encoding='utf-8') as f:
@@ -741,7 +813,9 @@ def extract_all():
         json.dump({
             "metadata": {
                 "total_games": len(wg_games),
-                "total_questions": sum(len(g["questions"]) for g in wg_games.values())
+                "total_questions": sum(len(g["questions"]) for g in wg_games.values()),
+                "correct_memes": QUIZIZZ_CORRECT_MEMES,
+                "wrong_memes": QUIZIZZ_WRONG_MEMES
             },
             "games": list(wg_games.values())
         }, f, ensure_ascii=False, indent=2)
@@ -752,7 +826,11 @@ def extract_all():
         f.write('window.ALL_VOCABULARY = ' + json.dumps(all_vocab, ensure_ascii=False) + ';\n')
 
     with open('/Users/andynguyen/workspace/35-days/wayground_data.js', 'w', encoding='utf-8') as f:
-        f.write('window.WAYGROUND_QUIZZES = ' + json.dumps({"games": list(wg_games.values())}, ensure_ascii=False) + ';\n')
+        f.write('window.WAYGROUND_QUIZZES = ' + json.dumps({
+            "games": list(wg_games.values()),
+            "correct_memes": QUIZIZZ_CORRECT_MEMES,
+            "wrong_memes": QUIZIZZ_WRONG_MEMES
+        }, ensure_ascii=False) + ';\n')
 
     print("\nExtraction & Generation successfully updated!")
     print(f"- days_data.json: {len(days_data)} days, {len(all_vocab)} words, {sum(len(d['exercise_a']['questions']) for d in days_data)} exercise questions")
