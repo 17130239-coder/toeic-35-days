@@ -76,13 +76,13 @@
     .animate-shake { animation: shake 0.35s ease-in-out; }
   </style>
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-indigo-600 selection:text-white">
+<body class="min-h-screen flex flex-col justify-between selection:bg-orange-600 selection:text-white">
 
   <!-- TOP NAVBAR (Clean Hairline Navigation) -->
   <header class="w-full px-4 sm:px-8 py-3.5 border-b border-zinc-800/80 flex items-center justify-between z-30 bg-[#09090b]">
     <a href="wayground.html" class="flex items-center gap-2.5">
       <div class="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white text-sm">
-        <i class="fa-solid fa-gamepad text-indigo-400"></i>
+        <i class="fa-solid fa-gamepad text-orange-400"></i>
       </div>
       <div class="flex items-center gap-2">
         <span class="text-base font-bold tracking-tight text-white">
@@ -109,9 +109,9 @@
   <!-- SCREEN 1: JOIN LOBBY (Enter PIN / Select Game) -->
   <main id="joinScreen" class="flex-1 flex flex-col items-center justify-center p-4 max-w-lg mx-auto w-full my-auto z-20 space-y-4">
     
-    <div class="wg-card w-full rounded-xl p-6 sm:p-7 shadow-sm space-y-5 text-center">
+    <div class="wg-card w-full rounded-xl p-6 sm:p-7 shadow-xs space-y-5 text-center">
       <div class="space-y-1">
-        <span class="text-[11px] uppercase font-semibold tracking-wider text-indigo-400">Đấu Trường Trắc Nghiệm</span>
+        <span class="text-[11px] uppercase font-semibold tracking-wider text-orange-400">Đấu Trường Trắc Nghiệm</span>
         <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Tham Gia Trận Đấu Wayground</h1>
         <p class="text-xs text-zinc-400">Hỗ trợ trắc nghiệm 1 đáp án, nhiều đáp án, điền từ khuyết và gợi ý</p>
       </div>
@@ -119,14 +119,14 @@
       <!-- PIN Input -->
       <div class="space-y-3.5">
         <div>
-          <input type="text" id="pinInput" maxlength="8" placeholder="NHẬP MÃ PIN 8 SỐ" class="w-full text-center text-2xl font-mono font-bold tracking-widest py-3 px-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 outline-none text-white uppercase placeholder:text-zinc-600 placeholder:text-xs placeholder:tracking-normal placeholder:font-sans transition" />
+          <input type="text" id="pinInput" maxlength="8" placeholder="NHẬP MÃ PIN 8 SỐ" class="w-full text-center text-2xl font-mono font-bold tracking-widest py-3 px-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none text-white uppercase placeholder:text-zinc-600 placeholder:text-xs placeholder:tracking-normal placeholder:font-sans transition" />
         </div>
 
         <!-- Nickname & Avatar selector -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
           <div>
             <label class="text-[11px] font-medium text-zinc-400 block mb-1">Tên người chơi:</label>
-            <input type="text" id="nicknameInput" value="Học Viên" maxlength="20" class="w-full py-2 px-3 rounded-lg bg-zinc-900 border border-zinc-700 text-xs font-medium text-white focus:outline-none focus:border-indigo-500" />
+            <input type="text" id="nicknameInput" value="Học Viên" maxlength="20" class="w-full py-2 px-3 rounded-lg bg-zinc-900 border border-zinc-700 text-xs font-medium text-white focus:outline-none focus:border-orange-500" />
           </div>
           <div>
             <label class="text-[11px] font-medium text-zinc-400 block mb-1">Chọn Avatar:</label>
@@ -138,7 +138,7 @@
         <div class="grid grid-cols-2 gap-3 bg-zinc-900/60 p-3 rounded-lg border border-zinc-800 text-left text-xs">
           <div>
             <label class="font-medium text-zinc-400 block mb-1">Số lượng câu:</label>
-            <select id="settingQCount" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <select id="settingQCount" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-orange-500">
               <option value="20" selected>20 câu (Chuẩn)</option>
               <option value="10">10 câu (Nhanh)</option>
               <option value="35">35 câu (Mở rộng)</option>
@@ -147,7 +147,7 @@
           </div>
           <div>
             <label class="font-medium text-zinc-400 block mb-1">Thời gian mỗi câu:</label>
-            <select id="settingTime" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-indigo-500">
+            <select id="settingTime" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-orange-500">
               <option value="25" selected>25 giây (Chuẩn)</option>
               <option value="15">15 giây (Thử thách)</option>
               <option value="35">35 giây (Thoải mái)</option>
@@ -156,7 +156,7 @@
         </div>
 
         <!-- Join Button -->
-        <button onclick="handleJoinGame()" class="w-full h-11 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm transition flex items-center justify-center gap-2 shadow-xs">
+        <button onclick="handleJoinGame()" class="w-full h-11 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-semibold text-sm transition flex items-center justify-center gap-2 shadow-xs">
           <i class="fa-solid fa-play text-xs"></i> Bắt đầu trận đấu
         </button>
       </div>
@@ -169,7 +169,7 @@
     </div>
 
     <!-- 26 OFFICIAL GAME CODES DRAWER -->
-    <div id="gameDrawer" class="wg-card w-full rounded-xl p-4 shadow-sm space-y-3 max-h-80 overflow-y-auto hidden">
+    <div id="gameDrawer" class="wg-card w-full rounded-xl p-4 shadow-xs space-y-3 max-h-80 overflow-y-auto hidden">
       <div class="flex items-center justify-between pb-2 border-b border-zinc-800">
         <span class="text-xs font-semibold text-zinc-300">Danh sách 26 trận Wayground</span>
         <button onclick="toggleGameDrawer()" class="text-zinc-500 hover:text-zinc-300 text-xs"><i class="fa-solid fa-xmark"></i> Đóng</button>
@@ -186,7 +186,7 @@
       <h2 id="lobbyGameTitle" class="text-lg sm:text-xl font-bold text-white">Ôn Tập Từ Vựng</h2>
       <div class="text-xs font-mono text-zinc-400" id="lobbyGamePin">PIN: 61030441</div>
       
-      <div id="countdownNumber" class="text-6xl font-bold font-mono text-indigo-400 py-2 tabular-nums">
+      <div id="countdownNumber" class="text-6xl font-bold font-mono text-orange-400 py-2 tabular-nums">
         3
       </div>
       <div class="text-xs text-zinc-500 uppercase tracking-widest font-medium">Chuẩn bị sẵn sàng...</div>
@@ -315,10 +315,10 @@
       <!-- Multiple Choice Confirmation Submit Bar -->
       <div id="multiSubmitBar" class="p-3 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-between gap-3 hidden">
         <div class="text-xs text-zinc-300">
-          <i class="fa-solid fa-circle-check text-indigo-400 mr-1.5"></i>
+          <i class="fa-solid fa-circle-check text-orange-400 mr-1.5"></i>
           Đã chọn: <strong id="multiSelectedCount" class="text-white font-bold tabular-nums">0</strong> đáp án (Chọn tất cả đáp án đúng)
         </div>
-        <button onclick="submitMultiAnswer()" id="btnSubmitMulti" class="h-9 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs">
+        <button onclick="submitMultiAnswer()" id="btnSubmitMulti" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs">
           <span>Gửi Đáp Án (Enter)</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
         </button>
@@ -328,12 +328,12 @@
     <!-- INTERACTION AREA 2: Type-in Answer Box (For Fill in the Blank) -->
     <div id="typeInContainer" class="wg-card rounded-xl p-5 space-y-3 pt-4 hidden">
       <div class="text-xs text-zinc-400 flex items-center justify-between">
-        <span><i class="fa-solid fa-keyboard mr-1.5 text-indigo-400"></i> Gõ từ tiếng Anh còn thiếu vào ô bên dưới:</span>
+        <span><i class="fa-solid fa-keyboard mr-1.5 text-orange-400"></i> Gõ từ tiếng Anh còn thiếu vào ô bên dưới:</span>
         <span class="text-[11px] text-zinc-500">Nhấn Enter để gửi</span>
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-2.5">
-        <input type="text" id="typeInInput" placeholder="Nhập từ tiếng Anh..." class="w-full h-11 px-4 text-center sm:text-left text-base sm:text-lg font-mono font-bold rounded-lg bg-zinc-900 border border-zinc-700 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white placeholder:text-zinc-600 outline-none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-        <button onclick="submitTypeInAnswer()" class="w-full sm:w-auto h-11 px-6 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs whitespace-nowrap transition flex items-center justify-center gap-2 shrink-0">
+        <input type="text" id="typeInInput" placeholder="Nhập từ tiếng Anh..." class="w-full h-11 px-4 text-center sm:text-left text-base sm:text-lg font-mono font-bold rounded-lg bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 text-white placeholder:text-zinc-600 outline-none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <button onclick="submitTypeInAnswer()" class="w-full sm:w-auto h-11 px-6 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs whitespace-nowrap transition flex items-center justify-center gap-2 shrink-0">
           <span>Gửi Đáp Án</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
         </button>
@@ -372,7 +372,7 @@
 
       <p id="feedbackExplanation" class="text-xs text-zinc-400 leading-relaxed text-left"></p>
       
-      <button onclick="proceedToNextQuestion()" class="w-full h-10 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition">
+      <button onclick="proceedToNextQuestion()" class="w-full h-10 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition">
         Câu tiếp theo <i class="fa-solid fa-arrow-right ml-1"></i>
       </button>
     </div>
@@ -444,7 +444,7 @@
 
     <!-- Action Buttons -->
     <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1">
-      <button onclick="restartCurrentGame()" class="h-9 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs transition flex items-center gap-1.5 shadow-xs">
+      <button onclick="restartCurrentGame()" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs transition flex items-center gap-1.5 shadow-xs">
         <i class="fa-solid fa-rotate-right text-xs"></i> Chơi lại trận này
       </button>
       <button onclick="goToJoinScreen()" class="h-9 px-4 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-medium text-xs transition flex items-center gap-1.5">
@@ -570,7 +570,7 @@
       avatarList.forEach(av => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = `w-7 h-7 rounded-md flex items-center justify-center text-sm transition ${selectedAvatar === av ? 'bg-indigo-600 text-white' : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700'}`;
+        btn.className = `w-7 h-7 rounded-md flex items-center justify-center text-sm transition ${selectedAvatar === av ? 'bg-orange-600 text-white' : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700'}`;
         btn.innerText = av;
         btn.onclick = () => {
           selectedAvatar = av;
@@ -592,7 +592,7 @@
         };
         item.innerHTML = `
           <div>
-            <div class="text-xs font-mono font-semibold text-indigo-400">PIN: ${g.game_code}</div>
+            <div class="text-xs font-mono font-semibold text-orange-400">PIN: ${g.game_code}</div>
             <div class="text-[11px] text-zinc-300 truncate max-w-[140px] sm:max-w-[180px]">${g.title}</div>
           </div>
           <span class="text-[10px] px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-400 font-medium border border-zinc-700">
@@ -698,7 +698,7 @@
       if (format === 'single_choice') {
         const isPhoto = q.type === 'photo_identification';
         const isImgOpts = q.has_image_options;
-        const badgeColor = isPhoto ? 'bg-sky-400' : (isImgOpts ? 'bg-purple-400' : 'bg-indigo-400');
+        const badgeColor = isPhoto ? 'bg-sky-400' : (isImgOpts ? 'bg-purple-400' : 'bg-orange-400');
         badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full ${badgeColor}"></span> ${q.type_label || 'Đơn tuyển (1 đáp án)'}`;
       } else if (format === 'multiple_choice') {
         badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> ${q.type_label || 'Đa tuyển (Chọn nhiều)'}`;

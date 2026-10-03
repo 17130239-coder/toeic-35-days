@@ -28,11 +28,15 @@
               950: '#09090b',
             },
             brand: {
-              50: '#eef2ff',
-              100: '#e0e7ff',
-              500: '#6366f1',
-              600: '#4f46e5',
-              700: '#4338ca',
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              primary: '#ff7551',
             }
           }
         }
@@ -80,8 +84,8 @@
       color: #a1a1aa;
     }
     .blank-filled {
-      background: #4f46e5;
-      border: 1px solid #4338ca;
+      background: #ea580c;
+      border: 1px solid #c2410c;
       color: #ffffff;
     }
     .blank-correct {
@@ -158,8 +162,8 @@
         </button>
 
         <!-- WAYGROUND ARENA LINK -->
-        <a href="wayground.html" target="_blank" class="h-8 px-3.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-2 transition shadow-sm">
-          <i class="fa-solid fa-gamepad text-indigo-200"></i>
+        <a href="wayground.html" target="_blank" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-2 transition shadow-xs">
+          <i class="fa-solid fa-gamepad text-orange-200"></i>
           <span>Đấu Trường Wayground</span>
         </a>
 
@@ -176,13 +180,13 @@
   <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
     
     <!-- HERO DASHBOARD CARD (Evondev Style: Clean Surface, Hairline Border, Zero Layout Shift, Tabular Numbers) -->
-    <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl p-5 sm:p-6 shadow-sm">
+    <div class="bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl p-5 sm:p-6 shadow-xs">
       <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
         
         <!-- Left: Curriculum Info & Progress -->
         <div class="space-y-3 max-w-2xl">
           <div class="flex items-center gap-2">
-            <span class="text-xs font-semibold text-indigo-600 dark:text-indigo-400 tracking-wide uppercase">Lộ trình học tập</span>
+            <span class="text-xs font-semibold text-orange-600 dark:text-orange-400 tracking-wide uppercase">Lộ trình học tập</span>
             <span class="text-slate-300 dark:text-zinc-700">•</span>
             <span class="text-xs text-slate-500 dark:text-zinc-400 font-medium">35 Ngày Cốt Lõi TOEIC</span>
           </div>
@@ -202,7 +206,7 @@
               <span id="overallProgressText" class="font-semibold text-slate-900 dark:text-zinc-100 tabular-nums">0% (0/36 Ngày)</span>
             </div>
             <div class="w-full bg-slate-100 dark:bg-zinc-800 rounded-full h-2 overflow-hidden">
-              <div id="overallProgressBar" class="bg-indigo-600 dark:bg-indigo-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
+              <div id="overallProgressBar" class="bg-orange-600 dark:bg-orange-500 h-full rounded-full transition-all duration-300" style="width: 0%"></div>
             </div>
           </div>
         </div>
@@ -253,7 +257,7 @@
       <!-- Search in cards input -->
       <div class="relative w-full md:w-64">
         <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-        <input type="text" id="daySearchInput" oninput="handleSearchDays(this.value)" placeholder="Lọc Day hoặc từ vựng..." class="w-full pl-8 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition text-slate-800 dark:text-zinc-100 placeholder:text-slate-400 dark:placeholder:text-zinc-500 shadow-xs" />
+        <input type="text" id="daySearchInput" oninput="handleSearchDays(this.value)" placeholder="Lọc Day hoặc từ vựng..." class="w-full pl-8 pr-3 py-1.5 text-xs rounded-lg bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition text-slate-800 dark:text-zinc-100 placeholder:text-slate-400 dark:placeholder:text-zinc-500 shadow-xs" />
       </div>
     </div>
 
@@ -286,8 +290,8 @@
 
         <div class="flex items-center gap-2">
           <!-- Wayground direct play button from modal -->
-          <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
-            <i class="fa-solid fa-gamepad text-indigo-200"></i>
+          <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
+            <i class="fa-solid fa-gamepad text-orange-200"></i>
             <span class="hidden sm:inline">Vào Wayground</span>
           </a>
 
@@ -300,7 +304,7 @@
 
       <!-- Modal Tabs (Hairline Tab bar, Evondev Rule M13) -->
       <div class="px-5 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 flex items-center gap-1 overflow-x-auto text-xs font-medium">
-        <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-2.5 px-3 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1.5 whitespace-nowrap">
+        <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-2.5 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap">
           <i class="fa-solid fa-book-open"></i> Từ vựng chi tiết
         </button>
         <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap">
@@ -338,7 +342,7 @@
           <div class="flex items-center justify-between w-full max-w-md text-xs font-medium text-slate-500 dark:text-zinc-400">
             <span id="fcCounter" class="tabular-nums">Thẻ 1 / 5</span>
             <label class="flex items-center gap-1.5 cursor-pointer">
-              <input type="checkbox" id="fcAutoAudioToggle" checked class="rounded text-indigo-600 focus:ring-0 border-slate-300 dark:border-zinc-700">
+              <input type="checkbox" id="fcAutoAudioToggle" checked class="rounded text-orange-600 focus:ring-0 border-slate-300 dark:border-zinc-700">
               <span>Tự động phát âm</span>
             </label>
           </div>
@@ -348,7 +352,7 @@
             <div id="fcInner" class="relative w-full h-full duration-300 transform-style-3d">
               
               <!-- Front Side: Clean White / Dark Zinc -->
-              <div class="absolute inset-0 w-full h-full bg-white dark:bg-zinc-850 border border-slate-200 dark:border-zinc-700 rounded-xl p-6 flex flex-col items-center justify-between backface-hidden shadow-sm text-center">
+              <div class="absolute inset-0 w-full h-full bg-white dark:bg-zinc-850 border border-slate-200 dark:border-zinc-700 rounded-xl p-6 flex flex-col items-center justify-between backface-hidden shadow-xs text-center">
                 <div class="w-full flex justify-between items-center text-xs">
                   <span id="fcFrontPos" class="px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-600 dark:text-zinc-300 font-medium">n.phrase</span>
                   <button onclick="event.stopPropagation(); playCurrentFcAudio();" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700 bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition">
@@ -358,7 +362,7 @@
 
                 <div class="space-y-1.5 my-auto">
                   <h3 id="fcFrontTerm" class="text-2xl font-bold tracking-tight text-slate-900 dark:text-zinc-100">Warranty policy</h3>
-                  <p id="fcFrontPhonetic" class="text-xs font-mono text-indigo-600 dark:text-indigo-400">/ˈwɔːrənti ˈpɑːləsi/</p>
+                  <p id="fcFrontPhonetic" class="text-xs font-mono text-orange-600 dark:text-orange-400">/ˈwɔːrənti ˈpɑːləsi/</p>
                 </div>
 
                 <div class="text-[11px] text-slate-400 dark:text-zinc-500 flex items-center gap-1.5">
@@ -367,7 +371,7 @@
               </div>
 
               <!-- Back Side: Deep Slate / Contrast -->
-              <div class="absolute inset-0 w-full h-full bg-slate-900 text-white rounded-xl p-6 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-800 shadow-sm overflow-hidden">
+              <div class="absolute inset-0 w-full h-full bg-slate-900 text-white rounded-xl p-6 flex flex-col justify-between backface-hidden rotate-y-180 border border-slate-800 shadow-xs overflow-hidden">
                 <div class="flex justify-between items-center text-xs text-slate-400">
                   <span id="fcBackTerm" class="font-semibold text-white">Warranty policy</span>
                   <i class="fa-solid fa-circle-check text-emerald-400"></i>
@@ -392,7 +396,7 @@
             <button onclick="prevFlashcard()" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition" title="Từ trước">
               <i class="fa-solid fa-arrow-left text-xs"></i>
             </button>
-            <button onclick="flipFlashcard()" class="h-10 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs shadow-xs flex items-center gap-1.5 transition">
+            <button onclick="flipFlashcard()" class="h-10 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs shadow-xs flex items-center gap-1.5 transition">
               <i class="fa-solid fa-rotate text-xs"></i> Lật Thẻ (Space)
             </button>
             <button onclick="nextFlashcard()" class="w-10 h-10 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 flex items-center justify-center transition" title="Từ tiếp theo">
@@ -575,8 +579,8 @@
             </button>
             
             ${primaryCode ? `
-              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="h-8 px-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Vào Game Wayground PIN: ${primaryCode}">
-                <i class="fa-solid fa-gamepad text-indigo-200"></i>
+              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Vào Game Wayground PIN: ${primaryCode}">
+                <i class="fa-solid fa-gamepad text-orange-200"></i>
                 <span>Game</span>
               </a>
             ` : ''}
@@ -738,7 +742,7 @@
               <div class="flex items-center gap-2 flex-wrap">
                 <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-mono font-semibold">#${idx+1}</span>
                 <h4 class="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">${v.term}</h4>
-                ${v.phonetic ? `<span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-medium">${v.phonetic}</span>` : ''}
+                ${v.phonetic ? `<span class="text-xs font-mono text-orange-600 dark:text-orange-400 font-medium">${v.phonetic}</span>` : ''}
                 ${v.pos ? `<span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-600 dark:text-zinc-300 font-medium">${v.pos}</span>` : ''}
               </div>
               <div class="text-xs sm:text-sm font-semibold text-amber-700 dark:text-amber-400">
@@ -799,7 +803,7 @@
         item.href = f.url;
         item.target = '_blank';
         item.className = 'p-2.5 rounded-lg bg-slate-50 hover:bg-slate-100 dark:bg-zinc-850 dark:hover:bg-zinc-800 border border-slate-200 dark:border-zinc-800 flex items-center gap-2.5 text-xs font-medium text-slate-700 dark:text-zinc-200 transition';
-        const icon = f.type === 'audio' ? 'fa-music text-indigo-500' : f.type === 'image' ? 'fa-image text-slate-400' : f.type === 'video' ? 'fa-video text-rose-500' : 'fa-file text-slate-400';
+        const icon = f.type === 'audio' ? 'fa-music text-orange-500' : f.type === 'image' ? 'fa-image text-slate-400' : f.type === 'video' ? 'fa-video text-rose-500' : 'fa-file text-slate-400';
         item.innerHTML = `
           <div class="w-7 h-7 rounded-md bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700 flex items-center justify-center shrink-0">
             <i class="fa-solid ${icon} text-xs"></i>
@@ -835,7 +839,7 @@
         const btn = document.getElementById(`tabBtn-${t}`);
         const content = document.getElementById(`tabContent-${t}`);
         if (t === tabKey) {
-          btn.className = 'modal-tab-btn active py-2.5 px-3 border-b-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 font-semibold flex items-center gap-1.5 whitespace-nowrap';
+          btn.className = 'modal-tab-btn active py-2.5 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap';
           content.classList.remove('hidden');
         } else {
           btn.className = 'modal-tab-btn py-2.5 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap';
@@ -944,7 +948,7 @@
           <div class="flex items-center justify-between">
             <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-semibold font-mono">Câu ${q.number || qIdx + 1}</span>
             <div class="flex items-center gap-2">
-              <button onclick="revealExerciseAnswer(${qIdx})" class="text-xs font-medium text-indigo-600 dark:text-indigo-400 hover:underline">
+              <button onclick="revealExerciseAnswer(${qIdx})" class="text-xs font-medium text-orange-600 dark:text-orange-400 hover:underline">
                 <i class="fa-solid fa-eye"></i> Hiện đáp án
               </button>
               <button onclick="resetExerciseQuestion(${qIdx})" class="text-xs font-medium text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200">
@@ -1144,7 +1148,7 @@
             <div class="flex items-center gap-2">
               <span class="text-[11px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-300 font-mono font-semibold">Day ${v.day}</span>
               <strong class="text-sm sm:text-base text-slate-900 dark:text-zinc-100 font-bold">${v.term}</strong>
-              <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-medium">${v.phonetic || ''}</span>
+              <span class="text-xs font-mono text-orange-600 dark:text-orange-400 font-medium">${v.phonetic || ''}</span>
               <span class="text-xs text-slate-400">${v.pos || ''}</span>
             </div>
             <div class="text-xs font-semibold text-amber-700 dark:text-amber-400">${v.meaning || ''}</div>
