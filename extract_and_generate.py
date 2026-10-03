@@ -428,15 +428,18 @@ def extract_all():
         for v in target_pool:
             term = v["term"]
             meaning = v["meaning"]
-            phonetic = v["phonetic"]
-            pos = v["pos"]
+            phonetic = v.get("phonetic", "")
+            pos = v.get("pos", "")
             synonyms = v.get("synonyms", [])
             examples = v.get("examples", [])
 
             if not meaning or not term:
                 continue
 
-            # Question Type 1: English Term -> Vietnamese Meaning
+            root_word = term.split()[0]
+            clean_term_lower = term.strip().lower()
+
+            # 1. Single Choice: Term -> Meaning
             other_meanings = [x["meaning"] for x in distractor_pool + target_pool if x["meaning"] and x["meaning"] != meaning]
             if len(other_meanings) >= 3:
                 distractors = random.sample(other_meanings, 3)
@@ -444,20 +447,29 @@ def extract_all():
                 random.shuffle(opts)
                 questions.append({
                     "id": f"q_{gc}_{q_id}",
+                    "question_format": "single_choice",
                     "type": "word_to_meaning",
-                    "type_label": "Nghĩa Của Từ",
+                    "type_label": "Đơn Tuyển (Nghĩa Từ)",
                     "question": f"Từ '{term}' {pos} có nghĩa là gì?",
                     "audio_text": term,
                     "phonetic": phonetic,
                     "options": opts,
+                    "correct_answers": [meaning],
                     "correct_answer": meaning,
+                    "hint": {
+                        "short": f"Từ bắt đầu bằng chữ '{term[0].upper()}...', từ loại: {pos or 'N/A'}.",
+                        "phonetic": phonetic,
+                        "vietnamese": meaning[:40] + ("..." if len(meaning) > 40 else ""),
+                        "first_letter": term[0].upper(),
+                        "length": len(term.replace(" ", ""))
+                    },
                     "explanation": f"'{term}' {phonetic} {pos} có nghĩa là: {meaning}.",
                     "points": 1000,
                     "time_limit": 20
                 })
                 q_id += 1
 
-            # Question Type 2: Vietnamese Meaning -> English Term
+            # 2. Single Choice: Meaning -> Term
             other_terms = [x["term"] for x in distractor_pool + target_pool if x["term"] and x["term"] != term]
             if len(other_terms) >= 3:
                 distractors = random.sample(other_terms, 3)
@@ -465,78 +477,152 @@ def extract_all():
                 random.shuffle(opts)
                 questions.append({
                     "id": f"q_{gc}_{q_id}",
+                    "question_format": "single_choice",
                     "type": "meaning_to_word",
-                    "type_label": "Chọn Từ Tiếng Anh",
+                    "type_label": "Đơn Tuyển (Chọn Từ)",
                     "question": f"Từ tiếng Anh nào mang nghĩa: '{meaning}'?",
                     "audio_text": term,
                     "phonetic": phonetic,
                     "options": opts,
+                    "correct_answers": [term],
                     "correct_answer": term,
+                    "hint": {
+                        "short": f"Bắt đầu bằng chữ '{term[0].upper()}...', gồm {len(term.replace(' ', ''))} ký tự.",
+                        "phonetic": phonetic,
+                        "vietnamese": meaning,
+                        "first_letter": term[0].upper(),
+                        "length": len(term.replace(" ", ""))
+                    },
                     "explanation": f"Đáp án chính xác là '{term}' {phonetic}.",
                     "points": 1000,
                     "time_limit": 20
                 })
                 q_id += 1
 
-            # Question Type 3: Synonyms
-            if synonyms:
-                syn_word = synonyms[0]
-                other_words = [x["term"] for x in distractor_pool if x["term"] != term and x["term"] != syn_word]
-                if len(other_words) >= 3:
-                    distractors = random.sample(other_words, 3)
-                    opts = distractors + [syn_word]
+            # 3. Multiple Choice: Multiple Synonyms (khi có 2+ synonyms)
+            if synonyms and len(synonyms) >= 2:
+                correct_syns = synonyms[:2]
+                other_words = [x["term"] for x in distractor_pool if x["term"] not in correct_syns and x["term"] != term]
+                if len(other_words) >= 2:
+                    distractors = random.sample(other_words, 2)
+                    opts = correct_syns + distractors
                     random.shuffle(opts)
                     questions.append({
                         "id": f"q_{gc}_{q_id}",
-                        "type": "synonym",
-                        "type_label": "Từ Đồng Nghĩa",
-                        "question": f"Từ nào đồng nghĩa (synonym) với '{term}'?",
+                        "question_format": "multiple_choice",
+                        "type": "multiple_synonyms",
+                        "type_label": "Đa Tuyển (Nhiều Đáp Án)",
+                        "question": f"Chọn TẤT CẢ các từ/cụm từ đồng nghĩa (synonyms) của '{term}':\n(Chọn 2 đáp án đúng)",
                         "audio_text": term,
                         "phonetic": phonetic,
                         "options": opts,
-                        "correct_answer": syn_word,
-                        "explanation": f"'{term}' = {', '.join(synonyms)}: {meaning}.",
-                        "points": 1200,
-                        "time_limit": 25
+                        "correct_answers": correct_syns,
+                        "correct_answer": ", ".join(correct_syns),
+                        "hint": {
+                            "short": f"Có 2 từ đồng nghĩa đúng trong 4 phương án. Nghĩa chung: {meaning}.",
+                            "phonetic": phonetic,
+                            "vietnamese": meaning
+                        },
+                        "explanation": f"Các từ đồng nghĩa của '{term}' là: {', '.join(synonyms)}. Nghĩa: {meaning}.",
+                        "points": 1500,
+                        "time_limit": 30
                     })
                     q_id += 1
 
-            # Question Type 4: Sentence Context
+            # 4. Fill in the Blank: Sentence Context (Type-in)
             if examples and len(examples) > 0:
                 eg = examples[0]
                 en_sentence = eg["en"]
                 vi_trans = eg.get("vi", "")
                 
-                # Blank out root of term
-                root = term.split()[0]
-                if len(root) >= 4 and root.lower() in en_sentence.lower():
-                    pattern = re.compile(re.escape(root), re.IGNORECASE)
+                if len(root_word) >= 3 and root_word.lower() in en_sentence.lower():
+                    pattern = re.compile(re.escape(root_word), re.IGNORECASE)
                     blanked = pattern.sub("________", en_sentence, count=1)
-                    other_terms = [x["term"] for x in distractor_pool if x["term"] != term]
-                    if len(other_terms) >= 3:
-                        distractors = random.sample(other_terms, 3)
-                        opts = distractors + [term]
-                        random.shuffle(opts)
-                        questions.append({
-                            "id": f"q_{gc}_{q_id}",
-                            "type": "fill_blank",
-                            "type_label": "Điền Từ Vào Câu",
-                            "question": f"Điền từ thích hợp vào chỗ trống:\n\n\"{blanked}\"" + (f"\n\n({vi_trans})" if vi_trans else ""),
-                            "audio_text": en_sentence,
+                    valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower()]))
+                    questions.append({
+                        "id": f"q_{gc}_{q_id}",
+                        "question_format": "fill_blank",
+                        "type": "fill_blank_sentence",
+                        "type_label": "Điền Từ Khuyết (Tự Gõ)",
+                        "question": f"Gõ từ tiếng Anh thích hợp vào chỗ trống:\n\n\"{blanked}\"" + (f"\n\n(Nghĩa gợi ý: {meaning})" if meaning else ""),
+                        "audio_text": en_sentence,
+                        "phonetic": phonetic,
+                        "options": [],
+                        "correct_answers": valid_answers,
+                        "correct_answer": term,
+                        "hint": {
+                            "short": f"Bắt đầu bằng chữ '{term[0].upper()}...', gồm {len(root_word)} ký tự.",
                             "phonetic": phonetic,
-                            "options": opts,
-                            "correct_answer": term,
-                            "explanation": f"Câu hoàn chỉnh: \"{en_sentence}\"\n({vi_trans})",
-                            "points": 1500,
-                            "time_limit": 30
-                        })
-                        q_id += 1
+                            "vietnamese": meaning,
+                            "first_letter": term[0].upper(),
+                            "length": len(root_word)
+                        },
+                        "explanation": f"Câu hoàn chỉnh: \"{en_sentence}\"\n({vi_trans})",
+                        "points": 1500,
+                        "time_limit": 30
+                    })
+                    q_id += 1
+            else:
+                valid_answers = list(set([term.strip(), root_word.strip(), clean_term_lower, root_word.lower()]))
+                questions.append({
+                    "id": f"q_{gc}_{q_id}",
+                    "question_format": "fill_blank",
+                    "type": "fill_blank_vocab",
+                    "type_label": "Điền Từ Khuyết (Tự Gõ)",
+                    "question": f"Gõ từ tiếng Anh có nghĩa là: '{meaning}'\nPhiên âm: {phonetic}",
+                    "audio_text": term,
+                    "phonetic": phonetic,
+                    "options": [],
+                    "correct_answers": valid_answers,
+                    "correct_answer": term,
+                    "hint": {
+                        "short": f"Từ bắt đầu bằng '{term[0].upper()}...', gồm {len(term.replace(' ', ''))} ký tự.",
+                        "phonetic": phonetic,
+                        "vietnamese": meaning,
+                        "first_letter": term[0].upper(),
+                        "length": len(term.replace(" ", ""))
+                    },
+                    "explanation": f"Từ tiếng Anh chính xác là '{term}' {phonetic}: {meaning}.",
+                    "points": 1500,
+                    "time_limit": 30
+                })
+                q_id += 1
 
-        # Question Type 5: Listening challenge
+        # 5. Multiple Choice: Category / POS questions
+        target_nouns = [v["term"] for v in target_pool if "(n)" in v.get("pos", "").lower() or "n." in v.get("pos", "").lower()]
+        other_non_nouns = [v["term"] for v in distractor_pool if "(v)" in v.get("pos", "").lower() or "(adj)" in v.get("pos", "").lower()]
+        if len(target_nouns) >= 2 and len(other_non_nouns) >= 2:
+            c_nouns = random.sample(target_nouns, 2)
+            d_words = random.sample(other_non_nouns, 2)
+            opts = c_nouns + d_words
+            random.shuffle(opts)
+            questions.append({
+                "id": f"q_{gc}_{q_id}",
+                "question_format": "multiple_choice",
+                "type": "multiple_pos",
+                "type_label": "Đa Tuyển (Nhóm Danh Từ)",
+                "question": "Chọn TẤT CẢ các danh từ (Nouns) trong 4 từ sau:\n(Chọn 2 đáp án đúng)",
+                "audio_text": "Choose all nouns",
+                "phonetic": "",
+                "options": opts,
+                "correct_answers": c_nouns,
+                "correct_answer": ", ".join(c_nouns),
+                "hint": {
+                    "short": "Tìm 2 từ đóng vai trò danh từ (chỉ người, sự vật, hành động/chính sách) trong 4 phương án.",
+                    "vietnamese": "Danh từ thường kết thúc bằng đuôi -al, -tion, -ment, -cy, -er..."
+                },
+                "explanation": f"Các danh từ đúng là: {', '.join(c_nouns)}.",
+                "points": 1500,
+                "time_limit": 25
+            })
+            q_id += 1
+
+        # 6. Single Choice: Listening challenge
         if target_pool:
-            listen_sample = random.sample(target_pool, min(3, len(target_pool)))
+            listen_sample = random.sample(target_pool, min(2, len(target_pool)))
             for lv in listen_sample:
                 l_term = lv["term"]
+                l_meaning = lv.get("meaning", "")
                 other_terms = [x["term"] for x in distractor_pool if x["term"] != l_term]
                 if len(other_terms) >= 3:
                     distractors = random.sample(other_terms, 3)
@@ -544,21 +630,28 @@ def extract_all():
                     random.shuffle(opts)
                     questions.append({
                         "id": f"q_{gc}_{q_id}",
+                        "question_format": "single_choice",
                         "type": "audio_listening",
                         "type_label": "🎧 Nghe & Chọn Từ",
                         "question": "Hãy lắng nghe phát âm và chọn từ chính xác:",
                         "audio_text": l_term,
                         "phonetic": lv.get("phonetic", ""),
                         "options": opts,
+                        "correct_answers": [l_term],
                         "correct_answer": l_term,
-                        "explanation": f"Từ được phát âm là '{l_term}' {lv.get('phonetic', '')}: {lv.get('meaning', '')}",
+                        "hint": {
+                            "short": f"Nghĩa tiếng Việt: {l_meaning}. Bắt đầu bằng '{l_term[0].upper()}'.",
+                            "phonetic": lv.get("phonetic", ""),
+                            "vietnamese": l_meaning
+                        },
+                        "explanation": f"Từ được phát âm là '{l_term}' {lv.get('phonetic', '')}: {l_meaning}",
                         "points": 1200,
                         "time_limit": 25
                     })
                     q_id += 1
 
         random.shuffle(questions)
-        game["questions"] = questions[:20]
+        game["questions"] = questions[:25]
 
     # Save outputs
     with open('/Users/andynguyen/workspace/35-days/days_data.json', 'w', encoding='utf-8') as f:

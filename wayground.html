@@ -55,12 +55,17 @@
     .opt-green:hover { background-color: #207409; }
 
     .btn-quizizz {
-      transition: transform 0.08s ease, border-bottom-width 0.08s ease;
+      transition: transform 0.08s ease, border-bottom-width 0.08s ease, box-shadow 0.08s ease;
       user-select: none;
     }
     .btn-quizizz:active {
       transform: translateY(3px);
       border-bottom-width: 1px;
+    }
+
+    /* Multi-select active state */
+    .btn-quizizz.is-selected {
+      box-shadow: 0 0 0 2px #ffffff inset;
     }
 
     @keyframes shake {
@@ -108,7 +113,7 @@
       <div class="space-y-1">
         <span class="text-[11px] uppercase font-semibold tracking-wider text-indigo-400">Đấu Trường Trắc Nghiệm</span>
         <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Tham Gia Trận Đấu Wayground</h1>
-        <p class="text-xs text-zinc-400">Nhập mã Game PIN hoặc chọn nhanh từ bộ 26 trận ôn tập có sẵn</p>
+        <p class="text-xs text-zinc-400">Hỗ trợ trắc nghiệm 1 đáp án, nhiều đáp án, điền từ khuyết và gợi ý</p>
       </div>
 
       <!-- PIN Input -->
@@ -142,9 +147,9 @@
           <div>
             <label class="font-medium text-zinc-400 block mb-1">Thời gian mỗi câu:</label>
             <select id="settingTime" class="w-full bg-zinc-900 border border-zinc-700 rounded-md p-1.5 text-xs text-white focus:outline-none focus:border-indigo-500">
-              <option value="20" selected>20 giây</option>
+              <option value="25" selected>25 giây (Chuẩn)</option>
               <option value="15">15 giây (Thử thách)</option>
-              <option value="30">30 giây (Thoải mái)</option>
+              <option value="35">35 giây (Thoải mái)</option>
             </select>
           </div>
         </div>
@@ -197,8 +202,8 @@
           <span id="arenaQCounter" class="px-2.5 py-1 rounded-md bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono tabular-nums">
             Câu 1 / 20
           </span>
-          <span id="arenaQTypeBadge" class="hidden sm:inline-block px-2 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/60 text-zinc-400 text-[11px]">
-            Nghĩa của từ
+          <span id="arenaQTypeBadge" class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-zinc-800 border border-zinc-700 text-zinc-300 text-[11px] font-medium">
+            Đơn tuyển
           </span>
         </div>
 
@@ -219,8 +224,14 @@
       </div>
     </div>
 
-    <!-- Power-Ups Dock (Clean Hairline Controls) -->
-    <div class="flex items-center justify-center gap-2 py-1">
+    <!-- Power-Ups & Actions Dock (Clean Hairline Controls) -->
+    <div class="flex items-center justify-center gap-2 py-1 flex-wrap">
+      <!-- Hint Button -->
+      <button onclick="toggleQuestionHint()" id="btn-hint" class="h-7 px-3 rounded-lg border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-medium flex items-center gap-1.5 transition" title="Xem gợi ý câu hỏi (phím H)">
+        <i class="fa-regular fa-lightbulb text-amber-400"></i>
+        <span>Gợi ý (H)</span>
+      </button>
+
       <button onclick="usePowerup('freeze')" id="pu-freeze" class="h-7 px-3 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs font-medium flex items-center gap-1.5 transition" title="Đóng băng thời gian thêm 10s">
         <span>Freeze (+10s)</span>
       </button>
@@ -233,7 +244,7 @@
     </div>
 
     <!-- Question Box (Clean Hairline Surface) -->
-    <div class="wg-card rounded-xl p-6 sm:p-8 my-auto text-center space-y-3 shadow-xs">
+    <div class="wg-card rounded-xl p-5 sm:p-7 my-auto text-center space-y-3 shadow-xs">
       <div class="flex items-center justify-center gap-2 flex-wrap">
         <button onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-md border border-zinc-700 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-medium text-xs flex items-center gap-1.5 transition" title="Nghe phát âm">
           <i class="fa-solid fa-volume-high text-[11px]"></i>
@@ -245,29 +256,78 @@
       <h2 id="arenaPrompt" class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-relaxed whitespace-pre-line">
         Câu hỏi đang tải...
       </h2>
+
+      <!-- Hint Box (Toggled by user) -->
+      <div id="arenaHintBox" class="p-3.5 rounded-lg bg-amber-950/30 border border-amber-500/30 text-xs text-amber-200 text-left space-y-1.5 hidden transition">
+        <div class="flex items-center justify-between font-semibold text-amber-300">
+          <span class="flex items-center gap-1.5">
+            <i class="fa-solid fa-lightbulb text-amber-400 text-xs"></i> Gợi ý câu hỏi:
+          </span>
+          <button type="button" onclick="toggleQuestionHint()" class="text-amber-400/80 hover:text-amber-200 text-xs font-normal">Đóng ✕</button>
+        </div>
+        <div id="hintShortText" class="font-medium"></div>
+        <div id="hintDetailsText" class="text-[11px] text-amber-300/80 flex items-center gap-3 flex-wrap"></div>
+      </div>
     </div>
 
-    <!-- 4 Quizizz Answer Buttons Grid (Tactile 3D Bevel with Flat Colors) -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-3">
-      <button onclick="submitAnswer(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3">
-        <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">▲</span>
-        <span id="optText-0" class="flex-1 leading-snug">Lựa chọn A</span>
-      </button>
+    <!-- INTERACTION AREA 1: 4 Quizizz Buttons (For Single Choice & Multiple Choice) -->
+    <div id="optionsContainer" class="space-y-3 pt-3">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <!-- Option 0: Red -->
+        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">▲</span>
+          <span id="optText-0" class="flex-1 leading-snug">Lựa chọn A</span>
+          <span id="optCheck-0" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
+        </button>
 
-      <button onclick="submitAnswer(1)" id="optBtn-1" class="opt-blue btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3">
-        <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">◆</span>
-        <span id="optText-1" class="flex-1 leading-snug">Lựa chọn B</span>
-      </button>
+        <!-- Option 1: Blue -->
+        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-blue btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">◆</span>
+          <span id="optText-1" class="flex-1 leading-snug">Lựa chọn B</span>
+          <span id="optCheck-1" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
+        </button>
 
-      <button onclick="submitAnswer(2)" id="optBtn-2" class="opt-yellow btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3">
-        <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">●</span>
-        <span id="optText-2" class="flex-1 leading-snug">Lựa chọn C</span>
-      </button>
+        <!-- Option 2: Yellow -->
+        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-yellow btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">●</span>
+          <span id="optText-2" class="flex-1 leading-snug">Lựa chọn C</span>
+          <span id="optCheck-2" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
+        </button>
 
-      <button onclick="submitAnswer(3)" id="optBtn-3" class="opt-green btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3">
-        <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">■</span>
-        <span id="optText-3" class="flex-1 leading-snug">Lựa chọn D</span>
-      </button>
+        <!-- Option 3: Green -->
+        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-green btn-quizizz rounded-xl p-4 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
+          <span class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs">■</span>
+          <span id="optText-3" class="flex-1 leading-snug">Lựa chọn D</span>
+          <span id="optCheck-3" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
+        </button>
+      </div>
+
+      <!-- Multiple Choice Confirmation Submit Bar -->
+      <div id="multiSubmitBar" class="p-3 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-between gap-3 hidden">
+        <div class="text-xs text-zinc-300">
+          <i class="fa-solid fa-circle-check text-indigo-400 mr-1.5"></i>
+          Đã chọn: <strong id="multiSelectedCount" class="text-white font-bold tabular-nums">0</strong> đáp án (Chọn tất cả đáp án đúng)
+        </div>
+        <button onclick="submitMultiAnswer()" id="btnSubmitMulti" class="h-9 px-4 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs">
+          <span>Gửi Đáp Án (Enter)</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- INTERACTION AREA 2: Type-in Answer Box (For Fill in the Blank) -->
+    <div id="typeInContainer" class="wg-card rounded-xl p-5 space-y-3 pt-4 hidden">
+      <div class="text-xs text-zinc-400 flex items-center justify-between">
+        <span><i class="fa-solid fa-keyboard mr-1.5 text-indigo-400"></i> Gõ từ tiếng Anh còn thiếu vào ô bên dưới:</span>
+        <span class="text-[11px] text-zinc-500">Nhấn Enter để gửi</span>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center gap-2.5">
+        <input type="text" id="typeInInput" placeholder="Nhập từ tiếng Anh..." class="w-full h-11 px-4 text-center sm:text-left text-base sm:text-lg font-mono font-bold rounded-lg bg-zinc-900 border border-zinc-700 focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white placeholder:text-zinc-600 outline-none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <button onclick="submitTypeInAnswer()" class="w-full sm:w-auto h-11 px-6 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs whitespace-nowrap transition flex items-center justify-center gap-2 shrink-0">
+          <span>Gửi Đáp Án</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
     </div>
 
     <!-- Simulated Live Status Footer -->
@@ -289,7 +349,13 @@
       <div id="feedbackIcon" class="text-4xl">🎉</div>
       <h3 id="feedbackTitle" class="text-lg font-bold">XUẤT SẮC!</h3>
       <div id="feedbackPoints" class="text-xl font-bold font-mono text-emerald-400 tabular-nums">+1,450 pts</div>
-      <p id="feedbackExplanation" class="text-xs text-zinc-300 bg-zinc-900 p-3 rounded-lg leading-relaxed text-left border border-zinc-800"></p>
+      
+      <div id="feedbackChosenDetails" class="text-xs text-left p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 space-y-1">
+        <div id="feedbackUserChoice" class="text-zinc-300"></div>
+        <div id="feedbackCorrectChoice" class="text-emerald-400 font-medium"></div>
+      </div>
+
+      <p id="feedbackExplanation" class="text-xs text-zinc-400 leading-relaxed text-left"></p>
       
       <button onclick="proceedToNextQuestion()" class="w-full h-10 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-xs transition">
         Câu tiếp theo <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -405,11 +471,13 @@
     let correctCount = 0;
     let answeredLog = [];
     let timerInterval = null;
-    let timeLeft = 20;
-    let totalTime = 20;
+    let timeLeft = 25;
+    let totalTime = 25;
     let soundEnabled = true;
     let selectedAvatar = '👾';
     let powerups = { freeze: false, '5050': false, '2x': false };
+    let multiSelectedIndices = new Set();
+    let hintOpen = false;
 
     // Audio synthesizer
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -534,7 +602,7 @@
     function startGame(game) {
       currentGame = game;
       const qCountSetting = parseInt(document.getElementById('settingQCount').value) || 20;
-      const timeSetting = parseInt(document.getElementById('settingTime').value) || 20;
+      const timeSetting = parseInt(document.getElementById('settingTime').value) || 25;
 
       let allQ = JSON.parse(JSON.stringify(game.questions || []));
       allQ.sort(() => Math.random() - 0.5);
@@ -583,27 +651,84 @@
       }
 
       const q = currentQuestions[currentQIndex];
-      totalTime = q.time_limit || 20;
+      totalTime = q.time_limit || 25;
       timeLeft = totalTime;
 
+      // Close hint if open
+      hintOpen = false;
+      document.getElementById('arenaHintBox').classList.add('hidden');
+
+      // Question format setup
+      const format = q.question_format || (q.options && q.options.length > 0 ? 'single_choice' : 'fill_blank');
+      multiSelectedIndices.clear();
+
       document.getElementById('arenaQCounter').innerText = `Câu ${currentQIndex + 1} / ${currentQuestions.length}`;
-      document.getElementById('arenaQTypeBadge').innerText = q.type_label || 'Trắc nghiệm';
       document.getElementById('arenaStreakText').innerText = `STREAK x${streak + 1}`;
       document.getElementById('arenaScore').innerText = score.toLocaleString();
       document.getElementById('arenaPhonetic').innerText = q.phonetic || '';
       document.getElementById('arenaPrompt').innerText = q.question;
 
-      for (let i = 0; i < 4; i++) {
-        const btn = document.getElementById(`optBtn-${i}`);
-        const txt = document.getElementById(`optText-${i}`);
-        if (q.options[i]) {
-          btn.style.display = 'flex';
-          btn.disabled = false;
-          btn.style.opacity = '1';
-          btn.classList.remove('animate-shake');
-          txt.innerText = q.options[i];
+      // Update badge label
+      const badge = document.getElementById('arenaQTypeBadge');
+      if (format === 'single_choice') {
+        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span> ${q.type_label || 'Đơn tuyển (1 đáp án)'}`;
+      } else if (format === 'multiple_choice') {
+        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span> ${q.type_label || 'Đa tuyển (Chọn nhiều)'}`;
+      } else if (format === 'fill_blank') {
+        badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> ${q.type_label || 'Điền từ khuyết (Gõ từ)'}`;
+      }
+
+      // Populate Hint content
+      const hint = q.hint || {};
+      document.getElementById('hintShortText').innerText = hint.short || `Từ loại: ${q.pos || 'N/A'}`;
+      let detailsHtml = '';
+      if (hint.phonetic || q.phonetic) detailsHtml += `<span>Phiên âm: <code>${hint.phonetic || q.phonetic}</code></span>`;
+      if (hint.vietnamese) detailsHtml += `<span>Nghĩa: ${hint.vietnamese}</span>`;
+      document.getElementById('hintDetailsText').innerHTML = detailsHtml;
+
+      const optContainer = document.getElementById('optionsContainer');
+      const multiBar = document.getElementById('multiSubmitBar');
+      const typeInContainer = document.getElementById('typeInContainer');
+
+      if (format === 'fill_blank') {
+        optContainer.classList.add('hidden');
+        multiBar.classList.add('hidden');
+        typeInContainer.classList.remove('hidden');
+        const inputEl = document.getElementById('typeInInput');
+        inputEl.value = '';
+        setTimeout(() => inputEl.focus(), 150);
+      } else {
+        typeInContainer.classList.add('hidden');
+        optContainer.classList.remove('hidden');
+
+        if (format === 'multiple_choice') {
+          multiBar.classList.remove('hidden');
+          document.getElementById('multiSelectedCount').innerText = '0';
         } else {
-          btn.style.display = 'none';
+          multiBar.classList.add('hidden');
+        }
+
+        for (let i = 0; i < 4; i++) {
+          const btn = document.getElementById(`optBtn-${i}`);
+          const txt = document.getElementById(`optText-${i}`);
+          const chk = document.getElementById(`optCheck-${i}`);
+
+          if (q.options && q.options[i]) {
+            btn.style.display = 'flex';
+            btn.disabled = false;
+            btn.style.opacity = '1';
+            btn.classList.remove('animate-shake', 'is-selected');
+            txt.innerText = q.options[i];
+
+            if (format === 'multiple_choice') {
+              chk.classList.remove('hidden');
+              chk.innerText = '';
+            } else {
+              chk.classList.add('hidden');
+            }
+          } else {
+            btn.style.display = 'none';
+          }
         }
       }
 
@@ -613,8 +738,8 @@
 
       document.getElementById('pu-freeze').disabled = powerups.freeze;
       document.getElementById('pu-freeze').style.opacity = powerups.freeze ? '0.4' : '1';
-      document.getElementById('pu-5050').disabled = powerups['5050'];
-      document.getElementById('pu-5050').style.opacity = powerups['5050'] ? '0.4' : '1';
+      document.getElementById('pu-5050').disabled = powerups['5050'] || format === 'fill_blank';
+      document.getElementById('pu-5050').style.opacity = (powerups['5050'] || format === 'fill_blank') ? '0.4' : '1';
       document.getElementById('pu-2x').disabled = powerups['2x'];
       document.getElementById('pu-2x').style.opacity = powerups['2x'] ? '0.4' : '1';
 
@@ -643,6 +768,58 @@
       }
     }
 
+    function toggleQuestionHint() {
+      hintOpen = !hintOpen;
+      const box = document.getElementById('arenaHintBox');
+      if (hintOpen) {
+        box.classList.remove('hidden');
+        playSound('streak');
+      } else {
+        box.classList.add('hidden');
+      }
+    }
+
+    function handleOptionClick(idx) {
+      const q = currentQuestions[currentQIndex];
+      const format = q.question_format || 'single_choice';
+
+      if (format === 'single_choice') {
+        submitAnswer([idx]);
+      } else if (format === 'multiple_choice') {
+        const btn = document.getElementById(`optBtn-${idx}`);
+        const chk = document.getElementById(`optCheck-${idx}`);
+
+        if (multiSelectedIndices.has(idx)) {
+          multiSelectedIndices.delete(idx);
+          btn.classList.remove('is-selected');
+          chk.innerText = '';
+        } else {
+          multiSelectedIndices.add(idx);
+          btn.classList.add('is-selected');
+          chk.innerText = '✓';
+        }
+
+        document.getElementById('multiSelectedCount').innerText = multiSelectedIndices.size;
+      }
+    }
+
+    function submitMultiAnswer() {
+      if (multiSelectedIndices.size === 0) {
+        alert('Vui lòng chọn ít nhất một đáp án trước khi bấm Gửi!');
+        return;
+      }
+      submitAnswer(Array.from(multiSelectedIndices));
+    }
+
+    function submitTypeInAnswer() {
+      const val = document.getElementById('typeInInput').value.trim();
+      if (!val) {
+        alert('Vui lòng nhập câu trả lời!');
+        return;
+      }
+      submitAnswer(val);
+    }
+
     function usePowerup(type) {
       if (powerups[type]) return;
       powerups[type] = true;
@@ -653,9 +830,10 @@
         playSound('streak');
       } else if (type === '5050') {
         const q = currentQuestions[currentQIndex];
+        const correctList = (q.correct_answers || [q.correct_answer]).map(x => x.toLowerCase().trim());
         const wrongIdxs = [];
-        q.options.forEach((opt, idx) => {
-          if (opt !== q.correct_answer) wrongIdxs.push(idx);
+        (q.options || []).forEach((opt, idx) => {
+          if (!correctList.includes(opt.toLowerCase().trim())) wrongIdxs.push(idx);
         });
         wrongIdxs.sort(() => Math.random() - 0.5);
         if (wrongIdxs[0] !== undefined) document.getElementById(`optBtn-${wrongIdxs[0]}`).style.opacity = '0.2';
@@ -669,11 +847,40 @@
       document.getElementById(`pu-${type}`).style.opacity = '0.4';
     }
 
-    function submitAnswer(chosenIdx) {
+    function submitAnswer(chosen) {
       clearInterval(timerInterval);
       const q = currentQuestions[currentQIndex];
-      const isCorrect = chosenIdx >= 0 && q.options[chosenIdx] === q.correct_answer;
+      const format = q.question_format || (q.options && q.options.length > 0 ? 'single_choice' : 'fill_blank');
       const timeSpent = totalTime - timeLeft;
+
+      let isCorrect = false;
+      let chosenText = '';
+      const correctAnswersList = q.correct_answers || [q.correct_answer];
+
+      if (chosen === -1) {
+        chosenText = 'Hết thời gian';
+        isCorrect = false;
+      } else if (format === 'single_choice') {
+        const chosenIdx = chosen[0];
+        chosenText = q.options[chosenIdx] || '';
+        const normChosen = chosenText.toLowerCase().trim();
+        isCorrect = correctAnswersList.some(ans => ans.toLowerCase().trim() === normChosen);
+      } else if (format === 'multiple_choice') {
+        const chosenTexts = chosen.map(idx => q.options[idx].toLowerCase().trim());
+        const correctTexts = correctAnswersList.map(ans => ans.toLowerCase().trim());
+        chosenText = chosen.map(idx => q.options[idx]).join(' • ');
+
+        // Check if all chosen texts match and lengths are equal
+        isCorrect = (chosenTexts.length === correctTexts.length) && 
+                    chosenTexts.every(t => correctTexts.includes(t));
+      } else if (format === 'fill_blank') {
+        chosenText = String(chosen).trim();
+        const normInput = chosenText.toLowerCase().replace(/^[,\.\'\"]+|[,\.\'\"]+$/g, '').trim();
+        isCorrect = correctAnswersList.some(ans => {
+          const normAns = ans.toLowerCase().replace(/^[,\.\'\"]+|[,\.\'\"]+$/g, '').trim();
+          return normAns === normInput || (normAns.length > 3 && normInput.includes(normAns));
+        });
+      }
 
       let gained = 0;
       if (isCorrect) {
@@ -696,30 +903,37 @@
       } else {
         streak = 0;
         playSound('wrong');
-        if (chosenIdx >= 0) {
-          document.getElementById(`optBtn-${chosenIdx}`).classList.add('animate-shake');
+        if (format === 'single_choice' && chosen[0] !== undefined && chosen[0] >= 0) {
+          document.getElementById(`optBtn-${chosen[0]}`).classList.add('animate-shake');
         }
       }
 
+      const correctDisplay = correctAnswersList.join(' • ');
       answeredLog.push({
         question: q.question,
-        chosen: chosenIdx >= 0 ? q.options[chosenIdx] : 'Hết giờ',
-        correct: q.correct_answer,
+        format: format,
+        chosen: chosenText,
+        correct: correctDisplay,
         isCorrect: isCorrect,
         explanation: q.explanation,
         timeSpent: timeSpent.toFixed(1)
       });
 
-      showFeedbackModal(isCorrect, gained, q.explanation);
+      showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation);
     }
 
-    function showFeedbackModal(isCorrect, gained, explanation) {
+    function showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, explanation) {
       const modal = document.getElementById('feedbackModal');
       const card = document.getElementById('feedbackCard');
       const icon = document.getElementById('feedbackIcon');
       const title = document.getElementById('feedbackTitle');
       const pts = document.getElementById('feedbackPoints');
+      const userChoiceEl = document.getElementById('feedbackUserChoice');
+      const correctChoiceEl = document.getElementById('feedbackCorrectChoice');
       const expl = document.getElementById('feedbackExplanation');
+
+      userChoiceEl.innerHTML = `<strong>Bạn chọn/gõ:</strong> ${chosenText}`;
+      correctChoiceEl.innerHTML = `<strong>Đáp án đúng:</strong> ${correctDisplay}`;
 
       if (isCorrect) {
         card.className = 'wg-card rounded-xl p-6 max-w-sm w-full text-center space-y-3.5 shadow-xl border border-emerald-500/60 bg-zinc-900';
@@ -729,6 +943,7 @@
         title.className = 'text-base font-bold text-emerald-400';
         pts.style.display = 'block';
         pts.innerText = `+${gained.toLocaleString()} pts`;
+        correctChoiceEl.style.display = 'none';
       } else {
         card.className = 'wg-card rounded-xl p-6 max-w-sm w-full text-center space-y-3.5 shadow-xl border border-rose-500/60 bg-zinc-900';
         icon.innerText = '✕';
@@ -736,6 +951,7 @@
         title.innerText = 'CHƯA CHÍNH XÁC';
         title.className = 'text-base font-bold text-rose-400';
         pts.style.display = 'none';
+        correctChoiceEl.style.display = 'block';
       }
 
       expl.innerText = explanation || '';
@@ -810,7 +1026,7 @@
           <div class="text-xs sm:text-sm font-medium text-white">${log.question}</div>
           <div class="text-xs space-y-0.5 pt-1">
             <div class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'} text-[11px]">
-              <strong>Bạn chọn:</strong> ${log.chosen}
+              <strong>Bạn chọn/gõ:</strong> ${log.chosen}
             </div>
             ${!log.isCorrect ? `<div class="text-emerald-400 text-[11px]"><strong>Đáp án đúng:</strong> ${log.correct}</div>` : ''}
             <div class="text-zinc-400 text-[11px] pt-0.5 leading-relaxed">${log.explanation || ''}</div>
@@ -842,16 +1058,53 @@
     });
 
     window.addEventListener('keydown', (e) => {
+      // If typing in input, don't hijack keyboard
+      if (document.activeElement && (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'SELECT')) {
+        if (e.key === 'Enter') {
+          if (!document.getElementById('joinScreen').classList.contains('hidden')) {
+            handleJoinGame();
+          } else if (!document.getElementById('typeInContainer').classList.contains('hidden')) {
+            submitTypeInAnswer();
+          }
+        }
+        return;
+      }
+
       if (document.getElementById('gameArena').classList.contains('hidden')) {
         if (e.key === 'Enter' && !document.getElementById('joinScreen').classList.contains('hidden')) {
           handleJoinGame();
         }
         return;
       }
-      if (e.key === '1' || e.key === 'a' || e.key === 'A') submitAnswer(0);
-      if (e.key === '2' || e.key === 'b' || e.key === 'B') submitAnswer(1);
-      if (e.key === '3' || e.key === 'c' || e.key === 'C') submitAnswer(2);
-      if (e.key === '4' || e.key === 'd' || e.key === 'D') submitAnswer(3);
+
+      // In feedback modal
+      if (!document.getElementById('feedbackModal').classList.contains('hidden')) {
+        if (e.key === 'Enter' || e.code === 'Space') {
+          proceedToNextQuestion();
+        }
+        return;
+      }
+
+      const q = currentQuestions[currentQIndex];
+      const format = q ? q.question_format : 'single_choice';
+
+      if (e.key === 'h' || e.key === 'H') {
+        toggleQuestionHint();
+        return;
+      }
+
+      if (format === 'multiple_choice' && e.key === 'Enter') {
+        submitMultiAnswer();
+        return;
+      }
+
+      if (format === 'single_choice' || format === 'multiple_choice') {
+        if (e.key === '1' || e.key === 'a' || e.key === 'A') handleOptionClick(0);
+        if (e.key === '2' || e.key === 'b' || e.key === 'B') handleOptionClick(1);
+        if (e.key === '3' || e.key === 'c' || e.key === 'C') handleOptionClick(2);
+        if (e.key === '4' || e.key === 'd' || e.key === 'D') handleOptionClick(3);
+      }
+
       if (e.code === 'Space') {
         e.preventDefault();
         playArenaSpeech();
