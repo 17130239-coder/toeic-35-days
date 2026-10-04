@@ -320,9 +320,9 @@
       <!-- Question Text Prompt (Right side or Centered if no image) -->
       <div id="arenaPromptBox" class="flex flex-col items-center md:items-start text-center md:text-left space-y-3 max-w-2xl">
         <div class="flex items-center gap-2">
-          <button onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition" title="Nghe phát âm">
-            <i class="fa-solid fa-volume-high text-[11px]"></i>
-            <span>Nghe phát âm</span>
+          <button id="btnSpeech" type="button" onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition cursor-pointer" title="Nghe phát âm từ vựng (Phím Space)">
+            <i id="speechIcon" class="fa-solid fa-volume-high text-[11px]"></i>
+            <span id="speechText">Nghe phát âm</span>
           </button>
           <span id="arenaPhonetic" class="text-xs font-mono text-zinc-300"></span>
         </div>
@@ -463,6 +463,14 @@
       </div>
 
       <p id="feedbackExplanation" class="text-xs text-zinc-400 leading-relaxed text-left"></p>
+
+      <!-- Explanation Audio Recording Player -->
+      <div id="feedbackAudioContainer" class="hidden pt-1">
+        <button id="feedbackAudioBtn" type="button" onclick="toggleExplanationAudio()" class="w-full h-9 rounded-lg border border-purple-500/40 bg-purple-500/15 hover:bg-purple-500/25 text-purple-200 text-xs font-medium flex items-center justify-center gap-2 transition cursor-pointer">
+          <i id="feedbackAudioIcon" class="fa-solid fa-headphones text-purple-400"></i>
+          <span id="feedbackAudioText">Nghe cô giải thích chi tiết</span>
+        </button>
+      </div>
       
       <button onclick="proceedToNextQuestion()" class="w-full h-10 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition">
         Câu tiếp theo <i class="fa-solid fa-arrow-right ml-1"></i>
@@ -546,7 +554,7 @@
   </footer>
 
   <!-- LOAD QUIZ DATA -->
-  <script src="wayground_data.js?v=20261004_v9"></script>
+  <script src="wayground_data.js?v=20261004_v10"></script>
 
   <!-- WAYGROUND GAME ENGINE -->
   <script>
@@ -613,26 +621,148 @@
       icon.className = soundEnabled ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark text-zinc-500';
     }
 
-    // Audio / TTS pronunciation
+    // Global Audio & Pronunciation State Tracker
+    let currentSpeechAudio = null;
+    let currentExplanationAudioUrl = '';
+    let isSpeaking = false;
+
+    function stopAllAudio() {
+      if (currentSpeechAudio) {
+        currentSpeechAudio.pause();
+        currentSpeechAudio.currentTime = 0;
+        currentSpeechAudio = null;
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      isSpeaking = false;
+      updateSpeechButtonUI(false);
+      updateFeedbackAudioBtn(false);
+    }
+
+    // Extract clean, accurate English word/phrase for 1-second native pronunciation
+    function getPronunciationTerm(q) {
+      if (!q) return '';
+      if (q.audio_text && /^[a-zA-Z\s'-]+$/.test(q.audio_text.trim())) {
+        return q.audio_text.trim();
+      }
+      
+      const qClean = (q.question || '').trim();
+      const engHeadMatch = qClean.match(/^([a-zA-Z\s'-]{2,35})(?:\s*\/[^\/]+\/|\s*\([a-z\/]+\)|\s*=|\s*#)/i);
+      if (engHeadMatch && engHeadMatch[1].trim().length > 1) {
+        return engHeadMatch[1].trim();
+      }
+
+      const correctList = q.correct_answers || (q.correct_answer ? [q.correct_answer] : []);
+      for (const ans of correctList) {
+        const cleanAns = String(ans).replace(/<[^>]*>/g, '').trim();
+        if (/^[a-zA-Z\s'-]{2,40}$/.test(cleanAns)) {
+          return cleanAns;
+        }
+      }
+
+      if (/^[a-zA-Z\s'-]{2,50}$/.test(qClean)) {
+        return qClean;
+      }
+
+      if (q.options && q.options.length > 0) {
+        for (const opt of q.options) {
+          const optStr = typeof opt === 'string' ? opt : (opt.text || '');
+          if (/^[a-zA-Z\s'-]{2,40}$/.test(optStr.trim())) {
+            return optStr.trim();
+          }
+        }
+      }
+
+      return '';
+    }
+
+    // Pronunciation of English word (1-2s crisp TTS, togglable, stoppable)
     function playArenaSpeech() {
       if (!currentQuestions[currentQIndex]) return;
+
+      // If already speaking, clicking button STOPS speech immediately!
+      if (isSpeaking) {
+        stopAllAudio();
+        return;
+      }
+
+      stopAllAudio();
       const q = currentQuestions[currentQIndex];
-      if (q.audio_url) {
-        const audio = new Audio(q.audio_url);
-        audio.play().catch(() => playArenaTTS(q));
-      } else {
-        playArenaTTS(q);
+      const termToSpeak = getPronunciationTerm(q);
+
+      if (!termToSpeak) return;
+
+      if ('speechSynthesis' in window) {
+        isSpeaking = true;
+        updateSpeechButtonUI(true);
+        const u = new SpeechSynthesisUtterance(termToSpeak);
+        u.lang = 'en-US';
+        u.rate = 0.92;
+        u.onend = () => {
+          isSpeaking = false;
+          updateSpeechButtonUI(false);
+        };
+        u.onerror = () => {
+          isSpeaking = false;
+          updateSpeechButtonUI(false);
+        };
+        window.speechSynthesis.speak(u);
       }
     }
 
-    function playArenaTTS(q) {
-      const textToSpeak = q.audio_text || (q.correct_answers && q.correct_answers[0]) || q.question;
-      if ('speechSynthesis' in window && textToSpeak) {
-        window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(textToSpeak);
-        u.lang = 'en-US';
-        u.rate = 0.95;
-        window.speechSynthesis.speak(u);
+    function updateSpeechButtonUI(active) {
+      const btn = document.getElementById('btnSpeech');
+      const icon = document.getElementById('speechIcon');
+      const text = document.getElementById('speechText');
+      if (!btn || !icon || !text) return;
+      if (active) {
+        icon.className = 'fa-solid fa-square text-rose-400 text-[11px]';
+        text.innerText = 'Dừng';
+        btn.classList.add('border-rose-500/50', 'bg-rose-500/20');
+      } else {
+        icon.className = 'fa-solid fa-volume-high text-[11px]';
+        text.innerText = 'Nghe phát âm';
+        btn.classList.remove('border-rose-500/50', 'bg-rose-500/20');
+      }
+    }
+
+    // Explanation Teacher Recording Player (Togglable in Feedback modal)
+    function toggleExplanationAudio() {
+      if (currentSpeechAudio && !currentSpeechAudio.paused) {
+        stopAllAudio();
+        return;
+      }
+      stopAllAudio();
+      if (!currentExplanationAudioUrl) return;
+      currentSpeechAudio = new Audio(currentExplanationAudioUrl);
+      updateFeedbackAudioBtn(true);
+      currentSpeechAudio.play().catch(() => {
+        updateFeedbackAudioBtn(false);
+      });
+      currentSpeechAudio.onended = () => {
+        updateFeedbackAudioBtn(false);
+        currentSpeechAudio = null;
+      };
+      currentSpeechAudio.onerror = () => {
+        updateFeedbackAudioBtn(false);
+        currentSpeechAudio = null;
+      };
+    }
+
+    function updateFeedbackAudioBtn(playing) {
+      const icon = document.getElementById('feedbackAudioIcon');
+      const text = document.getElementById('feedbackAudioText');
+      const btn = document.getElementById('feedbackAudioBtn');
+      if (!btn || !icon || !text) return;
+      if (playing) {
+        icon.className = 'fa-solid fa-square text-rose-400';
+        text.innerText = 'Dừng nghe giải thích';
+        btn.classList.add('border-rose-500/50', 'bg-rose-500/20');
+      } else {
+        icon.className = 'fa-solid fa-headphones text-purple-400';
+        text.innerText = 'Nghe cô giải thích chi tiết';
+        btn.classList.remove('border-rose-500/50', 'bg-rose-500/20');
       }
     }
 
@@ -795,6 +925,7 @@
     }
 
     function loadQuestion() {
+      stopAllAudio();
       if (currentQIndex >= currentQuestions.length) {
         endGame();
         return;
@@ -943,10 +1074,6 @@
         }
       }
 
-      if (q.type === 'audio_listening') {
-        setTimeout(playArenaSpeech, 300);
-      }
-
       document.getElementById('pu-freeze').disabled = powerups.freeze;
       document.getElementById('pu-freeze').style.opacity = powerups.freeze ? '0.4' : '1';
       document.getElementById('pu-5050').disabled = powerups['5050'] || format === 'fill_blank';
@@ -1059,6 +1186,7 @@
     }
 
     function submitAnswer(chosen) {
+      stopAllAudio();
       clearInterval(timerInterval);
       const q = currentQuestions[currentQIndex];
       const format = q.question_format || (q.options && q.options.length > 0 ? 'single_choice' : 'fill_blank');
@@ -1248,17 +1376,30 @@
       }
 
       expl.innerText = explanation || '';
-      modal.classList.remove('hidden');
 
+      // Explanation Audio Recording Setup
+      const expAudioContainer = document.getElementById('feedbackAudioContainer');
+      const expAudioUrl = (q && q.explanation_media && q.explanation_media.audio) || (q && q.audio_url) || '';
+      currentExplanationAudioUrl = expAudioUrl;
+      if (expAudioUrl && expAudioContainer) {
+        expAudioContainer.classList.remove('hidden');
+        updateFeedbackAudioBtn(false);
+      } else if (expAudioContainer) {
+        expAudioContainer.classList.add('hidden');
+      }
+
+      modal.classList.remove('hidden');
     }
 
     function proceedToNextQuestion() {
+      stopAllAudio();
       document.getElementById('feedbackModal').classList.add('hidden');
       currentQIndex++;
       loadQuestion();
     }
 
     function endGame() {
+      stopAllAudio();
       document.getElementById('gameArena').classList.add('hidden');
       document.getElementById('summaryScreen').classList.remove('hidden');
 
@@ -1346,6 +1487,7 @@
 
     function confirmExitGame() {
       if (confirm('Bạn có chắc chắn muốn rời trận đấu hiện tại và quay về sảnh?')) {
+        stopAllAudio();
         clearInterval(timerInterval);
         document.getElementById('gameArena').classList.add('hidden');
         document.getElementById('feedbackModal').classList.add('hidden');

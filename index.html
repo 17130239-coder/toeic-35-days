@@ -700,7 +700,7 @@
   </div>
 
   <!-- LOAD DATA FILES -->
-  <script src="vocab_data.js?v=20261004_v8"></script>
+  <script src="vocab_data.js?v=20261004_v10"></script>
 
   <!-- APPLICATION SCRIPT -->
   <script>
@@ -942,6 +942,8 @@
     }
 
     function closeDayModal() {
+      stopInQuizAudio();
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       document.getElementById('dayModal').classList.add('hidden');
       document.body.style.overflow = '';
     }
@@ -1820,6 +1822,7 @@
     }
 
     function renderInQuizCurrentQuestion() {
+      stopInQuizAudio();
       if (!currentInQuizData || !currentInQuizData.questions || currentInQuizData.questions.length === 0) {
         const playerArea = document.getElementById('inQuizPlayerArea');
         if (playerArea) {
@@ -1912,9 +1915,6 @@
         multiSubmitArea.classList.add('hidden');
         renderInQuizOptions(q, false);
       }
-
-      // Auto play audio
-      playInQuizAudio();
     }
 
     function renderInQuizOptions(q, isMulti) {
@@ -2103,6 +2103,7 @@
     }
 
     function processInQuizFeedback(isCorrect, q) {
+      stopInQuizAudio();
       if (isCorrect) {
         currentInQuizScore += (1000 + (currentInQuizStreak * 100));
         currentInQuizStreak++;
@@ -2145,11 +2146,13 @@
     }
 
     function nextInQuizQuestion() {
+      stopInQuizAudio();
       currentInQuizIndex++;
       renderInQuizCurrentQuestion();
     }
 
     function finishInModalQuiz() {
+      stopInQuizAudio();
       const playerArea = document.getElementById('inQuizPlayerArea');
       const completeArea = document.getElementById('inQuizCompleteArea');
       if (playerArea) playerArea.classList.add('hidden');
@@ -2168,27 +2171,95 @@
       }
     }
 
+    let currentInQuizAudioObj = null;
+    let isInQuizSpeaking = false;
+
+    function stopInQuizAudio() {
+      if (currentInQuizAudioObj) {
+        currentInQuizAudioObj.pause();
+        currentInQuizAudioObj.currentTime = 0;
+        currentInQuizAudioObj = null;
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+      isInQuizSpeaking = false;
+      updateInQuizAudioBtnUI(false);
+    }
+
+    function getInQuizPronunciationTerm(q) {
+      if (!q) return '';
+      if (q.audio_text && /^[a-zA-Z\s'-]+$/.test(q.audio_text.trim())) {
+        return q.audio_text.trim();
+      }
+      const qClean = (q.question || '').trim();
+      const engHeadMatch = qClean.match(/^([a-zA-Z\s'-]{2,35})(?:\s*\/[^\/]+\/|\s*\([a-z\/]+\)|\s*=|\s*#)/i);
+      if (engHeadMatch && engHeadMatch[1].trim().length > 1) {
+        return engHeadMatch[1].trim();
+      }
+      const correctList = q.correct_answers || (q.correct_answer ? [q.correct_answer] : []);
+      for (const ans of correctList) {
+        const cleanAns = String(ans).replace(/<[^>]*>/g, '').trim();
+        if (/^[a-zA-Z\s'-]{2,40}$/.test(cleanAns)) {
+          return cleanAns;
+        }
+      }
+      if (/^[a-zA-Z\s'-]{2,50}$/.test(qClean)) {
+        return qClean;
+      }
+      if (q.options && q.options.length > 0) {
+        for (const opt of q.options) {
+          const optStr = typeof opt === 'string' ? opt : (opt.text || '');
+          if (/^[a-zA-Z\s'-]{2,40}$/.test(optStr.trim())) {
+            return optStr.trim();
+          }
+        }
+      }
+      return '';
+    }
+
     function playInQuizAudio() {
       if (!currentInQuizData || !currentInQuizData.questions) return;
       const q = currentInQuizData.questions[currentInQuizIndex];
       if (!q) return;
 
-      if (q.audio_url) {
-        const audio = new Audio(q.audio_url);
-        audio.play().catch(() => speakInQuizTTS(q));
-      } else {
-        speakInQuizTTS(q);
+      if (isInQuizSpeaking) {
+        stopInQuizAudio();
+        return;
+      }
+
+      stopInQuizAudio();
+      const term = getInQuizPronunciationTerm(q);
+      if (!term) return;
+
+      if ('speechSynthesis' in window) {
+        isInQuizSpeaking = true;
+        updateInQuizAudioBtnUI(true);
+        const u = new SpeechSynthesisUtterance(term);
+        u.lang = 'en-US';
+        u.rate = 0.92;
+        u.onend = () => {
+          isInQuizSpeaking = false;
+          updateInQuizAudioBtnUI(false);
+        };
+        u.onerror = () => {
+          isInQuizSpeaking = false;
+          updateInQuizAudioBtnUI(false);
+        };
+        window.speechSynthesis.speak(u);
       }
     }
 
-    function speakInQuizTTS(q) {
-      let term = q.audio_text || '';
-      if (!term && q.correct_answers && q.correct_answers.length > 0 && /^[a-zA-Z\s'-]+$/.test(q.correct_answers[0])) {
-        term = q.correct_answers[0];
-      } else if (!term && /^[a-zA-Z\s'-]+$/.test(q.question)) {
-        term = q.question;
+    function updateInQuizAudioBtnUI(active) {
+      const btn = document.getElementById('inQuizAudioBtn');
+      if (!btn) return;
+      if (active) {
+        btn.innerHTML = `<i class="fa-solid fa-square text-xs text-rose-500"></i> <span>Dừng</span>`;
+        btn.classList.add('border-rose-400', 'bg-rose-50', 'dark:bg-rose-950/40');
+      } else {
+        btn.innerHTML = `<i class="fa-solid fa-volume-high text-xs"></i> <span>Phát âm</span>`;
+        btn.classList.remove('border-rose-400', 'bg-rose-50', 'dark:bg-rose-950/40');
       }
-      if (term) speakText(term);
     }
 
     // Global Flashcard shortcut
