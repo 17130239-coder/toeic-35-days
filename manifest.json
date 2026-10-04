@@ -1,0 +1,17 @@
+{
+  "name": "35 Ngày Chinh Phục Từ Vựng TOEIC",
+  "short_name": "35 Days TOEIC",
+  "description": "Kho từ vựng & đấu trường trắc nghiệm Wayground Arena 35 ngày chinh phục TOEIC đỉnh cao",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#ea580c",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

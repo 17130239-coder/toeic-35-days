@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>35 Days Vocab Master — Luyện Từ Vựng TOEIC 35 Ngày</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#ea580c" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -703,6 +707,11 @@
       const grid = document.getElementById('daysGrid');
       grid.innerHTML = '';
 
+      let wgHistory = {};
+      try {
+        wgHistory = JSON.parse(localStorage.getItem('wayground_history') || '{}');
+      } catch(e) {}
+
       list.forEach(d => {
         const status = userProgress[d.day] || 'unstarted';
         const isMastered = status === 'mastered';
@@ -711,6 +720,7 @@
         const wgCodes = (d.wayground && d.wayground.all_codes) ? d.wayground.all_codes : (d.wayground && d.wayground.game_codes ? d.wayground.game_codes : []);
         const primaryCode = (d.wayground && d.wayground.primary_code) ? d.wayground.primary_code : (wgCodes.length > 0 ? wgCodes[0] : null);
         const primaryGameUrl = (d.wayground && d.wayground.primary_url) ? d.wayground.primary_url : (primaryCode ? `https://quizizz.com/join?gc=${primaryCode}` : null);
+        const wgRecord = primaryCode ? wgHistory[primaryCode] : null;
 
         const primaryVideo = (d.video_recordings && d.video_recordings.length > 0) ? d.video_recordings[0] : (d.video_recording || null);
 
@@ -727,6 +737,11 @@
                 </h3>
                 <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5 flex items-center gap-1.5 flex-wrap">
                   <span>${d.due_date || 'Lộ trình từ vựng'}</span>
+                  ${wgRecord ? `
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200/80 dark:border-emerald-800/60" title="Đã chơi Wayground Arena (${wgRecord.plays || 1} lần, Điểm cao nhất: ${wgRecord.bestScore || 0}đ)">
+                      <i class="fa-solid fa-trophy text-[9px] text-amber-500"></i> ${wgRecord.bestAccuracy}%
+                    </span>
+                  ` : ''}
                   ${primaryVideo ? `
                     <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-medium bg-slate-100 hover:bg-slate-200 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-600 hover:text-slate-900 dark:text-zinc-300 dark:hover:text-white border border-slate-200/80 dark:border-zinc-700/70 transition" title="Mở Drive: ${primaryVideo.title}">
                       <i class="fa-solid fa-video text-rose-500 dark:text-rose-400 text-[9px]"></i>
@@ -752,7 +767,7 @@
             <!-- Preview Words (Max 3) -->
             <div class="space-y-1.5 my-3">
               ${(d.vocabulary || []).slice(0, 3).map(v => `
-                <div class="text-xs flex items-center justify-between text-slate-600 dark:text-zinc-300 bg-slate-50 dark:bg-zinc-850/80 px-2.5 py-1.5 rounded-lg border border-slate-100 dark:border-zinc-800/80">
+                <div class="text-xs flex items-center justify-between text-slate-600 dark:text-zinc-300 bg-slate-50 dark:bg-zinc-855/80 px-2.5 py-1.5 rounded-lg border border-slate-100 dark:border-zinc-800/80">
                   <span class="font-semibold text-slate-900 dark:text-zinc-100 truncate max-w-[130px]">${v.term}</span>
                   <span class="text-slate-500 dark:text-zinc-400 truncate max-w-[110px] text-right text-[11px]">${v.meaning || ''}</span>
                 </div>
@@ -774,9 +789,16 @@
               </a>
             ` : ''}
 
-            ${primaryGameUrl ? `
-              <a href="${primaryGameUrl}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Vào Game Quizizz Vĩnh Viễn chính thức (PIN: ${primaryCode})">
+            ${primaryCode ? `
+              <a href="wayground.html?gc=${primaryCode}" onclick="event.stopPropagation()" class="h-8 px-2.5 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-700 hover:text-orange-600 dark:text-zinc-200 dark:hover:text-orange-400 flex items-center justify-center gap-1.5 transition shadow-2xs shrink-0" title="Chơi Wayground Arena Offline (PIN: ${primaryCode})">
                 <i class="fa-solid fa-gamepad text-xs text-orange-500 dark:text-orange-400"></i>
+                <span class="text-[11px] font-medium hidden sm:inline">Arena</span>
+              </a>
+            ` : ''}
+
+            ${primaryGameUrl ? `
+              <a href="${primaryGameUrl}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-purple-50 dark:bg-zinc-800 dark:hover:bg-purple-950/30 hover:border-purple-200 dark:hover:border-purple-900/60 text-slate-500 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Mở Quizizz Online chính thức (PIN: ${primaryCode})">
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-purple-500 dark:text-purple-400"></i>
               </a>
             ` : ''}
           </div>
@@ -949,9 +971,17 @@
       if (wgBtn) {
         if (primaryCode) {
           wgBtn.href = `wayground.html?gc=${primaryCode}`;
+          let histText = 'Wayground Arena';
+          try {
+            const hist = JSON.parse(localStorage.getItem('wayground_history') || '{}');
+            const rec = hist[primaryCode];
+            if (rec && rec.bestAccuracy !== undefined) {
+              histText = `Wayground (✓ ${rec.bestAccuracy}%)`;
+            }
+          } catch(e) {}
           wgBtn.title = `Mở Wayground Arena tương ứng (PIN: ${primaryCode})`;
           const wgText = document.getElementById('modalWaygroundBtnText');
-          if (wgText) wgText.innerText = 'Wayground Arena';
+          if (wgText) wgText.innerText = histText;
           wgBtn.style.display = 'inline-flex';
         } else {
           wgBtn.style.display = 'none';
@@ -2262,6 +2292,13 @@
       const activeWeekTab = document.querySelector('.week-tab.active');
       if (activeWeekTab) updateWeekTabPill(activeWeekTab, false);
     }, 50);
+
+    // Service Worker Registration for PWA & Offline
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
   </script>
 </body>
 </html>

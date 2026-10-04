@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wayground — Luyện Tập Từ Vựng TOEIC</title>
   <link rel="icon" type="image/svg+xml" href="favicon-wayground.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1e091b" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -523,8 +527,11 @@
 
     <!-- Action Buttons -->
     <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1">
+      <button id="btnRetryWrong" onclick="retryWrongQuestions()" class="h-9 px-4 rounded-lg bg-rose-600 hover:bg-rose-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs hidden">
+        <i class="fa-solid fa-rotate-left text-xs"></i> <span id="retryWrongText">Luyện lại câu sai</span>
+      </button>
       <button onclick="restartCurrentGame()" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs transition flex items-center gap-1.5 shadow-xs">
-        <i class="fa-solid fa-rotate-right text-xs"></i> Chơi lại
+        <i class="fa-solid fa-rotate-right text-xs"></i> Chơi lại từ đầu
       </button>
       <button onclick="goToJoinScreen()" class="h-9 px-4 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-medium text-xs transition flex items-center gap-1.5">
         <i class="fa-solid fa-gamepad text-xs"></i> Chọn game khác
@@ -586,6 +593,9 @@
     function playBeep(freq, type = 'sine', duration = 0.1, gain = 0.1) {
       if (!soundEnabled || !audioCtx) return;
       try {
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
         const osc = audioCtx.createOscillator();
         const gainNode = audioCtx.createGain();
         osc.type = type;
@@ -622,6 +632,9 @@
 
     function toggleSound() {
       soundEnabled = !soundEnabled;
+      if (soundEnabled && audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
       const icon = document.getElementById('soundIcon');
       icon.className = soundEnabled ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark text-zinc-500';
     }
@@ -653,12 +666,20 @@
       }
       
       const qClean = (q.question || '').trim();
+      const correctList = q.correct_answers || (q.correct_answer ? [q.correct_answer] : []);
+      const primaryAns = correctList.length > 0 ? String(correctList[0]).replace(/<[^>]*>/g, '').trim() : '';
+
+      // If sentence has fill-in pattern e.g. "Business ________: Bản đề xuất kinh doanh"
+      const blankMatch = qClean.match(/^([a-zA-Z\s'-]{2,25})\s*(?:_{2,}|\[\s*\d*\s*\])/i);
+      if (blankMatch && primaryAns && /^[a-zA-Z\s'-]{2,30}$/.test(primaryAns)) {
+        return `${blankMatch[1].trim()} ${primaryAns}`.trim();
+      }
+
       const engHeadMatch = qClean.match(/^([a-zA-Z\s'-]{2,35})(?:\s*\/[^\/]+\/|\s*\([a-z\/]+\)|\s*=|\s*#)/i);
       if (engHeadMatch && engHeadMatch[1].trim().length > 1) {
         return engHeadMatch[1].trim();
       }
 
-      const correctList = q.correct_answers || (q.correct_answer ? [q.correct_answer] : []);
       for (const ans of correctList) {
         const cleanAns = String(ans).replace(/<[^>]*>/g, '').trim();
         if (/^[a-zA-Z\s'-]{2,40}$/.test(cleanAns)) {
@@ -810,6 +831,9 @@
     function initDrawerGames() {
       const list = document.getElementById('drawerGamesList');
       list.innerHTML = '';
+      let history = {};
+      try { history = JSON.parse(localStorage.getItem('wayground_history') || '{}'); } catch(e) {}
+
       quizzesData.forEach(g => {
         const item = document.createElement('div');
         item.className = 'p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-3 cursor-pointer transition group';
@@ -819,9 +843,15 @@
           toggleGameDrawer();
         };
         const displayName = getGameDisplayName(g);
+        const record = history[g.game_code];
+        const recordBadge = record ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">✓ ${record.bestAccuracy}% (${record.highScore.toLocaleString()}đ)</span>` : '';
+
         item.innerHTML = `
           <div class="flex-1 min-w-0 text-left">
-            <div class="text-xs sm:text-sm font-bold text-white group-hover:text-orange-400 transition truncate">${displayName}</div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="text-xs sm:text-sm font-bold text-white group-hover:text-orange-400 transition truncate">${displayName}</span>
+              ${recordBadge}
+            </div>
             <div class="text-xs font-mono text-orange-400 mt-0.5 flex items-center gap-2">
               <span>PIN: ${g.game_code}</span>
               <span class="text-zinc-600">•</span>
@@ -1479,6 +1509,34 @@
       document.getElementById('finalAccuracyText').innerText = `${accuracy}% (${correctCount}/${currentQuestions.length})`;
       document.getElementById('finalStreakText').innerText = `${maxStreak}`;
 
+      // Save high score and accuracy to localStorage
+      if (currentGame && currentGame.game_code) {
+        try {
+          const hist = JSON.parse(localStorage.getItem('wayground_history') || '{}');
+          const code = currentGame.game_code;
+          const prev = hist[code] || { highScore: 0, bestAccuracy: 0, plays: 0 };
+          hist[code] = {
+            highScore: Math.max(prev.highScore || 0, score),
+            bestAccuracy: Math.max(prev.bestAccuracy || 0, accuracy),
+            lastPlayed: new Date().toISOString(),
+            plays: (prev.plays || 0) + 1,
+            title: getGameDisplayName(currentGame)
+          };
+          localStorage.setItem('wayground_history', JSON.stringify(hist));
+        } catch(e) {}
+      }
+
+      // Redemption mode for wrong questions
+      const wrongCount = answeredLog.filter(log => !log.isCorrect).length;
+      const retryBtn = document.getElementById('btnRetryWrong');
+      const retryText = document.getElementById('retryWrongText');
+      if (wrongCount > 0 && retryBtn && retryText) {
+        retryBtn.classList.remove('hidden');
+        retryText.innerText = `Luyện lại ${wrongCount} câu sai`;
+      } else if (retryBtn) {
+        retryBtn.classList.add('hidden');
+      }
+
       const rList = document.getElementById('summaryQuestionsList');
       rList.innerHTML = '';
       answeredLog.forEach((log, idx) => {
@@ -1526,6 +1584,30 @@
     function closeLightbox() {
       document.getElementById('imageLightbox').classList.add('hidden');
       document.getElementById('lightboxImg').src = '';
+    }
+
+    function retryWrongQuestions() {
+      const wrongIndices = [];
+      answeredLog.forEach((log, idx) => {
+        if (!log.isCorrect) wrongIndices.push(idx);
+      });
+      if (wrongIndices.length === 0) return;
+      const wrongQues = wrongIndices.map(idx => currentQuestions[idx]).filter(Boolean);
+      if (wrongQues.length === 0) return;
+
+      currentQuestions = JSON.parse(JSON.stringify(wrongQues));
+      currentQuestions.sort(() => Math.random() - 0.5);
+      score = 0;
+      streak = 0;
+      maxStreak = 0;
+      correctCount = 0;
+      answeredLog = [];
+      currentQIndex = 0;
+      powerups = { freeze: false, '5050': false, '2x': false };
+
+      document.getElementById('summaryScreen').classList.add('hidden');
+      document.getElementById('gameArena').classList.remove('hidden');
+      loadQuestion();
     }
 
     function restartCurrentGame() {
@@ -1625,6 +1707,13 @@
         playArenaSpeech();
       }
     });
+
+    // Service Worker Registration for PWA & Offline
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').catch(() => {});
+      });
+    }
   </script>
 </body>
 </html>
