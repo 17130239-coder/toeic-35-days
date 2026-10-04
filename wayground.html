@@ -17,11 +17,13 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
   <style>
-    /* Dark Game Canvas conforming to evondevKit rules */
+    /* Dark Game Canvas conforming to authentic Wayground plum theme */
     body {
-      background-color: #09090b;
+      background-color: #1e091b;
+      background: radial-gradient(circle at 50% 20%, #2b0b27 0%, #170415 65%, #0e020d 100%);
       color: #f4f4f5;
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
     }
 
     /* Clean Card Surfaces */
@@ -30,44 +32,74 @@
       border: 1px solid #27272a;
     }
 
-    /* Authentic Quizizz Tactile Flat 3D Buttons (Zero Neon Blur) */
-    .opt-red {
-      background-color: #ea3853;
-      border-bottom: 4px solid #b51d34;
+    /* Authentic Wayground 5-Color Vertical Cards */
+    .opt-wg-0 {
+      background-color: #889800;
+      border-top: 2px solid #a8bc00;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
     }
-    .opt-red:hover { background-color: #df2d48; }
+    .opt-wg-0:hover { background-color: #97aa00; }
 
-    .opt-blue {
-      background-color: #1368ce;
-      border-bottom: 4px solid #0b4288;
+    .opt-wg-1 {
+      background-color: #8a38d5;
+      border-top: 2px solid #a651f4;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
     }
-    .opt-blue:hover { background-color: #0f5bb8; }
+    .opt-wg-1:hover { background-color: #9a47e8; }
 
-    .opt-yellow {
-      background-color: #ffa602;
-      border-bottom: 4px solid #cc8400;
+    .opt-wg-2 {
+      background-color: #f05c00;
+      border-top: 2px solid #ff7826;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
     }
-    .opt-yellow:hover { background-color: #e69500; }
+    .opt-wg-2:hover { background-color: #ff6805; }
 
-    .opt-green {
-      background-color: #26890c;
-      border-bottom: 4px solid #185708;
+    .opt-wg-3 {
+      background-color: #00aa88;
+      border-top: 2px solid #17cda6;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
     }
-    .opt-green:hover { background-color: #207409; }
+    .opt-wg-3:hover { background-color: #00be98; }
 
-    .opt-purple {
-      background-color: #8854c0;
-      border-bottom: 4px solid #572d82;
+    .opt-wg-4 {
+      background-color: #2c44d8;
+      border-top: 2px solid #4f67f7;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
     }
-    .opt-purple:hover { background-color: #7942b5; }
+    .opt-wg-4:hover { background-color: #3b54ec; }
 
-    .btn-quizizz {
-      transition: transform 0.08s ease, border-bottom-width 0.08s ease, box-shadow 0.08s ease;
+    .btn-quizizz-card {
+      transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
       user-select: none;
     }
-    .btn-quizizz:active {
-      transform: translateY(3px);
-      border-bottom-width: 1px;
+    .btn-quizizz-card:hover {
+      filter: brightness(1.08);
+    }
+    .btn-quizizz-card:active {
+      transform: scale(0.985);
+    }
+    .btn-quizizz-card.is-selected {
+      outline: 4px solid #ffffff;
+      outline-offset: -4px;
+      filter: brightness(1.15);
+      box-shadow: 0 0 24px rgba(255, 255, 255, 0.4);
+    }
+    .btn-quizizz-card.is-correct {
+      background-color: #10b981 !important;
+      border-top: 2px solid #34d399 !important;
+      box-shadow: 0 0 30px rgba(16, 185, 129, 0.6) !important;
+      transform: scale(1.02);
+      z-index: 10;
+    }
+    .btn-quizizz-card.is-wrong {
+      background-color: #ef4444 !important;
+      border-top: 2px solid #f87171 !important;
+      box-shadow: 0 0 25px rgba(239, 68, 68, 0.5) !important;
+    }
+    .btn-quizizz-card.is-dimmed {
+      opacity: 0.25 !important;
+      filter: grayscale(40%) !important;
+      pointer-events: none;
     }
 
     /* Multi-select active state */
@@ -102,7 +134,7 @@
 <body class="min-h-screen flex flex-col justify-between selection:bg-orange-600 selection:text-white">
 
   <!-- TOP NAVBAR (Clean Hairline Navigation) -->
-  <header class="w-full px-4 sm:px-8 py-3.5 border-b border-zinc-800/80 flex items-center justify-between z-30 bg-[#09090b]">
+  <header class="w-full px-4 sm:px-8 py-3.5 border-b border-white/10 flex items-center justify-between z-30 bg-black/30 backdrop-blur-md">
     <a href="wayground.html" class="flex items-center gap-2.5">
       <div class="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white text-sm">
         <i class="fa-solid fa-gamepad text-orange-400"></i>
@@ -221,154 +253,164 @@
   </div>
 
   <!-- SCREEN 3: IN-GAME ARENA -->
-  <main id="gameArena" class="flex-1 flex flex-col justify-between max-w-3xl mx-auto w-full p-4 sm:p-6 z-20 hidden">
+  <main id="gameArena" class="flex-1 flex flex-col justify-between w-full max-w-7xl mx-auto px-2 sm:px-4 pb-2 z-20 hidden min-h-[calc(100vh-65px)]">
     
     <!-- Arena Top Bar -->
-    <div class="space-y-2">
-      <div class="flex items-center justify-between text-xs font-semibold">
+    <div class="w-full space-y-2 pt-1">
+      <div class="flex items-center justify-between text-xs font-semibold px-1">
         <div class="flex items-center gap-2">
-          <span id="arenaQCounter" class="px-2.5 py-1 rounded-md bg-zinc-800 border border-zinc-700 text-zinc-300 font-mono tabular-nums">
+          <button onclick="confirmExitGame()" class="px-2 py-1 rounded-md bg-white/10 hover:bg-white/20 text-zinc-300 hover:text-white transition flex items-center gap-1 text-[11px]" title="Thoát phòng">
+            <i class="fa-solid fa-arrow-left"></i>
+            <span class="hidden sm:inline">Rời phòng</span>
+          </button>
+          <span id="arenaQCounter" class="px-2.5 py-1 rounded-md bg-white/10 border border-white/15 text-zinc-200 font-mono tabular-nums">
             Câu 1 / 20
           </span>
-          <span id="arenaQTypeBadge" class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-zinc-800 border border-zinc-700 text-zinc-300 text-[11px] font-medium">
+          <span id="arenaQTypeBadge" class="inline-flex items-center gap-1.5 px-2 py-1 rounded-md bg-white/10 border border-white/15 text-zinc-200 text-[11px] font-medium">
             Đơn tuyển
           </span>
         </div>
 
-        <div id="arenaStreakBadge" class="px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/30 text-amber-400 font-medium flex items-center gap-1.5 transition">
+        <div id="arenaStreakBadge" class="px-2.5 py-1 rounded-md bg-amber-500/20 border border-amber-500/40 text-amber-300 font-medium flex items-center gap-1.5 transition">
           <i class="fa-solid fa-fire text-amber-400 text-xs"></i>
           <span id="arenaStreakText" class="tabular-nums">STREAK x1</span>
         </div>
 
-        <div class="flex items-center gap-1.5">
-          <span class="text-zinc-500 text-[11px] uppercase">Điểm:</span>
-          <span id="arenaScore" class="text-base font-bold font-mono text-emerald-400 tabular-nums">0</span>
+        <div class="flex items-center gap-2">
+          <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-white/10 border border-white/15">
+            <span class="text-zinc-400 text-[11px] uppercase">Điểm:</span>
+            <span id="arenaScore" class="text-base font-bold font-mono text-emerald-400 tabular-nums">0</span>
+          </div>
         </div>
       </div>
 
       <!-- Flat Timer Bar -->
-      <div class="w-full bg-zinc-800 rounded-full h-2 overflow-hidden">
+      <div class="w-full bg-black/40 rounded-full h-2 overflow-hidden border border-white/10">
         <div id="arenaTimerBar" class="bg-emerald-500 h-full rounded-full transition-all duration-100" style="width: 100%;"></div>
       </div>
-    </div>
 
-    <!-- Power-Ups & Actions Dock (Clean Hairline Controls) -->
-    <div class="flex items-center justify-center gap-2 py-1 flex-wrap">
-      <!-- Hint Button -->
-      <button onclick="toggleQuestionHint()" id="btn-hint" class="h-7 px-3 rounded-lg border border-amber-500/40 bg-amber-500/10 hover:bg-amber-500/20 text-amber-300 text-xs font-medium flex items-center gap-1.5 transition" title="Xem gợi ý câu hỏi (phím H)">
-        <i class="fa-regular fa-lightbulb text-amber-400"></i>
-        <span>Gợi ý (H)</span>
-      </button>
-
-      <button onclick="usePowerup('freeze')" id="pu-freeze" class="h-7 px-3 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs font-medium flex items-center gap-1.5 transition" title="Đóng băng thời gian thêm 10s">
-        <span>Freeze (+10s)</span>
-      </button>
-      <button onclick="usePowerup('5050')" id="pu-5050" class="h-7 px-3 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs font-medium flex items-center gap-1.5 transition" title="Loại bỏ 2 phương án sai">
-        <span>50:50</span>
-      </button>
-      <button onclick="usePowerup('2x')" id="pu-2x" class="h-7 px-3 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-300 text-xs font-medium flex items-center gap-1.5 transition" title="Nhân đôi điểm số câu này">
-        <span>2x Points</span>
-      </button>
-    </div>
-
-    <!-- Question Box (Clean Hairline Surface) -->
-    <div class="wg-card rounded-xl p-4 sm:p-6 my-auto text-center space-y-3 shadow-xs">
-      <div class="flex items-center justify-center gap-2 flex-wrap">
-        <button onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-md border border-zinc-700 bg-zinc-800 hover:bg-zinc-700 text-zinc-200 font-medium text-xs flex items-center gap-1.5 transition" title="Nghe phát âm">
-          <i class="fa-solid fa-volume-high text-[11px]"></i>
-          <span>Nghe phát âm</span>
+      <!-- Power-Ups & Actions Dock -->
+      <div class="flex items-center justify-center gap-2 pt-0.5 flex-wrap">
+        <button onclick="toggleQuestionHint()" id="btn-hint" class="h-6 sm:h-7 px-2.5 sm:px-3 rounded-lg border border-amber-500/40 bg-amber-500/15 hover:bg-amber-500/25 text-amber-300 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition" title="Xem gợi ý câu hỏi (phím H)">
+          <i class="fa-regular fa-lightbulb text-amber-400"></i>
+          <span>Gợi ý (H)</span>
         </button>
-        <span id="arenaPhonetic" class="text-xs font-mono text-zinc-400"></span>
+        <button onclick="usePowerup('freeze')" id="pu-freeze" class="h-6 sm:h-7 px-2.5 sm:px-3 rounded-lg border border-white/15 bg-white/10 hover:bg-white/15 text-zinc-200 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition" title="Đóng băng thời gian thêm 10s">
+          <span>Freeze (+10s)</span>
+        </button>
+        <button onclick="usePowerup('5050')" id="pu-5050" class="h-6 sm:h-7 px-2.5 sm:px-3 rounded-lg border border-white/15 bg-white/10 hover:bg-white/15 text-zinc-200 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition" title="Loại bỏ 2 phương án sai">
+          <span>50:50</span>
+        </button>
+        <button onclick="usePowerup('2x')" id="pu-2x" class="h-6 sm:h-7 px-2.5 sm:px-3 rounded-lg border border-white/15 bg-white/10 hover:bg-white/15 text-zinc-200 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition" title="Nhân đôi điểm số câu này">
+          <span>2x Points</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Authentic Wayground Question Showcase (Top Half) -->
+    <div id="questionShowcase" class="flex-1 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 my-auto py-3 px-2 sm:px-6 w-full">
+      <!-- White Rounded Image Card (Left side when image exists) -->
+      <div id="arenaImageContainer" class="bg-white rounded-2xl p-2 sm:p-2.5 shadow-2xl relative flex items-center justify-center shrink-0 max-w-[280px] sm:max-w-md hidden">
+        <img id="arenaImage" src="" alt="Question Illustration" class="max-h-36 sm:max-h-48 md:max-h-56 object-contain rounded-lg w-auto cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
+        <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/80 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm" title="Phóng to ảnh">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
 
-      <!-- Question Illustration Media -->
-      <div id="arenaImageContainer" class="flex justify-center max-h-48 sm:max-h-60 overflow-hidden rounded-xl my-2 border border-zinc-700/60 bg-black/40 hidden">
-        <img id="arenaImage" src="" alt="Question Illustration" class="max-h-48 sm:max-h-60 object-contain w-auto rounded-lg shadow-sm transition hover:scale-[1.02] cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
-      </div>
-
-      <h2 id="arenaPrompt" class="text-base sm:text-xl md:text-2xl font-bold text-white leading-relaxed whitespace-pre-line">
-        Câu hỏi đang tải...
-      </h2>
-
-      <!-- Hint Box (Toggled by user) -->
-      <div id="arenaHintBox" class="p-3.5 rounded-lg bg-amber-950/30 border border-amber-500/30 text-xs text-amber-200 text-left space-y-1.5 hidden transition">
-        <div class="flex items-center justify-between font-semibold text-amber-300">
-          <span class="flex items-center gap-1.5">
-            <i class="fa-solid fa-lightbulb text-amber-400 text-xs"></i> Gợi ý câu hỏi:
-          </span>
-          <button type="button" onclick="toggleQuestionHint()" class="text-amber-400/80 hover:text-amber-200 text-xs font-normal">Đóng ✕</button>
+      <!-- Question Text Prompt (Right side or Centered if no image) -->
+      <div id="arenaPromptBox" class="flex flex-col items-center md:items-start text-center md:text-left space-y-3 max-w-2xl">
+        <div class="flex items-center gap-2">
+          <button onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition" title="Nghe phát âm">
+            <i class="fa-solid fa-volume-high text-[11px]"></i>
+            <span>Nghe phát âm</span>
+          </button>
+          <span id="arenaPhonetic" class="text-xs font-mono text-zinc-300"></span>
         </div>
-        <div id="hintShortText" class="font-medium"></div>
-        <div id="hintDetailsText" class="text-[11px] text-amber-300/80 flex items-center gap-3 flex-wrap"></div>
+
+        <h2 id="arenaPrompt" class="text-lg sm:text-2xl md:text-3xl font-semibold text-white leading-relaxed tracking-wide">
+          Câu hỏi đang tải...
+        </h2>
+
+        <!-- Hint Box (Toggled by user) -->
+        <div id="arenaHintBox" class="p-3.5 rounded-xl bg-amber-950/60 border border-amber-500/40 text-xs text-amber-200 text-left space-y-1.5 hidden transition w-full">
+          <div class="flex items-center justify-between font-semibold text-amber-300">
+            <span class="flex items-center gap-1.5">
+              <i class="fa-solid fa-lightbulb text-amber-400 text-xs"></i> Gợi ý câu hỏi:
+            </span>
+            <button type="button" onclick="toggleQuestionHint()" class="text-amber-400/80 hover:text-amber-200 text-xs font-normal">Đóng ✕</button>
+          </div>
+          <div id="hintShortText" class="font-medium"></div>
+          <div id="hintDetailsText" class="text-[11px] text-amber-300/80 flex items-center gap-3 flex-wrap"></div>
+        </div>
       </div>
     </div>
 
-    <!-- INTERACTION AREA 1: 4 Quizizz Buttons (For Single Choice & Multiple Choice) -->
-    <div id="optionsContainer" class="space-y-3 pt-2">
-      <div id="optionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
-        <!-- Option 0: Red -->
-        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span id="optIcon-0" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">▲</span>
-          <img id="optImg-0" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
-          <span id="optText-0" class="flex-1 leading-snug">Lựa chọn A</span>
-          <span role="button" tabindex="0" id="optZoom-0" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-0').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+    <!-- INTERACTION AREA 1: Authentic 5 Tall Vertical Cards (Bottom Half) -->
+    <div id="optionsContainer" class="w-full pb-1 z-20">
+      <div id="optionsGrid" class="grid grid-cols-2 md:flex md:flex-row items-stretch gap-2.5 sm:gap-3.5 w-full h-[44vh] md:h-[48vh] min-h-[200px]">
+        <!-- Option 0: Olive/Lime-Yellow -->
+        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-wg-0 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+          <span id="optIcon-0" class="hidden"></span>
+          <img id="optImg-0" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
+          <span id="optText-0" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn A</span>
+          <span role="button" tabindex="0" id="optZoom-0" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-0').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <span id="optCheck-0" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 shrink-0 hidden"></span>
+          <span id="optCheck-0" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 1: Blue -->
-        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-blue btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span id="optIcon-1" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">◆</span>
-          <img id="optImg-1" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
-          <span id="optText-1" class="flex-1 leading-snug">Lựa chọn B</span>
-          <span role="button" tabindex="0" id="optZoom-1" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-1').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        <!-- Option 1: Violet/Purple -->
+        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-wg-1 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+          <span id="optIcon-1" class="hidden"></span>
+          <img id="optImg-1" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
+          <span id="optText-1" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn B</span>
+          <span role="button" tabindex="0" id="optZoom-1" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-1').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <span id="optCheck-1" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 shrink-0 hidden"></span>
+          <span id="optCheck-1" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 2: Yellow -->
-        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-yellow btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span id="optIcon-2" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">●</span>
-          <img id="optImg-2" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
-          <span id="optText-2" class="flex-1 leading-snug">Lựa chọn C</span>
-          <span role="button" tabindex="0" id="optZoom-2" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-2').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        <!-- Option 2: Vivid Orange -->
+        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-wg-2 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+          <span id="optIcon-2" class="hidden"></span>
+          <img id="optImg-2" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
+          <span id="optText-2" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn C</span>
+          <span role="button" tabindex="0" id="optZoom-2" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-2').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <span id="optCheck-2" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 shrink-0 hidden"></span>
+          <span id="optCheck-2" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 3: Green -->
-        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-green btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
-          <span id="optIcon-3" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">■</span>
-          <img id="optImg-3" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
-          <span id="optText-3" class="flex-1 leading-snug">Lựa chọn D</span>
-          <span role="button" tabindex="0" id="optZoom-3" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-3').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        <!-- Option 3: Teal -->
+        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-wg-3 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+          <span id="optIcon-3" class="hidden"></span>
+          <img id="optImg-3" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
+          <span id="optText-3" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn D</span>
+          <span role="button" tabindex="0" id="optZoom-3" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-3').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <span id="optCheck-3" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 shrink-0 hidden"></span>
+          <span id="optCheck-3" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 4: Purple (Authentic 5th Choice) -->
-        <button onclick="handleOptionClick(4)" id="optBtn-4" class="opt-purple btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative sm:col-span-2 hidden">
-          <span id="optIcon-4" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">★</span>
-          <img id="optImg-4" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
-          <span id="optText-4" class="flex-1 leading-snug">Lựa chọn E</span>
-          <span role="button" tabindex="0" id="optZoom-4" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-4').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
-            <i class="fa-solid fa-magnifying-glass-plus"></i>
+        <!-- Option 4: Royal Blue -->
+        <button onclick="handleOptionClick(4)" id="optBtn-4" class="opt-wg-4 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center col-span-2 md:col-span-1">
+          <span id="optIcon-4" class="hidden"></span>
+          <img id="optImg-4" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
+          <span id="optText-4" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn E</span>
+          <span role="button" tabindex="0" id="optZoom-4" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-4').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </span>
-          <span id="optCheck-4" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 shrink-0 hidden"></span>
+          <span id="optCheck-4" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
       </div>
 
       <!-- Multiple Choice Confirmation Submit Bar -->
-      <div id="multiSubmitBar" class="p-3 bg-zinc-900 border border-zinc-800 rounded-xl flex items-center justify-between gap-3 hidden">
-        <div class="text-xs text-zinc-300">
+      <div id="multiSubmitBar" class="mt-2.5 p-3 bg-zinc-900/90 border border-zinc-700/80 rounded-xl flex items-center justify-between gap-3 hidden">
+        <div class="text-xs text-zinc-200">
           <i class="fa-solid fa-circle-check text-orange-400 mr-1.5"></i>
           Đã chọn: <strong id="multiSelectedCount" class="text-white font-bold tabular-nums">0</strong> đáp án (Chọn tất cả đáp án đúng)
         </div>
-        <button onclick="submitMultiAnswer()" id="btnSubmitMulti" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-xs">
+        <button onclick="submitMultiAnswer()" id="btnSubmitMulti" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow-sm">
           <span>Gửi Đáp Án (Enter)</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
         </button>
@@ -376,27 +418,27 @@
     </div>
 
     <!-- INTERACTION AREA 2: Type-in Answer Box (For Fill in the Blank) -->
-    <div id="typeInContainer" class="wg-card rounded-xl p-5 space-y-3 pt-4 hidden">
-      <div class="text-xs text-zinc-400 flex items-center justify-between">
+    <div id="typeInContainer" class="w-full max-w-2xl mx-auto p-5 rounded-2xl bg-zinc-900/80 border border-zinc-700/80 space-y-3 hidden mb-4">
+      <div class="text-xs text-zinc-300 flex items-center justify-between">
         <span><i class="fa-solid fa-keyboard mr-1.5 text-orange-400"></i> Gõ từ tiếng Anh còn thiếu vào ô bên dưới:</span>
-        <span class="text-[11px] text-zinc-500">Nhấn Enter để gửi</span>
+        <span class="text-[11px] text-zinc-400">Nhấn Enter để gửi</span>
       </div>
       <div class="flex flex-col sm:flex-row items-center gap-2.5">
-        <input type="text" id="typeInInput" placeholder="Nhập từ tiếng Anh..." class="w-full h-11 px-4 text-center sm:text-left text-base sm:text-lg font-mono font-bold rounded-lg bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 text-white placeholder:text-zinc-600 outline-none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-        <button onclick="submitTypeInAnswer()" class="w-full sm:w-auto h-11 px-6 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs whitespace-nowrap transition flex items-center justify-center gap-2 shrink-0">
+        <input type="text" id="typeInInput" placeholder="Nhập từ tiếng Anh..." class="w-full h-12 px-4 text-center sm:text-left text-base sm:text-lg font-mono font-bold rounded-xl bg-black/50 border border-zinc-600 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 text-white placeholder:text-zinc-500 outline-none" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+        <button onclick="submitTypeInAnswer()" class="w-full sm:w-auto h-12 px-6 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs whitespace-nowrap transition flex items-center justify-center gap-2 shrink-0">
           <span>Gửi Đáp Án</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
         </button>
       </div>
     </div>
 
-    <!-- Game Footer Status -->
-    <div class="mt-3 pt-2 border-t border-zinc-800 flex items-center justify-between text-xs text-zinc-400">
+    <!-- Game Footer Status (Subtle hairline) -->
+    <div class="pt-1 border-t border-white/10 flex items-center justify-between text-[11px] text-zinc-400 px-1">
       <div class="flex items-center gap-1.5">
-        <i class="fa-solid fa-graduation-cap text-orange-400 text-xs"></i>
-        <span id="arenaFooterTitle" class="text-zinc-300 font-medium">Wayground 35 Ngày</span>
+        <i class="fa-solid fa-gamepad text-orange-400"></i>
+        <span id="arenaFooterTitle" class="text-zinc-300 font-medium">Wayground</span>
       </div>
-      <div class="text-[11px] text-zinc-500">
+      <div>
         Luyện tập từ vựng & ngữ cảnh
       </div>
     </div>
@@ -504,7 +546,7 @@
   </footer>
 
   <!-- LOAD QUIZ DATA -->
-  <script src="wayground_data.js?v=20261004_v8"></script>
+  <script src="wayground_data.js?v=20261004_v9"></script>
 
   <!-- WAYGROUND GAME ENGINE -->
   <script>
@@ -774,7 +816,14 @@
       document.getElementById('arenaStreakText').innerText = `STREAK x${streak + 1}`;
       document.getElementById('arenaScore').innerText = score.toLocaleString();
       document.getElementById('arenaPhonetic').innerText = q.phonetic || '';
-      document.getElementById('arenaPrompt').innerText = q.question;
+
+      const arenaPrompt = document.getElementById('arenaPrompt');
+      const cleanHtml = (q.raw_html || '').replace(/<[^>]*>/g, '').trim();
+      if (cleanHtml.length > 0) {
+        arenaPrompt.innerHTML = q.raw_html;
+      } else {
+        arenaPrompt.innerText = q.question;
+      }
 
       const footerTitle = document.getElementById('arenaFooterTitle');
       if (footerTitle && currentGame) footerTitle.innerText = `${getGameDisplayName(currentGame)} • PIN: ${currentGame.game_code}`;
@@ -795,12 +844,19 @@
       // Populate Question Illustration Media
       const arenaImgBox = document.getElementById('arenaImageContainer');
       const arenaImg = document.getElementById('arenaImage');
+      const arenaPromptBox = document.getElementById('arenaPromptBox');
       if (q.image) {
         arenaImg.src = q.image;
         arenaImgBox.classList.remove('hidden');
+        if (arenaPromptBox) {
+          arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 max-w-2xl';
+        }
       } else {
         arenaImgBox.classList.add('hidden');
         arenaImg.src = '';
+        if (arenaPromptBox) {
+          arenaPromptBox.className = 'flex flex-col items-center text-center space-y-3 max-w-3xl mx-auto';
+        }
       }
 
       // Populate Hint content
@@ -834,38 +890,31 @@
         }
 
         const isImgOpts = !!q.has_image_options;
+        const numOptions = (q.options || []).length;
         const grid = document.getElementById('optionsGrid');
-        if (isImgOpts) {
-          grid.className = 'grid grid-cols-2 gap-2.5 sm:gap-4 max-w-2xl mx-auto w-full';
-        } else {
-          grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 w-full';
-        }
+        grid.className = 'grid grid-cols-2 md:flex md:flex-row items-stretch gap-2.5 sm:gap-3.5 w-full h-[44vh] md:h-[48vh] min-h-[200px]';
 
-        const colors = ['red', 'blue', 'yellow', 'green', 'purple'];
         for (let i = 0; i < 5; i++) {
           const btn = document.getElementById(`optBtn-${i}`);
           if (!btn) continue;
           const txt = document.getElementById(`optText-${i}`);
           const chk = document.getElementById(`optCheck-${i}`);
           const img = document.getElementById(`optImg-${i}`);
-          const ico = document.getElementById(`optIcon-${i}`);
           const zoom = document.getElementById(`optZoom-${i}`);
 
           if (q.options && q.options[i]) {
             btn.style.display = 'flex';
             btn.disabled = false;
             btn.style.opacity = '1';
-            btn.classList.remove('animate-shake', 'is-selected');
+            btn.classList.remove('animate-shake', 'is-selected', 'is-correct', 'is-wrong', 'is-dimmed');
+
+            const spanCol = (i === 4 && numOptions === 5) ? ' col-span-2 md:col-span-1' : '';
+            btn.className = `opt-wg-${i} btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center${spanCol}`;
 
             if (isImgOpts && q.option_images && q.option_images[i]) {
               // Image option mode: Authentic Wayground 4-Picture choice (Only images, NO spoil text!)
-              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl sm:rounded-2xl p-2 sm:p-2.5 text-center text-white flex flex-col items-center justify-center relative group overflow-hidden cursor-pointer shadow-md`;
-              
-              ico.className = 'absolute top-2.5 left-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-black/60 backdrop-blur-xs flex items-center justify-center text-xs sm:text-sm font-bold text-white shadow-md z-10 border border-white/20 pointer-events-none';
-              ico.classList.remove('hidden');
-
               img.src = q.option_images[i];
-              img.className = 'w-full h-32 sm:h-44 md:h-48 rounded-lg sm:rounded-xl object-cover bg-black/30 border border-white/10 shadow-xs group-hover:scale-[1.02] transition-transform duration-200 block';
+              img.className = 'max-h-[85%] max-w-[90%] object-contain rounded-xl shadow-md block';
               img.classList.remove('hidden');
 
               if (zoom) zoom.classList.remove('hidden');
@@ -873,13 +922,7 @@
               txt.innerText = '';
               chk.classList.add('hidden');
             } else {
-              // Standard Text option mode
-              const spanCol = (i === 4) ? ' sm:col-span-2' : '';
-              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative${spanCol}`;
-              
-              ico.className = 'w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold';
-              ico.classList.remove('hidden');
-
+              // Standard Text option mode: Authentic Wayground Clean Text
               img.classList.add('hidden');
               img.className = 'hidden';
               if (zoom) zoom.classList.add('hidden');
@@ -1079,9 +1122,6 @@
       } else {
         streak = 0;
         playSound('wrong');
-        if (format === 'single_choice' && chosen[0] !== undefined && chosen[0] >= 0) {
-          document.getElementById(`optBtn-${chosen[0]}`).classList.add('animate-shake');
-        }
       }
 
       const correctDisplay = correctAnswersList.join(' • ');
@@ -1098,6 +1138,45 @@
         timeSpent: timeSpent.toFixed(1),
         image: q.image || ''
       });
+
+      if (format === 'single_choice' && chosen[0] !== undefined && chosen[0] >= 0) {
+        const chosenIdx = chosen[0];
+        const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => ans.toLowerCase().trim() === opt.toLowerCase().trim()));
+
+        for (let i = 0; i < 5; i++) {
+          const b = document.getElementById(`optBtn-${i}`);
+          if (b) b.disabled = true;
+        }
+
+        if (isCorrect) {
+          const chosenBtn = document.getElementById(`optBtn-${chosenIdx}`);
+          if (chosenBtn) chosenBtn.classList.add('is-correct');
+          for (let i = 0; i < 5; i++) {
+            if (i !== chosenIdx) {
+              const b = document.getElementById(`optBtn-${i}`);
+              if (b) b.classList.add('is-dimmed');
+            }
+          }
+        } else {
+          const chosenBtn = document.getElementById(`optBtn-${chosenIdx}`);
+          if (chosenBtn) chosenBtn.classList.add('is-wrong', 'animate-shake');
+          if (correctIdx >= 0) {
+            const correctBtn = document.getElementById(`optBtn-${correctIdx}`);
+            if (correctBtn) correctBtn.classList.add('is-correct');
+          }
+          for (let i = 0; i < 5; i++) {
+            if (i !== chosenIdx && i !== correctIdx) {
+              const b = document.getElementById(`optBtn-${i}`);
+              if (b) b.classList.add('is-dimmed');
+            }
+          }
+        }
+
+        setTimeout(() => {
+          showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation, q, chosenImg, correctImg);
+        }, 650);
+        return;
+      }
 
       showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation, q, chosenImg, correctImg);
     }
@@ -1265,6 +1344,16 @@
       document.getElementById('joinScreen').classList.remove('hidden');
     }
 
+    function confirmExitGame() {
+      if (confirm('Bạn có chắc chắn muốn rời trận đấu hiện tại và quay về sảnh?')) {
+        clearInterval(timerInterval);
+        document.getElementById('gameArena').classList.add('hidden');
+        document.getElementById('feedbackModal').classList.add('hidden');
+        document.getElementById('summaryScreen').classList.add('hidden');
+        document.getElementById('joinScreen').classList.remove('hidden');
+      }
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
       initAvatarPicker();
       initDrawerGames();
@@ -1333,6 +1422,7 @@
         if (e.key === '2' || e.key === 'b' || e.key === 'B') handleOptionClick(1);
         if (e.key === '3' || e.key === 'c' || e.key === 'C') handleOptionClick(2);
         if (e.key === '4' || e.key === 'd' || e.key === 'D') handleOptionClick(3);
+        if (e.key === '5' || e.key === 'e' || e.key === 'E') handleOptionClick(4);
       }
 
       if (e.code === 'Space') {
