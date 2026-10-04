@@ -75,7 +75,7 @@
     "id": "d0_w7",
     "index": 7,
     "term": "Renewal",
-    "phonetic": "/rɪˈnjuːəl/, /rɪˈnuːəl/",
+    "phonetic": "/rɪˈnjuːəl/",
     "pos": "(n)",
     "meaning": "sự gia hạn, đổi mới",
     "synonyms": [],
@@ -147,7 +147,7 @@
     "id": "d1_w2",
     "index": 2,
     "term": "Issue",
-    "phonetic": "/ˈɪʃuː/, /rɪˈliːs/, /lɔːntʃ/, /rəʊl aʊt/, /ˈpʌblɪʃ/, /ɪˈdɪʃn/",
+    "phonetic": "/ˈɪʃuː/",
     "pos": "(v/n)",
     "meaning": "Phát hành",
     "synonyms": [
@@ -166,7 +166,7 @@
     "id": "d1_w3",
     "index": 3,
     "term": "Directly",
-    "phonetic": "/daɪˈrektli/, /ɪn ˈpɜːrsn/, /ˈpɜːrsənəli/",
+    "phonetic": "/daɪˈrektli/",
     "pos": "(Adv)",
     "meaning": "Trực tiếp/ Riêng/ Đích thân.",
     "synonyms": [
@@ -193,7 +193,7 @@
     "id": "d1_w5",
     "index": 5,
     "term": "Process",
-    "phonetic": "/ˈprɑːses/, /ˈprɑːɡrəs/, /sɑːlv/, /rɪˈzɑːlv/, /ˈhændl/, /diːl wɪθ/, /ˈsetl/",
+    "phonetic": "/ˈprɑːses/",
     "pos": "(v/n)",
     "meaning": "Qui trình, quá trình",
     "synonyms": [
@@ -212,7 +212,7 @@
     "id": "d2_w1",
     "index": 1,
     "term": "Ultimately",
-    "phonetic": "/ˈʌltɪmətli/, /ˈfaɪnəli/, /ɪˈventʃuəli/",
+    "phonetic": "/ˈʌltɪmətli/",
     "pos": "(adv)",
     "meaning": "Cuối cùng, sau cùng.",
     "synonyms": [
@@ -227,7 +227,7 @@
     "id": "d2_w2",
     "index": 2,
     "term": "Expert",
-    "phonetic": "/ˈekspɜːrt/, /prəˈfeʃənl/, /ˈspeʃəlɪst/",
+    "phonetic": "/ˈekspɜːrt/",
     "pos": "(n)",
     "meaning": "Chuyên gia.",
     "synonyms": [
@@ -242,7 +242,7 @@
     "id": "d2_w3",
     "index": 3,
     "term": "Boost",
-    "phonetic": "/buːst/, /ɪnˈhæns/, /ˈstreŋkθn/, /əkˈseləreɪt/",
+    "phonetic": "/buːst/",
     "pos": "(v)",
     "meaning": "Tăng cường, thúc đẩy.",
     "synonyms": [
@@ -258,7 +258,7 @@
     "id": "d2_w4",
     "index": 4,
     "term": "Concise",
-    "phonetic": "/kənˈsaɪs/, /briːf/, /kənˈdenst/",
+    "phonetic": "/kənˈsaɪs/",
     "pos": "(adj)",
     "meaning": "Ngắn gọn, súc tích, vắn tắt.",
     "synonyms": [
@@ -273,7 +273,7 @@
     "id": "d2_w5",
     "index": 5,
     "term": "Fill out",
-    "phonetic": "/kəmˈpliːt/",
+    "phonetic": "/fɪl aʊt/",
     "pos": "(v)",
     "meaning": "Điền vào, hoàn thành (mẫu đơn)",
     "synonyms": [
@@ -287,7 +287,7 @@
     "id": "d3_w1",
     "index": 1,
     "term": "Potential",
-    "phonetic": "/pəˈtenʃl/, /ˈprɑːmɪsɪŋ/, /prəˈspektɪv/",
+    "phonetic": "/pəˈtenʃl/",
     "pos": "(adj)",
     "meaning": "Đầy tiềm năng, đầy triển vọng, đầy hứa hẹn",
     "synonyms": [
@@ -302,7 +302,7 @@
     "id": "d3_w2",
     "index": 2,
     "term": "Defective",
-    "phonetic": "/dɪˈfektɪv/, /ˈfɔːlti/, /ˌmælˈfʌŋkʃn/",
+    "phonetic": "/dɪˈfektɪv/",
     "pos": "(adj)",
     "meaning": "Bị hư hỏng, bị lỗi",
     "synonyms": [
@@ -317,7 +317,7 @@
     "id": "d3_w3",
     "index": 3,
     "term": "Merchandise",
-    "phonetic": "/ˈmɜːrtʃəndaɪz/, /ɡʊdz/, /ˈaɪtəm/, /kəˈmɑːdəti/, /ˈprɑːdʌkt/",
+    "phonetic": "/ˈmɜːrtʃəndaɪz/",
     "pos": "(n)",
     "meaning": "Hàng hóa, mặt hàng, sản phẩm",
     "synonyms": [
@@ -348,7 +348,7 @@
     "id": "d3_w5",
     "index": 5,
     "term": "Comply",
-    "phonetic": "/kəmˈplaɪ  wɪθ/, /əˈbaɪd  baɪ/, /ˈfɑːləʊ/, /əbˈzɜːrv/, /kənˈfɔːrm  tu/, /ədˈhɪr  tu/, /stɪk  tu/, /lɔː/, /ruːl/, /ˈpɑːləsi/, /ˌreɡjuˈleɪʃn/, /ˈɡaɪdlaɪn/, /ˈstændərd/, /kraɪˈtɪriə/, /ˌspesɪfɪˈkeɪʃn/, /kəmˈplaɪəns/",
+    "phonetic": "/kəmˈplaɪ  wɪθ/",
     "pos": "(n)",
     "meaning": "Tuân theo, tuân thủ cái gì",
     "synonyms": [
@@ -398,7 +398,7 @@
     "id": "d4_w3",
     "index": 3,
     "term": "Considerable",
-    "phonetic": "/kənˈsɪdərəbl/, /sɪɡˈnɪfɪkənt/, /səbˈstænʃl/, /,kɔntri'bju:ʃn/",
+    "phonetic": "/kənˈsɪdərəbl/",
     "pos": "(Adj)",
     "meaning": "Đáng kể.",
     "synonyms": [
@@ -413,7 +413,7 @@
     "id": "d4_w4",
     "index": 4,
     "term": "Contribution",
-    "phonetic": "/ˌkɑːntrɪˈbjuːʃn/, /dɪˈstrɪbjuːt/, /prəˈvaɪd/, /ˈɔːfər/",
+    "phonetic": "/ˌkɑːntrɪˈbjuːʃn/",
     "pos": "(n)",
     "meaning": "sự đóng góp, cống hiến cho.",
     "synonyms": [
@@ -427,7 +427,7 @@
     "id": "d5_w1",
     "index": 1,
     "term": "Information desk",
-    "phonetic": "/ˌɪnfərˈmeɪʃn desk/, /rɪˈsepʃn  desk/, /frʌnt  desk/",
+    "phonetic": "/ˌɪnfərˈmeɪʃn desk/",
     "pos": "(N.Phrase)",
     "meaning": "Quầy lễ tân",
     "synonyms": [
@@ -442,7 +442,7 @@
     "id": "d5_w2",
     "index": 2,
     "term": "Comparable",
-    "phonetic": "/ˈkɑːmpərəbl/, /ˈsɪmələr/",
+    "phonetic": "/ˈkɑːmpərəbl/",
     "pos": "(adj)",
     "meaning": "Tương tự",
     "synonyms": [
@@ -461,7 +461,7 @@
     "id": "d5_w3",
     "index": 3,
     "term": "Ongoing",
-    "phonetic": "/ˈɑːnɡəʊɪŋ/, /kənˈtɪnjuəs/, /kənˈtɪnjuəl/, /kənˈsekjətɪv/, /səkˈsesɪv/",
+    "phonetic": "/ˈɑːnɡəʊɪŋ/",
     "pos": "(adj)",
     "meaning": "Liên tục, liên tiếp, đang diễn ra",
     "synonyms": [
@@ -492,7 +492,7 @@
     "id": "d5_w5",
     "index": 5,
     "term": "Be responsible",
-    "phonetic": "/rɪˈspɑːnsəbl/, /əˈkaʊntəbl/",
+    "phonetic": "/rɪˈspɑːnsəbl/",
     "pos": "(Adj)",
     "meaning": "Chịu trách nhiệm cho",
     "synonyms": [
@@ -506,7 +506,7 @@
     "id": "d5_w6",
     "index": 6,
     "term": "Fulfil",
-    "phonetic": "/fʊlˈfɪl/, /miːt/, /əˈkɑːmədeɪt/, /rɪˈkwaɪərmənt/, /niːd/, /dɪˈmænd/, /ˌekspekˈteɪʃn/, /ˈdedlaɪn/, /ɡəʊl/, /əbˈdʒektɪv/, /ˈtɑːrɡɪt/, /eɪm/, /ˈstændərd/, /kraɪˈtɪriə/, /ˌspesɪfɪˈkeɪʃn/",
+    "phonetic": "/fʊlˈfɪl/",
     "pos": "(v)",
     "meaning": "Đáp ứng/Hoàn tất",
     "synonyms": [
@@ -538,7 +538,7 @@
     "id": "d6_w2",
     "index": 2,
     "term": "Create",
-    "phonetic": "/kriˈeɪt/, /ˈdʒenəreɪt/",
+    "phonetic": "/kriˈeɪt/",
     "pos": "(v)",
     "meaning": "Tạo ra cái gì",
     "synonyms": [
@@ -571,7 +571,7 @@
     "id": "d6_w4",
     "index": 4,
     "term": "Be familiar",
-    "phonetic": "/fəˈmɪliər/, /əˈkʌstəmd/, /əˈkweɪntɪd/",
+    "phonetic": "/fəˈmɪliər/",
     "pos": "(adj)",
     "meaning": "Làm quen với...",
     "synonyms": [
@@ -586,7 +586,7 @@
     "id": "d6_w5",
     "index": 5,
     "term": "Register (for)",
-    "phonetic": "/ˈredʒɪstər fɔːr/, /saɪn ʌp/, /ɪnˈrəʊl ɪn/, /ˌredʒɪˈstreɪʃn/, /ɪnˈrəʊlmənt/",
+    "phonetic": "/ˈredʒɪstər fɔːr/",
     "pos": "(n)",
     "meaning": "Đăng ký, ghi danh, kết nạp",
     "synonyms": [
@@ -603,7 +603,7 @@
     "id": "d7_w1",
     "index": 1,
     "term": "Be eligible",
-    "phonetic": "/ˈelɪdʒəbl/, /ˈkwɑːlɪfaɪd/, /ˈelɪdʒəbl/",
+    "phonetic": "/ˈelɪdʒəbl/",
     "pos": "(adj)",
     "meaning": "Có đủ năng lực, đủ điều kiện cho điều gì.",
     "synonyms": [
@@ -631,7 +631,7 @@
     "id": "d7_w3",
     "index": 3,
     "term": "Verify",
-    "phonetic": "/ˈverɪfaɪ/, /kənˈfɜːrm/, /əˈfɜːrm/",
+    "phonetic": "/ˈverɪfaɪ/",
     "pos": "(v)",
     "meaning": "Xác nhận, xác thực",
     "synonyms": [
@@ -646,7 +646,7 @@
     "id": "d7_w4",
     "index": 4,
     "term": "Evaluate",
-    "phonetic": "/ɪˈvæljueɪt/, /reɪt/, /əˈses/, /dʒʌdʒ/",
+    "phonetic": "/ɪˈvæljueɪt/",
     "pos": "(v)",
     "meaning": "Đánh giá",
     "synonyms": [
@@ -662,7 +662,7 @@
     "id": "d7_w5",
     "index": 5,
     "term": "Outcome",
-    "phonetic": "/ˈaʊtkʌm/, /rɪˈzʌlt/, /ˈfaɪndɪŋ/",
+    "phonetic": "/ˈaʊtkʌm/",
     "pos": "(n )",
     "meaning": "Kết quả.",
     "synonyms": [
@@ -677,7 +677,7 @@
     "id": "d8_w1",
     "index": 1,
     "term": "Economic recession",
-    "phonetic": "/ˌiːkəˈnɑːmɪk  rɪˈseʃn/, /ˌiːkəˈnɑːmɪk  ˈkraɪsɪs/, /faɪˈnænʃl  ˈkraɪsɪs/, /pəˈlɪtɪkl  ˈkraɪsɪs/",
+    "phonetic": "/ˌiːkəˈnɑːmɪk  rɪˈseʃn/",
     "pos": "(N.phrase)",
     "meaning": "Suy thoái kinh tế.",
     "synonyms": [],
@@ -701,7 +701,7 @@
     "id": "d8_w3",
     "index": 3,
     "term": "Implement",
-    "phonetic": "/ˈɪmplɪment/, /kənˈdʌkt/, /prəʊˈsiːd/, /pərˈfɔːrm/, /ˈeksɪkjuːt/, /ɪnˈfɔːrs/, /ˌʌndərˈweɪ/",
+    "phonetic": "/ˈɪmplɪment/",
     "pos": "(v/n)",
     "meaning": "Tiến hành, thực hiện, triển khai.",
     "synonyms": [
@@ -720,7 +720,7 @@
     "id": "d8_w4",
     "index": 4,
     "term": "Adequate",
-    "phonetic": "/ˈædɪkwət/, /ɪˈnʌf/, /səˈfɪʃnt/, /əˈprəʊpriət/, /ˈprɑːpər/, /ˈsuːtəbl/",
+    "phonetic": "/ˈædɪkwət/",
     "pos": "(adj)",
     "meaning": "Đủ",
     "synonyms": [
@@ -738,7 +738,7 @@
     "id": "d8_w5",
     "index": 5,
     "term": "S.O be pleased",
-    "phonetic": "/pliːzd/, /ˈwɪlɪŋ/",
+    "phonetic": "/pliːzd/",
     "pos": "(adj)",
     "meaning": "Ai đó cảm thấy vui vẻ, sẵn lòng khi làm gì.",
     "synonyms": [
@@ -752,7 +752,7 @@
     "id": "d9_w2",
     "index": 2,
     "term": "Workshop",
-    "phonetic": "/ˈwɜːrkʃɑːp/, /ˈsemɪnɑːr/, /ˈtreɪnɪŋ ˈseʃn/",
+    "phonetic": "/ˈwɜːrkʃɑːp/",
     "pos": "(n )",
     "meaning": "Buổi hội thảo.",
     "synonyms": [
@@ -767,7 +767,7 @@
     "id": "d9_w3",
     "index": 3,
     "term": "Comprehensive",
-    "phonetic": "/ˌkɑːmprɪˈhensɪv/, /ˌkɑːmprɪˈhensɪv ˈnɑːlɪdʒ/, /ˌkɑːmprɪˈhensɪv səˈluːʃnz/",
+    "phonetic": "/ˌkɑːmprɪˈhensɪv/",
     "pos": "(Adj)",
     "meaning": "Bao quát, toàn diện.",
     "synonyms": [],
@@ -779,7 +779,7 @@
     "id": "d9_w4",
     "index": 4,
     "term": "Alter",
-    "phonetic": "/ˈɔːltər/, /tʃeɪndʒ/, /ˈmɑːdɪfaɪ/, /əˈdʒʌst/, /əˈdæpt/, /ˌmɑːdɪfɪˈkeɪʃn/",
+    "phonetic": "/ˈɔːltər/",
     "pos": "(v)",
     "meaning": "Thay đổi, điều chỉnh.",
     "synonyms": [
@@ -796,7 +796,7 @@
     "id": "d9_w5",
     "index": 5,
     "term": "Submit",
-    "phonetic": "/səbˈmɪt/, /faɪl/",
+    "phonetic": "/səbˈmɪt/",
     "pos": "(v)",
     "meaning": "Nộp, đệ trình.",
     "synonyms": [
@@ -823,7 +823,7 @@
     "id": "d10_w1",
     "index": 1,
     "term": "Across",
-    "phonetic": "/əˈkrɔːs/, /θruːˈaʊt/",
+    "phonetic": "/əˈkrɔːs/",
     "pos": "(Prep.)",
     "meaning": "Khắp..",
     "synonyms": [
@@ -859,7 +859,7 @@
     "id": "d10_w3",
     "index": 3,
     "term": "Reasonable",
-    "phonetic": "/ˈriːznəbl/, /əˈfɔːrdəbl/",
+    "phonetic": "/ˈriːznəbl/",
     "pos": "(adj)",
     "meaning": "Hợp lý, phải chăng.",
     "synonyms": [
@@ -887,7 +887,7 @@
     "id": "d10_w5",
     "index": 5,
     "term": "Address",
-    "phonetic": "/əˈdres/, /ˈɔːdiəns/",
+    "phonetic": "/əˈdres/",
     "pos": "(v)",
     "meaning": "Hướng tới, đề cập/ Giải quyết/ Diễn thuyết.",
     "synonyms": [],
@@ -911,7 +911,7 @@
     "id": "d11_w1",
     "index": 1,
     "term": "Promptly",
-    "phonetic": "/ˈprɑːmptli/, /ˈkwɪkli/, /ˈræpɪdli/, /ˈpʌŋktʃuəli/, /ɪˈmiːdiətli/",
+    "phonetic": "/ˈprɑːmptli/",
     "pos": "(adv)",
     "meaning": "1 cách nhanh chóng.",
     "synonyms": [
@@ -935,7 +935,7 @@
     "id": "d11_w2",
     "index": 2,
     "term": "Efficiently",
-    "phonetic": "/ɪˈfɪʃntli/, /ɪˈfektɪvli/",
+    "phonetic": "/kənˈvɪnsɪŋli/",
     "pos": "(adv)",
     "meaning": "1 cách hiệu quả.",
     "synonyms": [
@@ -954,7 +954,7 @@
     "id": "d11_w3",
     "index": 3,
     "term": "Extensive",
-    "phonetic": "/ɪkˈstensɪv/, /ɪnˈtensɪv/",
+    "phonetic": "/ɪkˈstensɪv/",
     "pos": "(adj)",
     "meaning": "Trên diện rộng, sâu rộng.",
     "synonyms": [],
@@ -966,7 +966,7 @@
     "id": "d11_w4",
     "index": 4,
     "term": "Financial ruin",
-    "phonetic": "/faɪˈnænʃl ˈruːɪn/, /ˈbæŋkrʌptsi/",
+    "phonetic": "/faɪˈnænʃl ˈruːɪn/",
     "pos": "(n )",
     "meaning": "Sự phá sản, hủy hoại về tài chính.",
     "synonyms": [
@@ -985,7 +985,7 @@
     "id": "d11_w5",
     "index": 5,
     "term": "Convincingly",
-    "phonetic": "/kənˈvɪnsɪŋli/, /kənˈvɪns/, /pərˈsweɪd/",
+    "phonetic": "/kənˈvɪnsɪŋli/",
     "pos": "(adv)",
     "meaning": "1 cách đầy thuyết phục.",
     "synonyms": [],
@@ -1034,7 +1034,7 @@
     "id": "d12_w3",
     "index": 3,
     "term": "Stiff",
-    "phonetic": "/stɪf/, /sɪˈvɪr/, /ɪnˈtens/, /ˈdɪfɪkəlt/, /ˌkɑːmpəˈtɪʃn/, /ˌɑːpəˈzɪʃn/, /rɪˈzɪstəns/",
+    "phonetic": "/stɪf/",
     "pos": "(adj)",
     "meaning": "Khắc nghiệt, gay gắt",
     "synonyms": [
@@ -1050,7 +1050,7 @@
     "id": "d12_w4",
     "index": 4,
     "term": "Cordially",
-    "phonetic": "/ˈkɔːrdʒəli/, /sɪnˈsɪrli/, /ɪnˈvaɪt/, /θæŋks/, /əˈpɑːlədʒaɪz/",
+    "phonetic": "/ˈkɔːrdʒəli/",
     "pos": "(Adv)",
     "meaning": "1 cách chân thành",
     "synonyms": [
@@ -1100,7 +1100,7 @@
     "id": "d13_w2",
     "index": 2,
     "term": "Outstanding",
-    "phonetic": "/aʊtˈstændɪŋ/, /ˈeksələnt/, /ɪkˈsepʃənl/, /suːˈpɜːrb/, /ˌʌnˈpeɪd/",
+    "phonetic": "/aʊtˈstændɪŋ/",
     "pos": "(adj)",
     "meaning": "Dịch vụ nổi bật, xuất sắc",
     "synonyms": [
@@ -1129,7 +1129,7 @@
     "id": "d13_w4",
     "index": 4,
     "term": "Attract",
-    "phonetic": "/əˈtrækt/, /əˈpiːl/, /drɔː/",
+    "phonetic": "/əˈtrækt/",
     "pos": "(v)",
     "meaning": "Thu hút",
     "synonyms": [
@@ -1201,7 +1201,7 @@
     "id": "d14_w3",
     "index": 3,
     "term": "S.O be eager",
-    "phonetic": "/ˈiː.ɡər/, /kiːn/",
+    "phonetic": "/ˈiː.ɡər/",
     "pos": "(Adj)",
     "meaning": "Ai đó háo hức làm gì",
     "synonyms": [],
@@ -1218,7 +1218,7 @@
     "id": "d14_w4",
     "index": 4,
     "term": "Fire",
-    "phonetic": "/faɪər/, /sæk/, /dɪˈsmɪs/, /ˈleɪ ɒf/",
+    "phonetic": "/faɪər/",
     "pos": "(v)",
     "meaning": "Sa thải ai",
     "synonyms": [
@@ -1238,7 +1238,7 @@
     "id": "d14_w5",
     "index": 5,
     "term": "S.O be satisfied",
-    "phonetic": "/ˈsæt.ɪs.faɪd/, /ˌsætɪsˈfæktəri/, /əkˈseptəbl/, /ˈænsər/, /ˌekspləˈneɪʃn/, /səˈluːʃn/, /kənˈkluːʒn/",
+    "phonetic": "/ˈsæt.ɪs.faɪd/",
     "pos": "(adj)",
     "meaning": "Hài lòng, thỏa mãn với",
     "synonyms": [
@@ -1257,7 +1257,7 @@
     "id": "d15_w1",
     "index": 1,
     "term": "Rival",
-    "phonetic": "/ˈraɪ.vəl/, /kəmˈpetɪtər/",
+    "phonetic": "/ˈraɪ.vəl/",
     "pos": "(n)",
     "meaning": "Đối thủ cạnh tranh.",
     "synonyms": [
@@ -1271,7 +1271,7 @@
     "id": "d15_w2",
     "index": 2,
     "term": "Attribute",
-    "phonetic": "/əˈtrɪbjuːt/, /ˈkrɛdətəd/",
+    "phonetic": "/əˈtrɪbjuːt/",
     "pos": "(v)",
     "meaning": "Cho rằng ... là do ...",
     "synonyms": [
@@ -1285,7 +1285,7 @@
     "id": "d15_w3",
     "index": 3,
     "term": "UNDER",
-    "phonetic": "/ˈʌn.dər/, /kənˌsɪd.əˈreɪ.ʃən/, /ˈpreʃ.ər/, /ˌsuː.pəˈvɪʒ.ən/, /kənˈstrʌk.ʃən/, /ˈsɜː.kəm.stɑːns/, /kənˈtrəʊl/, /ˌɒb.lɪˈɡeɪ.ʃən/, /ɪnˈʃɔːrəns/, /ˈwɔrənti/, /ˈpɒləsi/, /daɪˈrek.ʃən/, /daɪˈrek.tɪv/",
+    "phonetic": "/ˈʌn.dər/",
     "pos": "(Prep.)",
     "meaning": "Chịu việc gì đó.",
     "synonyms": [],
@@ -1372,7 +1372,7 @@
     "id": "d16_w3",
     "index": 3,
     "term": "Satisfactory",
-    "phonetic": "/ˌsætɪsˈfæktəri/, /əkˈseptəbl/, /ˌʌnˌsætɪsˈfæktəri/, /ˈsætɪsfaɪd/, /ˈænsər/, /ˌekspləˈneɪʃn/, /səˈluːʃn/, /kənˈkluːʒn/",
+    "phonetic": "/ˌsætɪsˈfæktəri/",
     "pos": "(adj)",
     "meaning": "Thỏa đáng.",
     "synonyms": [
@@ -1391,7 +1391,7 @@
     "id": "d16_w4",
     "index": 4,
     "term": "Fairly",
-    "phonetic": "/ˈferli/, /ˈiːkwəli/, /'i:vənli/, /dʒɑːb fer/, /kə'riə fer/, /treɪd fer/, /bʊk fer/, /kræft fer/, /ænˈtiːk fer/",
+    "phonetic": "/ˈferli/",
     "pos": "(adv)",
     "meaning": "vənli/: Công bằng, như nhau, đều nhau",
     "synonyms": [
@@ -1412,7 +1412,7 @@
     "id": "d16_w5",
     "index": 5,
     "term": "Precisely",
-    "phonetic": "/prɪˈsaɪsli/, /ˈækjərətli/, /ɪɡˈzæktli/, /prɪˈsɪʒn/, /ˈækjərəsi/, /ɪɡˈzæktnəs/",
+    "phonetic": "/prɪˈsaɪsli/",
     "pos": "(adv)",
     "meaning": "Chính xác",
     "synonyms": [
@@ -1434,7 +1434,7 @@
     "id": "d17_w1",
     "index": 1,
     "term": "Constant",
-    "phonetic": "/ˈkɑːnstənt/, /ˈkɑːnstənt  səˈplaɪ/, /ri'mein ˈkɑːnstənt/",
+    "phonetic": "/ˈkɑːnstənt/",
     "pos": "(adj)",
     "meaning": "Liên tục, không đổi",
     "synonyms": [],
@@ -1485,7 +1485,7 @@
     "id": "d17_w4",
     "index": 4,
     "term": "Resign",
-    "phonetic": "/rɪˈzaɪn/, /rezig'neiʃn/",
+    "phonetic": "/rɪˈzaɪn/",
     "pos": "(v)",
     "meaning": "Từ chức với tư cách là ...",
     "synonyms": [
@@ -1504,7 +1504,7 @@
     "id": "d17_w5",
     "index": 5,
     "term": "Cover",
-    "phonetic": "/ˈkʌvər/, /ɪnˈkluːd/, /kənˈsɪst/, /kəmˈpraɪz/, /ri'pɔ:t/, /in'ʃuə/, /,gærən'ti:/, /spred 'ouvə/",
+    "phonetic": "/ˈkʌvər/",
     "pos": "(v)",
     "meaning": "Chi trả, trang trải/ Bao gồm/ Đưa tin/ Bảo hiểm/ Che phủ/ Làm thay ca cho ai.",
     "synonyms": [
@@ -1550,7 +1550,7 @@
     "id": "d18_w1",
     "index": 1,
     "term": "Favorably",
-    "phonetic": "/ˈfeɪvərəbli/, /ˈpɑːzətɪvli/, /ˈfeɪvərəbl/, /ˌædvənˈteɪdʒəs/, /ˌbenɪˈfɪʃl/, /ˈædvɜːrs/, /ˈædvɜːrsli əˈfekt/",
+    "phonetic": "/ˈfeɪvərəbli/",
     "pos": "(adv)",
     "meaning": "Tích cực",
     "synonyms": [
@@ -1566,7 +1566,7 @@
     "id": "d18_w2",
     "index": 2,
     "term": "Comment",
-    "phonetic": "/ˈkɑːment/, /kəˈmend/",
+    "phonetic": "/ˈkɑːment/",
     "pos": "(v)",
     "meaning": "Bình phẩm, bình luận về cái gì",
     "synonyms": [
@@ -1580,7 +1580,7 @@
     "id": "d18_w3",
     "index": 3,
     "term": "Duty",
-    "phonetic": "/ˈduːti/, /tæsk/, /əˈsaɪnmənt/, /rɪˌspɑːnsəˈbɪləti/, /pərˈfɔːrm/, /fʊlˈfɪl/, /dɪsˈtʃɑːrdʒ/, /ˌʌndərˈteɪk/, /teik ɔn/, /əˈsuːm/",
+    "phonetic": "/ˈduːti/",
     "pos": "(n )",
     "meaning": "Trách nhiệm, nhiệm vụ",
     "synonyms": [
@@ -1599,7 +1599,7 @@
     "id": "d18_w4",
     "index": 4,
     "term": "Handmade",
-    "phonetic": "/ˌhændˈmeɪd/, /ˌhændˈkræftɪd/, /wɛl meɪd/, /kræft/",
+    "phonetic": "/ˌhændˈmeɪd/",
     "pos": "(adj)",
     "meaning": "Được làm thủ công",
     "synonyms": [
@@ -1643,7 +1643,7 @@
     "id": "d19_w2",
     "index": 2,
     "term": "Eliminate",
-    "phonetic": "/ɪˈlɪmɪneɪt/, /dɪˈspəʊz ʌv/, /gɛt rɪd ʌv/, /dɪˈskɑːrd/, /rɪˈmuːv/, /weɪv/",
+    "phonetic": "/ɪˈlɪmɪneɪt/",
     "pos": "(v)",
     "meaning": "phí /",
     "synonyms": [
@@ -1661,7 +1661,7 @@
     "id": "d19_w3",
     "index": 3,
     "term": "S.O pay attention",
-    "phonetic": "/əˈtenʃn/, /məˈtɪkjələsli/",
+    "phonetic": "/əˈtenʃn/",
     "pos": "(adv)",
     "meaning": "Ai đó chú ý đến điều gì",
     "synonyms": [
@@ -1692,7 +1692,7 @@
     "id": "d19_w5",
     "index": 5,
     "term": "Hazardous",
-    "phonetic": "/ˈhæzərdəs/, /ˈdeɪndʒərəs/, /weɪst/, /məˈtɪriəl/, /ˈsʌbstəns/, /ˈkemɪkl/",
+    "phonetic": "/ˈhæzərdəs/",
     "pos": "(adj)",
     "meaning": "Nguy hiểm",
     "synonyms": [
@@ -1706,7 +1706,7 @@
     "id": "d20_w1",
     "index": 1,
     "term": "Fascinating",
-    "phonetic": "/ˈfæsɪneɪtɪŋ/, /əˈpiːlɪŋ/, /əˈlʊrɪŋ/, /ˈtʃɑːrmɪŋ/, /ɪnˈtriːɡɪŋ/, /ɪkˈstriːmli ˈɪntrestɪŋ/",
+    "phonetic": "/ˈfæsɪneɪtɪŋ/",
     "pos": "(adj)",
     "meaning": "Lôi cuốn, thu hút, thú vị",
     "synonyms": [
@@ -1724,7 +1724,7 @@
     "id": "d20_w2",
     "index": 2,
     "term": "Lease",
-    "phonetic": "/liːs/, /liːs   əˈɡriːmənt/, /kənˈkluːd/, /ɪkˈspaɪər/",
+    "phonetic": "/liːs/",
     "pos": "(v/n)",
     "meaning": "Thuê/Sự cho thuê, hợp đồng cho thuê",
     "synonyms": [
@@ -1761,7 +1761,7 @@
     "id": "d20_w4",
     "index": 4,
     "term": "Necessary",
-    "phonetic": "/ˈnesəseri/, /ɪˈsenʃl/, /ˈkruːʃl/, /ˈkrɪtɪkl/, /ˈvaɪtl/, /ˈɪntɪɡrəl/, /ˌɪndɪˈspensəbl/, /im'pɔ:tənt/, /ɪnˈevɪtəbl/, /ˌʌnəˈvɔɪdəbl/",
+    "phonetic": "/ˈnesəseri/",
     "pos": "(adj)",
     "meaning": "Cần thiết/Chắc chắn xảy ra",
     "synonyms": [
@@ -1796,7 +1796,7 @@
     "id": "d20_w5",
     "index": 5,
     "term": "Courier",
-    "phonetic": "/ˈkʊriər/, /n): Chuyển phát nhanh/, /ɪkˈspres/, /ˈekspədaɪt/",
+    "phonetic": "/ˈkʊriər/",
     "pos": "(v/n)",
     "meaning": "Chuyển phát nhanh / Bưu tá, bưu cục.",
     "synonyms": [
@@ -1811,7 +1811,7 @@
     "id": "d21_w1",
     "index": 1,
     "term": "Allow",
-    "phonetic": "/əˈlaʊ/, /ɪnˈtaɪtl/, /ɪˈneɪbl/, /pərˈmɪt/, /kən'sidəriɳ/, /ə'kaunt/, /kən,sidə'reiʃn/",
+    "phonetic": "/əˈlaʊ/",
     "pos": "(v)",
     "meaning": "Cho phép ai đó làm gì",
     "synonyms": [
@@ -1827,7 +1827,7 @@
     "id": "d21_w2",
     "index": 2,
     "term": "Permanent",
-    "phonetic": "/'pə:mənənt/, /'tempərəri/, /dʤɔb/, /'kɔntrækt/, /im'plɔimənt/, /stɑ:f/, /'dæmidʤ/, /'rezidəns/, /ə'dres/, /ʃʌt daun/",
+    "phonetic": "/ˈpɜːrmənənt/",
     "pos": "(adj)",
     "meaning": "mənənt/ (adj): Lâu dài, thường trực, vĩnh viễn",
     "synonyms": [],
@@ -1839,7 +1839,7 @@
     "id": "d21_w3",
     "index": 3,
     "term": "Inspiration source",
-    "phonetic": "/,inspə'reiʃn sɔ:s/, /ɪnˈspaɪər/",
+    "phonetic": "/ˌɪnspəˈreɪʃn sɔːrs/",
     "pos": "(n.phrase)",
     "meaning": "Nguồn cảm hứng",
     "synonyms": [
@@ -1853,7 +1853,7 @@
     "id": "d21_w4",
     "index": 4,
     "term": "Income",
-    "phonetic": "/'inkəm/, /'autkʌm/, /ri'zʌlt/, /'ænjuəl/, /sɔ:s/, /'neiʃənl  'inkəm/, /ə:n/, /'dʤenəreit/, /'sʌplimənt/",
+    "phonetic": "/ˈɪnkʌm/",
     "pos": "(n)",
     "meaning": "Thu nhập từ việc gì",
     "synonyms": [
@@ -1868,7 +1868,7 @@
     "id": "d21_w5",
     "index": 5,
     "term": "Equipment/Machinery modernization",
-    "phonetic": "/i'kwipmənt/, /mə'ʃi:nəri ,mɔdə:nai'zeiʃn/",
+    "phonetic": "/ɪˈkwɪpmənt məˈʃiːnəri ˌmɑːdərnəˈzeɪʃn/",
     "pos": "(n.phrase)",
     "meaning": "Việc hiện đại hóa trang thiết bị/máy móc",
     "synonyms": [],
@@ -1880,7 +1880,7 @@
     "id": "d22_w1",
     "index": 1,
     "term": "Grant",
-    "phonetic": "/ɡrænt/, /n): Cấp, nhượng/, /'fedərəl/, /'gʌvnmənt/, /ri'sə:tʃ/",
+    "phonetic": "/ɡrænt/",
     "pos": "(v/n)",
     "meaning": "Cấp, nhượng / Trợ cấp",
     "synonyms": [],
@@ -1918,7 +1918,7 @@
     "id": "d22_w3",
     "index": 3,
     "term": "Amateur",
-    "phonetic": "/ˈæmətʃər/, /n): Không chuyên, nghiệp dư/, /prəˈfeʃənl/, /n): Chuyên nghiệp/",
+    "phonetic": "/ˈæmətʃər/",
     "pos": "(adj/n)",
     "meaning": "Không chuyên, nghiệp dư/ Vận động viên không chuyên.",
     "synonyms": [],
@@ -1935,7 +1935,7 @@
     "id": "d22_w4",
     "index": 4,
     "term": "Contest",
-    "phonetic": "/ˈkɑːntest/, /ˌkɑːmpəˈtɪʃn/",
+    "phonetic": "/ˈkɑːntest/",
     "pos": "(n )",
     "meaning": "Cuộc thi.",
     "synonyms": [
@@ -1992,7 +1992,7 @@
     "id": "d23_w2",
     "index": 2,
     "term": "Patron",
-    "phonetic": "/ˈpeɪtrən/, /ˈkʌstəmər/, /ˈklaɪənt/",
+    "phonetic": "/ˈpeɪtrən/",
     "pos": "(n)",
     "meaning": "Khách hàng (quen) / Các nhà mạnh thường quân",
     "synonyms": [],
@@ -2009,7 +2009,7 @@
     "id": "d23_w3",
     "index": 3,
     "term": "Accompany / Be accompanied",
-    "phonetic": "/əˈkʌmpəni/, /kʌm wɪð/, /tə'geðə wɪð/, /ə'lɔɳ wɪð/, /in'klu:did/, /ɪnˈkləʊzd/, /əˈtætʃt/",
+    "phonetic": "/əˈkʌmpəni/",
     "pos": "(v)",
     "meaning": "Đi cùng ai/Đi kèm với cái gì",
     "synonyms": [
@@ -2037,7 +2037,7 @@
     "id": "d23_w4",
     "index": 4,
     "term": "Establish",
-    "phonetic": "/ɪˈstæblɪʃ/, /set ʌp/, /'institju:t/, /fɔ:m/, /'stændədz/, /'prinsəplz/, /ri'leiʃnz/, /kɔntækts/, /kə'nekʃnz/, /ri'leiʃnʃip/, /,repju:'teiʃn/, /ˌæsərˈteɪn/, /pruːv/, /dis'kʌvə/, /ə'tempt/, /'efət/",
+    "phonetic": "/ɪˈstæblɪʃ/",
     "pos": "(v)",
     "meaning": "Thành lập, thiết lập/ Khám phá ra chuyện gì.",
     "synonyms": [
@@ -2069,7 +2069,7 @@
     "id": "d23_w5",
     "index": 5,
     "term": "Transmit",
-    "phonetic": "/trænzˈmɪt/, /ˈbrɔːdkæst/, /ˈproʊˌgræm/, /ʃoʊ/, /ɪˈvɛnt/, /ˈtrænsfɜːr/",
+    "phonetic": "/trænzˈmɪt/",
     "pos": "(v)",
     "meaning": "Truyền, phát (tín hiệu, tin tức)",
     "synonyms": [
@@ -2094,7 +2094,7 @@
     "id": "d24_w1",
     "index": 1,
     "term": "Feature",
-    "phonetic": "/ˈfiːtʃər/, /in'klu:d/, /kən'sist ɔv/, /bi kəm'praizd ɔv/, /'kʌvə/, /dɪˈstɪŋktɪv/, /rɪˈdiːmɪŋ/",
+    "phonetic": "/ˈfiːtʃər/",
     "pos": "(v/n)",
     "meaning": "Đặc trưng, đặc điểm, tính năng",
     "synonyms": [
@@ -2160,7 +2160,7 @@
     "id": "d24_w4",
     "index": 4,
     "term": "Dress code (compliance)",
-    "phonetic": "/ˈdres kəʊd kəmˈplaɪəns/",
+    "phonetic": "/strəˈtiːdʒɪkli/",
     "pos": "(N.Phrase)",
     "meaning": "(Sự tuân thủ) qui tắc trang phục/ăn mặc.",
     "synonyms": [],
@@ -2172,7 +2172,7 @@
     "id": "d25_w1",
     "index": 1,
     "term": "In an attempt/ effort/ endeavor",
-    "phonetic": "/əˈtempt/, /'efət/, /in'devər/, /əˈtempt/, /ɪnˈdevər/",
+    "phonetic": "/ɪn ən əˈtempt/",
     "pos": "(n)",
     "meaning": "Trong nỗ lực làm gì",
     "synonyms": [],
@@ -2193,7 +2193,7 @@
     "id": "d25_w2",
     "index": 2,
     "term": "Staff morale",
-    "phonetic": "/stɑ:f məˈræl/, /bu:st/, /im'pru:v/",
+    "phonetic": "/stæf məˈræl/",
     "pos": "(N.Phrase)",
     "meaning": "f məˈræl/ (N.Phrase): Tinh thần/Chí khí, nhuệ khí của nhân viên",
     "synonyms": [],
@@ -2210,7 +2210,7 @@
     "id": "d25_w3",
     "index": 3,
     "term": "Reimbursement",
-    "phonetic": "/ˌriːɪmˈbɜːrsmənt/, /ˈlɑːdʒɪŋ/, /ˌriːɪmˈbɜːrsmənt/, /ˌkɑːmpenˈseɪʃn/, /receive compensation: Khiếu nại đòi bồi thường/, /ˈɪndʒəri/, /ɪmˈplɔɪmənt ˌtɜːrmɪˈneɪʃn ˌkɑːmpenˈseɪʃn/, /rɪˌmjuːnəˈreɪʃn/",
+    "phonetic": "/ˌriːɪmˈbɜːrsmənt/",
     "pos": "(n )",
     "meaning": "Sự hoàn lại, bồi hoàn tiền",
     "synonyms": [
@@ -2229,7 +2229,7 @@
     "id": "d25_w4",
     "index": 4,
     "term": "Deteriorate",
-    "phonetic": "/dɪˈtɪriəreɪt/, /dɪˈdʒen.ə.reɪt/",
+    "phonetic": "/dɪˈtɪriəreɪt/",
     "pos": "(v)",
     "meaning": "Xuống cấp, trở nên tồi tệ hơn",
     "synonyms": [
@@ -2249,7 +2249,7 @@
     "id": "d26_w1",
     "index": 1,
     "term": "Remarkably",
-    "phonetic": "/rɪˈmɑːrkəbli/, /əˈstɑːnɪʃɪŋli/, /əˈstaʊndɪŋli/, /əˈmeɪzɪŋli/, /sərˈpraɪzɪŋli/, /rɪˈmɑːrkəbl/, /ə'tʃi:vmənt/, /kə'riə/, /'tælənt/",
+    "phonetic": "/rɪˈmɑːrkəbli/",
     "pos": "(adv)",
     "meaning": "1 cách đáng kinh ngạc, đáng chú ý.",
     "synonyms": [
@@ -2271,7 +2271,7 @@
     "id": "d26_w2",
     "index": 2,
     "term": "Unanimously",
-    "phonetic": "/juˈnænɪməsli/, /əˈnɑːnɪməsli/, /sə'pɔ:t/, /ɪn ˈfeɪvər ʌv/, /ə'gri:/, /ə'pru:v/, /rɪˈdʒekt/",
+    "phonetic": "/juˈnænɪməsli/",
     "pos": "(adv)",
     "meaning": "Đồng lòng, nhất trí.",
     "synonyms": [
@@ -2285,7 +2285,7 @@
     "id": "d26_w3",
     "index": 3,
     "term": "Opt",
-    "phonetic": "/ɑːpt/, /tʃuːz/",
+    "phonetic": "/ɑːpt/",
     "pos": "(v)",
     "meaning": "Lựa chọn làm gì.",
     "synonyms": [
@@ -2303,8 +2303,8 @@
   {
     "id": "d26_w4",
     "index": 4,
-    "term": "Raise/Increase/Heighten S.O's awareness",
-    "phonetic": "/reɪz əˈwernəs/, /ˈfʌndreɪzɪŋ/",
+    "term": "Raise",
+    "phonetic": "/reɪz əˈwernəs/",
     "pos": "(n)",
     "meaning": "Nâng cao nhận thức của ai về cái gì.",
     "synonyms": [],
@@ -2333,7 +2333,7 @@
     "id": "d27_w1",
     "index": 1,
     "term": "Proprietor",
-    "phonetic": "/prəˈpraɪətər/, /ˈəʊnər/, /pəˈzesər/",
+    "phonetic": "/prəˈpraɪətər/",
     "pos": "(n)",
     "meaning": "Chủ, người sở hữu",
     "synonyms": [
@@ -2353,7 +2353,7 @@
     "id": "d27_w2",
     "index": 2,
     "term": "Apparel",
-    "phonetic": "/əˈpærəl/, /əˈtaɪər/, /ˈkləʊðɪŋ/, /ˈɡɑːrmənt/, /ˈaʊtfɪt/, /ˈkɑːstuːm/",
+    "phonetic": "/əˈpærəl/",
     "pos": "(n)",
     "meaning": "Quần áo, trang phục",
     "synonyms": [
@@ -2372,7 +2372,7 @@
     "id": "d27_w3",
     "index": 3,
     "term": "Evacuate",
-    "phonetic": "/ɪˈvækjueɪt/, /vəˈkeɪt/, /veɪˈkeɪt/, /ˈveɪkeɪt/",
+    "phonetic": "/ɪˈvækjueɪt/",
     "pos": "(v)",
     "meaning": "Sơ tán khỏi nơi nào",
     "synonyms": [],
@@ -2384,7 +2384,7 @@
     "id": "d27_w4",
     "index": 4,
     "term": "Relieve",
-    "phonetic": "/rɪˈliːv/, /iːz/, /əˈliːvieɪt/, /ˈpɑːvərti/, /ˈfæmɪn/, /ˈtræfɪk  kənˈdʒestʃən/, /ˈsɪmptəm/, /æŋˈzaɪəti/, /ɡɪlt/",
+    "phonetic": "/rɪˈliːv/",
     "pos": "(v)",
     "meaning": "Xoa dịu, làm giảm bớt",
     "synonyms": [
@@ -2413,7 +2413,7 @@
     "id": "d28_w1",
     "index": 1,
     "term": "Testimonial",
-    "phonetic": "/ˌtestɪˈməʊniəl/, /ˈfiːdbæk/, /rɪˈvjuː/, /ˈkɑːment/, /ˌkwestʃəˈner/, /'sə:vei/",
+    "phonetic": "/ˌtestɪˈməʊniəl/",
     "pos": "(n)",
     "meaning": "vei/: Lời chứng thực, đánh giá, nhận xét, khảo sát",
     "synonyms": [
@@ -2436,7 +2436,7 @@
     "id": "d28_w2",
     "index": 2,
     "term": "Soar",
-    "phonetic": "/sɔːr/, /ˈskaɪrɑːkɪt/, /ˈrɑːkɪt/, /ʃu:t ʌp/",
+    "phonetic": "/sɔːr/",
     "pos": "(v)",
     "meaning": "Tăng vọt",
     "synonyms": [
@@ -2458,7 +2458,7 @@
     "id": "d28_w3",
     "index": 3,
     "term": "Prerequisite",
-    "phonetic": "/ˌpriːˈrekwəzɪt/, /ˌpriːkənˈdɪʃn/",
+    "phonetic": "/ˌpriːˈrekwəzɪt/",
     "pos": "(n)",
     "meaning": "Điều kiện tiên quyết",
     "synonyms": [
@@ -2477,7 +2477,7 @@
     "id": "d28_w4",
     "index": 4,
     "term": "Tentative",
-    "phonetic": "/ˈtentətɪv/, /prəˈvɪʒənl/, /ˈtempəreri/, /ˈɪntərɪm/",
+    "phonetic": "/ˈtentətɪv/",
     "pos": "(adj)",
     "meaning": "Dự kiến, tạm thời, lâm thời",
     "synonyms": [
@@ -2498,7 +2498,7 @@
     "id": "d28_w5",
     "index": 5,
     "term": "Deduct",
-    "phonetic": "/dɪˈdʌkt/, /səb'trækt/, /ˌtæks dɪˈdʌktəbl/",
+    "phonetic": "/dɪˈdʌkt/",
     "pos": "(v)",
     "meaning": "Khấu trừ, lấy đi cái gì",
     "synonyms": [
@@ -2517,7 +2517,7 @@
     "id": "d28_w6",
     "index": 6,
     "term": "Drawing",
-    "phonetic": "/'drɔ:iɳ/, /drɔ:/, /'ræfl/, /'lɔtəri/",
+    "phonetic": "/ˈdrɔːɪŋ/",
     "pos": "(n)",
     "meaning": "iɳ/ (hoặc Draw /drɔ:/ ) (n)",
     "synonyms": [
@@ -2537,7 +2537,7 @@
     "id": "d29_w1",
     "index": 1,
     "term": "Retrieve",
-    "phonetic": "/rɪˈtriːv/, /rɪˈkʌvər/, /rɪˈliːv/, /əˈliːvieɪt/, /iːz/",
+    "phonetic": "/rɪˈtriːv/",
     "pos": "(v)",
     "meaning": "Lấy lại cái gì",
     "synonyms": [
@@ -2558,7 +2558,7 @@
     "id": "d29_w2",
     "index": 2,
     "term": "Proximity",
-    "phonetic": "/prɑːkˈsɪməti/, /əˈdʒeɪsnt/, /vəˈsɪnəti/",
+    "phonetic": "/prɑːkˈsɪməti/",
     "pos": "(n )",
     "meaning": "trạng thái gần về không gian với cái gì (ở gần cái gì)",
     "synonyms": [],
@@ -2575,7 +2575,7 @@
     "id": "d29_w3",
     "index": 3,
     "term": "Preliminary",
-    "phonetic": "/prɪˈlɪmɪneri/, /ɪˈnɪʃl/",
+    "phonetic": "/prɪˈlɪmɪneri/",
     "pos": "(adj)",
     "meaning": "sơ bộ, mở đầu.",
     "synonyms": [
@@ -2598,7 +2598,7 @@
     "id": "d29_w4",
     "index": 4,
     "term": "Fundamentally",
-    "phonetic": "/ˌfʌndəˈmentəli/, /ɪˈsenʃəli/, /kəmˈpliːtli/, /ˈtəʊtəli/, /ˌɔːltəˈɡeðər/, /ɪnˈtaɪərli/, /'difrənt/",
+    "phonetic": "/ˌfʌndəˈmentəli/",
     "pos": "(adv)",
     "meaning": "về cơ bản, về bản chất",
     "synonyms": [
@@ -2622,7 +2622,7 @@
     "id": "d29_w5",
     "index": 5,
     "term": "Refurbishment",
-    "phonetic": "/ˌriːˈfɜːrbɪʃmənt/, /ˌʌpˈɡreɪd/, /ˌriːˈmɑːdlɪŋ/, /ˌrenəˈveɪʃn/, /rɪˈplenɪʃmənt/, /ˈfɜːrnɪʃɪŋz/, /ˈfɜːrnɪtʃər/",
+    "phonetic": "/ˌriːˈfɜːrbɪʃmənt/",
     "pos": "(n )",
     "meaning": "việc tu sửa, nâng cấp, tân trang, đổi mới",
     "synonyms": [
@@ -2644,7 +2644,7 @@
     "id": "d29_w6",
     "index": 6,
     "term": "Accumulate",
-    "phonetic": "/əˈkjuːmjəleɪt/, /kəˈlekt/, /æk'seləreit/, /ə'li:vieit/, /ə'pri:ʃieit/, /ə'kɔmədeit/, /ə'proupriit/",
+    "phonetic": "/əˈkjuːmjəleɪt/",
     "pos": "(v)",
     "meaning": "tích lũy, thu thập",
     "synonyms": [
@@ -2664,7 +2664,7 @@
     "id": "d30_w1",
     "index": 1,
     "term": "Initially",
-    "phonetic": "/ɪˈnɪʃəli/, /əˈrɪdʒənəli/, /ɪˈnɪʃieɪt/",
+    "phonetic": "/ɪˈnɪʃəli/",
     "pos": "(adv)",
     "meaning": "Ban đầu, sơ khai, về khởi đầu",
     "synonyms": [
@@ -2684,7 +2684,7 @@
     "id": "d30_w2",
     "index": 2,
     "term": "Volume",
-    "phonetic": "/ˈvɑːljəm/, /ˈkwɑːntəti/, /ə'maunt/, /bʌlk/",
+    "phonetic": "/ˈvɑːljəm/",
     "pos": "(n)",
     "meaning": "Số lượng",
     "synonyms": [
@@ -2709,10 +2709,10 @@
   {
     "id": "d30_w3",
     "index": 3,
-    "term": "Play/Assume a crucial role in",
-    "phonetic": "/pleɪ ə roʊl ɪn/",
-    "pos": "(collocation)",
-    "meaning": "Đóng / đảm nhiệm vai trò then chốt trong việc gì",
+    "term": "Play",
+    "phonetic": "/Assume a (key/",
+    "pos": "",
+    "meaning": "Đóng/đảm nhiệm vai trò (then chốt/hàng đầu/trọng tâm/quan trọng/thiết yếu)",
     "synonyms": [],
     "examples": [
       {
@@ -2727,7 +2727,7 @@
     "id": "d30_w4",
     "index": 4,
     "term": "Proceeds",
-    "phonetic": "/ˈprəʊsiːdz/, /ˈprɑːfɪts/, /prəˈsiːdʒər/, /prəˈkjʊr/, /ˈprəʊduːs/",
+    "phonetic": "/ˌdɑːmɪˈneɪʃn/",
     "pos": "(n )",
     "meaning": "Tổng số tiền thu được, lợi nhuận",
     "synonyms": [
@@ -2763,7 +2763,7 @@
     "id": "d30_w6",
     "index": 6,
     "term": "Domination",
-    "phonetic": "/ˌdɑːmɪˈneɪʃn/, /ˈdɑːmɪneɪt/, /ˈdəʊneɪt/",
+    "phonetic": "/ˌdɑːmɪˈneɪʃn/",
     "pos": "(n )",
     "meaning": "Sự thống trị, sự thống lĩnh, nắm quyền kiểm soát",
     "synonyms": [],
@@ -2780,7 +2780,7 @@
     "id": "d31_w1",
     "index": 1,
     "term": "Feasible",
-    "phonetic": "/ˈfiːzəbl/, /ˈpræktɪkəbl/, /ˈpɑːsəbl/",
+    "phonetic": "/ˈfiːzəbl/",
     "pos": "(adj)",
     "meaning": "có khả năng, khả thi",
     "synonyms": [
@@ -2800,7 +2800,7 @@
     "id": "d31_w2",
     "index": 2,
     "term": "Contingency",
-    "phonetic": "/kənˈtɪndʒənsi/, /ˌpɑːsəˈbɪləti/",
+    "phonetic": "/kənˈtɪndʒənsi/",
     "pos": "(n )",
     "meaning": "sự dự phòng, dự trù, khả năng xảy ra",
     "synonyms": [
@@ -2819,7 +2819,7 @@
     "id": "d31_w3",
     "index": 3,
     "term": "Lucrative",
-    "phonetic": "/ˈluːkrətɪv/, /ˈprɑːfɪtəbl/, /ˌbenɪˈfɪʃl/, /ˌbenɪˈfɪʃieri/",
+    "phonetic": "/ˈluːkrətɪv/",
     "pos": "(adj)",
     "meaning": "có lời, sinh lời, thắng lợi",
     "synonyms": [
@@ -2840,7 +2840,7 @@
     "id": "d31_w4",
     "index": 4,
     "term": "Sensible",
-    "phonetic": "/ˈsensəbl/, /ˈpræktɪkl/, /ˈsensətɪv/",
+    "phonetic": "/ˈsensəbl/",
     "pos": "(adj)",
     "meaning": "hợp lí, sáng suốt",
     "synonyms": [
@@ -2859,7 +2859,7 @@
     "id": "d31_w5",
     "index": 5,
     "term": "Unveil",
-    "phonetic": "/ˌʌnˈveɪl/, /rɪˈviːl/, /dɪsˈkləʊz/",
+    "phonetic": "/ˌʌnˈveɪl/",
     "pos": "(v)",
     "meaning": "hé lộ, tiết lộ, vạch trần",
     "synonyms": [
@@ -2879,7 +2879,7 @@
     "id": "d31_w6",
     "index": 6,
     "term": "Commemorate",
-    "phonetic": "/kəˈmeməreɪt/, /ˈselɪbreɪt/",
+    "phonetic": "/kəˈmeməreɪt/",
     "pos": "(v)",
     "meaning": "ăn mừng, kỉ niệm, tưởng niệm",
     "synonyms": [
@@ -2898,7 +2898,7 @@
     "id": "d32_w1",
     "index": 1,
     "term": "Bias",
-    "phonetic": "/ˈbaɪəs/, /ˈbaɪəs/",
+    "phonetic": "/ˈbaɪəs/",
     "pos": "(n)",
     "meaning": "Khuynh hướng, thiên hướng, tính thiên vị (n); Có khuynh hướng, thiên vị (v)",
     "synonyms": [],
@@ -2915,7 +2915,7 @@
     "id": "d32_w2",
     "index": 2,
     "term": "Underprivileged",
-    "phonetic": "/ˌʌndərˈprɪvəlɪdʒd/, /ˌdɪsədˈvæntɪdʒd/, /pʊr/",
+    "phonetic": "/ˌʌndərˈprɪvəlɪdʒd/",
     "pos": "(adj)",
     "meaning": "Bị tước đoạt, bị thiệt thòi, nghèo nàn, thiếu thốn",
     "synonyms": [
@@ -2952,7 +2952,7 @@
     "id": "d32_w4",
     "index": 4,
     "term": "Coincide",
-    "phonetic": "/ˌkəʊɪnˈsaɪd/, /kəʊˈɪnsɪdəns/",
+    "phonetic": "/ˌkəʊɪnˈsaɪd/",
     "pos": "(v)",
     "meaning": "Trùng hợp, trùng khớp, xảy ra cùng lúc với cái gì",
     "synonyms": [],
@@ -2969,7 +2969,7 @@
     "id": "d32_w5",
     "index": 5,
     "term": "Tailor",
-    "phonetic": "/ˈteɪlər/, /əˈdʒʌst/, /ˈkʌstəmaɪz/, /ˈpɜːrsənəlaɪz/",
+    "phonetic": "/ɪnˈsentɪv/",
     "pos": "(v)",
     "meaning": "Điều chỉnh, tùy biến, tùy chỉnh",
     "synonyms": [
@@ -2990,7 +2990,7 @@
     "id": "d32_w6",
     "index": 6,
     "term": "Incentive",
-    "phonetic": "/ɪnˈsentɪv/, /ˌməʊtɪˈveɪʃn/, /ɪnˈkɜːrɪdʒmənt/",
+    "phonetic": "/ɪnˈsentɪv/",
     "pos": "(n )",
     "meaning": "Sự khích lệ, sự khuyến khích, sự động viên, động lực",
     "synonyms": [
@@ -3010,7 +3010,7 @@
     "id": "d33_w1",
     "index": 1,
     "term": "Fragile",
-    "phonetic": "/ˈfrædʒl/, /ˈdelɪkət/, /ˈdedɪkeɪt/",
+    "phonetic": "/ˈfrædʒl/",
     "pos": "(adj)",
     "meaning": "Mong manh, dễ vỡ",
     "synonyms": [
@@ -3029,7 +3029,7 @@
     "id": "d33_w2",
     "index": 2,
     "term": "Vague",
-    "phonetic": "/veɪɡ/, /ˌʌnˈklɪr/, /klɪr/, /ˈɑːbviəs/, /əˈpærənt/",
+    "phonetic": "/veɪɡ/",
     "pos": "(adj)",
     "meaning": "Mơ hồ, không rõ ràng",
     "synonyms": [
@@ -3050,7 +3050,7 @@
     "id": "d33_w3",
     "index": 3,
     "term": "Hastily",
-    "phonetic": "/ˈheɪstɪli/, /ˈhɜːrɪdli/",
+    "phonetic": "/ˈheɪstɪli/",
     "pos": "(adv)",
     "meaning": "Vội vàng, hấp tấp.",
     "synonyms": [
@@ -3087,7 +3087,7 @@
     "id": "d33_w5",
     "index": 5,
     "term": "Industrious",
-    "phonetic": "/ɪnˈdʌstriəs/, /ˈdɪlɪdʒənt/, /'neglidʤənt/, /in'dʌstriəl/",
+    "phonetic": "/ɪnˈdʌstriəs/",
     "pos": "(adj)",
     "meaning": "Siêng năng, chăm chỉ, cần cù.",
     "synonyms": [
@@ -3126,7 +3126,7 @@
     "id": "d34_w1",
     "index": 1,
     "term": "Refrain",
-    "phonetic": "/dɪˈzɪst/",
+    "phonetic": "/rɪˈfreɪn/",
     "pos": "(v)",
     "meaning": "Kiềm chế từ việc làm gì, cố không làm gì đó.",
     "synonyms": [
@@ -3162,7 +3162,7 @@
     "id": "d34_w3",
     "index": 3,
     "term": "Accredited",
-    "phonetic": "/əˈkredɪtɪd/, /əkˈnɑːlɪdʒɪd/, /ˈrekəɡnaɪzɪd/, /ədˈmɪtɪd/",
+    "phonetic": "/əˈkredɪtɪd/",
     "pos": "(adj)",
     "meaning": "Được công nhận, thừa nhận.",
     "synonyms": [
@@ -3217,7 +3217,7 @@
     "id": "d34_w6",
     "index": 6,
     "term": "Resemble",
-    "phonetic": "/rɪˈzembl/, /'similər/, /aɪˈdentɪkl/, /ə'sembl/",
+    "phonetic": "/rɪˈzembl/",
     "pos": "(v)",
     "meaning": "Tương tự, giống với",
     "synonyms": [
@@ -3257,7 +3257,7 @@
     "id": "d35_w2",
     "index": 2,
     "term": "Pattern",
-    "phonetic": "/'pætən/, /'pætən/",
+    "phonetic": "/'pætən/",
     "pos": "(v)",
     "meaning": "Bắt chước, làm theo khuôn mẫu.",
     "synonyms": [],
@@ -3278,7 +3278,7 @@
     "id": "d35_w3",
     "index": 3,
     "term": "Fellow",
-    "phonetic": "/ˈfeləʊ/, /ˈkɑːliːɡ/, /ˈkəʊ wɜːrkər/",
+    "phonetic": "/ˈfeləʊ/",
     "pos": "(n)",
     "meaning": "Những người đồng hành, đồng chí.",
     "synonyms": [
@@ -3298,7 +3298,7 @@
     "id": "d35_w4",
     "index": 4,
     "term": "Abruptly",
-    "phonetic": "/əˈbrʌptli/, /ˈsʌdnli/, /ˌʌnɪksˈpɛktɪdli/",
+    "phonetic": "/əˈbrʌptli/",
     "pos": "(adv)",
     "meaning": "1 cách bất ngờ, đột ngột.",
     "synonyms": [
@@ -3318,7 +3318,7 @@
     "id": "d35_w5",
     "index": 5,
     "term": "Designate",
-    "phonetic": "/ˈdezɪɡneɪt/, /əˈpɔɪnt/, /neɪm/, /ˈnɑːmɪneɪt/",
+    "phonetic": "/ˈdezɪɡneɪt/",
     "pos": "(v)",
     "meaning": "Chỉ định, bổ nhiệm ai.",
     "synonyms": [
@@ -3339,7 +3339,7 @@
     "id": "d35_w6",
     "index": 6,
     "term": "Accomplish",
-    "phonetic": "/əˈkɑːmplɪʃ/, /əˈtʃiːv/, /əb'tein/, /səkˈsiːd/, /kəmˈpliːt/, /ˈfɪnɪʃ/, /ə'kɔmpliʃmənt/",
+    "phonetic": "/səˈspend/",
     "pos": "(v)",
     "meaning": "Hoàn thành, hoàn tất, đạt được",
     "synonyms": [
@@ -3363,7 +3363,7 @@
     "id": "d35_w7",
     "index": 7,
     "term": "Suspend",
-    "phonetic": "/səˈspend/, /səˈspendɪd/, /səsˈpɛndɪd/, /ˈpendɪŋ/",
+    "phonetic": "/səˈspend/",
     "pos": "(v)",
     "meaning": "Treo lơ lửng.",
     "synonyms": [

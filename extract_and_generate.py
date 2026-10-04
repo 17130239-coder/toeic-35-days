@@ -106,7 +106,22 @@ VOCAB_SPECIFIC_OVERRIDES = {
     (22, 5): {"term": "Participate in", "pos": "(v.phrase)", "phonetic": "/pɑːrˈtɪsɪpeɪt ɪn/", "meaning": "Tham gia vào cái gì"},
     (23, 1): {"term": "On behalf of S.O", "pos": "(prep.phrase)", "phonetic": "/ɑːn bɪˈhæf əv/", "meaning": "Thay mặt, đại diện cho ai", "examples": [{"en": "On behalf of the company, I would like to thank you for your dedication.", "vi": "Thay mặt công ty, tôi xin chân thành cảm ơn sự cống hiến của quý vị."}]},
     (24, 2): {"term": "Be/come equipped with S.TH", "pos": "(phrase)", "phonetic": "/bi ɪˈkwɪpt wɪð/", "meaning": "Được trang bị với cái gì"},
-    (30, 3): {"term": "Play/Assume a crucial role in", "pos": "(collocation)", "phonetic": "/pleɪ ə roʊl ɪn/", "meaning": "Đóng / đảm nhiệm vai trò then chốt trong việc gì"},
+    (0, 7): {"phonetic": "/rɪˈnjuːəl/"},
+    (2, 5): {"phonetic": "/fɪl aʊt/"},
+    (11, 2): {"phonetic": "/kənˈvɪnsɪŋli/"},
+    (21, 2): {"phonetic": "/ˈpɜːrmənənt/"},
+    (21, 3): {"phonetic": "/ˌɪnspəˈreɪʃn sɔːrs/"},
+    (21, 4): {"phonetic": "/ˈɪnkʌm/"},
+    (21, 5): {"phonetic": "/ɪˈkwɪpmənt məˈʃiːnəri ˌmɑːdərnəˈzeɪʃn/"},
+    (24, 4): {"phonetic": "/strəˈtiːdʒɪkli/"},
+    (25, 1): {"phonetic": "/ɪn ən əˈtempt/"},
+    (25, 2): {"phonetic": "/stæf məˈræl/"},
+    (26, 4): {"phonetic": "/reɪz əˈwernəs/"},
+    (28, 6): {"phonetic": "/ˈdrɔːɪŋ/"},
+    (30, 4): {"phonetic": "/ˌdɑːmɪˈneɪʃn/"},
+    (32, 5): {"phonetic": "/ɪnˈsentɪv/"},
+    (34, 1): {"phonetic": "/rɪˈfreɪn/"},
+    (35, 6): {"phonetic": "/səˈspend/"},
     (30, 5): {"term": "Interfere with", "pos": "(v.phrase)", "phonetic": "/ˌɪntərˈfɪr wɪð/", "meaning": "Can thiệp, gây cản trở chuyện gì"}
 }
 
@@ -242,7 +257,7 @@ def extract_all():
                             "id": f"d0_w{i+1}",
                             "index": i+1,
                             "term": m.group(1).strip(),
-                            "phonetic": m.group(2).strip(),
+                            "phonetic": m.group(2).split(',')[0].strip(),
                             "pos": m.group(3).strip(),
                             "meaning": m.group(4).strip(),
                             "synonyms": [],
@@ -280,9 +295,30 @@ def extract_all():
                 
                 first_line = lines[0]
                 
-                # Extract true phonetics
-                ipas = [f"/{m.strip('/ ')}/" for m in re.findall(r'/([^/\n]+)/', body) if is_true_ipa(f"/{m}/")]
-                phonetic = ', '.join(ipas) if ipas else ""
+                # Extract true phonetic of the main term (ONLY before synonyms or definition)
+                cut_points = []
+                for delim in ['\n(v)', '\n(n)', '\n(adj)', '\n(adv)', '\n(phrase)', '\n(v/n)', ' = ', ' =', '= ', '\n=', ' ~ ', ' ~', '~ ', '\n~', '><', '\n><', ': (v)', ': (n)', ': (adj)', ': (adv)']:
+                    idx = body.find(delim)
+                    if idx != -1:
+                        cut_points.append(idx)
+
+                col_m = re.search(r':\s*([a-zA-ZÀ-ỹ\s]+)', body)
+                if col_m:
+                    after = col_m.group(1)
+                    if any(c in VN_CHARS for c in after):
+                        cut_points.append(col_m.start())
+
+                header_end = min(cut_points) if cut_points else len(body)
+                header = body[:header_end]
+
+                ipas = [f"/{m.strip('/ ')}/" for m in re.findall(r'/([^/\n]+)/', header)]
+                clean_ipas = []
+                for ipa in ipas:
+                    ipa_clean = ipa.strip('/ ')
+                    if not any(bad in ipa_clean.lower() for bad in ['n):', 'v):', 'adj):', 'adv):', 'chuyển phát', 'khiếu nại', 'by', 'bằng', 'over', 'to s.o']):
+                        clean_ipas.append(f"/{ipa_clean}/")
+
+                phonetic = clean_ipas[0] if clean_ipas else ""
                 
                 # POS
                 pos_m = pos_pat.search(body)
