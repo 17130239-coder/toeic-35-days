@@ -568,14 +568,151 @@ def extract_all():
             entry["day"] = d["day"]
             all_vocab.append(entry)
 
+    # Ingest valid permanent games from game.html if available
+    perm_games = []
+    if os.path.exists("game.html"):
+        with open("game.html", "r", encoding="utf-8") as f:
+            soup_games = BeautifulSoup(f.read(), "html.parser")
+        items = soup_games.find_all("div", class_="bqKF7d")
+        for it in items:
+            text = it.get_text("\n")
+            lines = [l.strip() for l in text.split("\n") if l.strip()]
+            if not lines: continue
+            all_links = re.findall(r"https://(?:quizizz|wayground)\.com/join\?gc=(\d+)", text)
+            if not all_links: continue
+            
+            if "🎮" in text:
+                parts = re.split(r"🎮\s*", text)
+                main_req = ""
+                for idx_l, l in enumerate(lines):
+                    if "KHÔNG SAI" in l or "STREAKS" in l:
+                        main_req = l
+                        break
+                    elif "YÊU CẦU:" in l and idx_l + 1 < len(lines):
+                        main_req = lines[idx_l + 1]
+                        break
+                for pt in parts[1:]:
+                    pt_lines = [l.strip() for l in pt.split("\n") if l.strip()]
+                    if not pt_lines: continue
+                    title = pt_lines[0]
+                    nums = [int(n) for n in re.findall(r"\d+", title)]
+                    pt_codes = list(dict.fromkeys(re.findall(r"https://(?:quizizz|wayground)\.com/join\?gc=(\d+)", pt)))
+                    if pt_codes:
+                        perm_games.append({
+                            "title": f"GAME VĨNH VIỄN {title}",
+                            "days": nums,
+                            "primary_code": pt_codes[0],
+                            "backup_codes": pt_codes[1:],
+                            "backup_urls": [f"https://quizizz.com/join?gc={c}" for c in pt_codes[1:]],
+                            "all_codes": pt_codes,
+                            "primary_url": f"https://quizizz.com/join?gc={pt_codes[0]}",
+                            "all_urls": [f"https://quizizz.com/join?gc={c}" for c in pt_codes],
+                            "requirement": main_req or "Không sai câu nào, đạt đủ streak yêu cầu.",
+                            "raw_text": pt.strip()
+                        })
+                continue
+
+            title = lines[0]
+            m_days = re.findall(r"DAY\s*\[(.*?)\]|\[DAY\s*(\d+)\]", text, re.I)
+            days_found = []
+            for d1, d2 in m_days:
+                s = d1 or d2
+                days_found.extend([int(n) for n in re.findall(r"\d+", s)])
+            days_found = sorted(list(set(days_found)))
+            
+            req = ""
+            for idx_l, l in enumerate(lines):
+                if "KHÔNG SAI" in l or "STREAKS" in l:
+                    req = l
+                    break
+                elif "YÊU CẦU:" in l and idx_l + 1 < len(lines):
+                    req = lines[idx_l + 1]
+                    break
+                    
+            codes = list(dict.fromkeys(all_links))
+            perm_games.append({
+                "title": title,
+                "days": days_found,
+                "primary_code": codes[0],
+                "backup_codes": codes[1:],
+                "backup_urls": [f"https://quizizz.com/join?gc={c}" for c in codes[1:]],
+                "all_codes": codes,
+                "primary_url": f"https://quizizz.com/join?gc={codes[0]}",
+                "all_urls": [f"https://quizizz.com/join?gc={c}" for c in codes],
+                "requirement": req or "Không sai câu nào, đạt đủ streak yêu cầu.",
+                "raw_text": text.strip()
+            })
+
+    if perm_games:
+        with open("permanent_games_clean.json", "w", encoding="utf-8") as f:
+            json.dump(perm_games, f, indent=2, ensure_ascii=False)
+
+        for d in days_data:
+            day_num = d["day"]
+            matching = [g for g in perm_games if day_num in g["days"]]
+            best_game = None
+            if matching:
+                exact = [g for g in matching if len(g["days"]) == 1]
+                if exact:
+                    best_game = exact[0]
+                else:
+                    milestone = [g for g in matching if max(g["days"]) == day_num]
+                    if milestone:
+                        milestone.sort(key=lambda x: len(x["days"]))
+                        best_game = milestone[0]
+                    else:
+                        matching.sort(key=lambda x: len(x["days"]))
+                        best_game = matching[0]
+
+            if best_game:
+                d["wayground"]["primary_code"] = best_game["primary_code"]
+                d["wayground"]["primary_url"] = best_game["primary_url"]
+                d["wayground"]["backup_urls"] = best_game["backup_urls"]
+                d["wayground"]["all_codes"] = best_game["all_codes"]
+                d["wayground"]["all_urls"] = best_game["all_urls"]
+                d["wayground"]["requirement"] = best_game["requirement"]
+                d["wayground"]["permanent_title"] = best_game["title"]
+                d["wayground"]["related_games"] = [
+                    {
+                        "title": g["title"],
+                        "primary_code": g["primary_code"],
+                        "primary_url": g["primary_url"],
+                        "all_urls": g["all_urls"],
+                        "days": g["days"],
+                        "requirement": g["requirement"]
+                    }
+                    for g in matching
+                ]
+
     # Wayground games mapping
     wg_games = {}
+    for g in perm_games:
+        gc = g["primary_code"]
+        target_days = g["days"] if g["days"] else [0]
+        wg_games[gc] = {
+            "game_code": gc,
+            "url": g["primary_url"],
+            "backup_urls": g["backup_urls"],
+            "all_urls": g["all_urls"],
+            "title": g["title"],
+            "primary_day": g["days"][-1] if g["days"] else 0,
+            "target_days": target_days,
+            "requirement": g["requirement"],
+            "reward": "TRẢ BÀI LỌT [TOP 3] HAI LẦN LIÊN TIẾP ĐƯỢC THƯỞNG 30K",
+            "questions": []
+        }
+        for bc in g["backup_codes"]:
+            if bc not in wg_games:
+                wg_games[bc] = dict(wg_games[gc])
+                wg_games[bc]["game_code"] = bc
+                wg_games[bc]["url"] = f"https://quizizz.com/join?gc={bc}"
+
     for d in days_data:
         for gc in d["wayground"]["game_codes"]:
             if gc not in wg_games:
                 wg_games[gc] = {
                     "game_code": gc,
-                    "url": f"https://wayground.com/join?gc={gc}",
+                    "url": f"https://quizizz.com/join?gc={gc}",
                     "title": d["wayground"]["title"] or f"Wayground Review Day {d['day']}",
                     "primary_day": d["day"],
                     "target_days": d["wayground"]["target_days"] if d["wayground"]["target_days"] else [d["day"]],
@@ -583,11 +720,6 @@ def extract_all():
                     "reward": d["wayground"]["reward"],
                     "questions": []
                 }
-            else:
-                for td in d["wayground"]["target_days"]:
-                    if td not in wg_games[gc]["target_days"]:
-                        wg_games[gc]["target_days"].append(td)
-                        wg_games[gc]["target_days"].sort()
 
     # Generate rich Wayground Quiz questions for each game
     random.seed(42)

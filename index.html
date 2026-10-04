@@ -336,10 +336,10 @@
             <span class="hidden sm:inline">Video Buổi Học</span>
           </a>
 
-          <!-- Wayground direct play button from modal -->
+          <!-- Wayground / Quizizz direct play button from modal -->
           <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
             <i class="fa-solid fa-gamepad text-orange-200"></i>
-            <span class="hidden sm:inline">Vào Wayground</span>
+            <span class="hidden sm:inline">Vào Game Quizizz</span>
           </a>
 
           <!-- Close button -->
@@ -382,6 +382,51 @@
             <i class="fa-solid fa-circle-exclamation text-amber-500"></i> Dặn dò giáo viên & Lịch trả bài:
           </div>
           <div id="modalDanDoText" class="text-xs sm:text-sm whitespace-pre-line leading-relaxed text-amber-900/90 dark:text-amber-200/90"></div>
+        </div>
+
+        <!-- Game Quizizz Box (Permanent Live Game from game.html) -->
+        <div id="modalGameBox" style="display: none;" class="p-3.5 sm:p-4 rounded-xl bg-orange-50/70 dark:bg-orange-950/20 border border-orange-200/80 dark:border-orange-900/40 text-xs sm:text-sm space-y-3">
+          <div class="flex items-center justify-between gap-2 flex-wrap">
+            <div class="flex items-center gap-2">
+              <div class="w-7 h-7 rounded-lg bg-orange-500/10 dark:bg-orange-400/10 border border-orange-300 dark:border-orange-700/60 flex items-center justify-center text-orange-600 dark:text-orange-400 shrink-0">
+                <i class="fa-solid fa-gamepad text-xs"></i>
+              </div>
+              <span id="modalGameScopeTitle" class="font-bold text-slate-900 dark:text-zinc-100 text-xs sm:text-sm">Link Game Vĩnh Viễn</span>
+            </div>
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/60">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+              Phòng vĩnh viễn (Đang mở)
+            </span>
+          </div>
+
+          <div id="modalGameRequirementBox" style="display: none;" class="p-2.5 rounded-lg bg-white/80 dark:bg-zinc-900/80 border border-orange-200/60 dark:border-orange-900/30 text-[11px] sm:text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
+            <i class="fa-solid fa-bullseye text-orange-500 mt-0.5 shrink-0"></i>
+            <div>
+              <strong class="font-semibold text-orange-900 dark:text-orange-300">Yêu cầu giáo viên:</strong>
+              <span id="modalGameRequirementText" class="font-mono text-slate-800 dark:text-zinc-200 block sm:inline ml-0 sm:ml-1 font-semibold"></span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 flex-wrap pt-0.5">
+            <a id="modalGamePrimaryBtn" href="#" target="_blank" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-xs">
+              <i class="fa-solid fa-play text-xs"></i>
+              <span id="modalGamePrimaryBtnText">Vào Quizizz Chính Thức</span>
+            </a>
+            <a id="modalGameWebPracticeBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
+              <i class="fa-solid fa-laptop-code text-orange-500 text-xs"></i>
+              <span>Luyện tập trên Web</span>
+            </a>
+          </div>
+
+          <div id="modalGameBackupsBox" style="display: none;" class="pt-2 border-t border-orange-200/50 dark:border-zinc-800/80 text-[11px] text-slate-600 dark:text-zinc-400 flex items-center gap-2 flex-wrap">
+            <span class="font-medium text-slate-500 dark:text-zinc-400 shrink-0">Link dự phòng:</span>
+            <div id="modalGameBackupsList" class="inline-flex items-center gap-1.5 flex-wrap"></div>
+          </div>
+
+          <div id="modalGameCombosBox" style="display: none;" class="pt-2 border-t border-orange-200/50 dark:border-zinc-800/80 text-[11px] text-slate-600 dark:text-zinc-400 space-y-1">
+            <span class="font-medium text-slate-500 dark:text-zinc-400">Đề ôn tập liên quan:</span>
+            <div id="modalGameCombosList" class="flex items-center gap-1.5 flex-wrap"></div>
+          </div>
         </div>
 
         <!-- TAB 1: VOCABULARY LIST -->
@@ -526,7 +571,7 @@
   </div>
 
   <!-- LOAD DATA FILES -->
-  <script src="vocab_data.js?v=20261004_v5"></script>
+  <script src="vocab_data.js?v=20261004_v6"></script>
 
   <!-- APPLICATION SCRIPT -->
   <script>
@@ -577,8 +622,9 @@
         const isMastered = status === 'mastered';
         const isInProgress = status === 'learning';
         const vocabCount = (d.vocabulary || []).length;
-        const wgCodes = d.wayground && d.wayground.game_codes ? d.wayground.game_codes : [];
-        const primaryCode = wgCodes.length > 0 ? wgCodes[0] : null;
+        const wgCodes = (d.wayground && d.wayground.all_codes) ? d.wayground.all_codes : (d.wayground && d.wayground.game_codes ? d.wayground.game_codes : []);
+        const primaryCode = (d.wayground && d.wayground.primary_code) ? d.wayground.primary_code : (wgCodes.length > 0 ? wgCodes[0] : null);
+        const primaryGameUrl = (d.wayground && d.wayground.primary_url) ? d.wayground.primary_url : (primaryCode ? `https://quizizz.com/join?gc=${primaryCode}` : null);
 
         const primaryVideo = (d.video_recordings && d.video_recordings.length > 0) ? d.video_recordings[0] : (d.video_recording || null);
 
@@ -642,8 +688,8 @@
               </a>
             ` : ''}
 
-            ${primaryCode ? `
-              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Vào Game Wayground PIN: ${primaryCode}">
+            ${primaryGameUrl ? `
+              <a href="${primaryGameUrl}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Vào Game Quizizz Vĩnh Viễn chính thức (PIN: ${primaryCode})">
                 <i class="fa-solid fa-gamepad text-xs text-orange-500 dark:text-orange-400"></i>
               </a>
             ` : ''}
@@ -792,11 +838,15 @@
         document.getElementById('modalDayDue').innerHTML = `<i class="fa-solid fa-graduation-cap text-slate-400"></i> ${vCount} từ vựng trọng tâm ${qCount > 0 ? '• ' + qCount + ' câu bài tập' : ''}`;
       }
 
-      // Wayground btn
+      // Wayground / Quizizz game setup
+      const wg = d.wayground || {};
+      const primaryGameUrl = wg.primary_url || (wg.game_codes && wg.game_codes.length > 0 ? `https://quizizz.com/join?gc=${wg.game_codes[0]}` : '');
+      const primaryCode = wg.primary_code || (wg.game_codes && wg.game_codes.length > 0 ? wg.game_codes[0] : '');
+
       const wgBtn = document.getElementById('modalWaygroundBtn');
-      const wgCodes = d.wayground && d.wayground.game_codes ? d.wayground.game_codes : [];
-      if (wgCodes.length > 0) {
-        wgBtn.href = `wayground.html?gc=${wgCodes[0]}`;
+      if (primaryGameUrl) {
+        wgBtn.href = primaryGameUrl;
+        wgBtn.title = `Vào Game Quizizz Vĩnh Viễn chính thức (PIN: ${primaryCode})`;
         wgBtn.style.display = 'flex';
       } else {
         wgBtn.style.display = 'none';
@@ -829,6 +879,71 @@
         document.getElementById('modalDanDoText').innerText = cleanDanDo;
       } else {
         danDoBox.style.display = 'none';
+      }
+
+      // Populate modalGameBox (Permanent Quizizz Game from game.html)
+      const gameBox = document.getElementById('modalGameBox');
+      if (primaryGameUrl && primaryCode) {
+        gameBox.style.display = 'block';
+        document.getElementById('modalGameScopeTitle').innerText = `Game Quizizz Vĩnh Viễn (${wg.day_scope || 'Day ' + d.day})`;
+
+        const reqBox = document.getElementById('modalGameRequirementBox');
+        if (wg.requirement && wg.requirement.trim()) {
+          reqBox.style.display = 'flex';
+          document.getElementById('modalGameRequirementText').innerText = wg.requirement.trim();
+        } else {
+          reqBox.style.display = 'none';
+        }
+
+        const primBtn = document.getElementById('modalGamePrimaryBtn');
+        primBtn.href = primaryGameUrl;
+        document.getElementById('modalGamePrimaryBtnText').innerText = `Vào Quizizz Chính Thức (PIN: ${primaryCode})`;
+
+        const webBtn = document.getElementById('modalGameWebPracticeBtn');
+        webBtn.href = `wayground.html?gc=${primaryCode}`;
+
+        // Backups
+        const backupsBox = document.getElementById('modalGameBackupsBox');
+        const backupsList = document.getElementById('modalGameBackupsList');
+        backupsList.innerHTML = '';
+        const backupCodes = wg.backup_codes || [];
+        const backupUrls = wg.backup_urls || [];
+        if (backupCodes.length > 0) {
+          backupsBox.style.display = 'flex';
+          backupCodes.forEach((bCode, bIdx) => {
+            const bUrl = backupUrls[bIdx] || `https://quizizz.com/join?gc=${bCode}`;
+            const link = document.createElement('a');
+            link.href = bUrl;
+            link.target = '_blank';
+            link.className = 'px-2 py-0.5 rounded bg-white dark:bg-zinc-800 hover:bg-orange-50 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 hover:text-orange-600 border border-slate-200 dark:border-zinc-700 font-mono transition';
+            link.innerText = `Dự phòng ${bIdx + 1} (${bCode})`;
+            backupsList.appendChild(link);
+          });
+        } else {
+          backupsBox.style.display = 'none';
+        }
+
+        // Related combos
+        const combosBox = document.getElementById('modalGameCombosBox');
+        const combosList = document.getElementById('modalGameCombosList');
+        combosList.innerHTML = '';
+        const relatedGames = wg.related_games || [];
+        if (relatedGames.length > 0) {
+          combosBox.style.display = 'block';
+          relatedGames.forEach(rg => {
+            const rUrl = rg.primary_url || `https://quizizz.com/join?gc=${rg.primary_code}`;
+            const link = document.createElement('a');
+            link.href = rUrl;
+            link.target = '_blank';
+            link.className = 'px-2 py-0.5 rounded bg-white dark:bg-zinc-800 hover:bg-orange-50 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 hover:text-orange-600 border border-slate-200 dark:border-zinc-700 transition inline-flex items-center gap-1';
+            link.innerHTML = `<span>${escapeHtml(rg.day_scope || rg.title || 'Combo')}</span> <span class="font-mono text-slate-400">(${rg.primary_code})</span>`;
+            combosList.appendChild(link);
+          });
+        } else {
+          combosBox.style.display = 'none';
+        }
+      } else {
+        gameBox.style.display = 'none';
       }
 
       // Populate Vocabulary List
@@ -896,9 +1011,32 @@
       // Raw HTML
       document.getElementById('modalRawContent').innerHTML = d.raw_html || '<p>Không có bài đăng gốc.</p>';
 
-      // Drive Files
+      // Drive Files & Game Links
       const filesList = document.getElementById('modalFilesList');
       filesList.innerHTML = '';
+
+      if (primaryGameUrl) {
+        const gameSection = document.createElement('div');
+        gameSection.className = 'col-span-1 sm:col-span-2 mb-2 p-3.5 rounded-xl bg-orange-50/70 dark:bg-orange-950/20 border border-orange-200/80 dark:border-orange-900/40 space-y-2.5';
+        gameSection.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+              <i class="fa-solid fa-gamepad text-orange-500"></i> Link Game Quizizz Vĩnh Viễn (${escapeHtml(wg.day_scope || 'Day ' + d.day)})
+            </span>
+            <span class="text-[10px] font-semibold text-emerald-700 dark:text-emerald-300 bg-emerald-100 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full">PIN: ${primaryCode}</span>
+          </div>
+          ${wg.requirement ? `<div class="text-[11px] text-amber-900 dark:text-amber-200 font-mono bg-white/70 dark:bg-zinc-850/70 p-2 rounded border border-orange-200/60 dark:border-zinc-750">🎯 <strong>Yêu cầu:</strong> ${escapeHtml(wg.requirement)}</div>` : ''}
+          <div class="flex items-center gap-2 pt-1 flex-wrap">
+            <a href="${primaryGameUrl}" target="_blank" class="px-3 py-1.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-xs">
+              <i class="fa-solid fa-play text-xs"></i> Vào Quizizz Chính Thức (PIN: ${primaryCode})
+            </a>
+            <a href="wayground.html?gc=${primaryCode}" target="_blank" class="px-3 py-1.5 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
+              <i class="fa-solid fa-laptop-code text-orange-500 text-xs"></i> Luyện tập trên Web
+            </a>
+          </div>
+        `;
+        filesList.appendChild(gameSection);
+      }
 
       const recordings = d.video_recordings || (d.video_recording ? [d.video_recording] : []);
       if (recordings.length > 0) {
