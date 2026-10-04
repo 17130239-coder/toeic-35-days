@@ -1127,7 +1127,11 @@
         const isImgOpts = !!q.has_image_options;
         const numOptions = (q.options || []).length;
         const grid = document.getElementById('optionsGrid');
-        grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5 w-full';
+        if (numOptions === 5 && !isImgOpts) {
+          grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2.5 sm:gap-3 w-full';
+        } else {
+          grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5 w-full';
+        }
 
         for (let i = 0; i < 5; i++) {
           const btn = document.getElementById(`optBtn-${i}`);
@@ -1143,7 +1147,7 @@
             btn.style.opacity = '1';
             btn.classList.remove('animate-shake', 'is-selected', 'is-correct', 'is-wrong', 'is-dimmed');
 
-            const spanCol = (i === 4 && numOptions === 5) ? ' col-span-1 sm:col-span-2 sm:max-w-md sm:mx-auto' : '';
+            const spanCol = (i === 4 && numOptions === 5) ? ' col-span-1 sm:col-span-2 lg:col-span-1 sm:max-w-md lg:max-w-none sm:mx-auto' : '';
             const minHeight = isImgOpts ? 'min-h-[130px] sm:min-h-[150px]' : 'min-h-[76px] sm:min-h-[88px]';
             btn.className = `opt-wg-${i} btn-quizizz-card w-full ${minHeight} rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center${spanCol}`;
 
