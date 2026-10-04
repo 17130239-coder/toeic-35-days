@@ -165,10 +165,10 @@
           <span class="hidden sm:inline">Flashcards</span>
         </button>
 
-        <!-- WAYGROUND ARENA LINK -->
+        <!-- WAYGROUND LINK -->
         <a href="wayground.html" target="_blank" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-2 transition shadow-xs">
           <i class="fa-solid fa-gamepad text-orange-200"></i>
-          <span>Đấu Trường Wayground</span>
+          <span>Chơi Wayground</span>
         </a>
 
         <!-- Dark Mode Toggle -->
@@ -196,11 +196,11 @@
           </div>
 
           <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-zinc-100">
-            Học Từ Vựng & Luyện Đấu Trắc Nghiệm Wayground
+            Học Từ Vựng & Chơi Wayground
           </h1>
           
           <p class="text-xs sm:text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
-            Chương trình hoàn chỉnh 36 ngày (Day 0 – 35) với 194 từ vựng trọng tâm, Audio phát âm giọng bản xứ, Flashcard 3D, bài tập điền câu tương tác và 26 trận game Quizizz Wayground.
+            Chương trình hoàn chỉnh 36 ngày (Day 0 – 35) với 194 từ vựng trọng tâm, Audio phát âm giọng bản xứ, Flashcard 3D, bài tập điền câu tương tác và 26 game Quizizz Wayground.
           </p>
 
           <!-- Overall Progress Bar -->
@@ -227,7 +227,7 @@
           </div>
           <div class="bg-slate-50 dark:bg-zinc-850/80 border border-slate-200/80 dark:border-zinc-800 rounded-lg p-3 sm:p-4 text-center min-w-[90px] sm:min-w-[105px]">
             <div class="text-xl sm:text-2xl font-bold text-slate-900 dark:text-zinc-100 tabular-nums" id="statTotalGames">26</div>
-            <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">Trận game</div>
+            <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">Game Wayground</div>
           </div>
         </div>
 
@@ -927,7 +927,7 @@
       const exQuestions = d.exercise_a && d.exercise_a.questions ? d.exercise_a.questions : [];
       
       if (exQuestions.length === 0) {
-        exList.innerHTML = `<div class="text-center py-8 text-slate-400 text-xs">Phần bài tập viết câu đã kết thúc từ Day 28 hoặc không có ở Day này. Hãy tập trung luyện flashcards và thi đấu Wayground!</div>`;
+        exList.innerHTML = `<div class="text-center py-8 text-slate-400 text-xs">Phần bài tập viết câu đã kết thúc từ Day 28 hoặc không có ở Day này. Hãy tập trung luyện flashcards và chơi Wayground!</div>`;
         return;
       }
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wayground Arena — TOEIC Practice Game</title>
+  <title>Wayground — Luyện Tập Từ Vựng TOEIC</title>
   
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -93,7 +93,7 @@
           wayground
         </span>
         <span class="text-[10px] font-mono tracking-wider text-zinc-400 uppercase font-semibold px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700">
-          TOEIC ARENA
+          TOEIC 35 DAYS
         </span>
       </div>
     </a>
@@ -115,9 +115,9 @@
     
     <div class="wg-card w-full rounded-xl p-6 sm:p-7 shadow-xs space-y-5 text-center">
       <div class="space-y-1">
-        <span class="text-[11px] uppercase font-semibold tracking-wider text-orange-400">Đấu Trường Trắc Nghiệm</span>
-        <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Tham Gia Trận Đấu Wayground</h1>
-        <p class="text-xs text-zinc-400">Hỗ trợ trắc nghiệm 1 đáp án, nhiều đáp án, điền từ khuyết và gợi ý</p>
+        <span class="text-[11px] uppercase font-semibold tracking-wider text-orange-400">LUYỆN TẬP TỪ VỰNG</span>
+        <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Chơi Wayground</h1>
+        <p class="text-xs text-zinc-400">Trắc nghiệm đơn tuyển, đa tuyển, điền từ khuyết và gợi ý</p>
       </div>
 
       <!-- PIN Input -->
@@ -126,16 +126,19 @@
           <input type="text" id="pinInput" maxlength="8" placeholder="NHẬP MÃ PIN 8 SỐ" class="w-full text-center text-2xl font-mono font-bold tracking-widest py-3 px-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none text-white uppercase placeholder:text-zinc-600 placeholder:text-xs placeholder:tracking-normal placeholder:font-sans transition" />
         </div>
 
-        <!-- Nickname & Avatar selector -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
-          <div>
-            <label class="text-[11px] font-medium text-zinc-400 block mb-1">Tên người chơi:</label>
-            <input type="text" id="nicknameInput" value="Học Viên" maxlength="20" class="w-full py-2 px-3 rounded-lg bg-zinc-900 border border-zinc-700 text-xs font-medium text-white focus:outline-none focus:border-orange-500" />
+        <!-- Nickname Input -->
+        <div class="text-left">
+          <label class="text-[11px] font-medium text-zinc-400 block mb-1">Tên người chơi:</label>
+          <input type="text" id="nicknameInput" value="Học Viên" maxlength="20" class="w-full py-2.5 px-3.5 rounded-lg bg-zinc-900 border border-zinc-700 text-xs font-medium text-white focus:outline-none focus:border-orange-500" />
+        </div>
+
+        <!-- Avatar selector (Enlarged) -->
+        <div class="text-left space-y-1.5">
+          <div class="flex items-center justify-between text-[11px] text-zinc-400 font-medium">
+            <span>Chọn Avatar:</span>
+            <span id="selectedAvatarLabel" class="text-orange-400 font-semibold text-xs">👾</span>
           </div>
-          <div>
-            <label class="text-[11px] font-medium text-zinc-400 block mb-1">Chọn Avatar:</label>
-            <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5" id="avatarPicker"></div>
-          </div>
+          <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-1" id="avatarPicker"></div>
         </div>
 
         <!-- Game Preferences (Question count & timer) -->
@@ -161,13 +164,13 @@
 
         <!-- Join Button -->
         <button onclick="handleJoinGame()" class="w-full h-11 rounded-xl bg-orange-600 hover:bg-orange-500 text-white font-semibold text-sm transition flex items-center justify-center gap-2 shadow-xs">
-          <i class="fa-solid fa-play text-xs"></i> Bắt đầu trận đấu
+          <i class="fa-solid fa-play text-xs"></i> Bắt đầu chơi
         </button>
       </div>
 
       <div class="pt-2 border-t border-zinc-800">
         <button onclick="toggleGameDrawer()" class="text-xs font-medium text-zinc-400 hover:text-white flex items-center justify-center gap-1.5 mx-auto transition">
-          <i class="fa-solid fa-list-check text-xs"></i> Hoặc chọn từ 26 mã Game chính thức
+          <i class="fa-solid fa-list-check text-xs"></i> Hoặc chọn từ 26 game chính thức
         </button>
       </div>
     </div>
@@ -175,7 +178,7 @@
     <!-- 26 OFFICIAL GAME CODES DRAWER -->
     <div id="gameDrawer" class="wg-card w-full rounded-xl p-4 shadow-xs space-y-3 max-h-80 overflow-y-auto hidden">
       <div class="flex items-center justify-between pb-2 border-b border-zinc-800">
-        <span class="text-xs font-semibold text-zinc-300">Danh sách 26 trận Wayground</span>
+        <span class="text-xs font-semibold text-zinc-300">Danh sách 26 game Wayground</span>
         <button onclick="toggleGameDrawer()" class="text-zinc-500 hover:text-zinc-300 text-xs"><i class="fa-solid fa-xmark"></i> Đóng</button>
       </div>
       <div id="drawerGamesList" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
@@ -344,14 +347,14 @@
       </div>
     </div>
 
-    <!-- Simulated Live Status Footer -->
+    <!-- Game Footer Status -->
     <div class="mt-3 pt-2 border-t border-zinc-800 flex items-center justify-between text-xs text-zinc-400">
       <div class="flex items-center gap-1.5">
-        <i class="fa-solid fa-trophy text-amber-400 text-xs"></i>
-        <span>Vị trí hiện tại: <strong id="arenaCurrentRank" class="text-zinc-200 font-semibold tabular-nums">Top 3</strong></span>
+        <i class="fa-solid fa-graduation-cap text-orange-400 text-xs"></i>
+        <span id="arenaFooterTitle" class="text-zinc-300 font-medium">Wayground 35 Ngày</span>
       </div>
       <div class="text-[11px] text-zinc-500">
-        Thi đấu cùng 12 học viên
+        Luyện tập từ vựng & ngữ cảnh
       </div>
     </div>
 
@@ -382,74 +385,48 @@
     </div>
   </div>
 
-  <!-- SCREEN 5: END GAME SUMMARY & PODIUM -->
+  <!-- SCREEN 5: END GAME SUMMARY -->
   <main id="summaryScreen" class="flex-1 max-w-3xl mx-auto w-full p-4 sm:p-6 z-20 hidden space-y-5 my-auto">
     
     <div class="text-center space-y-1">
-      <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-300 text-[11px] font-medium">
-        <i class="fa-solid fa-medal text-amber-400"></i> Hoàn thành trận đấu
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-zinc-800 border border-zinc-700 text-zinc-300 text-xs font-medium">
+        <i class="fa-solid fa-circle-check text-emerald-400"></i> Hoàn thành luyện tập
       </div>
-      <h1 class="text-xl sm:text-2xl font-bold text-white">Bảng Xếp Hạng Chung Cuộc</h1>
+      <h1 class="text-xl sm:text-2xl font-bold text-white">Kết Quả Luyện Tập Wayground</h1>
+      <div id="summaryGameTitle" class="text-xs text-orange-400 font-semibold tracking-wide"></div>
     </div>
 
-    <!-- 1st, 2nd, 3rd Podium (Clean, High-Contrast Pedestals) -->
-    <div class="flex items-end justify-center gap-3 sm:gap-5 pt-3 pb-1">
-      <!-- 2nd Place -->
-      <div class="flex flex-col items-center">
-        <div id="podiumAvatar2" class="text-2xl mb-1">🦊</div>
-        <div id="podiumName2" class="text-xs font-semibold text-zinc-300 truncate max-w-[80px]">Hoàng Nam</div>
-        <div id="podiumScore2" class="text-[11px] font-mono text-zinc-400 tabular-nums">18,200</div>
-        <div class="w-20 sm:w-24 h-20 bg-zinc-800 border-t-2 border-zinc-600 rounded-t-lg flex items-center justify-center text-zinc-300 font-bold text-lg mt-2">
-          2
+    <!-- Learner Profile & Score Overview Card -->
+    <div class="wg-card rounded-xl p-4 sm:p-5 shadow-xs flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3.5">
+        <div id="summaryAvatar" class="w-14 h-14 rounded-2xl bg-zinc-800 border border-zinc-700 flex items-center justify-center text-3xl shadow-xs">
+          👾
+        </div>
+        <div class="text-left">
+          <div id="summaryNickname" class="text-base font-bold text-white">Học Viên</div>
+          <div class="text-xs text-zinc-400 mt-0.5">Phiên luyện tập từ vựng hoàn tất</div>
         </div>
       </div>
-
-      <!-- 1st Place -->
-      <div class="flex flex-col items-center">
-        <div class="text-amber-400 text-xs mb-0.5"><i class="fa-solid fa-crown"></i></div>
-        <div id="podiumAvatar1" class="text-3xl mb-1">👾</div>
-        <div id="podiumName1" class="text-xs sm:text-sm font-bold text-white truncate max-w-[100px]">Học Viên</div>
-        <div id="podiumScore1" class="text-xs font-mono font-bold text-emerald-400 tabular-nums">22,500</div>
-        <div class="w-24 sm:w-28 h-28 bg-zinc-750 border-t-2 border-amber-400 bg-zinc-800 rounded-t-lg flex items-center justify-center text-amber-400 font-bold text-2xl mt-2">
-          1
+      <div class="grid grid-cols-3 gap-2.5 w-full sm:w-auto">
+        <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800 text-center min-w-[85px]">
+          <div class="text-[10px] text-zinc-400 font-medium">Điểm số</div>
+          <div id="finalScoreText" class="text-base sm:text-lg font-bold font-mono text-emerald-400 mt-0.5 tabular-nums">0</div>
         </div>
-      </div>
-
-      <!-- 3rd Place -->
-      <div class="flex flex-col items-center">
-        <div id="podiumAvatar3" class="text-2xl mb-1">🐱</div>
-        <div id="podiumName3" class="text-xs font-semibold text-zinc-300 truncate max-w-[80px]">Minh Anh</div>
-        <div id="podiumScore3" class="text-[11px] font-mono text-zinc-400 tabular-nums">16,400</div>
-        <div class="w-20 sm:w-24 h-16 bg-zinc-850 border-t-2 border-zinc-700 bg-zinc-900 rounded-t-lg flex items-center justify-center text-zinc-400 font-bold text-base mt-2">
-          3
+        <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800 text-center min-w-[85px]">
+          <div class="text-[10px] text-zinc-400 font-medium">Độ chính xác</div>
+          <div id="finalAccuracyText" class="text-base sm:text-lg font-bold text-white mt-0.5 tabular-nums">0%</div>
         </div>
-      </div>
-    </div>
-
-    <!-- Performance Stats Card (Hairline Grid) -->
-    <div class="wg-card rounded-xl p-4 sm:p-5 shadow-xs grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
-      <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800">
-        <div class="text-[11px] text-zinc-400 font-medium">Hạng của bạn</div>
-        <div id="finalRankText" class="text-lg font-bold text-white mt-0.5 tabular-nums">#1</div>
-      </div>
-      <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800">
-        <div class="text-[11px] text-zinc-400 font-medium">Tổng điểm số</div>
-        <div id="finalScoreText" class="text-lg font-bold font-mono text-emerald-400 mt-0.5 tabular-nums">22,500</div>
-      </div>
-      <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800">
-        <div class="text-[11px] text-zinc-400 font-medium">Độ chính xác</div>
-        <div id="finalAccuracyText" class="text-lg font-bold text-zinc-100 mt-0.5 tabular-nums">95%</div>
-      </div>
-      <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800">
-        <div class="text-[11px] text-zinc-400 font-medium">Streak cao nhất</div>
-        <div id="finalStreakText" class="text-lg font-bold text-amber-400 mt-0.5 tabular-nums">12</div>
+        <div class="p-2.5 bg-zinc-900 rounded-lg border border-zinc-800 text-center min-w-[85px]">
+          <div class="text-[10px] text-zinc-400 font-medium">Streak tối đa</div>
+          <div id="finalStreakText" class="text-base sm:text-lg font-bold text-amber-400 mt-0.5 tabular-nums">0</div>
+        </div>
       </div>
     </div>
 
     <!-- Action Buttons -->
     <div class="flex flex-wrap items-center justify-center gap-2.5 pt-1">
       <button onclick="restartCurrentGame()" class="h-9 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs transition flex items-center gap-1.5 shadow-xs">
-        <i class="fa-solid fa-rotate-right text-xs"></i> Chơi lại trận này
+        <i class="fa-solid fa-rotate-right text-xs"></i> Chơi lại
       </button>
       <button onclick="goToJoinScreen()" class="h-9 px-4 rounded-lg border border-zinc-700 bg-zinc-900 hover:bg-zinc-800 text-zinc-200 font-medium text-xs transition flex items-center gap-1.5">
         <i class="fa-solid fa-gamepad text-xs"></i> Chọn game khác
@@ -566,7 +543,20 @@
       }
     }
 
-    // Avatars
+    // Helper to format clean Day title instead of boilerplate B. GAME QUIZIZZ
+    function getGameDisplayName(g) {
+      if (!g) return 'Wayground';
+      if (g.target_days && g.target_days.length > 0) {
+        let name = 'Day ' + g.target_days.join(' + ');
+        if (g.title && g.title.includes('TÍNH TỪ')) {
+          name += ' (Tính từ đuôi ING & ED)';
+        }
+        return name;
+      }
+      return g.title || 'Wayground';
+    }
+
+    // Avatars (Enlarged size)
     const avatarList = ['👾', '🤖', '🐱', '🦊', '🐼', '🦄', '🚀', '🧙', '🥷', '🦁', '🐯', '🐻'];
     function initAvatarPicker() {
       const p = document.getElementById('avatarPicker');
@@ -574,14 +564,19 @@
       avatarList.forEach(av => {
         const btn = document.createElement('button');
         btn.type = 'button';
-        btn.className = `w-7 h-7 rounded-md flex items-center justify-center text-sm transition ${selectedAvatar === av ? 'bg-orange-600 text-white' : 'bg-zinc-800 text-zinc-300 hover:bg-zinc-700'}`;
+        const isSel = selectedAvatar === av;
+        btn.className = `w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-xl sm:text-2xl transition shrink-0 border ${isSel ? 'border-orange-500 bg-orange-600/20 ring-1 ring-orange-500 shadow-xs' : 'border-zinc-800 bg-zinc-900 hover:border-zinc-700 hover:bg-zinc-800'}`;
         btn.innerText = av;
         btn.onclick = () => {
           selectedAvatar = av;
+          const lbl = document.getElementById('selectedAvatarLabel');
+          if (lbl) lbl.innerText = av;
           initAvatarPicker();
         };
         p.appendChild(btn);
       });
+      const lbl = document.getElementById('selectedAvatarLabel');
+      if (lbl) lbl.innerText = selectedAvatar;
     }
 
     function initDrawerGames() {
@@ -589,18 +584,23 @@
       list.innerHTML = '';
       quizzesData.forEach(g => {
         const item = document.createElement('div');
-        item.className = 'p-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 flex items-center justify-between gap-2 cursor-pointer transition';
+        item.className = 'p-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 flex items-center justify-between gap-3 cursor-pointer transition';
         item.onclick = () => {
           document.getElementById('pinInput').value = g.game_code;
           toggleGameDrawer();
         };
+        const displayName = getGameDisplayName(g);
         item.innerHTML = `
-          <div>
-            <div class="text-xs font-mono font-semibold text-orange-400">PIN: ${g.game_code}</div>
-            <div class="text-[11px] text-zinc-300 truncate max-w-[140px] sm:max-w-[180px]">${g.title}</div>
+          <div class="flex-1 min-w-0 text-left">
+            <div class="text-xs sm:text-sm font-bold text-white truncate">${displayName}</div>
+            <div class="text-xs font-mono text-orange-400 mt-0.5 flex items-center gap-2">
+              <span>PIN: ${g.game_code}</span>
+              <span class="text-zinc-600">•</span>
+              <span class="text-zinc-400 font-sans text-[11px]">${(g.questions || []).length} câu</span>
+            </div>
           </div>
-          <span class="text-[10px] px-1.5 py-0.5 rounded bg-zinc-800 text-zinc-400 font-medium border border-zinc-700">
-            Day ${g.target_days.join(', ')}
+          <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-orange-600 text-zinc-300 hover:text-white font-medium border border-zinc-700 transition shrink-0">
+            Chọn PIN
           </span>
         `;
         list.appendChild(item);
@@ -649,7 +649,7 @@
 
       const nick = document.getElementById('nicknameInput').value || 'Học Viên';
       document.getElementById('lobbyAvatar').innerText = selectedAvatar;
-      document.getElementById('lobbyGameTitle').innerText = game.title;
+      document.getElementById('lobbyGameTitle').innerText = getGameDisplayName(game);
       document.getElementById('lobbyGamePin').innerText = `PIN: ${game.game_code} • ${currentQuestions.length} CÂU HỎI`;
 
       document.getElementById('joinScreen').classList.add('hidden');
@@ -696,6 +696,9 @@
       document.getElementById('arenaScore').innerText = score.toLocaleString();
       document.getElementById('arenaPhonetic').innerText = q.phonetic || '';
       document.getElementById('arenaPrompt').innerText = q.question;
+
+      const footerTitle = document.getElementById('arenaFooterTitle');
+      if (footerTitle && currentGame) footerTitle.innerText = `${getGameDisplayName(currentGame)} • PIN: ${currentGame.game_code}`;
 
       // Update badge label
       const badge = document.getElementById('arenaQTypeBadge');
@@ -1026,8 +1029,6 @@
       expl.innerText = explanation || '';
       modal.classList.remove('hidden');
 
-      const rankNum = Math.max(1, Math.min(6, 7 - Math.floor(score / 3500)));
-      document.getElementById('arenaCurrentRank').innerText = `#${rankNum}`;
     }
 
     function proceedToNextQuestion() {
@@ -1048,37 +1049,20 @@
       const nick = document.getElementById('nicknameInput').value || 'Học Viên';
       const accuracy = Math.round((correctCount / currentQuestions.length) * 100);
 
-      let rank = 1;
-      if (score < 14000) rank = 3;
-      if (score < 10000) rank = 4;
-      if (score < 7000) rank = 5;
+      const sumAv = document.getElementById('summaryAvatar');
+      if (sumAv) sumAv.innerText = selectedAvatar;
 
-      document.getElementById('finalRankText').innerText = `#${rank}`;
+      const sumNick = document.getElementById('summaryNickname');
+      if (sumNick) sumNick.innerText = nick;
+
+      const sumTitle = document.getElementById('summaryGameTitle');
+      if (sumTitle && currentGame) {
+        sumTitle.innerText = `${getGameDisplayName(currentGame)} • PIN: ${currentGame.game_code}`;
+      }
+
       document.getElementById('finalScoreText').innerText = score.toLocaleString();
       document.getElementById('finalAccuracyText').innerText = `${accuracy}% (${correctCount}/${currentQuestions.length})`;
       document.getElementById('finalStreakText').innerText = `${maxStreak}`;
-
-      if (rank === 1) {
-        document.getElementById('podiumAvatar1').innerText = selectedAvatar;
-        document.getElementById('podiumName1').innerText = nick;
-        document.getElementById('podiumScore1').innerText = score.toLocaleString();
-
-        document.getElementById('podiumAvatar2').innerText = '🦊';
-        document.getElementById('podiumName2').innerText = 'Hoàng Nam';
-        document.getElementById('podiumScore2').innerText = Math.round(score * 0.88).toLocaleString();
-
-        document.getElementById('podiumAvatar3').innerText = '🐱';
-        document.getElementById('podiumName3').innerText = 'Minh Anh';
-        document.getElementById('podiumScore3').innerText = Math.round(score * 0.75).toLocaleString();
-      } else {
-        document.getElementById('podiumAvatar1').innerText = '🦊';
-        document.getElementById('podiumName1').innerText = 'Hoàng Nam';
-        document.getElementById('podiumScore1').innerText = '24,500';
-
-        document.getElementById('podiumAvatar2').innerText = selectedAvatar;
-        document.getElementById('podiumName2').innerText = nick;
-        document.getElementById('podiumScore2').innerText = score.toLocaleString();
-      }
 
       const rList = document.getElementById('summaryQuestionsList');
       rList.innerHTML = '';
