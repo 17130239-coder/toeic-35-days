@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wayground — Luyện Tập Từ Vựng TOEIC</title>
+  <link rel="icon" type="image/svg+xml" href="favicon-wayground.svg" />
   
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -78,6 +79,18 @@
     /* Hide scrollbars for clean horizontal rows */
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Centered PIN input placeholder */
+    #pinInput {
+      line-height: normal;
+    }
+    #pinInput::placeholder {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.12em;
+      color: #71717a;
+      line-height: normal;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-orange-600 selection:text-white">
@@ -88,14 +101,9 @@
       <div class="w-8 h-8 rounded-lg bg-zinc-800 border border-zinc-700 flex items-center justify-center text-white text-sm">
         <i class="fa-solid fa-gamepad text-orange-400"></i>
       </div>
-      <div class="flex items-center gap-2">
-        <span class="text-base font-bold tracking-tight text-white">
-          wayground
-        </span>
-        <span class="text-[10px] font-mono tracking-wider text-zinc-400 uppercase font-semibold px-1.5 py-0.5 rounded bg-zinc-800 border border-zinc-700">
-          TOEIC 35 DAYS
-        </span>
-      </div>
+      <span class="text-base font-bold tracking-tight text-white">
+        wayground
+      </span>
     </a>
 
     <div class="flex items-center gap-2 sm:gap-3">
@@ -117,13 +125,12 @@
       <div class="space-y-1">
         <span class="text-[11px] uppercase font-semibold tracking-wider text-orange-400">LUYỆN TẬP TỪ VỰNG</span>
         <h1 class="text-xl sm:text-2xl font-bold tracking-tight text-white">Chơi Wayground</h1>
-        <p class="text-xs text-zinc-400">Trắc nghiệm đơn tuyển, đa tuyển, điền từ khuyết và gợi ý</p>
       </div>
 
       <!-- PIN Input -->
       <div class="space-y-3.5">
         <div>
-          <input type="text" id="pinInput" maxlength="8" placeholder="NHẬP MÃ PIN 8 SỐ" class="w-full text-center text-2xl font-mono font-bold tracking-widest py-3 px-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none text-white uppercase placeholder:text-zinc-600 placeholder:text-xs placeholder:tracking-normal placeholder:font-sans transition" />
+          <input type="text" id="pinInput" maxlength="8" placeholder="NHẬP MÃ PIN 8 SỐ" class="w-full text-center text-xl sm:text-2xl font-mono font-bold tracking-widest h-14 px-4 rounded-xl bg-zinc-900 border border-zinc-700 focus:border-orange-500 focus:ring-1 focus:ring-orange-500 outline-none text-white uppercase placeholder:text-zinc-500 placeholder:text-sm sm:placeholder:text-base placeholder:tracking-widest placeholder:font-mono transition" />
         </div>
 
         <!-- Nickname Input -->
@@ -584,7 +591,7 @@
       list.innerHTML = '';
       quizzesData.forEach(g => {
         const item = document.createElement('div');
-        item.className = 'p-3 rounded-lg bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 flex items-center justify-between gap-3 cursor-pointer transition';
+        item.className = 'p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-3 cursor-pointer transition group';
         item.onclick = () => {
           document.getElementById('pinInput').value = g.game_code;
           toggleGameDrawer();
@@ -592,16 +599,14 @@
         const displayName = getGameDisplayName(g);
         item.innerHTML = `
           <div class="flex-1 min-w-0 text-left">
-            <div class="text-xs sm:text-sm font-bold text-white truncate">${displayName}</div>
+            <div class="text-xs sm:text-sm font-bold text-white group-hover:text-orange-400 transition truncate">${displayName}</div>
             <div class="text-xs font-mono text-orange-400 mt-0.5 flex items-center gap-2">
               <span>PIN: ${g.game_code}</span>
               <span class="text-zinc-600">•</span>
               <span class="text-zinc-400 font-sans text-[11px]">${(g.questions || []).length} câu</span>
             </div>
           </div>
-          <span class="text-xs px-2.5 py-1 rounded-md bg-zinc-800 hover:bg-orange-600 text-zinc-300 hover:text-white font-medium border border-zinc-700 transition shrink-0">
-            Chọn PIN
-          </span>
+          <i class="fa-solid fa-chevron-right text-zinc-600 group-hover:text-orange-400 text-xs transition shrink-0"></i>
         `;
         list.appendChild(item);
       });
