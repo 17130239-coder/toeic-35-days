@@ -299,12 +299,15 @@
 
     <!-- INTERACTION AREA 1: 4 Quizizz Buttons (For Single Choice & Multiple Choice) -->
     <div id="optionsContainer" class="space-y-3 pt-2">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+      <div id="optionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 w-full">
         <!-- Option 0: Red -->
         <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-red btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative">
           <span id="optIcon-0" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">▲</span>
           <img id="optImg-0" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-0" class="flex-1 leading-snug">Lựa chọn A</span>
+          <button type="button" id="optZoom-0" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-0').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
           <span id="optCheck-0" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
@@ -313,6 +316,9 @@
           <span id="optIcon-1" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">◆</span>
           <img id="optImg-1" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-1" class="flex-1 leading-snug">Lựa chọn B</span>
+          <button type="button" id="optZoom-1" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-1').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
           <span id="optCheck-1" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
@@ -321,6 +327,9 @@
           <span id="optIcon-2" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">●</span>
           <img id="optImg-2" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-2" class="flex-1 leading-snug">Lựa chọn C</span>
+          <button type="button" id="optZoom-2" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-2').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
           <span id="optCheck-2" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
 
@@ -329,6 +338,9 @@
           <span id="optIcon-3" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">■</span>
           <img id="optImg-3" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
           <span id="optText-3" class="flex-1 leading-snug">Lựa chọn D</span>
+          <button type="button" id="optZoom-3" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-3').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
           <span id="optCheck-3" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
       </div>
@@ -475,7 +487,7 @@
   </footer>
 
   <!-- LOAD QUIZ DATA -->
-  <script src="wayground_data.js"></script>
+  <script src="wayground_data.js?v=20261004_v5"></script>
 
   <!-- WAYGROUND GAME ENGINE -->
   <script>
@@ -795,35 +807,64 @@
           multiBar.classList.add('hidden');
         }
 
+        const isImgOpts = !!q.has_image_options;
+        const grid = document.getElementById('optionsGrid');
+        if (isImgOpts) {
+          grid.className = 'grid grid-cols-2 gap-2.5 sm:gap-4 max-w-2xl mx-auto w-full';
+        } else {
+          grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 w-full';
+        }
+
+        const colors = ['red', 'blue', 'yellow', 'green'];
         for (let i = 0; i < 4; i++) {
           const btn = document.getElementById(`optBtn-${i}`);
           const txt = document.getElementById(`optText-${i}`);
           const chk = document.getElementById(`optCheck-${i}`);
           const img = document.getElementById(`optImg-${i}`);
           const ico = document.getElementById(`optIcon-${i}`);
+          const zoom = document.getElementById(`optZoom-${i}`);
 
           if (q.options && q.options[i]) {
             btn.style.display = 'flex';
             btn.disabled = false;
             btn.style.opacity = '1';
             btn.classList.remove('animate-shake', 'is-selected');
-            txt.innerText = q.options[i];
 
-            // Image option support (Quizizz authentic image choices)
-            if (q.has_image_options && q.option_images && q.option_images[i]) {
-              img.src = q.option_images[i];
-              img.classList.remove('hidden');
-              ico.classList.add('hidden');
-            } else {
-              img.classList.add('hidden');
+            if (isImgOpts && q.option_images && q.option_images[i]) {
+              // Image option mode: Authentic Wayground 4-Picture choice (Only images, NO spoil text!)
+              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl sm:rounded-2xl p-2 sm:p-2.5 text-center text-white flex flex-col items-center justify-center relative group overflow-hidden cursor-pointer shadow-md`;
+              
+              ico.className = 'absolute top-2.5 left-2.5 w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-black/60 backdrop-blur-xs flex items-center justify-center text-xs sm:text-sm font-bold text-white shadow-md z-10 border border-white/20 pointer-events-none';
               ico.classList.remove('hidden');
-            }
 
-            if (format === 'multiple_choice') {
-              chk.classList.remove('hidden');
-              chk.innerText = '';
-            } else {
+              img.src = q.option_images[i];
+              img.className = 'w-full h-32 sm:h-44 md:h-48 rounded-lg sm:rounded-xl object-cover bg-black/30 border border-white/10 shadow-xs group-hover:scale-[1.02] transition-transform duration-200 block';
+              img.classList.remove('hidden');
+
+              if (zoom) zoom.classList.remove('hidden');
+              txt.classList.add('hidden');
+              txt.innerText = '';
               chk.classList.add('hidden');
+            } else {
+              // Standard Text option mode
+              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative`;
+              
+              ico.className = 'w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold';
+              ico.classList.remove('hidden');
+
+              img.classList.add('hidden');
+              img.className = 'hidden';
+              if (zoom) zoom.classList.add('hidden');
+
+              txt.classList.remove('hidden');
+              txt.innerText = q.options[i];
+
+              if (format === 'multiple_choice') {
+                chk.classList.remove('hidden');
+                chk.innerText = '';
+              } else {
+                chk.classList.add('hidden');
+              }
             }
           } else {
             btn.style.display = 'none';
@@ -954,6 +995,8 @@
 
       let isCorrect = false;
       let chosenText = '';
+      let chosenImg = '';
+      let correctImg = '';
       const correctAnswersList = q.correct_answers || [q.correct_answer];
 
       if (chosen === -1) {
@@ -964,6 +1007,12 @@
         chosenText = q.options[chosenIdx] || '';
         const normChosen = chosenText.toLowerCase().trim();
         isCorrect = correctAnswersList.some(ans => ans.toLowerCase().trim() === normChosen);
+
+        if (q.has_image_options && q.option_images) {
+          chosenImg = q.option_images[chosenIdx] || '';
+          const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => ans.toLowerCase().trim() === opt.toLowerCase().trim()));
+          if (correctIdx >= 0) correctImg = q.option_images[correctIdx] || '';
+        }
       } else if (format === 'multiple_choice') {
         const chosenTexts = chosen.map(idx => q.options[idx].toLowerCase().trim());
         const correctTexts = correctAnswersList.map(ans => ans.toLowerCase().trim());
@@ -1012,17 +1061,20 @@
         question: q.question,
         format: format,
         chosen: chosenText,
+        chosenImg: chosenImg,
         correct: correctDisplay,
+        correctImg: correctImg,
+        hasImageOptions: !!q.has_image_options,
         isCorrect: isCorrect,
         explanation: q.explanation,
         timeSpent: timeSpent.toFixed(1),
         image: q.image || ''
       });
 
-      showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation);
+      showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, q.explanation, q, chosenImg, correctImg);
     }
 
-    function showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, explanation) {
+    function showFeedbackModal(isCorrect, gained, chosenText, correctDisplay, explanation, q, chosenImg, correctImg) {
       const modal = document.getElementById('feedbackModal');
       const card = document.getElementById('feedbackCard');
       const icon = document.getElementById('feedbackIcon');
@@ -1032,8 +1084,29 @@
       const correctChoiceEl = document.getElementById('feedbackCorrectChoice');
       const expl = document.getElementById('feedbackExplanation');
 
-      userChoiceEl.innerHTML = `<strong>Bạn chọn/gõ:</strong> ${chosenText}`;
-      correctChoiceEl.innerHTML = `<strong>Đáp án đúng:</strong> ${correctDisplay}`;
+      if (q && q.has_image_options) {
+        userChoiceEl.innerHTML = `
+          <div class="space-y-1.5 text-center">
+            <div class="text-xs text-zinc-400">Bạn đã chọn bức ảnh:</div>
+            <div class="flex items-center justify-center gap-2.5">
+              ${chosenImg ? `<img src="${chosenImg}" class="w-14 h-14 object-cover rounded-lg border border-zinc-700 shadow-xs cursor-pointer hover:opacity-90" onclick="openLightbox('${chosenImg}')" title="Nhấn để phóng to" />` : ''}
+              <span class="font-semibold text-white text-sm">${chosenText}</span>
+            </div>
+          </div>
+        `;
+        correctChoiceEl.innerHTML = `
+          <div class="space-y-1.5 text-center">
+            <div class="text-xs text-emerald-400 font-semibold">Bức ảnh chính xác:</div>
+            <div class="flex items-center justify-center gap-2.5">
+              ${correctImg ? `<img src="${correctImg}" class="w-14 h-14 object-cover rounded-lg border border-emerald-500/50 shadow-xs cursor-pointer hover:opacity-90" onclick="openLightbox('${correctImg}')" title="Nhấn để phóng to" />` : ''}
+              <span class="font-bold text-emerald-400 text-sm">${correctDisplay}</span>
+            </div>
+          </div>
+        `;
+      } else {
+        userChoiceEl.innerHTML = `<strong>Bạn chọn/gõ:</strong> ${chosenText}`;
+        correctChoiceEl.innerHTML = `<strong>Đáp án đúng:</strong> ${correctDisplay}`;
+      }
 
       // Authentic Quizizz Reaction Meme
       const memeContainer = document.getElementById('feedbackMemeContainer');
@@ -1123,11 +1196,19 @@
             </div>
           ` : ''}
           <div class="text-xs sm:text-sm font-medium text-white">${log.question}</div>
-          <div class="text-xs space-y-0.5 pt-1">
-            <div class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'} text-[11px]">
-              <strong>Bạn chọn/gõ:</strong> ${log.chosen}
+          <div class="text-xs space-y-1 pt-1">
+            <div class="${log.isCorrect ? 'text-emerald-400' : 'text-rose-400'} text-[11px] flex items-center gap-2 flex-wrap">
+              <strong>Bạn chọn:</strong>
+              ${log.chosenImg ? `<img src="${log.chosenImg}" class="w-8 h-8 object-cover rounded-md border border-zinc-700 cursor-pointer inline-block" onclick="openLightbox('${log.chosenImg}')" title="Phóng to ảnh" />` : ''}
+              <span>${log.chosen}</span>
             </div>
-            ${!log.isCorrect ? `<div class="text-emerald-400 text-[11px]"><strong>Đáp án đúng:</strong> ${log.correct}</div>` : ''}
+            ${!log.isCorrect ? `
+              <div class="text-emerald-400 text-[11px] flex items-center gap-2 flex-wrap">
+                <strong>Đáp án đúng:</strong>
+                ${log.correctImg ? `<img src="${log.correctImg}" class="w-8 h-8 object-cover rounded-md border border-emerald-500/50 cursor-pointer inline-block" onclick="openLightbox('${log.correctImg}')" title="Phóng to ảnh" />` : ''}
+                <span>${log.correct}</span>
+              </div>
+            ` : ''}
             <div class="text-zinc-400 text-[11px] pt-0.5 leading-relaxed">${log.explanation || ''}</div>
           </div>
         `;
