@@ -767,7 +767,7 @@
             <!-- Preview Words (Max 3) -->
             <div class="space-y-1.5 my-3">
               ${(d.vocabulary || []).slice(0, 3).map(v => `
-                <div class="text-xs flex items-center justify-between text-slate-600 dark:text-zinc-300 bg-slate-50 dark:bg-zinc-855/80 px-2.5 py-1.5 rounded-lg border border-slate-100 dark:border-zinc-800/80">
+                <div class="text-xs flex items-center justify-between text-slate-600 dark:text-zinc-300 bg-slate-50 dark:bg-zinc-850 px-2.5 py-1.5 rounded-lg border border-slate-100 dark:border-zinc-800">
                   <span class="font-semibold text-slate-900 dark:text-zinc-100 truncate max-w-[130px]">${v.term}</span>
                   <span class="text-slate-500 dark:text-zinc-400 truncate max-w-[110px] text-right text-[11px]">${v.meaning || ''}</span>
                 </div>
@@ -790,9 +790,8 @@
             ` : ''}
 
             ${primaryCode ? `
-              <a href="wayground.html?gc=${primaryCode}" onclick="event.stopPropagation()" class="h-8 px-2.5 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-700 hover:text-orange-600 dark:text-zinc-200 dark:hover:text-orange-400 flex items-center justify-center gap-1.5 transition shadow-2xs shrink-0" title="Chơi Wayground Arena Offline (PIN: ${primaryCode})">
+              <a href="wayground.html?gc=${primaryCode}" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Chơi Wayground Arena Offline (PIN: ${primaryCode})">
                 <i class="fa-solid fa-gamepad text-xs text-orange-500 dark:text-orange-400"></i>
-                <span class="text-[11px] font-medium hidden sm:inline">Arena</span>
               </a>
             ` : ''}
 
