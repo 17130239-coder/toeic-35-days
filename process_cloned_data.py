@@ -14,20 +14,20 @@ with open("all_vocabulary.json", "r", encoding="utf-8") as f:
     all_vocab = json.load(f)
 
 QUIZIZZ_CORRECT_MEMES = [
-    "https://cf.quizizz.com/join/img/correct_meme/cm14.jpg",
-    "https://cf.quizizz.com/join/img/correct_meme/cm16.jpg",
-    "https://cf.quizizz.com/join/img/correct_meme/cm25.jpg",
-    "https://cf.quizizz.com/join/img/correct_meme/cm27.jpg",
-    "https://cf.quizizz.com/join/img/correct_meme/cm33.jpg",
-    "https://cf.quizizz.com/join/img/correct_meme/cm36.jpg"
+    "quiz_media/memes/cm14.jpg",
+    "quiz_media/memes/cm16.jpg",
+    "quiz_media/memes/cm25.jpg",
+    "quiz_media/memes/cm27.jpg",
+    "quiz_media/memes/cm33.jpg",
+    "quiz_media/memes/cm36.jpg"
 ]
 QUIZIZZ_WRONG_MEMES = [
-    "https://cf.quizizz.com/join/img/wrong_meme/wm8.jpg",
-    "https://cf.quizizz.com/join/img/wrong_meme/wm9.jpg",
-    "https://cf.quizizz.com/join/img/wrong_meme/wm11.jpg",
-    "https://cf.quizizz.com/join/img/wrong_meme/wm12.jpg",
-    "https://cf.quizizz.com/join/img/wrong_meme/wm18.jpg",
-    "https://cf.quizizz.com/join/img/wrong_meme/wm21.jpg"
+    "quiz_media/memes/wm8.jpg",
+    "quiz_media/memes/wm9.jpg",
+    "quiz_media/memes/wm11.jpg",
+    "quiz_media/memes/wm12.jpg",
+    "quiz_media/memes/wm18.jpg",
+    "quiz_media/memes/wm21.jpg"
 ]
 
 def format_question(raw_q):
