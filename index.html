@@ -66,31 +66,49 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      min-width: 80px;
-      height: 30px;
+      min-width: 84px;
+      height: 32px;
       padding: 0 10px;
-      margin: 2px 4px;
-      border-radius: 6px;
+      margin: 3px 4px;
+      border-radius: 8px;
       font-size: 13px;
       font-weight: 600;
-      transition: background-color 0.15s, border-color 0.15s, color 0.15s;
-      cursor: pointer;
+      transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
       user-select: none;
     }
     .blank-empty {
-      background: #f1f5f9;
-      border: 1px dashed #94a3b8;
+      background: #f8fafc;
+      border: 1.5px dashed #94a3b8;
       color: #64748b;
+      cursor: pointer;
     }
     .dark .blank-empty {
       background: #27272a;
-      border: 1px dashed #52525b;
+      border: 1.5px dashed #52525b;
       color: #a1a1aa;
+    }
+    .blank-dragover {
+      border: 2px dashed #ea580c !important;
+      background: #fff7ed !important;
+      color: #ea580c !important;
+      box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.25) !important;
+      transform: scale(1.05);
+    }
+    .dark .blank-dragover {
+      border: 2px dashed #f97316 !important;
+      background: #431407 !important;
+      color: #fdba74 !important;
+      box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.35) !important;
     }
     .blank-filled {
       background: #ea580c;
       border: 1px solid #c2410c;
       color: #ffffff;
+      cursor: grab;
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    }
+    .blank-filled:active {
+      cursor: grabbing;
     }
     .blank-correct {
       background: #059669 !important;
@@ -108,24 +126,34 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      padding: 5px 12px;
+      padding: 6px 12px;
       border-radius: 8px;
       font-size: 13px;
       font-weight: 500;
-      cursor: pointer;
+      cursor: grab;
       user-select: none;
-      transition: background-color 0.15s, border-color 0.15s;
+      transition: all 0.15s ease;
     }
     .word-chip:hover {
-      border-color: #94a3b8;
+      border-color: #ea580c;
+      color: #ea580c;
     }
     .dark .word-chip:hover {
-      border-color: #71717a;
+      border-color: #f97316;
+      color: #fdba74;
+    }
+    .word-chip:active {
+      cursor: grabbing;
+    }
+    .word-chip.dragging {
+      opacity: 0.4;
+      transform: scale(0.96);
     }
     .word-chip-used {
-      opacity: 0.35;
+      opacity: 0.3;
       pointer-events: none;
       text-decoration: line-through;
+      cursor: default;
     }
   </style>
 </head>
@@ -920,7 +948,21 @@
       if (v) speakText(v.term);
     }
 
-    // INTERACTIVE EXERCISE A RENDERING & LOGIC
+    // HTML escape helper
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+    }
+
+    // Drag and Drop active data tracker
+    let currentDragData = null; // { type: 'bank'|'blank', qIdx, word, fromBlankNum }
+
+    // INTERACTIVE EXERCISE A RENDERING & DRAG-AND-DROP LOGIC
     function renderInteractiveExerciseA(d) {
       const exList = document.getElementById('modalExerciseList');
       exList.innerHTML = '';
@@ -937,13 +979,31 @@
         qBox.id = `exBox-${qIdx}`;
 
         let blankCount = 0;
-        const interactiveSentence = q.sentence.replace(/___(?:\[(\d+)\])?/g, (match, bNum) => {
+        let cleanSent = (q.sentence || '').replace(/\s*[\.\[\]\(\)]+$/, '').trim();
+        if (!cleanSent.endsWith('?') && !cleanSent.endsWith('.')) {
+          cleanSent += '.';
+        }
+
+        const interactiveSentence = cleanSent.replace(/___\s*(?:\[\s*(\d+)\s*\])?/g, (match, bNum) => {
           blankCount++;
-          const actualNum = bNum || blankCount;
+          const actualNum = bNum ? parseInt(bNum, 10) : blankCount;
           const slotKey = `${qIdx}_${actualNum}`;
           const currentVal = interactiveExerciseState[slotKey] || '';
-          return `<span id="blank-${slotKey}" onclick="handleBlankClick(${qIdx}, ${actualNum})" class="interactive-blank ${currentVal ? 'blank-filled' : 'blank-empty'}" data-blank="${actualNum}">${currentVal || `[${actualNum}]`}</span>`;
+          const isFilled = !!currentVal;
+
+          return `<span id="blank-${slotKey}" 
+            onclick="handleBlankClick(${qIdx}, ${actualNum})" 
+            ondragover="handleBlankDragOver(event)" 
+            ondragenter="handleBlankDragEnter(event, this)" 
+            ondragleave="handleBlankDragLeave(event, this)" 
+            ondrop="handleBlankDrop(event, ${qIdx}, ${actualNum}, this)" 
+            ${isFilled ? `draggable="true" ondragstart="handleBlankDragStart(event, ${qIdx}, ${actualNum})"` : ''} 
+            class="interactive-blank ${isFilled ? 'blank-filled' : 'blank-empty'}" 
+            data-blank="${actualNum}">${isFilled ? `<span>${escapeHtml(currentVal)}</span><i class="fa-solid fa-xmark text-[10px] ml-1.5 opacity-60 hover:opacity-100"></i>` : `[${actualNum}]`}</span>`;
         });
+
+        const cleanTrans = (q.translation || '').trim();
+        const formattedTrans = cleanTrans.replace(/\[(.*?)\]/g, '<span class="font-semibold text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-950/40 px-1.5 py-0.5 rounded border border-orange-200/50 dark:border-orange-800/40">[$1]</span>');
 
         qBox.innerHTML = `
           <div class="flex items-center justify-between">
@@ -958,28 +1018,44 @@
             </div>
           </div>
 
-          <!-- English Sentence with Slots -->
+          <!-- English Sentence with Drop Slots -->
           <div class="text-sm sm:text-base font-semibold text-slate-900 dark:text-zinc-100 leading-loose">
             ${interactiveSentence}
           </div>
 
-          <!-- Vietnamese Translation Hint -->
+          <!-- Vietnamese Translation Hint with Highlighted Vocabulary Badges -->
           <div class="text-xs text-slate-600 dark:text-zinc-400 bg-slate-50 dark:bg-zinc-900 p-2.5 rounded-lg border border-slate-100 dark:border-zinc-800 leading-relaxed">
-            <span class="font-semibold text-amber-700 dark:text-amber-400 mr-1">Dịch nghĩa:</span>${q.translation}
+            <span class="font-semibold text-amber-700 dark:text-amber-400 mr-1.5"><i class="fa-solid fa-language text-xs mr-1"></i>Dịch nghĩa:</span>${formattedTrans}
           </div>
 
-          <!-- Clickable Word Bank -->
+          <!-- Clickable & Draggable Word Bank -->
           <div>
             <div class="text-xs text-slate-400 font-medium mb-1.5 flex items-center justify-between">
-              <span>Ngân hàng từ (Bấm từ để điền):</span>
+              <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-hand-pointer text-orange-500"></i>
+                <span>Ngân hàng từ (Bấm hoặc kéo thả từ vào chỗ trống):</span>
+              </span>
             </div>
-            <div id="wordBankBox-${qIdx}" class="flex flex-wrap gap-1.5">
-              ${(q.word_bank || []).map((tk, tkIdx) => `
-                <button type="button" onclick="handleWordChipClick(${qIdx}, '${tk.replace(/'/g, "\\'")}', this)" class="word-chip bg-slate-50 hover:bg-slate-100 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-700" data-token="${tk}">
-                  <span>${tk}</span>
+            <div id="wordBankBox-${qIdx}" 
+                 ondragover="handleBankDragOver(event)" 
+                 ondrop="handleBankDrop(event, ${qIdx})" 
+                 class="flex flex-wrap gap-1.5 p-2 rounded-lg bg-slate-50/70 dark:bg-zinc-900/60 border border-dashed border-slate-200 dark:border-zinc-800 transition">
+              ${(q.word_bank || []).map((tk) => {
+                const isUsed = Object.entries(interactiveExerciseState).some(([k, v]) => k.startsWith(`${qIdx}_`) && v === tk);
+                const safeTk = tk.replace(/'/g, "\\'");
+                return `
+                <button type="button" 
+                  draggable="${!isUsed}" 
+                  ondragstart="handleWordDragStart(event, ${qIdx}, '${safeTk}', this)" 
+                  ondragend="handleWordDragEnd(event, this)" 
+                  onclick="handleWordChipClick(${qIdx}, '${safeTk}', this)" 
+                  class="word-chip ${isUsed ? 'word-chip-used' : 'bg-white dark:bg-zinc-800 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-700 shadow-2xs'}" 
+                  data-token="${escapeHtml(tk)}">
+                  <i class="fa-solid fa-grip-vertical text-[10px] opacity-30 mr-0.5"></i>
+                  <span>${escapeHtml(tk)}</span>
                   <i class="fa-solid fa-plus text-[10px] opacity-40"></i>
                 </button>
-              `).join('')}
+              `;}).join('')}
             </div>
           </div>
         `;
@@ -988,34 +1064,162 @@
       });
     }
 
+    // HTML5 Drag and Drop Handlers
+    function handleWordDragStart(e, qIdx, word, chipEl) {
+      if (chipEl && chipEl.classList.contains('word-chip-used')) {
+        e.preventDefault();
+        return;
+      }
+      currentDragData = { type: 'bank', qIdx, word };
+      e.dataTransfer.setData('text/plain', word);
+      e.dataTransfer.effectAllowed = 'copyMove';
+      if (chipEl) chipEl.classList.add('dragging');
+    }
+
+    function handleWordDragEnd(e, chipEl) {
+      if (chipEl) chipEl.classList.remove('dragging');
+      currentDragData = null;
+    }
+
+    function handleBlankDragStart(e, qIdx, blankNum) {
+      const slotKey = `${qIdx}_${blankNum}`;
+      const word = interactiveExerciseState[slotKey];
+      if (!word) {
+        e.preventDefault();
+        return;
+      }
+      currentDragData = { type: 'blank', qIdx, word, fromBlankNum: blankNum };
+      e.dataTransfer.setData('text/plain', word);
+      e.dataTransfer.effectAllowed = 'move';
+    }
+
+    function handleBlankDragOver(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+    }
+
+    function handleBlankDragEnter(e, el) {
+      e.preventDefault();
+      el.classList.add('blank-dragover');
+    }
+
+    function handleBlankDragLeave(e, el) {
+      el.classList.remove('blank-dragover');
+    }
+
+    function setBlankValue(qIdx, blankNum, word) {
+      const slotKey = `${qIdx}_${blankNum}`;
+      interactiveExerciseState[slotKey] = word;
+      const blankEl = document.getElementById(`blank-${slotKey}`);
+      if (blankEl) {
+        blankEl.className = 'interactive-blank blank-filled';
+        blankEl.setAttribute('draggable', 'true');
+        blankEl.ondragstart = (e) => handleBlankDragStart(e, qIdx, blankNum);
+        blankEl.innerHTML = `<span>${escapeHtml(word)}</span><i class="fa-solid fa-xmark text-[10px] ml-1.5 opacity-60 hover:opacity-100"></i>`;
+      }
+    }
+
+    function clearBlankValue(qIdx, blankNum) {
+      const slotKey = `${qIdx}_${blankNum}`;
+      delete interactiveExerciseState[slotKey];
+      const blankEl = document.getElementById(`blank-${slotKey}`);
+      if (blankEl) {
+        blankEl.className = 'interactive-blank blank-empty';
+        blankEl.removeAttribute('draggable');
+        blankEl.ondragstart = null;
+        blankEl.innerHTML = `[${blankNum}]`;
+      }
+    }
+
+    function markWordUsed(qIdx, word) {
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        const chips = bankBox.querySelectorAll('.word-chip');
+        for (const c of chips) {
+          if (c.getAttribute('data-token') === word && !c.classList.contains('word-chip-used')) {
+            c.classList.add('word-chip-used');
+            c.setAttribute('draggable', 'false');
+            break;
+          }
+        }
+      }
+    }
+
+    function unmarkWordUsed(qIdx, word) {
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        const chips = bankBox.querySelectorAll('.word-chip');
+        for (const c of chips) {
+          if (c.getAttribute('data-token') === word && c.classList.contains('word-chip-used')) {
+            c.classList.remove('word-chip-used');
+            c.setAttribute('draggable', 'true');
+            break;
+          }
+        }
+      }
+    }
+
+    function handleBlankDrop(e, qIdx, targetBlankNum, el) {
+      e.preventDefault();
+      el.classList.remove('blank-dragover');
+      if (!currentDragData) return;
+      if (currentDragData.qIdx !== qIdx) return;
+
+      const droppedWord = currentDragData.word;
+      const targetSlotKey = `${qIdx}_${targetBlankNum}`;
+      const existingWordInTarget = interactiveExerciseState[targetSlotKey];
+
+      if (currentDragData.type === 'bank') {
+        if (existingWordInTarget) {
+          unmarkWordUsed(qIdx, existingWordInTarget);
+        }
+        setBlankValue(qIdx, targetBlankNum, droppedWord);
+        markWordUsed(qIdx, droppedWord);
+      } else if (currentDragData.type === 'blank') {
+        const fromBlankNum = currentDragData.fromBlankNum;
+        if (fromBlankNum === targetBlankNum) return;
+
+        if (existingWordInTarget) {
+          setBlankValue(qIdx, fromBlankNum, existingWordInTarget);
+        } else {
+          clearBlankValue(qIdx, fromBlankNum);
+        }
+        setBlankValue(qIdx, targetBlankNum, droppedWord);
+      }
+
+      currentDragData = null;
+    }
+
+    function handleBankDragOver(e) {
+      e.preventDefault();
+      e.dataTransfer.dropEffect = 'move';
+    }
+
+    function handleBankDrop(e, qIdx) {
+      e.preventDefault();
+      if (!currentDragData) return;
+      if (currentDragData.qIdx !== qIdx) return;
+
+      if (currentDragData.type === 'blank') {
+        clearBlankValue(qIdx, currentDragData.fromBlankNum);
+        unmarkWordUsed(qIdx, currentDragData.word);
+      }
+      currentDragData = null;
+    }
+
     // Interactive blank clicked -> remove placed word
     function handleBlankClick(qIdx, blankNum) {
       const slotKey = `${qIdx}_${blankNum}`;
       const filledWord = interactiveExerciseState[slotKey];
       if (!filledWord) return;
 
-      delete interactiveExerciseState[slotKey];
-      
-      const blankEl = document.getElementById(`blank-${slotKey}`);
-      if (blankEl) {
-        blankEl.className = 'interactive-blank blank-empty';
-        blankEl.innerText = `[${blankNum}]`;
-      }
-
-      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
-      if (bankBox) {
-        const chips = bankBox.querySelectorAll('.word-chip');
-        chips.forEach(c => {
-          if (c.getAttribute('data-token') === filledWord && c.classList.contains('word-chip-used')) {
-            c.classList.remove('word-chip-used');
-          }
-        });
-      }
+      clearBlankValue(qIdx, blankNum);
+      unmarkWordUsed(qIdx, filledWord);
     }
 
     // Word chip clicked -> place in first empty blank
     function handleWordChipClick(qIdx, word, chipEl) {
-      if (chipEl.classList.contains('word-chip-used')) return;
+      if (chipEl && chipEl.classList.contains('word-chip-used')) return;
 
       const qBox = document.getElementById(`exBox-${qIdx}`);
       if (!qBox) return;
@@ -1024,14 +1228,57 @@
       if (emptyBlanks.length === 0) return;
 
       const targetBlank = emptyBlanks[0];
-      const blankNum = targetBlank.getAttribute('data-blank');
-      const slotKey = `${qIdx}_${blankNum}`;
+      const blankNum = parseInt(targetBlank.getAttribute('data-blank'), 10);
 
-      interactiveExerciseState[slotKey] = word;
-      targetBlank.className = 'interactive-blank blank-filled';
-      targetBlank.innerText = word;
+      setBlankValue(qIdx, blankNum, word);
+      markWordUsed(qIdx, word);
+    }
 
-      chipEl.classList.add('word-chip-used');
+    // Reset single exercise question
+    function resetExerciseQuestion(qIdx) {
+      const qBox = document.getElementById(`exBox-${qIdx}`);
+      if (!qBox) return;
+
+      const blanks = qBox.querySelectorAll('.interactive-blank');
+      blanks.forEach(b => {
+        const bNum = parseInt(b.getAttribute('data-blank'), 10);
+        clearBlankValue(qIdx, bNum);
+      });
+
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        bankBox.querySelectorAll('.word-chip').forEach(c => {
+          c.classList.remove('word-chip-used');
+          c.setAttribute('draggable', 'true');
+        });
+      }
+    }
+
+    // Reveal correct answer key
+    function revealExerciseAnswer(qIdx) {
+      const d = daysData[currentDayIndex];
+      const q = d.exercise_a.questions[qIdx];
+      if (!q) return;
+
+      const answers = q.answers || q.word_bank || [];
+      const qBox = document.getElementById(`exBox-${qIdx}`);
+      if (!qBox) return;
+
+      const blanks = qBox.querySelectorAll('.interactive-blank');
+      blanks.forEach((b, idx) => {
+        const bNum = parseInt(b.getAttribute('data-blank'), 10);
+        const word = answers[idx] || q.word_bank[idx] || 'correct';
+        setBlankValue(qIdx, bNum, word);
+        b.className = 'interactive-blank blank-correct';
+      });
+
+      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
+      if (bankBox) {
+        bankBox.querySelectorAll('.word-chip').forEach(c => {
+          c.classList.add('word-chip-used');
+          c.setAttribute('draggable', 'false');
+        });
+      }
     }
 
     // Check answers for all questions
@@ -1045,14 +1292,17 @@
         const qBox = document.getElementById(`exBox-${qIdx}`);
         if (!qBox) return;
 
+        const answers = q.answers || [];
         const blanks = qBox.querySelectorAll('.interactive-blank');
-        blanks.forEach(b => {
+        blanks.forEach((b, idx) => {
           totalBlanks++;
           const bNum = b.getAttribute('data-blank');
           const slotKey = `${qIdx}_${bNum}`;
           const userVal = (interactiveExerciseState[slotKey] || '').toLowerCase().trim();
+          const expectedVal = (answers[idx] || '').toLowerCase().trim();
 
-          if (userVal) {
+          const isMatch = expectedVal ? (userVal === expectedVal) : (userVal.length > 0);
+          if (isMatch) {
             b.className = 'interactive-blank blank-correct';
             totalCorrect++;
           } else {
@@ -1061,52 +1311,7 @@
         });
       });
 
-      alert(`Bạn đã điền hoàn chỉnh ${totalCorrect}/${totalBlanks} chỗ trống!`);
-    }
-
-    // Reveal correct answer key
-    function revealExerciseAnswer(qIdx) {
-      const d = daysData[currentDayIndex];
-      const q = d.exercise_a.questions[qIdx];
-      if (!q) return;
-
-      const bank = q.word_bank || [];
-      const qBox = document.getElementById(`exBox-${qIdx}`);
-      if (!qBox) return;
-
-      const blanks = qBox.querySelectorAll('.interactive-blank');
-      blanks.forEach((b, idx) => {
-        const bNum = b.getAttribute('data-blank');
-        const slotKey = `${qIdx}_${bNum}`;
-        const word = bank[idx] || bank[0] || 'correct';
-        interactiveExerciseState[slotKey] = word;
-        b.className = 'interactive-blank blank-correct';
-        b.innerText = word;
-      });
-
-      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
-      if (bankBox) {
-        bankBox.querySelectorAll('.word-chip').forEach(c => c.classList.add('word-chip-used'));
-      }
-    }
-
-    function resetExerciseQuestion(qIdx) {
-      const qBox = document.getElementById(`exBox-${qIdx}`);
-      if (!qBox) return;
-
-      const blanks = qBox.querySelectorAll('.interactive-blank');
-      blanks.forEach(b => {
-        const bNum = b.getAttribute('data-blank');
-        const slotKey = `${qIdx}_${bNum}`;
-        delete interactiveExerciseState[slotKey];
-        b.className = 'interactive-blank blank-empty';
-        b.innerText = `[${bNum}]`;
-      });
-
-      const bankBox = document.getElementById(`wordBankBox-${qIdx}`);
-      if (bankBox) {
-        bankBox.querySelectorAll('.word-chip').forEach(c => c.classList.remove('word-chip-used'));
-      }
+      alert(`Bạn đã điền hoàn thành bài tập! Điểm số: ${totalCorrect}/${totalBlanks}`);
     }
 
     // Global Flashcard shortcut

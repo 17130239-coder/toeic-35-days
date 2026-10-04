@@ -377,6 +377,7 @@ def extract_all():
                 vocab_entries.append(entry)
 
         # Parse Exercise A cleanly
+        # Parse Exercise A cleanly
         exercise_a = {
             "title": "VIẾT CÂU HOÀN CHỈNH",
             "form_url": form_links[0]['url'] if form_links else "",
@@ -385,76 +386,76 @@ def extract_all():
         }
         
         if 'VIẾT CÂU' in raw_html:
-            start_pos = raw_html.find('VIẾT CÂU')
-            end_pos = raw_html.find('B. GAME QUIZIZZ')
-            sub_html = raw_html[start_pos:end_pos if end_pos != -1 else len(raw_html)]
-            
-            # Replace <br> with newline
-            sub_text = re.sub(r'<br\s*/?>', '\n', sub_html)
-            text_block = BeautifulSoup(sub_text, 'html.parser').get_text('\n')
-            
-            # Split into questions by numbers
-            q_chunks = re.split(r'\n\s*(\d+)[\.\)]\s*', '\n' + text_block)
-            for i in range(1, len(q_chunks), 2):
-                q_num = int(q_chunks[i])
-                chunk_text = q_chunks[i+1]
-                raw_lines = [l.strip() for l in chunk_text.split('\n') if l.strip()]
-                if not raw_lines:
-                    continue
+            s_idx = raw_html.find('VIẾT CÂU')
+            e_idx = raw_html.find('B. GAME QUIZIZZ')
+            if e_idx == -1: e_idx = raw_html.find('B. GAME QUIZIZZ')
+            if e_idx == -1: e_idx = raw_html.find('B. GAME')
+            if e_idx == -1: e_idx = raw_html.find('B. GAME')
+            if e_idx == -1: e_idx = len(raw_html)
+            sub = raw_html[s_idx:e_idx]
+
+            matches = list(re.finditer(r'(?:<br\s*/?>|\n|\))\s*(?:<b>)?\s*(?:<br\s*/?>)?\s*(\d+)[\.\)]\s*(?:</b>)?', sub))
+            for idx, match in enumerate(matches):
+                q_num = int(match.group(1))
+                start_pos = match.end()
+                end_pos = matches[idx+1].start() if idx+1 < len(matches) else len(sub)
+                q_chunk = sub[start_pos:end_pos]
+                
+                chunk_clean = re.sub(r'<u>\s*___\s*</u>', '___', q_chunk)
+                lines_html = re.split(r'<br\s*/?>', chunk_clean)
                 
                 s_lines = []
                 t_lines = []
-                b_lines = []
-                phase = 'sent'
+                bank_tokens = []
                 
-                for line in raw_lines:
-                    if line.startswith('=>'):
+                for lh in lines_html:
+                    lh_txt = BeautifulSoup(lh, 'html.parser').get_text().replace('\xa0', ' ')
+                    clean_l = clean_text(lh_txt)
+                    if not clean_l or clean_l.startswith('=>'):
                         continue
-                    if 'B. GAME QUIZIZZ' in line:
+                    if 'B. GAME' in clean_l or 'CƠ CẤU' in clean_l or 'TRẢ BÀI' in clean_l or 'forms.gle' in clean_l:
                         break
-                    
-                    line_has_vn = has_vietnamese(line)
-                    
-                    if phase == 'sent':
-                        if '___' in line or not line_has_vn:
-                            s_lines.append(clean_text(line))
-                        else:
-                            phase = 'trans'
-                            t_lines.append(clean_text(line))
-                    elif phase == 'trans':
-                        if line_has_vn:
-                            t_lines.append(clean_text(line))
-                        else:
-                            phase = 'bank'
-                            b_lines.append(line)
-                    elif phase == 'bank':
-                        if not line_has_vn:
-                            b_lines.append(line)
-                            
-                sent = ' '.join(s_lines).strip()
-                trans = ' '.join(t_lines).strip()
-                
-                # Bank tokens: split on 2 or more spaces or non-breaking spaces
-                bank_raw = ' '.join(b_lines)
-                tokens = [t.strip() for t in re.split(r'[\xa0\s]{2,}|\t+', bank_raw) if t.strip()]
-                if len(tokens) <= 1 and bank_raw:
-                    # fallback
-                    tokens = [t.strip() for t in bank_raw.split() if t.strip() and t not in ['.', ',', ';']]
+                        
+                    if '___' in clean_l:
+                        s_lines.append(clean_l)
+                    elif has_vietnamese(clean_l):
+                        t_lines.append(clean_l)
+                    else:
+                        toks = [t.strip() for t in re.split(r' {2,}|\t+', lh_txt) if t.strip()]
+                        for t in toks:
+                            if 'http' in t or 'wayground' in t or 'forms.gle' in t:
+                                continue
+                            c = re.sub(r'^[\[\]\(\)\.\,\;\:\s\d]+|[\[\]\(\)\.\,\;\:\s]+$', '', t).strip()
+                            c = re.sub(r'[\[\]]', '', c).strip()
+                            if c and len(c) > 1 and not has_vietnamese(c):
+                                bank_tokens.append(c)
 
-                # Clean tokens
-                cleaned_tokens = []
-                for tk in tokens:
-                    c = clean_text(tk)
-                    # remove trailing punctuation
-                    c = re.sub(r'^[\.\,\;\:\'\"]+|[\.\,\;\:\'\"]+$', '', c).strip()
-                    if c and len(c) > 1 and not has_vietnamese(c):
-                        cleaned_tokens.append(c)
+                sent = clean_text(' '.join(s_lines))
+                sent = re.sub(r'___\s*\[\s*(\d+)\s*\]', r'___[\1]', sent)
+                sent = re.sub(r'___\s*(\d+)', r'___[\1]', sent)
+                sent = re.sub(r'\s*[\.\[\]\(\)]+\s*$', '', sent).strip()
+                if re.search(r'___\[\d+$', sent):
+                    sent += ']'
+                if not sent.endswith('?') and not sent.endswith('.'):
+                    sent += '.'
+
+                trans = clean_text(' '.join(t_lines))
+                trans = re.sub(r'^\s*\]+\s*', '', trans)
+                trans = re.sub(r'\s*\[+\s*$', '', trans)
+                trans = re.sub(r'\[\s+', '[', trans)
+                trans = re.sub(r'\s+\]', ']', trans)
+                open_b = trans.count('[')
+                close_b = trans.count(']')
+                if open_b > close_b:
+                    trans += ']' * (open_b - close_b)
+                elif close_b > open_b:
+                    trans = ('[' * (close_b - open_b)) + trans
 
                 exercise_a["questions"].append({
                     "number": q_num,
                     "sentence": sent,
                     "translation": trans,
-                    "word_bank": cleaned_tokens
+                    "word_bank": bank_tokens
                 })
 
         days_data.append({

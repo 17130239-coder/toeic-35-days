@@ -143,96 +143,154 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Jack's ___[1] ___[2] ___ [3] ___[4] six months. [",
-            "translation": "Công ty ] của Jack [ tổ chức ] những [BUỔI ĐÁNH GIÁ THÀNH TÍCH]",
+            "sentence": "Jack's ___[1] ___[2] ___[3] ___[4] six months.",
+            "translation": "[Công ty] của Jack [tổ chức] những [BUỔI ĐÁNH GIÁ THÀNH TÍCH] [mỗi] sáu tháng một lần.",
             "word_bank": [
-              "[ holds",
+              "holds",
               "every",
               "PERFORMANCE APPRAISALS",
               "company"
+            ],
+            "answers": [
+              "company",
+              "holds",
+              "PERFORMANCE APPRAISALS",
+              "every"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1] who want to ___[2] this book need the ___ [3] from the ___[4]. [",
-            "translation": "Những ai ] muốn [ xuất bản ] quyển sách này cần có [SỰ CHẤP THUẬN] từ [ tác giả",
+            "sentence": "___[1] who want to ___[2] this book need the ___[3] from the ___[4].",
+            "translation": "[Những ai] muốn [xuất bản] quyển sách này cần có [SỰ CHẤP THUẬN] từ [tác giả].",
             "word_bank": [
-              "]. APPROVAL",
+              "APPROVAL",
               "Those",
               "author",
               "publish"
+            ],
+            "answers": [
+              "Those",
+              "publish",
+              "APPROVAL",
+              "author"
             ]
           },
           {
             "number": 3,
-            "sentence": "The university ___[1] ___[2] over 10000 ___ [3 ] ___[4]. [",
-            "translation": "Thư viện ] trường đại học [ lưu trữ ] hơn 10.000 [TẠP CHÍ XUẤT BẢN ĐỊNH KỲ]",
+            "sentence": "The university ___[1] ___[2] over 10000 ___[3] ___[4].",
+            "translation": "[Thư viện] trường đại học [lưu trữ] hơn 10.000 [TẠP CHÍ XUẤT BẢN ĐỊNH KỲ] [mỗi năm].",
             "word_bank": [
-              "[ ]. stocks",
+              "stocks",
               "annually",
               "library",
               "PERIODICALS"
+            ],
+            "answers": [
+              "library",
+              "stocks",
+              "PERIODICALS",
+              "annually"
             ]
           },
           {
             "number": 4,
-            "sentence": "Should we ___[1] this ___ [2] or find an ___ [3] before the ___[4] tomorrow?",
-            "translation": "Chúng ta nên [ chấp thuận",
+            "sentence": "Should we ___[1] this ___[2] or find an ___[3] before the ___[4] tomorrow?",
+            "translation": "Chúng ta nên [chấp thuận] [BẢN ĐỀ XUẤT NGÂN SÁCH] này hay tìm một [CÁI THAY THẾ] trước [buổi hội nghị] ngày mai?",
             "word_bank": [
-              "] ALTERNATIVE",
+              "ALTERNATIVE",
               "conference",
               "BUDGET PROPOSAL",
               "approve"
+            ],
+            "answers": [
+              "approve",
+              "BUDGET PROPOSAL",
+              "ALTERNATIVE",
+              "conference"
             ]
           },
           {
             "number": 5,
-            "sentence": "The membership ___ [1] will ___[2] you to receive ___[3] ___[4] from ___[5] services to ___[6] programs.",
-            "translation": "[VIỆC GIA HẠN] thẻ thành viên sẽ [ cho phép ] bạn nhận được [ đa dạng",
+            "sentence": "The membership ___[1] will ___[2] you to receive ___[3] ___[4] from ___[5] services to ___[6] programs.",
+            "translation": "[VIỆC GIA HẠN] thẻ thành viên sẽ [cho phép] bạn nhận được [đa dạng] [những lợi ích] từ các dịch vụ [cải tiến] cho đến những chương trình [hiệu quả].",
             "word_bank": [
-              "] [ ]. innovative",
+              "innovative",
               "a wide variety of",
               "effective",
               "entitle",
               "RENEWAL",
               "benefits"
+            ],
+            "answers": [
+              "RENEWAL",
+              "entitle",
+              "a wide variety of",
+              "benefits",
+              "innovative",
+              "effective"
             ]
           },
           {
             "number": 6,
-            "sentence": "___[1] from the ___[2] ___[3] ___[4] the ___ [5] in ___[6]. [",
-            "translation": "Tổng số tiền thu được ] từ [ sự kiện gây quỹ",
+            "sentence": "___[1] from the ___[2] ___[3] ___[4] the ___[5] in ___[6].",
+            "translation": "[Tổng số tiền thu được] từ [sự kiện gây quỹ] [được dự định dùng cho việc] [ủng hộ] [CÁC SÁNG KIẾN] trong việc [giáo dục 2 ngôn ngữ].",
             "word_bank": [
-              "] [ ] [ ] ]. fundraising event",
-              "support are intended to",
-              "INNITIATIVES Proceeds",
+              "fundraising event",
+              "support",
+              "are intended to",
+              "INNITIATIVES",
+              "Proceeds",
+              "bilingual education"
+            ],
+            "answers": [
+              "Proceeds",
+              "fundraising event",
+              "are intended to",
+              "support",
+              "INNITIATIVES",
               "bilingual education"
             ]
           },
           {
             "number": 7,
-            "sentence": "The ___[1] ___ [2] of this ___[3] is ___ [4] ___[5] ___[6] rivers and ___[7].",
-            "translation": "[MỤC TIÊU]",
+            "sentence": "The ___[1] ___[2] of this ___[3] is ___[4] ___[5] ___[6] rivers and ___[7].",
+            "translation": "[MỤC TIÊU] [chính] của [chiến dịch tình nguyện] này là [VIỆC LOẠI BỎ] [chất thải không cần thiết] [dọc theo] các con sông và [các nhà máy].",
             "word_bank": [
-              "[ [ ] [ ]. alongside",
+              "alongside",
               "DISPOSAL OF",
               "unnecessary waste",
               "main",
               "plants",
               "volunteer campaign",
               "OBJECTIVE"
+            ],
+            "answers": [
+              "main",
+              "OBJECTIVE",
+              "volunteer campaign",
+              "DISPOSAL OF",
+              "unnecessary waste",
+              "alongside",
+              "plants"
             ]
           },
           {
             "number": 8,
-            "sentence": "If you have any ___[1] the ___[2], ___[3] our ___ [4] via the ___[5] 05.",
-            "translation": "Nếu bạn có bất kỳ [ câu hỏi thắc mắc về",
+            "sentence": "If you have any ___[1] the ___[2], ___[3] our ___[4] via the ___[5] 05.",
+            "translation": "Nếu bạn có bất kỳ [câu hỏi thắc mắc về] [chính sách bảo hành], [đừng ngần ngại liên hệ] [NHỮNG NGƯỜI ĐẠI DIỆN] của chúng tôi qua [số máy phụ] 05.",
             "word_bank": [
-              "] [ ], [ ] ] 05. do not hesitate to contact",
+              "do not hesitate to contact",
               "inquiries about",
               "extension",
               "REPRESENTATIVES",
-              "warranty policy https://wayground.com/join?gc=66560969 . 📍"
+              "warranty policy"
+            ],
+            "answers": [
+              "inquiries about",
+              "warranty policy",
+              "do not hesitate to contact",
+              "REPRESENTATIVES",
+              "extension"
             ]
           }
         ]
@@ -355,8 +413,8 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] you have ___[2] our ___[3] , your camera will not ___[4] a ___[5] repair.",
-            "translation": "Bởi vì bạn đã vi phạm CHÍNH SÁCH BẢO HÀNH của chúng tôi, máy ảnh của bạn sẽ không được hưởng sự sửa chữa miễn phí",
+            "sentence": "___[1] you have ___[2] our ___[3], your camera will not ___[4] a ___[5] repair.",
+            "translation": "Bởi vì bạn đã vi phạm CHÍNH SÁCH BẢO HÀNH của chúng tôi, máy ảnh của bạn sẽ không được hưởng sự sửa chữa miễn phí.",
             "word_bank": [
               "be entitled to",
               "complimentary",
@@ -374,20 +432,20 @@
               "ISSUES",
               "company",
               "regulations",
-              "cares abou t"
+              "cares about"
             ]
           },
           {
             "number": 3,
             "sentence": "You must ___[1] one of our ___[2] ___[3] to ___[4] your ___[5], résumé, and ___[6].",
-            "translation": "Bạn phải ĐÍCH THÂN ghé qua 1 trong số các chi nhánh của chúng tôi để nộp đơn ứng tuyển , sơ yếu lý lịch và các tài liệu có liên quan",
+            "translation": "Bạn phải ĐÍCH THÂN ghé qua 1 trong số các chi nhánh của chúng tôi để nộp đơn ứng tuyển, sơ yếu lý lịch và các tài liệu có liên quan.",
             "word_bank": [
               "IN PERSON",
               "application form",
               "submit",
               "drop by",
               "relevant documents",
-              "branche s"
+              "branches"
             ]
           },
           {
@@ -404,13 +462,13 @@
           {
             "number": 5,
             "sentence": "The ___[1] of the smart robot in the 21st century, Sophia, is the ___[2] of ___[3]' research ___[4] over the last ___[5].",
-            "translation": "Sự ra đời của rô-bốt thông minh thế kỉ 21, Sophia, là kết quả của QUÁ TRÌNH nghiên cứu của các chuyên gia trong hơn 1 thập kỉ",
+            "translation": "Sự ra đời của rô-bốt thông minh thế kỉ 21, Sophia, là kết quả của QUÁ TRÌNH nghiên cứu của các chuyên gia trong hơn 1 thập kỉ qua.",
             "word_bank": [
-              "qua. decade",
+              "decade",
               "experts",
               "result",
               "advent",
-              "PROCESS https://wayground.com/join?gc=61030441 . 📍"
+              "PROCESS"
             ]
           }
         ]
@@ -532,65 +590,62 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "After 3 months of ___[1] ___[2] Apple, both companies have ___ [3] ___[4] to ___[5] next week.",
-            "translation": "Sau 3 tháng [ tiến hành",
+            "sentence": "After 3 months of ___[1] ___[2] Apple, both companies have ___[3] ___[4] to ___[5] next week.",
+            "translation": "Sau 3 tháng [tiến hành] [những buổi đàm phán với] Apple, 2 công ty [CUỐI CÙNG] đã [đi đến nhất trí] để [kí hợp đồng] vào tuần sau.",
             "word_bank": [
-              "] [ ] ] negotiations with",
-              "ULTIMATELY conducting enter into a contract",
-              "reached a consensu s"
+              "negotiations with",
+              "ULTIMATELY",
+              "conducting",
+              "enter into a contract",
+              "reached a consensus"
             ]
           },
           {
             "number": 2,
-            "sentence": "___ [1] in the field of child ___[2] ___[3] ___[4] from ___[5].",
-            "translation": "[CÁC CHUYÊN GIA] trong lĩnh vực [tâm lý học] trẻ em [ cảnh báo ] về [ những mối đe dọa tiềm ẩn ] từ [ truyền thông trên mạng XH",
+            "sentence": "___[1] in the field of child ___[2] ___[3] ___[4] from ___[5].",
+            "translation": "[CÁC CHUYÊN GIA] trong lĩnh vực [tâm lý học] trẻ em [cảnh báo] về [những mối đe dọa tiềm ẩn] từ [truyền thông trên mạng XH].",
             "word_bank": [
-              "]. psychology social media warn of EXPERTS",
+              "psychology",
+              "social media",
+              "warn of",
+              "EXPERTS",
               "potential threats"
             ]
           },
           {
             "number": 3,
-            "sentence": "Our ___[1] for next year is to ___ [2] ___[3] and to ___[4] machinery ___[5] current ___[6]. [",
-            "translation": "Mục tiêu ] của chúng tôi trong năm tới là [THÚC ĐẨY]",
+            "sentence": "Our ___[1] for next year is to ___[2] ___[3] and to ___[4] machinery ___[5] current ___[6].",
+            "translation": "[Mục tiêu] của chúng tôi trong năm tới là [THÚC ĐẨY] [năng suất làm việc của nhân viên] và [hiện đại hóa] các loại máy móc để [bắt kịp với] [các xu hướng] hiện nay.",
             "word_bank": [
-              "[ [ ] [ ] tendencies",
+              "tendencies",
               "BOOST",
-              "in keeping with worker productivity objective modernize"
+              "in keeping with",
+              "worker productivity",
+              "objective",
+              "modernize"
             ]
           },
           {
             "number": 4,
-            "sentence": "The more ___ [1] ___[2] is, the more ___[3] its ___[4] will be. [",
-            "translation": "Bài tiểu luận ] càng [NGẮN GỌN] bao nhiêu, [ nội dung ] của nó càng trở nên [ rõ ràng ] bấy nhiêu.",
+            "sentence": "The more ___[1] ___[2] is, the more ___[3] its ___[4] will be.",
+            "translation": "[Bài tiểu luận] càng [NGẮN GỌN] bao nhiêu, [nội dung] của nó càng trở nên [rõ ràng] bấy nhiêu.",
             "word_bank": [
               "content",
               "obvious",
               "CONCISE",
-              "the",
-              "essay"
+              "the essay"
             ]
           },
           {
             "number": 5,
-            "sentence": "___[1] ___ [2] which is ___[3] the envelope and send it back to us at the address ___[4] on our Website ___[5]. [",
-            "translation": "Vui lòng",
+            "sentence": "___[1] ___[2] which is ___[3] the envelope and send it back to us at the address ___[4] on our Website ___[5].",
+            "translation": "[Vui lòng] [HOÀN THÀNH MẪU ĐƠN] cái mà [được đính kèm] theo phong bì và gởi lại cho chúng tôi theo địa chỉ [được cung cấp] trên Website [trước cuối tuần này].",
             "word_bank": [
-              "enclosed",
-              "with",
+              "enclosed with",
               "provided",
               "Please",
-              "by",
-              "the",
-              "end",
-              "of",
-              "this",
-              "week",
-              "FILL",
-              "OUT",
-              "THE",
-              "FORM",
-              "https://wayground.com/join?gc=32456745"
+              "by the end of this week",
+              "FILL OUT THE FORM"
             ]
           }
         ]
@@ -740,11 +795,12 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "It is ___[1] through ___[2] such as television and radio that companies produce ___[3] ___[4] to ___[5] ___ [6] . [",
-            "translation": "Chủ yếu ] thông qua [ các kênh truyền thống ] như là tivi và radio mà các công ty đưa ra [ những bài quảng cáo",
+            "sentence": "It is ___[1] through ___[2] such as television and radio that companies produce ___[3] ___[4] to ___[5] ___[6].",
+            "translation": "[Chủ yếu] thông qua [các kênh truyền thống] như là tivi và radio mà các công ty đưa ra [những bài quảng cáo] [1 cách có chiến lược] nhằm [thu hút] [CÁC KHÁCH HÀNG TIỀM NĂNG].",
             "word_bank": [
-              "] [ ] . commercials",
-              "predominantly strategically",
+              "commercials",
+              "predominantly",
+              "strategically",
               "draw",
               "PROSPECTIVE CLIENTS",
               "traditional channels"
@@ -752,23 +808,25 @@
           },
           {
             "number": 2,
-            "sentence": "Apple ___[1] ___[2] all of its ___ [3] iphones and ___[4] ___[5] to ___[6]. Apple [",
-            "translation": "ngay lập tức",
+            "sentence": "Apple ___[1] ___[2] all of its ___[3] iphones and ___[4] ___[5] to ___[6].",
+            "translation": "Apple [ngay lập tức] [đã thu hồi] tất cả điện thoại iphone [BỊ LỖI] và [phát hành] việc [hoàn tiền đầy đủ] lại cho [các khách hàng].",
             "word_bank": [
-              "] [ ] ]. full refunds",
+              "full refunds",
               "DEFECTIVE",
               "clients",
               "immediately",
-              "recalled issued"
+              "recalled",
+              "issued"
             ]
           },
           {
             "number": 3,
-            "sentence": "The ___[1] supermarket has ___[2] ___ [3] on ___[4], thus you will have more ___[5] for your ___[6].",
-            "translation": "Siêu thị [ ở địa phương ] có [ đa dạng",
+            "sentence": "The ___[1] supermarket has ___[2] ___[3] on ___[4], thus you will have more ___[5] for your ___[6].",
+            "translation": "Siêu thị [ở địa phương] có [đa dạng] [HÀNG HÓA] trên [kệ trưng bày], do đó bạn sẽ có nhiều [sự lựa chọn] hơn cho [việc mua hàng].",
             "word_bank": [
-              "] ]. a wide variety of",
-              "purchase choices",
+              "a wide variety of",
+              "purchase",
+              "choices",
               "local",
               "display",
               "MERCHANDISE"
@@ -776,15 +834,15 @@
           },
           {
             "number": 4,
-            "sentence": "You ___[1] to ___ [2] your current mobile phone for a new one ___[3] 30 days ___[4] you ___ [5] our ___[6].",
-            "translation": "Bạn [ có quyền",
+            "sentence": "You ___[1] to ___[2] your current mobile phone for a new one ___[3] 30 days ___[4] you ___[5] our ___[6].",
+            "translation": "Bạn [có quyền] [ĐỔI] điện thoại di động hiện tại lấy một cái mới [trong vòng] 30 ngày [miễn là] bạn [TUÂN THỦ] [chính sách bảo hành] của chúng tôi.",
             "word_bank": [
-              "] [ COMPLY WITH",
+              "COMPLY WITH",
               "within",
               "EXCHANGE",
               "provided that",
               "warranty policy",
-              "have the right https://wayground.com/join?gc=47759401 ⚠️ . 📍"
+              "have the right"
             ]
           }
         ]
@@ -911,48 +969,54 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] ___[2] to the Amber History Museum ___ [3] ___[4] which was ___[5] for this year. [",
-            "translation": "Số lượng",
+            "sentence": "___[1] ___[2] to the Amber History Museum ___[3] ___[4] which was ___[5] for this year.",
+            "translation": "[Số lượng] [khách tham quan] đến Bảo tàng Lịch sử Amber [CHƯA] [vượt qua chỉ tiêu] được [đặt ra] cho năm nay.",
             "word_bank": [
-              "] [ [ qua visitors",
+              "visitors",
               "set",
-              "exceed the quota HAS YET TO",
+              "exceed the quota",
+              "HAS YET TO",
               "The number of"
             ]
           },
           {
             "number": 2,
-            "sentence": "Mr. Hung Huy has just been ___ [1] ___[2] ACB Bank's ___[3] for his ___ [4] to the ___[5] over the past ___[6].",
-            "translation": "Ông Hùng Huy vừa được [THĂNG CHỨC]",
+            "sentence": "Mr. Hung Huy has just been ___[1] ___[2] ACB Bank's ___[3] for his ___[4] to the ___[5] over the past ___[6].",
+            "translation": "Ông Hùng Huy vừa được [THĂNG CHỨC] [với tư cách là] [chủ tịch] của ngân hàng ACB vì [NHỮNG SỰ ĐÓNG GÓP ĐÁNG KỂ] của ông ấy đối với [công ty] trong hơn [thập niên] qua.",
             "word_bank": [
-              "[ ] [ ] qua. company CONSIDERABLE CONTRIBUTIONS",
+              "company",
+              "CONSIDERABLE CONTRIBUTIONS",
               "as",
               "decade",
-              "president PROMOTED"
+              "president",
+              "PROMOTED"
             ]
           },
           {
             "number": 3,
-            "sentence": "People are increasingly ___[1] ___[2] ___ [3] physical activities which have a ___ [4] on lowering the ___[5] in ___[6] as well as ___[7].",
-            "translation": "Con người ngày càng [ nhận thức ] được [ tầm quan trọng của ] việc [THÚC ĐẨY] các hoạt động thể chất (cái mà) có một [SỰ TÁC ĐỘNG ĐÁNG KỂ] lên việc giảm [ tỉ lệ béo phì ] ở [ trẻ vị thành niên ] cũng như là [ các căn bệnh mãn tính",
+            "sentence": "People are increasingly ___[1] ___[2] ___[3] physical activities which have a ___[4] on lowering the ___[5] in ___[6] as well as ___[7].",
+            "translation": "Con người ngày càng [nhận thức] được [tầm quan trọng của] việc [THÚC ĐẨY] các hoạt động thể chất (cái mà) có một [SỰ TÁC ĐỘNG ĐÁNG KỂ] lên việc giảm [tỉ lệ béo phì] ở [trẻ vị thành niên] cũng như là [các căn bệnh mãn tính].",
             "word_bank": [
-              "]. the importance of",
-              "chronic diseases adolescents SIGNIFICANT IMPACT aware of",
+              "the importance of",
+              "chronic diseases",
+              "adolescents",
+              "SIGNIFICANT IMPACT",
+              "aware of",
               "PROMOTING",
               "obesity rate"
             ]
           },
           {
             "number": 4,
-            "sentence": "Our ___[1] ___[2] ___ [3] clients with the ___[4] which are ___[5] from the most selective and freshest ___[6]. [",
-            "translation": "Căn tin ] của chúng tôi [ cam kết",
+            "sentence": "Our ___[1] ___[2] ___[3] clients with the ___[4] which are ___[5] from the most selective and freshest ___[6].",
+            "translation": "[Căn tin] của chúng tôi [cam kết] [CUNG CẤP] khách hàng với [những món ăn] cái mà được [tạo ra] từ những [thành phần] chọn lọc và tươi ngon nhất.",
             "word_bank": [
-              "] ingredients",
+              "ingredients",
               "PROVIDING",
               "created",
               "cafeteria",
               "dishes",
-              "is committed to https://wayground.com/join?gc=42230569 ⚠️ . 📍"
+              "is committed to"
             ]
           }
         ]
@@ -1119,33 +1183,42 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Since the ___[1] of Alpha Inc. are ___[2] while its price is ___ [3] other companies', they become the ___[4] in the ___[5].",
-            "translation": "Bởi vì [ những sản phẩm làm từ sữa",
+            "sentence": "Since the ___[1] of Alpha Inc. are ___[2] while its price is ___[3] other companies', they become the ___[4] in the ___[5].",
+            "translation": "Bởi vì [những sản phẩm làm từ sữa] của tập đoàn Alpha thì có [chất lượng tốt hơn] trong khi giá cả thì [TƯƠNG ĐƯƠNG VỚI] giá cả của những công ty khác, họ đã trở thành [nhà sản xuất hàng đầu] trong [ngành].",
             "word_bank": [
-              "] ] trong [ ]. COMPARABLE TO",
+              "COMPARABLE TO",
               "of higher quality",
-              "dairies leading manufacturer",
+              "dairies",
+              "leading manufacturer",
               "industry"
             ]
           },
           {
             "number": 2,
-            "sentence": "If you have ___[1] ___[2] for the city tour, ask the ___ [3] clerk for a ___[4]. ___[5], ask them for a ___ [6] .",
-            "translation": "Nếu bạn đã [ đặt chỗ",
+            "sentence": "If you have ___[1] ___[2] for the city tour, ask the ___[3] clerk for a ___[4]. ___[5], ask them for a ___[6].",
+            "translation": "Nếu bạn đã [đặt chỗ] [trước] cho chuyến tham quan thành phố, hãy hỏi nhân viên [QUẦY LỄ TÂN] để lấy [giấy xác nhận]. [Ngược lại], hãy hỏi xin họ [BẢNG BÁO GIÁ].",
             "word_bank": [
-              "] [ ]. [ . PRICE QUOTE in advance RECEPTION DESK",
-              "confirmation letter made a reservation",
+              "PRICE QUOTE",
+              "in advance",
+              "RECEPTION DESK",
+              "confirmation letter",
+              "made a reservation",
               "Otherwise"
             ]
           },
           {
             "number": 3,
-            "sentence": "The ___[1] and ___[2] which have ___ [3] happened in early 2020 ___[4] nations and ___[5] ___[6] about the ___[7], ___[8], and the importance of ___[9] nowadays. ___[10], it has ___[11] the ___[12] as well as ___[13] ___[14]. [",
-            "translation": "Thiên tai ] và [ dịch bệnh truyền nhiễm ] (cái mà) đã [LIÊN TIẾP] xảy ra đầu năm 2020 tại khắp các quốc gia và [ châu lục ] đã",
+            "sentence": "The ___[1] and ___[2] which have ___[3] happened in early 2020 ___[4] nations and ___[5] ___[6] about the ___[7], ___[8], and the importance of ___[9] nowadays. ___[10], it has ___[11] the ___[12] as well as ___[13] ___[14].",
+            "translation": "[Thiên tai] và [dịch bệnh truyền nhiễm] (cái mà) đã [LIÊN TIẾP] xảy ra đầu năm 2020 tại khắp các quốc gia và [châu lục] đã [rung 1 hồi chuông cảnh báo] về sự [biến đổi khí hậu], [hiệu ứng nhà kính] và tầm quan trọng của [việc bảo vệ môi trường] hiện nay. [Đồng thời], nó đã [dẫn đến] [sự suy thoái kinh tế] cùng những [hệ lụy nghiêm trọng] [trên mọi phương diện].",
             "word_bank": [
-              "[ ], [ ] [ ] [ [ ] [ ]. serious consequences",
-              "resulted in disasters",
-              "set alarm bells ringing in all aspects across climate change protecting the environment",
+              "serious consequences",
+              "resulted in",
+              "disasters",
+              "set alarm bells ringing",
+              "in all aspects",
+              "across",
+              "climate change",
+              "protecting the environment",
               "CONSECUTIVELY",
               "economic recession",
               "continents",
@@ -1156,27 +1229,33 @@
           },
           {
             "number": 4,
-            "sentence": "___[1] an ___[2], you must ___[3] ___[4] and ___ [5] ___[6] ___[7] meetings ___[8] him. [",
-            "translation": "Với tư cách là ] một [ trợ lý giám đốc ], bạn phải [ có khả năng đảm nhận",
+            "sentence": "___[1] an ___[2], you must ___[3] ___[4] and ___[5] ___[6] ___[7] meetings ___[8] him.",
+            "translation": "[Với tư cách là] một [trợ lý giám đốc], bạn phải [có khả năng đảm nhận] [nhiều loại công việc khác nhau] và [CHỊU TRÁCH NHIỆM CHO] việc [tham dự] các cuộc họp [quan trọng] [thay mặt] giám đốc.",
             "word_bank": [
-              "] [ ] [ ] BE RESPONSIBLE FOR crucial assistant manager",
+              "BE RESPONSIBLE FOR",
+              "crucial",
+              "assistant manager",
               "on behalf of",
               "attending",
               "be capable of assuming",
-              "As various kinds of tasks"
+              "As",
+              "various kinds of tasks"
             ]
           },
           {
             "number": 5,
-            "sentence": "___[1] the ___[2] will ___[3] at the end of this week, the ___[4] need to ___ [5] by 25th and ___[6] the final ___[7] to the ___[8] at the ___ [9] . [",
-            "translation": "Bởi vì",
+            "sentence": "___[1] the ___[2] will ___[3] at the end of this week, the ___[4] need to ___[5] by 25th and ___[6] the final ___[7] to the ___[8] at the ___[9].",
+            "translation": "[Bởi vì] [bài thuyết minh về sản phẩm] sẽ [đến hạn] vào cuối tuần này, [các ứng viên] cần [ĐÁP ỨNG HẠN CHÓT] trước ngày 25 và [nộp] [bản thảo] cuối cùng cho [phòng nhân sự] tại [QUẦY LỄ TÂN].",
             "word_bank": [
-              "] [ ] ] ] [ ] ] ] . submit",
-              "candidates FRONT DESK Now that",
-              "be due to expire Personnel Department",
+              "submit",
+              "candidates",
+              "FRONT DESK",
+              "Now that",
+              "be due to expire",
+              "Personnel Department",
               "draft",
               "demonstration of the product",
-              "MEET THE DEADLINE https://wayground.com/join?gc=37393065 ⚠️ . 📍"
+              "MEET THE DEADLINE"
             ]
           }
         ]
@@ -1326,29 +1405,35 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Please ___[1] ___[2] and ___[3] for the next lesson ___ [4] my ___[5] ___[6].",
-            "translation": "Vui lòng [CHUYỂN TIẾP] những [ hướng dẫn ] và [ tài liệu ] cho buổi học kế tiếp [ĐẾN CHO]",
+            "sentence": "Please ___[1] ___[2] and ___[3] for the next lesson ___[4] my ___[5] ___[6].",
+            "translation": "Vui lòng [CHUYỂN TIẾP] những [hướng dẫn] và [tài liệu] cho buổi học kế tiếp [ĐẾN CHO] [thư ký] của tôi [trước sáng mai].",
             "word_bank": [
-              "[ ]. secretary",
-              "by tomorrow morning TO materials FORWARD instructions"
+              "secretary",
+              "by tomorrow morning",
+              "TO",
+              "materials",
+              "FORWARD",
+              "instructions"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1], ___[2] 1000 ___[3] ___ [4] the ___[5] this year. [",
-            "translation": "Theo như tôi biết",
+            "sentence": "___[1], ___[2] 1000 ___[3] ___[4] the ___[5] this year.",
+            "translation": "[Theo như tôi biết], [sấp xỉ] 1000 [doanh nhân trẻ] đã [ĐĂNG KÝ CHO] buổi [hội nghị thường niên] năm nay.",
             "word_bank": [
-              "], [ ] 1000 [ ] approximately",
-              "REGISTERED FOR entrepreneurs annual convention",
+              "approximately",
+              "REGISTERED FOR",
+              "entrepreneurs",
+              "annual convention",
               "As far as I know"
             ]
           },
           {
             "number": 3,
-            "sentence": "___[1] an ___[2] and ___[3], it ___ [4] indeed whether Russian President Putin and Ukrainian President Zelensky will ___[5] about ___[6] the two countries after ___[7] to ___[8]. [",
-            "translation": "Trong bối cảnh",
+            "sentence": "___[1] an ___[2] and ___[3], it ___[4] indeed whether Russian President Putin and Ukrainian President Zelensky will ___[5] about ___[6] the two countries after ___[7] to ___[8].",
+            "translation": "[Trong bối cảnh] [khủng hoảng leo thang] và [giá nhiên liệu ngày càng tăng], quả thực [VẪN CÒN CHƯA RÕ] liệu tổng thống Nga Putin và tổng thống Ukraine Zelensky sẽ [đi đến thống nhất] về [sự đàm phán giữa] 2 đất nước sau [những nỗ lực thỏa hiệp không thành công] nhằm [chấm dứt chiến tranh].",
             "word_bank": [
-              "] [ ]. unsuccessful attempts at a compromise",
+              "unsuccessful attempts at a compromise",
               "rising fuel prices",
               "In the midst of",
               "escalating crisis",
@@ -1360,14 +1445,15 @@
           },
           {
             "number": 4,
-            "sentence": "I am not ___ [1] him, but his face seems familiar to me. Perhaps I did ___[2] him somewhere. ___[3], he is exactly ___[4]. After I ___[5] and ___[6] for five years, we both ___[7]. ___[8] [9]. He ___ [10] than before.",
-            "translation": "Tôi không",
+            "sentence": "I am not ___[1] him, but his face seems familiar to me. Perhaps I did ___[2] him somewhere. ___[3], he is exactly ___[4]. After I ___[5] and ___[6] for five years, we both ___[7]. ___[8] [9]. He ___[10] than before.",
+            "translation": "Tôi không [QUEN] anh ta nhưng mặt anh ta trông rất quen. Hình như tôi [vô tình chạm mặt] anh ta ở đâu đó. [Nếu nhớ không nhầm], anh ta chính là [chàng trai năm ấy chúng tôi cùng theo đuổi]. Sau khi tôi [tốt nghiệp] và [đi du học] trong 5 năm, hai chúng tôi [đã mất liên lạc với nhau]. [Nó làm tôi quên bẵng đi] [kể từ đó]. Anh ta [TRÔNG HOÀN TOÀN KHÁC] so với trước.",
             "word_bank": [
-              "[QUEN] ]. [ ] [ ]. Anh ta If my memory serves me correctly",
+              "If my memory serves me correctly",
               "run into",
               "graduated",
               "FAMILIAR WITH",
-              "from then onwards studied abroad",
+              "from then onwards",
+              "studied abroad",
               "LOOKS COMPLETELY DIFFERENT",
               "lost touch with each other",
               "It totally slipped my mind",
@@ -1376,12 +1462,13 @@
           },
           {
             "number": 5,
-            "sentence": "It is ___[1] to ___[2] that the TOEIC exam does not ___[3] what you have learned in one ___[4] English class but ___[5] your general ___[6] the English language in a ___[7]. This means, you have to ___[8] and ___[9] as many ___[10], resources and methods as possible in order to ___[11] your English. You should ___ [12] an environment in which you are ___[13] the English language ___[14] via the Youtube channels, newspaper articles in English or the ___[15]: BBC, CNN, SkyNews, etc.",
-            "translation": "Thật [ quan trọng",
+            "sentence": "It is ___[1] to ___[2] that the TOEIC exam does not ___[3] what you have learned in one ___[4] English class but ___[5] your general ___[6] the English language in a ___[7]. This means, you have to ___[8] and ___[9] as many ___[10], resources and methods as possible in order to ___[11] your English. You should ___[12] an environment in which you are ___[13] the English language ___[14] via the Youtube channels, newspaper articles in English or the ___[15]: BBC, CNN, SkyNews, etc.",
+            "translation": "Thật [quan trọng] để [hiểu] rằng kì thi TOEIC không [đo lường] cái mà bạn học trong một lớp Tiếng Anh [cụ thể] mà là [đánh giá] [sự thành thạo] nói chung về ngôn ngữ Tiếng Anh của bạn trong [môi trường doanh nghiệp]. Điều này có nghĩa là, bạn phải [sử dụng] và [khám phá] càng nhiều [tài liệu], tài nguyên và phương pháp càng tốt để [cải thiện] trình độ Tiếng Anh của mình. Bạn nên [TẠO RA] một môi trường mà bạn [tiếp xúc với] ngôn ngữ Tiếng Anh [hàng ngày], thông qua các kênh Youtube, báo Tiếng Anh hoặc [các chương trình truyền hình thực tế]: BBC, CNN, SkyNews, v.v...",
             "word_bank": [
-              "] [ ] [ ]: BBC, CNN, SkyNews, v.v... exposed to",
+              "exposed to",
               "materials",
-              "reality shows explore",
+              "reality shows",
+              "explore",
               "improve",
               "command of",
               "utilize",
@@ -1389,9 +1476,10 @@
               "evaluates",
               "CREATE",
               "business setting",
-              "measure comprehend",
+              "measure",
+              "comprehend",
               "important",
-              "particular https://wayground.com/join?gc=27497129 ⚠️ . https://wayground.com/join?gc=28021417 ⚠️ . 📍"
+              "particular"
             ]
           }
         ]
@@ -1564,11 +1652,16 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] in the ___[2], you will ___[3] ___ [4] ___[5] six months. As a part-time employee working fewer than twenty-two hours per week, you will not ___ [6] get ___[7] and other ___[8]. If you have any questions, ___[9]. ___[10], please sign and return one copy of this letter. We ___[11] with you. [",
-            "translation": "Như được thảo luận",
+            "sentence": "___[1] in the ___[2], you will ___[3] ___[4] ___[5] six months. As a part-time employee working fewer than twenty-two hours per week, you will not ___[6] get ___[7] and other ___[8]. If you have any questions, ___[9]. ___[10], please sign and return one copy of this letter. We ___[11] with you.",
+            "translation": "[Như được thảo luận] trong [hợp đồng lao động], bạn sẽ được [xem xét] cho [NHỮNG ĐỢT TĂNG LƯƠNG] [cứ mỗi] 6 tháng một lần. Với tư cách là 1 nhân viên bán thời gian làm việc ít hơn 22 giờ một tuần, bạn sẽ không [ĐỦ ĐIỀU KIỆN ĐỂ] nhận được [nghỉ phép có trả lương] và [những phúc lợi] khác. Nếu bạn có bất kì câu hỏi nào, [đừng ngần ngại liên hệ tôi]. [Ngược lại], hãy kí tên và gửi lại 1 bản sao của lá thư này. Chúng tôi [mong chờ để làm việc] cùng với bạn.",
             "word_bank": [
-              "] trong [ ] cho [ ]. [ do not hesitate to contact me SALARY INCREASES",
-              "paid leave look forward to working As discussed be considered for labor contract",
+              "do not hesitate to contact me",
+              "SALARY INCREASES",
+              "paid leave",
+              "look forward to working",
+              "As discussed",
+              "be considered for",
+              "labor contract",
               "Otherwise",
               "benefits",
               "BE ELIGIBLE TO",
@@ -1577,20 +1670,29 @@
           },
           {
             "number": 2,
-            "sentence": "The ___[1] ___ [2] are ___[3] held ___[4] ___[5] June.",
-            "translation": "Những [BUỔI ĐÁNH GIÁ]",
+            "sentence": "The ___[1] ___[2] are ___[3] held ___[4] ___[5] June.",
+            "translation": "Những [BUỔI ĐÁNH GIÁ] [thành tích nhân viên] [thường] được tổ chức [hàng năm] [vào giữa] tháng 6.",
             "word_bank": [
-              "[ ] [ ] [ ] regularly in the middle of employee performance annually",
+              "regularly",
+              "in the middle of",
+              "employee performance",
+              "annually",
               "EVALUATIONS"
             ]
           },
           {
             "number": 3,
-            "sentence": "In order to ___[1] at the ___[2], after ___ [3] your account, please ___ [4] your information ___[5]. This ___[6] you to ___[7] and ___[8]. All ___[9] which is provided will be ___[10] and ___[11].",
-            "translation": "Để [ tiến hành rút tiền ] tại [ sàn giao dịch chứng khoán",
+            "sentence": "In order to ___[1] at the ___[2], after ___[3] your account, please ___[4] your information ___[5]. This ___[6] you to ___[7] and ___[8]. All ___[9] which is provided will be ___[10] and ___[11].",
+            "translation": "Để [tiến hành rút tiền] tại [sàn giao dịch chứng khoán], sau khi [TẠO] tài khoản, vui lòng [XÁC THỰC] thông tin của mình [ngay lập tức]. Điều này [cho phép] bạn có thể [thực hiện việc nạp tiền] và [tiến hành giao dịch mua bán]. Tất cả [thông tin cá nhân] được cung cấp sẽ được [đảm bảo an toàn] và [bảo mật tuyệt đối].",
             "word_bank": [
-              "], sau khi [ ]. secured for safety CREATING make a withdrawal absolute privacy make a deposit immediately",
-              "personal information make a deal",
+              "secured for safety",
+              "CREATING",
+              "make a withdrawal",
+              "absolute privacy",
+              "make a deposit",
+              "immediately",
+              "personal information",
+              "make a deal",
               "entitles",
               "VERIFY",
               "stock exchange"
@@ -1598,11 +1700,17 @@
           },
           {
             "number": 4,
-            "sentence": "The ___[1] ___[2] ___[3] the ___ [4] of the ___[5] till the ___[6] tomorrow and will ___[7] it before the ___[8]. [",
-            "translation": "Ban giám khảo ] đã [ từ chối",
+            "sentence": "The ___[1] ___[2] ___[3] the ___[4] of the ___[5] till the ___[6] tomorrow and will ___[7] it before the ___[8].",
+            "translation": "[Ban giám khảo] đã [từ chối] [nhận định] về [KẾT QUẢ] của [giải đấu] cho đến [trận bán kết] ngày mai và sẽ [tiết lộ] nó trước [trận chung kết].",
             "word_bank": [
-              "] [ ] ]. semi-final",
-              "comment on final match RESULT refused to judge reveal tournament https://wayground.com/join?gc=27497129 ⚠️ . https://wayground.com/join?gc=28021417 ⚠️ . 📍"
+              "semi-final",
+              "comment on",
+              "final match",
+              "RESULT",
+              "refused to",
+              "judge",
+              "reveal",
+              "tournament"
             ]
           }
         ]
@@ -1751,24 +1859,28 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] ___[2] and ___[3], it has become a lot harder for a country to ___[4] an ___ [5] because one country’s economic situation ___[6] others’. ___[7], the growth of ___ [8] has also been slowing down. [",
-            "translation": "Do bởi",
+            "sentence": "___[1] ___[2] and ___[3], it has become a lot harder for a country to ___[4] an ___[5] because one country’s economic situation ___[6] others’. ___[7], the growth of ___[8] has also been slowing down.",
+            "translation": "[Do bởi] [mậu dịch tự do] và [các chính sách mở cửa], đã trở nên khó khăn hơn nhiều cho một đất nước để [phục hồi từ] một cuộc [SUY THOÁI KINH TẾ] bởi vì tình hình kinh tế của một nước [ảnh hưởng đến] tình hình kinh tế của những nước khác. [Đồng thời], tốc độ tăng trưởng của [SỰ SÁP NHẬP VÀ THÂU TÓM] cũng đang chậm dần lại.",
             "word_bank": [
-              "] [ ECONOMIC RECESSION",
+              "ECONOMIC RECESSION",
               "affects",
               "free trade",
-              "Simultaneously MERGERS AND ACQUISITIONS On account of open door policies",
+              "Simultaneously",
+              "MERGERS AND ACQUISITIONS",
+              "On account of",
+              "open door policies",
               "recover from"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1] ___[2] students and ___[3]’ health from the ___[4] of Covid-19 in Vietnam, as well as to ___[5] the e-learning in the 4.0 era, most of the universities have ___ [6] activities ___[7] online teaching and learning ___[8] the school's Website. [",
-            "translation": "Để",
+            "sentence": "___[1] ___[2] students and ___[3]’ health from the ___[4] of Covid-19 in Vietnam, as well as to ___[5] the e-learning in the 4.0 era, most of the universities have ___[6] activities ___[7] online teaching and learning ___[8] the school's Website.",
+            "translation": "[Để] [bảo vệ] sức khỏe của sinh viên và [giảng viên] từ [tình hình phức tạp] của dịch Covid-19, cũng như là [chuẩn bị tốt cho] việc học trực tuyến trong kỉ nguyên 4.0, hầu hết các trường Đại Học đã [TIẾN HÀNH] các công tác nhằm [hỗ trợ] việc dạy và học online [thông qua] website của trường.",
             "word_bank": [
-              "] [ well prepare for",
+              "well prepare for",
               "via",
-              "CARRIED OUT In order to",
+              "CARRIED OUT",
+              "In order to",
               "complex situation",
               "protect",
               "in favor of",
@@ -1777,29 +1889,34 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] offline to online courses ___[2] an ___[3] to ___ [4] several ___[5] on the Internet, bringing to students ___[6] ___[7] ___[8]. Videos of lessons uploaded are ___ [9] in knowledge. Online courses will ___[10] of scores for each subject this ___[11]. [",
-            "translation": "Việc chuyển đổi từ ] học tại chỗ sang học trực tuyến [ được cho là ] một [ cơ hội ] để [TIẾN HÀNH] một vài [ phương pháp giảng dạy hiện đại bậc nhất ] trên Internet, mang đến cho các học sinh [ trải nghiệm việc học thiết thực",
+            "sentence": "___[1] offline to online courses ___[2] an ___[3] to ___[4] several ___[5] on the Internet, bringing to students ___[6] ___[7] ___[8]. Videos of lessons uploaded are ___[9] in knowledge. Online courses will ___[10] of scores for each subject this ___[11].",
+            "translation": "[Việc chuyển đổi từ] học tại chỗ sang học trực tuyến [được cho là] một [cơ hội] để [TIẾN HÀNH] một vài [phương pháp giảng dạy hiện đại bậc nhất] trên Internet, mang đến cho các học sinh [trải nghiệm việc học thiết thực] [đồng thời với] [việc đảm bảo chất lượng đào tạo]. Các video bài học được đăng tải lên tuy [NGẮN GỌN NHƯNG ĐẦY ĐỦ] kiến thức. Các khóa học online sẽ [chiếm 25%] điểm số cho mỗi môn học trong [học kỳ] này.",
             "word_bank": [
-              "] [ ] [ ]. ensuring the training quality",
+              "ensuring the training quality",
               "IMPLEMENT",
               "semester",
               "make up 25%",
-              "robust learning experience CONCISE YET ADEQUATE simultaneously with Switching from is considered as",
+              "robust learning experience",
+              "CONCISE YET ADEQUATE",
+              "simultaneously with",
+              "Switching from",
+              "is considered as",
               "cutting-edge teaching methods",
               "opportunity"
             ]
           },
           {
             "number": 4,
-            "sentence": "Our readers have been ___[1] ___[2] of the hit comic \"___ [3] Conan\" since its ___[4] in Japan. Right now, we ___ [5] ___[6] the ending of this story is just ___[7].",
-            "translation": "Độc giả của chúng ta đã và đang [ háo hức mong chờ",
+            "sentence": "Our readers have been ___[1] ___[2] of the hit comic \"___[3] Conan\" since its ___[4] in Japan. Right now, we ___[5] ___[6] the ending of this story is just ___[7].",
+            "translation": "Độc giả của chúng ta đã và đang [háo hức mong chờ] [những tập kế tiếp] của bộ truyện tranh đình đám \"[Thám tử] Conan\" kể từ [lần đầu công chiếu] ở Nhật. Ngay bây giờ, chúng tôi [VUI MỪNG] [thông báo rằng] phần kết của bộ truyện [đang đến rất gần].",
             "word_bank": [
-              "] [ [ ] ]. around the corner",
+              "around the corner",
               "Detective",
               "ARE PLEASED TO",
-              "eagerly awaiting premiere",
+              "eagerly awaiting",
+              "premiere",
               "announce that",
-              "sequels https://wayground.com/join?gc=20234665 ⚠️ . 📍"
+              "sequels"
             ]
           }
         ]
@@ -1937,26 +2054,30 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Please ___ [1] your ___[2] ___[3] if the ___[4] ___[5] by the ___[6].",
-            "translation": "Vui lòng [THÔNG BÁO]",
+            "sentence": "Please ___[1] your ___[2] ___[3] if the ___[4] ___[5] by the ___[6].",
+            "translation": "Vui lòng [THÔNG BÁO] [người giám sát] của bạn [ngay lập tức] nếu [quá trình lắp ráp] [bị gián đoạn] bởi [sự trục trặc về máy móc].",
             "word_bank": [
-              "[ ] [ ]. immediately breakdown of machinery",
-              "NOTIFY is interrupted",
+              "immediately",
+              "breakdown of machinery",
+              "NOTIFY",
+              "is interrupted",
               "supervisor",
               "assembly process"
             ]
           },
           {
             "number": 2,
-            "sentence": "A series of ___[1] ___ [2] named \"___[3] and ___[4]\" at Bach Khoa University ___[5] hundreds of students as well as ___[6] from ___[7]. It provided ___ [8] from instructions to write a ___[9] CV to how to ___[10] employers in the first ___[11]. The program ___[12] had the ___[13] the ___[14] ___[15] - Dr. Le Tham Duong.",
-            "translation": "Chuỗi [HỘI THẢO]",
+            "sentence": "A series of ___[1] ___[2] named \"___[3] and ___[4]\" at Bach Khoa University ___[5] hundreds of students as well as ___[6] from ___[7]. It provided ___[8] from instructions to write a ___[9] CV to how to ___[10] employers in the first ___[11]. The program ___[12] had the ___[13] the ___[14] ___[15] - Dr. Le Tham Duong.",
+            "translation": "Chuỗi [HỘI THẢO] [kéo dài 1 tuần] với tên gọi \"[Định Hướng] và [Kĩ Năng Xin Việc]\" tại ĐH Bách Khoa đã [thu hút] hàng trăm sinh viên cũng như [các nhà tuyển dụng] đến từ [những công ty con]. Chuỗi hội thảo cung cấp những [KIẾN THỨC BAO QUÁT] từ hướng dẫn cách viết một CV [chuyên nghiệp] cho đến việc làm thế nào để [gây ấn tượng] với nhà tuyển dụng trong [buổi phỏng vấn] đầu tiên. Chương trình [đặc biệt] có [sự hiện diện] của [chuyên gia] [Tâm Lý Học] - Tiến Sĩ Lê Thẩm Dương.",
             "word_bank": [
-              "[ ] [ recruiters",
+              "recruiters",
               "particularly",
               "presence of",
               "impress",
               "Job-hunt skills",
-              "professional weeklong attracted",
+              "professional",
+              "weeklong",
+              "attracted",
               "Orientation",
               "consultant",
               "interview",
@@ -1968,26 +2089,36 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] one week for ___[2] to ___[3] and select ___[4] for the ___[5] at the end of this month, so all ___[6] must be ___ [7] ___[8] 25th. Any ___ [9] after that day are not accepted. [",
-            "translation": "Mất khoảng",
+            "sentence": "___[1] one week for ___[2] to ___[3] and select ___[4] for the ___[5] at the end of this month, so all ___[6] must be ___[7] ___[8] 25th. Any ___[9] after that day are not accepted.",
+            "translation": "[Mất khoảng] 1 tuần để [các nhà tuyển dụng] có thể [xem xét] và lựa chọn [những ứng viên xuất sắc] cho [buổi phỏng vấn] vào cuối tháng này, vì thế tất cả [đơn ứng tuyển] phải được [NỘP] [không trễ hơn] ngày 25. Bất kỳ [SỰ THAY ĐỔI] sau ngày đó đều không được chấp nhận.",
             "word_bank": [
-              "] ] cho [ [ MODIFICATIONS interview",
-              "no later than outstanding candidates consider",
-              "It takes about SUBMITTED",
+              "MODIFICATIONS",
+              "interview",
+              "no later than",
+              "outstanding candidates",
+              "consider",
+              "It takes about",
+              "SUBMITTED",
               "application forms",
               "recruiters"
             ]
           },
           {
             "number": 4,
-            "sentence": "___[1] the building you ___[2] rent is ___ [3] in the ___[4] and can ___[5] by ___[6], it's quite expensive. Please ___[7] to ___[8] and ___[9] as soon as possible because I'm sure it won't be ___[10] on the ___[11] for long! [",
-            "translation": "Do bởi ] tòa nhà mà bạn [ có ý định ] thuê thì [TỌA LẠC VỊ TRÍ THUẬN TIỆN",
+            "sentence": "___[1] the building you ___[2] rent is ___[3] in the ___[4] and can ___[5] by ___[6], it's quite expensive. Please ___[7] to ___[8] and ___[9] as soon as possible because I'm sure it won't be ___[10] on the ___[11] for long!.",
+            "translation": "[Do bởi] tòa nhà mà bạn [có ý định] thuê thì [TỌA LẠC VỊ TRÍ THUẬN TIỆN] ở [trung tâm thành phố] và có thể [dễ dàng tiếp cận] bởi [phương tiện công cộng], nên nó khá đắt đỏ. Vui lòng [xếp lịch hẹn] để [ghé qua] và [tiến hành đặt cọc] càng sớm càng tốt vì tôi chắc là nó sẽ không [có sẵn] trên [thị trường] lâu đâu!",
             "word_bank": [
-              "] public transportation",
-              "downtown available make a deposit Now that",
-              "be easily accessible CONVENIENTLY LOCATED market drop by",
+              "public transportation",
+              "downtown",
+              "available",
+              "make a deposit",
+              "Now that",
+              "be easily accessible",
+              "CONVENIENTLY LOCATED",
+              "market",
+              "drop by",
               "intend to",
-              "schedule an appointment B. GAME QUIZIZZ DAY [8 + 9]: https://wayground.com/join?gc=20234665 ⚠️ . 📍"
+              "schedule an appointment"
             ]
           }
         ]
@@ -2146,10 +2277,10 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Willis's store is ___ [1] ___[2] ___[3] ___[4] in this area due to the ___ [5] and ___[6] ___[7].",
-            "translation": "Cửa hàng của Willis thì [nằm trong số] những",
+            "sentence": "Willis's store is ___[1] ___[2] ___[3] ___[4] in this area due to the ___[5] and ___[6] ___[7].",
+            "translation": "Cửa hàng của Willis thì [nằm trong số] những [đại lý] [bán lẻ] [hàng đầu] trong khu vực do bởi [GIÁ THÀNH HỢP LÝ] và [đa dạng] [hàng hóa].",
             "word_bank": [
-              "[ ] [ ] [ ] [ ]. retail sales",
+              "retail sales",
               "merchandise",
               "AFFORDABLE PRICE",
               "a wide variety of",
@@ -2160,40 +2291,48 @@
           },
           {
             "number": 2,
-            "sentence": "___ [1] ___[2] is ___ [3] our ___[4].",
-            "translation": "[VIỆC GIẢI QUYẾT]",
+            "sentence": "___[1] ___[2] is ___[3] our ___[4].",
+            "translation": "[VIỆC GIẢI QUYẾT] [mối quan tâm của khách hàng] thì [nằm trong số] những [sự ưu tiên] của chúng tôi.",
             "word_bank": [
-              "[ priorities",
-              "ADDRESSING customer concerns AMONG"
+              "priorities",
+              "ADDRESSING",
+              "customer concerns",
+              "AMONG"
             ]
           },
           {
             "number": 3,
-            "sentence": "At Amber, we always ___[1] ___[2] and ___ [3] of ___[4], ___[5], ___[6], ___[7] ___[8].",
-            "translation": "Tại Aber, chúng tôi luôn [ phấn đấu ] để [ đáp ứng ] và [VƯỢT QUA SỰ MONG ĐỢI] của",
+            "sentence": "At Amber, we always ___[1] ___[2] and ___[3] of ___[4], ___[5], ___[6], ___[7] ___[8].",
+            "translation": "Tại Aber, chúng tôi luôn [phấn đấu] để [đáp ứng] và [VƯỢT QUA SỰ MONG ĐỢI] của [các cổ đông], [khách hàng thân thiết], [nhà cung cấp], [đối tác doanh nghiệp] [ngày này qua ngày khác].",
             "word_bank": [
-              "[ ], [ ], [ ], [ ] [ ]. shareholders",
-              "meet valued customers",
+              "shareholders",
+              "meet",
+              "valued customers",
               "strive to",
-              "day in and day out suppliers",
+              "day in and day out",
+              "suppliers",
               "EXCEED EXPECTATIONS",
               "business partners"
             ]
           },
           {
             "number": 4,
-            "sentence": "___[1] that ___[2] of South Africa is ___ [3] one of the most ___[4] ___[5] in the world. This ___[6] the fact that he was the first ___[7] ___[8] the ___[9] to ___[10] the Apartheid ___[11] ___[12] ___ [13] these nations. [",
-            "translation": "Chẳng có gì đáng ngạc nhiên",
+            "sentence": "___[1] that ___[2] of South Africa is ___[3] one of the most ___[4] ___[5] in the world. This ___[6] the fact that he was the first ___[7] ___[8] the ___[9] to ___[10] the Apartheid ___[11] ___[12] ___[13] these nations.",
+            "translation": "[Chẳng có gì đáng ngạc nhiên] khi [cựu tổng thống] Nam Phi Nelson Mandela [ĐƯỢC NHIỀU NGƯỜI ĐÁNH GIÁ LÀ] một trong số [những chính trị gia] [đáng ngưỡng mộ] nhất trên thế giới. Điều này [bắt nguồn từ] việc ông ấy là [người da màu] đầu tiên [khởi xướng] [công cuộc cách mạng] nhằm [xóa bỏ] [nạn phân biệt chủng tộc] A-pac-thai [một cách triệt để] [Ở KHẮP] các quốc gia này.",
             "word_bank": [
-              "] khi [ ] Nam Phi Nelson Mandela [ ] [ ] [ ] [ ] A-pac-thai [ ] get rid of",
+              "get rid of",
               "discrimination",
               "radically",
-              "revolution politicians",
+              "revolution",
+              "politicians",
               "respected",
               "ACROSS",
               "stems from",
-              "It came as no surprise WIDELY REGARDED AS initiating",
-              "person of color the former president https://wayground.com/join?gc=34783657 ⚠️ . 📍"
+              "It came as no surprise",
+              "WIDELY REGARDED AS",
+              "initiating",
+              "person of color",
+              "the former president"
             ]
           }
         ]
@@ -2351,33 +2490,44 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Customer service ___[1] from our ___[2] always ___[3] ___[4] your ___[5] ___[6], ___ [7] and ___ [8] . [",
-            "translation": "Những người đại diện",
+            "sentence": "Customer service ___[1] from our ___[2] always ___[3] ___[4] your ___[5] ___[6], ___[7] and ___[8].",
+            "translation": "[Những người đại diện] dịch vụ chăm sóc khách hàng từ [tổng đài] của chúng tôi luôn [phấn đấu để] [xử lý] [thư từ liên hệ] của bạn [một cách kịp thời], [NHANH CHÓNG] và [HIỆU QUẢ].",
             "word_bank": [
-              "] ] [ ] [ ], . correspondences",
+              "correspondences",
               "PROMPTLY",
-              "in a timely manner strive to EFFICIENTLY",
-              "representatives call center",
+              "in a timely manner",
+              "strive to",
+              "EFFICIENTLY",
+              "representatives",
+              "call center",
               "deal with"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1] each employee and ___[2] not ___[3] and ___[4] ___[5], ___[6] our company will be ___ [7] . [",
-            "translation": "Nếu ] mỗi nhân viên và [ phòng ban ] không [ cắt giảm ] và [ bỏ đi",
+            "sentence": "___[1] each employee and ___[2] not ___[3] and ___[4] ___[5], ___[6] our company will be ___[7].",
+            "translation": "[Nếu] mỗi nhân viên và [phòng ban] không [cắt giảm] và [bỏ đi] [những chi phí không cần thiết], [không sớm thì muộn] công ty sẽ [TRÊN ĐÀ PHÁ SẢN].",
             "word_bank": [
-              "] [ ], [ . eliminate",
-              "reduce unnecessary expenses",
-              "sooner or later Should ON THE VERGE OF RUIN department"
+              "eliminate",
+              "reduce",
+              "unnecessary expenses",
+              "sooner or later",
+              "Should",
+              "ON THE VERGE OF RUIN",
+              "department"
             ]
           },
           {
             "number": 3,
-            "sentence": "Due to her ___ [1] , ___[2] and ___[3] seven languages, Ms. Ryan ___[4] ___[5] ___ [6] .",
-            "translation": "Do bởi [KIẾN THỨC RỘNG]",
+            "sentence": "Due to her ___[1], ___[2] and ___[3] seven languages, Ms. Ryan ___[4] ___[5] ___[6].",
+            "translation": "Do bởi [KIẾN THỨC RỘNG], [chuyên môn cao] và [sự thành thạo] bảy thứ tiếng, cô Ryan đã [chinh phục] [các nhà đầu tư] [MỘT CÁCH ĐẦY THUYẾT PHỤC].",
             "word_bank": [
-              "[ [ ] [ ] . conquered",
-              "professional specialty fluency in CONVINCINGLY investors EXTENSIVE KNOWLEDGE https://wayground.com/join?gc=34783657 ⚠️ . 📍"
+              "conquered",
+              "professional specialty",
+              "fluency in",
+              "CONVINCINGLY",
+              "investors",
+              "EXTENSIVE KNOWLEDGE"
             ]
           }
         ]
@@ -2533,59 +2683,67 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___ [1] the ___[2] of the whole team, the ___[3] ___[4] was completed ___[5].",
-            "translation": "[NHỜ VÀO]",
+            "sentence": "___[1] the ___[2] of the whole team, the ___[3] ___[4] was completed ___[5].",
+            "translation": "[NHỜ VÀO] [những nỗ lực] của toàn đội, [dự án] [tu sửa] đã được hoàn thành [đúng tiến độ].",
             "word_bank": [
-              "[ ] [ ]. efforts project THANKS TO on schedule",
-              "renovatio n"
+              "efforts",
+              "project",
+              "THANKS TO",
+              "on schedule",
+              "renovation"
             ]
           },
           {
             "number": 2,
-            "sentence": "Smokers ___ [1] more ___ [2] develop ___[3] ___[4] non-smokers.",
-            "translation": "Những người hút thuốc [CÓ NHIỀU KHẢ NĂNG] phát triển [ung thư phổi",
+            "sentence": "Smokers ___[1] more ___[2] develop ___[3] ___[4] non-smokers.",
+            "translation": "Những người hút thuốc [CÓ NHIỀU KHẢ NĂNG] phát triển [ung thư phổi] [so với] những người không hút thuốc.",
             "word_bank": [
-              "lung",
-              "cancer",
+              "lung cancer",
               "ARE",
-              "compared",
-              "to",
-              "LIKELY"
+              "compared to",
+              "LIKELY TO"
             ]
           },
           {
             "number": 3,
-            "sentence": "The previous ___[1] has been ___[2] ___ [3] , so we need to ___[4] an ___[5] ___[6] for the next ___[7]. [",
-            "translation": "Bản đề xuất ] trước đó [ đã bị vấp phải",
+            "sentence": "The previous ___[1] has been ___[2] ___[3], so we need to ___[4] an ___[5] ___[6] for the next ___[7].",
+            "translation": "[Bản đề xuất] trước đó [đã bị vấp phải] [SỰ PHẢN ĐỐI GAY GẮT], vì thế chúng ta cần [chuẩn bị] một [cái thay thế] [trước] cho [buổi hội nghị] kế tiếp.",
             "word_bank": [
-              "] ] [ ] cho [ proposal",
+              "proposal",
               "in advance",
-              "STIFF OPPOSITION conference",
-              "prepare confronted with",
-              "alternativ e"
+              "STIFF OPPOSITION",
+              "conference",
+              "prepare",
+              "confronted with",
+              "alternative"
             ]
           },
           {
             "number": 4,
-            "sentence": "We ___ [1] you to our ___[2] at this weekend. The ___[3]'s ___[4] is to ___[5] our ___[6] as well as to ___[7] the new product. Your ___[8] will be our pleasure.",
-            "translation": "Chúng tôi [CHÂN THÀNH MỜI] bạn đến [ buổi khai trương ] của chúng tôi vào cuối tuần này. [ Mục đích ] của [ buổi lễ ] nhằm [ khẳng định",
+            "sentence": "We ___[1] you to our ___[2] at this weekend. The ___[3]'s ___[4] is to ___[5] our ___[6] as well as to ___[7] the new product. Your ___[8] will be our pleasure.",
+            "translation": "Chúng tôi [CHÂN THÀNH MỜI] bạn đến [buổi khai trương] của chúng tôi vào cuối tuần này. [Mục đích] của [buổi lễ] nhằm [khẳng định] [những giá trị cốt lõi] của chúng tôi cũng như [thuyết minh] sản phẩm mới. [Sự hiện diện] của bạn là niềm vinh hạnh của chúng tôi.",
             "word_bank": [
-              "] [ affirm presence ceremony CORDIALLY INVITE",
+              "affirm",
+              "presence",
+              "ceremony",
+              "CORDIALLY INVITE",
               "purpose",
               "core values",
               "grand opening",
-              "demonstrat e"
+              "demonstrate"
             ]
           },
           {
             "number": 5,
-            "sentence": "Americans ___[1] 9/11 ___ [2] ill-fated ___[3] in ___[4] at ___[5] in New York City and ___[6] in Washington D.C.",
-            "translation": "Người Mỹ [ đã chọn ] ngày 11/9 [ĐỂ TƯỞNG NIỆM] những [ nạn nhân ] xấu số trong [ vụ tấn công khủng bố ] tại [ Trung tâm Thương mại Thế Giới ] ở Thành phố New York và [ Lầu Năm Góc ] ở Washington D.C.",
+            "sentence": "Americans ___[1] 9/11 ___[2] ill-fated ___[3] in ___[4] at ___[5] in New York City and ___[6] in Washington D.C.",
+            "translation": "Người Mỹ [đã chọn] ngày 11/9 [ĐỂ TƯỞNG NIỆM] những [nạn nhân] xấu số trong [vụ tấn công khủng bố] tại [Trung tâm Thương mại Thế Giới] ở Thành phố New York và [Lầu Năm Góc] ở Washington D.C.",
             "word_bank": [
-              "The Pentagon victims World Trade Center",
+              "The Pentagon",
+              "victims",
+              "World Trade Center",
               "terrorist attacks",
               "IN HONOR OF",
-              "chose https://wayground.com/join?gc=53367017 ⚠️ . 📍"
+              "chose"
             ]
           }
         ]
@@ -2727,10 +2885,14 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "To ___[1] the new product which will be ___[2] at the end of this year, the Marketing manager ___[3] all employees ___ [4] the ___[5] and the ___[6] customers. He ___[7] that there will be a ___[8] at the ___[9], so all employees must ___[10] ___[11].",
-            "translation": "Để [ chuẩn bị cho ] sản phẩm mới sẽ được [ ra mắt",
+            "sentence": "To ___[1] the new product which will be ___[2] at the end of this year, the Marketing manager ___[3] all employees ___[4] the ___[5] and the ___[6] customers. He ___[7] that there will be a ___[8] at the ___[9], so all employees must ___[10] ___[11].",
+            "translation": "Để [chuẩn bị cho] sản phẩm mới sẽ được [ra mắt] vào cuối năm nay, quản lí marketing [yêu cầu] các nhân viên phải [ĐẶT TRỌNG TÂM VÀO] [đoạn quảng cáo trên truyền hình] và [phương thức tiếp cận có tính đổi mới đến] khách hàng. Ông ấy [linh cảm rằng] sẽ có [sự cạnh tranh gay gắt] ở [phân khúc trung bình], nên tất cả nhân viên cần [được trang bị với] [những kĩ năng cần thiết].",
             "word_bank": [
-              "] [ ] [ ]. feels in his bones necessary skills released average segment prepare for",
+              "feels in his bones",
+              "necessary skills",
+              "released",
+              "average segment",
+              "prepare for",
               "TV commercial",
               "stiff competition",
               "to LAY EMPHASIS ON",
@@ -2741,11 +2903,16 @@
           },
           {
             "number": 2,
-            "sentence": "___[1], there are thousands of tourists who ___[2] at the Ruby hotel ___[3]. 80% of them ___[4] ___[5] breakfasts and ___[6] of the hotel. These are ___[7] ___ [8] which ___[9] this place one of the most ___[10] in Phu Quoc. [",
-            "translation": "Theo một cuộc khảo sát gần đây",
+            "sentence": "___[1], there are thousands of tourists who ___[2] at the Ruby hotel ___[3]. 80% of them ___[4] ___[5] breakfasts and ___[6] of the hotel. These are ___[7] ___[8] which ___[9] this place one of the most ___[10] in Phu Quoc.",
+            "translation": "[Theo một cuộc khảo sát gần đây], có hàng ngàn khách du lịch [đặt phòng] tại khách sạn Ruby [hàng năm]. 80% khách hàng [cảm thấy hài lòng] về bữa ăn sáng [miễn phí] và [dịch vụ xe trung chuyển] của khách sạn. Những điều này [được cho là] [NHỮNG DỊCH VỤ NỔI BẬT] cái mà [khiến cho] nơi này trở thành một trong [những chỗ ở được yêu thích] nhất ở Phú Quốc.",
             "word_bank": [
-              "], c ] ] annually",
-              "complimentary OUTSTANDING SERVICES considered as popular accommodations shuttle services are satisfied with",
+              "annually",
+              "complimentary",
+              "OUTSTANDING SERVICES",
+              "considered as",
+              "popular accommodations",
+              "shuttle services",
+              "are satisfied with",
               "make",
               "According to a recent survey",
               "make reservations"
@@ -2753,35 +2920,42 @@
           },
           {
             "number": 3,
-            "sentence": "If our company ___[1] ___[2] this ___[3] without ___[4] studies, we will ___ [5] ___[6].",
-            "translation": "Nếu công ty chúng ta [ dự định",
+            "sentence": "If our company ___[1] ___[2] this ___[3] without ___[4] studies, we will ___[5] ___[6].",
+            "translation": "Nếu công ty chúng ta [dự định] [đầu tư vào] [dự án] này mà không nghiên cứu [trước], chúng ta sẽ [KHÓ TRÁNH KHỎI] [việc phá sản].",
             "word_bank": [
-              "] [ ] [ [ ]. invest in BE SUBJECT TO intends to prior bankruptcy",
+              "invest in",
+              "BE SUBJECT TO",
+              "intends to",
+              "prior",
+              "bankruptcy",
               "project"
             ]
           },
           {
             "number": 4,
-            "sentence": "At the moment walking into the ___[1], Mr. Johnson was ___ [2] by the ___[3] which ___[4] the lives at wars of the ___[5].",
-            "translation": "Ngay thời điểm bước vào [ phòng trưng bày triển lãm ], ông Johnson đã bị [THU HÚT] bởi [những tác phẩm điêu khắc ] cái mà [ miêu tả ] cuộc sống thời chiến của [ tác giả",
+            "sentence": "At the moment walking into the ___[1], Mr. Johnson was ___[2] by the ___[3] which ___[4] the lives at wars of the ___[5].",
+            "translation": "Ngay thời điểm bước vào [phòng trưng bày triển lãm], ông Johnson đã bị [THU HÚT] bởi [những tác phẩm điêu khắc] cái mà [miêu tả] cuộc sống thời chiến của [tác giả].",
             "word_bank": [
-              "]. depict",
-              "gallery ATTRACTED",
-              "author sculptures"
+              "depict",
+              "gallery",
+              "ATTRACTED",
+              "author",
+              "sculptures"
             ]
           },
           {
             "number": 5,
-            "sentence": "___ [1] 6 months, our branch's ___[2] have ___[3] and ___[4] earlier this year. However, we must ___[5] attain ___ [6] 20% more to become the most ___ [7] store in ___[8] the year.",
-            "translation": "[TRONG VÒNG] 6 tháng, [",
+            "sentence": "___[1] 6 months, our branch's ___[2] have ___[3] and ___[4] earlier this year. However, we must ___[5] attain ___[6] 20% more to become the most ___[7] store in ___[8] the year.",
+            "translation": "[TRONG VÒNG] 6 tháng, [doanh thu] cửa chi nhánh chúng ta đã [vượt chỉ tiêu] và [phá kỉ lục doanh số] đầu năm nay. Tuy nhiên, chúng ta phải [phấn đấu] đạt được [ÍT NHẤT] 20% nữa để trở thành cửa hàng [XUẤT SẮC] nhất trong những tháng [còn lại] của năm.",
             "word_bank": [
-              "doanh thu OUTSTANDING",
+              "OUTSTANDING",
               "exceeded the quota",
-              "AT LEAST revenues",
+              "AT LEAST",
+              "revenues",
               "the remainder of",
               "strive to",
               "WITHIN",
-              "broken the sales record https://wayground.com/join?gc=53367017 ⚠️ . 📍"
+              "broken the sales record"
             ]
           }
         ]
@@ -2949,45 +3123,43 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Within the last 10 hours, the ___[1] had been ___ [2] at 19% and after that they have ___ [3] at 25,7% last week. In this situation, the ___[4] ___ [5] see another ___ [6] before the stock prices ___ [7] once again, but this time they will be at 36,3%.",
-            "translation": "Trong vòng mười giờ qua, [ giá cổ phiếu ] đã [GIẢM XUỐNG] mức 19% và sau đó [ĐẠT MỨC CAO NHẤT] trong tuần qua ở mức 25,7%. Trước tình hình này, [ các nhà phân tích",
+            "sentence": "Within the last 10 hours, the ___[1] had been ___[2] at 19% and after that they have ___[3] at 25,7% last week. In this situation, the ___[4] ___[5] see another ___[6] before the stock prices ___[7] once again, but this time they will be at 36,3%.",
+            "translation": "Trong vòng mười giờ qua, [giá cổ phiếu] đã [GIẢM XUỐNG] mức 19% và sau đó [ĐẠT MỨC CAO NHẤT] trong tuần qua ở mức 25,7%. Trước tình hình này, [các nhà phân tích] [MONG MUỐN] thấy một đợt [GIẢM NHẸ] nữa trước khi giá cổ phiếu [ĐẠT ĐỈNH] một lần nữa, nhưng lần này là ở mức 36,3%.",
             "word_bank": [
-              "] SLIGHT DECREASE REACHED PEAK analysts ARE AT PEAK ARE EAGER TO",
-              "stock prices DROPPED"
+              "SLIGHT DECREASE",
+              "REACHED PEAK",
+              "analysts",
+              "ARE AT PEAK",
+              "ARE EAGER TO",
+              "stock prices",
+              "DROPPED"
             ]
           },
           {
             "number": 2,
-            "sentence": "If you are ___ [1] from a company or your labor contract is ___[2], you will have some ___[3] to ___[4] that your ___[5] is ___[6] for you.",
-            "translation": "Nếu bạn bị [SA THẢI] khỏi công ty hoặc bị [ chấm dứt ] hợp đồng lao động, bạn có [ một số quyền nhất định ] để [ đảm bảo ] rằng [ sự từ chức ] là [ công bằng ] cho bạn.",
+            "sentence": "If you are ___[1] from a company or your labor contract is ___[2], you will have some ___[3] to ___[4] that your ___[5] is ___[6] for you.",
+            "translation": "Nếu bạn bị [SA THẢI] khỏi công ty hoặc bị [chấm dứt] hợp đồng lao động, bạn có [một số quyền nhất định] để [đảm bảo] rằng [sự từ chức] là [công bằng] cho bạn.",
             "word_bank": [
               "terminated",
               "resignation",
               "fair",
-              "certain",
-              "rights",
+              "certain rights",
               "FIRED",
               "ensure"
             ]
           },
           {
             "number": 3,
-            "sentence": "If ___[1] ___ [2] your performance, your ___[3] to apply for the job will be ___[4] this ___[5] with a ___[6] than other ___[7].",
-            "translation": "Nếu [ nhà tuyển dụng",
+            "sentence": "If ___[1] ___[2] your performance, your ___[3] to apply for the job will be ___[4] this ___[5] with a ___[6] than other ___[7].",
+            "translation": "Nếu [nhà tuyển dụng] [CẢM THẤY HÀI LÒNG VỚI] sự thể hiện của bạn, [mong muốn] xin việc của bạn sẽ được [cân nhắc cho] [vị trí] này với [cơ hội cao hơn] [các đối thủ] khác.",
             "word_bank": [
               "desire",
               "competitors",
-              "higher",
-              "chance",
+              "higher chance",
               "recruiters",
-              "considered",
-              "for",
+              "considered for",
               "position",
-              "ARE",
-              "SATISFIED",
-              "WITH",
-              "https://wayground.com/join?gc=21941993",
-              "⚠️"
+              "ARE SATISFIED WITH"
             ]
           }
         ]
@@ -3128,20 +3300,21 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "She ___[1] an ___[2] to ___[3] her ___ [4] .",
-            "translation": "Cô ấy [ đã thuê",
+            "sentence": "She ___[1] an ___[2] to ___[3] her ___[4].",
+            "translation": "Cô ấy [đã thuê] [sát thủ] để [loại bỏ] [ĐỐI THỦ] của mình.",
             "word_bank": [
-              "] [ ] eliminate",
-              "RIVAL hired assassin"
+              "eliminate",
+              "RIVAL",
+              "hired",
+              "assassin"
             ]
           },
           {
             "number": 2,
-            "sentence": "She ___ [1] her ___[2] ___ [3] the ___[4] ___[5] and ___[6].",
-            "translation": "Cô ấy [CHO RẰNG]",
+            "sentence": "She ___[1] her ___[2] ___[3] the ___[4] ___[5] and ___[6].",
+            "translation": "Cô ấy [CHO RẰNG] [sự thành công] của cô ấy [LÀ DO] [bản tính] [chăm chỉ] và [một ít may mắn].",
             "word_bank": [
-              "little",
-              "luck",
+              "a little luck",
               "industrious",
               "ATTRIBUTES",
               "success",
@@ -3151,32 +3324,47 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] , the ___[2] must be ___[3] to ___[4] the government’s ___[5] an ___[6]. This difficulty ___ [7] the ___[8] which the ___[9] implemented ___ [10] of Bill.",
-            "translation": "[DƯỚI BẤT KỲ TÌNH HUỐNG NÀO]",
+            "sentence": "___[1], the ___[2] must be ___[3] to ___[4] the government’s ___[5] an ___[6]. This difficulty ___[7] the ___[8] which the ___[9] implemented ___[10] of Bill.",
+            "translation": "[DƯỚI BẤT KỲ TÌNH HUỐNG NÀO], [nợ nước ngoài] phải được [hoàn tất] để [kéo dài] [khả năng chống chọi] với [khủng hoảng kinh tế] của nhà nước. Khó khăn này [ĐƯỢC CHO LÀ DO] [chiến lược sai lầm] mà [chính phủ] đã tiến hành [DƯỚI SỰ CẦM QUYỀN] của Bill.",
             "word_bank": [
-              "[ ] [ [ UNDER THE DIRECTION ability to withstand foreign debt false strategy fulfilled",
+              "UNDER THE DIRECTION",
+              "ability to withstand",
+              "foreign debt",
+              "false strategy",
+              "fulfilled",
               "IS ATTRIBUTED TO",
-              "government economic crisis",
+              "government",
+              "economic crisis",
               "UNDER ANY CIRCUMSTANCES",
               "prolong"
             ]
           },
           {
             "number": 4,
-            "sentence": "When the new ___[1] on ___[2] is ___[3] by both Russia and America, Syria will ___[4] be ___ [5] as an ___[6]. Khi [",
-            "translation": "thỏa thuận ] mới về [ kiểm soát vũ khí sinh học ] được [ ký kết ] bởi cả Nga và Hoa Kỳ, Syria sẽ [ không còn ] bị [LỢI DỤNG] như là [ lý do gây chiến",
+            "sentence": "When the new ___[1] on ___[2] is ___[3] by both Russia and America, Syria will ___[4] be ___[5] as an ___[6].",
+            "translation": "Khi [thỏa thuận] mới về [kiểm soát vũ khí sinh học] được [ký kết] bởi cả Nga và Hoa Kỳ, Syria sẽ [không còn] bị [LỢI DỤNG] như là [lý do gây chiến] nữa.",
             "word_bank": [
-              "] biological weapon control TAKEN ADVANTAGE OF excuse for war signed no longer",
+              "biological weapon control",
+              "TAKEN ADVANTAGE OF",
+              "excuse for war",
+              "signed",
+              "no longer",
               "agreement"
             ]
           },
           {
             "number": 5,
-            "sentence": "Our company ___[1] make some ___[2] the ___[3] for employees. Anyone who wants to ___[4] this change please gives your ___[5] ___[6] the meeting. ___[7], the new rule will ___ [8] starting next month.",
-            "translation": "Công ty chúng ta [ có ý định",
+            "sentence": "Our company ___[1] make some ___[2] the ___[3] for employees. Anyone who wants to ___[4] this change please gives your ___[5] ___[6] the meeting. ___[7], the new rule will ___[8] starting next month.",
+            "translation": "Công ty chúng ta [có ý định] tiến hành một vài [sự thay đổi đáng kể trong] [qui tắc trang phục] dành cho nhân viên. Bất kỳ ai muốn [đóng góp ý kiến] về sự thay đổi này vui lòng đưa ra [phản hồi] [trước] cuộc họp. [Nếu không thì], luật lệ mới sẽ [CÓ HIỆU LỰC THI HÀNH] bắt đầu vào tháng sau.",
             "word_bank": [
-              "] [ ] [ ] [ ] [ ] comment on COME INTO EFFECT prior to significant changes in intends to Otherwise feedback",
-              "dress code https://wayground.com/join?gc=21941993 ⚠️ . 📍"
+              "comment on",
+              "COME INTO EFFECT",
+              "prior to",
+              "significant changes in",
+              "intends to",
+              "Otherwise",
+              "feedback",
+              "dress code"
             ]
           }
         ]
@@ -3346,24 +3534,34 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] has ___ [2] ___[3] his son from the ___[4] ___[5] for the ___[6] position because of his ___ [7] ___[8] and ___ [9] to the company’s ___[10] over the past 6 months. [",
-            "translation": "Chủ tịch HĐQT ] đã [CÔNG BẰNG]",
+            "sentence": "___[1] has ___[2] ___[3] his son from the ___[4] ___[5] for the ___[6] position because of his ___[7] ___[8] and ___[9] to the company’s ___[10] over the past 6 months.",
+            "translation": "[Chủ tịch HĐQT] đã [CÔNG BẰNG] [loại bỏ] con trai của ông ấy ra khỏi [danh sách] [các ứng viên tiềm năng] cho chức vụ [phó Tổng] do bởi [SỰ THIẾU] [quyết đoán] và [CÁCH GIẢI QUYẾT KHÔNG THỎA ĐÁNG] của anh ta đối với [sự sụt giảm doanh thu] của công ty trong hơn 6 tháng vừa qua.",
             "word_bank": [
-              "[ ] [ [ [ UNSATISFACTORY SOLUTIONS removed FAIRLY",
-              "fall in turnover The chairman of the board list of potential candidates LACK OF",
+              "UNSATISFACTORY SOLUTIONS",
+              "removed",
+              "FAIRLY",
+              "fall in turnover",
+              "The chairman of the board",
+              "list of",
+              "potential candidates",
+              "LACK OF",
               "vice president",
               "determination"
             ]
           },
           {
             "number": 2,
-            "sentence": "Kenny is ___[1] ___ [2] his new ___[3] due to the ___[4], ___ [5] , ___[6] at work as well as the ___[7] support for him ___[8]. Kenny [",
-            "translation": "vô cùng",
+            "sentence": "Kenny is ___[1] ___[2] his new ___[3] due to the ___[4], ___[5], ___[6] at work as well as the ___[7] support for him ___[8].",
+            "translation": "Kenny [vô cùng] [HÀI LÒNG VỚI] [sự thể hiện của trợ lý] mới của anh ấy do bởi [tính chuyên nghiệp], [TÍNH CHÍNH XÁC], [tính đúng giờ] trong công việc cũng như là sự hỗ trợ [liên tục] cho anh ấy [một cách kịp thời].",
             "word_bank": [
-              "] [ [ ], , [ [ ]. ACCURACY consecutive SATISFIED WITH",
-              "professionalism assistant’s performance punctuality",
+              "ACCURACY",
+              "consecutive",
+              "SATISFIED WITH",
+              "professionalism",
+              "assistant’s performance",
+              "punctuality",
               "in a timely manner",
-              "extremely https://wayground.com/join?gc=59338009 ⚠️ . 📍"
+              "extremely"
             ]
           }
         ]
@@ -3547,30 +3745,37 @@
           {
             "number": 1,
             "sentence": "We must ___[1] a ___[2] of ___[3] to citizens ___[4] the Covid-19 ___[5].",
-            "translation": "Chúng tôi phải [ đảm bảo",
+            "translation": "Chúng tôi phải [đảm bảo] [VIỆC CUNG ỨNG LIÊN TỤC] các [sản phẩm vệ sinh cơ thể] cho người dân [trong suốt] [đại dịch] Covid-19.",
             "word_bank": [
-              "] ] [ ] Covid-19. hygiene products",
-              "pandemic guarantee CONSTANT SUPPLY",
+              "hygiene products",
+              "pandemic",
+              "guarantee",
+              "CONSTANT SUPPLY",
               "during"
             ]
           },
           {
             "number": 2,
             "sentence": "The laptop’s ___[1] design ___[2] it ___[3] ___[4] and ___[5].",
-            "translation": "Mẫu thiết kế [ siêu nhỏ gọn ] của máy tính xách tay",
+            "translation": "Mẫu thiết kế [siêu nhỏ gọn] của máy tính xách tay [khiến cho] nó [cực kỳ] [DỄ DÀNG MANG THEO] và [tiện dụng].",
             "word_bank": [
-              "[ ] ] ]. extremely",
-              "practical makes ultra compact PORTABLE"
+              "extremely",
+              "practical",
+              "makes",
+              "ultra compact",
+              "PORTABLE"
             ]
           },
           {
             "number": 3,
-            "sentence": "Soon after being ___[1] Vice President of Sai Gon Construction Corporation, Mr. Doan Ngoc Hai ___[2] ___[3] . “If I ___[4] ___[5] which are ___[6] my ___[7], ___[8] and ___[9], it might ___[10] ___[11].”, ___[12] by Mr. Hai. Ngay sau khi [",
-            "translation": "được bổ nhiệm ] làm Phó Chủ Tịch Tổng công ty Xây dựng Sài Gòn, ông Đoàn Ngọc Hải đã [ nộp",
+            "sentence": "Soon after being ___[1] Vice President of Sai Gon Construction Corporation, Mr. Doan Ngoc Hai ___[2] ___[3]. “If I ___[4] ___[5] which are ___[6] my ___[7], ___[8] and ___[9], it might ___[10] ___[11].”, ___[12] by Mr. Hai.",
+            "translation": "Ngay sau khi [được bổ nhiệm] làm Phó Chủ Tịch Tổng công ty Xây dựng Sài Gòn, ông Đoàn Ngọc Hải đã [nộp] [ĐƠN XIN TỪ CHỨC]. \"Nếu tôi [MIỄN CƯỠNG] [đảm nhận nhiệm vụ] [trái với] [sở trường], [chuyên môn] và [tâm huyết] thì có thể sẽ [đưa đến] những [hậu quả nghiêm trọng]\", [trích dẫn câu nói] của ông Hải.",
             "word_bank": [
-              "] [ ] [ ] [ ], [ ]\", [ serious consequences",
-              "expertise appointed as",
-              "A LETTER OF RESIGNATION lead to",
+              "serious consequences",
+              "expertise",
+              "appointed as",
+              "A LETTER OF RESIGNATION",
+              "lead to",
               "dedication",
               "submitted",
               "quoted",
@@ -3583,17 +3788,11 @@
           {
             "number": 4,
             "sentence": "I have a ___[1] tomorrow. ___[2] ___[3] me?",
-            "translation": "Tôi có một [ cuộc hẹn với bác sĩ",
+            "translation": "Tôi có một [cuộc hẹn với bác sĩ] vào ngày mai. [Bạn có phiền] [LÀM THAY CA] giúp tôi chứ?",
             "word_bank": [
-              "COVERING",
-              "FOR",
-              "Would",
-              "you",
-              "mind",
-              "doctor’s",
-              "appointment",
-              "https://wayground.com/join?gc=59338009",
-              "⚠️"
+              "COVERING FOR",
+              "Would you mind",
+              "doctor’s appointment"
             ]
           }
         ]
@@ -3766,45 +3965,54 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "___[1] Ms. Harry‘s ___[2] has ___[3] received ___[4] and ___[5] from readers after the ___[6] yesterday morning. And ___[7] she was born ___[8] she had become an ___[9]. [",
-            "translation": "Không phải ngẫu nhiên mà ] quyển [ hồi ký đầu tay ] của cô Harry lại nhận được [ một cách áp đảo ] những [PHẢN HỒI TÍCH CỰC] và [BÌNH LUẬN] từ phía bạn đọc sau [ buổi họp báo ] sáng hôm qua. Và càng [ không thể phủ nhận ] rằng cô ấy được sinh ra [ cứ như thể",
+            "sentence": "___[1] Ms. Harry‘s ___[2] has ___[3] received ___[4] and ___[5] from readers after the ___[6] yesterday morning. And ___[7] she was born ___[8] she had become an ___[9].",
+            "translation": "[Không phải ngẫu nhiên mà] quyển [hồi ký đầu tay] của cô Harry lại nhận được [một cách áp đảo] những [PHẢN HỒI TÍCH CỰC] và [BÌNH LUẬN] từ phía bạn đọc sau [buổi họp báo] sáng hôm qua. Và càng [không thể phủ nhận] rằng cô ấy được sinh ra [cứ như thể] trở thành một [nhà văn lỗi lạc].",
             "word_bank": [
-              "] ]. as if",
+              "as if",
               "first volume of memoirs",
               "there’s no denying that",
               "overwhelmingly",
-              "COMMENTS press release eminent writer It’s no coincidence that",
+              "COMMENTS",
+              "press release",
+              "eminent writer",
+              "It’s no coincidence that",
               "FAVORABLE FEEDBACK"
             ]
           },
           {
             "number": 2,
             "sentence": "Our company has just ___[1] to ___[2] a ___[3] of ___[4] ___[5] by the end of this week. ___[6] the ___[7], ___[8] ___[9] to ___[10] the ___[11].",
-            "translation": "Công ty chúng tôi mới [ĐẢM NHẬN TRỌNG TRÁCH]",
+            "translation": "Công ty chúng tôi mới [ĐẢM NHẬN TRỌNG TRÁCH] [đáp ứng] một [đơn hàng số lượng lớn] [đồ nội thất] [ĐƯỢC LÀM THỦ CÔNG] trước cuối tuần này. [Mặc dù] [thời gian hạn hẹp], [không có sự lựa chọn nào khác ngoại trừ] [nắm bắt cơ hội này] để [sống sót qua] [đại dịch toàn cầu].",
             "word_bank": [
-              "[ [ ] [ ] ] [ ], [ ] [ ] [ ]. furniture",
+              "furniture",
               "global pandemic",
               "survive",
-              "HANDCRAFTED take this chance",
+              "HANDCRAFTED",
+              "take this chance",
               "tight schedule",
               "notwithstanding",
-              "ASSUMED THE DUTY fulfil there is no choice but to",
+              "ASSUMED THE DUTY",
+              "fulfil",
+              "there is no choice but to",
               "bulk order"
             ]
           },
           {
             "number": 3,
-            "sentence": "___[1] has recommended that each citizen ___[2] going out during ___[3] of the ___[4]. ___[5], the Covid-19 ___[6] of the Ministry of health helps you to ___[7] ___[8] and ___[9] ___[10] the Covid-19 topic which has become ___[11]. [",
-            "translation": "Bộ Y Tế khuyến cáo ] mỗi người dân nên [ kiềm chế bản thân từ việc ] đi ra ngoài trong suốt [ giai đoạn",
+            "sentence": "___[1] has recommended that each citizen ___[2] going out during ___[3] of the ___[4]. ___[5], the Covid-19 ___[6] of the Ministry of health helps you to ___[7] ___[8] and ___[9] ___[10] the Covid-19 topic which has become ___[11].",
+            "translation": "[Bộ Y Tế khuyến cáo] mỗi người dân nên [kiềm chế bản thân từ việc] đi ra ngoài trong suốt [giai đoạn] [giãn cách xã hội]. [Đồng thời], [ứng dụng] Covid-19 của bộ y tế giúp bạn [khai báo y tế] [thường xuyên] và [CẬP NHẬT NHỮNG TIN TỨC MỚI NHẤT] [liên quan đến] chủ đề dịch Covid-19 cái mà đã trở thành [mối quan tâm chung của toàn xã hội].",
             "word_bank": [
-              "] [ ]. [ ], [ [ ]. periods",
+              "periods",
               "declare your health status",
               "regarding",
-              "the common concern of the whole society regularly",
-              "refrain themselves from Simultaneously KEEP YOU INFORMED OF THE LASTEST NEWS",
+              "the common concern of the whole society",
+              "regularly",
+              "refrain themselves from",
+              "Simultaneously",
+              "KEEP YOU INFORMED OF THE LASTEST NEWS",
               "The Ministry of Health",
               "social distancing",
-              "application https://wayground.com/join?gc=62975257 ⚠️ . 📍"
+              "application"
             ]
           }
         ]
@@ -3926,20 +4134,29 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "The young ___[1] always have a ___[2] as well as the ___[3] to ___[4] ___[5] and ___[6] ___[7] . [",
-            "translation": "Những doanh nhân trẻ ] luôn có",
+            "sentence": "The young ___[1] always have a ___[2] as well as the ___[3] to ___[4] ___[5] and ___[6] ___[7].",
+            "translation": "[Những doanh nhân trẻ] luôn có [tầm nhìn chiến lược] cùng [khả năng] để [tận dụng] [các nguồn lực sẵn có] và [LOẠI BỎ] [những rào cản trong tổ chức].",
             "word_bank": [
-              "[ ] [ [ ]. available resources",
+              "available resources",
               "capability",
-              "ELIMINATE strategic vision organizational barriers entrepreneurs take advantage of"
+              "ELIMINATE",
+              "strategic vision",
+              "organizational barriers",
+              "entrepreneurs",
+              "take advantage of"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1] ___[2] and ___[3] the ___[4] while your ___[5] is ___[6] the class to ___[7] ___[8] ___[9] of the lesson that day. [",
-            "translation": "Vui lòng",
+            "sentence": "___[1] ___[2] and ___[3] the ___[4] while your ___[5] is ___[6] the class to ___[7] ___[8] ___[9] of the lesson that day.",
+            "translation": "[Vui lòng] [tập trung] và [CHÚ Ý TỚI] [bài giảng] trong lúc [giáo viên hướng dẫn] của bạn đang [điều hành] lớp học để [hiểu rõ] [những nội dung] [thiết yếu] của buổi học ngày hôm đó.",
             "word_bank": [
-              "] [ [ ] [ ] [ instructor contents PAY ATTENTION TO comprehend Please running",
+              "instructor",
+              "contents",
+              "PAY ATTENTION TO",
+              "comprehend",
+              "Please",
+              "running",
               "crucial",
               "lecture",
               "concentrate on"
@@ -3947,12 +4164,13 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] and ___[2] ___[3] must ___[4] ___[5] or ___[6] ___[7]. [",
-            "translation": "Việc in ] và [LƯU HÀNH]",
+            "sentence": "___[1] and ___[2] ___[3] must ___[4] ___[5] or ___[6] ___[7].",
+            "translation": "[Việc in] và [LƯU HÀNH] [tiền giả] [phải gánh chịu] sự [truy tố trách nhiệm hình sự] hoặc [bị kết án] [tù chung thân].",
             "word_bank": [
-              "[ ] [ ] [ ]. criminal prosecution",
+              "criminal prosecution",
               "be sentenced to",
-              "Printing be subject to",
+              "Printing",
+              "be subject to",
               "life imprisonment",
               "counterfeit money",
               "CIRCULATING"
@@ -3961,11 +4179,12 @@
           {
             "number": 4,
             "sentence": "___[1] are increasingly becoming a ___[2] to human health because we ___[3] ___[4] them through the air or the things we eat every day.",
-            "translation": "[CÁC HÓA CHẤT NGUY HIỂM] ngày càng trở thành [ mối đe dọa tiềm ẩn đối với",
+            "translation": "[CÁC HÓA CHẤT NGUY HIỂM] ngày càng trở thành [mối đe dọa tiềm ẩn đối với] sức khỏe con người vì chúng ta đều [vô tình] [tiếp xúc với] chúng qua không khí hay những thứ chúng ta ăn hàng ngày.",
             "word_bank": [
-              "] ] [ potential threat",
-              "unintentionally expose ourselves to",
-              "HAZARDOUS CHEMICALS https://wayground.com/join?gc=62975257 ⚠️ . 📍"
+              "potential threat",
+              "unintentionally",
+              "expose ourselves to",
+              "HAZARDOUS CHEMICALS"
             ]
           }
         ]
@@ -4118,9 +4337,9 @@
           {
             "number": 1,
             "sentence": "It's ___[1] to see how ___[2] people ___[3] the ___[4].",
-            "translation": "Thật [THÚ VỊ] khi xem những người [ khác nhau",
+            "translation": "Thật [THÚ VỊ] khi xem những người [khác nhau] [tiếp cận] [vấn đề] như thế nào.",
             "word_bank": [
-              "] [ ] [ different",
+              "different",
               "issue",
               "FASCINATING",
               "approach"
@@ -4129,7 +4348,7 @@
           {
             "number": 2,
             "sentence": "Our ___[1] will ___[2] in ___[3] this year, and will ___[4] in the next ___[5].",
-            "translation": "[HỢP ĐỒNG THUÊ] của chúng ta sẽ [ĐẾN HẠN] vào [ giữa ] năm nay, và sẽ [ QUÁ HẠN ] vào [ năm tài chính ] kế tiếp.",
+            "translation": "[HỢP ĐỒNG THUÊ] của chúng ta sẽ [ĐẾN HẠN] vào [giữa] năm nay, và sẽ [QUÁ HẠN] vào [năm tài chính] kế tiếp.",
             "word_bank": [
               "LEASE AGREEMENT",
               "fiscal year",
@@ -4140,47 +4359,43 @@
           },
           {
             "number": 3,
-            "sentence": "____[1] of ___[2] have ___[3] ___[4] an ___[5] advertising ___[6]. [",
-            "translation": "Doanh số bán ] của [ những tấm vé xem phim",
+            "sentence": "____[1] of ___[2] have ___[3] ___[4] an ___[5] advertising ___[6].",
+            "translation": "[Doanh số bán] của [những tấm vé xem phim] [ĐÃ TĂNG ĐỀU] [nhờ vào] [chiến dịch] quảng cáo [có hiệu quả].",
             "word_bank": [
-              "] [ ] [ [ ]. thanks to",
+              "thanks to",
               "effective",
               "STEADILY INCREASED",
               "movie tickets",
-              "campaign Sales"
+              "campaign",
+              "Sales"
             ]
           },
           {
             "number": 4,
-            "sentence": "When you ___[1] learn something new, the ___[2] ___[3] is ___[4] . ___[5], making mistakes is a ___[6] part of the learning ___[7].",
-            "translation": "Khi bạn [ bắt đầu",
+            "sentence": "When you ___[1] learn something new, the ___[2] ___[3] is ___[4]. ___[5], making mistakes is a ___[6] part of the learning ___[7].",
+            "translation": "Khi bạn [bắt đầu] học một thứ gì đó mới, [khả năng] [mắc phải những sai lầm] là điều [KHÔNG THỂ TRÁNH KHỎI]. [Nhưng hãy nhớ rằng], việc mắc phải những sai lầm là một phần [CẦN THIẾT] trong [quá trình] học tập.",
             "word_bank": [
-              "trong",
-              "But",
-              "remember",
-              "that",
+              "But remember that",
               "process",
-              "making",
-              "mistakes",
+              "making mistakes",
               "INEVITABLE",
-              "get",
-              "started",
-              "to",
+              "get started to",
               "NECESSARY",
-              "possibility",
-              "of"
+              "possibility of"
             ]
           },
           {
             "number": 5,
-            "sentence": "___[1] are requested to send ___[2] ___[3] with a ___[4] ___[5] by ___[6]. [",
-            "translation": "Các khách hàng ] được yêu cầu gửi [ những tài liệu",
+            "sentence": "___[1] are requested to send ___[2] ___[3] with a ___[4] ___[5] by ___[6].",
+            "translation": "[Các khách hàng] được yêu cầu gửi [những tài liệu] [QUAN TRỌNG] cùng với [biên lai] [một cách kịp thời] bằng [CHUYỂN PHÁT NHANH].",
             "word_bank": [
-              "] ] [ ] . receipt",
-              "EXPRESS DELIVERY",
+              "receipt",
+              "EXPRESS",
+              "DELIVERY",
               "in a timely manner",
               "documents",
-              "Customers CRUCIAL https://wayground.com/join?gc=00847129 ⚠️ . 📍"
+              "Customers",
+              "CRUCIAL"
             ]
           }
         ]
@@ -4297,66 +4512,69 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "His ___[1] do not ___[2] him ___[3] take out a ___[4] from anyone, including his ___[5] and ___[6]. [",
-            "translation": "Bố mẹ ] anh ấy không [CHO PHÉP] anh ấy [ vay mượn ] từ bất cứ ai, bao gồm [ họ hàng ] và [ người quen",
+            "sentence": "His ___[1] do not ___[2] him ___[3] take out a ___[4] from anyone, including his ___[5] and ___[6].",
+            "translation": "[Bố mẹ] anh ấy không [CHO PHÉP] anh ấy [vay mượn] từ bất cứ ai, bao gồm [họ hàng] và [người quen].",
             "word_bank": [
-              "]. acquaintances",
+              "acquaintances",
               "loan",
               "TO",
               "relatives",
-              "parents ALLOW"
+              "parents",
+              "ALLOW"
             ]
           },
           {
             "number": 2,
-            "sentence": "It ___[1] about an hour, ___[2] the possible ___[3], to get there. [",
-            "translation": "Mất ] khoảng một giờ để đi đến đó, [XÉT ĐẾN/TRỪ HAO] việc [ kẹt xe",
+            "sentence": "It ___[1] about an hour, ___[2] the possible ___[3], to get there.",
+            "translation": "[Mất] khoảng một giờ để đi đến đó, [XÉT ĐẾN/TRỪ HAO] việc [kẹt xe].",
             "word_bank": [
-              "]. traffic jam",
+              "traffic jam",
               "takes",
               "CONSIDERING"
             ]
           },
           {
             "number": 3,
-            "sentence": "55% of last year’s ___[1] found ___[2] ___[3] six months of ___[4]. 55% [",
-            "translation": "các cử nhân tốt nghiệp ] năm rồi đã tìm được [CÔNG ĂN VIỆC LÀM LÂU DÀI]",
+            "sentence": "55% of last year’s ___[1] found ___[2] ___[3] six months of ___[4].",
+            "translation": "55% [các cử nhân tốt nghiệp] năm rồi đã tìm được [CÔNG ĂN VIỆC LÀM LÂU DÀI] [trong vòng] 6 tháng [rời khỏi trường đại học].",
             "word_bank": [
-              "[ ]. within",
-              "PERMANENT EMPLOYMENT leaving the university graduates"
+              "within",
+              "PERMANENT EMPLOYMENT",
+              "leaving the university",
+              "graduates"
             ]
           },
           {
             "number": 4,
-            "sentence": "Having ___[1] will ___[2] you have a ___[2] when ___[3] a ___[4] .",
-            "translation": "Việc có [ kinh nghiệm làm việc trước đó ] sẽ [ giúp ] bạn có được [ sự ưu tiên cao",
+            "sentence": "Having ___[1] will ___[2] you have a ___[2] when ___[3] a ___[4].",
+            "translation": "Việc có [kinh nghiệm làm việc trước đó] sẽ [giúp] bạn có được [sự ưu tiên cao] khi [nộp đơn vào] một [CÔNG VIỆC LÂU DÀI].",
             "word_bank": [
-              "] khi [ . help",
-              "PERMANENT JOB previous work experience applying for",
+              "help",
+              "PERMANENT JOB",
+              "previous work experience",
+              "applying for",
               "high priority"
             ]
           },
           {
             "number": 5,
-            "sentence": "Her ___[1] is a ___[2] to all of us. [",
-            "translation": "Công tác từ thiện ] của cô ấy là [NGUỒN CẢM HỨNG] cho tất cả chúng tôi.",
+            "sentence": "Her ___[1] is a ___[2] to all of us.",
+            "translation": "[Công tác từ thiện] của cô ấy là [NGUỒN CẢM HỨNG] cho tất cả chúng tôi.",
             "word_bank": [
-              "SOURCE",
-              "OF",
-              "INSPIRATION",
-              "charity",
-              "work"
+              "SOURCE OF INSPIRATION",
+              "charity work"
             ]
           },
           {
             "number": 6,
-            "sentence": "The ___[1] ___[2] ___[3] by 30% ___[4] ___[5] . [",
-            "translation": "Nhà máy",
+            "sentence": "The ___[1] ___[2] ___[3] by 30% ___[4] ___[5].",
+            "translation": "[Nhà máy] [đã tăng] [năng suất của nhân viên] 30% [nhờ vào] [VIỆC HIỆN ĐẠI HÓA CÁC TRANG THIẾT BỊ].",
             "word_bank": [
-              "] [ ] [ ] 30% [ ] . increased",
+              "increased",
               "EQUIPMENT MODERNIZATION",
-              "thanks to plant",
-              "worker productivity https://wayground.com/join?gc=00847129 ⚠️ . 📍"
+              "thanks to",
+              "plant",
+              "worker productivity"
             ]
           }
         ]
@@ -4523,21 +4741,23 @@
           {
             "number": 1,
             "sentence": "The ___[1] ___[2] any young ___[3] who wants to ___[4] a ___[5]. Furthermore, $2000 will ___[6] the best business ___[7].",
-            "translation": "[TRỢ CẤP TỪ CHÍNH PHỦ] thì [ có sẵn cho ] bất kì [ doanh nhân",
+            "translation": "[TRỢ CẤP TỪ CHÍNH PHỦ] thì [có sẵn cho] bất kì [doanh nhân] trẻ nào muốn [bắt đầu] một [công ty khởi nghiệp]. Hơn thế nữa, 2000$ sẽ [được trao thưởng cho] [sáng kiến] kinh doanh hay nhất.",
             "word_bank": [
-              "] ] [ kick off",
+              "kick off",
               "GOVERNMENT GRANT",
               "initiative",
-              "be rewarded for start-up company entrepreneur",
+              "be rewarded for",
+              "start-up company",
+              "entrepreneur",
               "is available to"
             ]
           },
           {
             "number": 2,
-            "sentence": "___[1] ___[2] ___[3] improving ___[4] to ___[5] financial ___[6]. [",
-            "translation": "Những quốc gia đang phát triển",
+            "sentence": "___[1] ___[2] ___[3] improving ___[4] to ___[5] financial ___[6].",
+            "translation": "[Những quốc gia đang phát triển] [có khuynh hướng] [tập trung vào] việc cải thiện [NĂNG SUẤT LÀM VIỆC CỦA NHÂN VIÊN] để [đạt được] [những mục tiêu] về tài chính.",
             "word_bank": [
-              "] [ ] [ ] [ concentrate on",
+              "concentrate on",
               "accomplish",
               "Developing countries",
               "objectives",
@@ -4547,11 +4767,12 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] and supporting our ___[2] ___[3] ___[4] a dramatic ___[5] in the ___[6]. [",
-            "translation": "Việc khích lệ ] và ủng hộ [ các vận động viên",
+            "sentence": "___[1] and supporting our ___[2] ___[3] ___[4] a dramatic ___[5] in the ___[6].",
+            "translation": "[Việc khích lệ] và ủng hộ [các vận động viên] [NGHIỆP DƯ] của chúng ta [đã đóng 1 vai trò quan trọng trong] [sự xoay chuyển tình thế] đột ngột ở [trận chung kết].",
             "word_bank": [
-              "] ] [ ]. turnaround",
-              "athletes played a crucial role in",
+              "turnaround",
+              "athletes",
+              "played a crucial role in",
               "AMATEUR",
               "final match",
               "Motivating"
@@ -4560,24 +4781,26 @@
           {
             "number": 4,
             "sentence": "A ___[1] ___[2] is ___[3] ___[4] in ___[5].",
-            "translation": "Một [CUỘC THI]",
+            "translation": "Một [CUỘC THI] [sắc đẹp] được [tổ chức] [hằng năm] ở [trung tâm thành phố].",
             "word_bank": [
-              "[ ] [ ]. annually",
-              "CONTEST downtown",
+              "annually",
+              "CONTEST",
+              "downtown",
               "held",
               "beauty"
             ]
           },
           {
             "number": 5,
-            "sentence": "Jack Ma ___[1] his employees to ___[2] ___[3] to ___[4] and ___[5] ___[6]. Jack Ma [",
-            "translation": "khuyến khích ] các nhân viên [THAM GIA VÀO]",
+            "sentence": "Jack Ma ___[1] his employees to ___[2] ___[3] to ___[4] and ___[5] ___[6].",
+            "translation": "Jack Ma [khuyến khích] các nhân viên [THAM GIA VÀO] [các hoạt động tình nguyện] để [bảo vệ môi trường] và [duy trì] [sự phát triển bền vững].",
             "word_bank": [
-              "[ ] [ ]. maintain",
+              "maintain",
               "volunteer activities",
-              "sustainable development PARTICIPATE IN",
+              "sustainable development",
+              "PARTICIPATE IN",
               "encourages",
-              "protect the environment https://wayground.com/join?gc=26766233 ⚠️ . 📍"
+              "protect the environment"
             ]
           }
         ]
@@ -4747,9 +4970,10 @@
           {
             "number": 1,
             "sentence": "I ___[1] hope that the ___[2] will ___[3] the ___[4] which I ___[5] ___[6] my team.",
-            "translation": "Tôi [ chân thành ] hi vọng rằng [ kế toán ] sẽ [ chấp thuận",
+            "translation": "Tôi [chân thành] hi vọng rằng [kế toán] sẽ [chấp thuận] [bản đề xuất ngân sách] mà tôi [nộp] [THAY MẶT CHO] nhóm của tôi.",
             "word_bank": [
-              "] [ ] approve ON BEHALF OF",
+              "approve",
+              "ON BEHALF OF",
               "submitted",
               "sincerely",
               "bookkeeper",
@@ -4758,10 +4982,10 @@
           },
           {
             "number": 2,
-            "sentence": "If they want to ___[1] the company, they should not ___[2] ___[3] ___[4] ' ___[5] and ___[6].",
-            "translation": "Nếu họ muốn [THIẾT LẬP DANH TIẾNG CHO] công ty",
+            "sentence": "If they want to ___[1] the company, they should not ___[2] ___[3] ___[4]' ___[5] and ___[6].",
+            "translation": "Nếu họ muốn [THIẾT LẬP DANH TIẾNG CHO] công ty, họ không nên [cố tình] [phớt lờ] [những lời chứng thực] và [nhận xét] của [CÁC KHÁCH HÀNG QUEN]",
             "word_bank": [
-              "] [ ] [ [ reviews",
+              "reviews",
               "deliberately",
               "PATRONS",
               "testimonials",
@@ -4772,31 +4996,37 @@
           {
             "number": 3,
             "sentence": "Children should ___[1] ___[2] in order to ___[3] ___[4] from ___[5].",
-            "translation": "Trẻ em nên [ĐƯỢC ĐI CÙNG BỞI]",
+            "translation": "Trẻ em nên [ĐƯỢC ĐI CÙNG BỞI] [người lớn] để [tránh] [những sự nguy hiểm tiềm ẩn] từ [người lạ].",
             "word_bank": [
-              "[ ] [ ]. strangers",
+              "strangers",
               "adults",
               "potential dangers",
-              "BE ACCOMPANIED BY avoid"
+              "BE ACCOMPANIED BY",
+              "avoid"
             ]
           },
           {
             "number": 4,
             "sentence": "He ___[1] an ___[2] technology company in a ___[3] short amount of time, ___[4] his ___[5].",
-            "translation": "Anh ấy đã [THÀNH LẬP] một công ty công nghệ [ cực kỳ thành công ] ở trong một khoảng thời gian [ tương đối ] ngắn, [ nhờ vào",
+            "translation": "Anh ấy đã [THÀNH LẬP] một công ty công nghệ [cực kỳ thành công] ở trong một khoảng thời gian [tương đối] ngắn, [nhờ vào] [những nỗ lực không biết mệt mỏi].",
             "word_bank": [
-              "] [ ]. relatively thanks to tireless efforts ESTABLISHED",
+              "relatively",
+              "thanks to",
+              "tireless efforts",
+              "ESTABLISHED",
               "incredibly successful"
             ]
           },
           {
             "number": 5,
             "sentence": "Anyone can ___[1] the ___[2], which will be ___[3] live by ___[4] on VTV6 channel for ___[5].",
-            "translation": "Bất cứ ai đều có thể [",
+            "translation": "Bất cứ ai đều có thể [tham gia] [cuộc thi chạy bộ đường dài], cái mà sẽ được [PHÁT SÓNG] trực tiếp qua [vệ tinh] trên kênh VTV6 trong suốt [cuối tuần này].",
             "word_bank": [
-              "tham gia ] [ ]. TRANSMITTED",
+              "TRANSMITTED",
               "the remainder of this week",
-              "marathon competition satellite participate in https://wayground.com/join?gc=26766233 ⚠️ . 📍"
+              "marathon competition",
+              "satellite",
+              "participate in"
             ]
           }
         ]
@@ -4928,10 +5158,10 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "The company has a ___[1] ___ [2] — all employees are ___[3] to wear clothing ___[4] at the ___[5].",
-            "translation": "Công ty có một [QUI TẮC TRANG PHỤC]",
+            "sentence": "The company has a ___[1] ___[2] — all employees are ___[3] to wear clothing ___[4] at the ___[5].",
+            "translation": "Công ty có một [QUI TẮC TRANG PHỤC] [nghiêm ngặt] — tất cả nhân viên [được ra lệnh] phải ăn mặc [1 cách phù hợp] ở [chỗ làm].",
             "word_bank": [
-              "[ ]. mandated",
+              "mandated",
               "workplace",
               "accordingly",
               "DRESS CODE",
@@ -4940,10 +5170,10 @@
           },
           {
             "number": 2,
-            "sentence": "___ [1] more than 54 years ago, LG Group always ___[2] ___[3] as well as ___[4] its products to provide ___[5] to ___ [6] . With the ___[7] of the Inverter ___[8], LG has ___[9] ___[10] in Viet Nam. The ___[11] LG Inverter ___ [12] the ___[13] which ___[14] using and ___[15] up to 70 percents.",
-            "translation": "[ĐƯỢC THÀNH LẬP] cách đây hơn năm 54 năm, Tập đoàn LG luôn",
+            "sentence": "___[1] more than 54 years ago, LG Group always ___[2] ___[3] as well as ___[4] its products to provide ___[5] to ___[6]. With the ___[7] of the Inverter ___[8], LG has ___[9] ___[10] in Viet Nam. The ___[11] LG Inverter ___[12] the ___[13] which ___[14] using and ___[15] up to 70 percents.",
+            "translation": "[ĐƯỢC THÀNH LẬP] cách đây hơn năm 54 năm, Tập đoàn LG luôn [đặt mục tiêu] [nâng tầm giá trị cuộc sống] cũng như [không ngừng đổi mới] để cung cấp [những giải pháp tối ưu] đến [CÁC KHÁCH HÀNG QUEN]. Với [sự ra mắt] của [máy điều hòa] Inverter, LG đã [dần khẳng định vị thế của mình] [trong số các thương hiệu đồ dùng gia dụng] tại Việt Nam. LG Inverter [thế hệ mới] [ĐƯỢC TRANG BỊ VỚI] [công nghệ tân tiến nhất] cái mà [tạo điều kiện dễ dàng hơn cho] việc sử dụng và [tiết kiệm điện năng] lên đến 70%.",
             "word_bank": [
-              "[ ] [ ] ] [ ] optimal solutions",
+              "optimal solutions",
               "ESTABLISHED",
               "saves energy",
               "cutting-edge technology",
@@ -4962,10 +5192,10 @@
           },
           {
             "number": 3,
-            "sentence": "___[1] the ___ [2] , the machine’s ___[3] ___ [4] ___ [5] such as the ___[6] that ___[7] ___[8] and ___[9]. ___[10], the product is extremely ___[11] and can be ___[12] through the Smart ThinQ application. [",
-            "translation": "Ngoài ] những [TÍNH NĂNG THÔNG THƯỜNG]",
+            "sentence": "___[1] the ___[2], the machine’s ___[3] ___[4] ___[5] such as the ___[6] that ___[7] ___[8] and ___[9]. ___[10], the product is extremely ___[11] and can be ___[12] through the Smart ThinQ application.",
+            "translation": "[Ngoài] những [TÍNH NĂNG THÔNG THƯỜNG], [bộ lọc] của máy [CŨNG ĐI KÈM VỚI] [NHỮNG TÍNH NĂNG BỔ SUNG] như [hệ thống thanh lọc không khí] cái mà [loại bỏ] [những hạt bụi siêu mịn] và [các tác nhân gây hại]. [Đồng thời], sản phẩm vô cùng [thân thiện với môi trường] và có thể [dễ dàng truy cập] thông qua ứng dụng Smart ThinQ.",
             "word_bank": [
-              "[ ] ] ] [ ]. [ [ ] gets rid of",
+              "gets rid of",
               "easily accessible",
               "Simultaneously",
               "dust particles",
@@ -4975,15 +5205,16 @@
               "environmentally friendly",
               "COMMON FEATURES",
               "air purification system",
-              "IS ALSO ACCOMPANIED BY harmful factors"
+              "IS ALSO ACCOMPANIED BY",
+              "harmful factors"
             ]
           },
           {
             "number": 4,
-            "sentence": "With a ___[1] ___[2] 10 years, users can ___[3] ___[4] the machine’s ___[5]. The LG air conditioners can cool up to 40% faster ___[6] you ___ [7] , which will ___[8] for ___[9] and ___[10] air to flow to every corner of the house.",
-            "translation": "Với [ chính sách bảo hành",
+            "sentence": "With a ___[1] ___[2] 10 years, users can ___[3] ___[4] the machine’s ___[5]. The LG air conditioners can cool up to 40% faster ___[6] you ___[7], which will ___[8] for ___[9] and ___[10] air to flow to every corner of the house.",
+            "translation": "Với [chính sách bảo hành] [lên đến] 10 năm, người dùng có thể [hoàn toàn] [tin tưởng vào] [độ bền] của máy. Máy điều hòa không khí LG có thể làm lạnh nhanh hơn đến 40% [miễn là] bạn [ĐẶT CHÚNG MỘT CÁCH CÓ CHỦ Ý], việc này sẽ [tiết kiệm thời gian cần thiết] cho [việc lắp đặt] và [cho phép] không khí lan tỏa đến mọi ngóc ngách của ngôi nhà.",
             "word_bank": [
-              "] [ ] [ ] [ ] cho [ enable",
+              "enable",
               "count on",
               "installation",
               "as long as",
@@ -4997,12 +5228,16 @@
           },
           {
             "number": 5,
-            "sentence": "It is ___[1] by VNExpress that the ___[2] - Vu Minh Hieu, ___ [3] Cong Phuong, will ___ [4] the final match at My Dinh national stadium. The ___[5] presence of Hieu in the ___[6] position in this ___ [7] ___[8] a ___[9] the HAGL club’s victory after a very long time of ___[10] with Bau Duc’s young team. ___[11], the winning team in this ___[12] will ___[13] to ___[14] of 200 milions VND from an ___[15] ___ [16] . The ___[17] and the final match will be ___ [18] live on VTV channels according to the ___[19] of the ___[20].",
-            "translation": "Báo VNExpress đã [ đưa tin ] về việc [ cầu thủ dự bị ] Vũ Minh Hiếu, [THAY MẶT] Công Phượng, sẽ",
+            "sentence": "It is ___[1] by VNExpress that the ___[2] - Vu Minh Hieu, ___[3] Cong Phuong, will ___[4] the final match at My Dinh national stadium. The ___[5] presence of Hieu in the ___[6] position in this ___[7] ___[8] a ___[9] the HAGL club’s victory after a very long time of ___[10] with Bau Duc’s young team. ___[11], the winning team in this ___[12] will ___[13] to ___[14] of 200 milions VND from an ___[15] ___[16]. The ___[17] and the final match will be ___[18] live on VTV channels according to the ___[19] of the ___[20].",
+            "translation": "Báo VNExpress đã [đưa tin] về việc [cầu thủ dự bị] Vũ Minh Hiếu, [THAY MẶT] Công Phượng, sẽ [THAM GIA] trận chung kết tại sân vận động quốc gia Mỹ Đình. Sự có mặt [chính thức] của Hiếu ở vị trí [tiền đạo] trong [CUỘC THI] này [được xem là] [điều kiện tiên quyết] cho chiến thắng của CLB HAGL sau thời gian dài [luyện tập gian khổ] cùng đội bóng trẻ của Bầu Đức. [Đồng thời], đội chiến thắng ở [giải đấu] lần này sẽ [nắm bắt cơ hội] [giành được giải thưởng] 200 triệu từ một [NHÀ BẢO TRỢ] [ẩn danh]. [Trận bán kết] và chung kết sẽ được [PHÁT SÓNG] trực tiếp trên các kênh VTV theo [lịch dự kiến] của [Ban Tổ Chức].",
             "word_bank": [
-              "[THAM GIA] ] trong ] [ ] ] [ [ ]. [ ]. seize a chance",
-              "organizers TRANSMITTED striker",
-              "ON BEHALF OF tentative schedule PATRON",
+              "seize a chance",
+              "organizers",
+              "TRANSMITTED",
+              "striker",
+              "ON BEHALF OF",
+              "tentative schedule",
+              "PATRON",
               "covered",
               "win an award",
               "tournament",
@@ -5011,10 +5246,11 @@
               "ENGAGE IN",
               "Simultaneously",
               "CONTEST",
-              "semi-final official",
+              "semi-final",
+              "official",
               "is considered as",
               "substitute player",
-              "prerequisite for https://wayground.com/join?gc=19032985 ⚠️ . 📍"
+              "prerequisite for"
             ]
           }
         ]
@@ -5141,9 +5377,9 @@
           {
             "number": 1,
             "sentence": "___[1] ___[2] the ___[3], the ___[4] ___[5] ___[6] a ___[7] in 1920.",
-            "translation": "[TRONG MỘT NỖ LỰC ĐỂ]",
+            "translation": "[TRONG MỘT NỖ LỰC ĐỂ] [chấm dứt] [các cuộc xung đột], [cộng đồng quốc tế] [đã quyết định] [THÀNH LẬP] một [giải bóng đá giữa các quốc gia] vào năm 1920.",
             "word_bank": [
-              "[ ] [ ], [ ] [ ] [ conflicts",
+              "conflicts",
               "ESTABLISH",
               "international community",
               "decided to",
@@ -5154,10 +5390,10 @@
           },
           {
             "number": 2,
-            "sentence": "___[1] ___[2] ___[3] of the two companies can ___[4] a ___[5] ___[6] . [",
-            "translation": "Những sự thay đổi không mong đợi",
+            "sentence": "___[1] ___[2] ___[3] of the two companies can ___[4] a ___[5] ___[6].",
+            "translation": "[Những sự thay đổi không mong đợi] [bắt nguồn từ] [vụ sáp nhập và thâu tóm] của hai công ty có thể [mang lại] [sự ảnh hưởng tiêu cực lên] [TINH THẦN CỦA NHÂN VIÊN].",
             "word_bank": [
-              "] [ ] [ ] [ ] . negative impact on",
+              "negative impact on",
               "Unexpected changes",
               "stemming from",
               "STAFF MORALE",
@@ -5167,23 +5403,24 @@
           },
           {
             "number": 3,
-            "sentence": "The ___[1] will receive ___[2] whenever he ___[3]. [",
-            "translation": "Người giám sát ] sẽ nhận được [TIỀN HOÀN LẠI CHO CHỖ Ở] mỗi khi ông ấy [ đi công tác",
+            "sentence": "The ___[1] will receive ___[2] whenever he ___[3].",
+            "translation": "[Người giám sát] sẽ nhận được [TIỀN HOÀN LẠI CHO CHỖ Ở] mỗi khi ông ấy [đi công tác].",
             "word_bank": [
-              "]. goes on a business trip",
+              "goes on a business trip",
               "supervisor",
               "REIMBURSEMENT FOR ACCOMMODATION"
             ]
           },
           {
             "number": 4,
-            "sentence": "___[1] were ___[2] to ___[3] the ___[4] ___[5] . [",
-            "translation": "Những biện pháp khẩn cấp ] đã được [ tiến hành ] để [NGĂN CHẶN]",
+            "sentence": "___[1] were ___[2] to ___[3] the ___[4] ___[5].",
+            "translation": "[Những biện pháp khẩn cấp] đã được [tiến hành] để [NGĂN CHẶN] [tình hình tài chính] [TRỞ NÊN TỒI TỆ HƠN].",
             "word_bank": [
-              "[ ] . PREVENT",
-              "implemented Emergency measures",
+              "PREVENT",
+              "implemented",
+              "Emergency measures",
               "FROM DETERIORATING",
-              "financial situation https://wayground.com/join?gc=19032985 ⚠️ . 📍"
+              "financial situation"
             ]
           }
         ]
@@ -5310,16 +5547,19 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "The ___[1] ___[2] ___[3] a ___[4] and has changed ___[5]' lives ___[6] ___[7], ___[8] education. ___[9], it's ___[10] to discuss the ___[11] and ___[12] before it is ___[13] since the technology is improving and ___[14] ___[15]. [",
-            "translation": "Sự ra đời ] của [ trí tuệ nhân tạo",
+            "sentence": "The ___[1] ___[2] ___[3] a ___[4] and has changed ___[5]' lives ___[6] ___[7], ___[8] education. ___[9], it's ___[10] to discuss the ___[11] and ___[12] before it is ___[13] since the technology is improving and ___[14] ___[15].",
+            "translation": "[Sự ra đời] của [trí tuệ nhân tạo] [được xem như] một [bước đột phá về công nghệ] và đã làm thay đổi đời sống của [con người] [MỘT CÁCH ĐÁNG KINH NGẠC] [trên mọi phương diện], [nhất là] giáo dục. [Mặc dù vậy], thật [quan trọng] để thảo luận về những [lợi ích] và [hạn chế] trước khi nó [vượt khỏi tầm kiểm soát của chúng ta] vì công nghệ này đang ngày càng cải thiện và [tiến hóa] [với tốc độ nhanh chóng mặt đến như vậy].",
             "word_bank": [
-              "] [ ] [ ] [ ], [ ] [ ]. in all aspects",
+              "in all aspects",
               "benefits",
-              "at such a blistering pace artificial intelligence",
+              "at such a blistering pace",
+              "artificial intelligence",
               "especially",
               "human beings",
               "beyond our control",
-              "technological breakthrough drawbacks REMARKABLY",
+              "technological breakthrough",
+              "drawbacks",
+              "REMARKABLY",
               "evolving",
               "critical",
               "advent of",
@@ -5329,10 +5569,10 @@
           },
           {
             "number": 2,
-            "sentence": "In order to ___[1] customers' ___[2] ___[3], ___[4] were ___[5] ___ [6] .",
-            "translation": "Để [ có được",
+            "sentence": "In order to ___[1] customers' ___[2] ___[3], ___[4] were ___[5] ___[6].",
+            "translation": "Để [có được] [những lời chứng thực] [chân thực] của các khách hàng, [những bảng trả lời câu hỏi] đã được [nộp] [ẨN DANH].",
             "word_bank": [
-              "] [ ] [ ] . genuine",
+              "genuine",
               "submitted",
               "gain",
               "ANONYMOUSLY",
@@ -5342,37 +5582,42 @@
           },
           {
             "number": 3,
-            "sentence": "If you ___ [1] ___[2] or ___[3], your ___[4] will be ___[5] Youtube ___[6].",
-            "translation": "Nếu bạn [LỰA CHỌN]",
+            "sentence": "If you ___[1] ___[2] or ___[3], your ___[4] will be ___[5] Youtube ___[6].",
+            "translation": "Nếu bạn [LỰA CHỌN] [thanh toán bằng thẻ tín dụng] hoặc [chuyển khoản qua ngân hàng], [đoạn phim quảng cáo] của bạn sẽ được [đăng lên] Youtube [ngay lập tức].",
             "word_bank": [
-              "[ ] ], [ ] Youtube [ ]. commercial",
-              "CHOOSE TO bank transfer",
-              "immediately pay by credit card",
+              "commercial",
+              "CHOOSE TO",
+              "bank transfer",
+              "immediately",
+              "pay by credit card",
               "posted on"
             ]
           },
           {
             "number": 4,
-            "sentence": "It is ___[1] to ___[2] ___[3] ___[4] ___ [5] ___[6] the marine environment and ___[7] ___[8].",
-            "translation": "Điều [ cực kỳ quan trọng",
+            "sentence": "It is ___[1] to ___[2] ___[3] ___[4] ___[5] ___[6] the marine environment and ___[7] ___[8].",
+            "translation": "Điều [cực kỳ quan trọng] là phải [tiến hành] [những biện pháp khẩn cấp] [trong một nỗ lực nhằm] [NÂNG CAO NHẬN THỨC CỦA CÔNG CHÚNG VỀ] [việc bảo tồn] môi trường biển và [duy trì] [sự phát triển bền vững].",
             "word_bank": [
-              "] ] [ ] [ ] [ ] [ ]. maintaining",
+              "maintaining",
               "emergency measures",
-              "preserving implement",
-              "in an endeavor to indispensable",
+              "preserving",
+              "implement",
+              "in an endeavor to",
+              "indispensable",
               "RAISE PUBLIC AWARENESS OF",
               "sustainable development"
             ]
           },
           {
             "number": 5,
-            "sentence": "The restaurant ___[1] ___[2] ___ [3] in the refrigerator after the ___[4] caused by a ___[5].",
-            "translation": "Nhà hàng [ không có sự lựa chọn nào khác ngoại trừ",
+            "sentence": "The restaurant ___[1] ___[2] ___[3] in the refrigerator after the ___[4] caused by a ___[5].",
+            "translation": "Nhà hàng [không có sự lựa chọn nào khác ngoại trừ] [bỏ đi] [NHỮNG HÀNG HÓA DỄ BỊ ÔI THIU] ở trong tủ lạnh sau [sự gián đoạn] bị gây ra bởi [việc cúp điện].",
             "word_bank": [
-              "] [ ] ]. power outage",
+              "power outage",
               "has no choice but to",
-              "interruption PERISHABLE GOODS",
-              "discard https://wayground.com/join?gc=59837913 ⚠️ . 📍"
+              "interruption",
+              "PERISHABLE GOODS",
+              "discard"
             ]
           }
         ]
@@ -5500,34 +5745,39 @@
         "questions": [
           {
             "number": 1,
-            "sentence": "Remember to ___[1] the house ___ [2] to ___[3] the ___[4] as soon as your ___[5] ___[6].",
-            "translation": "Hãy nhớ [ yêu cầu",
+            "sentence": "Remember to ___[1] the house ___[2] to ___[3] the ___[4] as soon as your ___[5] ___[6].",
+            "translation": "Hãy nhớ [yêu cầu] [NGƯỜI CHỦ] nhà [hoàn lại] [tiền đặt cọc] của bạn ngay khi [hợp đồng thuê] [kết thúc].",
             "word_bank": [
-              "] [ ] [ ] ] [ ]. lease agreement",
+              "lease agreement",
               "deposit",
-              "ask terminates PROPRIETOR",
+              "ask",
+              "terminates",
+              "PROPRIETOR",
               "reimburse"
             ]
           },
           {
             "number": 2,
             "sentence": "___[1] ___[2] the ___[3] is ___[4] for ___[5] who will ___[6] the ___[7] course.",
-            "translation": "[TRANG PHỤC]",
+            "translation": "[TRANG PHỤC] [phù hợp với] [môi trường kinh doanh] là [bắt buộc] đối với [những nhân viên mới] sẽ [tham gia] khóa [định hướng].",
             "word_bank": [
-              "[ ] [ [ tham gia ]. engage in",
-              "business setting new hires",
+              "engage in",
+              "business setting",
+              "new hires",
               "ATTIRE",
               "in keeping with",
-              "orientation mandatory"
+              "orientation",
+              "mandatory"
             ]
           },
           {
             "number": 3,
-            "sentence": "Once ___[1] about the hurricane are ___[2], we need to ___[3] ___[4] ___[5] and ___ [6] ___[7] safely. Khi [",
-            "translation": "những cảnh báo",
+            "sentence": "Once ___[1] about the hurricane are ___[2], we need to ___[3] ___[4] ___[5] and ___[6] ___[7] safely.",
+            "translation": "Khi [những cảnh báo] về cơn bão được [công bố chính thức], chúng ta cần [tạm dừng] [các hoạt động kinh doanh] [ngay lập tức] và [SƠ TÁN] [người dân địa phương] một cách an toàn.",
             "word_bank": [
-              "] ] [ ] [ ] [ business operations",
-              "local residents halt",
+              "business operations",
+              "local residents",
+              "halt",
               "warnings",
               "EVACUATE",
               "officially announced",
@@ -5536,23 +5786,26 @@
           },
           {
             "number": 4,
-            "sentence": "___[1] are ___[2] ___[3] to ___ [4] and to build schools in ___[5]. [",
-            "translation": "Trợ cấp của chính phủ",
+            "sentence": "___[1] are ___[2] ___[3] to ___[4] and to build schools in ___[5].",
+            "translation": "[Trợ cấp của chính phủ] [thông thường] [được sử dụng] để [XÓA ĐÓI GIẢM NGHÈO] và xây dựng trường học ở [vùng sâu vùng xa].",
             "word_bank": [
-              "] [ ] [ ]. commonly",
+              "commonly",
               "remote areas",
-              "Government grants ALLEVIATE POVERTY",
+              "Government grants",
+              "ALLEVIATE POVERTY",
               "utilized"
             ]
           },
           {
             "number": 5,
-            "sentence": "5,000 visitors ___[1] ___[2] the ___[3] with ___[4] ___ [5] .",
-            "translation": "5,000 du khách",
+            "sentence": "5,000 visitors ___[1] ___[2] the ___[3] with ___[4] ___[5].",
+            "translation": "5,000 du khách [được mong đợi] sẽ [tham dự] [liên hoan phim] quốc tế với [đa dạng] [CÁC THỂ LOẠI].",
             "word_bank": [
-              "[ ] [ ] . film festival",
-              "GENRES are expected to a wide variety of",
-              "attend https://wayground.com/join?gc=59837913 ⚠️ . 📍"
+              "film festival",
+              "GENRES",
+              "are expected to",
+              "a wide variety of",
+              "attend"
             ]
           }
         ]
