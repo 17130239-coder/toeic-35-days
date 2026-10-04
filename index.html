@@ -361,6 +361,9 @@
           <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-layer-group text-slate-400 text-xs"></i> Flashcards 3D
           </button>
+          <button onclick="switchModalTab('quiz')" id="tabBtn-quiz" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
+            <i class="fa-solid fa-gamepad text-slate-400 text-xs"></i> Luyện Quiz gốc <span id="tabQuizBadge" class="px-1.5 py-0.5 rounded-full text-[10px] bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-300 font-semibold font-mono">60 câu</span>
+          </button>
           <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-pen-to-square text-slate-400 text-xs"></i> Bài tập điền câu
           </button>
@@ -408,13 +411,17 @@
           </div>
 
           <div class="flex items-center gap-2 flex-wrap pt-0.5">
-            <a id="modalGamePrimaryBtn" href="#" target="_blank" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-xs">
-              <i class="fa-solid fa-play text-xs"></i>
-              <span id="modalGamePrimaryBtnText">Vào Quizizz Chính Thức</span>
+            <button type="button" onclick="switchModalTab('quiz')" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-xs cursor-pointer">
+              <i class="fa-solid fa-gamepad text-xs"></i>
+              <span>Luyện Quiz Ngay Trên Trang</span>
+            </button>
+            <a id="modalGamePrimaryBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
+              <i class="fa-solid fa-arrow-up-right-from-square text-orange-500 text-xs"></i>
+              <span id="modalGamePrimaryBtnText">Vào Quizizz.com</span>
             </a>
             <a id="modalGameWebPracticeBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
-              <i class="fa-solid fa-laptop-code text-orange-500 text-xs"></i>
-              <span>Luyện tập trên Web</span>
+              <i class="fa-solid fa-expand text-orange-500 text-xs"></i>
+              <span>Wayground Arena (Toàn màn hình)</span>
             </a>
           </div>
 
@@ -502,6 +509,128 @@
           </div>
         </div>
 
+        <!-- TAB: IN-MODAL AUTHENTIC WAYGROUND QUIZ PLAYER (100% OFFLINE & SELF-HOSTED) -->
+        <div id="tabContent-quiz" class="hidden space-y-4">
+          <!-- Quiz Top Info Bar -->
+          <div class="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-850 border border-slate-200 dark:border-zinc-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <div class="flex items-center gap-2">
+                <span id="inQuizTitle" class="font-bold text-xs sm:text-sm text-slate-900 dark:text-zinc-100">GAME VĨNH VIỄN</span>
+                <span id="inQuizPinBadge" class="text-[10px] font-mono px-2 py-0.5 rounded bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-300 font-semibold">PIN: 89651124</span>
+              </div>
+              <div id="inQuizReqText" class="text-[11px] text-amber-800 dark:text-amber-300 mt-1 flex items-center gap-1">
+                <i class="fa-solid fa-bullseye text-orange-500 text-xs"></i> <span>Yêu cầu: Không sai câu nào, đạt streak chuẩn</span>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-2 self-end sm:self-auto">
+              <a id="inQuizWaygroundArenaLink" href="#" target="_blank" class="h-7 px-2.5 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-100 dark:bg-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-200 inline-flex items-center gap-1 transition" title="Mở phòng chơi Wayground Arena toàn màn hình">
+                <i class="fa-solid fa-expand text-[10px] text-orange-500"></i> Toàn màn hình
+              </a>
+              <button onclick="resetInModalQuiz()" class="h-7 px-2.5 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-100 dark:bg-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-200 inline-flex items-center gap-1 transition" title="Làm lại từ đầu">
+                <i class="fa-solid fa-rotate-right text-[10px]"></i> Làm lại
+              </button>
+            </div>
+          </div>
+
+          <!-- Quiz Player Container -->
+          <div id="inQuizPlayerArea" class="rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-4 sm:p-5 space-y-4 shadow-xs">
+            <!-- Progress stats bar -->
+            <div class="flex items-center justify-between text-xs pb-3 border-b border-slate-100 dark:border-zinc-800">
+              <div class="flex items-center gap-3">
+                <span id="inQuizQCounter" class="font-semibold text-slate-900 dark:text-zinc-100">Câu 1 / 60</span>
+                <span id="inQuizStreak" class="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950/60 text-amber-800 dark:text-amber-300 font-bold text-[10px]">🔥 STREAK x1</span>
+              </div>
+              <div class="flex items-center gap-3 font-mono">
+                <span class="text-slate-500 dark:text-zinc-400">Điểm: <strong id="inQuizScore" class="text-orange-600 dark:text-orange-400">0</strong></span>
+              </div>
+            </div>
+
+            <!-- Question area -->
+            <div class="space-y-3 pt-1">
+              <div class="flex items-center justify-between gap-2">
+                <span id="inQuizTypeBadge" class="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 inline-flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span> Trắc nghiệm
+                </span>
+                
+                <button id="inQuizAudioBtn" onclick="playInQuizAudio()" class="h-7 px-2.5 rounded-lg bg-orange-50 hover:bg-orange-100 dark:bg-orange-950/40 text-orange-600 dark:text-orange-400 border border-orange-200 dark:border-orange-900/40 text-xs font-medium inline-flex items-center gap-1.5 transition" title="Nghe phát âm chuẩn của giáo viên">
+                  <i class="fa-solid fa-volume-high text-xs"></i> <span>Phát âm</span>
+                </button>
+              </div>
+
+              <!-- Question Image (if any) -->
+              <div id="inQuizImageBox" class="hidden text-center">
+                <img id="inQuizImage" src="" alt="Illustration" class="max-h-56 mx-auto rounded-lg object-contain border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-950" />
+              </div>
+
+              <!-- Question Prompt Text -->
+              <div class="p-3.5 rounded-lg bg-slate-50/80 dark:bg-zinc-850/60 border border-slate-100 dark:border-zinc-800/80">
+                <div id="inQuizPrompt" class="text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 leading-relaxed"></div>
+                <div id="inQuizPhonetic" class="text-xs font-mono text-orange-600 dark:text-orange-400 mt-1 font-medium"></div>
+              </div>
+            </div>
+
+            <!-- Options Area -->
+            <div id="inQuizOptionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2"></div>
+
+            <!-- Fill Blank Input Area -->
+            <div id="inQuizBlankArea" class="hidden space-y-2 pt-2">
+              <input type="text" id="inQuizBlankInput" placeholder="Nhập đáp án tiếng Anh..." class="w-full px-3.5 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-850 border border-slate-300 dark:border-zinc-700 text-sm font-semibold focus:outline-none focus:border-orange-500 dark:text-white" onkeydown="if(event.key==='Enter') submitInQuizBlank()" />
+              <button onclick="submitInQuizBlank()" class="w-full py-2.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition">
+                Xác nhận câu trả lời
+              </button>
+            </div>
+
+            <!-- Multi-choice Submit Button -->
+            <div id="inQuizMultiSubmitArea" class="hidden pt-2">
+              <button onclick="submitInQuizMultiChoice()" class="w-full py-2.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center justify-center gap-1.5">
+                <i class="fa-solid fa-check"></i> Xác nhận (<span id="inQuizMultiCount">0</span> đã chọn)
+              </button>
+            </div>
+
+            <!-- Answer Feedback Card -->
+            <div id="inQuizFeedbackBox" class="hidden p-3.5 rounded-xl border text-xs space-y-2">
+              <div class="flex items-center justify-between">
+                <span id="inQuizFeedbackTitle" class="font-bold text-sm"></span>
+                <button onclick="nextInQuizQuestion()" class="h-7 px-3 rounded-lg bg-slate-900 text-white dark:bg-white dark:text-zinc-900 font-semibold text-xs transition inline-flex items-center gap-1">
+                  Câu tiếp theo <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </button>
+              </div>
+              <div id="inQuizExplanation" class="text-slate-700 dark:text-zinc-300 leading-relaxed font-sans pt-1"></div>
+            </div>
+          </div>
+
+          <!-- Quiz Completion Card -->
+          <div id="inQuizCompleteArea" class="hidden p-6 rounded-xl border border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-center space-y-4">
+            <div class="w-14 h-14 mx-auto rounded-full bg-emerald-100 dark:bg-emerald-950/60 border border-emerald-300 dark:border-emerald-800 flex items-center justify-center text-emerald-600 dark:text-emerald-400 text-2xl">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="space-y-1">
+              <h3 class="text-lg font-bold text-slate-900 dark:text-zinc-100">Hoàn thành bài luyện Quiz!</h3>
+              <p id="inQuizCompleteSub" class="text-xs text-slate-500 dark:text-zinc-400"></p>
+            </div>
+            <div class="grid grid-cols-3 gap-2 max-w-sm mx-auto text-center pt-2">
+              <div class="p-2.5 rounded-lg bg-slate-50 dark:bg-zinc-800/80 border border-slate-100 dark:border-zinc-700">
+                <div class="text-[10px] text-slate-400">Độ chính xác</div>
+                <div id="inQuizAccuracy" class="text-base font-bold text-slate-900 dark:text-zinc-100 font-mono">100%</div>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-50 dark:bg-zinc-800/80 border border-slate-100 dark:border-zinc-700">
+                <div class="text-[10px] text-slate-400">Streak tối đa</div>
+                <div id="inQuizMaxStreak" class="text-base font-bold text-amber-600 dark:text-amber-400 font-mono">26</div>
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-50 dark:bg-zinc-800/80 border border-slate-100 dark:border-zinc-700">
+                <div class="text-[10px] text-slate-400">Điểm số</div>
+                <div id="inQuizFinalScore" class="text-base font-bold text-orange-600 dark:text-orange-400 font-mono">54,000</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-center gap-2 pt-2">
+              <button onclick="resetInModalQuiz()" class="h-8 px-4 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs transition inline-flex items-center gap-1.5">
+                <i class="fa-solid fa-rotate-right"></i> Chơi lại
+              </button>
+            </div>
+          </div>
+        </div>
+
         <!-- TAB 3: INTERACTIVE EXERCISE A -->
         <div id="tabContent-exercise" class="hidden space-y-5">
           <div class="p-3.5 rounded-lg bg-slate-50 dark:bg-zinc-850 border border-slate-200 dark:border-zinc-800 text-xs text-slate-600 dark:text-zinc-400 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
@@ -571,7 +700,7 @@
   </div>
 
   <!-- LOAD DATA FILES -->
-  <script src="vocab_data.js?v=20261004_v6"></script>
+  <script src="vocab_data.js?v=20261004_v7"></script>
 
   <!-- APPLICATION SCRIPT -->
   <script>
@@ -1099,6 +1228,8 @@
         formBox.innerHTML = '';
       }
 
+      initInModalQuiz(d);
+
       switchModalTab('vocab', false);
     }
 
@@ -1127,7 +1258,7 @@
       if (bodyContent) {
         bodyContent.scrollTop = 0;
       }
-      const tabs = ['vocab', 'flashcard', 'exercise', 'raw', 'files'];
+      const tabs = ['vocab', 'flashcard', 'quiz', 'exercise', 'raw', 'files'];
       tabs.forEach(t => {
         const btn = document.getElementById(`tabBtn-${t}`);
         const content = document.getElementById(`tabContent-${t}`);
@@ -1621,6 +1752,443 @@
         }
         banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }
+    }
+
+    // ==========================================
+    // IN-MODAL AUTHENTIC WAYGROUND QUIZ ENGINE
+    // ==========================================
+    let currentInQuizData = null;
+    let currentInQuizIndex = 0;
+    let currentInQuizScore = 0;
+    let currentInQuizStreak = 0;
+    let currentInQuizMaxStreak = 0;
+    let currentInQuizCorrectCount = 0;
+    let currentInQuizSelectedMulti = new Set();
+    let currentInQuizAnswered = false;
+
+    function initInModalQuiz(dayObj) {
+      currentInQuizData = dayObj.cloned_quiz || null;
+      currentInQuizIndex = 0;
+      currentInQuizScore = 0;
+      currentInQuizStreak = 0;
+      currentInQuizMaxStreak = 0;
+      currentInQuizCorrectCount = 0;
+      currentInQuizSelectedMulti.clear();
+      currentInQuizAnswered = false;
+
+      const badge = document.getElementById('tabQuizBadge');
+      const questions = currentInQuizData ? (currentInQuizData.questions || []) : [];
+      if (badge) {
+        badge.innerText = `${questions.length} câu`;
+      }
+
+      const qTitle = document.getElementById('inQuizTitle');
+      const qPinBadge = document.getElementById('inQuizPinBadge');
+      const qReqText = document.getElementById('inQuizReqText');
+      const wgLink = document.getElementById('inQuizWaygroundArenaLink');
+
+      const wg = dayObj.wayground || {};
+      const pin = currentInQuizData?.game_code || wg.primary_code || 'QUIZ';
+      if (qTitle) qTitle.innerText = `GAME VĨNH VIỄN (${currentInQuizData?.title ? currentInQuizData.title.split('•')[0].trim() : ('Day ' + dayObj.day)})`;
+      if (qPinBadge) qPinBadge.innerText = `PIN: ${pin}`;
+      if (qReqText) {
+        const req = currentInQuizData?.requirement || wg.requirement || 'Không sai câu nào, đạt streak chuẩn';
+        qReqText.innerHTML = `<i class="fa-solid fa-bullseye text-orange-500 text-xs"></i> <span>Yêu cầu: ${escapeHtml(req)}</span>`;
+      }
+      if (wgLink) {
+        wgLink.href = `wayground.html?gc=${pin}`;
+      }
+
+      resetInModalQuiz();
+    }
+
+    function resetInModalQuiz() {
+      currentInQuizIndex = 0;
+      currentInQuizScore = 0;
+      currentInQuizStreak = 0;
+      currentInQuizMaxStreak = 0;
+      currentInQuizCorrectCount = 0;
+      currentInQuizSelectedMulti.clear();
+      currentInQuizAnswered = false;
+
+      const playerArea = document.getElementById('inQuizPlayerArea');
+      const completeArea = document.getElementById('inQuizCompleteArea');
+      if (playerArea) playerArea.classList.remove('hidden');
+      if (completeArea) completeArea.classList.add('hidden');
+
+      renderInQuizCurrentQuestion();
+    }
+
+    function renderInQuizCurrentQuestion() {
+      if (!currentInQuizData || !currentInQuizData.questions || currentInQuizData.questions.length === 0) {
+        const playerArea = document.getElementById('inQuizPlayerArea');
+        if (playerArea) {
+          playerArea.innerHTML = `<div class="p-8 text-center text-slate-400">Chưa có dữ liệu bài tập trắc nghiệm cho ngày này.</div>`;
+        }
+        return;
+      }
+
+      const questions = currentInQuizData.questions;
+      if (currentInQuizIndex >= questions.length) {
+        finishInModalQuiz();
+        return;
+      }
+
+      const q = questions[currentInQuizIndex];
+      currentInQuizAnswered = false;
+      currentInQuizSelectedMulti.clear();
+
+      document.getElementById('inQuizQCounter').innerText = `Câu ${currentInQuizIndex + 1} / ${questions.length}`;
+      document.getElementById('inQuizStreak').innerText = `🔥 STREAK x${currentInQuizStreak}`;
+      document.getElementById('inQuizScore').innerText = currentInQuizScore.toLocaleString();
+
+      const typeBadge = document.getElementById('inQuizTypeBadge');
+      if (typeBadge) {
+        typeBadge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-orange-500"></span> ${q.type_label || (q.question_format === 'multiple_choice' ? 'Đa Tuyển' : q.question_format === 'fill_blank' ? 'Điền từ' : 'Trắc nghiệm')}`;
+      }
+
+      const promptEl = document.getElementById('inQuizPrompt');
+      if (promptEl) {
+        promptEl.innerHTML = q.raw_html || escapeHtml(q.question);
+      }
+
+      const phoneticEl = document.getElementById('inQuizPhonetic');
+      if (phoneticEl) {
+        if (q.phonetic) {
+          phoneticEl.innerText = q.phonetic;
+          phoneticEl.style.display = 'block';
+        } else {
+          phoneticEl.style.display = 'none';
+        }
+      }
+
+      // Question Image
+      const imgBox = document.getElementById('inQuizImageBox');
+      const imgEl = document.getElementById('inQuizImage');
+      if (q.image && q.image.trim()) {
+        imgBox.classList.remove('hidden');
+        imgEl.src = q.image;
+      } else {
+        imgBox.classList.add('hidden');
+        imgEl.src = '';
+      }
+
+      // Feedback box reset
+      const feedbackBox = document.getElementById('inQuizFeedbackBox');
+      feedbackBox.classList.add('hidden');
+
+      // Containers
+      const optionsGrid = document.getElementById('inQuizOptionsGrid');
+      const blankArea = document.getElementById('inQuizBlankArea');
+      const multiSubmitArea = document.getElementById('inQuizMultiSubmitArea');
+      const blankInput = document.getElementById('inQuizBlankInput');
+
+      optionsGrid.innerHTML = '';
+
+      if (q.question_format === 'fill_blank') {
+        optionsGrid.classList.add('hidden');
+        blankArea.classList.remove('hidden');
+        multiSubmitArea.classList.add('hidden');
+        if (blankInput) {
+          blankInput.value = '';
+          blankInput.disabled = false;
+          blankInput.className = 'w-full px-3.5 py-2.5 rounded-lg bg-slate-50 dark:bg-zinc-850 border border-slate-300 dark:border-zinc-700 text-sm font-semibold focus:outline-none focus:border-orange-500 dark:text-white';
+          setTimeout(() => blankInput.focus(), 80);
+        }
+      } else if (q.has_image_options) {
+        optionsGrid.classList.remove('hidden');
+        blankArea.classList.add('hidden');
+        multiSubmitArea.classList.add('hidden');
+        renderInQuizImageOptions(q);
+      } else if (q.question_format === 'multiple_choice') {
+        optionsGrid.classList.remove('hidden');
+        blankArea.classList.add('hidden');
+        multiSubmitArea.classList.remove('hidden');
+        document.getElementById('inQuizMultiCount').innerText = '0';
+        renderInQuizOptions(q, true);
+      } else {
+        optionsGrid.classList.remove('hidden');
+        blankArea.classList.add('hidden');
+        multiSubmitArea.classList.add('hidden');
+        renderInQuizOptions(q, false);
+      }
+
+      // Auto play audio
+      playInQuizAudio();
+    }
+
+    function renderInQuizOptions(q, isMulti) {
+      const grid = document.getElementById('inQuizOptionsGrid');
+      grid.innerHTML = '';
+      grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2';
+      const opts = q.options || [];
+
+      opts.forEach((optText, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.id = `inQuizOptBtn_${idx}`;
+        const isFifth = (idx === 4 && opts.length === 5);
+        const colSpan = isFifth ? ' sm:col-span-2' : '';
+        btn.className = `w-full p-3 rounded-xl border border-slate-200 dark:border-zinc-800 bg-slate-50/60 dark:bg-zinc-850 hover:bg-slate-100 dark:hover:bg-zinc-800 font-medium text-xs sm:text-sm text-left text-slate-800 dark:text-zinc-200 flex items-center justify-between gap-2.5 transition active:scale-[0.99] cursor-pointer${colSpan}`;
+        
+        btn.innerHTML = `
+          <div class="flex items-center gap-2.5 flex-1 min-w-0">
+            <span class="w-6 h-6 rounded-lg bg-white dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 flex items-center justify-center font-bold text-[11px] text-slate-600 dark:text-zinc-400 shrink-0 shadow-2xs">${String.fromCharCode(65 + idx)}</span>
+            <span class="leading-snug truncate">${escapeHtml(optText)}</span>
+          </div>
+          <span class="in-quiz-check-indicator hidden w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-[10px] shrink-0">
+            <i class="fa-solid fa-check"></i>
+          </span>
+        `;
+
+        btn.onclick = () => {
+          if (currentInQuizAnswered) return;
+          if (isMulti) {
+            if (currentInQuizSelectedMulti.has(optText)) {
+              currentInQuizSelectedMulti.delete(optText);
+              btn.classList.remove('border-emerald-500', 'bg-emerald-50/70', 'dark:bg-emerald-950/40');
+              btn.querySelector('.in-quiz-check-indicator')?.classList.add('hidden');
+            } else {
+              currentInQuizSelectedMulti.add(optText);
+              btn.classList.add('border-emerald-500', 'bg-emerald-50/70', 'dark:bg-emerald-950/40');
+              btn.querySelector('.in-quiz-check-indicator')?.classList.remove('hidden');
+            }
+            document.getElementById('inQuizMultiCount').innerText = currentInQuizSelectedMulti.size;
+          } else {
+            handleInQuizChoice(optText, idx);
+          }
+        };
+
+        grid.appendChild(btn);
+      });
+    }
+
+    function renderInQuizImageOptions(q) {
+      const grid = document.getElementById('inQuizOptionsGrid');
+      grid.innerHTML = '';
+      grid.className = 'grid grid-cols-2 gap-3 pt-2';
+      const imgUrls = q.option_images || [];
+      const opts = q.options || ['Hình A', 'Hình B', 'Hình C', 'Hình D'];
+
+      imgUrls.forEach((imgSrc, idx) => {
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.id = `inQuizOptBtn_${idx}`;
+        card.className = 'p-2 rounded-xl border-2 border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-850 hover:border-orange-400 dark:hover:border-orange-500 transition cursor-pointer flex flex-col items-center gap-2 group';
+        
+        card.innerHTML = `
+          <div class="w-full h-28 sm:h-36 rounded-lg overflow-hidden bg-slate-100 dark:bg-zinc-900 flex items-center justify-center border border-slate-100 dark:border-zinc-800">
+            <img src="${imgSrc}" alt="Option ${String.fromCharCode(65 + idx)}" class="w-full h-full object-cover group-hover:scale-105 transition duration-200" loading="lazy" />
+          </div>
+          <div class="w-6 h-6 rounded-md bg-slate-100 dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 flex items-center justify-center font-bold text-xs text-slate-700 dark:text-zinc-300">
+            ${String.fromCharCode(65 + idx)}
+          </div>
+        `;
+
+        card.onclick = () => {
+          if (currentInQuizAnswered) return;
+          const chosenLabel = opts[idx] || `Hình ${String.fromCharCode(65 + idx)}`;
+          handleInQuizChoice(chosenLabel, idx);
+        };
+
+        grid.appendChild(card);
+      });
+    }
+
+    function handleInQuizChoice(chosenVal, chosenIdx) {
+      if (currentInQuizAnswered) return;
+      currentInQuizAnswered = true;
+      const q = currentInQuizData.questions[currentInQuizIndex];
+      const correctAnswers = (q.correct_answers || [q.correct_answer]).map(c => String(c).trim().toLowerCase());
+      const normChosen = String(chosenVal).trim().toLowerCase();
+
+      const isCorrect = correctAnswers.some(c => c === normChosen);
+
+      const opts = q.options || [];
+      opts.forEach((optText, idx) => {
+        const btn = document.getElementById(`inQuizOptBtn_${idx}`);
+        if (!btn) return;
+        const normOpt = String(optText).trim().toLowerCase();
+        const isOptCorrect = correctAnswers.some(c => c === normOpt);
+
+        if (isOptCorrect) {
+          btn.className = 'w-full p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 font-bold text-xs sm:text-sm flex items-center justify-between gap-2.5';
+        } else if (idx === chosenIdx) {
+          btn.className = 'w-full p-3 rounded-xl border-2 border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 font-medium text-xs sm:text-sm flex items-center justify-between gap-2.5';
+        } else {
+          btn.style.opacity = '0.4';
+        }
+      });
+
+      processInQuizFeedback(isCorrect, q);
+    }
+
+    function submitInQuizMultiChoice() {
+      if (currentInQuizAnswered) return;
+      if (currentInQuizSelectedMulti.size === 0) {
+        alert('Vui lòng chọn ít nhất một đáp án!');
+        return;
+      }
+      currentInQuizAnswered = true;
+      const q = currentInQuizData.questions[currentInQuizIndex];
+      const correctAnswers = (q.correct_answers || [q.correct_answer]).map(c => String(c).trim().toLowerCase());
+      const selected = Array.from(currentInQuizSelectedMulti).map(s => String(s).trim().toLowerCase());
+
+      const allSelectedAreCorrect = selected.every(s => correctAnswers.includes(s));
+      const allCorrectAreSelected = correctAnswers.every(c => selected.includes(c));
+      const isCorrect = allSelectedAreCorrect && allCorrectAreSelected;
+
+      const opts = q.options || [];
+      opts.forEach((optText, idx) => {
+        const btn = document.getElementById(`inQuizOptBtn_${idx}`);
+        if (!btn) return;
+        const optLower = String(optText).trim().toLowerCase();
+        const isOptCorrect = correctAnswers.includes(optLower);
+        const isSelected = selected.includes(optLower);
+
+        if (isOptCorrect && isSelected) {
+          btn.className = 'w-full p-3 rounded-xl border-2 border-emerald-500 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-900 dark:text-emerald-200 font-bold text-xs sm:text-sm flex items-center justify-between gap-2.5';
+        } else if (!isOptCorrect && isSelected) {
+          btn.className = 'w-full p-3 rounded-xl border-2 border-rose-500 bg-rose-50 dark:bg-rose-950/40 text-rose-900 dark:text-rose-200 font-medium text-xs sm:text-sm flex items-center justify-between gap-2.5';
+        } else if (isOptCorrect && !isSelected) {
+          btn.className = 'w-full p-3 rounded-xl border-2 border-amber-500 bg-amber-50 dark:bg-amber-950/40 text-amber-900 dark:text-amber-200 font-bold text-xs sm:text-sm flex items-center justify-between gap-2.5';
+        } else {
+          btn.style.opacity = '0.4';
+        }
+      });
+
+      processInQuizFeedback(isCorrect, q);
+    }
+
+    function submitInQuizBlank() {
+      if (currentInQuizAnswered) return;
+      const input = document.getElementById('inQuizBlankInput');
+      const val = (input?.value || '').trim();
+      if (!val) {
+        input.focus();
+        return;
+      }
+      currentInQuizAnswered = true;
+      if (input) input.disabled = true;
+
+      const q = currentInQuizData.questions[currentInQuizIndex];
+      const userNorm = val.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      let isCorrect = false;
+      const candidates = [...(q.correct_answers || []), ...(q.options || [])];
+      for (const cand of candidates) {
+        const candNorm = String(cand).toLowerCase().replace(/[^a-z0-9]/g, '');
+        if (candNorm && (candNorm === userNorm || candNorm.includes(userNorm) || userNorm.includes(candNorm))) {
+          isCorrect = true;
+          break;
+        }
+      }
+
+      if (!isCorrect && q.explanation) {
+        const cleanExpl = q.explanation.toLowerCase().replace(/[^a-z0-9\s]/g, ' ');
+        if (userNorm.length >= 3 && cleanExpl.includes(userNorm)) {
+          isCorrect = true;
+        }
+      }
+
+      if (input) {
+        if (isCorrect) {
+          input.className = 'w-full px-3.5 py-2.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/30 border-2 border-emerald-500 text-sm font-bold text-emerald-800 dark:text-emerald-200';
+        } else {
+          input.className = 'w-full px-3.5 py-2.5 rounded-lg bg-rose-50 dark:bg-rose-950/30 border-2 border-rose-500 text-sm font-bold text-rose-800 dark:text-rose-200';
+        }
+      }
+
+      processInQuizFeedback(isCorrect, q);
+    }
+
+    function processInQuizFeedback(isCorrect, q) {
+      if (isCorrect) {
+        currentInQuizScore += (1000 + (currentInQuizStreak * 100));
+        currentInQuizStreak++;
+        if (currentInQuizStreak > currentInQuizMaxStreak) {
+          currentInQuizMaxStreak = currentInQuizStreak;
+        }
+        currentInQuizCorrectCount++;
+      } else {
+        currentInQuizStreak = 0;
+      }
+
+      document.getElementById('inQuizStreak').innerText = `🔥 STREAK x${currentInQuizStreak}`;
+      document.getElementById('inQuizScore').innerText = currentInQuizScore.toLocaleString();
+
+      const feedbackBox = document.getElementById('inQuizFeedbackBox');
+      const feedbackTitle = document.getElementById('inQuizFeedbackTitle');
+      const explEl = document.getElementById('inQuizExplanation');
+
+      feedbackBox.classList.remove('hidden');
+      if (isCorrect) {
+        feedbackBox.className = 'p-3.5 rounded-xl border border-emerald-200 dark:border-emerald-850 bg-emerald-50/80 dark:bg-emerald-950/30 text-xs space-y-2';
+        feedbackTitle.className = 'font-bold text-sm text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5';
+        feedbackTitle.innerHTML = `<i class="fa-solid fa-circle-check text-emerald-500"></i> Chính xác! (+${1000 + ((currentInQuizStreak-1) * 100)} điểm)`;
+      } else {
+        feedbackBox.className = 'p-3.5 rounded-xl border border-rose-200 dark:border-rose-850 bg-rose-50/80 dark:bg-rose-950/30 text-xs space-y-2';
+        feedbackTitle.className = 'font-bold text-sm text-rose-700 dark:text-rose-400 flex items-center gap-1.5';
+        const displayAns = q.correct_answer || (q.correct_answers || []).join(', ');
+        feedbackTitle.innerHTML = `<i class="fa-solid fa-circle-xmark text-rose-500"></i> Chưa chính xác! (Đáp án: <span class="underline font-semibold">${escapeHtml(displayAns)}</span>)`;
+      }
+
+      const explHtml = q.explanation_html || (q.explanation ? `<p>${escapeHtml(q.explanation)}</p>` : '');
+      explEl.innerHTML = `
+        <div class="font-semibold text-slate-800 dark:text-zinc-200 mb-1 flex items-center gap-1">
+          <i class="fa-solid fa-chalkboard-user text-orange-500"></i> Giải thích chi tiết từ giáo viên:
+        </div>
+        <div class="prose dark:prose-invert text-xs max-w-none font-sans leading-relaxed">
+          ${explHtml}
+        </div>
+      `;
+    }
+
+    function nextInQuizQuestion() {
+      currentInQuizIndex++;
+      renderInQuizCurrentQuestion();
+    }
+
+    function finishInModalQuiz() {
+      const playerArea = document.getElementById('inQuizPlayerArea');
+      const completeArea = document.getElementById('inQuizCompleteArea');
+      if (playerArea) playerArea.classList.add('hidden');
+      if (completeArea) completeArea.classList.remove('hidden');
+
+      const total = (currentInQuizData?.questions || []).length;
+      const acc = total > 0 ? Math.round((currentInQuizCorrectCount / total) * 100) : 0;
+
+      document.getElementById('inQuizAccuracy').innerText = `${acc}%`;
+      document.getElementById('inQuizMaxStreak').innerText = currentInQuizMaxStreak;
+      document.getElementById('inQuizFinalScore').innerText = currentInQuizScore.toLocaleString();
+      document.getElementById('inQuizCompleteSub').innerText = `Bạn đã trả lời đúng ${currentInQuizCorrectCount}/${total} câu hỏi bản quyền từ Wayground.`;
+
+      if (acc >= 90 && typeof confetti === 'function') {
+        confetti({ particleCount: 70, spread: 70, origin: { y: 0.6 } });
+      }
+    }
+
+    function playInQuizAudio() {
+      if (!currentInQuizData || !currentInQuizData.questions) return;
+      const q = currentInQuizData.questions[currentInQuizIndex];
+      if (!q) return;
+
+      if (q.audio_url) {
+        const audio = new Audio(q.audio_url);
+        audio.play().catch(() => speakInQuizTTS(q));
+      } else {
+        speakInQuizTTS(q);
+      }
+    }
+
+    function speakInQuizTTS(q) {
+      let term = q.audio_text || '';
+      if (!term && q.correct_answers && q.correct_answers.length > 0 && /^[a-zA-Z\s'-]+$/.test(q.correct_answers[0])) {
+        term = q.correct_answers[0];
+      } else if (!term && /^[a-zA-Z\s'-]+$/.test(q.question)) {
+        term = q.question;
+      }
+      if (term) speakText(term);
     }
 
     // Global Flashcard shortcut

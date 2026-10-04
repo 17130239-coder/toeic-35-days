@@ -1,0 +1,6441 @@
+{
+  "__cid__": null,
+  "roomHash": "660560c62ac2da493f2d6a4f",
+  "traits": {
+    "isQuizWithoutCorrectAnswer": false,
+    "totalSlides": 0,
+    "totalComprehensionQuestions": 0,
+    "nonAnswerableQuestions": 0
+  },
+  "questions": {
+    "60e3c7d4dc1782001b869c8c": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/10551bad-227a-4cd3-9a1e-c9a76f9bc2a8",
+              "meta": {
+                "width": 990,
+                "height": 556,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>________ movies:</strong></p><p><em>Các bộ phim <u>được dự kiến</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3c7d4dc1782001b869c80",
+            "text": "<p>Assigned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3c7d4dc1782001b869c80"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3c7d4dc1782001b869c81",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3c7d4dc1782001b869c81"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3c7d4dc1782001b869c82",
+            "text": "<p>Authorized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3c7d4dc1782001b869c82"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3c7d4dc1782001b869c83",
+            "text": "<p>Assembled</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3c7d4dc1782001b869c83"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3c7d4dc1782001b869c84",
+            "text": "<p>Automated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3c7d4dc1782001b869c84"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/3389cb5b-8e44-43db-b258-7d7a5b9dc681",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Anticipated</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/ænˈtɪsɪpeɪtɪd/ (Ved = adj):</p><p><em>Được dự báo, dự kiến.</em></p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Expected</strong> /ɪkˈspɛktəd/: <em>Được mong chờ, kỳ vọng.</em></p><p><br/></p><p>Eg:<span style=\"color: rgb(241, 77, 118);\"> </span><strong style=\"color: rgb(241, 77, 118);\">Anticipated </strong><strong style=\"color: rgb(93, 226, 165);\">movies </strong>(n.phrase):</p><p><em>Các bộ phim <u>được dự kiến</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2edc75d189c001bf184dd",
+      "_id": "60e3c7d4dc1782001b869c8c",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-06T03:02:44.614Z",
+      "updated": "2024-03-22T10:05:33.051Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2eec37f723d001b1193f9": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/637755e2-ab6c-4b7e-a91b-e4c62aad117a",
+              "meta": {
+                "width": 563,
+                "height": 301,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj):</p><p><em>Được phân công, giao nhiệm vụ.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2eec37f723d001b1193f0",
+            "text": "<p>Assigned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2eec37f723d001b1193f0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2eec37f723d001b1193f1",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2eec37f723d001b1193f1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2eec37f723d001b1193f2",
+            "text": "<p>Authorized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2eec37f723d001b1193f2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2eec37f723d001b1193f3",
+            "text": "<p>Assembled</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2eec37f723d001b1193f3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2eec37f723d001b1193f4",
+            "text": "<p>Automated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2eec37f723d001b1193f4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/a296dcd7-c318-44da-bc87-7aeeb31170b1",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Assigned</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/əˈsaɪnd/ (Ved = adj):</p><p><em>Được phân công, giao nhiệm vụ.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e265b4effdbc001b24386f",
+      "_id": "60e2eec37f723d001b1193f9",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:36:35.930Z",
+      "updated": "2024-03-22T10:05:33.051Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2ef467f723d001b119522": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/03009f9a-6424-46ac-b760-647960f89d85",
+              "meta": {
+                "width": 512,
+                "height": 512,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj): <em>Được trình bày chi tiết.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef467f723d001b119520",
+            "text": "<p>Detailed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef467f723d001b119520"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef467f723d001b119521",
+            "text": "<p>Discounted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef467f723d001b119521"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef467f723d001b119522",
+            "text": "<p>Distinguished</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef467f723d001b119522"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef467f723d001b119523",
+            "text": "<p>Recognized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef467f723d001b119523"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef467f723d001b119524",
+            "text": "<p>Revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef467f723d001b119524"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/fa469759-9c2b-4adb-b24a-11fdd5b69ca9",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Detailed</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/dɪˈteɪld/ (Ved = adj):</p><p><em>Được trình bày chi tiết.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e265b930b98b001b66c0f1",
+      "_id": "60e2ef467f723d001b119522",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:38:46.142Z",
+      "updated": "2024-03-22T10:05:33.051Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2ef6ea20917001f54f33a": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/quizzes/bdf9fe5b-5dd7-476f-8ba3-61f7a4ee4b6e",
+              "meta": {
+                "width": 577,
+                "height": 372,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": ""
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef6ea20917001f54f330",
+            "text": "<p>Distinguished</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef6ea20917001f54f330"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef6ea20917001f54f331",
+            "text": "<p>Discontinued</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef6ea20917001f54f331"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef6ea20917001f54f332",
+            "text": "<p>Discounted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef6ea20917001f54f332"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef6ea20917001f54f333",
+            "text": "<p>Discouraged</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef6ea20917001f54f333"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2ef6ea20917001f54f334",
+            "text": "<p>Discarded</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2ef6ea20917001f54f334"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/6d141506-41c5-4ff1-9cfd-c199de193aa6",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Discounted</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/ˈdɪskaʊntɪd/ (Ved = adj):</p><p><em>Được giảm giá, chiết khấu.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e265bd10ed5a001d34eb2a",
+      "_id": "60e2ef6ea20917001f54f33a",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:39:26.084Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2efc4aeb1af001b5b83ea": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/dcd2cbcd-1d80-483d-a030-d5c244895f76",
+              "meta": {
+                "width": 500,
+                "height": 352,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>A / An _________ order:</strong></p><p><em>Đơn hàng</em><strong> </strong><em><u>được mong chờ, được dự kiến</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2efc4aeb1af001b5b83e0",
+            "text": "<p>Renovated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2efc4aeb1af001b5b83e0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2efc4aeb1af001b5b83e1",
+            "text": "<p>Proposed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2efc4aeb1af001b5b83e1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2efc4aeb1af001b5b83e2",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2efc4aeb1af001b5b83e2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2efc4aeb1af001b5b83e3",
+            "text": "<p>Revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2efc4aeb1af001b5b83e3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2efc4aeb1af001b5b83e4",
+            "text": "<p>Expected</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2efc4aeb1af001b5b83e4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/0fbbccdd-3318-4d2d-a8aa-a11e156d1e16",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Expected</strong> /ɪkˈspektɪd/ (Ved = adj)</p><p>~<strong> </strong><strong style=\"color: rgb(73, 144, 226);\">Anticipated</strong> /ænˈtɪsɪpeɪtɪd/:</p><p><em>Được mong chờ, được dự kiến.</em></p><p><br/></p><p>Eg:<strong style=\"color: rgb(93, 226, 165);\"> An</strong><strong> </strong><strong style=\"color: rgb(241, 77, 118);\">expected</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">order</strong><strong> </strong>(n.phrase):</p><p><em>Đơn hàng</em><strong> </strong><em><u>được mong chờ, được dự kiến</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MSQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2caafa8887d001da7196c",
+      "_id": "60e2efc4aeb1af001b5b83ea",
+      "type": "MSQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:40:52.119Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4b7546c326001e0589e2": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/b0b88fb9-1282-4ce5-8440-865a5de1dd5d",
+              "meta": {
+                "width": 1296,
+                "height": 729,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>A __________ employee:</strong></p><p><em>Nhân viên <u>được tạo động lực</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4b7546c326001e0589e0",
+            "text": "<p>Customized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4b7546c326001e0589e0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4b7546c326001e0589e1",
+            "text": "<p>Authorized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4b7546c326001e0589e1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4b7546c326001e0589e2",
+            "text": "<p>Motivated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4b7546c326001e0589e2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4b7546c326001e0589e3",
+            "text": "<p>Preferred</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4b7546c326001e0589e3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4b7546c326001e0589e4",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4b7546c326001e0589e4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/ad55cd74-7a22-4198-955a-46794944ceaf",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Motivated</strong> /ˈmoʊtəˌveɪtəd/ (Ved = adj):</p><p><em>Được động viên, được thúc đẩy.</em></p><p><br/></p><p>Eg:<span style=\"color: rgb(93, 226, 165);\"> </span><strong style=\"color: rgb(93, 226, 165);\">A</strong><strong> </strong><strong style=\"color: rgb(241, 77, 118);\">motivated</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">employee </strong>(n.phrase):</p><p><em>Nhân viên <u>được tạo động lực</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e3c94441fe09001b619344",
+      "_id": "616a4b7546c326001e0589e2",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T03:48:05.012Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4bc8dc1a01001e550f9a": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/efd2e19c-ca03-4350-8605-e4b770cf32ba",
+              "meta": {
+                "width": 1200,
+                "height": 800,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>__________ reports:</strong></p><p><em>Các bài báo cáo <u>được hoàn thành</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4bc8dc1a01001e550f90",
+            "text": "<p>Enclosed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4bc8dc1a01001e550f90"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4bc8dc1a01001e550f91",
+            "text": "<p>Assigned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4bc8dc1a01001e550f91"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4bc8dc1a01001e550f92",
+            "text": "<p>Revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4bc8dc1a01001e550f92"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4bc8dc1a01001e550f93",
+            "text": "<p>Finished</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4bc8dc1a01001e550f93"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4bc8dc1a01001e550f94",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4bc8dc1a01001e550f94"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/ef2cc723-9a97-4224-bc69-fc7cb6f19a5b",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Finished</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/ˈfɪnɪʃt/ (Ved = adj): <em>Được hoàn thành.</em></p><p><br/></p><p>Eg:<strong style=\"color: rgb(241, 77, 118);\"> Finished</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">reports</strong><strong> </strong>(n.phrase):</p><p><em>Các bài báo cáo <u>được hoàn thành</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e3c9c5505a61001b108f70",
+      "_id": "616a4bc8dc1a01001e550f9a",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T03:49:28.380Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4c4857323b001da0bf9e": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/5d793651-0d1a-4c2d-a997-ddf4e85cbe5b",
+              "meta": {
+                "width": 640,
+                "height": 400,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>_______ / _______ documents:</strong></p><p><em>Các tài liệu <u>được đính kèm</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4c4857323b001da0bf90",
+            "text": "<p>Customized / Personalized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4c4857323b001da0bf90"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4c4857323b001da0bf91",
+            "text": "<p>Located / Situated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4c4857323b001da0bf91"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4c4857323b001da0bf92",
+            "text": "<p>Limited / Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4c4857323b001da0bf92"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4c4857323b001da0bf93",
+            "text": "<p>Enclosed / Attached</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4c4857323b001da0bf93"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4c4857323b001da0bf94",
+            "text": "<p>Qualified / Experienced</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4c4857323b001da0bf94"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/e0038ace-0c1e-4b4f-8258-93eaea0f6933",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Enclosed</strong><span style=\"color: rgb(241, 77, 118);\"> </span>/ɪnˈkləʊzd/ (Ved = adj)</p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Attached</strong><strong> </strong>/əˈtætʃt/:</p><p><em>Được đính kèm, kèm theo.</em></p><p><br/></p><p><em>Lưu ý</em><strong>: Be </strong><strong style=\"color: rgb(241, 77, 118);\">enclosed</strong><strong> <u>with</u></strong> = <strong>Be </strong><strong style=\"color: rgb(73, 144, 226);\">attached</strong><strong> <u>to</u></strong></p><p><br/></p><p>Eg:<em> </em><strong style=\"color: rgb(73, 144, 226);\">Attached</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">documents</strong><strong>:</strong></p><p><em>Các tài liệu <u>được đính kèm</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2f252741eac001b698394",
+      "_id": "616a4c4857323b001da0bf9e",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T03:51:36.074Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f286299825001b395830": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/1a2b3f3c-c40b-4e2f-90a9-8bdb3cc395f2",
+              "meta": {
+                "width": 800,
+                "height": 400,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>__________ / __________ <em>products:</em></strong></p><p><em>Những sản phẩm</em> <em><u>được tùy biến</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f286299825001b395830",
+            "text": "<p>Customized / Personalized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f286299825001b395830"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f286299825001b395831",
+            "text": "<p>Located / Situated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f286299825001b395831"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f286299825001b395832",
+            "text": "<p>Limited / Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f286299825001b395832"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f286299825001b395833",
+            "text": "<p>Enclosed / Attached</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f286299825001b395833"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f286299825001b395834",
+            "text": "<p>Revised / Reviewed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f286299825001b395834"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/2a188f84-d63f-4756-9acd-2afcad6de8d5",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Customized</strong><strong> </strong>/ˈkʌstəmaɪzd/ (Ved = adj)</p><p>~<strong> </strong><strong style=\"color: rgb(73, 144, 226);\">Personalized</strong><span style=\"color: rgb(73, 144, 226);\"> </span>/ˈpɜːrsənəlaɪzd/:</p><p><em>Được tùy chỉnh,biến đổi (theo nhu cầu khách hàng)﻿</em></p><p><br/></p><p>Eg:<strong> </strong><strong style=\"color: rgb(73, 144, 226);\">Personalized</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">products</strong><strong> </strong>(n.phrase):</p><p><em>Những sản phẩm</em> <em><u>được tùy biến</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e265d4bd4ae3001c8a85cd",
+      "_id": "60e2f286299825001b395830",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:52:38.868Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f2afaeb1af001b5b8b80": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": "string",
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false,
+          "ignoreAccentMarksForEvaluation": false,
+          "enableAccentMarks": false,
+          "questionMetadata": {
+            "specialIndices": []
+          }
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/fd839fe7-87a8-45fc-82d1-a51dd02434c9",
+              "meta": {
+                "width": 1170,
+                "height": 658,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>C_________ / P_________ sneakers:</strong></p><p><em>Những đôi giày <u>được tùy biến lại</u>.</em><br><br><blank id=\"af001b5b8b80\"></blank></p>"
+        },
+        "options": [],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/1ba6073e-6865-4378-b499-65a889005ba1",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Customized</strong><strong> </strong>/ˈkʌstəmaɪzd/ (Ved = adj)</p><p>~<strong> </strong><strong style=\"color: rgb(73, 144, 226);\">Personalized</strong><span style=\"color: rgb(73, 144, 226);\"> </span>/ˈpɜːrsənəlaɪzd/:</p><p><em>Được tùy chỉnh, biến đổi (theo nhu cầu khách hàng).</em></p><p><br/></p><p>Eg:<strong style=\"color: rgb(241, 77, 118);\"> Customized</strong><strong> </strong> <strong style=\"color: rgb(93, 226, 165);\">Sneakers </strong>(n.phrase):</p><p><em>Những đôi giày <u>được tùy biến lại</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "BLANK",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        },
+        "targets": [
+          {
+            "id": "af001b5b8b80",
+            "type": "text",
+            "optionId": [
+              "60e2f2afaeb1af001b5b8b80"
+            ],
+            "settings": {
+              "specialIndices": []
+            }
+          }
+        ]
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 4,
+      "parent": "60e265da71d494001b925095",
+      "_id": "60e2f2afaeb1af001b5b8b80",
+      "type": "BLANK",
+      "published": true,
+      "createdAt": "2021-07-05T11:53:19.766Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f2f3b6b201001bc75b99": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/69d3624d-2cde-4732-80c0-beeb8cd1d4b1",
+              "meta": {
+                "width": 3000,
+                "height": 2954,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj) <em>Được ưa thích, chuộng hơn</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f2f3b6b201001bc75b90",
+            "text": "<p>Authorized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f2f3b6b201001bc75b90"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f2f3b6b201001bc75b91",
+            "text": "<p>Attached</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f2f3b6b201001bc75b91"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f2f3b6b201001bc75b92",
+            "text": "<p>Preferred</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f2f3b6b201001bc75b92"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f2f3b6b201001bc75b93",
+            "text": "<p>Proposed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f2f3b6b201001bc75b93"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f2f3b6b201001bc75b94",
+            "text": "<p>Valued</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f2f3b6b201001bc75b94"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/ca96c532-f3e6-490e-a212-52ec1521ddeb",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Preferred</strong> /prɪˈfɜːrd/ (Ved = adj):</p><p><em>Được ưa thích, ưa chuộng hơn.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e265df7ef176001bd565b4",
+      "_id": "60e2f2f3b6b201001bc75b99",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:54:27.767Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4cb9974f5c001eb48d3a": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/c95b0b2e-1733-459a-a834-6d950f958af3",
+              "meta": {
+                "width": 800,
+                "height": 317,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>A __________ plan:</strong></p><p><em>Kế hoạch <u>được đề xuất</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4cb9974f5c001eb48d30",
+            "text": "<p>Approved</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4cb9974f5c001eb48d30"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4cb9974f5c001eb48d31",
+            "text": "<p>Produced</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4cb9974f5c001eb48d31"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4cb9974f5c001eb48d32",
+            "text": "<p>Preferred</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4cb9974f5c001eb48d32"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4cb9974f5c001eb48d33",
+            "text": "<p>Proposed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4cb9974f5c001eb48d33"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4cb9974f5c001eb48d34",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4cb9974f5c001eb48d34"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/d0d67582-8a44-4240-9451-229c33745c3d",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Proposed</strong> /prəˈpəʊzd/ (Ved = adj):</p><p><em>Được đề xuất, đề cử.</em></p><p><br/></p><p>Eg:<strong> </strong><strong style=\"color: rgb(93, 226, 165);\">A </strong><strong style=\"color: rgb(241, 77, 118);\">proposed </strong><strong style=\"color: rgb(93, 226, 165);\">plan </strong>(n.phrase):</p><p><em>Kế hoạch <u>được đề xuất</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2f3162f7b59001b41938f",
+      "_id": "616a4cb9974f5c001eb48d3a",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T03:53:29.205Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4d6a46c326001e058ad4": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/quizzes/174fcd86-7086-4c5d-adde-ef03efd2abe8",
+              "meta": {
+                "width": 729,
+                "height": 488,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>A ___________ programmer:</strong></p><p><em>Người lập trình viên</em> <em><u>đủ tư cách, đủ điều kiện</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4d6a46c326001e058ad0",
+            "text": "<p>Outlined</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4d6a46c326001e058ad0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4d6a46c326001e058ad1",
+            "text": "<p>Distinguished</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4d6a46c326001e058ad1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4d6a46c326001e058ad2",
+            "text": "<p>Motivated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4d6a46c326001e058ad2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4d6a46c326001e058ad3",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4d6a46c326001e058ad3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4d6a46c326001e058ad4",
+            "text": "<p>Assigned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4d6a46c326001e058ad4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/d9fdb308-cfd9-4dbd-95b7-6c91de4dbf71",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Qualified</strong> /ˈkwɑːlɪfaɪd/ (Ved = adj):</p><p><em>Đủ phẩm chất, đủ điều kiện.</em></p><p><br/></p><p>Eg:<strong> </strong><strong style=\"color: rgb(93, 226, 165);\">A</strong><strong> </strong><strong style=\"color: rgb(241, 77, 118);\">qualified</strong><strong> </strong><strong style=\"color: rgb(93, 226, 165);\">programmer </strong>(n.phrase):</p><p><em>Người lập trình viên</em> <em><u>đủ tư cách, đủ điều kiện</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2f349bd4ae3001c8b7403",
+      "_id": "616a4d6a46c326001e058ad4",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T03:56:26.296Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4f4c57323b001da0c100": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/c1868087-c3dd-4036-9a37-eb587734da56",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>Restricted </strong>/riˈstrɪktəd/ (Ved = adj)</p><p><strong>= Limited </strong> /ˈlɪmətəd/ </p>"
+        },
+        "options": [
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f4c57323b001da0c100",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/dc5f2c6f-2d17-4a46-8331-da0fdd649f08",
+                "meta": {
+                  "width": 512,
+                  "height": 384,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a4f4c57323b001da0c100"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f4c57323b001da0c101",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/24bed621-1d42-436c-a7d8-bda4b77d3ff5",
+                "meta": {
+                  "width": 1920,
+                  "height": 1080,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a4f4c57323b001da0c101"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f4c57323b001da0c102",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/f36056f6-c4b0-4aa9-b895-ef73debec986",
+                "meta": {
+                  "width": 630,
+                  "height": 458,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a4f4c57323b001da0c102"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f4c57323b001da0c103",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/47e1b83e-a00d-423c-875a-5a6aaa9c0af0",
+                "meta": {
+                  "width": 512,
+                  "height": 390,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a4f4c57323b001da0c103"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/56eb4305-40cb-470e-9f57-70088b5da835",
+              "meta": {
+                "width": 702,
+                "height": 387,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Restricted</strong><strong> </strong>/riˈstrɪktəd/ (Ved = adj)</p><p>=<strong> </strong><strong style=\"color: rgb(73, 144, 226);\">Limited</strong> /ˈlɪmətəd/:</p><p><em>Bị hạn chế, bị giới hạn. </em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2f3792a32a7001bbf202d",
+      "_id": "616a4f4c57323b001da0c100",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T04:04:28.774Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 30000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a4f6157323b001da0c108": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/9039a03e-5959-4663-9b75-238adf496616",
+              "meta": {
+                "width": 467,
+                "height": 408,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": ""
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f6157323b001da0c100",
+            "text": "<p>Rearranged</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4f6157323b001da0c100"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f6157323b001da0c101",
+            "text": "<p>Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4f6157323b001da0c101"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f6157323b001da0c102",
+            "text": "<p>Repositioned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4f6157323b001da0c102"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f6157323b001da0c103",
+            "text": "<p>Repeated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4f6157323b001da0c103"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a4f6157323b001da0c104",
+            "text": "<p>Renewed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "616a4f6157323b001da0c104"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/9845c38c-0372-4d6e-a65a-9bf5ce6b6ec9",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Repeated</strong> /rɪˈpitɪd/<strong> </strong>(Ved = adj):</p><p><em>Được lặp lại.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2f3979cf118001bc26d5a",
+      "_id": "616a4f6157323b001da0c108",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-10-16T04:04:49.929Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f3ab82553d001c27628d": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/67255011-56a3-4c9d-a0dc-134befebedb5",
+              "meta": {
+                "width": 1698,
+                "height": 1131,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>________ family:</strong></p><p><em>Gia đình <u>đáng quý (được coi trọng)</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f3ab82553d001c276280",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f3ab82553d001c276280"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f3ab82553d001c276281",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f3ab82553d001c276281"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f3ab82553d001c276282",
+            "text": "<p>Admired</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f3ab82553d001c276282"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f3ab82553d001c276283",
+            "text": "<p>Valued</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f3ab82553d001c276283"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f3ab82553d001c276284",
+            "text": "<p>Preferred</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f3ab82553d001c276284"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/a13f9e57-e085-485f-a07c-d9794540f646",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Valued</strong> /ˈvæljud/<strong> </strong>(Ved = adj):</p><p><em>đáng quý</em>,<strong> </strong><em>được coi trọng.</em></p><p><br/></p><p>Eg:<strong style=\"color: rgb(241, 77, 118);\"> Valued</strong> <strong style=\"color: rgb(93, 226, 165);\">family</strong><span style=\"color: rgb(93, 226, 165);\"> </span>(n.phrase):<strong> </strong></p><p><em>Gia đình <u>đáng quý (được coi trọng)</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2660437c853001b06191e",
+      "_id": "60e2f3ab82553d001c27628d",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T11:57:31.531Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "622c7338e0fbc4001d4db154": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/a6c0d49f-26f9-4189-afdd-f69f20cedfac",
+              "meta": {
+                "width": 580,
+                "height": 357,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><u style=\"color: rgb(241, 77, 118);\">________</u> <strong>textbooks</strong></p><p><em>Sách giáo khoa</em> <strong style=\"color: rgb(241, 77, 118);\"><u>được sửa đổi</u></strong><em>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c7338e0fbc4001d4db150",
+            "text": "<p>Revived</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c7338e0fbc4001d4db150"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c7338e0fbc4001d4db151",
+            "text": "<p>Revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c7338e0fbc4001d4db151"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c7338e0fbc4001d4db152",
+            "text": "<p>Renewed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c7338e0fbc4001d4db152"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c7338e0fbc4001d4db153",
+            "text": "<p>Respected</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c7338e0fbc4001d4db153"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c7338e0fbc4001d4db154",
+            "text": "<p>Reviewed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c7338e0fbc4001d4db154"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/2446922c-5fa1-4b78-835c-a859e979fdab",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Revised </strong>/rɪˈvaɪzd/ (Ved = adj):</p><p><em>Được phê duyệt, chỉnh sửa, bổ sung.</em></p><p><br/></p><p>Eg: <strong style=\"color: rgb(241, 77, 118);\">Revised </strong><strong style=\"color: rgb(93, 226, 165);\">textbooks </strong>(n.phrase):</p><p><em>Sách giáo khoa <u>được phê duyệt</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null,
+          "titleFontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "616a4fb1e3416e001e50b7a6",
+      "_id": "622c7338e0fbc4001d4db154",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2022-03-12T10:17:28.194Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "622c73e02b78b8001eea14e7": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/282c0a0c-55b2-41b9-abdb-6916cd525bf7",
+              "meta": {
+                "width": 900,
+                "height": 600,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>________ <strong>motorbike version:</strong></p><p><em>Phiên bản xe máy</em> <em><u>giới hạn</u>.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c73e02b78b8001eea14e0",
+            "text": "<p>Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c73e02b78b8001eea14e0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c73e02b78b8001eea14e1",
+            "text": "<p>Customized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c73e02b78b8001eea14e1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c73e02b78b8001eea14e2",
+            "text": "<p>Limited</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c73e02b78b8001eea14e2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c73e02b78b8001eea14e3",
+            "text": "<p>Constrained</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c73e02b78b8001eea14e3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c73e02b78b8001eea14e4",
+            "text": "<p>Addicted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c73e02b78b8001eea14e4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/b7012705-2742-43cf-9e9d-bbfe59942b62",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Restricted </strong>/riˈstrɪktəd/ (adj đuôi ed)</p><p>=<strong style=\"color: rgb(93, 226, 165);\"> </strong><strong style=\"color: rgb(241, 77, 118);\">Limited</strong><strong> </strong>/ˈlɪmətəd/ = <strong style=\"color: rgb(241, 77, 118);\">Constrained </strong>/kənˈstreɪnd/</p><p><em>Bị giới hạn, bị hạn chế.</em></p><p><br/></p><p>Eg:<em> </em><strong style=\"color: rgb(73, 144, 226);\"><u>Limited</u></strong> <strong style=\"color: rgb(93, 226, 165);\">motorbike version</strong></p><p><em>Phiên bản xe máy</em> <em><u>giới hạn</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null,
+          "titleFontFamily": null
+        },
+        "kind": "MSQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "616a5045974f5c001eb48f0a",
+      "_id": "622c73e02b78b8001eea14e7",
+      "type": "MSQ",
+      "published": true,
+      "createdAt": "2022-03-12T10:20:16.333Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 10000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f46b300f42001bbd6147": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/0ff3dda2-a118-4122-ad42-03a01c2a34b8",
+              "meta": {
+                "width": 583,
+                "height": 400,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj): <em>Được cấp quyền.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f46b300f42001bbd6140",
+            "text": "<p>Revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f46b300f42001bbd6140"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f46b300f42001bbd6141",
+            "text": "<p>Automated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f46b300f42001bbd6141"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f46b300f42001bbd6142",
+            "text": "<p>Approved</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f46b300f42001bbd6142"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f46b300f42001bbd6143",
+            "text": "<p>Authorized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f46b300f42001bbd6143"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f46b300f42001bbd6144",
+            "text": "<p>Edited</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f46b300f42001bbd6144"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/0f8c80e7-4513-41f0-8f3f-a3f060b510fa",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Authorized </strong>/ɔθəˌraɪzd/ (Ved = adj):</p><p><em>Được cấp quyền.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2661430b98b001b66c165",
+      "_id": "60e2f46b300f42001bbd6147",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:00:43.251Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f4812f7b59001b4196d8": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": "string",
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false,
+          "ignoreAccentMarksForEvaluation": false,
+          "enableAccentMarks": false,
+          "questionMetadata": {
+            "specialIndices": []
+          }
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/f33fc682-452e-42f2-a45d-471624e61fe6",
+              "meta": {
+                "width": 700,
+                "height": 467,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj): <em>Được tự động hóa.</em><br><br><blank id=\"59001b4196d8\"></blank></p>"
+        },
+        "options": [],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/06075bd9-98d6-469b-86a2-6a11fede4516",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Automated </strong>/ˈɔːtəmeɪtɪd/ (Ved = adj):</p><p><em>Được tự động hóa.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "BLANK",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        },
+        "targets": [
+          {
+            "id": "59001b4196d8",
+            "type": "text",
+            "optionId": [
+              "60e2f4812f7b59001b4196d0"
+            ],
+            "settings": {
+              "specialIndices": []
+            }
+          }
+        ]
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 4,
+      "parent": "60e26620300f42001bbc71e4",
+      "_id": "60e2f4812f7b59001b4196d8",
+      "type": "BLANK",
+      "published": true,
+      "createdAt": "2021-07-05T12:01:05.862Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 10000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e3d974434121001be96cab": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/f7d8d44c-7722-47af-9165-c29d1756c325",
+              "meta": {
+                "width": 440,
+                "height": 373,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": ""
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3d974434121001be96ca0",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3d974434121001be96ca0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3d974434121001be96ca1",
+            "text": "<p>Updated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3d974434121001be96ca1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3d974434121001be96ca2",
+            "text": "<p>Upgraded</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3d974434121001be96ca2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3d974434121001be96ca3",
+            "text": "<p>Upended</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3d974434121001be96ca3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3d974434121001be96ca4",
+            "text": "<p>Enclosed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3d974434121001be96ca4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/96557911-193b-4c3b-ade6-559a7de722d8",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Updated</strong> /əpˈdeɪtəd/<strong> </strong>(Ved = adj): <em>Được cập nhật.</em></p><p><strong style=\"color: rgb(73, 144, 226);\"><u>Updated</u></strong> <strong style=\"color: rgb(93, 226, 165);\">information</strong>: thông tin được cập nhật.</p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": "606829fc1398f8001bb8418e",
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2cb1bfa74cf001bdaba75",
+      "_id": "60e3d974434121001be96cab",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-06T04:17:56.416Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e26ad8474089001e1aa345": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/30709ecf-6b3f-441c-8664-61f8ee1d89ff",
+              "meta": {
+                "width": 1200,
+                "height": 600,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj):<em> Được lên lịch.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e26ad8474089001e1aa340",
+            "text": "<p>Repeated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e26ad8474089001e1aa340"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e26ad8474089001e1aa341",
+            "text": "<p>Attached</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e26ad8474089001e1aa341"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e26ad8474089001e1aa342",
+            "text": "<p>Qualified</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e26ad8474089001e1aa342"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e26ad8474089001e1aa343",
+            "text": "<p>Scheduled</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e26ad8474089001e1aa343"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e26ad8474089001e1aa344",
+            "text": "<p>Automated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e26ad8474089001e1aa344"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/dad7eee2-2217-4629-9cb8-a76b08c871fe",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Scheduled </strong>/ˈskɛʤʊld/ (Ved = adj): <em>Được lên lịch.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": false,
+      "ver": 2,
+      "parent": null,
+      "_id": "60e26ad8474089001e1aa345",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T02:13:44.827Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e3dcd287bdc3001d824266": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": "string",
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false,
+          "ignoreAccentMarksForEvaluation": false,
+          "enableAccentMarks": false,
+          "questionMetadata": {
+            "specialIndices": []
+          }
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/1adb457d-0454-403c-8f2f-c59e4534f9f8",
+              "meta": {
+                "width": 1300,
+                "height": 885,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>An <blank id=\"c3001d824266\"></blank> salesperson:</strong></p><p><em>Nhân viên bán hàng <u>giàu kinh nghiệm</u>.</em></p>"
+        },
+        "options": [],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/1c283351-3e39-4e34-8814-fe32e93882fe",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Experienced</strong> /iks'piəriənst/ (adj):</p><p><em>Giàu kinh nghiệm, từng trải, lão luyện.</em></p><p><br/></p><p>Eg: An<strong style=\"color: rgb(241, 77, 118);\"> experienced</strong> <strong style=\"color: rgb(93, 226, 165);\">salesperson</strong>:</p><p>Nhân viên bán hàng<em> <u>giàu kinh nghiệm</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "BLANK",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        },
+        "targets": [
+          {
+            "id": "c3001d824266",
+            "type": "text",
+            "optionId": [
+              "60e3dcd287bdc3001d824260"
+            ],
+            "settings": {
+              "specialIndices": []
+            }
+          }
+        ]
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 4,
+      "parent": "60e2f7e5a20917001f5506c0",
+      "_id": "60e3dcd287bdc3001d824266",
+      "type": "BLANK",
+      "published": true,
+      "createdAt": "2021-07-06T04:32:18.302Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 20000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f895bd4ae3001c8b7f64": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": "string",
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false,
+          "ignoreAccentMarksForEvaluation": false,
+          "enableAccentMarks": false,
+          "questionMetadata": {
+            "specialIndices": []
+          }
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/e3c39b0a-4c0b-4e2d-96ff-1ab4785b42b2",
+              "meta": {
+                "width": 600,
+                "height": 300,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong><blank id=\"e3001c8b7f64\"></blank> Avengers:</strong></p><p><em>Biệt đội báo thù <u>được tập hợp lại</u>.</em></p>"
+        },
+        "options": [],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/c2154c56-5654-4331-bc56-5ef189c1dd3a",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Assembled</strong> /əˈsɛmbəld/ (Ved = adj):</p><p><em>Được tập hợp lại / được lắp ráp.</em></p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Gathered </strong>/ˈgæðərd/ ~ <strong style=\"color: rgb(73, 144, 226);\">Collected </strong>/kəˈlɛktəd/</p><p><br/></p><p>Eg: <strong style=\"color: rgb(241, 77, 118);\">Assembled </strong><strong style=\"color: rgb(93, 226, 165);\">Avengers</strong> (n.phrase)<strong>:</strong></p><p><em>Biệt đội báo thù <u>được tập hợp lại</u>.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "BLANK",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        },
+        "targets": [
+          {
+            "id": "e3001c8b7f64",
+            "type": "text",
+            "optionId": [
+              "60e2f895bd4ae3001c8b7f60",
+              "60e2f895bd4ae3001c8b7f61",
+              "60e2f895bd4ae3001c8b7f62"
+            ],
+            "settings": {
+              "specialIndices": []
+            }
+          }
+        ]
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 4,
+      "parent": "60e287f8dcde27001b07aaf9",
+      "_id": "60e2f895bd4ae3001c8b7f64",
+      "type": "BLANK",
+      "published": true,
+      "createdAt": "2021-07-05T12:18:29.401Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 20000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f8c2dcd4590020fd6fc4": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [],
+          "text": "<p><strong>Renovated</strong> /ˈrɛnəˌveɪtɪd/ (Ved = adj)</p>"
+        },
+        "options": [
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f8c2dcd4590020fd6fc0",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/4ce046f2-994a-4a4f-8367-58fc2867da37",
+                "meta": {
+                  "width": 907,
+                  "height": 529,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2f8c2dcd4590020fd6fc0"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f8c2dcd4590020fd6fc1",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/cb3f000d-d236-4b43-a346-95e4e11ac736",
+                "meta": {
+                  "width": 800,
+                  "height": 400,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2f8c2dcd4590020fd6fc1"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f8c2dcd4590020fd6fc2",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/0dd63b98-3087-49aa-bf78-20b12a14b04a",
+                "meta": {
+                  "width": 800,
+                  "height": 600,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2f8c2dcd4590020fd6fc2"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f8c2dcd4590020fd6fc3",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/57cdb1d7-88ba-45e7-b475-e0d0aec25355",
+                "meta": {
+                  "width": 1920,
+                  "height": 1200,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2f8c2dcd4590020fd6fc3"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/aee8c655-1749-433a-af94-dcf79b2853d8",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Renovated</strong> /ˈrɛnəˌveɪtɪd/ (Ved = adj):</p><p><em>Được tu sửa, tân trang (thường nói về phòng ốc).</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e289fd499df5001e3545f4",
+      "_id": "60e2f8c2dcd4590020fd6fc4",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:19:14.301Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2f9391a2c2c001dffddee": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/e5fddb1a-8aa8-4275-bed3-2c8ce59286d7",
+              "meta": {
+                "width": 1100,
+                "height": 734,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj): <em>Được tọa lạc, định vị.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f9391a2c2c001dffdde0",
+            "text": "<p>Enclosed / Attached</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f9391a2c2c001dffdde0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f9391a2c2c001dffdde1",
+            "text": "<p>Limited / Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f9391a2c2c001dffdde1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f9391a2c2c001dffdde2",
+            "text": "<p>Located / Situated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f9391a2c2c001dffdde2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f9391a2c2c001dffdde3",
+            "text": "<p>Customized / Personalized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f9391a2c2c001dffdde3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2f9391a2c2c001dffdde4",
+            "text": "<p>Anticipated / Expected</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2f9391a2c2c001dffdde4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/230531dd-ab7d-4a20-a1e1-369055f4dae6",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Located</strong> /ˈloʊˌkeɪtəd/<strong> </strong> (Ved = adj)</p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Situated</strong> /ˈsɪʧuˌeɪtɪd/:</p><p><em>Được tọa lạc, định vị.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e28bd810ed5a001d351c7b",
+      "_id": "60e2f9391a2c2c001dffddee",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:21:14.010Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2fa56a20917001f550bd7": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [],
+          "text": "<p><strong>Distinguished </strong>/dis'tiɳgwiʃt/ (Ved = adj)</p>"
+        },
+        "options": [
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa56a20917001f550bd0",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/de8665e7-a0cc-4536-aadb-1fc86b408c08",
+                "meta": {
+                  "width": 800,
+                  "height": 450,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2fa56a20917001f550bd0"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa56a20917001f550bd1",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/quizzes/04eae787-a9ec-450c-a466-08c6130be9d0",
+                "meta": {
+                  "width": 581,
+                  "height": 359,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2fa56a20917001f550bd1"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa56a20917001f550bd2",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/a06c896c-18ad-4c03-bd8a-9f37f5a310f2",
+                "meta": {
+                  "width": 900,
+                  "height": 603,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2fa56a20917001f550bd2"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa56a20917001f550bd3",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/985ed029-16cb-4a12-97d6-d67abe75f35c",
+                "meta": {
+                  "width": 1000,
+                  "height": 748,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "60e2fa56a20917001f550bd3"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/28901cad-2c35-4c7c-bfc2-4f052893489d",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Distinguished </strong>/dis'tiɳgwiʃt/ (Ved = adj)</p><p><strong>1)</strong> = <strong style=\"color: rgb(73, 144, 226);\">Distinctive </strong>/dɪˈstɪŋktɪv/: <em>Khác biệt, phân biệt.</em></p><p><br/></p><p><strong>2) </strong>=<strong style=\"color: rgb(73, 144, 226);\"> Eminent </strong>/ˈemɪnənt/ ~ <strong style=\"color: rgb(73, 144, 226);\">Famous </strong>/ˈfeɪməs/</p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Well-k</strong><span style=\"color: rgb(73, 144, 226);\">﻿</span><strong style=\"color: rgb(73, 144, 226);\">nown </strong>/ˌwel ˈnəʊn/: <em>Lỗi lạc, ưu tú.</em></p><p><br/></p><p><strong>3)</strong> = <strong style=\"color: rgb(73, 144, 226);\">Noticeable </strong>/ˈnəʊtɪsəbl/: <em>Nổi bật, đáng chú ý.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2cbfd2a32a7001bbec17b",
+      "_id": "60e2fa56a20917001f550bd7",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:25:58.430Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2fa7f7f723d001b11ae68": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/cc292dab-8aa9-495b-98f8-129c1a4de641",
+              "meta": {
+                "width": 500,
+                "height": 327,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj):<em> </em></p><p><em>Được công nhận, thừa nhận.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa7f7f723d001b11ae60",
+            "text": "<p>Renovated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fa7f7f723d001b11ae60"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa7f7f723d001b11ae61",
+            "text": "<p>Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fa7f7f723d001b11ae61"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa7f7f723d001b11ae62",
+            "text": "<p>Recognized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fa7f7f723d001b11ae62"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa7f7f723d001b11ae63",
+            "text": "<p>Renewed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fa7f7f723d001b11ae63"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fa7f7f723d001b11ae64",
+            "text": "<p>Repeated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fa7f7f723d001b11ae64"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/61222bf7-4d36-4eaa-b61f-a11a586038cd",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Recognized</strong> /'rekəgnaizd/ (Ved = adj):<em> </em></p><p><em>Được công nhận, thừa nhận.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2cd95a8887d001da71ec2",
+      "_id": "60e2fa7f7f723d001b11ae68",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:26:39.638Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e2fad07f723d001b11af12": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/f74ce72a-1f85-4948-ac74-2120abc41d30",
+              "meta": {
+                "width": 685,
+                "height": 392,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>(Ved = adj):</p><p><em>Được đề nghị, kiến nghị, yêu cầu.</em></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fad07f723d001b11af10",
+            "text": "<p>Requested</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fad07f723d001b11af10"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fad07f723d001b11af11",
+            "text": "<p>Recommended</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fad07f723d001b11af11"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fad07f723d001b11af12",
+            "text": "<p>Renovated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fad07f723d001b11af12"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fad07f723d001b11af13",
+            "text": "<p>Required</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fad07f723d001b11af13"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e2fad07f723d001b11af14",
+            "text": "<p>Restricted</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e2fad07f723d001b11af14"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/2d41988c-82c1-44da-bd81-94cd47d6b803",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Required</strong> /riˈkwaɪərd/</p><p>~ <strong style=\"color: rgb(241, 77, 118);\">Requested </strong>/rɪˈkwɛstɪd/</p><p>~ <strong style=\"color: rgb(241, 77, 118);\">Recommended</strong> /ˌrɛkəˈmɛndəd/</p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Asked</strong> /æskt/<strong> </strong></p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Advised</strong> /ædˈvaɪzd/</p><p>~ <strong style=\"color: rgb(73, 144, 226);\">Suggested </strong>/səgˈʤɛstəd/:</p><p><em>Được đề nghị, yêu cầu, đề xuất, khuyên bảo, dò hỏi.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MSQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 2,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2d1187f723d001b114c12",
+      "_id": "60e2fad07f723d001b11af12",
+      "type": "MSQ",
+      "published": true,
+      "createdAt": "2021-07-05T12:28:00.340Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 10000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "616a50e9974f5c001eb48f55": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/46abcc74-d70f-4ebd-9bd5-d863e6baa9f4",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong>Motivated</strong> (Ved = adj)</p>"
+        },
+        "options": [
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a50e9974f5c001eb48f50",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/79a281a4-941f-4643-be47-ddc9e7820688",
+                "meta": {
+                  "width": 853,
+                  "height": 567,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a50e9974f5c001eb48f50"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a50e9974f5c001eb48f51",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/70b2d5d2-5f26-450a-9bbc-cfafb6831ec0",
+                "meta": {
+                  "width": 768,
+                  "height": 402,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a50e9974f5c001eb48f51"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a50e9974f5c001eb48f52",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/e0dc9a87-2224-4027-9277-e646812af05c",
+                "meta": {
+                  "width": 600,
+                  "height": 320,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a50e9974f5c001eb48f52"
+          },
+          {
+            "type": "image",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "616a50e9974f5c001eb48f53",
+            "text": "",
+            "media": [
+              {
+                "type": "image",
+                "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/3998de6b-4ca3-44d7-93f8-fb591e82c406",
+                "meta": {
+                  "width": 759,
+                  "height": 467,
+                  "text": null,
+                  "bgColor": null,
+                  "layout": "fit",
+                  "videoId": null,
+                  "start": null,
+                  "end": null,
+                  "duration": null,
+                  "kind": null,
+                  "embeddable": null,
+                  "title": null,
+                  "lat": null,
+                  "long": null,
+                  "heading": null,
+                  "pitch": null
+                }
+              }
+            ],
+            "matcher": null,
+            "_id": "616a50e9974f5c001eb48f53"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/f4a83582-5211-4efd-854c-aae09d2651e7",
+              "meta": {
+                "width": 712,
+                "height": 400,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Motivated</strong> /ˈmoʊtəˌveɪtəd/ (Ved = adj):</p><p><em>Được động viên, được thúc đẩy, tạo động lực.</em></p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MSQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e2faf7bd4ae3001c8b8473",
+      "_id": "616a50e9974f5c001eb48f55",
+      "type": "MSQ",
+      "published": true,
+      "createdAt": "2021-10-16T04:11:21.335Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 10000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e3e2927d14a9001dcd43d3": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "text": "<p>(adj) <em>Được lắp ráp</em></p>",
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/61bde3cd-0af1-447f-835b-14f7c5c06eae",
+              "meta": {
+                "width": 1024,
+                "height": 683,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ]
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e2927d14a9001dcd43d0",
+            "text": "<p>Associated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e2927d14a9001dcd43d0"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e2927d14a9001dcd43d1",
+            "text": "<p>Assembled</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e2927d14a9001dcd43d1"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e2927d14a9001dcd43d2",
+            "text": "<p>Assigned</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e2927d14a9001dcd43d2"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e2927d14a9001dcd43d3",
+            "text": "<p>Anticipated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e2927d14a9001dcd43d3"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e2927d14a9001dcd43d4",
+            "text": "<p>Resembled</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e2927d14a9001dcd43d4"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Assembled</strong> (adj): <em>được lắp ráp</em></p><p><strong style=\"color: rgb(241, 77, 118);\">Assembled</strong><em> </em><strong style=\"color: rgb(73, 144, 226);\">machines</strong>: </p><p>các loại máy móc <u>được lắp ráp</u>.</p>",
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/6f82bf29-8091-4aa5-b1b3-fa80fd3082ab",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ]
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": false,
+      "ver": 2,
+      "parent": null,
+      "_id": "60e3e2927d14a9001dcd43d3",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-06T04:56:50.537Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "60e3e468a1cb91001f9f4f32": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "text": "<p>Thông tin <em><u>được yêu cầu</u></em> (adj)</p><p>= _____ information</p>",
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/questions/d5ba8ba1-2e8a-4c17-ac03-7ed592800f0a",
+              "meta": {
+                "width": 600,
+                "height": 600,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ]
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e468a1cb91001f9f4f30",
+            "text": "<p>requiring</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e468a1cb91001f9f4f30"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e468a1cb91001f9f4f31",
+            "text": "<p>proposed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e468a1cb91001f9f4f31"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e468a1cb91001f9f4f32",
+            "text": "<p>required</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e468a1cb91001f9f4f32"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e468a1cb91001f9f4f33",
+            "text": "<p>revised</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e468a1cb91001f9f4f33"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "60e3e468a1cb91001f9f4f34",
+            "text": "<p>renovated</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "60e3e468a1cb91001f9f4f34"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\"><em><u>Required</u></em></strong> <strong style=\"color: rgb(73, 144, 226);\">information</strong>: </p><p>Thông tin <em><u>được yêu cầu</u></em>.</p>",
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/67aaa092-bdc0-41f9-a298-09ac06f38840",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ]
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": false,
+      "ver": 2,
+      "parent": null,
+      "_id": "60e3e468a1cb91001f9f4f32",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2021-07-06T05:04:40.502Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    },
+    "622c740229e754001e0d750a": {
+      "structure": {
+        "settings": {
+          "hasCorrectAnswer": true,
+          "fibDataType": null,
+          "canSubmitCustomResponse": false,
+          "doesOptionHaveMultipleTargets": false,
+          "showAdvancedRTE": false
+        },
+        "hasMath": false,
+        "query": {
+          "type": null,
+          "hasMath": false,
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "answerTime": 0,
+          "media": [
+            {
+              "type": "image",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/quizzes/04cd3248-3c65-4691-a08b-83289d06bf06",
+              "meta": {
+                "width": 690,
+                "height": 430,
+                "text": null,
+                "bgColor": null,
+                "layout": "fit",
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p>Căn phòng <em style=\"color: rgb(241, 77, 118);\"><u>được nâng cấp</u> </em>(adj)</p><p>= <strong>An _______ room</strong></p>"
+        },
+        "options": [
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c740229e754001e0d7500",
+            "text": "<p>upgraded</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c740229e754001e0d7500"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c740229e754001e0d7501",
+            "text": "<p>proposed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c740229e754001e0d7501"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c740229e754001e0d7502",
+            "text": "<p>distinguished</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c740229e754001e0d7502"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c740229e754001e0d7503",
+            "text": "<p>recognized</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c740229e754001e0d7503"
+          },
+          {
+            "type": "text",
+            "hasMath": false,
+            "math": {
+              "latex": [],
+              "template": null
+            },
+            "answerTime": 0,
+            "id": "622c740229e754001e0d7504",
+            "text": "<p>enclosed</p>",
+            "media": [],
+            "matcher": null,
+            "_id": "622c740229e754001e0d7504"
+          }
+        ],
+        "explain": {
+          "math": {
+            "latex": [],
+            "template": null
+          },
+          "type": "text",
+          "hasMath": false,
+          "media": [
+            {
+              "type": "audio",
+              "url": "https://quizizz.com/media/resource/gs/quizizz-media/_audio/audioQuestions/1644eb89-002c-4d3c-92a1-55b6c9fde296",
+              "meta": {
+                "width": null,
+                "height": null,
+                "text": null,
+                "bgColor": null,
+                "layout": null,
+                "videoId": null,
+                "start": null,
+                "end": null,
+                "duration": null,
+                "kind": null,
+                "embeddable": null,
+                "title": null,
+                "lat": null,
+                "long": null,
+                "heading": null,
+                "pitch": null
+              }
+            }
+          ],
+          "text": "<p><strong style=\"color: rgb(241, 77, 118);\">Upgraded</strong> (Ved = adj): <em>được nâng cấp</em>.</p><p>Eg: <span style=\"color: rgb(73, 144, 226);\">An</span> <strong style=\"color: rgb(241, 77, 118);\"><u>upgraded</u></strong> <span style=\"color: rgb(73, 144, 226);\">room</span>:</p><p>căn phòng đã <em><u>được nâng cấp</u></em>.</p>"
+        },
+        "hints": [],
+        "theme": {
+          "fontSize": {
+            "title": null,
+            "text": null
+          },
+          "fontColor": {
+            "title": null,
+            "text": null
+          },
+          "background": {
+            "color": null,
+            "image": null,
+            "video": null
+          },
+          "fontFamily": null,
+          "titleFontFamily": null
+        },
+        "kind": "MCQ",
+        "marks": {
+          "correct": 1,
+          "incorrect": 0
+        }
+      },
+      "standards": [],
+      "topics": [],
+      "isSuperParent": null,
+      "standardIds": [],
+      "unifiedStandardIds": [],
+      "aiGenerated": false,
+      "__v": 1,
+      "teleportFrom": null,
+      "cloned": true,
+      "ver": 2,
+      "parent": "60e3e67cf5570d001be9799a",
+      "_id": "622c740229e754001e0d750a",
+      "type": "MCQ",
+      "published": true,
+      "createdAt": "2022-03-12T10:20:50.486Z",
+      "updated": "2024-03-22T10:05:33.052Z",
+      "time": 5000,
+      "state": "inactive",
+      "attempt": 0,
+      "cause": ""
+    }
+  },
+  "gameState": "running",
+  "canvas": {
+    "host": false,
+    "player": false
+  }
+}

@@ -55,6 +55,12 @@
     }
     .opt-green:hover { background-color: #207409; }
 
+    .opt-purple {
+      background-color: #8854c0;
+      border-bottom: 4px solid #572d82;
+    }
+    .opt-purple:hover { background-color: #7942b5; }
+
     .btn-quizizz {
       transition: transform 0.08s ease, border-bottom-width 0.08s ease, box-shadow 0.08s ease;
       user-select: none;
@@ -343,6 +349,17 @@
           </button>
           <span id="optCheck-3" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
         </button>
+
+        <!-- Option 4: Purple (Authentic 5th Choice) -->
+        <button onclick="handleOptionClick(4)" id="optBtn-4" class="opt-purple btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative sm:col-span-2 hidden">
+          <span id="optIcon-4" class="w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold">★</span>
+          <img id="optImg-4" src="" alt="Option" class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg object-cover border border-white/20 shrink-0 hidden shadow-xs" />
+          <span id="optText-4" class="flex-1 leading-snug">Lựa chọn E</span>
+          <button type="button" id="optZoom-4" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-4').src)" class="hidden absolute top-2.5 right-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass-plus"></i>
+          </button>
+          <span id="optCheck-4" class="w-6 h-6 rounded-md border border-white/50 flex items-center justify-center text-xs font-bold bg-black/20 hidden"></span>
+        </button>
       </div>
 
       <!-- Multiple Choice Confirmation Submit Bar -->
@@ -487,7 +504,7 @@
   </footer>
 
   <!-- LOAD QUIZ DATA -->
-  <script src="wayground_data.js?v=20261004_v6"></script>
+  <script src="wayground_data.js?v=20261004_v7"></script>
 
   <!-- WAYGROUND GAME ENGINE -->
   <script>
@@ -554,12 +571,21 @@
       icon.className = soundEnabled ? 'fa-solid fa-volume-high' : 'fa-solid fa-volume-xmark text-zinc-500';
     }
 
-    // TTS pronunciation
+    // Audio / TTS pronunciation
     function playArenaSpeech() {
       if (!currentQuestions[currentQIndex]) return;
       const q = currentQuestions[currentQIndex];
-      const textToSpeak = q.audio_text || q.question;
-      if ('speechSynthesis' in window) {
+      if (q.audio_url) {
+        const audio = new Audio(q.audio_url);
+        audio.play().catch(() => playArenaTTS(q));
+      } else {
+        playArenaTTS(q);
+      }
+    }
+
+    function playArenaTTS(q) {
+      const textToSpeak = q.audio_text || (q.correct_answers && q.correct_answers[0]) || q.question;
+      if ('speechSynthesis' in window && textToSpeak) {
         window.speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(textToSpeak);
         u.lang = 'en-US';
@@ -815,9 +841,10 @@
           grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 w-full';
         }
 
-        const colors = ['red', 'blue', 'yellow', 'green'];
-        for (let i = 0; i < 4; i++) {
+        const colors = ['red', 'blue', 'yellow', 'green', 'purple'];
+        for (let i = 0; i < 5; i++) {
           const btn = document.getElementById(`optBtn-${i}`);
+          if (!btn) continue;
           const txt = document.getElementById(`optText-${i}`);
           const chk = document.getElementById(`optCheck-${i}`);
           const img = document.getElementById(`optImg-${i}`);
@@ -847,7 +874,8 @@
               chk.classList.add('hidden');
             } else {
               // Standard Text option mode
-              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative`;
+              const spanCol = (i === 4) ? ' sm:col-span-2' : '';
+              btn.className = `opt-${colors[i]} btn-quizizz rounded-xl p-3.5 sm:p-5 text-left text-white font-semibold text-sm sm:text-base flex items-center gap-3 relative${spanCol}`;
               
               ico.className = 'w-7 h-7 rounded-lg bg-black/20 flex items-center justify-center shrink-0 text-xs font-bold';
               ico.classList.remove('hidden');
