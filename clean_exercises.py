@@ -163,6 +163,8 @@ def main():
                 for q in day_obj['exercise_a']['questions']:
                     if q['number'] in d0_answers:
                         q['answers'] = d0_answers[q['number']]
+        if 'dan_do' in day_obj and day_obj['dan_do']:
+            day_obj['dan_do'] = re.sub(r'\s*\n\s*\]', ']', day_obj['dan_do'])
 
     # Save updated days_data.json
     with open('days_data.json', 'w', encoding='utf-8') as f:

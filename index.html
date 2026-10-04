@@ -750,7 +750,8 @@
       const danDoBox = document.getElementById('modalDanDoBox');
       if (d.dan_do && d.dan_do.trim()) {
         danDoBox.style.display = 'block';
-        document.getElementById('modalDanDoText').innerText = d.dan_do;
+        const cleanDanDo = d.dan_do.replace(/\s*\n\s*\]/g, ']').trim();
+        document.getElementById('modalDanDoText').innerText = cleanDanDo;
       } else {
         danDoBox.style.display = 'none';
       }

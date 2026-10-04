@@ -188,6 +188,7 @@ def extract_all():
                 m_num = re.search(r'\n1\.\s*[A-Za-z]', full_text)
                 if m_num:
                     dan_do = clean_text(full_text[p_start:m_num.start()])
+            dan_do = re.sub(r'\s*\n\s*\]', ']', dan_do)
 
         # Wayground info
         wg_info = {
