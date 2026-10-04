@@ -329,17 +329,23 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-2">
+        <div class="flex items-center gap-1.5 sm:gap-2">
           <!-- Video Drive button from modal -->
-          <a id="modalVideoBtn" href="#" target="_blank" style="display: none;" class="h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-rose-50 dark:bg-zinc-800 dark:hover:bg-rose-950/30 hover:border-rose-200 dark:hover:border-rose-900/60 text-slate-700 hover:text-rose-600 dark:text-zinc-200 dark:hover:text-rose-400 text-xs font-medium flex items-center gap-1.5 transition shadow-2xs" title="Xem video ghi hình buổi học trên Google Drive">
+          <a id="modalVideoBtn" href="#" target="_blank" style="display: none;" class="h-8 px-2.5 sm:px-3 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-rose-50 dark:bg-zinc-800 dark:hover:bg-rose-950/30 hover:border-rose-200 dark:hover:border-rose-900/60 text-slate-700 hover:text-rose-600 dark:text-zinc-200 dark:hover:text-rose-400 text-xs font-medium inline-flex items-center gap-1.5 transition shadow-2xs" title="Xem video ghi hình buổi học trên Google Drive">
             <i class="fa-solid fa-video text-rose-500 dark:text-rose-400 text-xs"></i>
-            <span class="hidden sm:inline">Video Buổi Học</span>
+            <span class="hidden md:inline">Video Buổi Học</span>
           </a>
 
-          <!-- Wayground / Quizizz direct play button from modal -->
-          <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
-            <i class="fa-solid fa-gamepad text-orange-200"></i>
-            <span class="hidden sm:inline">Vào Game Quizizz</span>
+          <!-- 1. Game Quizizz Official Link -->
+          <a id="modalQuizizzBtn" href="#" target="_blank" style="display: none;" class="h-8 px-2.5 sm:px-3 rounded-lg border border-purple-200 dark:border-purple-800/60 bg-purple-50 hover:bg-purple-100 dark:bg-purple-950/40 dark:hover:bg-purple-900/50 text-purple-700 hover:text-purple-800 dark:text-purple-300 text-xs font-semibold inline-flex items-center gap-1.5 transition shadow-2xs" title="Vào Game Quizizz chính thức">
+            <i class="fa-solid fa-arrow-up-right-from-square text-purple-600 dark:text-purple-400 text-xs"></i>
+            <span id="modalQuizizzBtnText">Quizizz</span>
+          </a>
+
+          <!-- 2. Wayground tương ứng Link -->
+          <a id="modalWaygroundBtn" href="#" target="_blank" style="display: none;" class="h-8 px-2.5 sm:px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold inline-flex items-center gap-1.5 transition shadow-xs" title="Mở Wayground Arena tương ứng">
+            <i class="fa-solid fa-gamepad text-orange-200 text-xs"></i>
+            <span id="modalWaygroundBtnText">Wayground Arena</span>
           </a>
 
           <!-- Close button -->
@@ -385,55 +391,6 @@
             <i class="fa-solid fa-circle-exclamation text-amber-500"></i> Dặn dò giáo viên & Lịch trả bài:
           </div>
           <div id="modalDanDoText" class="text-xs sm:text-sm whitespace-pre-line leading-relaxed text-amber-900/90 dark:text-amber-200/90"></div>
-        </div>
-
-        <!-- Game Quizizz Box (Permanent Live Game from game.html) -->
-        <div id="modalGameBox" style="display: none;" class="p-3.5 sm:p-4 rounded-xl bg-orange-50/70 dark:bg-orange-950/20 border border-orange-200/80 dark:border-orange-900/40 text-xs sm:text-sm space-y-3">
-          <div class="flex items-center justify-between gap-2 flex-wrap">
-            <div class="flex items-center gap-2">
-              <div class="w-7 h-7 rounded-lg bg-orange-500/10 dark:bg-orange-400/10 border border-orange-300 dark:border-orange-700/60 flex items-center justify-center text-orange-600 dark:text-orange-400 shrink-0">
-                <i class="fa-solid fa-gamepad text-xs"></i>
-              </div>
-              <span id="modalGameScopeTitle" class="font-bold text-slate-900 dark:text-zinc-100 text-xs sm:text-sm">Link Game Vĩnh Viễn</span>
-            </div>
-            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800/60">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-              Phòng vĩnh viễn (Đang mở)
-            </span>
-          </div>
-
-          <div id="modalGameRequirementBox" style="display: none;" class="p-2.5 rounded-lg bg-white/80 dark:bg-zinc-900/80 border border-orange-200/60 dark:border-orange-900/30 text-[11px] sm:text-xs text-amber-900 dark:text-amber-200 flex items-start gap-2">
-            <i class="fa-solid fa-bullseye text-orange-500 mt-0.5 shrink-0"></i>
-            <div>
-              <strong class="font-semibold text-orange-900 dark:text-orange-300">Yêu cầu giáo viên:</strong>
-              <span id="modalGameRequirementText" class="font-mono text-slate-800 dark:text-zinc-200 block sm:inline ml-0 sm:ml-1 font-semibold"></span>
-            </div>
-          </div>
-
-          <div class="flex items-center gap-2 flex-wrap pt-0.5">
-            <button type="button" onclick="switchModalTab('quiz')" class="h-8 px-3.5 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-semibold text-xs inline-flex items-center gap-1.5 transition shadow-xs cursor-pointer">
-              <i class="fa-solid fa-gamepad text-xs"></i>
-              <span>Luyện Quiz Ngay Trên Trang</span>
-            </button>
-            <a id="modalGamePrimaryBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
-              <i class="fa-solid fa-arrow-up-right-from-square text-orange-500 text-xs"></i>
-              <span id="modalGamePrimaryBtnText">Vào Quizizz.com</span>
-            </a>
-            <a id="modalGameWebPracticeBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg border border-slate-300 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-800 dark:text-zinc-200 font-medium text-xs inline-flex items-center gap-1.5 transition shadow-2xs">
-              <i class="fa-solid fa-expand text-orange-500 text-xs"></i>
-              <span>Wayground Arena (Toàn màn hình)</span>
-            </a>
-          </div>
-
-          <div id="modalGameBackupsBox" style="display: none;" class="pt-2 border-t border-orange-200/50 dark:border-zinc-800/80 text-[11px] text-slate-600 dark:text-zinc-400 flex items-center gap-2 flex-wrap">
-            <span class="font-medium text-slate-500 dark:text-zinc-400 shrink-0">Link dự phòng:</span>
-            <div id="modalGameBackupsList" class="inline-flex items-center gap-1.5 flex-wrap"></div>
-          </div>
-
-          <div id="modalGameCombosBox" style="display: none;" class="pt-2 border-t border-orange-200/50 dark:border-zinc-800/80 text-[11px] text-slate-600 dark:text-zinc-400 space-y-1">
-            <span class="font-medium text-slate-500 dark:text-zinc-400">Đề ôn tập liên quan:</span>
-            <div id="modalGameCombosList" class="flex items-center gap-1.5 flex-wrap"></div>
-          </div>
         </div>
 
         <!-- TAB 1: VOCABULARY LIST -->
@@ -969,18 +926,36 @@
         document.getElementById('modalDayDue').innerHTML = `<i class="fa-solid fa-graduation-cap text-slate-400"></i> ${vCount} từ vựng trọng tâm ${qCount > 0 ? '• ' + qCount + ' câu bài tập' : ''}`;
       }
 
-      // Wayground / Quizizz game setup
+      // 1. Link Game Quizizz in Header
       const wg = d.wayground || {};
       const primaryGameUrl = wg.primary_url || (wg.game_codes && wg.game_codes.length > 0 ? `https://quizizz.com/join?gc=${wg.game_codes[0]}` : '');
       const primaryCode = wg.primary_code || (wg.game_codes && wg.game_codes.length > 0 ? wg.game_codes[0] : '');
 
+      const quizizzBtn = document.getElementById('modalQuizizzBtn');
+      if (quizizzBtn) {
+        if (primaryGameUrl) {
+          quizizzBtn.href = primaryGameUrl;
+          quizizzBtn.title = `Vào Game Quizizz chính thức (PIN: ${primaryCode})`;
+          const qzText = document.getElementById('modalQuizizzBtnText');
+          if (qzText) qzText.innerText = primaryCode ? `Quizizz (${primaryCode})` : 'Quizizz';
+          quizizzBtn.style.display = 'inline-flex';
+        } else {
+          quizizzBtn.style.display = 'none';
+        }
+      }
+
+      // 2. Link Wayground tương ứng in Header
       const wgBtn = document.getElementById('modalWaygroundBtn');
-      if (primaryGameUrl) {
-        wgBtn.href = primaryGameUrl;
-        wgBtn.title = `Vào Game Quizizz Vĩnh Viễn chính thức (PIN: ${primaryCode})`;
-        wgBtn.style.display = 'flex';
-      } else {
-        wgBtn.style.display = 'none';
+      if (wgBtn) {
+        if (primaryCode) {
+          wgBtn.href = `wayground.html?gc=${primaryCode}`;
+          wgBtn.title = `Mở Wayground Arena tương ứng (PIN: ${primaryCode})`;
+          const wgText = document.getElementById('modalWaygroundBtnText');
+          if (wgText) wgText.innerText = 'Wayground Arena';
+          wgBtn.style.display = 'inline-flex';
+        } else {
+          wgBtn.style.display = 'none';
+        }
       }
 
       // Video Drive btn
@@ -989,7 +964,7 @@
       if (primaryModalVideo && primaryModalVideo.url) {
         videoBtn.href = primaryModalVideo.url;
         videoBtn.title = `Mở thư mục Google Drive: ${primaryModalVideo.title}`;
-        videoBtn.style.display = 'flex';
+        videoBtn.style.display = 'inline-flex';
       } else {
         videoBtn.style.display = 'none';
       }
@@ -1010,71 +985,6 @@
         document.getElementById('modalDanDoText').innerText = cleanDanDo;
       } else {
         danDoBox.style.display = 'none';
-      }
-
-      // Populate modalGameBox (Permanent Quizizz Game from game.html)
-      const gameBox = document.getElementById('modalGameBox');
-      if (primaryGameUrl && primaryCode) {
-        gameBox.style.display = 'block';
-        document.getElementById('modalGameScopeTitle').innerText = `Game Quizizz Vĩnh Viễn (${wg.day_scope || 'Day ' + d.day})`;
-
-        const reqBox = document.getElementById('modalGameRequirementBox');
-        if (wg.requirement && wg.requirement.trim()) {
-          reqBox.style.display = 'flex';
-          document.getElementById('modalGameRequirementText').innerText = wg.requirement.trim();
-        } else {
-          reqBox.style.display = 'none';
-        }
-
-        const primBtn = document.getElementById('modalGamePrimaryBtn');
-        primBtn.href = primaryGameUrl;
-        document.getElementById('modalGamePrimaryBtnText').innerText = `Vào Quizizz Chính Thức (PIN: ${primaryCode})`;
-
-        const webBtn = document.getElementById('modalGameWebPracticeBtn');
-        webBtn.href = `wayground.html?gc=${primaryCode}`;
-
-        // Backups
-        const backupsBox = document.getElementById('modalGameBackupsBox');
-        const backupsList = document.getElementById('modalGameBackupsList');
-        backupsList.innerHTML = '';
-        const backupCodes = wg.backup_codes || [];
-        const backupUrls = wg.backup_urls || [];
-        if (backupCodes.length > 0) {
-          backupsBox.style.display = 'flex';
-          backupCodes.forEach((bCode, bIdx) => {
-            const bUrl = backupUrls[bIdx] || `https://quizizz.com/join?gc=${bCode}`;
-            const link = document.createElement('a');
-            link.href = bUrl;
-            link.target = '_blank';
-            link.className = 'px-2 py-0.5 rounded bg-white dark:bg-zinc-800 hover:bg-orange-50 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 hover:text-orange-600 border border-slate-200 dark:border-zinc-700 font-mono transition';
-            link.innerText = `Dự phòng ${bIdx + 1} (${bCode})`;
-            backupsList.appendChild(link);
-          });
-        } else {
-          backupsBox.style.display = 'none';
-        }
-
-        // Related combos
-        const combosBox = document.getElementById('modalGameCombosBox');
-        const combosList = document.getElementById('modalGameCombosList');
-        combosList.innerHTML = '';
-        const relatedGames = wg.related_games || [];
-        if (relatedGames.length > 0) {
-          combosBox.style.display = 'block';
-          relatedGames.forEach(rg => {
-            const rUrl = rg.primary_url || `https://quizizz.com/join?gc=${rg.primary_code}`;
-            const link = document.createElement('a');
-            link.href = rUrl;
-            link.target = '_blank';
-            link.className = 'px-2 py-0.5 rounded bg-white dark:bg-zinc-800 hover:bg-orange-50 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-300 hover:text-orange-600 border border-slate-200 dark:border-zinc-700 transition inline-flex items-center gap-1';
-            link.innerHTML = `<span>${escapeHtml(rg.day_scope || rg.title || 'Combo')}</span> <span class="font-mono text-slate-400">(${rg.primary_code})</span>`;
-            combosList.appendChild(link);
-          });
-        } else {
-          combosBox.style.display = 'none';
-        }
-      } else {
-        gameBox.style.display = 'none';
       }
 
       // Populate Vocabulary List
