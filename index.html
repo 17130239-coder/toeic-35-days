@@ -596,9 +596,9 @@
                 <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5 flex items-center gap-1.5 flex-wrap">
                   <span>${d.due_date || 'Lộ trình từ vựng'}</span>
                   ${primaryVideo ? `
-                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/60" title="${primaryVideo.title}">
+                    <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/60 dark:hover:bg-rose-900/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/60 transition shadow-2xs" title="Mở Drive: ${primaryVideo.title}">
                       <i class="fa-solid fa-video text-[9px]"></i> Buổi ${primaryVideo.buoi}
-                    </span>
+                    </a>
                   ` : ''}
                 </div>
               </div>
@@ -630,21 +630,20 @@
 
           <!-- Bottom Actions -->
           <div class="pt-3 border-t border-slate-100 dark:border-zinc-800 flex items-center gap-2">
-            <button onclick="openDayModal(${d.day})" class="flex-1 h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 font-medium text-xs flex items-center justify-center gap-1.5 transition">
-              <i class="fa-solid fa-book-open text-xs"></i> Học chi tiết
+            <button onclick="openDayModal(${d.day})" class="flex-1 min-w-0 h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 dark:text-zinc-200 font-medium text-xs flex items-center justify-center gap-1.5 transition whitespace-nowrap">
+              <i class="fa-solid fa-book-open text-xs shrink-0"></i>
+              <span class="truncate">Học chi tiết</span>
             </button>
             
             ${primaryVideo ? `
-              <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="h-8 px-2.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-300 font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Mở Drive Video: ${primaryVideo.title}">
-                <i class="fa-solid fa-video text-rose-500"></i>
-                <span class="hidden sm:inline">Video</span>
+              <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 text-rose-600 dark:text-rose-400 flex items-center justify-center transition shadow-xs shrink-0" title="Mở Drive Video: ${primaryVideo.title}">
+                <i class="fa-solid fa-video text-xs"></i>
               </a>
             ` : ''}
 
             ${primaryCode ? `
-              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Vào Game Wayground PIN: ${primaryCode}">
-                <i class="fa-solid fa-gamepad text-orange-200"></i>
-                <span>Game</span>
+              <a href="wayground.html?gc=${primaryCode}" target="_blank" class="w-8 h-8 rounded-lg bg-orange-600 hover:bg-orange-500 text-white flex items-center justify-center transition shadow-xs shrink-0" title="Vào Game Wayground PIN: ${primaryCode}">
+                <i class="fa-solid fa-gamepad text-orange-200 text-xs"></i>
               </a>
             ` : ''}
           </div>
