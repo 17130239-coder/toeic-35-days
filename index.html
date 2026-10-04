@@ -278,17 +278,12 @@
       
       <!-- Modal Header -->
       <div class="px-5 py-4 border-b border-slate-200 dark:border-zinc-800 flex items-center justify-between gap-4 bg-slate-50/50 dark:bg-zinc-900">
-        <div class="flex items-center gap-3">
-          <div id="modalDayBadge" class="w-10 h-10 rounded-lg bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-bold text-sm flex items-center justify-center border border-slate-200 dark:border-zinc-700">
-            D1
-          </div>
-          <div>
-            <h2 id="modalDayTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">
-              DAY 1
-            </h2>
-            <div id="modalDayDue" class="text-xs text-slate-500 dark:text-zinc-400 font-medium flex items-center gap-1.5 mt-0.5">
-              <i class="fa-regular fa-clock text-slate-400"></i> Due Jun 27
-            </div>
+        <div>
+          <h2 id="modalDayTitle" class="text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100">
+            DAY 1
+          </h2>
+          <div id="modalDayDue" class="text-xs text-slate-500 dark:text-zinc-400 font-medium flex items-center gap-1.5 mt-0.5">
+            <i class="fa-solid fa-graduation-cap text-slate-400"></i> 6 từ vựng trọng tâm
           </div>
         </div>
 
@@ -537,19 +532,14 @@
         
         card.innerHTML = `
           <div>
-            <!-- Header: Day Badge & Status Pill -->
+            <!-- Header: Day Title & Status Pill -->
             <div class="flex items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800">
-              <div class="flex items-center gap-2.5">
-                <div class="w-8 h-8 rounded-lg bg-slate-100 dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-bold text-xs flex items-center justify-center shrink-0 border border-slate-200/60 dark:border-zinc-700">
-                  D${d.day}
-                </div>
-                <div>
-                  <h3 class="font-bold text-xs sm:text-sm text-slate-900 dark:text-zinc-100 leading-tight">
-                    ${d.title}
-                  </h3>
-                  <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium">
-                    ${d.due_date || 'Lộ trình từ vựng'}
-                  </div>
+              <div>
+                <h3 class="font-bold text-sm sm:text-base text-slate-900 dark:text-zinc-100 leading-tight">
+                  ${d.title}
+                </h3>
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">
+                  ${d.due_date || 'Lộ trình từ vựng'}
                 </div>
               </div>
 
@@ -705,7 +695,6 @@
       const d = daysData[currentDayIndex];
       if (!d) return;
 
-      document.getElementById('modalDayBadge').innerText = 'D' + d.day;
       document.getElementById('modalDayTitle').innerText = d.title;
       if (d.due_date && d.due_date.trim()) {
         document.getElementById('modalDayDue').innerHTML = `<i class="fa-regular fa-clock text-slate-400"></i> ${d.due_date}`;
