@@ -32,41 +32,41 @@
       border: 1px solid #27272a;
     }
 
-    /* Authentic Wayground 5-Color Vertical Cards */
+    /* Authentic Wayground / Quizizz 5-Color Palette */
     .opt-wg-0 {
-      background-color: #889800;
-      border-top: 2px solid #a8bc00;
-      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
+      background-color: #e21b3c;
+      border-top: 2px solid #ff4d6d;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.28);
     }
-    .opt-wg-0:hover { background-color: #97aa00; }
+    .opt-wg-0:hover { background-color: #d01534; }
 
     .opt-wg-1 {
-      background-color: #8a38d5;
-      border-top: 2px solid #a651f4;
-      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
+      background-color: #1368ce;
+      border-top: 2px solid #4895ef;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.28);
     }
-    .opt-wg-1:hover { background-color: #9a47e8; }
+    .opt-wg-1:hover { background-color: #105ab5; }
 
     .opt-wg-2 {
-      background-color: #f05c00;
-      border-top: 2px solid #ff7826;
-      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
+      background-color: #d89e00;
+      border-top: 2px solid #ffd166;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.28);
     }
-    .opt-wg-2:hover { background-color: #ff6805; }
+    .opt-wg-2:hover { background-color: #c48e00; }
 
     .opt-wg-3 {
-      background-color: #00aa88;
-      border-top: 2px solid #17cda6;
-      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
+      background-color: #26890c;
+      border-top: 2px solid #52b788;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.28);
     }
-    .opt-wg-3:hover { background-color: #00be98; }
+    .opt-wg-3:hover { background-color: #207609; }
 
     .opt-wg-4 {
-      background-color: #2c44d8;
-      border-top: 2px solid #4f67f7;
-      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.22);
+      background-color: #864cbf;
+      border-top: 2px solid #b583f7;
+      box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.28);
     }
-    .opt-wg-4:hover { background-color: #3b54ec; }
+    .opt-wg-4:hover { background-color: #753fa9; }
 
     .btn-quizizz-card {
       transition: transform 0.1s ease, filter 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
@@ -253,7 +253,7 @@
   </div>
 
   <!-- SCREEN 3: IN-GAME ARENA -->
-  <main id="gameArena" class="flex-1 flex flex-col justify-between w-full max-w-7xl mx-auto px-2 sm:px-4 pb-2 z-20 hidden min-h-[calc(100vh-65px)]">
+  <main id="gameArena" class="flex-1 flex flex-col justify-between w-full max-w-5xl mx-auto px-3 sm:px-6 pb-3 z-20 hidden min-h-[calc(100vh-65px)]">
     
     <!-- Arena Top Bar -->
     <div class="w-full space-y-2 pt-1">
@@ -307,97 +307,99 @@
       </div>
     </div>
 
-    <!-- Authentic Wayground Question Showcase (Top Half) -->
-    <div id="questionShowcase" class="flex-1 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 my-auto py-3 px-2 sm:px-6 w-full">
-      <!-- White Rounded Image Card (Left side when image exists) -->
-      <div id="arenaImageContainer" class="bg-white rounded-2xl p-2 sm:p-2.5 shadow-2xl relative flex items-center justify-center shrink-0 max-w-[280px] sm:max-w-md hidden">
-        <img id="arenaImage" src="" alt="Question Illustration" class="max-h-36 sm:max-h-48 md:max-h-56 object-contain rounded-lg w-auto cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
-        <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/80 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm" title="Phóng to ảnh">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-      </div>
-
-      <!-- Question Text Prompt (Right side or Centered if no image) -->
-      <div id="arenaPromptBox" class="flex flex-col items-center md:items-start text-center md:text-left space-y-3 max-w-2xl">
-        <div class="flex items-center gap-2">
-          <button id="btnSpeech" type="button" onclick="playArenaSpeech()" class="h-7 px-2.5 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition cursor-pointer" title="Nghe phát âm từ vựng (Phím Space)">
-            <i id="speechIcon" class="fa-solid fa-volume-high text-[11px]"></i>
-            <span id="speechText">Nghe phát âm</span>
+    <!-- Authentic Wayground Question Card (Centered, Balanced, High-Contrast) -->
+    <div class="w-full max-w-4xl mx-auto my-auto py-2 z-20">
+      <div id="questionCard" class="w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all">
+        <!-- White Rounded Image Card (Shown when question has image) -->
+        <div id="arenaImageContainer" class="bg-white rounded-xl p-2 sm:p-2.5 shadow-xl relative flex items-center justify-center shrink-0 max-w-[240px] sm:max-w-[300px] hidden">
+          <img id="arenaImage" src="" alt="Question Illustration" class="max-h-36 sm:max-h-48 object-contain rounded-lg w-auto cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
+          <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/85 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm" title="Phóng to ảnh">
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <span id="arenaPhonetic" class="text-xs font-mono text-zinc-300"></span>
         </div>
 
-        <h2 id="arenaPrompt" class="text-lg sm:text-2xl md:text-3xl font-semibold text-white leading-relaxed tracking-wide">
-          Câu hỏi đang tải...
-        </h2>
-
-        <!-- Hint Box (Toggled by user) -->
-        <div id="arenaHintBox" class="p-3.5 rounded-xl bg-amber-950/60 border border-amber-500/40 text-xs text-amber-200 text-left space-y-1.5 hidden transition w-full">
-          <div class="flex items-center justify-between font-semibold text-amber-300">
-            <span class="flex items-center gap-1.5">
-              <i class="fa-solid fa-lightbulb text-amber-400 text-xs"></i> Gợi ý câu hỏi:
-            </span>
-            <button type="button" onclick="toggleQuestionHint()" class="text-amber-400/80 hover:text-amber-200 text-xs font-normal">Đóng ✕</button>
+        <!-- Question Text Prompt (Right side or Centered if no image) -->
+        <div id="arenaPromptBox" class="flex flex-col items-center text-center space-y-3 flex-1 w-full">
+          <div class="flex items-center gap-2">
+            <button id="btnSpeech" type="button" onclick="playArenaSpeech()" class="h-7 px-3 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition cursor-pointer" title="Nghe phát âm từ vựng (Phím Space)">
+              <i id="speechIcon" class="fa-solid fa-volume-high text-[11px]"></i>
+              <span id="speechText">Nghe phát âm</span>
+            </button>
+            <span id="arenaPhonetic" class="text-xs font-mono text-zinc-300"></span>
           </div>
-          <div id="hintShortText" class="font-medium"></div>
-          <div id="hintDetailsText" class="text-[11px] text-amber-300/80 flex items-center gap-3 flex-wrap"></div>
+
+          <h2 id="arenaPrompt" class="text-lg sm:text-xl md:text-2xl font-bold text-white leading-relaxed tracking-wide">
+            Câu hỏi đang tải...
+          </h2>
+
+          <!-- Hint Box (Toggled by user) -->
+          <div id="arenaHintBox" class="p-3.5 rounded-xl bg-amber-950/60 border border-amber-500/40 text-xs text-amber-200 text-left space-y-1.5 hidden transition w-full">
+            <div class="flex items-center justify-between font-semibold text-amber-300">
+              <span class="flex items-center gap-1.5">
+                <i class="fa-solid fa-lightbulb text-amber-400 text-xs"></i> Gợi ý câu hỏi:
+              </span>
+              <button type="button" onclick="toggleQuestionHint()" class="text-amber-400/80 hover:text-amber-200 text-xs font-normal">Đóng ✕</button>
+            </div>
+            <div id="hintShortText" class="font-medium"></div>
+            <div id="hintDetailsText" class="text-[11px] text-amber-300/80 flex items-center gap-3 flex-wrap"></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- INTERACTION AREA 1: Authentic 5 Tall Vertical Cards (Bottom Half) -->
-    <div id="optionsContainer" class="w-full pb-1 z-20">
-      <div id="optionsGrid" class="grid grid-cols-2 md:flex md:flex-row items-stretch gap-2.5 sm:gap-3.5 w-full h-[44vh] md:h-[48vh] min-h-[200px]">
-        <!-- Option 0: Olive/Lime-Yellow -->
-        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-wg-0 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+    <!-- INTERACTION AREA 1: Authentic 2-Column Grid (Wayground / Quizizz 2x2 Grid) -->
+    <div id="optionsContainer" class="w-full max-w-4xl mx-auto pb-2 z-20">
+      <div id="optionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5 w-full">
+        <!-- Option 0: Crimson / Red -->
+        <button onclick="handleOptionClick(0)" id="optBtn-0" class="opt-wg-0 btn-quizizz-card w-full min-h-[76px] sm:min-h-[88px] rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center">
           <span id="optIcon-0" class="hidden"></span>
-          <img id="optImg-0" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
-          <span id="optText-0" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn A</span>
-          <span role="button" tabindex="0" id="optZoom-0" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-0').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+          <img id="optImg-0" src="" alt="Option" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl border border-white/20 hidden shadow-md shrink-0 mr-3" />
+          <span id="optText-0" class="text-white font-bold text-base sm:text-lg leading-snug break-words flex-1">Lựa chọn A</span>
+          <span role="button" tabindex="0" id="optZoom-0" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-0').src)" class="hidden absolute bottom-2 left-2 w-6 h-6 rounded-md bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[10px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <span id="optCheck-0" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 1: Violet/Purple -->
-        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-wg-1 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+        <!-- Option 1: Royal Blue -->
+        <button onclick="handleOptionClick(1)" id="optBtn-1" class="opt-wg-1 btn-quizizz-card w-full min-h-[76px] sm:min-h-[88px] rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center">
           <span id="optIcon-1" class="hidden"></span>
-          <img id="optImg-1" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
-          <span id="optText-1" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn B</span>
-          <span role="button" tabindex="0" id="optZoom-1" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-1').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+          <img id="optImg-1" src="" alt="Option" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl border border-white/20 hidden shadow-md shrink-0 mr-3" />
+          <span id="optText-1" class="text-white font-bold text-base sm:text-lg leading-snug break-words flex-1">Lựa chọn B</span>
+          <span role="button" tabindex="0" id="optZoom-1" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-1').src)" class="hidden absolute bottom-2 left-2 w-6 h-6 rounded-md bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[10px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <span id="optCheck-1" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 2: Vivid Orange -->
-        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-wg-2 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+        <!-- Option 2: Warm Amber / Yellow-Orange -->
+        <button onclick="handleOptionClick(2)" id="optBtn-2" class="opt-wg-2 btn-quizizz-card w-full min-h-[76px] sm:min-h-[88px] rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center">
           <span id="optIcon-2" class="hidden"></span>
-          <img id="optImg-2" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
-          <span id="optText-2" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn C</span>
-          <span role="button" tabindex="0" id="optZoom-2" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-2').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+          <img id="optImg-2" src="" alt="Option" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl border border-white/20 hidden shadow-md shrink-0 mr-3" />
+          <span id="optText-2" class="text-white font-bold text-base sm:text-lg leading-snug break-words flex-1">Lựa chọn C</span>
+          <span role="button" tabindex="0" id="optZoom-2" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-2').src)" class="hidden absolute bottom-2 left-2 w-6 h-6 rounded-md bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[10px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <span id="optCheck-2" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 3: Teal -->
-        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-wg-3 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center">
+        <!-- Option 3: Forest Green -->
+        <button onclick="handleOptionClick(3)" id="optBtn-3" class="opt-wg-3 btn-quizizz-card w-full min-h-[76px] sm:min-h-[88px] rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center">
           <span id="optIcon-3" class="hidden"></span>
-          <img id="optImg-3" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
-          <span id="optText-3" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn D</span>
-          <span role="button" tabindex="0" id="optZoom-3" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-3').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+          <img id="optImg-3" src="" alt="Option" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl border border-white/20 hidden shadow-md shrink-0 mr-3" />
+          <span id="optText-3" class="text-white font-bold text-base sm:text-lg leading-snug break-words flex-1">Lựa chọn D</span>
+          <span role="button" tabindex="0" id="optZoom-3" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-3').src)" class="hidden absolute bottom-2 left-2 w-6 h-6 rounded-md bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[10px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <span id="optCheck-3" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
         </button>
 
-        <!-- Option 4: Royal Blue -->
-        <button onclick="handleOptionClick(4)" id="optBtn-4" class="opt-wg-4 btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center col-span-2 md:col-span-1">
+        <!-- Option 4: Royal Purple (5th option centered across both columns) -->
+        <button onclick="handleOptionClick(4)" id="optBtn-4" class="opt-wg-4 btn-quizizz-card w-full min-h-[76px] sm:min-h-[88px] rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center col-span-1 sm:col-span-2 sm:max-w-md sm:mx-auto">
           <span id="optIcon-4" class="hidden"></span>
-          <img id="optImg-4" src="" alt="Option" class="max-h-[85%] max-w-[90%] object-contain rounded-xl border border-white/20 hidden shadow-md" />
-          <span id="optText-4" class="text-white font-semibold text-base sm:text-lg md:text-xl leading-snug break-words">Lựa chọn E</span>
-          <span role="button" tabindex="0" id="optZoom-4" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-4').src)" class="hidden absolute bottom-2.5 left-2.5 w-7 h-7 rounded-lg bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[11px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
+          <img id="optImg-4" src="" alt="Option" class="w-16 h-16 sm:w-20 sm:h-20 object-contain rounded-xl border border-white/20 hidden shadow-md shrink-0 mr-3" />
+          <span id="optText-4" class="text-white font-bold text-base sm:text-lg leading-snug break-words flex-1">Lựa chọn E</span>
+          <span role="button" tabindex="0" id="optZoom-4" onclick="event.stopPropagation(); openLightbox(document.getElementById('optImg-4').src)" class="hidden absolute bottom-2 left-2 w-6 h-6 rounded-md bg-black/60 hover:bg-black/85 backdrop-blur-xs flex items-center justify-center text-white text-[10px] z-10 border border-white/20 transition shadow-sm cursor-pointer" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </span>
           <span id="optCheck-4" class="w-6 h-6 rounded-md bg-white text-zinc-900 font-bold flex items-center justify-center text-xs shadow-sm absolute top-3 right-3 hidden">✓</span>
@@ -976,17 +978,24 @@
       const arenaImgBox = document.getElementById('arenaImageContainer');
       const arenaImg = document.getElementById('arenaImage');
       const arenaPromptBox = document.getElementById('arenaPromptBox');
+      const questionCard = document.getElementById('questionCard');
       if (q.image) {
         arenaImg.src = q.image;
         arenaImgBox.classList.remove('hidden');
         if (arenaPromptBox) {
-          arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 max-w-2xl';
+          arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 flex-1 w-full';
+        }
+        if (questionCard) {
+          questionCard.className = 'w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all';
         }
       } else {
         arenaImgBox.classList.add('hidden');
         arenaImg.src = '';
         if (arenaPromptBox) {
-          arenaPromptBox.className = 'flex flex-col items-center text-center space-y-3 max-w-3xl mx-auto';
+          arenaPromptBox.className = 'flex flex-col items-center text-center space-y-3 max-w-2xl mx-auto w-full';
+        }
+        if (questionCard) {
+          questionCard.className = 'w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-6 sm:p-9 shadow-2xl flex flex-col items-center justify-center text-center space-y-3 transition-all';
         }
       }
 
@@ -1023,7 +1032,7 @@
         const isImgOpts = !!q.has_image_options;
         const numOptions = (q.options || []).length;
         const grid = document.getElementById('optionsGrid');
-        grid.className = 'grid grid-cols-2 md:flex md:flex-row items-stretch gap-2.5 sm:gap-3.5 w-full h-[44vh] md:h-[48vh] min-h-[200px]';
+        grid.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5 w-full';
 
         for (let i = 0; i < 5; i++) {
           const btn = document.getElementById(`optBtn-${i}`);
@@ -1039,13 +1048,14 @@
             btn.style.opacity = '1';
             btn.classList.remove('animate-shake', 'is-selected', 'is-correct', 'is-wrong', 'is-dimmed');
 
-            const spanCol = (i === 4 && numOptions === 5) ? ' col-span-2 md:col-span-1' : '';
-            btn.className = `opt-wg-${i} btn-quizizz-card flex-1 h-full rounded-2xl flex flex-col items-center justify-center p-3 sm:p-5 relative cursor-pointer text-center${spanCol}`;
+            const spanCol = (i === 4 && numOptions === 5) ? ' col-span-1 sm:col-span-2 sm:max-w-md sm:mx-auto' : '';
+            const minHeight = isImgOpts ? 'min-h-[130px] sm:min-h-[150px]' : 'min-h-[76px] sm:min-h-[88px]';
+            btn.className = `opt-wg-${i} btn-quizizz-card w-full ${minHeight} rounded-2xl flex items-center justify-center p-3.5 sm:p-4 relative cursor-pointer text-center${spanCol}`;
 
             if (isImgOpts && q.option_images && q.option_images[i]) {
               // Image option mode: Authentic Wayground 4-Picture choice (Only images, NO spoil text!)
               img.src = q.option_images[i];
-              img.className = 'max-h-[85%] max-w-[90%] object-contain rounded-xl shadow-md block';
+              img.className = 'max-h-24 sm:max-h-32 max-w-[85%] object-contain rounded-xl shadow-md block';
               img.classList.remove('hidden');
 
               if (zoom) zoom.classList.remove('hidden');
@@ -1060,6 +1070,7 @@
 
               txt.classList.remove('hidden');
               txt.innerText = q.options[i];
+              txt.className = 'text-white font-bold text-base sm:text-lg md:text-xl leading-snug break-words text-center px-2 flex-1';
 
               if (format === 'multiple_choice') {
                 chk.classList.remove('hidden');
