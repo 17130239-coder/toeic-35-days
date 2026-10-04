@@ -312,7 +312,7 @@
     </div>
 
     <!-- 35 DAYS GRID (Clean Cards, Hairline Borders, Evondev Rule M7 Status Pills) -->
-    <div id="daysGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
+    <div id="daysGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <!-- Injected by JavaScript -->
     </div>
 
@@ -777,29 +777,31 @@
           </div>
 
           <!-- Bottom Actions (Harmonious unified toolbar) -->
-          <div class="pt-3 border-t border-slate-100 dark:border-zinc-800 flex items-center gap-2">
-            <button onclick="openDayModal(${d.day})" class="flex-1 min-w-0 h-8 px-3 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 hover:text-slate-900 dark:text-zinc-200 dark:hover:text-white font-medium text-xs flex items-center justify-center gap-1.5 transition whitespace-nowrap shadow-2xs">
-              <i class="fa-solid fa-book-open text-xs text-slate-400 dark:text-zinc-400 shrink-0"></i>
-              <span class="truncate">Học chi tiết</span>
+          <div class="pt-3 border-t border-slate-100 dark:border-zinc-800 flex items-center justify-between gap-2">
+            <button onclick="openDayModal(${d.day})" class="flex-1 min-w-0 h-8 px-2.5 sm:px-3 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-slate-50 dark:bg-zinc-800 dark:hover:bg-zinc-750 text-slate-700 hover:text-slate-900 dark:text-zinc-200 dark:hover:text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-2xs">
+              <i class="fa-solid fa-book-open text-xs text-orange-500 shrink-0"></i>
+              <span class="whitespace-nowrap">Học chi tiết</span>
             </button>
             
-            ${primaryVideo ? `
-              <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-rose-50 dark:bg-zinc-800 dark:hover:bg-rose-950/30 hover:border-rose-200 dark:hover:border-rose-900/60 text-slate-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Mở Drive Video: ${primaryVideo.title}">
-                <i class="fa-solid fa-video text-xs text-rose-500 dark:text-rose-400"></i>
-              </a>
-            ` : ''}
+            <div class="flex items-center gap-1.5 shrink-0">
+              ${primaryVideo ? `
+                <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-rose-50 dark:bg-zinc-800 dark:hover:bg-rose-950/30 hover:border-rose-200 dark:hover:border-rose-900/60 text-slate-500 hover:text-rose-600 dark:text-zinc-400 dark:hover:text-rose-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Mở Drive Video: ${primaryVideo.title}">
+                  <i class="fa-solid fa-video text-xs text-rose-500 dark:text-rose-400"></i>
+                </a>
+              ` : ''}
 
-            ${primaryCode ? `
-              <a href="wayground.html?gc=${primaryCode}" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Chơi Wayground Arena Offline (PIN: ${primaryCode})">
-                <i class="fa-solid fa-gamepad text-xs text-orange-500 dark:text-orange-400"></i>
-              </a>
-            ` : ''}
+              ${primaryCode ? `
+                <a href="wayground.html?gc=${primaryCode}" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-orange-50 dark:bg-zinc-800 dark:hover:bg-orange-950/30 hover:border-orange-200 dark:hover:border-orange-900/60 text-slate-500 hover:text-orange-600 dark:text-zinc-400 dark:hover:text-orange-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Chơi Wayground Arena Offline (PIN: ${primaryCode})">
+                  <i class="fa-solid fa-gamepad text-xs text-orange-500 dark:text-orange-400"></i>
+                </a>
+              ` : ''}
 
-            ${primaryGameUrl ? `
-              <a href="${primaryGameUrl}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-purple-50 dark:bg-zinc-800 dark:hover:bg-purple-950/30 hover:border-purple-200 dark:hover:border-purple-900/60 text-slate-500 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Mở Quizizz Online chính thức (PIN: ${primaryCode})">
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-purple-500 dark:text-purple-400"></i>
-              </a>
-            ` : ''}
+              ${primaryGameUrl ? `
+                <a href="${primaryGameUrl}" target="_blank" onclick="event.stopPropagation()" class="w-8 h-8 rounded-lg border border-slate-200 dark:border-zinc-700/80 bg-white hover:bg-purple-50 dark:bg-zinc-800 dark:hover:bg-purple-950/30 hover:border-purple-200 dark:hover:border-purple-900/60 text-slate-500 hover:text-purple-600 dark:text-zinc-400 dark:hover:text-purple-400 flex items-center justify-center transition shadow-2xs shrink-0" title="Mở Quizizz Online chính thức (PIN: ${primaryCode})">
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs text-purple-500 dark:text-purple-400"></i>
+                </a>
+              ` : ''}
+            </div>
           </div>
         `;
         grid.appendChild(card);
