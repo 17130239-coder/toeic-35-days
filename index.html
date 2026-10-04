@@ -13,6 +13,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <!-- Canvas Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
   <script>
     tailwind.config = {
       darkMode: 'class',
@@ -459,6 +462,9 @@
             </button>
           </div>
 
+          <!-- Dynamic Score Feedback Banner -->
+          <div id="exerciseScoreBanner" class="hidden"></div>
+
           <div id="modalExerciseList" class="space-y-4"></div>
         </div>
 
@@ -515,7 +521,6 @@
 
   <!-- LOAD DATA FILES -->
   <script src="vocab_data.js"></script>
-  <script src="wayground_data.js"></script>
 
   <!-- APPLICATION SCRIPT -->
   <script>
@@ -979,10 +984,11 @@
         exEl.innerHTML = '';
       }
 
-      if (isFlipped) {
-        document.getElementById('fcInner').classList.remove('rotate-y-180');
-        isFlipped = false;
+      const fcInner = document.getElementById('fcInner');
+      if (fcInner) {
+        fcInner.classList.remove('rotate-y-180');
       }
+      isFlipped = false;
 
       if (document.getElementById('fcAutoAudioToggle').checked) {
         setTimeout(() => speakText(v.term), 250);
@@ -1035,6 +1041,11 @@
 
     // INTERACTIVE EXERCISE A RENDERING & DRAG-AND-DROP LOGIC
     function renderInteractiveExerciseA(d) {
+      const banner = document.getElementById('exerciseScoreBanner');
+      if (banner) {
+        banner.classList.add('hidden');
+        banner.innerHTML = '';
+      }
       const exList = document.getElementById('modalExerciseList');
       exList.innerHTML = '';
       const exQuestions = d.exercise_a && d.exercise_a.questions ? d.exercise_a.questions : [];
@@ -1382,7 +1393,34 @@
         });
       });
 
-      alert(`Bạn đã điền hoàn thành bài tập! Điểm số: ${totalCorrect}/${totalBlanks}`);
+      const banner = document.getElementById('exerciseScoreBanner');
+      if (banner && totalBlanks > 0) {
+        banner.classList.remove('hidden');
+        if (totalCorrect === totalBlanks) {
+          banner.className = 'p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200/80 dark:border-emerald-800/60 text-xs text-emerald-800 dark:text-emerald-300 font-semibold flex items-center justify-between shadow-xs';
+          banner.innerHTML = `
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-emerald-500 text-sm"></i>
+              <span>Xuất sắc! Bạn đã điền chính xác toàn bộ ${totalCorrect}/${totalBlanks} chỗ trống (100%).</span>
+            </div>
+            <button type="button" onclick="this.parentElement.classList.add('hidden')" class="text-emerald-600 hover:text-emerald-800 dark:hover:text-emerald-200 text-xs p-1" title="Đóng"><i class="fa-solid fa-xmark"></i></button>
+          `;
+          if (typeof confetti === 'function') {
+            confetti({ particleCount: 50, spread: 60, origin: { y: 0.6 } });
+          }
+        } else {
+          const pct = Math.round((totalCorrect / totalBlanks) * 100);
+          banner.className = 'p-3 rounded-lg bg-amber-50 dark:bg-amber-950/40 border border-amber-200/80 dark:border-amber-800/60 text-xs text-amber-900 dark:text-amber-200 font-semibold flex items-center justify-between shadow-xs';
+          banner.innerHTML = `
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-info text-amber-500 text-sm"></i>
+              <span>Kết quả: Bạn đã điền đúng ${totalCorrect}/${totalBlanks} chỗ trống (${pct}%). Hãy kiểm tra lại các ô màu đỏ nhé!</span>
+            </div>
+            <button type="button" onclick="this.parentElement.classList.add('hidden')" class="text-amber-600 hover:text-amber-800 dark:hover:text-amber-200 text-xs p-1" title="Đóng"><i class="fa-solid fa-xmark"></i></button>
+          `;
+        }
+        banner.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
     }
 
     // Global Flashcard shortcut
