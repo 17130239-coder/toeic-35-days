@@ -156,6 +156,15 @@
       text-decoration: line-through;
       cursor: default;
     }
+
+    /* Tab Transitions & Animations */
+    .tab-content-anim {
+      animation: tabFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes tabFadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-zinc-950 dark:text-zinc-100 min-h-screen font-sans antialiased transition-colors duration-150">
@@ -261,23 +270,26 @@
     <!-- FILTER & ROADMAP CONTROLS (Segmented Control Pattern) -->
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
       <!-- Week Tabs -->
-      <div class="inline-flex p-1 rounded-lg bg-slate-200/70 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium overflow-x-auto no-scrollbar">
-        <button onclick="filterDays('all', this)" class="week-tab active px-3 py-1.5 rounded-md bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-semibold shadow-xs transition whitespace-nowrap">
+      <div id="weekFilterBar" class="relative inline-flex p-1 rounded-lg bg-slate-200/70 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-medium overflow-x-auto no-scrollbar">
+        <!-- Animated sliding pill background for active tab -->
+        <div id="weekTabPill" class="absolute top-1 bottom-1 transition-all duration-300 ease-out bg-orange-600 rounded-md shadow-xs pointer-events-none z-0"></div>
+
+        <button onclick="filterDays('all', this)" class="week-tab active relative z-10 px-3 py-1.5 rounded-md text-white font-semibold transition-colors duration-200 whitespace-nowrap">
           Tất cả (36 Days)
         </button>
-        <button onclick="filterDays('w1', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+        <button onclick="filterDays('w1', this)" class="week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap">
           Tuần 1 (Day 0-7)
         </button>
-        <button onclick="filterDays('w2', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+        <button onclick="filterDays('w2', this)" class="week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap">
           Tuần 2 (Day 8-14)
         </button>
-        <button onclick="filterDays('w3', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+        <button onclick="filterDays('w3', this)" class="week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap">
           Tuần 3 (Day 15-21)
         </button>
-        <button onclick="filterDays('w4', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+        <button onclick="filterDays('w4', this)" class="week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap">
           Tuần 4 (Day 22-28)
         </button>
-        <button onclick="filterDays('w5', this)" class="week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap">
+        <button onclick="filterDays('w5', this)" class="week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap">
           Tuần 5 (Day 29-35)
         </button>
       </div>
@@ -327,20 +339,23 @@
 
       <!-- Modal Tabs (Hairline Tab bar, Evondev Rule M13) -->
       <div class="px-5 border-b border-slate-200 dark:border-zinc-800 bg-white dark:bg-zinc-900">
-        <div class="flex items-center gap-1 sm:gap-2 overflow-x-auto overflow-y-hidden no-scrollbar -mb-px text-xs font-medium">
-          <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active py-3 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors">
-            <i class="fa-solid fa-book-open text-xs"></i> Từ vựng chi tiết
+        <div id="modalTabBar" class="relative flex items-center gap-1 sm:gap-2 overflow-x-auto overflow-y-hidden no-scrollbar -mb-px text-xs font-medium">
+          <!-- Animated sliding indicator underline -->
+          <div id="modalTabIndicator" class="absolute bottom-0 h-0.5 bg-orange-500 rounded-full transition-all duration-300 ease-out pointer-events-none z-10"></div>
+
+          <button onclick="switchModalTab('vocab')" id="tabBtn-vocab" class="modal-tab-btn active relative z-10 py-3 px-3 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
+            <i class="fa-solid fa-book-open text-xs text-orange-500"></i> Từ vựng chi tiết
           </button>
-          <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+          <button onclick="switchModalTab('flashcard')" id="tabBtn-flashcard" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-layer-group text-slate-400 text-xs"></i> Flashcards 3D
           </button>
-          <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+          <button onclick="switchModalTab('exercise')" id="tabBtn-exercise" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-pen-to-square text-slate-400 text-xs"></i> Bài tập điền câu
           </button>
-          <button onclick="switchModalTab('raw')" id="tabBtn-raw" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+          <button onclick="switchModalTab('raw')" id="tabBtn-raw" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-file-lines text-slate-400 text-xs"></i> Bài đăng gốc
           </button>
-          <button onclick="switchModalTab('files')" id="tabBtn-files" class="modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors">
+          <button onclick="switchModalTab('files')" id="tabBtn-files" class="modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200">
             <i class="fa-solid fa-paperclip text-slate-400 text-xs"></i> Tệp đính kèm
           </button>
         </div>
@@ -661,13 +676,29 @@
       document.getElementById('overallProgressText').innerText = `${pct}% (${masteredCount}/${daysData.length} Ngày)`;
     }
 
+    function updateWeekTabPill(btn, smooth = true) {
+      const pill = document.getElementById('weekTabPill');
+      if (!pill || !btn) return;
+      if (!smooth) {
+        pill.style.transition = 'none';
+        pill.style.left = btn.offsetLeft + 'px';
+        pill.style.width = btn.offsetWidth + 'px';
+        void pill.offsetWidth;
+        pill.style.transition = '';
+      } else {
+        pill.style.left = btn.offsetLeft + 'px';
+        pill.style.width = btn.offsetWidth + 'px';
+      }
+    }
+
     // Filter Days by Week
     function filterDays(weekKey, clickedBtn) {
       document.querySelectorAll('.week-tab').forEach(b => {
-        b.className = 'week-tab px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition whitespace-nowrap';
+        b.className = 'week-tab relative z-10 px-3 py-1.5 rounded-md text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200 transition-colors duration-200 whitespace-nowrap';
       });
       if (clickedBtn) {
-        clickedBtn.className = 'week-tab active px-3 py-1.5 rounded-md bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-semibold shadow-xs transition whitespace-nowrap';
+        clickedBtn.className = 'week-tab active relative z-10 px-3 py-1.5 rounded-md text-white font-semibold transition-colors duration-200 whitespace-nowrap';
+        updateWeekTabPill(clickedBtn, true);
       }
 
       let filtered = daysData;
@@ -700,6 +731,9 @@
       loadDayModalContent();
       document.getElementById('dayModal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => {
+        updateModalTabIndicator(currentModalTab || 'vocab', false);
+      });
     }
 
     function closeDayModal() {
@@ -855,23 +889,54 @@
         formBox.innerHTML = '';
       }
 
-      switchModalTab('vocab');
+      switchModalTab('vocab', false);
     }
 
     // Modal Tabs Switching
-    function switchModalTab(tabKey) {
+    let currentModalTab = 'vocab';
+
+    function updateModalTabIndicator(tabKey, smooth = true) {
+      const indicator = document.getElementById('modalTabIndicator');
+      const btn = document.getElementById(`tabBtn-${tabKey}`);
+      if (!indicator || !btn) return;
+      if (!smooth) {
+        indicator.style.transition = 'none';
+        indicator.style.left = btn.offsetLeft + 'px';
+        indicator.style.width = btn.offsetWidth + 'px';
+        void indicator.offsetWidth;
+        indicator.style.transition = '';
+      } else {
+        indicator.style.left = btn.offsetLeft + 'px';
+        indicator.style.width = btn.offsetWidth + 'px';
+      }
+    }
+
+    function switchModalTab(tabKey, smoothIndicator = true) {
+      currentModalTab = tabKey;
       const tabs = ['vocab', 'flashcard', 'exercise', 'raw', 'files'];
       tabs.forEach(t => {
         const btn = document.getElementById(`tabBtn-${t}`);
         const content = document.getElementById(`tabContent-${t}`);
+        if (!btn || !content) return;
+        const icon = btn.querySelector('i');
         if (t === tabKey) {
-          btn.className = 'modal-tab-btn active py-3 px-3 border-b-2 border-orange-500 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors';
+          btn.className = 'modal-tab-btn active relative z-10 py-3 px-3 text-orange-600 dark:text-orange-400 font-semibold flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200';
+          if (icon) {
+            icon.className = icon.className.replace(/text-slate-\d+|text-zinc-\d+/, '') + ' text-orange-500';
+          }
           content.classList.remove('hidden');
+          content.classList.remove('tab-content-anim');
+          void content.offsetWidth;
+          content.classList.add('tab-content-anim');
         } else {
-          btn.className = 'modal-tab-btn py-3 px-3 border-b-2 border-transparent text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 flex items-center gap-1.5 whitespace-nowrap transition-colors';
+          btn.className = 'modal-tab-btn relative z-10 py-3 px-3 text-slate-500 hover:text-slate-800 dark:text-zinc-400 dark:hover:text-zinc-200 font-medium flex items-center gap-1.5 whitespace-nowrap transition-colors duration-200';
+          if (icon) {
+            icon.className = icon.className.replace('text-orange-500', 'text-slate-400');
+          }
           content.classList.add('hidden');
         }
       });
+      updateModalTabIndicator(tabKey, smoothIndicator);
     }
 
     // Flashcard logic
@@ -1386,8 +1451,21 @@
       }
     });
 
+    // Window Resize handler to reposition tab indicators
+    window.addEventListener('resize', () => {
+      const activeWeekTab = document.querySelector('.week-tab.active');
+      if (activeWeekTab) updateWeekTabPill(activeWeekTab, false);
+      if (!document.getElementById('dayModal').classList.contains('hidden')) {
+        updateModalTabIndicator(currentModalTab, false);
+      }
+    });
+
     // Initial render
     renderDaysGrid();
+    setTimeout(() => {
+      const activeWeekTab = document.querySelector('.week-tab.active');
+      if (activeWeekTab) updateWeekTabPill(activeWeekTab, false);
+    }, 50);
   </script>
 </body>
 </html>
