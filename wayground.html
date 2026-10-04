@@ -220,23 +220,30 @@
 
       <div class="pt-2 border-t border-zinc-800">
         <button onclick="toggleGameDrawer()" class="text-xs font-medium text-zinc-400 hover:text-white flex items-center justify-center gap-1.5 mx-auto transition">
-          <i class="fa-solid fa-list-check text-xs"></i> Hoặc chọn từ 26 game chính thức
+          <i class="fa-solid fa-list-check text-xs"></i> <span id="btnDrawerCountText">Xem toàn bộ 170 game trong hệ thống</span>
         </button>
       </div>
     </div>
 
-    <!-- 26 OFFICIAL GAME CODES DRAWER -->
+    <!-- OFFICIAL GAME CODES DRAWER -->
     <div id="gameDrawer" class="wg-card w-full rounded-xl p-4 shadow-xs space-y-3 max-h-80 overflow-y-auto hidden">
       <div class="flex items-center justify-between pb-2.5 border-b border-zinc-800">
         <span class="text-xs sm:text-sm font-semibold text-zinc-200 flex items-center gap-1.5 leading-none">
           <i class="fa-solid fa-layer-group text-orange-400 text-xs"></i>
-          <span>Danh sách 26 game Wayground</span>
+          <span id="drawerTitleText">Danh sách kho 170 game Wayground</span>
         </span>
         <button type="button" onclick="toggleGameDrawer()" class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-zinc-800/80 hover:bg-zinc-800 text-zinc-400 hover:text-zinc-200 text-xs font-medium border border-zinc-700/60 transition leading-none">
           <i class="fa-solid fa-xmark text-xs leading-none"></i>
           <span class="leading-none">Đóng</span>
         </button>
       </div>
+
+      <!-- Quick Search Filter -->
+      <div class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-xs text-zinc-500"></i>
+        <input type="text" id="drawerSearchInput" placeholder="Tìm theo tên bài, Day hoặc mã PIN..." oninput="filterDrawerGames(this.value)" class="w-full pl-8 pr-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-700/80 text-xs text-white placeholder:text-zinc-500 focus:outline-none focus:border-orange-500 transition" />
+      </div>
+
       <div id="drawerGamesList" class="grid grid-cols-1 sm:grid-cols-2 gap-2"></div>
     </div>
 
@@ -829,6 +836,11 @@
     }
 
     function initDrawerGames() {
+      const btnTxt = document.getElementById('btnDrawerCountText');
+      if (btnTxt) btnTxt.innerText = `Xem toàn bộ ${quizzesData.length} game trong hệ thống`;
+      const titleTxt = document.getElementById('drawerTitleText');
+      if (titleTxt) titleTxt.innerText = `Danh sách kho ${quizzesData.length} game Wayground`;
+
       const list = document.getElementById('drawerGamesList');
       list.innerHTML = '';
       let history = {};
@@ -836,7 +848,6 @@
 
       quizzesData.forEach(g => {
         const item = document.createElement('div');
-        item.className = 'p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-3 cursor-pointer transition group';
         item.onclick = () => {
           document.getElementById('pinInput').value = g.game_code;
           updatePinPreview(g.game_code);
@@ -844,7 +855,9 @@
         };
         const displayName = getGameDisplayName(g);
         const record = history[g.game_code];
-        const recordBadge = record ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">✓ ${record.bestAccuracy}% (${record.highScore.toLocaleString()}đ)</span>` : '';
+        const recordBadge = record ? `<span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">✓ ${record.bestAccuracy}% (${(record.highScore || record.bestScore || 0).toLocaleString()}đ)</span>` : '';
+        item.className = 'drawer-game-item p-3 rounded-xl bg-zinc-900 hover:bg-zinc-800/80 border border-zinc-800 hover:border-zinc-700 flex items-center justify-between gap-3 cursor-pointer transition group';
+        item.setAttribute('data-search', `${displayName} ${g.game_code}`.toLowerCase());
 
         item.innerHTML = `
           <div class="flex-1 min-w-0 text-left">
@@ -861,6 +874,15 @@
           <i class="fa-solid fa-chevron-right text-zinc-600 group-hover:text-orange-400 text-xs transition shrink-0"></i>
         `;
         list.appendChild(item);
+      });
+    }
+
+    function filterDrawerGames(query) {
+      const q = (query || '').toLowerCase().trim();
+      const items = document.querySelectorAll('.drawer-game-item');
+      items.forEach(it => {
+        const text = it.getAttribute('data-search') || '';
+        it.style.display = !q || text.includes(q) ? '' : 'none';
       });
     }
 
@@ -890,7 +912,11 @@
 
     function toggleGameDrawer() {
       const d = document.getElementById('gameDrawer');
+      const willOpen = d.classList.contains('hidden');
       d.classList.toggle('hidden');
+      if (willOpen) {
+        initDrawerGames();
+      }
     }
 
     function handleJoinGame() {
@@ -906,7 +932,7 @@
       }
 
       if (!game) {
-        alert('Không tìm thấy game nào khớp với mã PIN: "' + pin + '".\nVui lòng kiểm tra lại hoặc chọn từ danh sách 26 game chính thức bên dưới!');
+        alert('Không tìm thấy game nào khớp với mã PIN: "' + pin + '".\nVui lòng kiểm tra lại hoặc chọn từ danh sách ' + quizzesData.length + ' game trong hệ thống!');
         return;
       }
 
@@ -1516,7 +1542,8 @@
           const code = currentGame.game_code;
           const prev = hist[code] || { highScore: 0, bestAccuracy: 0, plays: 0 };
           hist[code] = {
-            highScore: Math.max(prev.highScore || 0, score),
+            highScore: Math.max(prev.highScore || prev.bestScore || 0, score),
+            bestScore: Math.max(prev.highScore || prev.bestScore || 0, score),
             bestAccuracy: Math.max(prev.bestAccuracy || 0, accuracy),
             lastPlayed: new Date().toISOString(),
             plays: (prev.plays || 0) + 1,

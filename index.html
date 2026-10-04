@@ -738,7 +738,7 @@
                 <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5 flex items-center gap-1.5 flex-wrap">
                   <span>${d.due_date || 'Lộ trình từ vựng'}</span>
                   ${wgRecord ? `
-                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200/80 dark:border-emerald-800/60" title="Đã chơi Wayground Arena (${wgRecord.plays || 1} lần, Điểm cao nhất: ${wgRecord.bestScore || 0}đ)">
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border border-emerald-200/80 dark:border-emerald-800/60" title="Đã chơi Wayground Arena (${wgRecord.plays || 1} lần, Điểm cao nhất: ${(wgRecord.highScore || wgRecord.bestScore || 0).toLocaleString()}đ)">
                       <i class="fa-solid fa-trophy text-[9px] text-amber-500"></i> ${wgRecord.bestAccuracy}%
                     </span>
                   ` : ''}
@@ -2292,6 +2292,16 @@
       const activeWeekTab = document.querySelector('.week-tab.active');
       if (activeWeekTab) updateWeekTabPill(activeWeekTab, false);
     }, 50);
+
+    // Auto-refresh stats when user returns to this tab
+    window.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') {
+        renderDaysGrid();
+        if (!document.getElementById('dayModal').classList.contains('hidden') && currentDayIndex >= 0) {
+          loadDayModalContent(currentDayIndex);
+        }
+      }
+    });
 
     // Service Worker Registration for PWA & Offline
     if ('serviceWorker' in navigator) {
