@@ -309,17 +309,20 @@
 
     <!-- Authentic Wayground Question Card (Centered, Balanced, High-Contrast) -->
     <div class="w-full max-w-4xl mx-auto my-auto py-2 z-20">
-      <div id="questionCard" class="w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all">
-        <!-- White Rounded Image Card (Shown when question has image) -->
-        <div id="arenaImageContainer" class="bg-white rounded-xl p-2 sm:p-2.5 shadow-xl relative flex items-center justify-center shrink-0 max-w-[240px] sm:max-w-[300px] hidden">
-          <img id="arenaImage" src="" alt="Question Illustration" class="max-h-36 sm:max-h-48 object-contain rounded-lg w-auto cursor-pointer" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
-          <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/85 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm" title="Phóng to ảnh">
+      <div id="questionCard" class="w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8">
+        <!-- White Rounded Image Card (Fixed reserved size to eliminate layout shift) -->
+        <div id="arenaImageContainer" class="w-[200px] h-[140px] sm:w-[260px] sm:h-[180px] md:w-[280px] md:h-[190px] shrink-0 bg-white rounded-xl p-2 shadow-xl relative flex items-center justify-center overflow-hidden hidden">
+          <div id="arenaImgSkeleton" class="absolute inset-0 bg-slate-100 flex items-center justify-center pointer-events-none hidden">
+            <i class="fa-regular fa-image text-slate-300 text-2xl animate-pulse"></i>
+          </div>
+          <img id="arenaImage" src="" alt="Question Illustration" class="w-full h-full object-contain rounded-lg cursor-pointer transition-opacity duration-200" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
+          <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/85 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm z-10" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
 
         <!-- Question Text Prompt (Right side or Centered if no image) -->
-        <div id="arenaPromptBox" class="flex flex-col items-center text-center space-y-3 flex-1 w-full">
+        <div id="arenaPromptBox" class="flex flex-col items-center text-center space-y-3 flex-1 min-w-0 w-full">
           <div class="flex items-center gap-2">
             <button id="btnSpeech" type="button" onclick="playArenaSpeech()" class="h-7 px-3 rounded-lg border border-white/20 bg-white/10 hover:bg-white/20 text-white font-medium text-xs flex items-center gap-1.5 transition cursor-pointer" title="Nghe phát âm từ vựng (Phím Space)">
               <i id="speechIcon" class="fa-solid fa-volume-high text-[11px]"></i>
@@ -892,6 +895,22 @@
 
       currentQuestions.forEach(q => q.time_limit = timeSetting);
 
+      // Preload all question and option images into browser memory to eliminate image pop/jitter
+      currentQuestions.forEach(q => {
+        if (q.image) {
+          const preImg = new Image();
+          preImg.src = q.image;
+        }
+        if (q.option_images && Array.isArray(q.option_images)) {
+          q.option_images.forEach(imgUrl => {
+            if (imgUrl) {
+              const preImg = new Image();
+              preImg.src = imgUrl;
+            }
+          });
+        }
+      });
+
       score = 0;
       streak = 0;
       maxStreak = 0;
@@ -977,16 +996,36 @@
       // Populate Question Illustration Media
       const arenaImgBox = document.getElementById('arenaImageContainer');
       const arenaImg = document.getElementById('arenaImage');
+      const arenaImgSkeleton = document.getElementById('arenaImgSkeleton');
       const arenaPromptBox = document.getElementById('arenaPromptBox');
       const questionCard = document.getElementById('questionCard');
+
       if (q.image) {
-        arenaImg.src = q.image;
         arenaImgBox.classList.remove('hidden');
+        arenaImg.classList.add('opacity-0');
+        
+        arenaImg.onload = () => {
+          arenaImg.classList.remove('opacity-0');
+          if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
+        };
+        arenaImg.onerror = () => {
+          arenaImg.classList.remove('opacity-0');
+          if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
+        };
+
+        arenaImg.src = q.image;
+        if (arenaImg.complete && arenaImg.naturalWidth > 0) {
+          arenaImg.classList.remove('opacity-0');
+          if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
+        } else {
+          if (arenaImgSkeleton) arenaImgSkeleton.classList.remove('hidden');
+        }
+
         if (arenaPromptBox) {
-          arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 flex-1 w-full';
+          arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 flex-1 min-w-0 w-full';
         }
         if (questionCard) {
-          questionCard.className = 'w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all';
+          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8';
         }
       } else {
         arenaImgBox.classList.add('hidden');
@@ -995,7 +1034,7 @@
           arenaPromptBox.className = 'flex flex-col items-center text-center space-y-3 max-w-2xl mx-auto w-full';
         }
         if (questionCard) {
-          questionCard.className = 'w-full rounded-2xl bg-[#191029]/95 border border-white/10 p-6 sm:p-9 shadow-2xl flex flex-col items-center justify-center text-center space-y-3 transition-all';
+          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-6 sm:p-9 shadow-2xl flex flex-col items-center justify-center text-center space-y-3';
         }
       }
 
@@ -1054,8 +1093,11 @@
 
             if (isImgOpts && q.option_images && q.option_images[i]) {
               // Image option mode: Authentic Wayground 4-Picture choice (Only images, NO spoil text!)
+              img.classList.add('opacity-0');
+              img.onload = () => img.classList.remove('opacity-0');
               img.src = q.option_images[i];
-              img.className = 'max-h-24 sm:max-h-32 max-w-[85%] object-contain rounded-xl shadow-md block';
+              if (img.complete && img.naturalWidth > 0) img.classList.remove('opacity-0');
+              img.className = 'max-h-24 sm:max-h-32 max-w-[85%] object-contain rounded-xl shadow-md block transition-opacity duration-150';
               img.classList.remove('hidden');
 
               if (zoom) zoom.classList.remove('hidden');
