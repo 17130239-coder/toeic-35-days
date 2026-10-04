@@ -476,6 +476,54 @@ def extract_all():
 
     days_data.sort(key=lambda d: d["day"])
 
+    # Google Drive Class Recordings (Video Buổi Học)
+    BUOI_DATA = {
+        21: {'buoi': 21, 'type': 'RC', 'date': '12-8-2026', 'title': 'VIDEO BUỔI 21 (RC) (12-8-2026)', 'folder_id': '1VjyDpCpMVmappTv6MeW9H8ANgfxdrrfr', 'url': 'https://drive.google.com/drive/folders/1VjyDpCpMVmappTv6MeW9H8ANgfxdrrfr'},
+        22: {'buoi': 22, 'type': 'LC', 'date': '14-8-2026', 'title': 'VIDEO BUỔI 22 (LC) (14-8-2026)', 'folder_id': '1Gds-rStlqg4yZz4dDJUQhQQTgk-va7hE', 'url': 'https://drive.google.com/drive/folders/1Gds-rStlqg4yZz4dDJUQhQQTgk-va7hE'},
+        23: {'buoi': 23, 'type': 'RC', 'date': '17-8-2026', 'title': 'VIDEO BUỔI 23 (RC) (17-8-2026)', 'folder_id': '17A1AafrPbRQENLagyvSqXo8PCJhe1AGs', 'url': 'https://drive.google.com/drive/folders/17A1AafrPbRQENLagyvSqXo8PCJhe1AGs'},
+        24: {'buoi': 24, 'type': 'LC', 'date': '19-8-2026', 'title': 'VIDEO BUỔI 24 (LC) (19-8-2026)', 'folder_id': '1Li18GUKY0l2axoGg-2zSIVYOYuE2ogI9', 'url': 'https://drive.google.com/drive/folders/1Li18GUKY0l2axoGg-2zSIVYOYuE2ogI9'},
+        25: {'buoi': 25, 'type': 'RC', 'date': '21-8-2025', 'title': 'VIDEO BUỔI 25 (RC) (21-8-2025)', 'folder_id': '1S79Uyk9q0hlRVC7ZsDb4EkYB2UUmoBWP', 'url': 'https://drive.google.com/drive/folders/1S79Uyk9q0hlRVC7ZsDb4EkYB2UUmoBWP'},
+        26: {'buoi': 26, 'type': 'LC', 'date': '24-8-2025', 'title': 'VIDEO BUỔI 26 (LC) (24-8-2025)', 'folder_id': '1n-Fcmxqi8OfL1Cia-cvN77ombIe2TQqA', 'url': 'https://drive.google.com/drive/folders/1n-Fcmxqi8OfL1Cia-cvN77ombIe2TQqA'},
+        27: {'buoi': 27, 'type': 'RC', 'date': '26-8-2026', 'title': 'VIDEO BUỔI 27 (RC) (26-8-2026)', 'folder_id': '1WdAXXWa4JOgwOd6hfAZXes20eN1diVp0', 'url': 'https://drive.google.com/drive/folders/1WdAXXWa4JOgwOd6hfAZXes20eN1diVp0'},
+        28: {'buoi': 28, 'type': 'LC', 'date': '28-8-2026', 'title': 'VIDEO BUỔI 28 (LC) (28-8-2026)', 'folder_id': '1eavdLN9HgGWK2KHsJw6JCr9eFf3JrM2k', 'url': 'https://drive.google.com/drive/folders/1eavdLN9HgGWK2KHsJw6JCr9eFf3JrM2k'},
+        29: {'buoi': 29, 'type': 'RC', 'date': '31-8-2025', 'title': 'VIDEO BUỔI 29 (RC) (31-8-2025)', 'folder_id': '12EFD87yrVNDFGCJ8zOCiSTfAoF-V65wT', 'url': 'https://drive.google.com/drive/folders/12EFD87yrVNDFGCJ8zOCiSTfAoF-V65wT'},
+        30: {'buoi': 30, 'type': 'LC', 'date': '4-9-2026', 'title': 'VIDEO BUỔI 30 (LC) (4-9-2026)', 'folder_id': '1EFj7RzybHiM9zoeQIhcqWS69YMh7gEAg', 'url': 'https://drive.google.com/drive/folders/1EFj7RzybHiM9zoeQIhcqWS69YMh7gEAg'},
+        31: {'buoi': 31, 'type': 'RC', 'date': '7-9-2026', 'title': 'VIDEO BUỔI 31 (RC) (7-9-2026)', 'folder_id': '1Rztcd3MiAorx5RwkvWOV6vR1YsZSbWgX', 'url': 'https://drive.google.com/drive/folders/1Rztcd3MiAorx5RwkvWOV6vR1YsZSbWgX'},
+        32: {'buoi': 32, 'type': 'LC', 'date': '9-9-2026', 'title': 'VIDEO BUỔI 32 (LC) (9-9-2026)', 'folder_id': '1_Modv2d4Ic-En8FWLNiV6nfDA3520Yi0', 'url': 'https://drive.google.com/drive/folders/1_Modv2d4Ic-En8FWLNiV6nfDA3520Yi0'},
+        33: {'buoi': 33, 'type': 'RC', 'date': '11-9-2026', 'title': 'VIDEO BUỔI 33 (RC) (11-9-2026)', 'folder_id': '121UPPRMgAY6AR-SPSMo02G6QWL7EmsVu', 'url': 'https://drive.google.com/drive/folders/121UPPRMgAY6AR-SPSMo02G6QWL7EmsVu'},
+        34: {'buoi': 34, 'type': 'RC', 'date': '14-9-2026', 'title': 'VIDEO BUỔI 34 (RC) (14-9-2026)', 'folder_id': '1RRoy-txbrfX8pU1rgZCVlC0SsRyc4GW3', 'url': 'https://drive.google.com/drive/folders/1RRoy-txbrfX8pU1rgZCVlC0SsRyc4GW3'},
+        35: {'buoi': 35, 'type': 'LC', 'date': '16-9-2026', 'title': 'VIDEO BUỔI 35 (LC) (16-9-2026)', 'folder_id': '1UCgoOGQxhbXxh1y7U1H4S2ahcspzz6Ij', 'url': 'https://drive.google.com/drive/folders/1UCgoOGQxhbXxh1y7U1H4S2ahcspzz6Ij'},
+        36: {'buoi': 36, 'type': 'RC', 'date': '18-9-2026', 'title': 'VIDEO BUỔI 36 (RC) (18-9-2026)', 'folder_id': '1DvxUmtUIC_uUXungDV46nR26Yr6XEI19', 'url': 'https://drive.google.com/drive/folders/1DvxUmtUIC_uUXungDV46nR26Yr6XEI19'},
+        37: {'buoi': 37, 'type': 'RC', 'date': '21-9-2026', 'title': 'VIDEO BUỔI 37 (RC) (21-9-2026)', 'folder_id': '1LPTfEpdCRd13b9qbf8rfneQOxPrnMHz6', 'url': 'https://drive.google.com/drive/folders/1LPTfEpdCRd13b9qbf8rfneQOxPrnMHz6'}
+    }
+
+    for d in days_data:
+        day_num = d["day"]
+        d_files = d.get("drive_files", [])
+        if day_num in BUOI_DATA and day_num < 35:
+            b = BUOI_DATA[day_num]
+            d["video_recording"] = b
+            d["video_recordings"] = [b]
+            existing_urls = {f.get("url") for f in d_files}
+            if b["url"] not in existing_urls:
+                d_files.insert(0, {"name": f"Video Buổi Học: {b['title']}", "url": b["url"], "type": "video"})
+        elif day_num == 35:
+            b35 = BUOI_DATA[35]
+            b36 = BUOI_DATA[36]
+            b37 = BUOI_DATA[37]
+            d["video_recording"] = b35
+            d["video_recordings"] = [b35, b36, b37]
+            existing_urls = {f.get("url") for f in d_files}
+            to_add = [
+                {"name": f"Video Buổi Học: {b35['title']}", "url": b35["url"], "type": "video"},
+                {"name": f"Video Buổi Học (Ôn thi): {b36['title']}", "url": b36["url"], "type": "video"},
+                {"name": f"Video Buổi Học (Ôn thi): {b37['title']}", "url": b37["url"], "type": "video"}
+            ]
+            for item in reversed(to_add):
+                if item["url"] not in existing_urls:
+                    d_files.insert(0, item)
+        d["drive_files"] = d_files
+
     # Flat vocabulary list
     all_vocab = []
     vocab_by_day = {}

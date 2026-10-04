@@ -330,6 +330,12 @@
         </div>
 
         <div class="flex items-center gap-2">
+          <!-- Video Drive button from modal -->
+          <a id="modalVideoBtn" href="#" target="_blank" style="display: none;" class="h-8 px-3 rounded-lg bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs" title="Xem video ghi hình buổi học trên Google Drive">
+            <i class="fa-solid fa-video text-rose-200"></i>
+            <span class="hidden sm:inline">Video Buổi Học</span>
+          </a>
+
           <!-- Wayground direct play button from modal -->
           <a id="modalWaygroundBtn" href="#" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white text-xs font-semibold flex items-center gap-1.5 transition shadow-xs">
             <i class="fa-solid fa-gamepad text-orange-200"></i>
@@ -574,6 +580,8 @@
         const wgCodes = d.wayground && d.wayground.game_codes ? d.wayground.game_codes : [];
         const primaryCode = wgCodes.length > 0 ? wgCodes[0] : null;
 
+        const primaryVideo = (d.video_recordings && d.video_recordings.length > 0) ? d.video_recordings[0] : (d.video_recording || null);
+
         const card = document.createElement('div');
         card.className = 'bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-xl p-4 sm:p-5 shadow-xs hover:border-slate-300 dark:hover:border-zinc-700 transition flex flex-col justify-between';
         
@@ -585,8 +593,13 @@
                 <h3 class="font-bold text-sm sm:text-base text-slate-900 dark:text-zinc-100 leading-tight">
                   ${d.title}
                 </h3>
-                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5">
-                  ${d.due_date || 'Lộ trình từ vựng'}
+                <div class="text-[11px] text-slate-500 dark:text-zinc-400 font-medium mt-0.5 flex items-center gap-1.5 flex-wrap">
+                  <span>${d.due_date || 'Lộ trình từ vựng'}</span>
+                  ${primaryVideo ? `
+                    <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-rose-50 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border border-rose-200 dark:border-rose-900/60" title="${primaryVideo.title}">
+                      <i class="fa-solid fa-video text-[9px]"></i> Buổi ${primaryVideo.buoi}
+                    </span>
+                  ` : ''}
                 </div>
               </div>
 
@@ -621,6 +634,13 @@
               <i class="fa-solid fa-book-open text-xs"></i> Học chi tiết
             </button>
             
+            ${primaryVideo ? `
+              <a href="${primaryVideo.url}" target="_blank" onclick="event.stopPropagation()" class="h-8 px-2.5 rounded-lg bg-rose-50 hover:bg-rose-100 dark:bg-rose-950/40 dark:hover:bg-rose-900/60 border border-rose-200 dark:border-rose-800 text-rose-700 dark:text-rose-300 font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Mở Drive Video: ${primaryVideo.title}">
+                <i class="fa-solid fa-video text-rose-500"></i>
+                <span class="hidden sm:inline">Video</span>
+              </a>
+            ` : ''}
+
             ${primaryCode ? `
               <a href="wayground.html?gc=${primaryCode}" target="_blank" class="h-8 px-3 rounded-lg bg-orange-600 hover:bg-orange-500 text-white font-medium text-xs flex items-center justify-center gap-1.5 transition shadow-xs" title="Vào Game Wayground PIN: ${primaryCode}">
                 <i class="fa-solid fa-gamepad text-orange-200"></i>
@@ -782,6 +802,17 @@
         wgBtn.style.display = 'none';
       }
 
+      // Video Drive btn
+      const videoBtn = document.getElementById('modalVideoBtn');
+      const primaryModalVideo = (d.video_recordings && d.video_recordings.length > 0) ? d.video_recordings[0] : (d.video_recording || null);
+      if (primaryModalVideo && primaryModalVideo.url) {
+        videoBtn.href = primaryModalVideo.url;
+        videoBtn.title = `Mở thư mục Google Drive: ${primaryModalVideo.title}`;
+        videoBtn.style.display = 'flex';
+      } else {
+        videoBtn.style.display = 'none';
+      }
+
       // Prev / Next button states
       document.getElementById('modalPrevDayBtn').disabled = currentDayIndex === 0;
       document.getElementById('modalNextDayBtn').disabled = currentDayIndex === daysData.length - 1;
@@ -868,7 +899,38 @@
       // Drive Files
       const filesList = document.getElementById('modalFilesList');
       filesList.innerHTML = '';
-      (d.drive_files || []).forEach(f => {
+
+      const recordings = d.video_recordings || (d.video_recording ? [d.video_recording] : []);
+      if (recordings.length > 0) {
+        const vidSection = document.createElement('div');
+        vidSection.className = 'col-span-1 sm:col-span-2 mb-2 p-3.5 rounded-xl bg-rose-50/80 dark:bg-rose-950/30 border border-rose-200 dark:border-rose-900/60 space-y-2';
+        vidSection.innerHTML = `
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-rose-900 dark:text-rose-200 flex items-center gap-2">
+              <i class="fa-solid fa-video text-rose-600"></i> Video Ghi Hình Buổi Học (Google Drive)
+            </span>
+            <span class="text-[11px] font-semibold text-rose-600 dark:text-rose-400 bg-rose-100 dark:bg-rose-900/60 px-2 py-0.5 rounded-full">${recordings.length} thư mục</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-1">
+            ${recordings.map(vr => `
+              <a href="${vr.url}" target="_blank" class="p-2.5 rounded-lg bg-white dark:bg-zinc-900 border border-rose-200 dark:border-rose-900 hover:border-rose-300 dark:hover:border-rose-700 flex items-center gap-2.5 text-xs font-semibold text-rose-900 dark:text-rose-200 transition group shadow-xs">
+                <div class="w-7 h-7 rounded-md bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center shrink-0 text-rose-600 group-hover:scale-105 transition-transform">
+                  <i class="fa-solid fa-play text-xs"></i>
+                </div>
+                <div class="truncate flex-1">
+                  <div class="truncate">${vr.title}</div>
+                  <div class="text-[10px] text-slate-500 dark:text-zinc-400 font-normal">Buổi ${vr.buoi} • ${vr.type} • ${vr.date}</div>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square text-rose-400 text-xs shrink-0"></i>
+              </a>
+            `).join('')}
+          </div>
+        `;
+        filesList.appendChild(vidSection);
+      }
+
+      const otherFiles = (d.drive_files || []).filter(f => !f.name.startsWith('Video Buổi Học'));
+      otherFiles.forEach(f => {
         const item = document.createElement('a');
         item.href = f.url;
         item.target = '_blank';
@@ -883,7 +945,7 @@
         `;
         filesList.appendChild(item);
       });
-      if ((d.drive_files || []).length === 0) {
+      if (recordings.length === 0 && otherFiles.length === 0) {
         filesList.innerHTML = `<div class="text-xs text-slate-400 col-span-2">Không có tệp Google Drive đính kèm.</div>`;
       }
 
