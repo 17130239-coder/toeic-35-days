@@ -159,11 +159,14 @@
 
     /* Tab Transitions & Animations */
     .tab-content-anim {
-      animation: tabFadeIn 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+      animation: tabFadeIn 0.18s ease-out;
     }
     @keyframes tabFadeIn {
-      from { opacity: 0; transform: translateY(4px); }
-      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    #modalBodyContent {
+      scrollbar-gutter: stable;
     }
   </style>
 </head>
@@ -310,7 +313,7 @@
 
   <!-- DAY DETAIL MODAL (Evondev Overlay Pattern: Rule 10, Rule 11) -->
   <div id="dayModal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-3 sm:p-6 hidden">
-    <div class="bg-white dark:bg-zinc-900 w-full max-w-4xl max-h-[90vh] rounded-xl shadow-xl border border-slate-200 dark:border-zinc-800 flex flex-col overflow-hidden">
+    <div class="bg-white dark:bg-zinc-900 w-full max-w-4xl h-[92vh] sm:h-[88vh] max-h-[850px] min-h-[500px] rounded-xl shadow-xl border border-slate-200 dark:border-zinc-800 flex flex-col overflow-hidden">
       
       <!-- Modal Header -->
       <div class="px-5 py-4 border-b border-slate-200 dark:border-zinc-800 flex items-center justify-between gap-4 bg-slate-50/50 dark:bg-zinc-900">
@@ -362,7 +365,7 @@
       </div>
 
       <!-- Modal Body Content -->
-      <div class="p-5 sm:p-6 overflow-y-auto flex-1 space-y-5">
+      <div id="modalBodyContent" class="p-5 sm:p-6 overflow-y-auto flex-1 space-y-5">
 
         <!-- Dặn dò Box (Evondev Rule M5: Neutral alert card with subtle warning pill) -->
         <div id="modalDanDoBox" class="p-3.5 rounded-lg bg-amber-50 dark:bg-amber-950/30 border border-amber-200/80 dark:border-amber-900/40 text-xs sm:text-sm text-amber-900 dark:text-amber-200 space-y-1">
@@ -731,6 +734,8 @@
       loadDayModalContent();
       document.getElementById('dayModal').classList.remove('hidden');
       document.body.style.overflow = 'hidden';
+      const bodyContent = document.getElementById('modalBodyContent');
+      if (bodyContent) bodyContent.scrollTop = 0;
       requestAnimationFrame(() => {
         updateModalTabIndicator(currentModalTab || 'vocab', false);
       });
@@ -913,6 +918,10 @@
 
     function switchModalTab(tabKey, smoothIndicator = true) {
       currentModalTab = tabKey;
+      const bodyContent = document.getElementById('modalBodyContent');
+      if (bodyContent) {
+        bodyContent.scrollTop = 0;
+      }
       const tabs = ['vocab', 'flashcard', 'exercise', 'raw', 'files'];
       tabs.forEach(t => {
         const btn = document.getElementById(`tabBtn-${t}`);
