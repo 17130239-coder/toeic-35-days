@@ -679,6 +679,14 @@
     </div>
   </div>
 
+  <!-- GLOBAL TOAST NOTIFICATION -->
+  <div id="indexToast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none transition-all duration-300 opacity-0 -translate-y-2">
+    <div class="px-4 py-2.5 rounded-xl bg-zinc-900/95 dark:bg-zinc-800/95 text-white border border-zinc-700/80 shadow-2xl text-xs font-semibold flex items-center gap-2 backdrop-blur-md">
+      <i class="fa-solid fa-circle-info text-orange-400"></i>
+      <span id="indexToastText"></span>
+    </div>
+  </div>
+
   <!-- LOAD DATA FILES -->
   <script src="vocab_data.js?v=20261004_v10"></script>
 
@@ -1987,10 +1995,24 @@
       processInQuizFeedback(isCorrect, q);
     }
 
+    function showIndexToast(msg) {
+      const t = document.getElementById('indexToast');
+      const txt = document.getElementById('indexToastText');
+      if (!t || !txt) return;
+      txt.innerText = msg;
+      t.classList.remove('opacity-0', '-translate-y-2');
+      t.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(t._hideTimeout);
+      t._hideTimeout = setTimeout(() => {
+        t.classList.remove('opacity-100', 'translate-y-0');
+        t.classList.add('opacity-0', '-translate-y-2');
+      }, 2400);
+    }
+
     function submitInQuizMultiChoice() {
       if (currentInQuizAnswered) return;
       if (currentInQuizSelectedMulti.size === 0) {
-        alert('Vui lòng chọn ít nhất một đáp án!');
+        showIndexToast('Vui lòng chọn ít nhất một đáp án!');
         return;
       }
       currentInQuizAnswered = true;
