@@ -720,7 +720,7 @@
         const wgCodes = (d.wayground && d.wayground.all_codes) ? d.wayground.all_codes : (d.wayground && d.wayground.game_codes ? d.wayground.game_codes : []);
         const primaryCode = (d.wayground && d.wayground.primary_code) ? d.wayground.primary_code : (wgCodes.length > 0 ? wgCodes[0] : null);
         const primaryGameUrl = (d.wayground && d.wayground.primary_url) ? d.wayground.primary_url : (primaryCode ? `https://quizizz.com/join?gc=${primaryCode}` : null);
-        const wgRecord = primaryCode ? wgHistory[primaryCode] : null;
+        const wgRecord = primaryCode ? (wgHistory[primaryCode] || (wgCodes && wgCodes.map(c => wgHistory[c]).find(Boolean)) || null) : null;
 
         const primaryVideo = (d.video_recordings && d.video_recordings.length > 0) ? d.video_recordings[0] : (d.video_recording || null);
 
@@ -975,7 +975,8 @@
           let histText = 'Wayground Arena';
           try {
             const hist = JSON.parse(localStorage.getItem('wayground_history') || '{}');
-            const rec = hist[primaryCode];
+            const allCodes = wg.all_codes || wg.game_codes || [];
+            const rec = hist[primaryCode] || (allCodes && allCodes.map(c => hist[c]).find(Boolean)) || null;
             if (rec && rec.bestAccuracy !== undefined) {
               histText = `Wayground (✓ ${rec.bestAccuracy}%)`;
             }

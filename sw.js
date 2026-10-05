@@ -1,4 +1,4 @@
-const CACHE_NAME = '35days-toeic-v1';
+const CACHE_NAME = '35days-toeic-v2';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
