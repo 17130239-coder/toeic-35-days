@@ -10,6 +10,25 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   
+  <!-- Prevent theme flash (FOUC) before CSS / scripts parse -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('35days_theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && prefersDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <style>
+    html.dark { background-color: #09090b; color-scheme: dark; }
+    html:not(.dark) { background-color: #f8fafc; color-scheme: light; }
+  </style>
+  
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
@@ -243,7 +262,7 @@
           </h1>
           
           <p class="text-xs sm:text-sm text-slate-600 dark:text-zinc-400 leading-relaxed">
-            Chương trình hoàn chỉnh 36 ngày (Day 0 – 35) với 194 từ vựng trọng tâm, Audio phát âm giọng bản xứ, Flashcard 3D, bài tập điền câu tương tác và 26 game Quizizz Wayground.
+            Chương trình hoàn chỉnh 36 ngày (Day 0 – 35) với 194 từ vựng trọng tâm, Audio phát âm giọng bản xứ, Flashcard 3D, bài tập Quizizz tương tác và 30 bộ game Wayground Arena.
           </p>
 
           <!-- Overall Progress Bar -->
@@ -697,9 +716,7 @@
       if (icon) icon.className = isDark ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
     }
 
-    if (localStorage.getItem('35days_theme') === 'dark' || (!('35days_theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-      document.documentElement.classList.add('dark');
-    }
+    // Initial theme icon sync
     updateThemeIcon();
 
     // Render Days Grid (Evondev Style: Flat hairline cards, calm contrast, Rule M7 status pills)
@@ -945,8 +962,8 @@
         document.getElementById('modalDayDue').innerHTML = `<i class="fa-regular fa-clock text-slate-400"></i> ${d.due_date}`;
       } else {
         const vCount = (d.vocabulary || []).length;
-        const qCount = (d.exercises || []).length;
-        document.getElementById('modalDayDue').innerHTML = `<i class="fa-solid fa-graduation-cap text-slate-400"></i> ${vCount} từ vựng trọng tâm ${qCount > 0 ? '• ' + qCount + ' câu bài tập' : ''}`;
+        const qCount = (d.cloned_quiz && d.cloned_quiz.questions ? d.cloned_quiz.questions.length : (d.exercises || []).length);
+        document.getElementById('modalDayDue').innerHTML = `<i class="fa-solid fa-graduation-cap text-slate-400"></i> ${vCount} từ vựng trọng tâm ${qCount > 0 ? '• ' + qCount + ' câu trắc nghiệm Quiz' : ''}`;
       }
 
       // 1. Link Game Quizizz in Header

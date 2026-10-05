@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="vi" class="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,6 +21,10 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
   <style>
+    html {
+      background-color: #1e091b;
+      color-scheme: dark;
+    }
     /* Dark Game Canvas conforming to authentic Wayground plum theme */
     body {
       background-color: #1e091b;
@@ -320,13 +324,13 @@
 
     <!-- Authentic Wayground Question Card (Centered, Balanced, High-Contrast) -->
     <div class="w-full max-w-4xl mx-auto my-auto py-2 z-20">
-      <div id="questionCard" class="w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8">
-        <!-- White Rounded Image Card (Fixed reserved size to eliminate layout shift) -->
-        <div id="arenaImageContainer" class="w-[200px] h-[140px] sm:w-[260px] sm:h-[180px] md:w-[280px] md:h-[190px] shrink-0 bg-white rounded-xl p-2 shadow-xl relative flex items-center justify-center overflow-hidden hidden">
-          <div id="arenaImgSkeleton" class="absolute inset-0 bg-slate-100 flex items-center justify-center pointer-events-none hidden">
-            <i class="fa-regular fa-image text-slate-300 text-2xl animate-pulse"></i>
+      <div id="questionCard" class="w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all duration-300 ease-out">
+        <!-- Sleek Framed Image Card (Fixed reserved size to eliminate layout shift) -->
+        <div id="arenaImageContainer" class="w-[200px] h-[140px] sm:w-[260px] sm:h-[180px] md:w-[280px] md:h-[190px] shrink-0 bg-zinc-900/90 border border-zinc-700/60 shadow-xl rounded-xl p-1.5 relative flex items-center justify-center overflow-hidden hidden">
+          <div id="arenaImgSkeleton" class="absolute inset-0 bg-zinc-800/80 flex items-center justify-center pointer-events-none hidden">
+            <i class="fa-regular fa-image text-zinc-500 text-2xl animate-pulse"></i>
           </div>
-          <img id="arenaImage" src="" alt="Question Illustration" class="w-full h-full object-contain rounded-lg cursor-pointer transition-opacity duration-200" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
+          <img id="arenaImage" src="" alt="Question Illustration" class="w-full h-full object-contain rounded-lg cursor-pointer transition-opacity duration-200 opacity-0" onclick="openLightbox(this.src)" title="Nhấn để phóng to ảnh" />
           <button type="button" onclick="openLightbox(document.getElementById('arenaImage').src)" class="absolute bottom-2 left-2 w-7 h-7 rounded-md bg-black/60 hover:bg-black/85 text-white flex items-center justify-center text-xs backdrop-blur-xs transition shadow-sm z-10" title="Phóng to ảnh">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -468,9 +472,12 @@
       <h3 id="feedbackTitle" class="text-lg font-bold">XUẤT SẮC!</h3>
       <div id="feedbackPoints" class="text-xl font-bold font-mono text-emerald-400 tabular-nums">+1,450 pts</div>
       
-      <!-- Authentic Quizizz Reaction Meme -->
-      <div id="feedbackMemeContainer" class="flex justify-center max-h-36 overflow-hidden rounded-lg border border-zinc-800 bg-black/30 hidden">
-        <img id="feedbackMemeImg" src="" alt="Quizizz Meme" class="max-h-36 w-auto object-contain rounded-lg" />
+      <!-- Authentic Quizizz Reaction Meme (Fixed reserved height of 144px prevents ANY modal jitter / layout shift) -->
+      <div id="feedbackMemeContainer" class="w-full h-36 max-w-[260px] mx-auto rounded-xl border border-zinc-800/80 bg-zinc-950/80 relative overflow-hidden flex items-center justify-center shrink-0 hidden">
+        <div id="feedbackMemeSkeleton" class="absolute inset-0 flex items-center justify-center bg-zinc-900/60 animate-pulse pointer-events-none">
+          <i class="fa-regular fa-image text-zinc-600 text-2xl"></i>
+        </div>
+        <img id="feedbackMemeImg" src="" alt="Quizizz Meme" class="w-full h-full object-contain rounded-lg relative z-10 transition-opacity duration-200 opacity-0" />
       </div>
 
       <div id="feedbackChosenDetails" class="text-xs text-left p-2.5 rounded-lg bg-zinc-900 border border-zinc-800 space-y-1">
@@ -492,6 +499,29 @@
         Câu tiếp theo <i class="fa-solid fa-arrow-right ml-1"></i>
       </button>
     </div>
+  </div>
+
+  <!-- EXIT CONFIRMATION MODAL -->
+  <div id="exitConfirmModal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+    <div class="wg-card rounded-2xl p-6 max-w-xs w-full text-center space-y-4 shadow-2xl border border-zinc-700 bg-zinc-900">
+      <div class="w-12 h-12 mx-auto rounded-full bg-rose-500/20 text-rose-400 flex items-center justify-center text-xl">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+      </div>
+      <div>
+        <h3 class="text-base font-bold text-white">Rời trận đấu?</h3>
+        <p class="text-xs text-zinc-400 mt-1">Tiến độ vòng chơi hiện tại sẽ không được lưu.</p>
+      </div>
+      <div class="flex items-center gap-2.5 pt-1">
+        <button type="button" onclick="closeExitModal()" class="flex-1 h-10 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-zinc-300 text-xs font-semibold transition cursor-pointer">Ở lại</button>
+        <button type="button" onclick="executeExitGame()" class="flex-1 h-10 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-semibold transition cursor-pointer">Rời trận</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING IN-APP TOAST -->
+  <div id="gameToast" class="fixed top-5 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-zinc-900/95 border border-orange-500/50 text-white text-xs sm:text-sm font-medium shadow-2xl transition-all duration-300 pointer-events-none opacity-0 -translate-y-2 flex items-center gap-2">
+    <i class="fa-solid fa-circle-info text-orange-400"></i>
+    <span id="gameToastText">Thông báo</span>
   </div>
 
   <!-- SCREEN 5: END GAME SUMMARY -->
@@ -594,6 +624,41 @@
     let powerups = { freeze: false, '5050': false, '2x': false };
     let multiSelectedIndices = new Set();
     let hintOpen = false;
+    let isAnswering = false;
+    let isRetryMode = false;
+    let isProceeding = false;
+
+    function showToast(msg) {
+      const t = document.getElementById('gameToast');
+      const txt = document.getElementById('gameToastText');
+      if (!t || !txt) return;
+      txt.innerText = msg;
+      t.classList.remove('opacity-0', '-translate-y-2');
+      t.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(t._hideTimeout);
+      t._hideTimeout = setTimeout(() => {
+        t.classList.remove('opacity-100', 'translate-y-0');
+        t.classList.add('opacity-0', '-translate-y-2');
+      }, 2400);
+    }
+
+    function confirmExitGame() {
+      const m = document.getElementById('exitConfirmModal');
+      if (m) m.classList.remove('hidden');
+    }
+    function closeExitModal() {
+      const m = document.getElementById('exitConfirmModal');
+      if (m) m.classList.add('hidden');
+    }
+    function executeExitGame() {
+      closeExitModal();
+      stopAllAudio();
+      clearInterval(timerInterval);
+      document.getElementById('gameArena').classList.add('hidden');
+      document.getElementById('feedbackModal').classList.add('hidden');
+      document.getElementById('summaryScreen').classList.add('hidden');
+      document.getElementById('joinScreen').classList.remove('hidden');
+    }
 
     // Audio synthesizer
     const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
@@ -649,6 +714,7 @@
     // Global Audio & Pronunciation State Tracker
     let currentSpeechAudio = null;
     let currentExplanationAudioUrl = '';
+    let currentFeedbackIsTeacher = true;
     let isSpeaking = false;
 
     function stopAllAudio() {
@@ -662,7 +728,7 @@
       }
       isSpeaking = false;
       updateSpeechButtonUI(false);
-      updateFeedbackAudioBtn(false);
+      updateFeedbackAudioBtn(false, currentFeedbackIsTeacher);
     }
 
     // Extract clean, accurate English word/phrase for 1-second native pronunciation
@@ -710,11 +776,10 @@
       return '';
     }
 
-    // Pronunciation of English word (1-2s crisp TTS, togglable, stoppable)
+    // Pronunciation of English word (Authentic audio file if present, fallback to crisp TTS)
     function playArenaSpeech() {
       if (!currentQuestions[currentQIndex]) return;
 
-      // If already speaking, clicking button STOPS speech immediately!
       if (isSpeaking) {
         stopAllAudio();
         return;
@@ -724,12 +789,38 @@
       const q = currentQuestions[currentQIndex];
       const termToSpeak = getPronunciationTerm(q);
 
-      if (!termToSpeak) return;
+      // Prefer authentic recorded audio if present
+      if (q.audio_url) {
+        isSpeaking = true;
+        updateSpeechButtonUI(true);
+        currentSpeechAudio = new Audio(q.audio_url);
+        currentSpeechAudio.play().catch(() => {
+          fallbackSpeech(termToSpeak);
+        });
+        currentSpeechAudio.onended = () => {
+          isSpeaking = false;
+          updateSpeechButtonUI(false);
+          currentSpeechAudio = null;
+        };
+        currentSpeechAudio.onerror = () => {
+          fallbackSpeech(termToSpeak);
+        };
+        return;
+      }
 
+      fallbackSpeech(termToSpeak);
+    }
+
+    function fallbackSpeech(term) {
+      if (!term) {
+        isSpeaking = false;
+        updateSpeechButtonUI(false);
+        return;
+      }
       if ('speechSynthesis' in window) {
         isSpeaking = true;
         updateSpeechButtonUI(true);
-        const u = new SpeechSynthesisUtterance(termToSpeak);
+        const u = new SpeechSynthesisUtterance(term);
         u.lang = 'en-US';
         u.rate = 0.92;
         u.onend = () => {
@@ -741,6 +832,9 @@
           updateSpeechButtonUI(false);
         };
         window.speechSynthesis.speak(u);
+      } else {
+        isSpeaking = false;
+        updateSpeechButtonUI(false);
       }
     }
 
@@ -769,32 +863,32 @@
       stopAllAudio();
       if (!currentExplanationAudioUrl) return;
       currentSpeechAudio = new Audio(currentExplanationAudioUrl);
-      updateFeedbackAudioBtn(true);
+      updateFeedbackAudioBtn(true, currentFeedbackIsTeacher);
       currentSpeechAudio.play().catch(() => {
-        updateFeedbackAudioBtn(false);
+        updateFeedbackAudioBtn(false, currentFeedbackIsTeacher);
       });
       currentSpeechAudio.onended = () => {
-        updateFeedbackAudioBtn(false);
+        updateFeedbackAudioBtn(false, currentFeedbackIsTeacher);
         currentSpeechAudio = null;
       };
       currentSpeechAudio.onerror = () => {
-        updateFeedbackAudioBtn(false);
+        updateFeedbackAudioBtn(false, currentFeedbackIsTeacher);
         currentSpeechAudio = null;
       };
     }
 
-    function updateFeedbackAudioBtn(playing) {
+    function updateFeedbackAudioBtn(playing, isTeacher = true) {
       const icon = document.getElementById('feedbackAudioIcon');
       const text = document.getElementById('feedbackAudioText');
       const btn = document.getElementById('feedbackAudioBtn');
       if (!btn || !icon || !text) return;
       if (playing) {
         icon.className = 'fa-solid fa-square text-rose-400';
-        text.innerText = 'Dừng nghe giải thích';
+        text.innerText = isTeacher ? 'Dừng nghe giải thích' : 'Dừng nghe phát âm';
         btn.classList.add('border-rose-500/50', 'bg-rose-500/20');
       } else {
-        icon.className = 'fa-solid fa-headphones text-purple-400';
-        text.innerText = 'Nghe cô giải thích chi tiết';
+        icon.className = isTeacher ? 'fa-solid fa-headphones text-purple-400' : 'fa-solid fa-volume-high text-sky-400';
+        text.innerText = isTeacher ? 'Nghe cô giải thích chi tiết' : 'Nghe phát âm chuẩn từ vựng';
         btn.classList.remove('border-rose-500/50', 'bg-rose-500/20');
       }
     }
@@ -933,7 +1027,7 @@
     function handleJoinGame() {
       const pin = document.getElementById('pinInput').value.trim();
       if (!pin) {
-        alert('Vui lòng nhập mã Game PIN 8 số!');
+        showToast('Vui lòng nhập mã Game PIN 8 số!');
         return;
       }
 
@@ -943,15 +1037,49 @@
       }
 
       if (!game) {
-        alert('Không tìm thấy game nào khớp với mã PIN: "' + pin + '".\nVui lòng kiểm tra lại hoặc chọn từ danh sách ' + quizzesData.length + ' game trong hệ thống!');
+        showToast(`Không tìm thấy game nào khớp với mã PIN: "${pin}". Vui lòng chọn từ danh sách!`);
         return;
       }
 
       startGame(game);
     }
 
+    function preloadMemes() {
+      const data = window.WAYGROUND_QUIZZES || {};
+      const memes = [...(data.correct_memes || []), ...(data.wrong_memes || [])];
+      memes.forEach(src => {
+        if (src) {
+          const img = new Image();
+          img.src = src;
+        }
+      });
+    }
+
+    function preloadUpcomingImages(fromIndex = 0, count = 4) {
+      if (!currentQuestions || !currentQuestions.length) return;
+      for (let i = fromIndex; i < Math.min(fromIndex + count, currentQuestions.length); i++) {
+        const q = currentQuestions[i];
+        if (q) {
+          if (q.image) {
+            const im = new Image();
+            im.src = q.image;
+          }
+          if (q.option_images && Array.isArray(q.option_images)) {
+            q.option_images.forEach(u => {
+              if (u) {
+                const im = new Image();
+                im.src = u;
+              }
+            });
+          }
+        }
+      }
+    }
+
     function startGame(game) {
       currentGame = game;
+      isRetryMode = false;
+      isAnswering = false;
       const qCountVal = document.getElementById('settingQCount').value;
       const qCountSetting = qCountVal === 'all' ? 999999 : (parseInt(qCountVal) || 20);
       const timeSetting = parseInt(document.getElementById('settingTime').value) || 25;
@@ -962,21 +1090,8 @@
 
       currentQuestions.forEach(q => q.time_limit = timeSetting);
 
-      // Preload all question and option images into browser memory to eliminate image pop/jitter
-      currentQuestions.forEach(q => {
-        if (q.image) {
-          const preImg = new Image();
-          preImg.src = q.image;
-        }
-        if (q.option_images && Array.isArray(q.option_images)) {
-          q.option_images.forEach(imgUrl => {
-            if (imgUrl) {
-              const preImg = new Image();
-              preImg.src = imgUrl;
-            }
-          });
-        }
-      });
+      // Preload first batch of upcoming question images for instant zero-lag rendering
+      preloadUpcomingImages(0, 5);
 
       score = 0;
       streak = 0;
@@ -1014,6 +1129,8 @@
 
     function loadQuestion() {
       stopAllAudio();
+      isAnswering = false;
+      isProceeding = false;
       if (currentQIndex >= currentQuestions.length) {
         endGame();
         return;
@@ -1060,39 +1177,49 @@
         badge.innerHTML = `<span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> ${q.type_label || 'Điền từ khuyết (Gõ từ)'}`;
       }
 
+      // Continuously keep upcoming questions warm in memory
+      preloadUpcomingImages(currentQIndex + 1, 3);
+
       // Populate Question Illustration Media
       const arenaImgBox = document.getElementById('arenaImageContainer');
       const arenaImg = document.getElementById('arenaImage');
       const arenaImgSkeleton = document.getElementById('arenaImgSkeleton');
       const arenaPromptBox = document.getElementById('arenaPromptBox');
       const questionCard = document.getElementById('questionCard');
+      const qIndex = currentQIndex;
 
       if (q.image) {
         arenaImgBox.classList.remove('hidden');
-        arenaImg.classList.add('opacity-0');
-        
-        arenaImg.onload = () => {
-          arenaImg.classList.remove('opacity-0');
-          if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
-        };
-        arenaImg.onerror = () => {
+
+        const showImage = () => {
+          if (currentQIndex !== qIndex) return; // avoid race conditions
+          arenaImg.src = q.image;
           arenaImg.classList.remove('opacity-0');
           if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
         };
 
-        arenaImg.src = q.image;
-        if (arenaImg.complete && arenaImg.naturalWidth > 0) {
+        if (arenaImg.src.endsWith(q.image) && arenaImg.complete && arenaImg.naturalWidth > 0) {
           arenaImg.classList.remove('opacity-0');
           if (arenaImgSkeleton) arenaImgSkeleton.classList.add('hidden');
         } else {
+          arenaImg.classList.add('opacity-0');
           if (arenaImgSkeleton) arenaImgSkeleton.classList.remove('hidden');
+
+          const tempImg = new Image();
+          tempImg.src = q.image;
+          if (tempImg.decode) {
+            tempImg.decode().then(showImage).catch(showImage);
+          } else {
+            tempImg.onload = showImage;
+            tempImg.onerror = showImage;
+          }
         }
 
         if (arenaPromptBox) {
           arenaPromptBox.className = 'flex flex-col items-center md:items-start text-center md:text-left space-y-3 flex-1 min-w-0 w-full';
         }
         if (questionCard) {
-          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8';
+          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col md:flex-row items-center justify-center gap-5 sm:gap-8 transition-all duration-300 ease-out';
         }
       } else {
         arenaImgBox.classList.add('hidden');
@@ -1101,7 +1228,7 @@
           arenaPromptBox.className = 'flex flex-col items-center text-center space-y-3 max-w-2xl mx-auto w-full';
         }
         if (questionCard) {
-          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-6 sm:p-9 shadow-2xl flex flex-col items-center justify-center text-center space-y-3';
+          questionCard.className = 'w-full min-h-[180px] sm:min-h-[220px] rounded-2xl bg-[#191029]/95 border border-white/10 p-5 sm:p-7 shadow-2xl flex flex-col items-center justify-center text-center space-y-3 transition-all duration-300 ease-out';
         }
       }
 
@@ -1164,12 +1291,22 @@
 
             if (isImgOpts && q.option_images && q.option_images[i]) {
               // Image option mode: Authentic Wayground 4-Picture choice (Only images, NO spoil text!)
-              img.classList.add('opacity-0');
-              img.onload = () => img.classList.remove('opacity-0');
-              img.src = q.option_images[i];
-              if (img.complete && img.naturalWidth > 0) img.classList.remove('opacity-0');
-              img.className = 'max-h-24 sm:max-h-32 max-w-[85%] object-contain rounded-xl shadow-md block transition-opacity duration-150';
               img.classList.remove('hidden');
+              img.className = 'max-h-24 sm:max-h-32 max-w-[85%] object-contain rounded-xl shadow-md block transition-opacity duration-200 opacity-0';
+              const optUrl = q.option_images[i];
+              const tempOpt = new Image();
+              tempOpt.src = optUrl;
+              const applyOpt = () => {
+                if (currentQIndex !== qIndex) return;
+                img.src = optUrl;
+                img.classList.remove('opacity-0');
+              };
+              if (tempOpt.decode) {
+                tempOpt.decode().then(applyOpt).catch(applyOpt);
+              } else {
+                tempOpt.onload = applyOpt;
+                tempOpt.onerror = applyOpt;
+              }
 
               if (zoom) zoom.classList.remove('hidden');
               txt.classList.add('hidden');
@@ -1242,10 +1379,12 @@
     }
 
     function handleOptionClick(idx) {
+      if (isAnswering) return;
       const q = currentQuestions[currentQIndex];
       const format = q.question_format || 'single_choice';
 
       if (format === 'single_choice') {
+        isAnswering = true;
         submitAnswer([idx]);
       } else if (format === 'multiple_choice') {
         const btn = document.getElementById(`optBtn-${idx}`);
@@ -1267,23 +1406,37 @@
 
     function submitMultiAnswer() {
       if (multiSelectedIndices.size === 0) {
-        alert('Vui lòng chọn ít nhất một đáp án trước khi bấm Gửi!');
+        showToast('Vui lòng chọn ít nhất một đáp án trước khi bấm Gửi!');
         return;
       }
+      if (isAnswering) return;
+      isAnswering = true;
       submitAnswer(Array.from(multiSelectedIndices));
     }
 
     function submitTypeInAnswer() {
-      const val = document.getElementById('typeInInput').value.trim();
+      const inputEl = document.getElementById('typeInInput');
+      const val = inputEl ? inputEl.value.trim() : '';
       if (!val) {
-        alert('Vui lòng nhập câu trả lời!');
+        showToast('Vui lòng nhập câu trả lời!');
         return;
       }
+      if (isAnswering) return;
+      isAnswering = true;
+      if (inputEl) inputEl.blur();
       submitAnswer(val);
     }
 
     function usePowerup(type) {
       if (powerups[type]) return;
+      const q = currentQuestions[currentQIndex];
+      const format = q ? (q.question_format || (q.options && q.options.length > 0 ? 'single_choice' : 'fill_blank')) : 'single_choice';
+
+      if (type === '5050' && format !== 'single_choice') {
+        showToast('Trợ giúp 50:50 chỉ áp dụng cho câu trắc nghiệm 1 đáp án!');
+        return;
+      }
+
       powerups[type] = true;
 
       if (type === 'freeze') {
@@ -1291,25 +1444,42 @@
         totalTime += 10;
         playSound('streak');
       } else if (type === '5050') {
-        const q = currentQuestions[currentQIndex];
-        const correctList = (q.correct_answers || [q.correct_answer]).map(x => x.toLowerCase().trim());
+        const correctList = (q.correct_answers || [q.correct_answer]).map(x => String(x).toLowerCase().trim());
         const wrongIdxs = [];
         (q.options || []).forEach((opt, idx) => {
-          if (!correctList.includes(opt.toLowerCase().trim())) wrongIdxs.push(idx);
+          if (!correctList.includes(String(opt).toLowerCase().trim())) wrongIdxs.push(idx);
         });
         wrongIdxs.sort(() => Math.random() - 0.5);
-        if (wrongIdxs[0] !== undefined) document.getElementById(`optBtn-${wrongIdxs[0]}`).style.opacity = '0.2';
-        if (wrongIdxs[1] !== undefined) document.getElementById(`optBtn-${wrongIdxs[1]}`).style.opacity = '0.2';
+        if (wrongIdxs[0] !== undefined) {
+          const b0 = document.getElementById(`optBtn-${wrongIdxs[0]}`);
+          if (b0) {
+            b0.disabled = true;
+            b0.style.opacity = '0.2';
+            b0.style.pointerEvents = 'none';
+          }
+        }
+        if (wrongIdxs[1] !== undefined) {
+          const b1 = document.getElementById(`optBtn-${wrongIdxs[1]}`);
+          if (b1) {
+            b1.disabled = true;
+            b1.style.opacity = '0.2';
+            b1.style.pointerEvents = 'none';
+          }
+        }
         playSound('streak');
       } else if (type === '2x') {
         playSound('streak');
       }
 
-      document.getElementById(`pu-${type}`).disabled = true;
-      document.getElementById(`pu-${type}`).style.opacity = '0.4';
+      const puBtn = document.getElementById(`pu-${type}`);
+      if (puBtn) {
+        puBtn.disabled = true;
+        puBtn.style.opacity = '0.4';
+      }
     }
 
     function submitAnswer(chosen) {
+      isAnswering = true;
       stopAllAudio();
       clearInterval(timerInterval);
       const q = currentQuestions[currentQIndex];
@@ -1329,16 +1499,16 @@
         const chosenIdx = chosen[0];
         chosenText = q.options[chosenIdx] || '';
         const normChosen = chosenText.toLowerCase().trim();
-        isCorrect = correctAnswersList.some(ans => ans.toLowerCase().trim() === normChosen);
+        isCorrect = correctAnswersList.some(ans => String(ans).toLowerCase().trim() === normChosen);
 
         if (q.has_image_options && q.option_images) {
           chosenImg = q.option_images[chosenIdx] || '';
-          const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => ans.toLowerCase().trim() === opt.toLowerCase().trim()));
+          const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => String(ans).toLowerCase().trim() === String(opt).toLowerCase().trim()));
           if (correctIdx >= 0) correctImg = q.option_images[correctIdx] || '';
         }
       } else if (format === 'multiple_choice') {
-        const chosenTexts = chosen.map(idx => q.options[idx].toLowerCase().trim());
-        const correctTexts = correctAnswersList.map(ans => ans.toLowerCase().trim());
+        const chosenTexts = chosen.map(idx => String(q.options[idx]).toLowerCase().trim());
+        const correctTexts = correctAnswersList.map(ans => String(ans).toLowerCase().trim());
         chosenText = chosen.map(idx => q.options[idx]).join(' • ');
 
         // Check if all chosen texts match and lengths are equal
@@ -1348,8 +1518,8 @@
         chosenText = String(chosen).trim();
         const normInput = chosenText.toLowerCase().replace(/^[,\.\'\"]+|[,\.\'\"]+$/g, '').trim();
         isCorrect = correctAnswersList.some(ans => {
-          const normAns = ans.toLowerCase().replace(/^[,\.\'\"]+|[,\.\'\"]+$/g, '').trim();
-          return normAns === normInput || (normAns.length > 3 && normInput.includes(normAns));
+          const normAns = String(ans).toLowerCase().replace(/^[,\.\'\"]+|[,\.\'\"]+$/g, '').trim();
+          return normAns === normInput;
         });
       }
 
@@ -1376,7 +1546,9 @@
         playSound('wrong');
       }
 
-      const correctDisplay = correctAnswersList.join(' • ');
+      const correctDisplay = format === 'fill_blank' 
+        ? correctAnswersList.map(a => String(a).trim()).join(' / ')
+        : correctAnswersList.join(' • ');
       answeredLog.push({
         question: q.question,
         format: format,
@@ -1393,11 +1565,14 @@
 
       if (format === 'single_choice' && chosen[0] !== undefined && chosen[0] >= 0) {
         const chosenIdx = chosen[0];
-        const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => ans.toLowerCase().trim() === opt.toLowerCase().trim()));
+        const correctIdx = (q.options || []).findIndex(opt => correctAnswersList.some(ans => String(ans).toLowerCase().trim() === String(opt).toLowerCase().trim()));
 
         for (let i = 0; i < 5; i++) {
           const b = document.getElementById(`optBtn-${i}`);
-          if (b) b.disabled = true;
+          if (b) {
+            b.disabled = true;
+            b.style.pointerEvents = 'none';
+          }
         }
 
         if (isCorrect) {
@@ -1470,14 +1645,31 @@
       // Authentic Quizizz Reaction Meme
       const memeContainer = document.getElementById('feedbackMemeContainer');
       const memeImg = document.getElementById('feedbackMemeImg');
+      const memeSkeleton = document.getElementById('feedbackMemeSkeleton');
       const quizizzData = window.WAYGROUND_QUIZZES || {};
       const memesList = isCorrect ? (quizizzData.correct_memes || []) : (quizizzData.wrong_memes || []);
       if (memesList && memesList.length > 0) {
         const randomMeme = memesList[Math.floor(Math.random() * memesList.length)];
-        memeImg.src = randomMeme;
         memeContainer.classList.remove('hidden');
+        memeImg.classList.add('opacity-0');
+        if (memeSkeleton) memeSkeleton.classList.remove('hidden');
+
+        const tempMeme = new Image();
+        tempMeme.src = randomMeme;
+        const applyMeme = () => {
+          memeImg.src = randomMeme;
+          memeImg.classList.remove('opacity-0');
+          if (memeSkeleton) memeSkeleton.classList.add('hidden');
+        };
+        if (tempMeme.decode) {
+          tempMeme.decode().then(applyMeme).catch(applyMeme);
+        } else {
+          tempMeme.onload = applyMeme;
+          tempMeme.onerror = applyMeme;
+        }
       } else {
         memeContainer.classList.add('hidden');
+        memeImg.src = '';
       }
 
       if (isCorrect) {
@@ -1503,11 +1695,13 @@
 
       // Explanation Audio Recording Setup
       const expAudioContainer = document.getElementById('feedbackAudioContainer');
-      const expAudioUrl = (q && q.explanation_media && q.explanation_media.audio) || (q && q.audio_url) || '';
+      const hasTeacherAudio = !!(q && q.explanation_media && q.explanation_media.audio);
+      const expAudioUrl = hasTeacherAudio ? q.explanation_media.audio : (q && q.audio_url ? q.audio_url : '');
       currentExplanationAudioUrl = expAudioUrl;
+      currentFeedbackIsTeacher = hasTeacherAudio;
       if (expAudioUrl && expAudioContainer) {
         expAudioContainer.classList.remove('hidden');
-        updateFeedbackAudioBtn(false);
+        updateFeedbackAudioBtn(false, currentFeedbackIsTeacher);
       } else if (expAudioContainer) {
         expAudioContainer.classList.add('hidden');
       }
@@ -1516,6 +1710,8 @@
     }
 
     function proceedToNextQuestion() {
+      if (isProceeding) return;
+      isProceeding = true;
       stopAllAudio();
       document.getElementById('feedbackModal').classList.add('hidden');
       currentQIndex++;
@@ -1533,7 +1729,8 @@
       }
 
       const nick = document.getElementById('nicknameInput').value || 'Học Viên';
-      const accuracy = Math.round((correctCount / currentQuestions.length) * 100);
+      const totalQ = currentQuestions.length || 1;
+      const accuracy = Math.round((correctCount / totalQ) * 100);
 
       const sumAv = document.getElementById('summaryAvatar');
       if (sumAv) sumAv.innerText = selectedAvatar;
@@ -1543,15 +1740,15 @@
 
       const sumTitle = document.getElementById('summaryGameTitle');
       if (sumTitle && currentGame) {
-        sumTitle.innerText = `${getGameDisplayName(currentGame)} • PIN: ${currentGame.game_code}`;
+        sumTitle.innerText = `${getGameDisplayName(currentGame)} • PIN: ${currentGame.game_code}${isRetryMode ? ' (Luyện lại câu sai)' : ''}`;
       }
 
       document.getElementById('finalScoreText').innerText = score.toLocaleString();
       document.getElementById('finalAccuracyText').innerText = `${accuracy}% (${correctCount}/${currentQuestions.length})`;
       document.getElementById('finalStreakText').innerText = `${maxStreak}`;
 
-      // Save high score and accuracy to localStorage
-      if (currentGame && currentGame.game_code) {
+      // Save high score and accuracy to localStorage ONLY if not in retry mode
+      if (!isRetryMode && currentGame && currentGame.game_code) {
         try {
           const hist = JSON.parse(localStorage.getItem('wayground_history') || '{}');
           const code = currentGame.game_code;
@@ -1599,7 +1796,9 @@
           </div>
           ${log.image ? `
             <div class="pt-1">
-              <img src="${log.image}" alt="Question Image" class="h-16 w-auto max-w-[160px] object-cover rounded-md border border-zinc-700 cursor-pointer hover:opacity-90 transition" onclick="openLightbox('${log.image}')" title="Nhấn để phóng to ảnh" />
+              <div class="w-20 h-14 shrink-0 rounded-md overflow-hidden bg-zinc-800/80 border border-zinc-700/60 flex items-center justify-center">
+                <img src="${log.image}" alt="Question Image" class="w-full h-full object-cover cursor-pointer hover:opacity-90 transition" onclick="openLightbox('${log.image}')" title="Nhấn để phóng to ảnh" />
+              </div>
             </div>
           ` : ''}
           <div class="text-xs sm:text-sm font-medium text-white">${log.question}</div>
@@ -1643,6 +1842,7 @@
       const wrongQues = wrongIndices.map(idx => currentQuestions[idx]).filter(Boolean);
       if (wrongQues.length === 0) return;
 
+      isRetryMode = true;
       currentQuestions = JSON.parse(JSON.stringify(wrongQues));
       currentQuestions.sort(() => Math.random() - 0.5);
       score = 0;
@@ -1659,6 +1859,7 @@
     }
 
     function restartCurrentGame() {
+      isRetryMode = false;
       document.getElementById('summaryScreen').classList.add('hidden');
       startGame(currentGame);
     }
@@ -1668,20 +1869,12 @@
       document.getElementById('joinScreen').classList.remove('hidden');
     }
 
-    function confirmExitGame() {
-      if (confirm('Bạn có chắc chắn muốn rời trận đấu hiện tại và quay về sảnh?')) {
-        stopAllAudio();
-        clearInterval(timerInterval);
-        document.getElementById('gameArena').classList.add('hidden');
-        document.getElementById('feedbackModal').classList.add('hidden');
-        document.getElementById('summaryScreen').classList.add('hidden');
-        document.getElementById('joinScreen').classList.remove('hidden');
-      }
-    }
+
 
     window.addEventListener('DOMContentLoaded', () => {
       initAvatarPicker();
       initDrawerGames();
+      preloadMemes();
 
       const pinInp = document.getElementById('pinInput');
       if (pinInp) {
@@ -1698,7 +1891,16 @@
 
     window.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
+        const exitM = document.getElementById('exitConfirmModal');
+        if (exitM && !exitM.classList.contains('hidden')) {
+          closeExitModal();
+          return;
+        }
         closeLightbox();
+        const drawer = document.getElementById('gameDrawer');
+        if (drawer && !drawer.classList.contains('hidden')) {
+          drawer.classList.add('hidden');
+        }
         return;
       }
 
@@ -1724,10 +1926,13 @@
       // In feedback modal
       if (!document.getElementById('feedbackModal').classList.contains('hidden')) {
         if (e.key === 'Enter' || e.code === 'Space') {
+          e.preventDefault();
           proceedToNextQuestion();
         }
         return;
       }
+
+      if (isAnswering) return;
 
       const q = currentQuestions[currentQIndex];
       const format = q ? q.question_format : 'single_choice';

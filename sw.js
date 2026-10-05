@@ -1,8 +1,10 @@
-const CACHE_NAME = '35days-toeic-v2';
+const CACHE_NAME = '35days-toeic-v3';
 const PRECACHE_ASSETS = [
   './',
   './index.html',
   './wayground.html',
+  './vocab_data.js',
+  './wayground_data.js',
   './manifest.json',
   './favicon.svg',
   './favicon-wayground.svg'
