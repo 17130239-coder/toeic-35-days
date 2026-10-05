@@ -9,3 +9,18 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Raw HTML dumps
+data.html
+drive.html
+game.html
+
+# Raw and intermediate data dumps
+cloned_games_raw/
+wayground_quizzes.json
+wayground_cloned_quizzes.json
+days_data.json
+all_vocabulary.json
+buoi_recordings.json
+permanent_games_clean.json
+resolved_hashes.json
